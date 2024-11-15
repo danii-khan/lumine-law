@@ -6,6 +6,7 @@ import {
   Text,
   Center,
   Link,
+  Icon,
 } from "@chakra-ui/react";
 import SRA from "../../assets/footer/sra-logo.png";
 import AccreditLogo from "../../assets/footer/accredit.png";
@@ -14,6 +15,10 @@ import LumineLogo from "../../assets/navbar/logo.png";
 import TwitterLogo from "../../assets/footer/twitter.png";
 import LinkedInLogo from "../../assets/footer/linkedin.png";
 import InstagramLogo from "../../assets/footer/instagram.png";
+import { FaLocationDot } from "react-icons/fa6";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { FaFax } from "react-icons/fa";
+import { MdOutlineAlternateEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -33,18 +38,30 @@ const Footer = () => {
               Our Location
             </Text>
             <VStack justifyContent={"center"} alignItems={"flex-start"}>
-              <Text color={"#BEAB7C"} fontSize={"15px"} fontWeight={300}>
-                Address: 2nd floor, 156 Cromwell Road, London, SW7 4EF
-              </Text>
-              <Text color={"#BEAB7C"} fontSize={"15px"} fontWeight={300}>
-                Tel: 02039502246
-              </Text>
-              <Text color={"#BEAB7C"} fontSize={"15px"} fontWeight={300}>
-                Fax: 02030062503
-              </Text>
-              <Text color={"#BEAB7C"} fontSize={"15px"} fontWeight={300}>
-                Email: info@luminelaw.com
-              </Text>
+              <HStack>
+                <FaLocationDot color={"#BEAB7C"} fontSize={"15px"} />
+                <Text color={"#BEAB7C"} fontSize={"15px"} fontWeight={300}>
+                  Address: 2nd floor, 156 Cromwell Road, London, SW7 4EF
+                </Text>
+              </HStack>
+              <HStack>
+                <BsFillTelephoneFill color={"#BEAB7C"} fontSize={"15px"} />
+                <Text color={"#BEAB7C"} fontSize={"15px"} fontWeight={300}>
+                  Tel: 02039502246
+                </Text>
+              </HStack>
+              <HStack>
+                <FaFax color={"#BEAB7C"} fontSize={"15px"} />
+                <Text color={"#BEAB7C"} fontSize={"15px"} fontWeight={300}>
+                  Fax: 02030062503
+                </Text>
+              </HStack>
+              <HStack>
+                <MdOutlineAlternateEmail color={"#BEAB7C"} fontSize={"15px"} />
+                <Text color={"#BEAB7C"} fontSize={"15px"} fontWeight={300}>
+                  Email: info@luminelaw.com
+                </Text>
+              </HStack>
             </VStack>
           </Box>
 
