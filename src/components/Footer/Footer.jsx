@@ -146,7 +146,7 @@ const Footer = () => {
             </Link>
           </Center>
           {/* third col */}
-          <VStack>
+          <VStack gap={"15px"}>
             <HStack gap={"90px"}>
               <Text fontSize={"15px"} fontWeight={400}>
                 Privacy Policy
