@@ -1,4 +1,4 @@
-import { HStack, Image, Text, Box, Icon } from "@chakra-ui/react";
+import { HStack, Image, Text } from "@chakra-ui/react";
 import { Button } from "../../lib/chakra-components/ui/button";
 import {
   MenuContent,
@@ -13,63 +13,37 @@ import MenuIcon from "../../assets/menu-dropdown-icon.png";
 const Navbar = () => {
   return (
     <>
-      <Box width={"100vw"}>
-        {/* Navbar Top */}
-        <HStack
-          justifyContent={"space-between"}
-          alignItems={"center"}
-          width={"100%"}
-          px={"20px"}
-          py={"5px"}
-        >
+      <HStack
+        width={"100vw"}
+        justifyContent={"space-between"}
+        alignItems={"center"}
+        px={"20px"}
+        py={"5px"}
+      >
+        {/* logo + menu */}
+        <HStack gap={"150px"}>
+          {/* Logo + Title */}
           <HStack>
             <Image src={LumineLogo} alt="" height={"50px"} width={"50px"} />
             <Text fontSize={"24px"} fontWeight={500} color="#BEAB7C">
-              LUMINE SOLICITORS
+              Lumine Solicitors
             </Text>
           </HStack>
-          <Button
-            fontWeight={400}
-            fontSize={"15px"}
-            color={"white"}
-            background={"none"}
-            borderColor={"white"}
-            borderRadius={"10px"}
-            cursor={"pointer"}
-            _hover={{
-              backgroundColor: "#30302e",
-            }}
-            _active={{
-              color: "#BEAB7C",
-            }}
-          >
-            Contact Us
-          </Button>
-        </HStack>
-        {/* Navbar Bottom */}
-        <HStack
-          justifyContent={"space-between"}
-          alignItems={"center"}
-          border={"0.5px solid white"}
-          borderRight={"none"}
-          borderLeft={"none"}
-          px={"20px"}
-          py={"5px"}
-        >
-          <HStack gap={"45px"}>
+          {/* Menu Options */}
+          <HStack>
             {/* People */}
             <MenuRoot>
               <MenuTrigger asChild>
                 <Button
-                  backgroundColor={"inherit"}
-                  color={"white"}
+                  backgroundColor="inherit"
+                  color="white"
                   size="sm"
-                  fontSize={"14px"}
+                  fontSize="14px"
                   fontWeight={500}
                   _hover={{
-                    backgroundColor: "#30302e",
+                    color: "#BEAB7C",
                   }}
-                  display={"flex"}
+                  css={{ "&[data-state=open]": { color: "#BEAB7C" } }}
                 >
                   People
                   <Image src={MenuIcon} />
@@ -84,11 +58,7 @@ const Navbar = () => {
               </MenuContent>
             </MenuRoot>
             {/* Services */}
-            <MenuRoot
-              _active={{
-                color: "#BEAB7C",
-              }}
-            >
+            <MenuRoot>
               <MenuTrigger asChild>
                 <Button
                   backgroundColor={"inherit"}
@@ -97,15 +67,16 @@ const Navbar = () => {
                   fontSize={"14px"}
                   fontWeight={500}
                   _hover={{
-                    backgroundColor: "#30302e",
+                    color: "#BEAB7C",
                   }}
+                  css={{ "&[data-state=open]": { color: "#BEAB7C" } }}
                 >
                   Services
                   <Image src={MenuIcon} />
                 </Button>
               </MenuTrigger>
               <MenuContent
-                border={"0.5px solid #FFFFFF"}
+                // border={"0.5px solid #FFFFFF"}
                 borderRadius={"8px"}
                 width={"200px"}
               >
@@ -114,6 +85,9 @@ const Navbar = () => {
                   cursor={"pointer"}
                   fontSize={"12px"}
                   fontWeight={500}
+                  _hover={{
+                    color: "#BEAB7C",
+                  }}
                 >
                   Immigration Services
                 </MenuItem>
@@ -122,6 +96,9 @@ const Navbar = () => {
                   cursor={"pointer"}
                   fontSize={"12px"}
                   fontWeight={500}
+                  _hover={{
+                    color: "#BEAB7C",
+                  }}
                 >
                   Residential & Commercial Property{" "}
                 </MenuItem>
@@ -130,6 +107,9 @@ const Navbar = () => {
                   cursor={"pointer"}
                   fontSize={"12px"}
                   fontWeight={500}
+                  _hover={{
+                    color: "#BEAB7C",
+                  }}
                 >
                   Dispute Resolution & Civil Litigation{" "}
                 </MenuItem>
@@ -138,6 +118,9 @@ const Navbar = () => {
                   cursor={"pointer"}
                   fontSize={"12px"}
                   fontWeight={500}
+                  _hover={{
+                    color: "#BEAB7C",
+                  }}
                 >
                   Landlord & Tenant Disputes{" "}
                 </MenuItem>
@@ -146,6 +129,9 @@ const Navbar = () => {
                   cursor={"pointer"}
                   fontSize={"12px"}
                   fontWeight={500}
+                  _hover={{
+                    color: "#BEAB7C",
+                  }}
                 >
                   Family & Children
                 </MenuItem>
@@ -154,6 +140,9 @@ const Navbar = () => {
                   cursor={"pointer"}
                   fontSize={"12px"}
                   fontWeight={500}
+                  _hover={{
+                    color: "#BEAB7C",
+                  }}
                 >
                   Personal Injury
                 </MenuItem>
@@ -169,9 +158,11 @@ const Navbar = () => {
                   fontSize={"14px"}
                   fontWeight={500}
                   _hover={{
-                    backgroundColor: "#30302e",
+                    color: "#BEAB7C",
                   }}
-                  display={"flex"}
+                  css={{
+                    "&[data-state=open]": { color: "#BEAB7C" },
+                  }}
                 >
                   Menu
                   <Image src={MenuIcon} />
@@ -186,23 +177,26 @@ const Navbar = () => {
               </MenuContent>
             </MenuRoot>
           </HStack>
-          <HStack gap={"45px"}>
-            <Text
-              fontSize={"14px"}
-              fontWeight={500}
-              textDecoration={"underline"}
-            >
-              info@luminelaw.com
-            </Text>
-            <Text fontSize={"14px"} fontWeight={500}>
-              020300062508
-            </Text>
-            <Text fontSize={"14px"} fontWeight={500}>
-              02039550246
-            </Text>
-          </HStack>
         </HStack>
-      </Box>
+
+        {/* Contact Button */}
+        <Button
+          fontWeight={400}
+          fontSize={"15px"}
+          color={"white"}
+          background={"none"}
+          borderColor={"white"}
+          borderRadius={"10px"}
+          cursor={"pointer"}
+          _hover={{
+            // backgroundColor: "#30302e",
+            borderColor: "#BEAB7C",
+            color: "#BEAB7C",
+          }}
+        >
+          Contact Us
+        </Button>
+      </HStack>
     </>
   );
 };
