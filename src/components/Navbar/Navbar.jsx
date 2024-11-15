@@ -7,8 +7,8 @@ import {
   MenuRoot,
   MenuTrigger,
 } from "../../lib/chakra-components/ui/menu";
-import LumineLogo from "../../assets/logo.png";
-import MenuIcon from "../../assets/menu-dropdown-icon.png";
+import LumineLogo from "../../assets/navbar/logo.png";
+import MenuIcon from "../../assets/navbar/menu-dropdown-icon.png";
 
 const Navbar = () => {
   return (
