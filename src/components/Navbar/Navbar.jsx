@@ -20,6 +20,7 @@ import MenuIcon from "../../assets/navbar/menu-dropdown-icon.png";
 import BlackMenuIcon from "../../assets/navbar/menu-dropdown-icon-black.png";
 import "../../styles/fonts.css";
 import "../../styles/menu.css";
+import styles from "../../styles/navbar.module.css";
 
 const ServicesMegaMenu = () => {
   return (
@@ -36,41 +37,13 @@ const ServicesMegaMenu = () => {
             borderRadius="0px"
             position="relative"
             px="10px"
+            className={styles.servicesMegaMenuButton}
             _hover={{
               color: "white",
               backgroundColor: "black",
+              borderBottom: "5px solid #BEAB7C",
             }}
             css={{
-              "&[data-state=open]": {
-                color: "white !important",
-                backgroundColor: "black !important",
-              },
-              // Default state - show white icon (MenuIcon), hide black icon
-              "& img:first-of-type": {
-                display: "block",
-              },
-              "& img:last-child": {
-                display: "none",
-              },
-              // Navbar hover state - show black icon, hide white icon
-              "[data-state='hover'] &:not(:hover):not([data-state=open])": {
-                color: "black",
-                "& img:first-of-type": {
-                  display: "none",
-                },
-                "& img:last-child": {
-                  display: "block",
-                },
-              },
-              // Services hover or open state - show white icon, hide black icon
-              "&:hover, &[data-state=open]": {
-                "& img:first-of-type": {
-                  display: "block !important",
-                },
-                "& img:last-child": {
-                  display: "none !important",
-                },
-              },
               transition: "all 0.3s ease",
             }}
           >
@@ -198,15 +171,10 @@ const Menu = () => {
           _hover={{
             color: "white",
             backgroundColor: "black",
+            borderBottom: "5px solid #BEAB7C",
           }}
+          className={styles.menuButton}
           css={{
-            '[data-state="hover"] &': {
-              color: "black",
-            },
-            "&[data-state=open]": {
-              color: "white",
-              backgroundColor: "black",
-            },
             transition: "all 0.3s ease",
           }}
         >
@@ -227,15 +195,10 @@ const Menu = () => {
           _hover={{
             color: "white",
             backgroundColor: "black",
+            borderBottom: "5px solid #BEAB7C",
           }}
+          className={styles.menuButton}
           css={{
-            '[data-state="hover"] &': {
-              color: "black",
-            },
-            "&[data-state=open]": {
-              color: "white",
-              backgroundColor: "black",
-            },
             transition: "all 0.3s ease",
           }}
         >
@@ -259,15 +222,10 @@ const Menu = () => {
           _hover={{
             color: "white",
             backgroundColor: "black",
+            borderBottom: "5px solid #BEAB7C",
           }}
+          className={styles.menuButton}
           css={{
-            '[data-state="hover"] &': {
-              color: "black",
-            },
-            "&[data-state=open]": {
-              color: "white",
-              backgroundColor: "black",
-            },
             transition: "all 0.3s ease",
           }}
         >
@@ -288,15 +246,10 @@ const Menu = () => {
           _hover={{
             color: "white",
             backgroundColor: "black",
+            borderBottom: "5px solid #BEAB7C",
           }}
+          className={styles.menuButton}
           css={{
-            '[data-state="hover"] &': {
-              color: "black",
-            },
-            "&[data-state=open]": {
-              color: "white",
-              backgroundColor: "black",
-            },
             transition: "all 0.3s ease",
           }}
         >
@@ -331,10 +284,8 @@ const Navbar = () => {
             e.currentTarget.dataset.state = "hover";
           }
         }}
+        className={styles.navbarGrid}
         css={{
-          "&[data-state='hover']": {
-            backgroundColor: "white",
-          },
           transition: "background-color 0.3s ease",
         }}
       >
@@ -349,19 +300,14 @@ const Navbar = () => {
             py={"5px"}
             pl={"20px"}
             cursor={"pointer"}
+            className={styles.chakraStack}
           >
             <Image src={LumineLogo} alt="" height={"50px"} width={"50px"} />
             <Text
               fontSize={"24px"}
               fontWeight={500}
+              className={styles.logoText}
               css={{
-                '[data-state="hover"] &': {
-                  color: "black",
-                },
-                ".chakra-stack:hover &": {
-                  // Add this selector
-                  color: "white !important", // Use !important to override the navbar hover state
-                },
                 transition: "color 0.3s ease",
               }}
             >
@@ -379,21 +325,19 @@ const Navbar = () => {
         <GridItem justifySelf={"end"} py={"5px"}>
           <Button
             fontWeight={400}
-            fontSize={"15px"}
+            fontSize={"16px"}
             color={"white"}
             background={"none"}
             borderColor={"white"}
             borderRadius={"10px"}
             cursor={"pointer"}
+            overflow="hidden" // Add this
             _hover={{
               backgroundColor: "black",
               color: "#BEAB7C",
             }}
+            className={styles.contactButton}
             css={{
-              '[data-state="hover"] &': {
-                color: "black",
-                borderColor: "black",
-              },
               transition: "all 0.3s ease",
             }}
           >

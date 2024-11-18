@@ -1,0 +1,88 @@
+/* ServicesMegaMenu Button */
+.servicesMegaMenuButton[data-state="open"] {
+  color: white !important;
+  background-color: black !important;
+}
+
+.servicesMegaMenuButton img:first-of-type {
+  display: block;
+}
+
+.servicesMegaMenuButton img:last-child {
+  display: none;
+}
+
+[data-state="hover"]
+  .servicesMegaMenuButton:not(:hover):not([data-state="open"]) {
+  color: black;
+}
+
+[data-state="hover"]
+  .servicesMegaMenuButton:not(:hover):not([data-state="open"])
+  img:first-of-type {
+  display: none;
+}
+
+[data-state="hover"]
+  .servicesMegaMenuButton:not(:hover):not([data-state="open"])
+  img:last-child {
+  display: block;
+}
+
+.servicesMegaMenuButton:hover img:first-of-type,
+.servicesMegaMenuButton[data-state="open"] img:first-of-type {
+  display: block !important;
+}
+
+.servicesMegaMenuButton:hover img:last-child,
+.servicesMegaMenuButton[data-state="open"] img:last-child {
+  display: none !important;
+}
+
+/* Menu Button */
+[data-state="hover"] .menuButton {
+  color: black;
+}
+
+/* Logo Text */
+[data-state="hover"] .logoText {
+  color: black;
+}
+
+.chakraStack:hover .logoText {
+  color: white !important;
+}
+
+/* Contact Button */
+[data-state="hover"] .contactButton {
+  color: black;
+  border-color: black;
+}
+
+.contactButton::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform: scale(10, 10);
+  opacity: 0;
+  transition: transform 0.5s, opacity 1s;
+}
+
+.contactButton:active::after {
+  transform: scale(0, 0);
+  opacity: 0.3;
+  transition: 0s;
+}
+
+/* Navbar Grid */
+.navbarGrid[data-state="hover"] {
+  background-color: white;
+}
