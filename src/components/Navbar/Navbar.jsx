@@ -1,4 +1,12 @@
-import { HStack, Image, Text, Grid, GridItem } from "@chakra-ui/react";
+import {
+  HStack,
+  Image,
+  Text,
+  Grid,
+  GridItem,
+  Box,
+  VStack,
+} from "@chakra-ui/react";
 import { Button } from "../../lib/chakra-components/ui/button";
 import {
   MenuContent,
@@ -11,7 +19,128 @@ import LumineLogo from "../../assets/navbar/logo.png";
 import MenuIcon from "../../assets/navbar/menu-dropdown-icon.png";
 import BlackMenuIcon from "../../assets/navbar/menu-dropdown-icon-black.png";
 import "../../styles/fonts.css";
-import { useState } from "react";
+import "../../styles/menu.css";
+
+const ServicesMegaMenu = () => {
+  return (
+    <>
+      <MenuRoot>
+        <MenuTrigger asChild>
+          <Button
+            backgroundColor="inherit"
+            color="white"
+            size="sm"
+            fontSize="18px"
+            fontWeight={500}
+            height="100%"
+            borderRadius="0px"
+            position="relative"
+            _hover={{
+              color: "black",
+              backgroundColor: "white",
+            }}
+            css={{
+              "&[data-state=open]": {
+                color: "black",
+                backgroundColor: "white",
+              },
+              "& img:last-child": {
+                display: "none",
+              },
+              "&:hover img:first-of-type, &[data-state=open] img:first-of-type":
+                {
+                  display: "none",
+                },
+              "&:hover img:last-child, &[data-state=open] img:last-child": {
+                display: "block",
+              },
+            }}
+          >
+            Services
+            <Image src={MenuIcon} />
+            <Image src={BlackMenuIcon} />
+          </Button>
+        </MenuTrigger>
+        <MenuContent width="100vw">
+          <Box>
+            <HStack
+              justifyContent={"space-evenly"}
+              alignItems={"flex-start"}
+              py={"10px"}
+            >
+              {/* Immigration Services */}
+              <VStack width={"200px"} alignItems={"flex-start"} gap={"20px"}>
+                {/* Header */}
+                <Text color={"#BEAB7C"} fontSize={"18px"} fontWeight={700}>
+                  Immigration Services
+                </Text>
+                {/* List */}
+                <Text fontSize={"16px"} fontWeight={400}>
+                  Spouse Visa
+                </Text>
+                <Text fontSize={"16px"} fontWeight={400}>
+                  British Citizenship Application
+                </Text>
+                <Text fontSize={"16px"} fontWeight={400}>
+                  UK Visitor Visa
+                </Text>
+                <Text fontSize={"16px"} fontWeight={400}>
+                  Entry Clearance Applications from Outside of UK
+                </Text>
+                <Text fontSize={"16px"} fontWeight={400}>
+                  Skilled Worker Visa
+                </Text>
+                <Text fontSize={"16px"} fontWeight={400}>
+                  Certificate of Sponsorship
+                </Text>
+                <Text fontSize={"16px"} fontWeight={400}>
+                  Student Visa
+                </Text>
+                <Text fontSize={"16px"} fontWeight={400}>
+                  Visa Extensions
+                </Text>
+                <Text fontSize={"16px"} fontWeight={400}>
+                  Indefinite Leave to Remain
+                </Text>
+              </VStack>
+              <VStack width={"200px"} alignItems={"flex-start"} gap={"20px"}>
+                <Text color={"#BEAB7C"} fontSize={"18px"} fontWeight={700}>
+                  Residential & Commercial Property
+                </Text>
+              </VStack>
+              <VStack width={"200px"} alignItems={"flex-start"} gap={"20px"}>
+                <Text color={"#BEAB7C"} fontSize={"18px"} fontWeight={700}>
+                  Dispute Resolution and Civil Litigation
+                </Text>
+              </VStack>
+              <VStack width={"200px"} alignItems={"flex-start"} gap={"20px"}>
+                <Text color={"#BEAB7C"} fontSize={"18px"} fontWeight={700}>
+                  Landlord and Tenant Disputes
+                </Text>
+              </VStack>
+              <VStack width={"200px"} alignItems={"flex-start"} gap={"20px"}>
+                {/* Header */}
+                <Text color={"#BEAB7C"} fontSize={"18px"} fontWeight={700}>
+                  Family and Children
+                </Text>
+                {/* List */}
+                <Text fontSize={"16px"} fontWeight={400}>
+                  Divorce{" "}
+                </Text>
+                <Text fontSize={"16px"} fontWeight={400}>
+                  Pre Nuptial Agreements{" "}
+                </Text>
+                <Text fontSize={"16px"} fontWeight={400}>
+                  Child Arrangements{" "}
+                </Text>
+              </VStack>
+            </HStack>
+          </Box>
+        </MenuContent>
+      </MenuRoot>
+    </>
+  );
+};
 
 const Menu = () => {
   return (
@@ -46,9 +175,10 @@ const Menu = () => {
                 "& img:last-child": {
                   display: "none",
                 },
-                "&:hover img:first-child, &[data-state=open] img:first-child": {
-                  display: "none",
-                },
+                "&:hover img:first-of-type, &[data-state=open] img:first-of-type":
+                  {
+                    display: "none",
+                  },
                 "&:hover img:last-child, &[data-state=open] img:last-child": {
                   display: "block",
                 },
@@ -67,116 +197,10 @@ const Menu = () => {
             <MenuItem value="export-a">Export</MenuItem>
           </MenuContent>
         </MenuRoot>
+
         {/* Services */}
-        <MenuRoot>
-          <MenuTrigger asChild>
-            <Button
-              backgroundColor="inherit"
-              color="white"
-              size="sm"
-              fontSize="18px"
-              fontWeight={500}
-              height="100%"
-              borderRadius="0px"
-              position="relative"
-              _hover={{
-                color: "black",
-                backgroundColor: "white",
-              }}
-              css={{
-                "&[data-state=open]": {
-                  color: "black",
-                  backgroundColor: "white",
-                },
-                "& img:last-child": {
-                  display: "none",
-                },
-                "&:hover img:first-child, &[data-state=open] img:first-child": {
-                  display: "none",
-                },
-                "&:hover img:last-child, &[data-state=open] img:last-child": {
-                  display: "block",
-                },
-              }}
-            >
-              People
-              <Image src={MenuIcon} />
-              <Image src={BlackMenuIcon} />
-            </Button>
-          </MenuTrigger>
-          <MenuContent
-            // border={"0.5px solid #FFFFFF"}
-            borderRadius={"8px"}
-            width={"200px"}
-          >
-            <MenuItem
-              value="immigration-services"
-              cursor={"pointer"}
-              fontSize={"12px"}
-              fontWeight={500}
-              _hover={{
-                color: "#BEAB7C",
-              }}
-            >
-              Immigration Services
-            </MenuItem>
-            <MenuItem
-              value="property"
-              cursor={"pointer"}
-              fontSize={"12px"}
-              fontWeight={500}
-              _hover={{
-                color: "#BEAB7C",
-              }}
-            >
-              Residential & Commercial Property{" "}
-            </MenuItem>
-            <MenuItem
-              value="res-litigation"
-              cursor={"pointer"}
-              fontSize={"12px"}
-              fontWeight={500}
-              _hover={{
-                color: "#BEAB7C",
-              }}
-            >
-              Dispute Resolution & Civil Litigation{" "}
-            </MenuItem>
-            <MenuItem
-              value="disputes"
-              cursor={"pointer"}
-              fontSize={"12px"}
-              fontWeight={500}
-              _hover={{
-                color: "#BEAB7C",
-              }}
-            >
-              Landlord & Tenant Disputes{" "}
-            </MenuItem>
-            <MenuItem
-              value="fam-children"
-              cursor={"pointer"}
-              fontSize={"12px"}
-              fontWeight={500}
-              _hover={{
-                color: "#BEAB7C",
-              }}
-            >
-              Family & Children
-            </MenuItem>
-            <MenuItem
-              value="injury"
-              cursor={"pointer"}
-              fontSize={"12px"}
-              fontWeight={500}
-              _hover={{
-                color: "#BEAB7C",
-              }}
-            >
-              Personal Injury
-            </MenuItem>
-          </MenuContent>
-        </MenuRoot>
+        <ServicesMegaMenu />
+
         {/* Menu */}
         <MenuRoot>
           <MenuTrigger asChild>
@@ -201,9 +225,10 @@ const Menu = () => {
                 "& img:last-child": {
                   display: "none",
                 },
-                "&:hover img:first-child, &[data-state=open] img:first-child": {
-                  display: "none",
-                },
+                "&:hover img:first-of-type, &[data-state=open] img:first-of-type":
+                  {
+                    display: "none",
+                  },
                 "&:hover img:last-child, &[data-state=open] img:last-child": {
                   display: "block",
                 },

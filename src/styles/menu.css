@@ -1,0 +1,33 @@
+.chakra-menu__positioner {
+  position: static !important;
+  isolation: auto !important;
+  min-width: unset !important;
+  top: unset !important;
+  left: unset !important;
+  transform: none !important;
+  z-index: auto !important;
+  --transform-origin: unset !important;
+  --reference-width: unset !important;
+  --available-width: unset !important;
+  --available-height: unset !important;
+  --x: unset !important;
+  --y: unset !important;
+  --z-index: unset !important;
+}
+
+[data-scope="menu"][data-part="positioner"] {
+  position: static !important;
+  isolation: auto !important;
+  min-width: unset !important;
+  top: unset !important;
+  left: unset !important;
+  transform: none !important;
+  z-index: auto !important;
+  --transform-origin: unset !important;
+  --reference-width: unset !important;
+  --available-width: unset !important;
+  --available-height: unset !important;
+  --x: unset !important;
+  --y: unset !important;
+  --z-index: unset !important;
+}
