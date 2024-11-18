@@ -5,7 +5,7 @@ const LandingPage = () => {
   return (
     <>
       <Navbar />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
