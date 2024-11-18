@@ -16,14 +16,20 @@ import TwitterLogo from "../../assets/footer/twitter.png";
 import LinkedInLogo from "../../assets/footer/linkedin.png";
 import InstagramLogo from "../../assets/footer/instagram.png";
 import { FaLocationDot } from "react-icons/fa6";
-import { BsFillTelephoneFill } from "react-icons/bs";
-import { FaFax } from "react-icons/fa";
-import { MdOutlineAlternateEmail } from "react-icons/md";
+import { BsPrinterFill } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
+import "../../styles/fonts.css";
+import { PiPhoneCallFill } from "react-icons/pi";
 
 const Footer = () => {
   return (
     <>
-      <Box width={"100vw"} borderTop={"0.5px solid #707070"} px={"100px"}>
+      <Box
+        width={"100vw"}
+        borderTop={"0.5px solid #707070"}
+        px={"100px"}
+        style={{ fontFamily: "CeraRoundPro" }}
+      >
         {/* Top */}
         <HStack justifyContent={"space-between"} alignItems={"center"}>
           {/* address + all */}
@@ -31,7 +37,7 @@ const Footer = () => {
             <Text
               fontSize={"25px"}
               color={"#BEAB7C"}
-              fontWeight={400}
+              fontWeight={500}
               mb={"5px"}
               textAlign={"left"}
             >
@@ -40,25 +46,25 @@ const Footer = () => {
             <VStack justifyContent={"center"} alignItems={"flex-start"}>
               <HStack>
                 <FaLocationDot color={"#BEAB7C"} fontSize={"15px"} />
-                <Text color={"#BEAB7C"} fontSize={"15px"} fontWeight={300}>
+                <Text color={"white"} fontSize={"15px"} fontWeight={300}>
                   Address: 2nd floor, 156 Cromwell Road, London, SW7 4EF
                 </Text>
               </HStack>
               <HStack>
-                <BsFillTelephoneFill color={"#BEAB7C"} fontSize={"15px"} />
-                <Text color={"#BEAB7C"} fontSize={"15px"} fontWeight={300}>
+                <PiPhoneCallFill color={"#BEAB7C"} fontSize={"15px"} />
+                <Text color={"white"} fontSize={"15px"} fontWeight={300}>
                   Tel: 02039502246
                 </Text>
               </HStack>
               <HStack>
-                <FaFax color={"#BEAB7C"} fontSize={"15px"} />
-                <Text color={"#BEAB7C"} fontSize={"15px"} fontWeight={300}>
+                <BsPrinterFill color={"#BEAB7C"} fontSize={"15px"} />
+                <Text color={"white"} fontSize={"15px"} fontWeight={300}>
                   Fax: 02030062503
                 </Text>
               </HStack>
               <HStack>
-                <MdOutlineAlternateEmail color={"#BEAB7C"} fontSize={"15px"} />
-                <Text color={"#BEAB7C"} fontSize={"15px"} fontWeight={300}>
+                <MdEmail color={"#BEAB7C"} fontSize={"15px"} />
+                <Text color={"white"} fontSize={"15px"} fontWeight={300}>
                   Email: info@luminelaw.com
                 </Text>
               </HStack>
@@ -122,7 +128,7 @@ const Footer = () => {
                 height={"65px"}
                 width={"50px"}
               />
-              <Text fontSize="25px" fontWeight={500} color={"#BEAB7C"}>
+              <Text fontSize="25px" fontWeight={500}>
                 LUMINE SOLICITORS
               </Text>
             </HStack>
@@ -172,7 +178,13 @@ const Footer = () => {
                 Disclaimer
               </Text>
             </HStack>
-            <Text fontSize={"15px"} fontWeight={400}>
+            <Text
+              fontSize={"15px"}
+              fontWeight={400}
+              fontFamily={
+                "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
+              }
+            >
               © Copyright 2024 Lumine Law | All Rights Reserved
             </Text>
           </VStack>

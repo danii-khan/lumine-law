@@ -1,4 +1,4 @@
-import { HStack, Image, Text } from "@chakra-ui/react";
+import { HStack, Image, Text, Grid, GridItem } from "@chakra-ui/react";
 import { Button } from "../../lib/chakra-components/ui/button";
 import {
   MenuContent,
@@ -9,28 +9,33 @@ import {
 } from "../../lib/chakra-components/ui/menu";
 import LumineLogo from "../../assets/navbar/logo.png";
 import MenuIcon from "../../assets/navbar/menu-dropdown-icon.png";
+import "../../styles/fonts.css";
 
 const Navbar = () => {
   return (
     <>
-      <HStack
+      <Grid
+        templateColumns={"repeat(3, 1fr)"}
         width={"100vw"}
         justifyContent={"space-between"}
         alignItems={"center"}
         px={"20px"}
         py={"5px"}
+        style={{ fontFamily: "CeraRoundPro" }}
       >
-        {/* logo + menu */}
-        <HStack gap={"150px"}>
-          {/* Logo + Title */}
-          <HStack>
+        {/* Logo + Title */}
+        <GridItem>
+          <HStack justifyContent={"flex-start"} alignItems={"center"}>
             <Image src={LumineLogo} alt="" height={"50px"} width={"50px"} />
-            <Text fontSize={"24px"} fontWeight={500} color="#BEAB7C">
-              Lumine Solicitors
+            <Text fontSize={"24px"} fontWeight={500}>
+              LUMINE SOLICITORS
             </Text>
           </HStack>
-          {/* Menu Options */}
-          <HStack>
+        </GridItem>
+
+        {/* Menu Options */}
+        <GridItem>
+          <HStack justifyContent={"center"} alignItems={"center"} gap={"20px"}>
             {/* People */}
             <MenuRoot>
               <MenuTrigger asChild>
@@ -38,7 +43,7 @@ const Navbar = () => {
                   backgroundColor="inherit"
                   color="white"
                   size="sm"
-                  fontSize="14px"
+                  fontSize="18px"
                   fontWeight={500}
                   _hover={{
                     color: "#BEAB7C",
@@ -64,7 +69,7 @@ const Navbar = () => {
                   backgroundColor={"inherit"}
                   color={"white"}
                   size="sm"
-                  fontSize={"14px"}
+                  fontSize={"18px"}
                   fontWeight={500}
                   _hover={{
                     color: "#BEAB7C",
@@ -155,7 +160,7 @@ const Navbar = () => {
                   backgroundColor={"inherit"}
                   color={"white"}
                   size="sm"
-                  fontSize={"14px"}
+                  fontSize={"18px"}
                   fontWeight={500}
                   _hover={{
                     color: "#BEAB7C",
@@ -177,26 +182,28 @@ const Navbar = () => {
               </MenuContent>
             </MenuRoot>
           </HStack>
-        </HStack>
+        </GridItem>
 
         {/* Contact Button */}
-        <Button
-          fontWeight={400}
-          fontSize={"15px"}
-          color={"white"}
-          background={"none"}
-          borderColor={"white"}
-          borderRadius={"10px"}
-          cursor={"pointer"}
-          _hover={{
-            // backgroundColor: "#30302e",
-            borderColor: "#BEAB7C",
-            color: "#BEAB7C",
-          }}
-        >
-          Contact Us
-        </Button>
-      </HStack>
+        <GridItem justifySelf={"end"}>
+          <Button
+            fontWeight={400}
+            fontSize={"15px"}
+            color={"white"}
+            background={"none"}
+            borderColor={"white"}
+            borderRadius={"10px"}
+            cursor={"pointer"}
+            _hover={{
+              // backgroundColor: "#30302e",
+              borderColor: "#BEAB7C",
+              color: "#BEAB7C",
+            }}
+          >
+            Contact Us
+          </Button>
+        </GridItem>
+      </Grid>
     </>
   );
 };
