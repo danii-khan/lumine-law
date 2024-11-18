@@ -35,25 +35,43 @@ const ServicesMegaMenu = () => {
             height="100%"
             borderRadius="0px"
             position="relative"
+            px="10px"
             _hover={{
-              color: "black",
-              backgroundColor: "white",
+              color: "white",
+              backgroundColor: "black",
             }}
             css={{
               "&[data-state=open]": {
-                color: "black",
-                backgroundColor: "white",
+                color: "white !important",
+                backgroundColor: "black !important",
+              },
+              // Default state - show white icon (MenuIcon), hide black icon
+              "& img:first-of-type": {
+                display: "block",
               },
               "& img:last-child": {
                 display: "none",
               },
-              "&:hover img:first-of-type, &[data-state=open] img:first-of-type":
-                {
+              // Navbar hover state - show black icon, hide white icon
+              "[data-state='hover'] &:not(:hover):not([data-state=open])": {
+                color: "black",
+                "& img:first-of-type": {
                   display: "none",
                 },
-              "&:hover img:last-child, &[data-state=open] img:last-child": {
-                display: "block",
+                "& img:last-child": {
+                  display: "block",
+                },
               },
+              // Services hover or open state - show white icon, hide black icon
+              "&:hover, &[data-state=open]": {
+                "& img:first-of-type": {
+                  display: "block !important",
+                },
+                "& img:last-child": {
+                  display: "none !important",
+                },
+              },
+              transition: "all 0.3s ease",
             }}
           >
             Services
@@ -163,105 +181,127 @@ const Menu = () => {
       <HStack
         justifyContent={"center"}
         alignItems={"center"}
-        gap={"20px"}
+        gap={"0px"}
         height={"100%"}
       >
+        {/* About */}
+        <Button
+          backgroundColor="inherit"
+          color="white"
+          size="sm"
+          fontSize="18px"
+          fontWeight={500}
+          height="100%"
+          borderRadius="0px"
+          position="relative"
+          px="10px"
+          _hover={{
+            color: "white",
+            backgroundColor: "black",
+          }}
+          css={{
+            '[data-state="hover"] &': {
+              color: "black",
+            },
+            "&[data-state=open]": {
+              color: "white",
+              backgroundColor: "black",
+            },
+            transition: "all 0.3s ease",
+          }}
+        >
+          About
+        </Button>
+
         {/* People */}
-        <MenuRoot>
-          <MenuTrigger asChild>
-            <Button
-              backgroundColor="inherit"
-              color="white"
-              size="sm"
-              fontSize="18px"
-              fontWeight={500}
-              height="100%"
-              borderRadius="0px"
-              position="relative"
-              _hover={{
-                color: "black",
-                backgroundColor: "white",
-              }}
-              css={{
-                "&[data-state=open]": {
-                  color: "black",
-                  backgroundColor: "white",
-                },
-                "& img:last-child": {
-                  display: "none",
-                },
-                "&:hover img:first-of-type, &[data-state=open] img:first-of-type":
-                  {
-                    display: "none",
-                  },
-                "&:hover img:last-child, &[data-state=open] img:last-child": {
-                  display: "block",
-                },
-              }}
-            >
-              People
-              <Image src={MenuIcon} />
-              <Image src={BlackMenuIcon} />
-            </Button>
-          </MenuTrigger>
-          <MenuContent>
-            <MenuItem value="new-txt-a">New Text File</MenuItem>
-            <MenuItem value="new-file-a">New File...</MenuItem>
-            <MenuItem value="new-win-a">New Window</MenuItem>
-            <MenuItem value="open-file-a">Open File...</MenuItem>
-            <MenuItem value="export-a">Export</MenuItem>
-          </MenuContent>
-        </MenuRoot>
+        <Button
+          backgroundColor="inherit"
+          color="white"
+          size="sm"
+          fontSize="18px"
+          fontWeight={500}
+          height="100%"
+          borderRadius="0px"
+          position="relative"
+          px="10px"
+          _hover={{
+            color: "white",
+            backgroundColor: "black",
+          }}
+          css={{
+            '[data-state="hover"] &': {
+              color: "black",
+            },
+            "&[data-state=open]": {
+              color: "white",
+              backgroundColor: "black",
+            },
+            transition: "all 0.3s ease",
+          }}
+        >
+          People
+        </Button>
 
         {/* Services */}
         <ServicesMegaMenu />
 
-        {/* Menu */}
-        <MenuRoot>
-          <MenuTrigger asChild>
-            <Button
-              backgroundColor={"inherit"}
-              color={"white"}
-              size="sm"
-              fontSize={"18px"}
-              fontWeight={500}
-              height={"100%"}
-              borderRadius="0px"
-              position="relative"
-              _hover={{
-                color: "black",
-                backgroundColor: "white",
-              }}
-              css={{
-                "&[data-state=open]": {
-                  color: "black",
-                  backgroundColor: "white",
-                },
-                "& img:last-child": {
-                  display: "none",
-                },
-                "&:hover img:first-of-type, &[data-state=open] img:first-of-type":
-                  {
-                    display: "none",
-                  },
-                "&:hover img:last-child, &[data-state=open] img:last-child": {
-                  display: "block",
-                },
-              }}
-            >
-              Menu
-              <Image src={MenuIcon} />
-              <Image src={BlackMenuIcon} />
-            </Button>
-          </MenuTrigger>
-          <MenuContent>
-            <MenuItem value="new-txt-a">New Text File</MenuItem>
-            <MenuItem value="new-file-a">New File...</MenuItem>
-            <MenuItem value="new-win-a">New Window</MenuItem>
-            <MenuItem value="open-file-a">Open File...</MenuItem>
-            <MenuItem value="export-a">Export</MenuItem>
-          </MenuContent>
-        </MenuRoot>
+        {/* News */}
+        <Button
+          backgroundColor="inherit"
+          color="white"
+          size="sm"
+          fontSize="18px"
+          fontWeight={500}
+          height="100%"
+          borderRadius="0px"
+          position="relative"
+          px="10px"
+          _hover={{
+            color: "white",
+            backgroundColor: "black",
+          }}
+          css={{
+            '[data-state="hover"] &': {
+              color: "black",
+            },
+            "&[data-state=open]": {
+              color: "white",
+              backgroundColor: "black",
+            },
+            transition: "all 0.3s ease",
+          }}
+        >
+          News
+        </Button>
+
+        {/* Insights */}
+        <Button
+          backgroundColor="inherit"
+          color="white"
+          size="sm"
+          fontSize="18px"
+          fontWeight={500}
+          height="100%"
+          borderRadius="0px"
+          position="relative"
+          px="10px"
+          _hover={{
+            color: "white",
+            backgroundColor: "black",
+          }}
+          css={{
+            '[data-state="hover"] &': {
+              color: "black",
+            },
+            "&[data-state=open]": {
+              color: "white",
+              backgroundColor: "black",
+            },
+            transition: "all 0.3s ease",
+          }}
+        >
+          Insights
+        </Button>
       </HStack>
     </>
   );
@@ -275,14 +315,56 @@ const Navbar = () => {
         width={"100vw"}
         justifyContent={"space-between"}
         alignItems={"center"}
-        px={"20px"}
+        pr={"20px"}
         style={{ fontFamily: "CeraRoundPro" }}
+        _hover={{
+          backgroundColor: "white",
+          '[data-state="hover"]': true,
+        }}
+        data-state="default"
+        onMouseEnter={(e) => (e.currentTarget.dataset.state = "hover")}
+        onMouseLeave={(e) => {
+          // Only remove hover state if menu is not open
+          if (!document.querySelector('[data-state="open"]')) {
+            e.currentTarget.dataset.state = "default";
+          } else {
+            e.currentTarget.dataset.state = "hover";
+          }
+        }}
+        css={{
+          "&[data-state='hover']": {
+            backgroundColor: "white",
+          },
+          transition: "background-color 0.3s ease",
+        }}
       >
         {/* Logo + Title */}
-        <GridItem py={"5px"}>
-          <HStack justifyContent={"flex-start"} alignItems={"center"}>
+        <GridItem>
+          <HStack
+            justifyContent={"flex-start"}
+            alignItems={"center"}
+            _hover={{ backgroundColor: "black", color: "white" }}
+            width={"325px"}
+            transition={"all 0.3s ease"}
+            py={"5px"}
+            pl={"20px"}
+            cursor={"pointer"}
+          >
             <Image src={LumineLogo} alt="" height={"50px"} width={"50px"} />
-            <Text fontSize={"24px"} fontWeight={500}>
+            <Text
+              fontSize={"24px"}
+              fontWeight={500}
+              css={{
+                '[data-state="hover"] &': {
+                  color: "black",
+                },
+                ".chakra-stack:hover &": {
+                  // Add this selector
+                  color: "white !important", // Use !important to override the navbar hover state
+                },
+                transition: "color 0.3s ease",
+              }}
+            >
               LUMINE SOLICITORS
             </Text>
           </HStack>
@@ -304,9 +386,15 @@ const Navbar = () => {
             borderRadius={"10px"}
             cursor={"pointer"}
             _hover={{
-              // backgroundColor: "#30302e",
-              borderColor: "#BEAB7C",
+              backgroundColor: "black",
               color: "#BEAB7C",
+            }}
+            css={{
+              '[data-state="hover"] &': {
+                color: "black",
+                borderColor: "black",
+              },
+              transition: "all 0.3s ease",
             }}
           >
             Contact Us
