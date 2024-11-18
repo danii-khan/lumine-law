@@ -103,21 +103,36 @@ const ServicesMegaMenu = () => {
                   Indefinite Leave to Remain
                 </Text>
               </VStack>
+
+              {/* Residential & Commercial Property*/}
               <VStack width={"200px"} alignItems={"flex-start"} gap={"20px"}>
+                {/* Header */}
+
                 <Text color={"#BEAB7C"} fontSize={"18px"} fontWeight={700}>
-                  Residential & Commercial Property
+                  Residential and Commercial Property
                 </Text>
+                {/* List */}
               </VStack>
+
+              {/* Dispute Resolution and Civil Litigation */}
               <VStack width={"200px"} alignItems={"flex-start"} gap={"20px"}>
+                {/* Header */}
                 <Text color={"#BEAB7C"} fontSize={"18px"} fontWeight={700}>
                   Dispute Resolution and Civil Litigation
                 </Text>
+                {/* List */}
               </VStack>
+
+              {/* Landlord and Tenant Disputes */}
               <VStack width={"200px"} alignItems={"flex-start"} gap={"20px"}>
+                {/* Header */}
                 <Text color={"#BEAB7C"} fontSize={"18px"} fontWeight={700}>
                   Landlord and Tenant Disputes
                 </Text>
+                {/* List */}
               </VStack>
+
+              {/* Family and Children */}
               <VStack width={"200px"} alignItems={"flex-start"} gap={"20px"}>
                 {/* Header */}
                 <Text color={"#BEAB7C"} fontSize={"18px"} fontWeight={700}>
