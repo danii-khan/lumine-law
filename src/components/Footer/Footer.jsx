@@ -30,6 +30,7 @@ const Footer = () => {
         px={"100px"}
         pb={"10px"}
         style={{ fontFamily: "CeraRoundPro" }}
+        backgroundColor={"black"}
       >
         {/* Top */}
         <HStack justifyContent={"space-between"} alignItems={"center"}>

@@ -368,7 +368,7 @@ const Navbar = () => {
           }}
           className={styles.navbarGrid}
           css={{
-            transition: "background-color 0.3s ease",
+            transition: "background-color 0.6s ease",
           }}
         >
           {/* Logo + Title */}

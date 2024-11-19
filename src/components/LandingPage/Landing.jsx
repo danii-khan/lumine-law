@@ -50,7 +50,18 @@ const ScrollSpySidebar = () => {
   }, []);
 
   const scrollToSection = (id) => {
-    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    const section = document.getElementById(id);
+    const navbarHeight = document.querySelector("nav")?.offsetHeight || 0; // Get navbar height
+    const container = document.querySelector(".scroll-container"); // Add this class to your main Container
+
+    if (section && container) {
+      const sectionTop = section.offsetTop - navbarHeight; // Adjust for navbar
+
+      container.scrollTo({
+        top: sectionTop,
+        behavior: "smooth",
+      });
+    }
   };
 
   return (
@@ -59,43 +70,50 @@ const ScrollSpySidebar = () => {
       left="0%"
       top="50%"
       transform="translateY(-50%)"
-      gap={"10px"}
+      gap="10px"
       align="flex-start"
+      zIndex={999}
+      pointerEvents="auto"
     >
       {activeSection !== "none" &&
-        ["Who-we-are", "Our-services", "Panels", "News", "Insights"].map(
-          (id) => (
-            <>
-              <HStack>
-                <Button
-                  key={id}
-                  pl={0}
-                  variant="ghost"
-                  onClick={() => scrollToSection(id)}
-                  background={"none"}
-                  color={"white"}
-                  _hover={{ color: "#beab7c", opacity: "100%" }}
-                  // fontFamily="CeraRoundPro"
-                  fontWeight={400}
-                  fontStyle={"italic"}
-                  fontSize={activeSection === id ? "30px" : "15px"}
-                  mb={activeSection === id ? "100%" : "0"}
-                  opacity={activeSection === id ? "100%" : "25%"}
-                >
-                  <span
-                    style={{
-                      border: "1px solid white",
-                      width: "50px",
-                      opacity: `${activeSection === id ? "100%" : "25%"}`,
-                      mb: `${activeSection === id ? "100px" : "0"}`,
-                    }}
-                  ></span>
-                  {id.split("-").join(" ")}
-                </Button>
-              </HStack>
-            </>
-          )
-        )}
+        [
+          "Who-we-are",
+          "Our-services",
+          "Panels",
+          // "News", "Insights"
+        ].map((id) => (
+          <>
+            <HStack>
+              <Button
+                key={id}
+                pl={0}
+                variant="ghost"
+                onClick={() => scrollToSection(id)}
+                background={"none"}
+                color={"white"}
+                _hover={{ color: "#beab7c", opacity: "100%" }}
+                // fontFamily="CeraRoundPro"
+                fontWeight={400}
+                fontStyle={"italic"}
+                fontSize={activeSection === id ? "30px" : "15px"}
+                mb={activeSection === id ? "100%" : "0"}
+                opacity={activeSection === id ? "100%" : "25%"}
+                transition="all 0.3s ease"
+              >
+                <span
+                  style={{
+                    border: "1px solid white",
+                    width: "50px",
+                    opacity: `${activeSection === id ? "100%" : "25%"}`,
+                    mb: `${activeSection === id ? "100px" : "0"}`,
+                    transition: "opacity 0.3s ease",
+                  }}
+                ></span>
+                {id.split("-").join(" ")}
+              </Button>
+            </HStack>
+          </>
+        ))}
     </VStack>
   );
 };
@@ -103,9 +121,11 @@ const ScrollSpySidebar = () => {
 const LandingPage = () => {
   return (
     <Container
+      className="scroll-container"
       width="100vw"
       maxWidth="100%"
-      overflow="hidden"
+      height="100vh"
+      overflow="auto"
       m={0}
       p={0}
       background="linear-gradient(0deg, 
@@ -115,14 +135,29 @@ const LandingPage = () => {
     #124F66 58.12%, 
     #1B7798 67%, 
     #000000 93%
-    )"
+  )"
+      css={{
+        scrollSnapType: "y mandatory",
+        "&::-webkit-scrollbar": {
+          display: "none", // Optional: hides scrollbar
+        },
+        msOverflowStyle: "none", // Optional: hides scrollbar in IE
+        scrollbarWidth: "none", // Optional: hides scrollbar in Firefox
+      }}
     >
       <Navbar />
-      {/* Hero Section */}
-      <section id="none">
+      {/* Hero section content */}
+      <section
+        id="none"
+        style={{
+          scrollSnapAlign: "start",
+          scrollSnapStop: "always",
+          height: "100vh",
+        }}
+      >
         <Box
           width="100%"
-          height="100vh"
+          height="100%"
           p={0}
           m={0}
           bgImage={`url(${MainBg})`}
@@ -194,10 +229,18 @@ const LandingPage = () => {
       {/* Content Sections */}
       <ScrollSpySidebar />
 
-      <section id="Who-we-are">
+      {/* About */}
+      <section
+        id="Who-we-are"
+        style={{
+          scrollSnapAlign: "start",
+          scrollSnapStop: "always",
+          height: "100vh",
+        }}
+      >
         <Box
           width="100%"
-          height="100vh"
+          height="100%"
           p={0}
           m={0}
           bgImage={`url(${AboutBg})`}
@@ -239,10 +282,19 @@ const LandingPage = () => {
         </Box>
       </section>
 
-      <section id="Our-services">
+      {/* Services content */}
+      <section
+        id="Our-services"
+        style={{
+          scrollSnapAlign: "start",
+          scrollSnapStop: "always",
+          height: "100vh",
+          paddingTop: "50px",
+        }}
+      >
         <Box
           width="100%"
-          height="90vh"
+          height="100%"
           p={0}
           m={0}
           display={"flex"}
@@ -404,10 +456,18 @@ const LandingPage = () => {
         </Box>
       </section>
 
-      <section id="Panels">
+      {/* Panels content */}
+      <section
+        id="Panels"
+        style={{
+          scrollSnapAlign: "start",
+          scrollSnapStop: "always",
+          height: "100vh",
+        }}
+      >
         <Box
           width="100%"
-          height="80vh"
+          height="100%"
           p={0}
           m={0}
           display={"flex"}
@@ -544,22 +604,14 @@ const LandingPage = () => {
         </Box>
       </section>
 
-      {/* <section id="News">
-        <Box minHeight="100vh" p={10}>
-          <Text color="white" fontSize="2xl">
-            News Content
-          </Text>
-        </Box>
-      </section>
-
-      <section id="Insights">
-        <Box minHeight="100vh" p={10}>
-          <Text color="white" fontSize="2xl">
-            Insights Content
-          </Text>
-        </Box>
-      </section> */}
-      <section id="none">
+      {/* Footer  */}
+      <section
+        id="none"
+        style={{
+          scrollSnapAlign: "start",
+          scrollSnapStop: "always",
+        }}
+      >
         <Footer />
       </section>
     </Container>
