@@ -88,8 +88,10 @@
 }
 
 .navbarGrid {
-  position: relative !important;
+  position: fixed !important;
   z-index: 1000 !important;
+  top: 0;
+  background-color: black;
 }
 
 .menuText {
