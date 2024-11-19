@@ -229,10 +229,10 @@ const Menu = () => {
   return (
     <>
       <HStack
+        height={"100%"}
         justifyContent={"center"}
         alignItems={"center"}
         gap={"0px"}
-        height={"100%"}
       >
         {/* About */}
         <Button
@@ -343,7 +343,7 @@ const Navbar = () => {
       <Box position={"relative"} zIndex={1000}>
         <Grid
           templateColumns={"repeat(3, 1fr)"}
-          height={"100px"}
+          height={"50px"}
           width={"100%"}
           justifyContent={"space-between"}
           alignItems={"center"}
@@ -379,7 +379,7 @@ const Navbar = () => {
               _hover={{ backgroundColor: "black", color: "white" }}
               width={"325px"}
               transition={"all 0.3s ease"}
-              py={"25px"}
+              // py={"25px"}
               pl={"20px"}
               cursor={"pointer"}
               className={styles.chakraStack}
