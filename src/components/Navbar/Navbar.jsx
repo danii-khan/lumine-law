@@ -14,7 +14,6 @@ import MenuIcon from "../../assets/navbar/menu-dropdown-icon.png";
 import BlackMenuIcon from "../../assets/navbar/menu-dropdown-icon-black.png";
 import "../../styles/fonts.css";
 import styles from "../../styles/navbar.module.css";
-import { CSSTransition } from "react-transition-group";
 
 const ServicesMegaMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,6 +31,7 @@ const ServicesMegaMenu = () => {
         px="10px"
         className={styles.servicesMegaMenuButton}
         onClick={() => setIsOpen(!isOpen)}
+        data-state={isOpen ? "open" : ""}
         _hover={{
           color: "white",
           backgroundColor: "black",
