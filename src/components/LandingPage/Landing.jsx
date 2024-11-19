@@ -77,44 +77,41 @@ const ScrollSpySidebar = () => {
       pointerEvents="auto"
     >
       {activeSection !== "none" &&
-        [
-          "Who-we-are",
-          "Our-services",
-          "Panels",
-          // "News", "Insights"
-        ].map((id) => (
-          <>
-            <HStack>
-              <Button
-                key={id}
-                pl={0}
-                variant="ghost"
-                onClick={() => scrollToSection(id)}
-                background={"none"}
-                color={"white"}
-                _hover={{ color: "#beab7c", opacity: "100%" }}
-                // fontFamily="CeraRoundPro"
-                fontWeight={400}
-                fontStyle={"italic"}
-                fontSize={activeSection === id ? "30px" : "15px"}
-                mb={activeSection === id ? "100%" : "0"}
-                opacity={activeSection === id ? "100%" : "25%"}
-                transition="all 0.3s ease"
-              >
-                <span
-                  style={{
-                    border: "1px solid white",
-                    width: "50px",
-                    opacity: `${activeSection === id ? "100%" : "25%"}`,
-                    mb: `${activeSection === id ? "100px" : "0"}`,
-                    transition: "opacity 0.3s ease",
-                  }}
-                ></span>
-                {id.split("-").join(" ")}
-              </Button>
-            </HStack>
-          </>
-        ))}
+        ["Who-we-are", "Our-services", "Panels", "News", "Insights"].map(
+          (id) => (
+            <>
+              <HStack>
+                <Button
+                  key={id}
+                  pl={0}
+                  variant="ghost"
+                  onClick={() => scrollToSection(id)}
+                  background={"none"}
+                  color={"white"}
+                  _hover={{ color: "#beab7c", opacity: "100%" }}
+                  // fontFamily="CeraRoundPro"
+                  fontWeight={400}
+                  fontStyle={"italic"}
+                  fontSize={activeSection === id ? "30px" : "15px"}
+                  mb={activeSection === id ? "100%" : "0"}
+                  opacity={activeSection === id ? "100%" : "25%"}
+                  transition="all 0.3s ease"
+                >
+                  <span
+                    style={{
+                      border: "1px solid white",
+                      width: "50px",
+                      opacity: `${activeSection === id ? "100%" : "25%"}`,
+                      mb: `${activeSection === id ? "100px" : "0"}`,
+                      transition: "opacity 0.3s ease",
+                    }}
+                  ></span>
+                  {id.split("-").join(" ")}
+                </Button>
+              </HStack>
+            </>
+          )
+        )}
     </VStack>
   );
 };
@@ -251,35 +248,40 @@ const LandingPage = () => {
           display={"flex"}
           alignItems={"center"}
         >
-          <VStack
-            justifyContent={"flex-start"}
-            alignItems={"flex-start"}
-            width={"50%"}
-            ml={"5%"}
-            gap={"20px"}
+          <Grid
+            templateColumns={"repeat(6, 1fr)"}
+            templateRows={"repeat(2, 1fr)"}
+            gap={"30px"}
           >
-            <Text
-              fontSize={"20px"}
-              fontWeight={300}
-              fontFamily="HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
-              textAlign={"left"}
-            >
-              A whole paragraph, in further details explaining what Lumine Law
-              does. Go into details. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </Text>
-            <Text
-              fontSize={"20px"}
-              fontWeight={300}
-              fontFamily="HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
-              textAlign={"left"}
-            >
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit.
-            </Text>
-          </VStack>
+            <GridItem></GridItem>
+            <GridItem colSpan={"3"}>
+              <Text
+                fontSize={"20px"}
+                fontWeight={300}
+                fontFamily="HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
+                textAlign={"left"}
+              >
+                A whole paragraph, in further details explaining what Lumine Law
+                does. Go into details. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </Text>
+            </GridItem>
+            <GridItem colSpan={"2"}></GridItem>
+            <GridItem></GridItem>
+            <GridItem colSpan={"3"}>
+              <Text
+                fontSize={"20px"}
+                fontWeight={300}
+                fontFamily="HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
+                textAlign={"left"}
+              >
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit.
+              </Text>
+            </GridItem>
+          </Grid>
         </Box>
       </section>
 
