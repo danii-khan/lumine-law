@@ -25,9 +25,10 @@ const Footer = () => {
   return (
     <>
       <Box
-        width={"100vw"}
+        width={"100%"}
         borderTop={"0.5px solid #707070"}
         px={"100px"}
+        pb={"10px"}
         style={{ fontFamily: "CeraRoundPro" }}
       >
         {/* Top */}

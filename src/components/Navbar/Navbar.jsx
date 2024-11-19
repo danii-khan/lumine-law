@@ -28,7 +28,7 @@ const ServicesMegaMenu = () => {
         height="100%"
         borderRadius="0px"
         position="relative"
-        px="10px"
+        px="20px"
         className={styles.servicesMegaMenuButton}
         onClick={() => setIsOpen(!isOpen)}
         data-state={isOpen ? "open" : ""}
@@ -50,7 +50,8 @@ const ServicesMegaMenu = () => {
         top="100%"
         left="50%"
         transform="translateX(-50%)"
-        width="100vw"
+        width="100%"
+        maxWidth="100vw"
         backgroundColor="#111111"
         py={"10px"}
         zIndex={9999}
@@ -243,7 +244,7 @@ const Menu = () => {
           height="100%"
           borderRadius="0px"
           position="relative"
-          px="10px"
+          px="20px"
           _hover={{
             color: "white",
             backgroundColor: "black",
@@ -267,7 +268,7 @@ const Menu = () => {
           height="100%"
           borderRadius="0px"
           position="relative"
-          px="10px"
+          px="20px"
           _hover={{
             color: "white",
             backgroundColor: "black",
@@ -294,7 +295,7 @@ const Menu = () => {
           height="100%"
           borderRadius="0px"
           position="relative"
-          px="10px"
+          px="20px"
           _hover={{
             color: "white",
             backgroundColor: "black",
@@ -318,7 +319,7 @@ const Menu = () => {
           height="100%"
           borderRadius="0px"
           position="relative"
-          px="10px"
+          px="20px"
           _hover={{
             color: "white",
             backgroundColor: "black",
@@ -342,7 +343,8 @@ const Navbar = () => {
       <Box position={"relative"} zIndex={1000}>
         <Grid
           templateColumns={"repeat(3, 1fr)"}
-          width={"100vw"}
+          height={"100px"}
+          width={"100%"}
           justifyContent={"space-between"}
           alignItems={"center"}
           pr={"20px"}
@@ -377,7 +379,7 @@ const Navbar = () => {
               _hover={{ backgroundColor: "black", color: "white" }}
               width={"325px"}
               transition={"all 0.3s ease"}
-              py={"5px"}
+              py={"25px"}
               pl={"20px"}
               cursor={"pointer"}
               className={styles.chakraStack}
@@ -402,10 +404,11 @@ const Navbar = () => {
           </GridItem>
 
           {/* Contact Button */}
-          <GridItem justifySelf={"end"} py={"5px"}>
+          <GridItem justifySelf={"end"}>
             <Button
               fontWeight={400}
-              fontSize={"16px"}
+              fontSize={"18px"}
+              py={"15px"}
               color={"white"}
               background={"none"}
               borderColor={"white"}
