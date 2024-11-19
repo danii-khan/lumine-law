@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
+import AnimatedPanels from "./AnimatedPanels";
 import MainBg from "../../assets/landing/main-bg.jpg";
 import AboutBg from "../../assets/landing/about-bg.png";
 import ServicesBgOne from "../../assets/landing/services-bg-one.png";
@@ -488,119 +489,9 @@ const LandingPage = () => {
             A small intro about what our team is like, diverse etc. just a few
             lines.{" "}
           </Text>
-          <Box
-            height={"50%"}
-            width={"80%"}
-            backgroundColor={"#145c77"}
-            alignSelf={"center"}
-            borderRadius={"8px"}
-          >
-            <Grid
-              templateColumns={"repeat(4, 1fr)"}
-              templateRows={"repeat(3, 1fr)"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              height={"100%"}
-              width={"100%"}
-            >
-              <GridItem justifySelf={"center"}>
-                <Image
-                  src={PanelOne}
-                  height={"60px"}
-                  width={"150px"}
-                  objectFit={"cover"}
-                />
-              </GridItem>
-              <GridItem justifySelf={"center"}>
-                <Image
-                  src={PanelTwo}
-                  height={"60px"}
-                  width={"150px"}
-                  objectFit={"cover"}
-                />
-              </GridItem>
-              <GridItem justifySelf={"center"}>
-                <Image
-                  src={PanelThree}
-                  height={"60px"}
-                  width={"150px"}
-                  objectFit={"cover"}
-                />
-              </GridItem>
-              <GridItem justifySelf={"center"}>
-                <Image
-                  src={PanelFour}
-                  height={"55px"}
-                  width={"150px"}
-                  objectFit={"cover"}
-                />
-              </GridItem>
-              <GridItem justifySelf={"center"}>
-                <Image
-                  src={PanelOne}
-                  height={"60px"}
-                  width={"150px"}
-                  objectFit={"cover"}
-                />
-              </GridItem>
-              <GridItem justifySelf={"center"}>
-                <Image
-                  src={PanelTwo}
-                  height={"60px"}
-                  width={"150px"}
-                  objectFit={"cover"}
-                />
-              </GridItem>
-              <GridItem justifySelf={"center"}>
-                <Image
-                  src={PanelThree}
-                  height={"60px"}
-                  width={"150px"}
-                  objectFit={"cover"}
-                />
-              </GridItem>
-              <GridItem justifySelf={"center"}>
-                <Image
-                  src={PanelFour}
-                  height={"55px"}
-                  width={"150px"}
-                  objectFit={"cover"}
-                />
-              </GridItem>
-              <GridItem justifySelf={"center"}>
-                <Image
-                  src={PanelOne}
-                  height={"60px"}
-                  width={"150px"}
-                  objectFit={"cover"}
-                />
-              </GridItem>
-              <GridItem justifySelf={"center"}>
-                <Image
-                  src={PanelTwo}
-                  height={"60px"}
-                  width={"150px"}
-                  objectFit={"cover"}
-                />
-              </GridItem>
-              <GridItem justifySelf={"center"}>
-                <Image
-                  src={PanelThree}
-                  height={"60px"}
-                  width={"150px"}
-                  objectFit={"cover"}
-                />
-              </GridItem>
-              <GridItem justifySelf={"center"}>
-                <Image
-                  src={PanelFour}
-                  height={"55px"}
-                  width={"150px"}
-                  objectFit={"cover"}
-                />
-              </GridItem>
-            </Grid>
-          </Box>
+          <AnimatedPanels
+            images={[PanelOne, PanelTwo, PanelThree, PanelFour]}
+          />
         </Box>
       </section>
 
