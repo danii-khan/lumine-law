@@ -142,6 +142,7 @@ const LandingPage = () => {
       }}
     >
       <Navbar />
+
       {/* Hero section content */}
       <section
         id="none"
@@ -162,6 +163,7 @@ const LandingPage = () => {
           bgRepeat={"no-repeat"}
           display={"flex"}
           alignItems={"center"}
+          mt={"10px"}
         >
           <VStack
             justifyContent={"flex-start"}
