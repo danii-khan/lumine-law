@@ -1,6 +1,7 @@
+/* CeraRoundPro */
 @font-face {
   font-family: "CeraRoundPro";
-  src: url("../assets/fonts/fontspring-demo-ceraroundpro-light.otf")
+  src: url("../assets/fonts/CeraRoundPro/fontspring-demo-ceraroundpro-light.otf")
     format("opentype");
   font-weight: 300;
   font-style: normal;
@@ -8,7 +9,7 @@
 
 @font-face {
   font-family: "CeraRoundPro";
-  src: url("../assets/fonts/fontspring-demo-ceraroundpro-regular.otf")
+  src: url("../assets/fonts/CeraRoundPro/fontspring-demo-ceraroundpro-regular.otf")
     format("opentype");
   font-weight: 400;
   font-style: normal;
@@ -16,7 +17,7 @@
 
 @font-face {
   font-family: "CeraRoundPro";
-  src: url("../assets/fonts/fontspring-demo-ceraroundpro-medium.otf")
+  src: url("../assets/fonts/CeraRoundPro/fontspring-demo-ceraroundpro-medium.otf")
     format("opentype");
   font-weight: 500;
   font-style: normal;
@@ -24,7 +25,7 @@
 
 @font-face {
   font-family: "CeraRoundPro";
-  src: url("../assets/fonts/fontspring-demo-ceraroundpro-bold.otf")
+  src: url("../assets/fonts/CeraRoundPro/fontspring-demo-ceraroundpro-bold.otf")
     format("opentype");
   font-weight: 700;
   font-style: normal;
@@ -32,8 +33,17 @@
 
 @font-face {
   font-family: "CeraRoundPro";
-  src: url("../assets/fonts/fontspring-demo-ceraroundpro-black.otf")
+  src: url("../assets/fonts/CeraRoundPro/fontspring-demo-ceraroundpro-black.otf")
     format("opentype");
   font-weight: 900;
+  font-style: normal;
+}
+
+/* Inter */
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/static/Inter_24pt-Medium.ttf")
+    format("truetype");
+  font-weight: 500;
   font-style: normal;
 }

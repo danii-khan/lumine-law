@@ -9,14 +9,11 @@ import {
   Input,
   Textarea,
   Button,
-  Image,
 } from "@chakra-ui/react";
 import { Field } from "../../lib/chakra-components/ui/field";
-import { Switch } from "../../lib/chakra-components/ui/switch";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import ContactImg from "../../assets/contact/contact-top.png";
-import WhatsappImg from "../../assets/contact/whatsapp.png";
 import "../../styles/fonts.css";
 import { IoLocationOutline, IoLogoWhatsapp } from "react-icons/io5";
 import { LuPhoneCall } from "react-icons/lu";
@@ -329,7 +326,7 @@ const Contact = () => {
               textAlign={"left"}
             >
               {/* Names */}
-              <HStack gap={"25px"}>
+              <HStack gap={"50px"}>
                 {/* First */}
                 <Field
                   orientation="vertical"
@@ -339,7 +336,7 @@ const Contact = () => {
                   fontSize="25px"
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  maxWidth={"150px"}
+                  maxWidth={"300px"}
                 >
                   <Input
                     placeholder="John"
@@ -350,8 +347,8 @@ const Contact = () => {
                     backgroundColor={"white"}
                     color={"black"}
                     borderColor={"white"}
-                    borderRadius={"4px"}
-                    height={"25px"}
+                    borderRadius={"8px"}
+                    height={"40px"}
                   />
                 </Field>
 
@@ -364,7 +361,7 @@ const Contact = () => {
                   fontSize="25px"
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  maxWidth={"150px"}
+                  maxWidth={"300px"}
                 >
                   <Input
                     placeholder="Doe"
@@ -375,8 +372,8 @@ const Contact = () => {
                     backgroundColor={"white"}
                     color={"black"}
                     borderColor={"white"}
-                    borderRadius={"4px"}
-                    height={"25px"}
+                    borderRadius={"8px"}
+                    height={"40px"}
                   />
                 </Field>
               </HStack>
@@ -389,7 +386,7 @@ const Contact = () => {
                 fontSize="25px"
                 fontWeight={500}
                 fontFamily={"CeraRoundPro"}
-                maxWidth={"325px"}
+                width={"625px"}
               >
                 <Input
                   placeholder="me@example.com"
@@ -399,8 +396,8 @@ const Contact = () => {
                   backgroundColor={"white"}
                   color={"black"}
                   borderColor={"white"}
-                  borderRadius={"4px"}
-                  height={"25px"}
+                  borderRadius={"8px"}
+                  height={"40px"}
                 />
               </Field>
 
@@ -412,7 +409,7 @@ const Contact = () => {
                 fontSize="25px"
                 fontWeight={500}
                 fontFamily={"CeraRoundPro"}
-                maxWidth={"325px"}
+                width={"625px"}
               >
                 <Input
                   placeholder="+44 1234567890"
@@ -422,8 +419,8 @@ const Contact = () => {
                   backgroundColor={"white"}
                   color={"black"}
                   borderColor={"white"}
-                  borderRadius={"4px"}
-                  height={"25px"}
+                  borderRadius={"8px"}
+                  height={"40px"}
                 />
               </Field>
 
@@ -435,7 +432,7 @@ const Contact = () => {
                 fontSize="25px"
                 fontWeight={500}
                 fontFamily={"CeraRoundPro"}
-                width={"325px"}
+                width={"625px"}
               >
                 <Textarea
                   placeholder="Hi, I would like to know more about..."
@@ -445,8 +442,8 @@ const Contact = () => {
                   backgroundColor={"white"}
                   color={"black"}
                   borderColor={"white"}
-                  borderRadius={"4px"}
-                  height={"100px"}
+                  borderRadius={"8px"}
+                  height={"350px"}
                 />
               </Field>
             </VStack>
@@ -471,11 +468,11 @@ const Contact = () => {
 
             {/* Google Maps */}
             <Box
-              width="325px"
-              height="300px"
+              width="625px"
+              height="500px"
               mt={6}
               mb={"50px"}
-              borderRadius="4px"
+              borderRadius="8px"
               overflow="hidden"
               border="1px solid white"
             >
@@ -493,6 +490,7 @@ const Contact = () => {
           <GridItem>2</GridItem>
         </Grid>
 
+        {/* Chat With Us */}
         <HStack
           justifyContent={"flex-end"}
           alignItems={"flex-end"}
@@ -501,12 +499,11 @@ const Contact = () => {
         >
           <Button
             borderRadius={"12px"}
-            height={"20px"}
             _hover={{ backgroundColor: "black", color: "#beab7c" }}
           >
             <Text
               fontWeight="400"
-              fontSize="8px"
+              fontSize="12px"
               fontFamily="Inter"
               transition="all 0.3s ease"
               _groupHover={{ color: "#beab7c" }}
@@ -514,8 +511,8 @@ const Contact = () => {
               Need help?
             </Text>
             <Text
-              fontWeight="500"
-              fontSize="8px"
+              fontWeight="600"
+              fontSize="12px"
               fontFamily="HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
               transition="all 0.3s ease"
               _groupHover={{ color: "#beab7c" }}
@@ -523,30 +520,17 @@ const Contact = () => {
               Chat with us.
             </Text>
           </Button>
-          {/* <Image
-            src={WhatsappImg}
-            alt="Whatsapp logo"
-            height={"50px"}
-            width={"50px"}
-            cursor={"pointer"}
-          /> */}
-          <IoLogoWhatsapp
-            size="5em"
-            style={{
-              backgroundColor: "#4caf50",
-              borderRadius: "10%",
-              cursor: "pointer",
-              transition: "all 0.3s ease",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = "black";
-              e.currentTarget.style.color = "#beab7c";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = "#4caf50";
-              e.currentTarget.style.color = "white";
-            }}
-          />
+
+          {/* WhatsApp logo */}
+          <Box
+            borderRadius="100%"
+            transition="all 0.3s ease"
+            backgroundColor={"#4caf50"}
+            _hover={{ backgroundColor: "black", color: "#beab7c" }}
+            cursor="pointer"
+          >
+            <IoLogoWhatsapp size="5em" />
+          </Box>
         </HStack>
 
         {/* Footer */}
