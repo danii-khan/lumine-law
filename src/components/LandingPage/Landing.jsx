@@ -53,7 +53,7 @@ const ScrollSpySidebar = () => {
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     const navbarHeight = document.querySelector("nav")?.offsetHeight || 0; // Get navbar height
-    const container = document.querySelector(".scroll-container"); // Add this class to your main Container
+    const container = document.querySelector(".scroll-container");
 
     if (section && container) {
       const sectionTop = section.offsetTop - navbarHeight; // Adjust for navbar
@@ -80,35 +80,33 @@ const ScrollSpySidebar = () => {
         ["Who-we-are", "Our-services", "Panels", "News", "Insights"].map(
           (id) => (
             <>
-              <HStack>
-                <Button
-                  key={id}
-                  pl={0}
-                  variant="ghost"
-                  onClick={() => scrollToSection(id)}
-                  background={"none"}
-                  color={"white"}
-                  _hover={{ color: "#beab7c", opacity: "100%" }}
-                  // fontFamily="CeraRoundPro"
-                  fontWeight={400}
-                  fontStyle={"italic"}
-                  fontSize={activeSection === id ? "30px" : "15px"}
-                  mb={activeSection === id ? "100%" : "0"}
-                  opacity={activeSection === id ? "100%" : "25%"}
-                  transition="all 0.3s ease"
-                >
-                  <span
-                    style={{
-                      border: "1px solid white",
-                      width: "50px",
-                      opacity: `${activeSection === id ? "100%" : "25%"}`,
-                      mb: `${activeSection === id ? "100px" : "0"}`,
-                      transition: "opacity 0.3s ease",
-                    }}
-                  ></span>
-                  {id.split("-").join(" ")}
-                </Button>
-              </HStack>
+              <Button
+                key={id}
+                pl={0}
+                variant="ghost"
+                onClick={() => scrollToSection(id)}
+                background={"none"}
+                color={"white"}
+                _hover={{ color: "#beab7c", opacity: "100%" }}
+                // fontFamily="CeraRoundPro"
+                fontWeight={400}
+                fontStyle={"italic"}
+                fontSize={activeSection === id ? "30px" : "15px"}
+                mb={activeSection === id ? "100%" : "0"}
+                opacity={activeSection === id ? "100%" : "25%"}
+                transition="all 0.3s ease"
+              >
+                <span
+                  style={{
+                    border: "1px solid white",
+                    width: "50px",
+                    opacity: `${activeSection === id ? "100%" : "25%"}`,
+                    mb: `${activeSection === id ? "100px" : "0"}`,
+                    transition: "opacity 0.3s ease",
+                  }}
+                ></span>
+                {id.split("-").join(" ")}
+              </Button>
             </>
           )
         )}
@@ -322,6 +320,7 @@ const LandingPage = () => {
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
+              cursor={"pointer"}
             >
               <Text
                 fontSize={"35px"}
@@ -343,6 +342,7 @@ const LandingPage = () => {
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
+              cursor={"pointer"}
             >
               <Text
                 fontSize={"35px"}
@@ -364,6 +364,7 @@ const LandingPage = () => {
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
+              cursor={"pointer"}
             >
               <Text
                 fontSize={"35px"}
@@ -385,6 +386,7 @@ const LandingPage = () => {
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
+              cursor={"pointer"}
             >
               <Text
                 fontSize={"35px"}
@@ -406,6 +408,7 @@ const LandingPage = () => {
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
+              cursor={"pointer"}
             >
               <Text
                 fontSize={"35px"}
@@ -427,6 +430,7 @@ const LandingPage = () => {
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
+              cursor={"pointer"}
             >
               <Text
                 fontSize={"35px"}

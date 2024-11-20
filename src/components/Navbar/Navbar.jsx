@@ -14,6 +14,7 @@ import MenuIcon from "../../assets/navbar/menu-dropdown-icon.png";
 import BlackMenuIcon from "../../assets/navbar/menu-dropdown-icon-black.png";
 import "../../styles/fonts.css";
 import styles from "../../styles/navbar.module.css";
+import { Link } from "react-router-dom";
 
 const ServicesMegaMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -373,29 +374,31 @@ const Navbar = () => {
         >
           {/* Logo + Title */}
           <GridItem>
-            <HStack
-              justifyContent={"flex-start"}
-              alignItems={"center"}
-              _hover={{ backgroundColor: "black", color: "white" }}
-              width={"325px"}
-              transition={"all 0.3s ease"}
-              // py={"25px"}
-              pl={"20px"}
-              cursor={"pointer"}
-              className={styles.chakraStack}
-            >
-              <Image src={LumineLogo} alt="" height={"50px"} width={"50px"} />
-              <Text
-                fontSize={"24px"}
-                fontWeight={500}
-                className={styles.logoText}
-                css={{
-                  transition: "color 0.3s ease",
-                }}
+            <Link to={"/"} textDecoration={"none"}>
+              <HStack
+                justifyContent={"flex-start"}
+                alignItems={"center"}
+                _hover={{ backgroundColor: "black", color: "white" }}
+                width={"325px"}
+                transition={"all 0.3s ease"}
+                // py={"25px"}
+                pl={"20px"}
+                cursor={"pointer"}
+                className={styles.chakraStack}
               >
-                LUMINE SOLICITORS
-              </Text>
-            </HStack>
+                <Image src={LumineLogo} alt="" height={"50px"} width={"50px"} />
+                <Text
+                  fontSize={"24px"}
+                  fontWeight={500}
+                  className={styles.logoText}
+                  css={{
+                    transition: "color 0.3s ease",
+                  }}
+                >
+                  LUMINE SOLICITORS
+                </Text>
+              </HStack>
+            </Link>
           </GridItem>
 
           {/* Menu Options */}
@@ -405,27 +408,29 @@ const Navbar = () => {
 
           {/* Contact Button */}
           <GridItem justifySelf={"end"}>
-            <Button
-              fontWeight={400}
-              fontSize={"18px"}
-              py={"15px"}
-              color={"white"}
-              background={"none"}
-              borderColor={"white"}
-              borderRadius={"10px"}
-              cursor={"pointer"}
-              overflow="hidden" // Add this
-              _hover={{
-                backgroundColor: "black",
-                color: "#BEAB7C",
-              }}
-              className={styles.contactButton}
-              css={{
-                transition: "all 0.3s ease",
-              }}
-            >
-              Contact Us
-            </Button>
+            <Link to={"/contact"} style={{ textDecoration: "none" }}>
+              <Button
+                fontWeight={400}
+                fontSize={"18px"}
+                py={"15px"}
+                color={"white"}
+                background={"none"}
+                borderColor={"white"}
+                borderRadius={"10px"}
+                cursor={"pointer"}
+                overflow="hidden" // Add this
+                _hover={{
+                  backgroundColor: "black",
+                  color: "#BEAB7C",
+                }}
+                className={styles.contactButton}
+                css={{
+                  transition: "all 0.3s ease",
+                }}
+              >
+                Contact Us
+              </Button>
+            </Link>
           </GridItem>
         </Grid>
       </Box>
