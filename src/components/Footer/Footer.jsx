@@ -15,6 +15,8 @@ import LumineLogo from "../../assets/navbar/logo.png";
 import TwitterLogo from "../../assets/footer/twitter.png";
 import LinkedInLogo from "../../assets/footer/linkedin.png";
 import InstagramLogo from "../../assets/footer/instagram.png";
+import FacebookLogo from "../../assets/footer/facebook.png";
+import TikTokLogo from "../../assets/footer/tiktok.png";
 import { FaLocationDot } from "react-icons/fa6";
 import { BsPrinterFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
@@ -141,6 +143,18 @@ const Footer = () => {
           </VStack>
           {/* second col */}
           <Center gap={"30px"}>
+            {/* LinkedIn */}
+            <Link href="https://www.linkedin.com/company/lumine-solicitors/">
+              <Image
+                src={LinkedInLogo}
+                alt="LinkedIn Logo"
+                height={"30px"}
+                width={"30px"}
+                cursor={"pointer"}
+              />
+            </Link>
+
+            {/* Twitter */}
             <Link href="https://twitter.com/luminelaw">
               <Image
                 src={TwitterLogo}
@@ -151,19 +165,33 @@ const Footer = () => {
               />
             </Link>
 
-            <Link href="https://www.linkedin.com/company/lumine-solicitors/">
+            {/* Facebook */}
+            <Link href="https://www.facebook.com/luminelaw.co.uk?_rdc=1&_rdr">
               <Image
-                src={LinkedInLogo}
-                alt="LinkedIn Logo"
+                src={FacebookLogo}
+                alt="Facebook Logo"
                 height={"30px"}
                 width={"30px"}
                 cursor={"pointer"}
               />
             </Link>
+
+            {/* Instagram */}
             <Link href="https://www.instagram.com/luminesolicitors/">
               <Image
                 src={InstagramLogo}
                 alt="Instagram Logo"
+                height={"30px"}
+                width={"30px"}
+                cursor={"pointer"}
+              />
+            </Link>
+
+            {/* Tiktok */}
+            <Link href="https://www.tiktok.com/@luminesolicitors?_t=8pIu7DAd1ZR&_r=1">
+              <Image
+                src={TikTokLogo}
+                alt="TikTok Logo"
                 height={"30px"}
                 width={"30px"}
                 cursor={"pointer"}
