@@ -59,22 +59,34 @@ const AnimatedPanels = ({ images }) => {
   return (
     <Box
       height="50%"
-      width="80%"
-      backgroundColor="black"
+      width="90%"
+      position="relative"
       alignSelf="center"
       borderRadius="8px"
       py="8"
-      display="flex"
-      alignItems="center"
-      justifyContent="center"
     >
+      {/* Background Box with opacity */}
+      <Box
+        position="absolute"
+        top={0}
+        left={0}
+        right={0}
+        bottom={0}
+        backgroundColor="white"
+        opacity={0.75}
+        borderRadius="inherit"
+      />
+
+      {/* Content Box with full opacity */}
       <VStack
-        spacing={8}
+        // spacing={8}
         width="100%"
         height="100%"
         display="flex"
         alignItems="center"
         justifyContent="center"
+        position="relative" // This ensures content stays above the background
+        zIndex={1} // This ensures content stays above the background
       >
         <ScrollingRow images={images} direction="left" speed={20} />
         <ScrollingRow images={images} direction="right" speed={15} />

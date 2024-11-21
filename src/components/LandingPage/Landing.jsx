@@ -8,6 +8,7 @@ import {
   Grid,
   GridItem,
   Image,
+  Flex,
 } from "@chakra-ui/react";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
@@ -43,7 +44,6 @@ const ScrollSpySidebar = () => {
       { threshold: 0.9 }
     );
 
-    // Observe all sections
     document.querySelectorAll("section[id]").forEach((section) => {
       observer.observe(section);
     });
@@ -53,12 +53,11 @@ const ScrollSpySidebar = () => {
 
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
-    const navbarHeight = document.querySelector("nav")?.offsetHeight || 0; // Get navbar height
+    const navbarHeight = document.querySelector("nav")?.offsetHeight || 0;
     const container = document.querySelector(".scroll-container");
 
     if (section && container) {
-      const sectionTop = section.offsetTop - navbarHeight; // Adjust for navbar
-
+      const sectionTop = section.offsetTop - navbarHeight;
       container.scrollTo({
         top: sectionTop,
         behavior: "smooth",
@@ -66,56 +65,99 @@ const ScrollSpySidebar = () => {
     }
   };
 
+  const sectionIds = [
+    "Who-we-are",
+    "Our-Services",
+    "Panels",
+    "News-and-Insights",
+  ];
+
+  // Find the index of the active section
+  const activeIndex = sectionIds.indexOf(activeSection);
+
   return (
-    <VStack
+    <Flex
       position="fixed"
       left="0%"
-      top="50%"
+      top={activeSection === "Who-we-are" ? "55%" : "50%"}
       transform="translateY(-50%)"
-      gap="10px"
-      align="flex-start"
+      height={activeSection === "Who-we-are" ? "60vh" : "80vh"}
+      flexDirection="column"
+      justifyContent="space-between"
       zIndex={999}
       pointerEvents="auto"
     >
-      {activeSection !== "none" &&
-        ["Who-we-are", "Our-Services", "Panels", "News-and-Insights"].map(
-          (id) => (
-            <>
-              <Button
-                key={id}
-                pl={0}
-                variant="ghost"
-                onClick={() => scrollToSection(id)}
-                background={"none"}
-                color={activeSection === "Panels" ? "black" : "white"}
-                _hover={{
-                  color: activeSection !== "Panels" && "#beab7c",
-                  opacity: "100%",
+      {/* Visited and Current Sections at Top */}
+      <VStack align="flex-start" spacing={2}>
+        {activeSection !== "none" &&
+          sectionIds.slice(0, activeIndex + 1).map((id) => (
+            <Button
+              key={id}
+              pl={0}
+              variant="ghost"
+              onClick={() => scrollToSection(id)}
+              background="none"
+              color={activeSection === "Panels" ? "black" : "white"}
+              _hover={{
+                color: activeSection !== "Panels" && "#beab7c",
+                opacity: "100%",
+              }}
+              fontWeight={400}
+              fontStyle="italic"
+              fontSize={activeSection === id ? "5xl" : "xl"}
+              opacity={activeSection === id ? "100%" : "25%"}
+              transition="all 0.3s ease"
+            >
+              <span
+                style={{
+                  border: "1px solid",
+                  borderColor: activeSection === "Panels" ? "black" : "white",
+                  width: "125px",
+                  marginRight: "25px",
+                  opacity: activeSection === id ? "100%" : "25%",
+                  transition: "opacity 0.3s ease",
                 }}
-                // fontFamily="CeraRoundPro"
-                fontWeight={400}
-                fontStyle={"italic"}
-                fontSize={activeSection === id ? "30px" : "15px"}
-                mb={activeSection === id ? "100%" : "0"}
-                opacity={activeSection === id ? "100%" : "25%"}
-                transition="all 0.3s ease"
-              >
-                <span
-                  style={{
-                    border: "1px solid",
-                    borderColor: activeSection === "Panels" ? "black" : "white",
-                    width: "50px",
-                    opacity: `${activeSection === id ? "100%" : "25%"}`,
-                    mb: `${activeSection === id ? "100px" : "0"}`,
-                    transition: "opacity 0.3s ease",
-                  }}
-                ></span>
-                {id.split("-").join(" ")}
-              </Button>
-            </>
-          )
-        )}
-    </VStack>
+              ></span>
+              {id.split("-").join(" ")}
+            </Button>
+          ))}
+      </VStack>
+
+      {/* Unvisited Sections at Bottom */}
+      <VStack align="flex-start" spacing={2}>
+        {activeSection !== "none" &&
+          sectionIds.slice(activeIndex + 1).map((id) => (
+            <Button
+              key={id}
+              pl={0}
+              variant="ghost"
+              onClick={() => scrollToSection(id)}
+              background="none"
+              color={activeSection === "Panels" ? "black" : "white"}
+              _hover={{
+                color: activeSection !== "Panels" && "#beab7c",
+                opacity: "100%",
+              }}
+              fontWeight={400}
+              fontStyle="italic"
+              fontSize="15px"
+              opacity="25%"
+              transition="all 0.3s ease"
+            >
+              <span
+                style={{
+                  border: "1px solid",
+                  borderColor: activeSection === "Panels" ? "black" : "white",
+                  width: "50px",
+                  opacity: "25%",
+                  transition: "opacity 0.3s ease",
+                }}
+              ></span>
+              {id.split("-").join(" ")}
+            </Button>
+          ))}
+      </VStack>
+    </Flex>
   );
 };
 
@@ -249,11 +291,12 @@ const LandingPage = () => {
             templateColumns={"repeat(6, 1fr)"}
             templateRows={"repeat(2, 1fr)"}
             gap={"30px"}
+            pl={"10%"}
           >
-            <GridItem></GridItem>
+            {/* <GridItem></GridItem> */}
             <GridItem colSpan={"3"}>
               <Text
-                fontSize={"20px"}
+                fontSize={"2xl"}
                 fontWeight={300}
                 fontFamily="HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
                 textAlign={"left"}
@@ -265,10 +308,10 @@ const LandingPage = () => {
               </Text>
             </GridItem>
             <GridItem colSpan={"2"}></GridItem>
-            <GridItem></GridItem>
+            {/* <GridItem></GridItem> */}
             <GridItem colSpan={"3"}>
               <Text
-                fontSize={"20px"}
+                fontSize={"2xl"}
                 fontWeight={300}
                 fontFamily="HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
                 textAlign={"left"}
@@ -306,18 +349,23 @@ const LandingPage = () => {
           bgPos={"center"}
           bgSize={"cover"}
           bgRepeat={"no-repeat"}
+          pt={"5%"}
         >
           <Grid
             templateColumns="repeat(4, 1fr)"
             templateRows={"repeat(2, 1fr)"}
-            gap="10"
+            gap="25px"
+            height={"60%"}
+            width={"80%"}
+            alignItems={"center"}
+            justifyItems={"center"}
           >
             {/* 1 */}
             <GridItem
               border={"1px solid white"}
-              backgroundColor={"transparent"}
-              height={"200px"}
-              width={"250px"}
+              backgroundColor={"#576469"}
+              height={"100%"}
+              width={"100%"}
               borderRadius={"10px"}
               display={"flex"}
               justifyContent={"center"}
@@ -331,7 +379,7 @@ const LandingPage = () => {
               transition={"all 0.3s ease"}
             >
               <Text
-                fontSize={"30px"}
+                fontSize={"3xl"}
                 fontWeight={400}
                 fontFamily={"CeraRoundPro"}
                 width={"80%"}
@@ -343,9 +391,9 @@ const LandingPage = () => {
             {/* 2 */}
             <GridItem
               border={"1px solid white"}
-              backgroundColor={"transparent"}
-              height={"200px"}
-              width={"250px"}
+              backgroundColor={"#576469"}
+              height={"100%"}
+              width={"100%"}
               borderRadius={"10px"}
               display={"flex"}
               justifyContent={"center"}
@@ -359,7 +407,7 @@ const LandingPage = () => {
               transition={"all 0.3s ease"}
             >
               <Text
-                fontSize={"30px"}
+                fontSize={"25px"}
                 fontWeight={400}
                 fontFamily={"CeraRoundPro"}
                 width={"80%"}
@@ -371,9 +419,9 @@ const LandingPage = () => {
             {/* 3 */}
             <GridItem
               border={"1px solid white"}
-              backgroundColor={"transparent"}
-              height={"200px"}
-              width={"250px"}
+              backgroundColor={"#576469"}
+              height={"100%"}
+              width={"100%"}
               borderRadius={"10px"}
               display={"flex"}
               justifyContent={"center"}
@@ -387,7 +435,7 @@ const LandingPage = () => {
               transition={"all 0.3s ease"}
             >
               <Text
-                fontSize={"30px"}
+                fontSize={"25px"}
                 fontWeight={400}
                 fontFamily={"CeraRoundPro"}
                 width={"80%"}
@@ -399,9 +447,9 @@ const LandingPage = () => {
             {/* 4 */}
             <GridItem
               border={"1px solid white"}
-              backgroundColor={"transparent"}
-              height={"200px"}
-              width={"250px"}
+              backgroundColor={"#576469"}
+              height={"100%"}
+              width={"100%"}
               borderRadius={"10px"}
               display={"flex"}
               justifyContent={"center"}
@@ -415,7 +463,7 @@ const LandingPage = () => {
               transition={"all 0.3s ease"}
             >
               <Text
-                fontSize={"30px"}
+                fontSize={"25px"}
                 fontWeight={400}
                 fontFamily={"CeraRoundPro"}
                 width={"80%"}
@@ -427,9 +475,9 @@ const LandingPage = () => {
             {/* 5 */}
             <GridItem
               border={"1px solid white"}
-              backgroundColor={"transparent"}
-              height={"200px"}
-              width={"250px"}
+              backgroundColor={"#8f765b"}
+              height={"100%"}
+              width={"100%"}
               borderRadius={"10px"}
               display={"flex"}
               justifyContent={"center"}
@@ -443,7 +491,7 @@ const LandingPage = () => {
               transition={"all 0.3s ease"}
             >
               <Text
-                fontSize={"30px"}
+                fontSize={"25px"}
                 fontWeight={400}
                 fontFamily={"CeraRoundPro"}
                 width={"80%"}
@@ -455,9 +503,9 @@ const LandingPage = () => {
             {/* 6 */}
             <GridItem
               border={"1px solid white"}
-              backgroundColor={"transparent"}
-              height={"200px"}
-              width={"250px"}
+              backgroundColor={"#8f765b"}
+              height={"100%"}
+              width={"100%"}
               borderRadius={"10px"}
               display={"flex"}
               justifyContent={"center"}
@@ -471,7 +519,7 @@ const LandingPage = () => {
               transition={"all 0.3s ease"}
             >
               <Text
-                fontSize={"30px"}
+                fontSize={"25px"}
                 fontWeight={400}
                 fontFamily={"CeraRoundPro"}
                 width={"80%"}
@@ -483,9 +531,9 @@ const LandingPage = () => {
             {/* 7 */}
             <GridItem
               border={"1px solid white"}
-              backgroundColor={"transparent"}
-              height={"200px"}
-              width={"250px"}
+              backgroundColor={"#8f765b"}
+              height={"100%"}
+              width={"100%"}
               borderRadius={"10px"}
               display={"flex"}
               justifyContent={"center"}
@@ -499,7 +547,7 @@ const LandingPage = () => {
               transition={"all 0.3s ease"}
             >
               <Text
-                fontSize={"30px"}
+                fontSize={"25px"}
                 fontWeight={400}
                 fontFamily={"CeraRoundPro"}
                 width={"80%"}
@@ -511,9 +559,9 @@ const LandingPage = () => {
             {/* 8 */}
             <GridItem
               border={"1px solid white"}
-              backgroundColor={"transparent"}
-              height={"200px"}
-              width={"250px"}
+              backgroundColor={"#8f765b"}
+              height={"100%"}
+              width={"100%"}
               borderRadius={"10px"}
               display={"flex"}
               justifyContent={"center"}
@@ -527,7 +575,7 @@ const LandingPage = () => {
               transition={"all 0.3s ease"}
             >
               <Text
-                fontSize={"30px"}
+                fontSize={"25px"}
                 fontWeight={400}
                 fontFamily={"CeraRoundPro"}
                 width={"80%"}
@@ -571,11 +619,12 @@ const LandingPage = () => {
           height="100%"
           p={0}
           m={0}
+          pt={"7.5%"}
           display={"flex"}
           flexDir={"column"}
           alignItems={"flex-start"}
           justifyContent={"center"}
-          gap={"50px"}
+          gap={"25px"}
           bgImage={`url(${PanelsBg})`}
           bgPos={"center"}
           bgSize={"cover"}
@@ -583,7 +632,7 @@ const LandingPage = () => {
         >
           <Text
             color="black"
-            fontSize="25px"
+            fontSize="20px"
             fontWeight={300}
             fontFamily={
               "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
@@ -622,6 +671,7 @@ const LandingPage = () => {
           bgPos={"center"}
           bgSize={"cover"}
           bgRepeat={"no-repeat"}
+          pt={"10%"}
         >
           <Text
             color="white"
@@ -644,25 +694,25 @@ const LandingPage = () => {
             <Image
               src={NewsInsightsOne}
               height={"100%"}
-              width={"20%"}
+              width={"15%"}
               objectFit={"cover"}
             />
             <Image
               src={NewsInsightsTwo}
               height={"100%"}
-              width={"20%"}
+              width={"15%"}
               objectFit={"cover"}
             />
             <Image
               src={NewsInsightsThree}
               height={"100%"}
-              width={"20%"}
+              width={"15%"}
               objectFit={"cover"}
             />
             <Image
               src={NewsInsightsFour}
               height={"100%"}
-              width={"20%"}
+              width={"15%"}
               objectFit={"cover"}
             />
           </HStack>
