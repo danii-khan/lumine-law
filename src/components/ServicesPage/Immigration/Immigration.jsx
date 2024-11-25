@@ -1,20 +1,10 @@
-import {
-  Text,
-  Container,
-  Box,
-  HStack,
-  Grid,
-  GridItem,
-  VStack,
-  List,
-  Image,
-} from "@chakra-ui/react";
+import { Text, Container, Box, HStack, List, Image } from "@chakra-ui/react";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
 import BannerImg from "../../../assets/services/main/immigration/main-banner.png";
 import ArrowImg from "../../../assets/services/main/immigration/main-link-arrow.png";
 import "../../../styles/fonts.css";
-import { LuCheckCircle, LuCircleDashed } from "react-icons/lu";
+import { Link } from "react-router-dom";
 
 const Immigration = () => {
   return (
@@ -97,8 +87,10 @@ const Immigration = () => {
           {/* List */}
           <HStack justifyContent={"space-around"} alignItems={"center"}>
             <List.Root gap="20" variant="plain" align="center" mb={"50px"}>
-              {/* 1 */}
+              {/* Spouse Visa */}
               <List.Item
+                as={Link}
+                to={"/all-services/immigration/spouse-visa"}
                 color="black"
                 fontSize={"25px"}
                 fontWeight={500}

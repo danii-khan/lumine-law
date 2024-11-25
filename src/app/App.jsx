@@ -5,6 +5,7 @@ import Contact from "../components/Contact/Contact";
 import AllServices from "../components/ServicesPage/AllServices";
 import Immigration from "../components/ServicesPage/Immigration/Immigration";
 import PageTransition from "../lib/PageTransitions/PageTransition";
+import SpouseVisa from "../components/ServicesPage/Immigration/SpouseVisa";
 
 function App() {
   return (
@@ -40,6 +41,15 @@ function App() {
             element={
               <PageTransition>
                 <Immigration />
+              </PageTransition>
+            }
+          />
+
+          <Route
+            path="/all-services/immigration/spouse-visa"
+            element={
+              <PageTransition>
+                <SpouseVisa />
               </PageTransition>
             }
           />

@@ -87,6 +87,8 @@ const ServicesMegaMenu = () => {
             </Link>
             {/* List */}
             <Text
+              as={Link}
+              to={"/all-services/immigration/spouse-visa"}
               fontSize={"16px"}
               fontWeight={400}
               className={styles.menuText}
