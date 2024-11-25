@@ -103,7 +103,7 @@ const SpouseVisa = () => {
             >
               {/* Initial Button */}
               <HStack
-                borderTop={"1px solid black"}
+                borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
                 px={"15px"}
@@ -137,7 +137,7 @@ const SpouseVisa = () => {
                   alignItems={"flex-start"}
                   gap={"30px"}
                   mb={"10px"}
-                  borderTop={"1px solid black"}
+                  borderTop={"1px solid #adacac"}
                   py={"30px"}
                 >
                   <Text
@@ -180,7 +180,7 @@ const SpouseVisa = () => {
             >
               {/* Initial Button */}
               <HStack
-                borderTop={"1px solid black"}
+                borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
                 px={"15px"}
@@ -214,7 +214,7 @@ const SpouseVisa = () => {
                   alignItems={"flex-start"}
                   gap={"30px"}
                   mb={"10px"}
-                  borderTop={"1px solid black"}
+                  borderTop={"1px solid #adacac"}
                   py={"30px"}
                 >
                   <Text
@@ -265,7 +265,7 @@ const SpouseVisa = () => {
             >
               {/* Initial Button */}
               <HStack
-                borderTop={"1px solid black"}
+                borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
                 px={"15px"}
@@ -299,7 +299,7 @@ const SpouseVisa = () => {
                   alignItems={"flex-start"}
                   gap={"30px"}
                   mb={"10px"}
-                  borderTop={"1px solid black"}
+                  borderTop={"1px solid #adacac"}
                   py={"30px"}
                 >
                   <Text
@@ -350,7 +350,7 @@ const SpouseVisa = () => {
             >
               {/* Initial Button */}
               <HStack
-                borderTop={"1px solid black"}
+                borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
                 px={"15px"}
@@ -384,7 +384,7 @@ const SpouseVisa = () => {
                   alignItems={"flex-start"}
                   gap={"30px"}
                   mb={"10px"}
-                  borderTop={"1px solid black"}
+                  borderTop={"1px solid #adacac"}
                   py={"30px"}
                 >
                   <Text
@@ -435,7 +435,7 @@ const SpouseVisa = () => {
             >
               {/* Initial Button */}
               <HStack
-                borderY={"1px solid black"}
+                borderY={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
                 px={"15px"}
@@ -469,7 +469,7 @@ const SpouseVisa = () => {
                   alignItems={"flex-start"}
                   gap={"30px"}
                   mb={"10px"}
-                  borderY={"1px solid black"}
+                  borderY={"1px solid #adacac"}
                   py={"30px"}
                 >
                   <Text
