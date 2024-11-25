@@ -6,7 +6,8 @@ import {
   Text,
   Center,
   Link,
-  Icon,
+  Grid,
+  GridItem,
 } from "@chakra-ui/react";
 import SRA from "../../assets/footer/sra-logo.png";
 import AccreditLogo from "../../assets/footer/accredit.png";
@@ -121,104 +122,112 @@ const Footer = () => {
           </Text>
         </Center>
         {/* Bottom */}
-        <HStack justifyContent={"space-between"} alignItems={"center"}>
+        <Grid templateColumns={"repeat(3, 1fr)"}>
           {/* 1st col */}
-          <VStack width={"300px"}>
-            {/* Logo and Name */}
-            <HStack>
-              <Image
-                src={LumineLogo}
-                alt="Lumine Logo"
-                height={"65px"}
-                width={"50px"}
-              />
-              <Text fontSize="25px" fontWeight={500}>
-                LUMINE SOLICITORS
+          <GridItem justifyContent={"center"} alignSelf={"center"}>
+            <VStack width={"300px"}>
+              {/* Logo and Name */}
+              <HStack>
+                <Image
+                  src={LumineLogo}
+                  alt="Lumine Logo"
+                  height={"65px"}
+                  width={"50px"}
+                />
+                <Text fontSize="25px" fontWeight={500}>
+                  LUMINE SOLICITORS
+                </Text>
+              </HStack>
+              <Text fontSize={"15px"} fontWeight={300} color={"#BEAB7C"}>
+                We offer the dedicated support and advice you require from the
+                very outset of your matter.
               </Text>
-            </HStack>
-            <Text fontSize={"15px"} fontWeight={300} color={"#BEAB7C"}>
-              We offer the dedicated support and advice you require from the
-              very outset of your matter.
-            </Text>
-          </VStack>
+            </VStack>
+          </GridItem>
+
           {/* second col */}
-          <Center gap={"30px"}>
-            {/* LinkedIn */}
-            <Link href="https://www.linkedin.com/company/lumine-solicitors/">
-              <Image
-                src={LinkedInLogo}
-                alt="LinkedIn Logo"
-                height={"30px"}
-                width={"30px"}
-                cursor={"pointer"}
-              />
-            </Link>
+          <GridItem justifyContent={"center"} alignSelf={"center"}>
+            <Center gap={"30px"}>
+              {/* LinkedIn */}
+              <Link href="https://www.linkedin.com/company/lumine-solicitors/">
+                <Image
+                  src={LinkedInLogo}
+                  alt="LinkedIn Logo"
+                  height={"30px"}
+                  width={"30px"}
+                  cursor={"pointer"}
+                />
+              </Link>
 
-            {/* Twitter */}
-            <Link href="https://twitter.com/luminelaw">
-              <Image
-                src={TwitterLogo}
-                alt="Twitter Logo"
-                height={"30px"}
-                width={"30px"}
-                cursor={"pointer"}
-              />
-            </Link>
+              {/* Twitter */}
+              <Link href="https://twitter.com/luminelaw">
+                <Image
+                  src={TwitterLogo}
+                  alt="Twitter Logo"
+                  height={"30px"}
+                  width={"30px"}
+                  cursor={"pointer"}
+                />
+              </Link>
 
-            {/* Facebook */}
-            <Link href="https://www.facebook.com/luminelaw.co.uk?_rdc=1&_rdr">
-              <Image
-                src={FacebookLogo}
-                alt="Facebook Logo"
-                height={"30px"}
-                width={"30px"}
-                cursor={"pointer"}
-              />
-            </Link>
+              {/* Facebook */}
+              <Link href="https://www.facebook.com/luminelaw.co.uk?_rdc=1&_rdr">
+                <Image
+                  src={FacebookLogo}
+                  alt="Facebook Logo"
+                  height={"30px"}
+                  width={"30px"}
+                  cursor={"pointer"}
+                />
+              </Link>
 
-            {/* Instagram */}
-            <Link href="https://www.instagram.com/luminesolicitors/">
-              <Image
-                src={InstagramLogo}
-                alt="Instagram Logo"
-                height={"30px"}
-                width={"30px"}
-                cursor={"pointer"}
-              />
-            </Link>
+              {/* Instagram */}
+              <Link href="https://www.instagram.com/luminesolicitors/">
+                <Image
+                  src={InstagramLogo}
+                  alt="Instagram Logo"
+                  height={"30px"}
+                  width={"30px"}
+                  cursor={"pointer"}
+                />
+              </Link>
 
-            {/* Tiktok */}
-            <Link href="https://www.tiktok.com/@luminesolicitors?_t=8pIu7DAd1ZR&_r=1">
-              <Image
-                src={TikTokLogo}
-                alt="TikTok Logo"
-                height={"30px"}
-                width={"30px"}
-                cursor={"pointer"}
-              />
-            </Link>
-          </Center>
+              {/* Tiktok */}
+              <Link href="https://www.tiktok.com/@luminesolicitors?_t=8pIu7DAd1ZR&_r=1">
+                <Image
+                  src={TikTokLogo}
+                  alt="TikTok Logo"
+                  height={"30px"}
+                  width={"30px"}
+                  cursor={"pointer"}
+                />
+              </Link>
+            </Center>
+          </GridItem>
+
           {/* third col */}
-          <VStack gap={"15px"}>
-            <HStack gap={"90px"}>
-              <Text fontSize={"15px"} fontWeight={400}>
-                Privacy Policy
+          <GridItem justifyContent={"center"} alignSelf={"center"}>
+            <VStack gap={"15px"}>
+              <HStack gap={"90px"}>
+                <Text fontSize={"15px"} fontWeight={400}>
+                  Privacy Policy
+                </Text>
+                <Text fontSize={"15px"} fontWeight={400}>
+                  Disclaimer
+                </Text>
+              </HStack>
+              <Text
+                fontSize={"15px"}
+                fontWeight={400}
+                fontFamily={
+                  "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
+                }
+              >
+                © Copyright 2024 Lumine Law | All Rights Reserved
               </Text>
-              <Text fontSize={"15px"} fontWeight={400}>
-                Disclaimer
-              </Text>
-            </HStack>
-            <Text
-              fontSize={"15px"}
-              fontWeight={400}
-              fontFamily={
-                "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
-              }
-            >
-              © Copyright 2024 Lumine Law | All Rights Reserved
-            </Text>
-          </VStack>
-        </HStack>
+            </VStack>
+          </GridItem>
+        </Grid>
       </Box>
     </>
   );
