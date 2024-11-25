@@ -2,6 +2,7 @@ import "../styles/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "../components/LandingPage/Landing";
 import Contact from "../components/Contact/Contact";
+import AllServices from "../components/ServicesPage/AllServices";
 import PageTransition from "../lib/PageTransitions/PageTransition";
 
 function App() {
@@ -22,6 +23,14 @@ function App() {
             element={
               <PageTransition>
                 <Contact />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/all-services"
+            element={
+              <PageTransition>
+                <AllServices />
               </PageTransition>
             }
           />

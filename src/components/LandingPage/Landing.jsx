@@ -27,6 +27,7 @@ import NewsInsightsTwo from "../../assets/landing/news-insights-two.png";
 import NewsInsightsThree from "../../assets/landing/news-insights-three.png";
 import NewsInsightsFour from "../../assets/landing/news-insights-four.png";
 import "../../styles/fonts.css";
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const ScrollSpySidebar = () => {
@@ -574,34 +575,44 @@ const LandingPage = () => {
               }}
               transition={"all 0.3s ease"}
             >
-              <Text
-                fontSize={"25px"}
-                fontWeight={400}
-                fontFamily={"CeraRoundPro"}
+              <Link
+                to={"/all-services"}
+                style={{ textDecoration: "none" }}
+                p={0}
+                m={0}
                 width={"80%"}
               >
-                All Services{" "}
-              </Text>
+                <Text
+                  fontSize={"25px"}
+                  fontWeight={400}
+                  fontFamily={"CeraRoundPro"}
+                >
+                  All Services{" "}
+                </Text>
+              </Link>
             </GridItem>
           </Grid>
-          <Button
-            background={"none"}
-            color={"white"}
-            border={"1px solid #FFFFFF"}
-            borderRadius={"8px"}
-            fontSize={"16px"}
-            fontWeight={500}
-            fontFamily={"CeraRoundPro"}
-            _hover={{
-              borderColor: "#beab7c",
-              backgroundColor: "black",
-              color: "#beab7c",
-              transition: "all 0.3s ease",
-            }}
-          >
-            {" "}
-            All Services
-          </Button>
+
+          <Link to={"/all-services"} style={{ textDecoration: "none" }}>
+            <Button
+              background={"none"}
+              color={"white"}
+              border={"1px solid #FFFFFF"}
+              borderRadius={"8px"}
+              fontSize={"16px"}
+              fontWeight={500}
+              fontFamily={"CeraRoundPro"}
+              _hover={{
+                borderColor: "#beab7c",
+                backgroundColor: "black",
+                color: "#beab7c",
+                transition: "all 0.3s ease",
+              }}
+            >
+              {" "}
+              All Services
+            </Button>
+          </Link>
         </Box>
       </section>
 
