@@ -72,13 +72,19 @@ const ServicesMegaMenu = () => {
             gap={"20px"}
           >
             {/* Header */}
-            <Text
-              fontSize={"18px"}
-              fontWeight={700}
-              className={styles.menuHeader}
+            <Link
+              to={"/all-services/immigration"}
+              style={{ textDecoration: "none" }}
             >
-              Immigration Services
-            </Text>
+              <Text
+                fontSize={"18px"}
+                fontWeight={700}
+                className={styles.menuHeader}
+                _hover={{ borderBottom: "2px solid #beab7c" }}
+              >
+                Immigration Services
+              </Text>
+            </Link>
             {/* List */}
             <Text
               fontSize={"16px"}

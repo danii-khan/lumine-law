@@ -12,6 +12,7 @@ import Footer from "../Footer/Footer";
 import BannerImg from "../../assets/services/all/banner.png";
 import "../../styles/fonts.css";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
+import { Link } from "react-router-dom";
 
 const AllServices = () => {
   return (
@@ -24,18 +25,12 @@ const AllServices = () => {
         overflow="auto"
         m={0}
         p={0}
-        display="flex" // Added
-        flexDirection="column" // Added
+        display="flex"
+        flexDirection="column"
       >
         <Navbar />
 
-        <Box
-          width="100%"
-          flex="1" // Added to allow content to grow
-          p={0}
-          m={0}
-          pt={"50px"}
-        >
+        <Box width="100%" flex="1" p={0} m={0} pt={"50px"}>
           {/* Banner */}
           <Box
             width={"100%"}
@@ -64,8 +59,6 @@ const AllServices = () => {
             width={"100%"}
             display={"flex"}
             flexFlow={"column"}
-            // justifyContent={"center"}
-            // alignItems={"center"}
             color={"black"}
           >
             {/* Heading */}
@@ -136,38 +129,43 @@ const AllServices = () => {
                   transition: "all 0.3s ease",
                 }}
               >
-                <Box
-                  height={"100%"}
-                  display={"flex"}
-                  flexFlow={"column"}
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={"10px"}
+                <Link
+                  to={"/all-services/immigration"}
+                  style={{ textDecoration: "none" }}
                 >
-                  <Text
-                    fontSize={"24px"}
-                    fontFamily={"CeraRoundPro"}
-                    fontWeight={500}
-                    textAlign={"left"}
-                  >
-                    Immigration
-                  </Text>
-                  <VStack
-                    width={"100%"}
+                  <Box
                     height={"100%"}
-                    justifyContent={"space-between"}
+                    display={"flex"}
+                    flexFlow={"column"}
+                    justifyContent={"center"}
                     alignItems={"flex-start"}
+                    gap={"10px"}
                   >
                     <Text
-                      fontSize={"18px"}
+                      fontSize={"24px"}
                       fontFamily={"CeraRoundPro"}
-                      fontWeight={400}
+                      fontWeight={500}
+                      textAlign={"left"}
                     >
-                      A lil para about what this service is{" "}
+                      Immigration
                     </Text>
-                    <HiOutlineArrowLongRight size={"3em"} />
-                  </VStack>
-                </Box>
+                    <VStack
+                      width={"100%"}
+                      height={"100%"}
+                      justifyContent={"space-between"}
+                      alignItems={"flex-start"}
+                    >
+                      <Text
+                        fontSize={"18px"}
+                        fontFamily={"CeraRoundPro"}
+                        fontWeight={400}
+                      >
+                        A lil para about what this service is{" "}
+                      </Text>
+                      <HiOutlineArrowLongRight size={"3em"} />
+                    </VStack>
+                  </Box>
+                </Link>
               </GridItem>
               {/* Col 2 */}
               <GridItem

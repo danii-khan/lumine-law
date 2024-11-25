@@ -379,14 +379,21 @@ const LandingPage = () => {
               }}
               transition={"all 0.3s ease"}
             >
-              <Text
-                fontSize={"3xl"}
-                fontWeight={400}
-                fontFamily={"CeraRoundPro"}
+              <Link
+                to={"/all-services/immigration"}
+                style={{ textDecoration: "none" }}
+                p={0}
+                m={0}
                 width={"80%"}
               >
-                Immigration Services
-              </Text>
+                <Text
+                  fontSize={"3xl"}
+                  fontWeight={400}
+                  fontFamily={"CeraRoundPro"}
+                >
+                  Immigration Services
+                </Text>
+              </Link>
             </GridItem>
 
             {/* 2 */}
