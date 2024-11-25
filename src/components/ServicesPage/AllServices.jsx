@@ -126,6 +126,7 @@ const AllServices = () => {
               <GridItem
                 width={"100%"}
                 height={"300px"}
+                padding={"10px 20px"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}
@@ -141,7 +142,6 @@ const AllServices = () => {
                   flexFlow={"column"}
                   justifyContent={"center"}
                   alignItems={"flex-start"}
-                  padding={"10px 20px"}
                   gap={"10px"}
                 >
                   <Text
@@ -153,9 +153,10 @@ const AllServices = () => {
                     Immigration
                   </Text>
                   <VStack
-                    justifyContent={"center"}
-                    alignItems={"space-between"}
-                    gap={"150px"}
+                    width={"100%"}
+                    height={"100%"}
+                    justifyContent={"space-between"}
+                    alignItems={"flex-start"}
                   >
                     <Text
                       fontSize={"18px"}
@@ -172,6 +173,7 @@ const AllServices = () => {
               <GridItem
                 width={"100%"}
                 height={"300px"}
+                padding={"10px 20px"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}
@@ -187,7 +189,6 @@ const AllServices = () => {
                   flexFlow={"column"}
                   justifyContent={"center"}
                   alignItems={"flex-start"}
-                  padding={"10px 20px"}
                   gap={"10px"}
                 >
                   <Text
@@ -199,9 +200,10 @@ const AllServices = () => {
                     Residential & Commercial Property
                   </Text>
                   <VStack
-                    justifyContent={"center"}
-                    alignItems={"space-between"}
-                    gap={"150px"}
+                    width={"100%"}
+                    height={"100%"}
+                    justifyContent={"space-between"}
+                    alignItems={"flex-start"}
                   >
                     <Text
                       fontSize={"18px"}
@@ -218,6 +220,7 @@ const AllServices = () => {
               <GridItem
                 width={"100%"}
                 height={"300px"}
+                padding={"10px 20px"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}
@@ -233,7 +236,6 @@ const AllServices = () => {
                   flexFlow={"column"}
                   justifyContent={"center"}
                   alignItems={"flex-start"}
-                  padding={"10px 20px"}
                   gap={"10px"}
                 >
                   <Text
@@ -245,9 +247,10 @@ const AllServices = () => {
                     Dispute & Resolution Civil Litigation
                   </Text>
                   <VStack
-                    justifyContent={"center"}
-                    alignItems={"space-between"}
-                    gap={"150px"}
+                    width={"100%"}
+                    height={"100%"}
+                    justifyContent={"space-between"}
+                    alignItems={"flex-start"}
                   >
                     <Text
                       fontSize={"18px"}
@@ -264,6 +267,7 @@ const AllServices = () => {
               <GridItem
                 width={"100%"}
                 height={"300px"}
+                padding={"10px 20px"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}
@@ -279,7 +283,6 @@ const AllServices = () => {
                   flexFlow={"column"}
                   justifyContent={"center"}
                   alignItems={"flex-start"}
-                  padding={"10px 20px"}
                   gap={"10px"}
                 >
                   <Text
@@ -291,9 +294,10 @@ const AllServices = () => {
                     Landlord & Tenant Disputes
                   </Text>
                   <VStack
-                    justifyContent={"center"}
-                    alignItems={"space-between"}
-                    gap={"150px"}
+                    width={"100%"}
+                    height={"100%"}
+                    justifyContent={"space-between"}
+                    alignItems={"flex-start"}
                   >
                     <Text
                       fontSize={"18px"}
@@ -310,6 +314,7 @@ const AllServices = () => {
               <GridItem
                 width={"100%"}
                 height={"300px"}
+                padding={"10px 20px"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}
@@ -325,7 +330,6 @@ const AllServices = () => {
                   flexFlow={"column"}
                   justifyContent={"center"}
                   alignItems={"flex-start"}
-                  padding={"10px 20px"}
                   gap={"10px"}
                 >
                   <Text
@@ -337,9 +341,10 @@ const AllServices = () => {
                     Family & Children
                   </Text>
                   <VStack
-                    justifyContent={"center"}
-                    alignItems={"space-between"}
-                    gap={"150px"}
+                    width={"100%"}
+                    height={"100%"}
+                    justifyContent={"space-between"}
+                    alignItems={"flex-start"}
                   >
                     <Text
                       fontSize={"18px"}
@@ -356,6 +361,7 @@ const AllServices = () => {
               <GridItem
                 width={"100%"}
                 height={"300px"}
+                padding={"10px 20px"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}
@@ -371,7 +377,6 @@ const AllServices = () => {
                   flexFlow={"column"}
                   justifyContent={"center"}
                   alignItems={"flex-start"}
-                  padding={"10px 20px"}
                   gap={"10px"}
                 >
                   <Text
@@ -383,9 +388,10 @@ const AllServices = () => {
                     New Service
                   </Text>
                   <VStack
-                    justifyContent={"center"}
-                    alignItems={"space-between"}
-                    gap={"150px"}
+                    width={"100%"}
+                    height={"100%"}
+                    justifyContent={"space-between"}
+                    alignItems={"flex-start"}
                   >
                     <Text
                       fontSize={"18px"}
@@ -404,6 +410,7 @@ const AllServices = () => {
               <GridItem
                 width={"100%"}
                 height={"300px"}
+                padding={"10px 20px"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}
@@ -419,7 +426,6 @@ const AllServices = () => {
                   flexFlow={"column"}
                   justifyContent={"center"}
                   alignItems={"flex-start"}
-                  padding={"10px 20px"}
                   gap={"10px"}
                 >
                   <Text
@@ -431,9 +437,10 @@ const AllServices = () => {
                     New Service
                   </Text>
                   <VStack
-                    justifyContent={"center"}
-                    alignItems={"space-between"}
-                    gap={"150px"}
+                    width={"100%"}
+                    height={"100%"}
+                    justifyContent={"space-between"}
+                    alignItems={"flex-start"}
                   >
                     <Text
                       fontSize={"18px"}
