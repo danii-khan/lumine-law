@@ -24,12 +24,26 @@ const ServicesMegaMenu = () => {
         backgroundColor="inherit"
         color="white"
         size="sm"
-        fontSize="18px"
+        fontSize={{
+          //base: {"18px"}
+          xs: "12px",
+          md: "14px",
+          lg: "14px",
+          xl: "16px",
+          "2xl": "18px",
+        }}
         fontWeight={500}
         height="100%"
         borderRadius="0px"
         position="relative"
-        px="20px"
+        px={{
+          //base: "20px"
+          xs: "4px",
+          md: "8px",
+          lg: "12px",
+          xl: "14px",
+          "2xl": "16px",
+        }}
         className={styles.servicesMegaMenuButton}
         onClick={() => setIsOpen(!isOpen)}
         data-state={isOpen ? "open" : ""}
@@ -60,16 +74,25 @@ const ServicesMegaMenu = () => {
         className={`${styles.megaMenuContainer} ${isOpen ? styles.open : ""}`}
       >
         <HStack
-          justifyContent={"space-evenly"}
+          justifyContent={"center"}
           alignItems={"flex-start"}
           py={"10px"}
+          gap={{ xs: "2.5px", sm: "5px", md: "7.5px", xl: "10px" }}
         >
           {/* Immigration Services */}
           <VStack
-            width={"200px"}
+            width={"18%"}
             alignItems={"flex-start"}
             justifyContent={"center"}
-            gap={"20px"}
+            gap={{
+              // base: {"20px"}
+              xs: "10px",
+              sm: "12px",
+              md: "14px",
+              lg: "16px",
+              xl: "18px",
+              "2xl": "20px",
+            }}
           >
             {/* Header */}
             <Link
@@ -77,7 +100,15 @@ const ServicesMegaMenu = () => {
               style={{ textDecoration: "none" }}
             >
               <Text
-                fontSize={"18px"}
+                fontSize={{
+                  // base: {"18px"}
+                  xs: "8px",
+                  sm: "10px",
+                  md: "12px",
+                  lg: "12px",
+                  xl: "16px",
+                  "2xl": "18px",
+                }}
                 fontWeight={700}
                 className={styles.menuHeader}
                 _hover={{ borderBottom: "2px solid #beab7c" }}
@@ -86,81 +117,197 @@ const ServicesMegaMenu = () => {
               </Text>
             </Link>
             {/* List */}
+            {/* Spouse Visa */}
             <Text
               as={Link}
               to={"/all-services/immigration/spouse-visa"}
-              fontSize={"16px"}
+              fontSize={{
+                // base: {"18px"}
+                xs: "6px",
+                sm: "8px",
+                md: "10px",
+                lg: "12px",
+                xl: "14px",
+                "2xl": "16px",
+              }}
               fontWeight={400}
               className={styles.menuText}
+              textAlign={"left"}
             >
               Spouse Visa
             </Text>
+
+            {/* Citizenship App */}
             <Text
-              fontSize={"16px"}
+              fontSize={{
+                // base: {"18px"}
+                xs: "6px",
+                sm: "8px",
+                md: "10px",
+                lg: "12px",
+                xl: "14px",
+                "2xl": "16px",
+              }}
               fontWeight={400}
               textAlign={"left"}
               className={styles.menuText}
             >
               British Citizenship Application
             </Text>
+
+            {/* Visitor Visa */}
             <Text
-              fontSize={"16px"}
+              fontSize={{
+                // base: {"18px"}
+                xs: "6px",
+                sm: "8px",
+                md: "10px",
+                lg: "12px",
+                xl: "14px",
+                "2xl": "16px",
+              }}
               fontWeight={400}
               className={styles.menuText}
+              textAlign={"left"}
             >
               UK Visitor Visa
             </Text>
+
+            {/* Clearance from Outside UK */}
             <Text
-              fontSize={"16px"}
+              fontSize={{
+                // base: {"18px"}
+                xs: "6px",
+                sm: "8px",
+                md: "10px",
+                lg: "12px",
+                xl: "14px",
+                "2xl": "16px",
+              }}
               fontWeight={400}
               textAlign={"left"}
               className={styles.menuText}
             >
               Entry Clearance Applications from Outside of UK
             </Text>
+
+            {/* Skilled Work Visa */}
             <Text
-              fontSize={"16px"}
+              fontSize={{
+                // base: {"18px"}
+                xs: "6px",
+                sm: "8px",
+                md: "10px",
+                lg: "12px",
+                xl: "14px",
+                "2xl": "16px",
+              }}
               fontWeight={400}
               className={styles.menuText}
+              textAlign={"left"}
             >
               Skilled Worker Visa
             </Text>
+
+            {/* Cert of Sponsorship */}
             <Text
-              fontSize={"16px"}
+              fontSize={{
+                // base: {"18px"}
+                xs: "6px",
+                sm: "8px",
+                md: "10px",
+                lg: "12px",
+                xl: "14px",
+                "2xl": "16px",
+              }}
               fontWeight={400}
               className={styles.menuText}
+              textAlign={"left"}
             >
               Certificate of Sponsorship
             </Text>
+
+            {/* Student Visa */}
             <Text
-              fontSize={"16px"}
+              fontSize={{
+                // base: {"18px"}
+                xs: "6px",
+                sm: "8px",
+                md: "10px",
+                lg: "12px",
+                xl: "14px",
+                "2xl": "16px",
+              }}
               fontWeight={400}
               className={styles.menuText}
+              textAlign={"left"}
             >
               Student Visa
             </Text>
+
+            {/* Visa Extensions */}
             <Text
-              fontSize={"16px"}
+              fontSize={{
+                // base: {"18px"}
+                xs: "6px",
+                sm: "8px",
+                md: "10px",
+                lg: "12px",
+                xl: "14px",
+                "2xl": "16px",
+              }}
               fontWeight={400}
               className={styles.menuText}
+              textAlign={"left"}
             >
               Visa Extensions
             </Text>
+
+            {/* Indefinite Leave */}
             <Text
-              fontSize={"16px"}
+              fontSize={{
+                // base: {"18px"}
+                xs: "6px",
+                sm: "8px",
+                md: "10px",
+                lg: "12px",
+                xl: "14px",
+                "2xl": "16px",
+              }}
               fontWeight={400}
               className={styles.menuText}
+              textAlign={"left"}
             >
               Indefinite Leave to Remain
             </Text>
           </VStack>
 
           {/* Residential & Commercial Property*/}
-          <VStack width={"200px"} alignItems={"flex-start"} gap={"20px"}>
+          <VStack
+            width={"18%"}
+            alignItems={"flex-start"}
+            gap={{
+              // base: {"20px"}
+              xs: "10px",
+              sm: "12px",
+              md: "14px",
+              lg: "16px",
+              xl: "18px",
+              "2xl": "20px",
+            }}
+          >
             {/* Header */}
 
             <Text
-              fontSize={"18px"}
+              fontSize={{
+                // base: {"18px"}
+                xs: "8px",
+                sm: "10px",
+                md: "12px",
+                lg: "12px",
+                xl: "16px",
+                "2xl": "18px",
+              }}
               fontWeight={700}
               className={styles.menuHeader}
             >
@@ -170,10 +317,30 @@ const ServicesMegaMenu = () => {
           </VStack>
 
           {/* Dispute Resolution and Civil Litigation */}
-          <VStack width={"200px"} alignItems={"flex-start"} gap={"20px"}>
+          <VStack
+            width={"18%"}
+            alignItems={"flex-start"}
+            gap={{
+              // base: {"20px"}
+              xs: "10px",
+              sm: "12px",
+              md: "14px",
+              lg: "16px",
+              xl: "18px",
+              "2xl": "20px",
+            }}
+          >
             {/* Header */}
             <Text
-              fontSize={"18px"}
+              fontSize={{
+                // base: {"18px"}
+                xs: "8px",
+                sm: "10px",
+                md: "12px",
+                lg: "12px",
+                xl: "16px",
+                "2xl": "18px",
+              }}
               fontWeight={700}
               className={styles.menuHeader}
             >
@@ -183,10 +350,30 @@ const ServicesMegaMenu = () => {
           </VStack>
 
           {/* Landlord and Tenant Disputes */}
-          <VStack width={"200px"} alignItems={"flex-start"} gap={"20px"}>
+          <VStack
+            width={"18%"}
+            alignItems={"flex-start"}
+            gap={{
+              // base: {"20px"}
+              xs: "10px",
+              sm: "12px",
+              md: "14px",
+              lg: "16px",
+              xl: "18px",
+              "2xl": "20px",
+            }}
+          >
             {/* Header */}
             <Text
-              fontSize={"18px"}
+              fontSize={{
+                // base: {"18px"}
+                xs: "8px",
+                sm: "10px",
+                md: "12px",
+                lg: "12px",
+                xl: "16px",
+                "2xl": "18px",
+              }}
               fontWeight={700}
               className={styles.menuHeader}
             >
@@ -196,34 +383,86 @@ const ServicesMegaMenu = () => {
           </VStack>
 
           {/* Family and Children */}
-          <VStack width={"200px"} alignItems={"flex-start"} gap={"20px"}>
+          <VStack
+            width={"18%"}
+            alignItems={"flex-start"}
+            gap={{
+              // base: {"20px"}
+              xs: "10px",
+              sm: "12px",
+              md: "14px",
+              lg: "16px",
+              xl: "18px",
+              "2xl": "20px",
+            }}
+          >
             {/* Header */}
             <Text
-              fontSize={"18px"}
+              fontSize={{
+                // base: {"18px"}
+                xs: "8px",
+                sm: "10px",
+                md: "10px",
+                lg: "12px",
+                xl: "16px",
+                "2xl": "18px",
+              }}
               fontWeight={700}
               className={styles.menuHeader}
             >
               Family and Children
             </Text>
             {/* List */}
+            {/* Divorce */}
             <Text
-              fontSize={"16px"}
+              fontSize={{
+                // base: {"18px"}
+                xs: "6px",
+                sm: "8px",
+                md: "10px",
+                lg: "10px",
+                xl: "14px",
+                "2xl": "16px",
+              }}
               fontWeight={400}
               className={styles.menuText}
+              textAlign={"left"}
             >
               Divorce{" "}
             </Text>
+
+            {/* Pre Nuptial Agreement */}
             <Text
-              fontSize={"16px"}
+              fontSize={{
+                // base: {"18px"}
+                xs: "6px",
+                sm: "8px",
+                md: "10px",
+                lg: "10px",
+                xl: "14px",
+                "2xl": "16px",
+              }}
               fontWeight={400}
               className={styles.menuText}
+              textAlign={"left"}
             >
               Pre Nuptial Agreements{" "}
             </Text>
+
+            {/* Child Arrangements */}
             <Text
-              fontSize={"16px"}
+              fontSize={{
+                // base: {"18px"}
+                xs: "6px",
+                sm: "8px",
+                md: "10px",
+                lg: "10px",
+                xl: "14px",
+                "2xl": "16px",
+              }}
               fontWeight={400}
               className={styles.menuText}
+              textAlign={"left"}
             >
               Child Arrangements{" "}
             </Text>
@@ -248,12 +487,26 @@ const Menu = () => {
           backgroundColor="inherit"
           color="white"
           size="sm"
-          fontSize="18px"
+          fontSize={{
+            //base: {"18px"}
+            xs: "12px",
+            md: "14px",
+            lg: "14px",
+            xl: "16px",
+            "2xl": "18px",
+          }}
           fontWeight={500}
           height="100%"
           borderRadius="0px"
           position="relative"
-          px="20px"
+          px={{
+            //base: "20px"
+            xs: "4px",
+            md: "8px",
+            lg: "12px",
+            xl: "14px",
+            "2xl": "16px",
+          }}
           _hover={{
             color: "white",
             backgroundColor: "black",
@@ -272,12 +525,26 @@ const Menu = () => {
           backgroundColor="inherit"
           color="white"
           size="sm"
-          fontSize="18px"
+          fontSize={{
+            //base: {"18px"}
+            xs: "12px",
+            md: "14px",
+            lg: "14px",
+            xl: "16px",
+            "2xl": "18px",
+          }}
           fontWeight={500}
           height="100%"
           borderRadius="0px"
           position="relative"
-          px="20px"
+          px={{
+            //base: "20px"
+            xs: "4px",
+            md: "8px",
+            lg: "12px",
+            xl: "14px",
+            "2xl": "16px",
+          }}
           _hover={{
             color: "white",
             backgroundColor: "black",
@@ -299,12 +566,26 @@ const Menu = () => {
           backgroundColor="inherit"
           color="white"
           size="sm"
-          fontSize="18px"
+          fontSize={{
+            //base: {"18px"}
+            xs: "12px",
+            md: "14px",
+            lg: "14px",
+            xl: "16px",
+            "2xl": "18px",
+          }}
           fontWeight={500}
           height="100%"
           borderRadius="0px"
           position="relative"
-          px="20px"
+          px={{
+            //base: "20px"
+            xs: "4px",
+            md: "8px",
+            lg: "12px",
+            xl: "14px",
+            "2xl": "16px",
+          }}
           _hover={{
             color: "white",
             backgroundColor: "black",
@@ -323,12 +604,26 @@ const Menu = () => {
           backgroundColor="inherit"
           color="white"
           size="sm"
-          fontSize="18px"
+          fontSize={{
+            //base: {"18px"}
+            xs: "12px",
+            md: "14px",
+            lg: "14px",
+            xl: "16px",
+            "2xl": "18px",
+          }}
           fontWeight={500}
           height="100%"
           borderRadius="0px"
           position="relative"
-          px="20px"
+          px={{
+            //base: "20px"
+            xs: "4px",
+            md: "8px",
+            lg: "12px",
+            xl: "14px",
+            "2xl": "16px",
+          }}
           _hover={{
             color: "white",
             backgroundColor: "black",
@@ -356,10 +651,16 @@ const Navbar = () => {
           width={"100%"}
           justifyContent={"space-between"}
           alignItems={"center"}
-          pr={"20px"}
+          pr={{
+            // base: 20px
+            xs: "5px",
+            md: "7.5px",
+            lg: "10px",
+            xl: "20px",
+            "2xl": "30px",
+          }}
           style={{
             fontFamily: "CeraRoundPro",
-            // "--navbar-height": "60px",
           }}
           _hover={{
             backgroundColor: "white",
@@ -387,16 +688,55 @@ const Navbar = () => {
                 justifyContent={"flex-start"}
                 alignItems={"center"}
                 _hover={{ backgroundColor: "black", color: "white" }}
-                width={"325px"}
+                width={{
+                  // base: {"md"}
+                  xs: "2xs",
+                  md: "2xs",
+                  lg: "250px",
+                  xl: "325px",
+                  "2xl": "325px",
+                }}
                 transition={"all 0.3s ease"}
-                // py={"25px"}
-                pl={"20px"}
+                pl={{
+                  // base: 20px
+                  xs: "5px",
+                  md: "7.5px",
+                  lg: "10px",
+                  xl: "20px",
+                  "2xl": "30px",
+                }}
                 cursor={"pointer"}
                 className={styles.chakraStack}
               >
-                <Image src={LumineLogo} alt="" height={"50px"} width={"50px"} />
+                <Image
+                  src={LumineLogo}
+                  alt=""
+                  height={{
+                    // base: 50px
+                    xs: "25px",
+                    md: "30px",
+                    lg: "35px",
+                    xl: "35px",
+                    "2xl": "50px",
+                  }}
+                  width={{
+                    // base: 50px
+                    xs: "25px",
+                    md: "30px",
+                    lg: "35px",
+                    xl: "35px",
+                    "2xl": "50px",
+                  }}
+                />
                 <Text
-                  fontSize={"24px"}
+                  fontSize={{
+                    //base: {"24px"}
+                    xs: "14px",
+                    md: "16px",
+                    lg: "18px",
+                    xl: "18px",
+                    "2xl": "24px",
+                  }}
                   fontWeight={500}
                   className={styles.logoText}
                   css={{
@@ -410,7 +750,7 @@ const Navbar = () => {
           </GridItem>
 
           {/* Menu Options */}
-          <GridItem height={"100%"}>
+          <GridItem height={"100%"} justifySelf={"center"}>
             <Menu />
           </GridItem>
 
@@ -419,8 +759,22 @@ const Navbar = () => {
             <Link to={"/contact"} style={{ textDecoration: "none" }}>
               <Button
                 fontWeight={400}
-                fontSize={"18px"}
-                py={"15px"}
+                fontSize={{
+                  //base: {"18px"}
+                  xs: "12px",
+                  md: "14px",
+                  lg: "14px",
+                  xl: "16px",
+                  "2xl": "18px",
+                }}
+                py={{
+                  //base: {"15px"}
+                  xs: "6px",
+                  md: "8px",
+                  lg: "10px",
+                  xl: "12px",
+                  "2xl": "15px",
+                }}
                 color={"white"}
                 background={"none"}
                 borderColor={"white"}
