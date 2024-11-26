@@ -599,27 +599,6 @@ const LandingPage = () => {
               </Link>
             </GridItem>
           </Grid>
-
-          <Link to={"/all-services"} style={{ textDecoration: "none" }}>
-            <Button
-              background={"none"}
-              color={"white"}
-              border={"1px solid #FFFFFF"}
-              borderRadius={"8px"}
-              fontSize={"16px"}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              _hover={{
-                borderColor: "#beab7c",
-                backgroundColor: "black",
-                color: "#beab7c",
-                transition: "all 0.3s ease",
-              }}
-            >
-              {" "}
-              All Services
-            </Button>
-          </Link>
         </Box>
       </section>
 

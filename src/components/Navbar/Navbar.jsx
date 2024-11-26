@@ -69,6 +69,7 @@ const ServicesMegaMenu = () => {
         maxWidth="100vw"
         backgroundColor="#111111"
         py={"10px"}
+        px={"10px"}
         zIndex={9999}
         boxShadow="0 4px 6px rgba(0, 0, 0, 0.1)"
         className={`${styles.megaMenuContainer} ${isOpen ? styles.open : ""}`}
@@ -81,7 +82,7 @@ const ServicesMegaMenu = () => {
         >
           {/* Immigration Services */}
           <VStack
-            width={"18%"}
+            width="15%"
             alignItems={"flex-start"}
             justifyContent={"center"}
             gap={{
@@ -105,9 +106,9 @@ const ServicesMegaMenu = () => {
                   xs: "8px",
                   sm: "10px",
                   md: "12px",
-                  lg: "12px",
-                  xl: "16px",
-                  "2xl": "18px",
+                  lg: "9px",
+                  xl: "11px",
+                  "2xl": "16px",
                 }}
                 fontWeight={700}
                 className={styles.menuHeader}
@@ -122,13 +123,10 @@ const ServicesMegaMenu = () => {
               as={Link}
               to={"/all-services/immigration/spouse-visa"}
               fontSize={{
-                // base: {"18px"}
-                xs: "6px",
-                sm: "8px",
-                md: "10px",
-                lg: "12px",
-                xl: "14px",
-                "2xl": "16px",
+                // base: {"15px"}
+                lg: "8px",
+                xl: "10px",
+                "2xl": "15px",
               }}
               fontWeight={400}
               className={styles.menuText}
@@ -140,13 +138,10 @@ const ServicesMegaMenu = () => {
             {/* Citizenship App */}
             <Text
               fontSize={{
-                // base: {"18px"}
-                xs: "6px",
-                sm: "8px",
-                md: "10px",
-                lg: "12px",
-                xl: "14px",
-                "2xl": "16px",
+                // base: {"15px"}
+                lg: "8px",
+                xl: "10px",
+                "2xl": "15px",
               }}
               fontWeight={400}
               textAlign={"left"}
@@ -158,13 +153,10 @@ const ServicesMegaMenu = () => {
             {/* Visitor Visa */}
             <Text
               fontSize={{
-                // base: {"18px"}
-                xs: "6px",
-                sm: "8px",
-                md: "10px",
-                lg: "12px",
-                xl: "14px",
-                "2xl": "16px",
+                // base: {"15px"}
+                lg: "8px",
+                xl: "10px",
+                "2xl": "15px",
               }}
               fontWeight={400}
               className={styles.menuText}
@@ -176,13 +168,10 @@ const ServicesMegaMenu = () => {
             {/* Clearance from Outside UK */}
             <Text
               fontSize={{
-                // base: {"18px"}
-                xs: "6px",
-                sm: "8px",
-                md: "10px",
-                lg: "12px",
-                xl: "14px",
-                "2xl": "16px",
+                // base: {"15px"}
+                lg: "8px",
+                xl: "10px",
+                "2xl": "15px",
               }}
               fontWeight={400}
               textAlign={"left"}
@@ -194,13 +183,10 @@ const ServicesMegaMenu = () => {
             {/* Skilled Work Visa */}
             <Text
               fontSize={{
-                // base: {"18px"}
-                xs: "6px",
-                sm: "8px",
-                md: "10px",
-                lg: "12px",
-                xl: "14px",
-                "2xl": "16px",
+                // base: {"15px"}
+                lg: "8px",
+                xl: "10px",
+                "2xl": "15px",
               }}
               fontWeight={400}
               className={styles.menuText}
@@ -212,13 +198,10 @@ const ServicesMegaMenu = () => {
             {/* Cert of Sponsorship */}
             <Text
               fontSize={{
-                // base: {"18px"}
-                xs: "6px",
-                sm: "8px",
-                md: "10px",
-                lg: "12px",
-                xl: "14px",
-                "2xl": "16px",
+                // base: {"15px"}
+                lg: "8px",
+                xl: "10px",
+                "2xl": "15px",
               }}
               fontWeight={400}
               className={styles.menuText}
@@ -230,13 +213,10 @@ const ServicesMegaMenu = () => {
             {/* Student Visa */}
             <Text
               fontSize={{
-                // base: {"18px"}
-                xs: "6px",
-                sm: "8px",
-                md: "10px",
-                lg: "12px",
-                xl: "14px",
-                "2xl": "16px",
+                // base: {"15px"}
+                lg: "8px",
+                xl: "10px",
+                "2xl": "15px",
               }}
               fontWeight={400}
               className={styles.menuText}
@@ -248,13 +228,10 @@ const ServicesMegaMenu = () => {
             {/* Visa Extensions */}
             <Text
               fontSize={{
-                // base: {"18px"}
-                xs: "6px",
-                sm: "8px",
-                md: "10px",
-                lg: "12px",
-                xl: "14px",
-                "2xl": "16px",
+                // base: {"15px"}
+                lg: "8px",
+                xl: "10px",
+                "2xl": "15px",
               }}
               fontWeight={400}
               className={styles.menuText}
@@ -266,13 +243,10 @@ const ServicesMegaMenu = () => {
             {/* Indefinite Leave */}
             <Text
               fontSize={{
-                // base: {"18px"}
-                xs: "6px",
-                sm: "8px",
-                md: "10px",
-                lg: "12px",
-                xl: "14px",
-                "2xl": "16px",
+                // base: {"15px"}
+                lg: "8px",
+                xl: "10px",
+                "2xl": "15px",
               }}
               fontWeight={400}
               className={styles.menuText}
@@ -284,7 +258,7 @@ const ServicesMegaMenu = () => {
 
           {/* Residential & Commercial Property*/}
           <VStack
-            width={"18%"}
+            width="22%"
             alignItems={"flex-start"}
             gap={{
               // base: {"20px"}
@@ -304,9 +278,9 @@ const ServicesMegaMenu = () => {
                 xs: "8px",
                 sm: "10px",
                 md: "12px",
-                lg: "12px",
-                xl: "16px",
-                "2xl": "18px",
+                lg: "9px",
+                xl: "11px",
+                "2xl": "16px",
               }}
               fontWeight={700}
               className={styles.menuHeader}
@@ -318,7 +292,7 @@ const ServicesMegaMenu = () => {
 
           {/* Dispute Resolution and Civil Litigation */}
           <VStack
-            width={"18%"}
+            width="22%"
             alignItems={"flex-start"}
             gap={{
               // base: {"20px"}
@@ -337,9 +311,9 @@ const ServicesMegaMenu = () => {
                 xs: "8px",
                 sm: "10px",
                 md: "12px",
-                lg: "12px",
-                xl: "16px",
-                "2xl": "18px",
+                lg: "9px",
+                xl: "11px",
+                "2xl": "16px",
               }}
               fontWeight={700}
               className={styles.menuHeader}
@@ -351,7 +325,7 @@ const ServicesMegaMenu = () => {
 
           {/* Landlord and Tenant Disputes */}
           <VStack
-            width={"18%"}
+            width="20%"
             alignItems={"flex-start"}
             gap={{
               // base: {"20px"}
@@ -370,9 +344,9 @@ const ServicesMegaMenu = () => {
                 xs: "8px",
                 sm: "10px",
                 md: "12px",
-                lg: "12px",
-                xl: "16px",
-                "2xl": "18px",
+                lg: "9px",
+                xl: "11px",
+                "2xl": "16px",
               }}
               fontWeight={700}
               className={styles.menuHeader}
@@ -384,7 +358,7 @@ const ServicesMegaMenu = () => {
 
           {/* Family and Children */}
           <VStack
-            width={"18%"}
+            width="16%"
             alignItems={"flex-start"}
             gap={{
               // base: {"20px"}
@@ -403,9 +377,9 @@ const ServicesMegaMenu = () => {
                 xs: "8px",
                 sm: "10px",
                 md: "10px",
-                lg: "12px",
-                xl: "16px",
-                "2xl": "18px",
+                lg: "9px",
+                xl: "11px",
+                "2xl": "16px",
               }}
               fontWeight={700}
               className={styles.menuHeader}
@@ -416,13 +390,10 @@ const ServicesMegaMenu = () => {
             {/* Divorce */}
             <Text
               fontSize={{
-                // base: {"18px"}
-                xs: "6px",
-                sm: "8px",
-                md: "10px",
-                lg: "10px",
-                xl: "14px",
-                "2xl": "16px",
+                // base: {"15px"}
+                lg: "8px",
+                xl: "10px",
+                "2xl": "15px",
               }}
               fontWeight={400}
               className={styles.menuText}
@@ -434,13 +405,10 @@ const ServicesMegaMenu = () => {
             {/* Pre Nuptial Agreement */}
             <Text
               fontSize={{
-                // base: {"18px"}
-                xs: "6px",
-                sm: "8px",
-                md: "10px",
-                lg: "10px",
-                xl: "14px",
-                "2xl": "16px",
+                // base: {"15px"}
+                lg: "8px",
+                xl: "10px",
+                "2xl": "15px",
               }}
               fontWeight={400}
               className={styles.menuText}
@@ -452,13 +420,10 @@ const ServicesMegaMenu = () => {
             {/* Child Arrangements */}
             <Text
               fontSize={{
-                // base: {"18px"}
-                xs: "6px",
-                sm: "8px",
-                md: "10px",
-                lg: "10px",
-                xl: "14px",
-                "2xl": "16px",
+                // base: {"15px"}
+                lg: "8px",
+                xl: "10px",
+                "2xl": "15px",
               }}
               fontWeight={400}
               className={styles.menuText}
@@ -561,7 +526,7 @@ const Menu = () => {
         {/* Services */}
         <ServicesMegaMenu />
 
-        {/* News */}
+        {/* News + Insights */}
         <Button
           backgroundColor="inherit"
           color="white"
@@ -596,45 +561,7 @@ const Menu = () => {
             transition: "all 0.3s ease",
           }}
         >
-          News
-        </Button>
-
-        {/* Insights */}
-        <Button
-          backgroundColor="inherit"
-          color="white"
-          size="sm"
-          fontSize={{
-            //base: {"18px"}
-            xs: "12px",
-            md: "14px",
-            lg: "14px",
-            xl: "16px",
-            "2xl": "18px",
-          }}
-          fontWeight={500}
-          height="100%"
-          borderRadius="0px"
-          position="relative"
-          px={{
-            //base: "20px"
-            xs: "4px",
-            md: "8px",
-            lg: "12px",
-            xl: "14px",
-            "2xl": "16px",
-          }}
-          _hover={{
-            color: "white",
-            backgroundColor: "black",
-            borderBottom: "5px solid #BEAB7C",
-          }}
-          className={styles.menuButton}
-          css={{
-            transition: "all 0.3s ease",
-          }}
-        >
-          Insights
+          News and Insights
         </Button>
       </HStack>
     </>
