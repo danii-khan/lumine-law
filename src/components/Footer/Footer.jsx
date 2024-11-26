@@ -8,6 +8,7 @@ import {
   Link,
   Grid,
   GridItem,
+  Flex,
 } from "@chakra-ui/react";
 import SRA from "../../assets/footer/sra-logo.png";
 import AccreditLogo from "../../assets/footer/accredit.png";
@@ -30,17 +31,26 @@ const Footer = () => {
       <Box
         width={"100%"}
         borderTop={"0.5px solid #707070"}
-        px={"100px"}
+        px={{ xs: "5%", lg: "2.5%" }}
         pb={"10px"}
         style={{ fontFamily: "CeraRoundPro" }}
         backgroundColor={"black"}
       >
         {/* Top */}
-        <HStack justifyContent={"space-between"} alignItems={"center"}>
+        <Flex
+          flexDir={{ xs: "column", lg: "row" }}
+          justifyContent={{ xs: "center", lg: "space-between" }}
+          alignItems={"center"}
+        >
           {/* address + all */}
           <Box justifyContent={"center"} alignItems={"center"}>
             <Text
-              fontSize={"25px"}
+              fontSize={{
+                // {"25px"}
+                xs: "18px",
+                xl: "20px",
+                "2xl": "25px",
+              }}
               color={"#BEAB7C"}
               fontWeight={500}
               mb={"5px"}
@@ -50,26 +60,94 @@ const Footer = () => {
             </Text>
             <VStack justifyContent={"center"} alignItems={"flex-start"}>
               <HStack>
-                <FaLocationDot color={"#BEAB7C"} fontSize={"15px"} />
-                <Text color={"white"} fontSize={"15px"} fontWeight={300}>
+                <FaLocationDot
+                  color={"#BEAB7C"}
+                  fontSize={{
+                    // {"15px"}
+                    xs: "12px",
+                    xl: "13px",
+                    "2xl": "15px",
+                  }}
+                />
+                <Text
+                  color={"white"}
+                  fontSize={{
+                    // {"15px"}
+                    xs: "12px",
+                    xl: "13px",
+                    "2xl": "15px",
+                  }}
+                  fontWeight={300}
+                >
                   Address: 2nd floor, 156 Cromwell Road, London, SW7 4EF
                 </Text>
               </HStack>
               <HStack>
-                <PiPhoneCallFill color={"#BEAB7C"} fontSize={"15px"} />
-                <Text color={"white"} fontSize={"15px"} fontWeight={300}>
+                <PiPhoneCallFill
+                  color={"#BEAB7C"}
+                  fontSize={{
+                    // {"15px"}
+                    xs: "12px",
+                    xl: "13px",
+                    "2xl": "15px",
+                  }}
+                />
+                <Text
+                  color={"white"}
+                  fontSize={{
+                    // {"15px"}
+                    xs: "12px",
+                    xl: "13px",
+                    "2xl": "15px",
+                  }}
+                  fontWeight={300}
+                >
                   Tel: 02039502246
                 </Text>
               </HStack>
               <HStack>
-                <BsPrinterFill color={"#BEAB7C"} fontSize={"15px"} />
-                <Text color={"white"} fontSize={"15px"} fontWeight={300}>
+                <BsPrinterFill
+                  color={"#BEAB7C"}
+                  fontSize={{
+                    // {"15px"}
+                    xs: "12px",
+                    xl: "13px",
+                    "2xl": "15px",
+                  }}
+                />
+                <Text
+                  color={"white"}
+                  fontSize={{
+                    // {"15px"}
+                    xs: "12px",
+                    xl: "13px",
+                    "2xl": "15px",
+                  }}
+                  fontWeight={300}
+                >
                   Fax: 02030062503
                 </Text>
               </HStack>
               <HStack>
-                <MdEmail color={"#BEAB7C"} fontSize={"15px"} />
-                <Text color={"white"} fontSize={"15px"} fontWeight={300}>
+                <MdEmail
+                  color={"#BEAB7C"}
+                  fontSize={{
+                    // {"15px"}
+                    xs: "12px",
+                    xl: "13px",
+                    "2xl": "15px",
+                  }}
+                />
+                <Text
+                  color={"white"}
+                  fontSize={{
+                    // {"15px"}
+                    xs: "12px",
+                    xl: "13px",
+                    "2xl": "15px",
+                  }}
+                  fontWeight={300}
+                >
                   Email: info@luminelaw.com
                 </Text>
               </HStack>
@@ -77,23 +155,47 @@ const Footer = () => {
           </Box>
 
           {/* certs */}
-          <HStack>
+          <HStack my={{ xs: "10px", md: "0px" }}>
             <Image
               src={SRA}
               alt="Solicitors Regulation Authority"
-              height={"40px"}
-              width={"100px"}
+              height={{
+                md: "25px",
+                lg: "30px",
+                xl: "40px",
+              }}
+              width={{
+                md: "85px",
+                lg: "90px",
+                xl: "100px",
+              }}
             ></Image>
             <Image
               src={AccreditLogo}
               alt="Accredited"
-              height={"90px"}
-              width={"100px"}
+              height={{
+                md: "75px",
+                lg: "80px",
+                xl: "90px",
+              }}
+              width={{
+                md: "85px",
+                lg: "90px",
+                xl: "100px",
+              }}
             ></Image>
             <Box
               background={"white"}
-              height={"60px"}
-              width={"100px"}
+              height={{
+                md: "45px",
+                lg: "50px",
+                xl: "60px",
+              }}
+              width={{
+                md: "85px",
+                lg: "90px",
+                xl: "100px",
+              }}
               border={"0px"}
               borderRadius={"4px"}
             >
@@ -105,14 +207,36 @@ const Footer = () => {
               ></Image>
             </Box>
           </HStack>
-        </HStack>
+        </Flex>
+
         {/* Center Text */}
         <Center>
           <Text
-            fontSize={"15px"}
+            fontSize={{
+              // {"15px"}
+              xs: "12px",
+              xl: "13px",
+              "2xl": "15px",
+            }}
             fontWeight={400}
-            my={"20px"}
-            pb={"20px"}
+            my={{
+              // {"20px"}
+              xs: "10px",
+              sm: "12px",
+              md: "14px",
+              lg: "16px",
+              xl: "18px",
+              "2xl": "20px",
+            }}
+            pb={{
+              // {"20px"}
+              xs: "10px",
+              sm: "12px",
+              md: "14px",
+              lg: "16px",
+              xl: "18px",
+              "2xl": "20px",
+            }}
             borderBottom={"0.5px solid #707070"}
           >
             Lumine Solicitors and Lumine Law are the trading names of Lumine Law
@@ -121,24 +245,73 @@ const Footer = () => {
             the Solicitors Regulation Authority (SRA No.645265).
           </Text>
         </Center>
+
         {/* Bottom */}
-        <Grid templateColumns={"repeat(3, 1fr)"}>
+        <Grid
+          templateColumns={{ xs: "1fr", md: "repeat(3, 1fr)" }}
+          templateRows={{ xs: "repeat(3, 1fr)", md: "1fr" }}
+        >
           {/* 1st col */}
-          <GridItem justifyContent={"center"} alignSelf={"center"}>
-            <VStack width={"300px"}>
+          <GridItem
+            justifyContent={"center"}
+            alignSelf={"center"}
+            justifySelf={{ xs: "center", md: "flex-start" }}
+          >
+            <VStack
+              width={{
+                // base: {"300px"}
+                xs: "2xs",
+                md: "2xs",
+                lg: "250px",
+                xl: "275px",
+                "2xl": "300px",
+              }}
+            >
               {/* Logo and Name */}
               <HStack>
                 <Image
                   src={LumineLogo}
                   alt="Lumine Logo"
-                  height={"65px"}
-                  width={"50px"}
+                  height={{
+                    // base: {"65px"}
+                    xs: "35px",
+                    md: "40px",
+                    lg: "45px",
+                    xl: "55px",
+                    "2xl": "65px",
+                  }}
+                  width={{
+                    // base: {"50px"}
+                    xs: "20px",
+                    md: "25px",
+                    lg: "30px",
+                    xl: "40px",
+                    "2xl": "50px",
+                  }}
                 />
-                <Text fontSize="25px" fontWeight={500}>
+                <Text
+                  fontSize={{
+                    // {"25px"}
+                    xs: "16px",
+                    lg: "18px",
+                    xl: "20px",
+                    "2xl": "25px",
+                  }}
+                  fontWeight={500}
+                >
                   LUMINE SOLICITORS
                 </Text>
               </HStack>
-              <Text fontSize={"15px"} fontWeight={300} color={"#BEAB7C"}>
+              <Text
+                fontSize={{
+                  // {"15px"}
+                  xs: "12px",
+                  xl: "13px",
+                  "2xl": "15px",
+                }}
+                fontWeight={300}
+                color={"#BEAB7C"}
+              >
                 We offer the dedicated support and advice you require from the
                 very outset of your matter.
               </Text>
@@ -147,14 +320,34 @@ const Footer = () => {
 
           {/* second col */}
           <GridItem justifyContent={"center"} alignSelf={"center"}>
-            <Center gap={"30px"}>
+            <Center
+              gap={{
+                // {"30px"}
+                xs: "14px",
+                sm: "16px",
+                md: "18px",
+                lg: "20px",
+                xl: "25px",
+                "2xl": "30px",
+              }}
+            >
               {/* LinkedIn */}
               <Link href="https://www.linkedin.com/company/lumine-solicitors/">
                 <Image
                   src={LinkedInLogo}
                   alt="LinkedIn Logo"
-                  height={"30px"}
-                  width={"30px"}
+                  height={{
+                    // {"30px"}
+                    xs: "20px",
+                    xl: "25px",
+                    "2xl": "30px",
+                  }}
+                  width={{
+                    // {"30px"}
+                    xs: "20px",
+                    xl: "25px",
+                    "2xl": "30px",
+                  }}
                   cursor={"pointer"}
                 />
               </Link>
@@ -164,8 +357,18 @@ const Footer = () => {
                 <Image
                   src={TwitterLogo}
                   alt="Twitter Logo"
-                  height={"30px"}
-                  width={"30px"}
+                  height={{
+                    // {"30px"}
+                    xs: "20px",
+                    xl: "25px",
+                    "2xl": "30px",
+                  }}
+                  width={{
+                    // {"30px"}
+                    xs: "20px",
+                    xl: "25px",
+                    "2xl": "30px",
+                  }}
                   cursor={"pointer"}
                 />
               </Link>
@@ -175,8 +378,18 @@ const Footer = () => {
                 <Image
                   src={FacebookLogo}
                   alt="Facebook Logo"
-                  height={"30px"}
-                  width={"30px"}
+                  height={{
+                    // {"30px"}
+                    xs: "20px",
+                    xl: "25px",
+                    "2xl": "30px",
+                  }}
+                  width={{
+                    // {"30px"}
+                    xs: "20px",
+                    xl: "25px",
+                    "2xl": "30px",
+                  }}
                   cursor={"pointer"}
                 />
               </Link>
@@ -186,8 +399,18 @@ const Footer = () => {
                 <Image
                   src={InstagramLogo}
                   alt="Instagram Logo"
-                  height={"30px"}
-                  width={"30px"}
+                  height={{
+                    // {"30px"}
+                    xs: "20px",
+                    xl: "25px",
+                    "2xl": "30px",
+                  }}
+                  width={{
+                    // {"30px"}
+                    xs: "20px",
+                    xl: "25px",
+                    "2xl": "30px",
+                  }}
                   cursor={"pointer"}
                 />
               </Link>
@@ -197,8 +420,18 @@ const Footer = () => {
                 <Image
                   src={TikTokLogo}
                   alt="TikTok Logo"
-                  height={"30px"}
-                  width={"30px"}
+                  height={{
+                    // {"30px"}
+                    xs: "20px",
+                    xl: "25px",
+                    "2xl": "30px",
+                  }}
+                  width={{
+                    // {"30px"}
+                    xs: "20px",
+                    xl: "25px",
+                    "2xl": "30px",
+                  }}
                   cursor={"pointer"}
                 />
               </Link>
@@ -207,17 +440,58 @@ const Footer = () => {
 
           {/* third col */}
           <GridItem justifyContent={"center"} alignSelf={"center"}>
-            <VStack gap={"15px"}>
-              <HStack gap={"90px"}>
-                <Text fontSize={"15px"} fontWeight={400}>
+            <VStack
+              gap={{
+                // {"15px"}
+                xs: "8px",
+                sm: "10px",
+                md: "11px",
+                lg: "12px",
+                xl: "13px",
+                "2xl": "15px",
+              }}
+            >
+              <HStack
+                gap={{
+                  // {"90px"}
+                  xs: "40px",
+                  sm: "50px",
+                  md: "60px",
+                  lg: "70px",
+                  xl: "80px",
+                  "2xl": "90px",
+                }}
+              >
+                <Text
+                  fontSize={{
+                    // {"15px"}
+                    xs: "12px",
+                    xl: "13px",
+                    "2xl": "15px",
+                  }}
+                  fontWeight={400}
+                >
                   Privacy Policy
                 </Text>
-                <Text fontSize={"15px"} fontWeight={400}>
+                <Text
+                  fontSize={{
+                    // {"15px"}
+                    xs: "12px",
+                    xl: "13px",
+                    "2xl": "15px",
+                  }}
+                  fontWeight={400}
+                >
                   Disclaimer
                 </Text>
               </HStack>
               <Text
-                fontSize={"15px"}
+                fontSize={{
+                  // {"15px"}
+                  xs: "12px",
+                  xl: "13px",
+                  "2xl": "15px",
+                }}
                 fontWeight={400}
                 fontFamily={
                   "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
