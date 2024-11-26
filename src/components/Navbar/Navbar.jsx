@@ -78,7 +78,7 @@ const ServicesMegaMenu = () => {
           justifyContent={"center"}
           alignItems={"flex-start"}
           py={"10px"}
-          gap={{ xs: "2.5px", sm: "5px", md: "7.5px", xl: "10px" }}
+          gap={{ xs: "2.5px", sm: "5px", md: "7.5px", xl: "12.5px" }}
         >
           {/* Immigration Services */}
           <VStack
@@ -254,6 +254,23 @@ const ServicesMegaMenu = () => {
             >
               Indefinite Leave to Remain
             </Text>
+
+            {/* Explore More */}
+            <Link to={"/all-services"} style={{ textDecoration: "none" }}>
+              <Text
+                fontSize={{
+                  // base: {"15px"}
+                  lg: "8px",
+                  xl: "10px",
+                  "2xl": "15px",
+                }}
+                fontWeight={700}
+                className={styles.menuText}
+                textAlign={"left"}
+              >
+                Explore More
+              </Text>
+            </Link>
           </VStack>
 
           {/* Residential & Commercial Property*/}

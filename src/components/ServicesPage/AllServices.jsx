@@ -10,6 +10,7 @@ import {
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import BannerImg from "../../assets/services/all/banner.png";
+import ImmigrationImg from "../../assets/services/main/immigration/main-banner.png";
 import "../../styles/fonts.css";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import { Link } from "react-router-dom";
@@ -115,17 +116,23 @@ const AllServices = () => {
               justifyItems={"center"}
               alignItems={"center"}
             >
-              {/* Row 1 */} {/* Col 1 */}
+              {/* Immigration */}
               <GridItem
                 width={"100%"}
                 height={"300px"}
+                bgImage={`url(${ImmigrationImg})`}
+                bgSize={"cover"}
+                bgPos={"center"}
+                bgRepeat={"no-repeat"}
                 padding={"10px 20px"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}
+                color={"white"}
                 _hover={{
                   color: "#beab7c",
                   backgroundColor: "black",
+                  bgImage: "none",
                   transition: "all 0.3s ease",
                 }}
               >
@@ -167,7 +174,7 @@ const AllServices = () => {
                   </Box>
                 </Link>
               </GridItem>
-              {/* Col 2 */}
+              {/* Residential + Commercial */}
               <GridItem
                 width={"100%"}
                 height={"300px"}
@@ -214,7 +221,7 @@ const AllServices = () => {
                   </VStack>
                 </Box>
               </GridItem>
-              {/* Col 3 */}
+              {/* Dispute Resolution */}
               <GridItem
                 width={"100%"}
                 height={"300px"}
@@ -261,7 +268,7 @@ const AllServices = () => {
                   </VStack>
                 </Box>
               </GridItem>
-              {/* Row 2 */} {/* Col 1 */}
+              {/* Landlord + Tenant */}
               <GridItem
                 width={"100%"}
                 height={"300px"}
@@ -308,7 +315,7 @@ const AllServices = () => {
                   </VStack>
                 </Box>
               </GridItem>
-              {/* Col 2 */}
+              {/* Family + Children */}
               <GridItem
                 width={"100%"}
                 height={"300px"}
@@ -355,7 +362,7 @@ const AllServices = () => {
                   </VStack>
                 </Box>
               </GridItem>
-              {/* Col 3 */}
+              {/* New Service */}
               <GridItem
                 width={"100%"}
                 height={"300px"}
@@ -402,9 +409,9 @@ const AllServices = () => {
                   </VStack>
                 </Box>
               </GridItem>
-              {/* Row 4 */} {/* Col 1 */}
+              {/* empty grid */}
               <GridItem>{/* empty */}</GridItem>
-              {/* Col 2 */}
+              {/* New Service*/}
               <GridItem
                 width={"100%"}
                 height={"300px"}

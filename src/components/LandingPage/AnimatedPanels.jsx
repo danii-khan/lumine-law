@@ -59,7 +59,7 @@ const AnimatedPanels = ({ images }) => {
   return (
     <Box
       height="50%"
-      width="90%"
+      width="100%"
       position="relative"
       alignSelf="center"
       borderRadius="8px"

@@ -22,6 +22,7 @@ import NewsInsightsOne from "../../../assets/landing/news-insights-one.png";
 import NewsInsightsTwo from "../../../assets/landing/news-insights-two.png";
 import NewsInsightsThree from "../../../assets/landing/news-insights-three.png";
 import NewsInsightsFour from "../../../assets/landing/news-insights-four.png";
+import BannerImg from "../../../assets/services/main/immigration/main-banner.png";
 
 const SpouseVisa = () => {
   const [spouseState, setSpouseState] = useState(false);
@@ -50,7 +51,10 @@ const SpouseVisa = () => {
           <Box
             width={"100%"}
             height={"200px"}
-            backgroundColor={"#EECA98"}
+            bgImage={`url(${BannerImg})`}
+            bgSize={"cover"}
+            bgPos={"center"}
+            bgRepeat={"no-repeat"}
             display={"flex"}
             justifyContent={"space-around"}
             alignItems={"center"}

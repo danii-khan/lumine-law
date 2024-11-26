@@ -663,12 +663,12 @@ const LandingPage = () => {
           flexDir={"column"}
           alignItems={"flex-start"}
           justifyContent={"center"}
-          gap={"50px"}
+          gap={"25px"}
           bgImage={`url(${NewsInsightsBg})`}
           bgPos={"center"}
           bgSize={"cover"}
           bgRepeat={"no-repeat"}
-          pt={"10%"}
+          pt={"13.5%"}
         >
           <Text
             color="white"
@@ -686,30 +686,30 @@ const LandingPage = () => {
             width={"100%"}
             justifyContent={"center"}
             alignItems={"center"}
-            gap={"50px"}
+            gap={"10px"}
           >
             <Image
               src={NewsInsightsOne}
-              height={"100%"}
-              width={"15%"}
+              height={"375px"}
+              width={"24%"}
               objectFit={"cover"}
             />
             <Image
               src={NewsInsightsTwo}
-              height={"100%"}
-              width={"15%"}
+              height={"375px"}
+              width={"24%"}
               objectFit={"cover"}
             />
             <Image
               src={NewsInsightsThree}
-              height={"100%"}
-              width={"15%"}
+              height={"375px"}
+              width={"24%"}
               objectFit={"cover"}
             />
             <Image
               src={NewsInsightsFour}
-              height={"100%"}
-              width={"15%"}
+              height={"375px"}
+              width={"24%"}
               objectFit={"cover"}
             />
           </HStack>
