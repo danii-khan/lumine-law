@@ -75,7 +75,7 @@ const AllServices = () => {
             <HStack
               justifyContent={"space-around"}
               alignItems={"center"}
-              my={{ xs: "5%", lg: "2%", xl: "2%", "2xl": "1%" }}
+              my={{ xs: "5%", lg: "2%", xl: "2.5%", "2xl": "1%" }}
             >
               <Text
                 fontFamily={"CeraRoundPro"}
@@ -101,7 +101,7 @@ const AllServices = () => {
             <Box
               width={{ xs: "95%", lg: "92.5%", xl: "95%" }}
               alignSelf={"center"}
-              mb={{ xs: "5%", lg: "2.5%", xl: "5%" }}
+              mb={{ xs: "5%", lg: "2.5%", xl: "5%", "2xl": "2.5%" }}
             >
               <Text
                 fontFamily={"CeraRoundPro"}
@@ -149,7 +149,7 @@ const AllServices = () => {
                   "2xl": "200px",
                 }}
                 padding={{
-                  xs: "4px 10px",
+                  xs: "15% 10px",
                   lg: "6px 14px",
                   xl: "8px 16px",
                   "2xl": "10px 20px",
@@ -227,7 +227,7 @@ const AllServices = () => {
                   "2xl": "200px",
                 }}
                 padding={{
-                  xs: "4px 10px",
+                  xs: "15% 10px",
                   lg: "6px 14px",
                   xl: "8px 16px",
                   "2xl": "10px 20px",
@@ -294,7 +294,7 @@ const AllServices = () => {
                   "2xl": "200px",
                 }}
                 padding={{
-                  xs: "4px 10px",
+                  xs: "15% 10px",
                   lg: "6px 14px",
                   xl: "8px 16px",
                   "2xl": "10px 20px",
@@ -361,7 +361,7 @@ const AllServices = () => {
                   "2xl": "200px",
                 }}
                 padding={{
-                  xs: "4px 10px",
+                  xs: "15% 10px",
                   lg: "6px 14px",
                   xl: "8px 16px",
                   "2xl": "10px 20px",
@@ -428,7 +428,7 @@ const AllServices = () => {
                   "2xl": "200px",
                 }}
                 padding={{
-                  xs: "4px 10px",
+                  xs: "15% 10px",
                   lg: "6px 14px",
                   xl: "8px 16px",
                   "2xl": "10px 20px",
@@ -495,7 +495,7 @@ const AllServices = () => {
                   "2xl": "200px",
                 }}
                 padding={{
-                  xs: "4px 10px",
+                  xs: "15% 10px",
                   lg: "6px 14px",
                   xl: "8px 16px",
                   "2xl": "10px 20px",
@@ -567,7 +567,7 @@ const AllServices = () => {
                   "2xl": "200px",
                 }}
                 padding={{
-                  xs: "4px 10px",
+                  xs: "8px 10px",
                   lg: "6px 14px",
                   xl: "8px 16px",
                   "2xl": "10px 20px",
