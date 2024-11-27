@@ -52,6 +52,26 @@ const ScrollSpySidebar = () => {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    const isMobile = window.innerWidth < 768;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: isMobile ? 0.5 : 0.9 } // Lower threshold for mobile
+    );
+
+    document.querySelectorAll("section[id]").forEach((section) => {
+      observer.observe(section);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     const navbarHeight = document.querySelector("nav")?.offsetHeight || 0;
@@ -84,24 +104,24 @@ const ScrollSpySidebar = () => {
         activeSection === "Who-we-are"
           ? { xs: "55%", md: "60%", lg: "55%", xl: "52.5%", "2xl": "55%" }
           : activeSection === "Our-Services"
-          ? { xs: "52.5%", md: "50%", lg: "50%", xl: "50%", "2xl": "50%" }
+          ? { xs: "55%", md: "50%", lg: "50%", xl: "50%", "2xl": "50%" }
           : activeSection === "Panels"
-          ? { xs: "50%", md: "55%", lg: "50%", xl: "50%", "2xl": "50%" }
+          ? { xs: "57.5%", md: "55%", lg: "50%", xl: "50%", "2xl": "50%" }
           : activeSection === "News-and-Insights"
-          ? { xs: "45%", md: "50%", lg: "50%", xl: "50%", "2xl": "50%" }
+          ? { xs: "55%", md: "50%", lg: "50%", xl: "50%", "2xl": "50%" }
           : "50%"
       }
       transform="translateY(-50%)"
       height={
         activeSection === "Who-we-are"
-          ? { xs: "65vh", md: "85vh", lg: "80vh", xl: "80vh", "2xl": "80vh" }
+          ? { xs: "85vh", md: "85vh", lg: "80vh", xl: "80vh", "2xl": "80vh" }
           : activeSection === "Our-Services"
-          ? { xs: "90vh", md: "90vh", lg: "90vh", xl: "90vh", "2xl": "95vh" }
+          ? { xs: "87.5vh", md: "90vh", lg: "90vh", xl: "90vh", "2xl": "95vh" }
           : activeSection === "Panels"
-          ? { xs: "80vh", md: "90vh", lg: "95vh", xl: "95vh", "2xl": "95vh" }
+          ? { xs: "90vh", md: "90vh", lg: "95vh", xl: "95vh", "2xl": "95vh" }
           : activeSection === "News-and-Insights"
           ? {
-              xs: "80vh",
+              xs: "90vh",
               md: "90vh",
               lg: "95vh",
               xl: "97.5vh",
@@ -116,10 +136,11 @@ const ScrollSpySidebar = () => {
       pointerEvents="auto"
     >
       {/* Visited and Current Sections at Top */}
-      <VStack align="flex-start" spacing={2}>
+      <VStack align="flex-start" spacing={2} gap={0}>
         {activeSection !== "none" &&
           sectionIds.slice(0, activeIndex + 1).map((id) => (
             <Button
+              size={{ xs: "2xs", md: "sm" }}
               key={id}
               pl={0}
               variant="ghost"
@@ -168,11 +189,12 @@ const ScrollSpySidebar = () => {
       </VStack>
 
       {/* Unvisited Sections at Bottom */}
-      <VStack align="flex-start" spacing={2}>
+      <VStack align="flex-start" spacing={2} gap={0}>
         {activeSection !== "none" &&
           sectionIds.slice(activeIndex + 1).map((id) => (
             <Button
               key={id}
+              size={{ xs: "2xs", md: "sm" }}
               pl={0}
               variant="ghost"
               onClick={() => scrollToSection(id)}
@@ -440,7 +462,7 @@ const LandingPage = () => {
           bgPos={"center"}
           bgSize={"cover"}
           bgRepeat={"no-repeat"}
-          // pt={"5%"}
+          pt={{ xs: "15%", md: "1%" }}
         >
           <Grid
             templateColumns={{ xs: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
@@ -453,7 +475,7 @@ const LandingPage = () => {
               xl: "22px",
               "2xl": "25px",
             }}
-            height={"55%"}
+            height={{ xs: "45%", md: "55%" }}
             width={"80%"}
             alignItems={"center"}
             justifyItems={"center"}
@@ -837,7 +859,7 @@ const LandingPage = () => {
           bgSize={"cover"}
           bgRepeat={"no-repeat"}
           pt={{
-            xs: "4%",
+            xs: "20%",
             sm: "5%",
             md: "6%",
             lg: "13.5%",

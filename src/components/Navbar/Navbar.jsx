@@ -681,6 +681,7 @@ const Navbar = () => {
                     xl: "18px",
                     "2xl": "24px",
                   }}
+                  color={"white"}
                   fontWeight={500}
                   className={styles.logoText}
                   css={{
