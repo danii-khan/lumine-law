@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route
-            path="/"
+            path="/lumine-law/"
             element={
               <PageTransition>
                 <LandingPage />
