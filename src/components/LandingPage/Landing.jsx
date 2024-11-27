@@ -148,7 +148,7 @@ const ScrollSpySidebar = () => {
               background="none"
               color={activeSection === "Panels" ? "black" : "white"}
               _hover={{
-                color: activeSection !== "Panels" && "#beab7c",
+                color: activeSection !== "Panels" ? "#beab7c" : "white",
                 opacity: "100%",
               }}
               fontWeight={400}
@@ -201,7 +201,7 @@ const ScrollSpySidebar = () => {
               background="none"
               color={activeSection === "Panels" ? "black" : "white"}
               _hover={{
-                color: activeSection !== "Panels" && "#beab7c",
+                color: activeSection !== "Panels" ? "#beab7c" : "white",
                 opacity: "100%",
               }}
               fontWeight={400}
