@@ -32,7 +32,7 @@ const Footer = () => {
         width={"100%"}
         borderTop={"0.5px solid #707070"}
         px={{ xs: "5%", lg: "2.5%" }}
-        pb={"10px"}
+        pb={{ xs: "0px", lg: "10px" }}
         style={{ fontFamily: "CeraRoundPro" }}
         backgroundColor={"black"}
       >
@@ -160,38 +160,46 @@ const Footer = () => {
               src={SRA}
               alt="Solicitors Regulation Authority"
               height={{
+                xs: "35px",
                 md: "25px",
                 lg: "30px",
                 xl: "40px",
               }}
               width={{
+                xs: "85px",
                 md: "85px",
                 lg: "90px",
                 xl: "100px",
               }}
+              objectFit={"contain"}
             ></Image>
             <Image
               src={AccreditLogo}
               alt="Accredited"
               height={{
+                xs: "70px",
                 md: "75px",
                 lg: "80px",
                 xl: "90px",
               }}
               width={{
+                xs: "80px",
                 md: "85px",
                 lg: "90px",
                 xl: "100px",
               }}
+              objectFit={"contain"}
             ></Image>
             <Box
               background={"white"}
               height={{
+                xs: "40px",
                 md: "45px",
                 lg: "50px",
                 xl: "60px",
               }}
               width={{
+                xs: "80px",
                 md: "85px",
                 lg: "90px",
                 xl: "100px",
@@ -204,6 +212,7 @@ const Footer = () => {
                 alt="Lexcel"
                 height={"100%"}
                 width={"100%"}
+                objectFit={"contain"}
               ></Image>
             </Box>
           </HStack>
@@ -238,6 +247,7 @@ const Footer = () => {
               "2xl": "20px",
             }}
             borderBottom={"0.5px solid #707070"}
+            color={"white"}
           >
             Lumine Solicitors and Lumine Law are the trading names of Lumine Law
             Limited, a company registered in England & Wales (company
@@ -249,7 +259,7 @@ const Footer = () => {
         {/* Bottom */}
         <Grid
           templateColumns={{ xs: "1fr", md: "repeat(3, 1fr)" }}
-          templateRows={{ xs: "repeat(3, 1fr)", md: "1fr" }}
+          templateRows={{ xs: "repeat(3, 0.6fr)", md: "1fr" }}
         >
           {/* 1st col */}
           <GridItem
@@ -298,6 +308,7 @@ const Footer = () => {
                     "2xl": "25px",
                   }}
                   fontWeight={500}
+                  color={"white"}
                 >
                   LUMINE SOLICITORS
                 </Text>
@@ -470,6 +481,7 @@ const Footer = () => {
                     "2xl": "15px",
                   }}
                   fontWeight={400}
+                  color={"white"}
                 >
                   Privacy Policy
                 </Text>
@@ -481,6 +493,7 @@ const Footer = () => {
                     "2xl": "15px",
                   }}
                   fontWeight={400}
+                  color={"white"}
                 >
                   Disclaimer
                 </Text>
@@ -496,6 +509,7 @@ const Footer = () => {
                 fontFamily={
                   "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
                 }
+                color={"white"}
               >
                 © Copyright 2024 Lumine Law | All Rights Reserved
               </Text>

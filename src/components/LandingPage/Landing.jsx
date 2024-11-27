@@ -305,6 +305,7 @@ const LandingPage = () => {
               fontWeight={300}
               fontFamily="HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
               textAlign={"left"}
+              color={"white"}
             >
               A whole paragraph, slightly explaining what Lumine law is, or just
               like a smaller intro paragraph.
@@ -381,6 +382,7 @@ const LandingPage = () => {
                 fontWeight={300}
                 fontFamily="HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
                 textAlign={"left"}
+                color={"white"}
               >
                 A whole paragraph, in further details explaining what Lumine Law
                 does. Go into details. Lorem ipsum dolor sit amet, consectetur
@@ -403,6 +405,7 @@ const LandingPage = () => {
                 fontWeight={300}
                 fontFamily="HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
                 textAlign={"left"}
+                color={"white"}
               >
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco
                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
@@ -491,6 +494,7 @@ const LandingPage = () => {
                   }}
                   fontWeight={400}
                   fontFamily={"CeraRoundPro"}
+                  color={"white"}
                 >
                   Immigration Services
                 </Text>
@@ -527,6 +531,7 @@ const LandingPage = () => {
                 fontWeight={400}
                 fontFamily={"CeraRoundPro"}
                 width={"80%"}
+                color={"white"}
               >
                 Residential and Commercial Property{" "}
               </Text>
@@ -562,6 +567,7 @@ const LandingPage = () => {
                 fontWeight={400}
                 fontFamily={"CeraRoundPro"}
                 width={"80%"}
+                color={"white"}
               >
                 Dispute Resolution and Civil Litigation{" "}
               </Text>
@@ -597,6 +603,7 @@ const LandingPage = () => {
                 fontWeight={400}
                 fontFamily={"CeraRoundPro"}
                 width={"80%"}
+                color={"white"}
               >
                 Landlord and Tenant Disputes{" "}
               </Text>
@@ -632,6 +639,7 @@ const LandingPage = () => {
                 fontWeight={400}
                 fontFamily={"CeraRoundPro"}
                 width={"80%"}
+                color={"white"}
               >
                 Family and Children{" "}
               </Text>
@@ -667,6 +675,7 @@ const LandingPage = () => {
                 fontWeight={400}
                 fontFamily={"CeraRoundPro"}
                 width={"80%"}
+                color={"white"}
               >
                 Personal Injury{" "}
               </Text>
@@ -702,6 +711,7 @@ const LandingPage = () => {
                 fontWeight={400}
                 fontFamily={"CeraRoundPro"}
                 width={"80%"}
+                color={"white"}
               >
                 New Service{" "}
               </Text>
@@ -743,6 +753,7 @@ const LandingPage = () => {
                   }}
                   fontWeight={400}
                   fontFamily={"CeraRoundPro"}
+                  color={"white"}
                 >
                   All Services{" "}
                 </Text>
@@ -869,53 +880,53 @@ const LandingPage = () => {
             <Image
               src={NewsInsightsOne}
               height={{
-                xs: "125px",
+                xs: "150px",
                 sm: "175px",
                 md: "225px",
                 lg: "275px",
                 xl: "325px",
                 "2xl": "375px",
               }}
-              width={"24%"}
+              width={{ xs: "22%", md: "24%" }}
               objectFit={"cover"}
             />
             <Image
               src={NewsInsightsTwo}
               height={{
-                xs: "125px",
+                xs: "150px",
                 sm: "175px",
                 md: "225px",
                 lg: "275px",
                 xl: "325px",
                 "2xl": "375px",
               }}
-              width={"24%"}
+              width={{ xs: "22%", md: "24%" }}
               objectFit={"cover"}
             />
             <Image
               src={NewsInsightsThree}
               height={{
-                xs: "125px",
+                xs: "150px",
                 sm: "175px",
                 md: "225px",
                 lg: "275px",
                 xl: "325px",
                 "2xl": "375px",
               }}
-              width={"24%"}
+              width={{ xs: "22%", md: "24%" }}
               objectFit={"cover"}
             />
             <Image
               src={NewsInsightsFour}
               height={{
-                xs: "125px",
+                xs: "150px",
                 sm: "175px",
                 md: "225px",
                 lg: "275px",
                 xl: "325px",
                 "2xl": "375px",
               }}
-              width={"24%"}
+              width={{ xs: "22%", md: "24%" }}
               objectFit={"cover"}
             />
           </HStack>
