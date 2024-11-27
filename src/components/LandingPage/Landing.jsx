@@ -84,25 +84,25 @@ const ScrollSpySidebar = () => {
         activeSection === "Who-we-are"
           ? { xs: "55%", md: "60%", lg: "55%", xl: "52.5%", "2xl": "55%" }
           : activeSection === "Our-Services"
-          ? { xs: "52.5%", md: "60%", lg: "50%", xl: "50%", "2xl": "50%" }
+          ? { xs: "52.5%", md: "50%", lg: "50%", xl: "50%", "2xl": "50%" }
           : activeSection === "Panels"
-          ? { xs: "50%", md: "60%", lg: "50%", xl: "50%", "2xl": "50%" }
+          ? { xs: "50%", md: "55%", lg: "50%", xl: "50%", "2xl": "50%" }
           : activeSection === "News-and-Insights"
-          ? { xs: "45%", md: "60%", lg: "50%", xl: "50%", "2xl": "50%" }
+          ? { xs: "45%", md: "50%", lg: "50%", xl: "50%", "2xl": "50%" }
           : "50%"
       }
       transform="translateY(-50%)"
       height={
         activeSection === "Who-we-are"
-          ? { xs: "65vh", md: "85vh", lg: "80vh", xl: "60vh", "2xl": "60vh" }
+          ? { xs: "65vh", md: "85vh", lg: "80vh", xl: "80vh", "2xl": "80vh" }
           : activeSection === "Our-Services"
-          ? { xs: "90vh", md: "85vh", lg: "90vh", xl: "90vh", "2xl": "95vh" }
+          ? { xs: "90vh", md: "90vh", lg: "90vh", xl: "90vh", "2xl": "95vh" }
           : activeSection === "Panels"
-          ? { xs: "80vh", md: "85vh", lg: "95vh", xl: "95vh", "2xl": "95vh" }
+          ? { xs: "80vh", md: "90vh", lg: "95vh", xl: "95vh", "2xl": "95vh" }
           : activeSection === "News-and-Insights"
           ? {
               xs: "80vh",
-              md: "85vh",
+              md: "90vh",
               lg: "95vh",
               xl: "97.5vh",
               "2xl": "97.5vh",
