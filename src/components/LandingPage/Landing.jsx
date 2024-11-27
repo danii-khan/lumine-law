@@ -80,11 +80,38 @@ const ScrollSpySidebar = () => {
     <Flex
       position="fixed"
       left="0%"
-      top={activeSection === "Who-we-are" ? "55%" : "50%"}
+      top={
+        activeSection === "Who-we-are"
+          ? { xs: "55%", md: "60%", lg: "55%", xl: "52.5%", "2xl": "55%" }
+          : activeSection === "Our-Services"
+          ? { xs: "52.5%", md: "60%", lg: "50%", xl: "50%", "2xl": "50%" }
+          : activeSection === "Panels"
+          ? { xs: "50%", md: "60%", lg: "50%", xl: "50%", "2xl": "50%" }
+          : activeSection === "News-and-Insights"
+          ? { xs: "45%", md: "60%", lg: "50%", xl: "50%", "2xl": "50%" }
+          : "50%"
+      }
       transform="translateY(-50%)"
-      height={activeSection === "Who-we-are" ? "60vh" : "80vh"}
+      height={
+        activeSection === "Who-we-are"
+          ? { xs: "65vh", md: "85vh", lg: "80vh", xl: "60vh", "2xl": "60vh" }
+          : activeSection === "Our-Services"
+          ? { xs: "90vh", md: "85vh", lg: "90vh", xl: "90vh", "2xl": "95vh" }
+          : activeSection === "Panels"
+          ? { xs: "80vh", md: "85vh", lg: "95vh", xl: "95vh", "2xl": "95vh" }
+          : activeSection === "News-and-Insights"
+          ? {
+              xs: "80vh",
+              md: "85vh",
+              lg: "95vh",
+              xl: "97.5vh",
+              "2xl": "97.5vh",
+            }
+          : "80vh"
+      }
       flexDirection="column"
-      justifyContent="space-between"
+      justifyContent="space-evenly"
+      gap={"60%"}
       zIndex={999}
       pointerEvents="auto"
     >
@@ -105,7 +132,23 @@ const ScrollSpySidebar = () => {
               }}
               fontWeight={400}
               fontStyle="italic"
-              fontSize={activeSection === id ? "5xl" : "xl"}
+              fontSize={
+                activeSection === id
+                  ? {
+                      xs: "20px",
+                      md: "24px",
+                      lg: "26px",
+                      xl: "28px",
+                      "2xl": "36px",
+                    }
+                  : {
+                      xs: "8px",
+                      md: "10px",
+                      lg: "12px",
+                      xl: "14px",
+                      "2xl": "16px",
+                    }
+              }
               opacity={activeSection === id ? "100%" : "25%"}
               transition="all 0.3s ease"
             >
@@ -113,8 +156,8 @@ const ScrollSpySidebar = () => {
                 style={{
                   border: "1px solid",
                   borderColor: activeSection === "Panels" ? "black" : "white",
-                  width: "125px",
-                  marginRight: "25px",
+                  width: "7.5vw",
+                  marginRight: "15px",
                   opacity: activeSection === id ? "100%" : "25%",
                   transition: "opacity 0.3s ease",
                 }}
@@ -141,16 +184,22 @@ const ScrollSpySidebar = () => {
               }}
               fontWeight={400}
               fontStyle="italic"
-              fontSize="15px"
-              opacity="25%"
+              fontSize={{
+                xs: "8px",
+                md: "10px",
+                lg: "12px",
+                xl: "14px",
+                "2xl": "16px",
+              }}
+              opacity="80%"
               transition="all 0.3s ease"
             >
               <span
                 style={{
                   border: "1px solid",
                   borderColor: activeSection === "Panels" ? "black" : "white",
-                  width: "50px",
-                  opacity: "25%",
+                  width: "2.5vw",
+                  opacity: "80%",
                   transition: "opacity 0.3s ease",
                 }}
               ></span>
@@ -208,11 +257,21 @@ const LandingPage = () => {
           <VStack
             justifyContent={"flex-start"}
             alignItems={"flex-start"}
-            width={"50%"}
+            width={{ xs: "60%", md: "50%" }}
             ml={"5%"}
             gap={"20px"}
           >
-            <Text fontSize={"36px"} textAlign={"left"}>
+            <Text
+              fontSize={{
+                xs: "20px",
+                sm: "22px",
+                md: "24px",
+                lg: "28px",
+                xl: "32px",
+                "2xl": "36px",
+              }}
+              textAlign={"left"}
+            >
               <span
                 style={{
                   color: "#beab7c",
@@ -235,7 +294,14 @@ const LandingPage = () => {
               </span>
             </Text>
             <Text
-              fontSize={"28px"}
+              fontSize={{
+                xs: "12px",
+                sm: "14px",
+                md: "16px",
+                lg: "20px",
+                xl: "24px",
+                "2xl": "28px",
+              }}
               fontWeight={300}
               fontFamily="HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
               textAlign={"left"}
@@ -248,7 +314,14 @@ const LandingPage = () => {
               color={"white"}
               border={"1px solid #FFFFFF"}
               borderRadius={"8px"}
-              fontSize={"16px"}
+              fontSize={{
+                xs: "11px",
+                sm: "12px",
+                md: "13px",
+                lg: "14px",
+                xl: "15px",
+                "2xl": "16px",
+              }}
               fontWeight={500}
               fontFamily={"CeraRoundPro"}
               _hover={{
@@ -295,9 +368,16 @@ const LandingPage = () => {
             pl={"10%"}
           >
             {/* <GridItem></GridItem> */}
-            <GridItem colSpan={"3"}>
+            <GridItem colSpan={{ xs: "5", md: "3" }}>
               <Text
-                fontSize={"2xl"}
+                fontSize={{
+                  xs: "12px",
+                  sm: "13px",
+                  md: "14px",
+                  lg: "15px",
+                  xl: "16px",
+                  "2xl": "20px",
+                }}
                 fontWeight={300}
                 fontFamily="HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
                 textAlign={"left"}
@@ -308,11 +388,18 @@ const LandingPage = () => {
                 dolore magna aliqua.
               </Text>
             </GridItem>
-            <GridItem colSpan={"2"}></GridItem>
+            <GridItem colSpan={{ xs: "0", md: "2" }}></GridItem>
             {/* <GridItem></GridItem> */}
-            <GridItem colSpan={"3"}>
+            <GridItem colSpan={{ xs: "5", md: "3" }}>
               <Text
-                fontSize={"2xl"}
+                fontSize={{
+                  xs: "12px",
+                  sm: "13px",
+                  md: "14px",
+                  lg: "15px",
+                  xl: "16px",
+                  "2xl": "20px",
+                }}
                 fontWeight={300}
                 fontFamily="HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
                 textAlign={"left"}
@@ -350,13 +437,20 @@ const LandingPage = () => {
           bgPos={"center"}
           bgSize={"cover"}
           bgRepeat={"no-repeat"}
-          pt={"5%"}
+          // pt={"5%"}
         >
           <Grid
-            templateColumns="repeat(4, 1fr)"
-            templateRows={"repeat(2, 1fr)"}
-            gap="25px"
-            height={"60%"}
+            templateColumns={{ xs: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
+            templateRows={{ xs: "repeat(4, 1fr)", lg: "repeat(2, 1fr)" }}
+            gap={{
+              xs: "14px",
+              sm: "16px",
+              md: "18px",
+              lg: "20px",
+              xl: "22px",
+              "2xl": "25px",
+            }}
+            height={"55%"}
             width={"80%"}
             alignItems={"center"}
             justifyItems={"center"}
@@ -387,7 +481,14 @@ const LandingPage = () => {
                 width={"80%"}
               >
                 <Text
-                  fontSize={"3xl"}
+                  fontSize={{
+                    xs: "14px",
+                    sm: "14px",
+                    md: "16px",
+                    lg: "16px",
+                    xl: "18px",
+                    "2xl": "26px",
+                  }}
                   fontWeight={400}
                   fontFamily={"CeraRoundPro"}
                 >
@@ -415,7 +516,14 @@ const LandingPage = () => {
               transition={"all 0.3s ease"}
             >
               <Text
-                fontSize={"25px"}
+                fontSize={{
+                  xs: "14px",
+                  sm: "14px",
+                  md: "16px",
+                  lg: "16px",
+                  xl: "18px",
+                  "2xl": "26px",
+                }}
                 fontWeight={400}
                 fontFamily={"CeraRoundPro"}
                 width={"80%"}
@@ -443,7 +551,14 @@ const LandingPage = () => {
               transition={"all 0.3s ease"}
             >
               <Text
-                fontSize={"25px"}
+                fontSize={{
+                  xs: "14px",
+                  sm: "14px",
+                  md: "16px",
+                  lg: "16px",
+                  xl: "18px",
+                  "2xl": "26px",
+                }}
                 fontWeight={400}
                 fontFamily={"CeraRoundPro"}
                 width={"80%"}
@@ -471,7 +586,14 @@ const LandingPage = () => {
               transition={"all 0.3s ease"}
             >
               <Text
-                fontSize={"25px"}
+                fontSize={{
+                  xs: "14px",
+                  sm: "14px",
+                  md: "16px",
+                  lg: "16px",
+                  xl: "18px",
+                  "2xl": "26px",
+                }}
                 fontWeight={400}
                 fontFamily={"CeraRoundPro"}
                 width={"80%"}
@@ -499,7 +621,14 @@ const LandingPage = () => {
               transition={"all 0.3s ease"}
             >
               <Text
-                fontSize={"25px"}
+                fontSize={{
+                  xs: "14px",
+                  sm: "14px",
+                  md: "16px",
+                  lg: "16px",
+                  xl: "18px",
+                  "2xl": "26px",
+                }}
                 fontWeight={400}
                 fontFamily={"CeraRoundPro"}
                 width={"80%"}
@@ -527,7 +656,14 @@ const LandingPage = () => {
               transition={"all 0.3s ease"}
             >
               <Text
-                fontSize={"25px"}
+                fontSize={{
+                  xs: "14px",
+                  sm: "14px",
+                  md: "16px",
+                  lg: "16px",
+                  xl: "18px",
+                  "2xl": "26px",
+                }}
                 fontWeight={400}
                 fontFamily={"CeraRoundPro"}
                 width={"80%"}
@@ -555,7 +691,14 @@ const LandingPage = () => {
               transition={"all 0.3s ease"}
             >
               <Text
-                fontSize={"25px"}
+                fontSize={{
+                  xs: "14px",
+                  sm: "14px",
+                  md: "16px",
+                  lg: "16px",
+                  xl: "18px",
+                  "2xl": "26px",
+                }}
                 fontWeight={400}
                 fontFamily={"CeraRoundPro"}
                 width={"80%"}
@@ -590,7 +733,14 @@ const LandingPage = () => {
                 width={"80%"}
               >
                 <Text
-                  fontSize={"25px"}
+                  fontSize={{
+                    xs: "14px",
+                    sm: "14px",
+                    md: "16px",
+                    lg: "16px",
+                    xl: "18px",
+                    "2xl": "26px",
+                  }}
                   fontWeight={400}
                   fontFamily={"CeraRoundPro"}
                 >
@@ -629,12 +779,19 @@ const LandingPage = () => {
         >
           <Text
             color="black"
-            fontSize="20px"
+            fontSize={{
+              xs: "12px",
+              sm: "14px",
+              md: "15px",
+              lg: "16px",
+              xl: "18px",
+              "2xl": "20px",
+            }}
             fontWeight={300}
             fontFamily={
               "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
             }
-            ml={"12.5%"}
+            ml={{ xs: "2.5%", sm: "5%", md: "7.5%", lg: "10%", "2xl": "12.5%" }}
           >
             A small intro about what our team is like, diverse etc. just a few
             lines.{" "}
@@ -668,16 +825,37 @@ const LandingPage = () => {
           bgPos={"center"}
           bgSize={"cover"}
           bgRepeat={"no-repeat"}
-          pt={"13.5%"}
+          pt={{
+            xs: "4%",
+            sm: "5%",
+            md: "6%",
+            lg: "13.5%",
+            xl: "13.5%",
+            "2xl": "13.5%",
+          }}
         >
           <Text
             color="white"
-            fontSize="25px"
+            fontSize={{
+              xs: "14px",
+              sm: "16px",
+              md: "18px",
+              lg: "18px",
+              xl: "18px",
+              "2xl": "25px",
+            }}
             fontWeight={300}
             fontFamily={
               "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
             }
-            ml={"12.5%"}
+            ml={{
+              xs: "0%",
+              sm: "2.5%",
+              md: "5%",
+              lg: "8%",
+              xl: "10%",
+              "2xl": "12.5%",
+            }}
           >
             A small intro about what our team is like, diverse etc. just a few
             lines.{" "}
@@ -690,25 +868,53 @@ const LandingPage = () => {
           >
             <Image
               src={NewsInsightsOne}
-              height={"375px"}
+              height={{
+                xs: "125px",
+                sm: "175px",
+                md: "225px",
+                lg: "275px",
+                xl: "325px",
+                "2xl": "375px",
+              }}
               width={"24%"}
               objectFit={"cover"}
             />
             <Image
               src={NewsInsightsTwo}
-              height={"375px"}
+              height={{
+                xs: "125px",
+                sm: "175px",
+                md: "225px",
+                lg: "275px",
+                xl: "325px",
+                "2xl": "375px",
+              }}
               width={"24%"}
               objectFit={"cover"}
             />
             <Image
               src={NewsInsightsThree}
-              height={"375px"}
+              height={{
+                xs: "125px",
+                sm: "175px",
+                md: "225px",
+                lg: "275px",
+                xl: "325px",
+                "2xl": "375px",
+              }}
               width={"24%"}
               objectFit={"cover"}
             />
             <Image
               src={NewsInsightsFour}
-              height={"375px"}
+              height={{
+                xs: "125px",
+                sm: "175px",
+                md: "225px",
+                lg: "275px",
+                xl: "325px",
+                "2xl": "375px",
+              }}
               width={"24%"}
               objectFit={"cover"}
             />

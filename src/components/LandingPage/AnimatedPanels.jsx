@@ -45,9 +45,35 @@ const ScrollingRow = ({ images, direction, speed }) => {
             display="flex"
             alignItems="center"
             justifyContent="center"
-            maxWidth="175px"
+            maxWidth={{
+              xs: "80px",
+              sm: "80px",
+              md: "100px",
+              lg: "125px",
+              xl: "125px",
+              "2xl": "175px",
+            }}
           >
-            <Image src={img} height="60px" maxWidth="175px" objectFit="cover" />
+            <Image
+              src={img}
+              height={{
+                xs: "25px",
+                sm: "25px",
+                md: "30px",
+                lg: "40px",
+                xl: "50px",
+                "2xl": "60px",
+              }}
+              maxWidth={{
+                xs: "80px",
+                sm: "80px",
+                md: "100px",
+                lg: "125px",
+                xl: "125px",
+                "2xl": "175px",
+              }}
+              objectFit="contain"
+            />
           </Box>
         ))}
       </Box>
@@ -58,12 +84,18 @@ const ScrollingRow = ({ images, direction, speed }) => {
 const AnimatedPanels = ({ images }) => {
   return (
     <Box
-      height="50%"
+      height={{
+        xs: "20%",
+        sm: "20%",
+        md: "25%",
+        lg: "30%",
+        xl: "32.5%",
+        "2xl": "35%",
+      }}
       width="100%"
       position="relative"
       alignSelf="center"
       borderRadius="8px"
-      py="8"
     >
       {/* Background Box with opacity */}
       <Box
@@ -79,7 +111,6 @@ const AnimatedPanels = ({ images }) => {
 
       {/* Content Box with full opacity */}
       <VStack
-        // spacing={8}
         width="100%"
         height="100%"
         display="flex"
