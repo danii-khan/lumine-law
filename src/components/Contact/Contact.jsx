@@ -19,6 +19,7 @@ import { IoLocationOutline, IoLogoWhatsapp } from "react-icons/io5";
 import { LuPhoneCall } from "react-icons/lu";
 import { TiPrinter } from "react-icons/ti";
 import { TfiEmail } from "react-icons/tfi";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   return (
@@ -38,6 +39,9 @@ const Contact = () => {
     #000000 93%
   )"
     >
+      <Helmet>
+        <title>Lumine Law Contact</title>
+      </Helmet>
       <Navbar />
       <Box width="100%" height="calc(100% - 50px)" p={0} m={0} pt={"50px"}>
         {/* Contact Header */}

@@ -29,6 +29,7 @@ import NewsInsightsFour from "../../assets/landing/news-insights-four.png";
 import "../../styles/fonts.css";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 
 const ScrollSpySidebar = () => {
   const [activeSection, setActiveSection] = useState("none");
@@ -252,6 +253,9 @@ const LandingPage = () => {
         scrollbarWidth: "none", // Optional: hides scrollbar in Firefox
       }}
     >
+      <Helmet>
+        <title>Lumine Law</title>
+      </Helmet>
       <Navbar />
 
       {/* Hero section content */}

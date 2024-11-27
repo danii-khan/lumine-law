@@ -5,6 +5,7 @@ import BannerImg from "../../../assets/services/main/immigration/main-banner.png
 import ArrowImg from "../../../assets/services/main/immigration/main-link-arrow.png";
 import "../../../styles/fonts.css";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Immigration = () => {
   return (
@@ -20,6 +21,9 @@ const Immigration = () => {
         display="flex"
         flexDirection="column"
       >
+        <Helmet>
+          <title>Lumine Law Immigration Services</title>
+        </Helmet>
         <Navbar />
 
         <Box width="100%" flex="1" p={0} m={0} pt={"50px"}>

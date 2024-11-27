@@ -14,6 +14,7 @@ import ImmigrationImg from "../../assets/services/main/immigration/main-banner.p
 import "../../styles/fonts.css";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const AllServices = () => {
   return (
@@ -29,6 +30,9 @@ const AllServices = () => {
         display="flex"
         flexDirection="column"
       >
+        <Helmet>
+          <title>Lumine Law Services</title>
+        </Helmet>
         <Navbar />
 
         <Box width="100%" flex="1" p={0} m={0} pt={"50px"}>

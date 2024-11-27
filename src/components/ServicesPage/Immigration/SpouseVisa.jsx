@@ -23,6 +23,7 @@ import NewsInsightsTwo from "../../../assets/landing/news-insights-two.png";
 import NewsInsightsThree from "../../../assets/landing/news-insights-three.png";
 import NewsInsightsFour from "../../../assets/landing/news-insights-four.png";
 import BannerImg from "../../../assets/services/main/immigration/main-banner.png";
+import { Helmet } from "react-helmet";
 
 const SpouseVisa = () => {
   const [spouseState, setSpouseState] = useState(false);
@@ -44,6 +45,10 @@ const SpouseVisa = () => {
         display="flex"
         flexDirection="column"
       >
+        <Helmet>
+          <title>Lumine Law Spouse Visa Services</title>
+        </Helmet>
+
         <Navbar />
 
         <Box width="100%" flex="1" p={0} m={0} pt={"50px"}>
