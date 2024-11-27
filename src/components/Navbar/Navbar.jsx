@@ -695,12 +695,16 @@ const Navbar = () => {
           </GridItem>
 
           {/* Menu Options */}
-          <GridItem height={"100%"} justifySelf={"center"}>
+          <GridItem
+            height={"100%"}
+            justifySelf={"center"}
+            display={{ xs: "none", md: "grid" }}
+          >
             <Menu />
           </GridItem>
 
           {/* Contact Button */}
-          <GridItem justifySelf={"end"}>
+          <GridItem justifySelf={"end"} display={{ xs: "none", md: "grid" }}>
             <Link to={"/contact"} style={{ textDecoration: "none" }}>
               <Button
                 fontWeight={400}

@@ -449,7 +449,6 @@ const LandingPage = () => {
           scrollSnapAlign: "start",
           scrollSnapStop: "always",
           height: "100vh",
-          paddingTop: "50px",
         }}
       >
         <Box
@@ -466,7 +465,7 @@ const LandingPage = () => {
           bgPos={"center"}
           bgSize={"cover"}
           bgRepeat={"no-repeat"}
-          pt={{ xs: "15%", md: "1%" }}
+          pt={{ xs: "0%", md: "1%" }}
         >
           <Grid
             templateColumns={{ xs: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
@@ -480,7 +479,7 @@ const LandingPage = () => {
               "2xl": "25px",
             }}
             height={{ xs: "45%", md: "55%" }}
-            width={"80%"}
+            width={{ xs: "95%", md: "80%" }}
             alignItems={"center"}
             justifyItems={"center"}
           >
