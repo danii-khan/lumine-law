@@ -11,6 +11,10 @@ import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import BannerImg from "../../assets/services/all/banner.png";
 import ImmigrationImg from "../../assets/services/main/immigration/main-banner.png";
+import ResidentialImg from "../../assets/services/main/residential/main-banner.png";
+import DisputeImg from "../../assets/services/main/dispute/main-banner.png";
+import LandlordImg from "../../assets/services/main/landlord/main-banner.png";
+import FamilyImg from "../../assets/services/main/family/main-banner.png";
 import "../../styles/fonts.css";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import { Link } from "react-router-dom";
@@ -161,10 +165,10 @@ const AllServices = () => {
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}
-                color={"white"}
+                color={"black"}
+                backgroundColor={"black"}
                 _hover={{
                   color: "#beab7c",
-                  backgroundColor: "black",
                   bgImage: "none",
                   transition: "all 0.3s ease",
                 }}
@@ -232,12 +236,18 @@ const AllServices = () => {
                   xl: "8px 16px",
                   "2xl": "10px 20px",
                 }}
+                bgImage={`url(${ResidentialImg})`}
+                bgSize={"cover"}
+                bgPos={"center"}
+                bgRepeat={"no-repeat"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}
+                color={"black"}
+                backgroundColor={"black"}
                 _hover={{
                   color: "#beab7c",
-                  backgroundColor: "black",
+                  bgImage: "none",
                   transition: "all 0.3s ease",
                 }}
               >
@@ -299,12 +309,18 @@ const AllServices = () => {
                   xl: "8px 16px",
                   "2xl": "10px 20px",
                 }}
+                bgImage={`url(${DisputeImg})`}
+                bgSize={"cover"}
+                bgPos={"center"}
+                bgRepeat={"no-repeat"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}
+                color={"black"}
+                backgroundColor={"black"}
                 _hover={{
                   color: "#beab7c",
-                  backgroundColor: "black",
+                  bgImage: "none",
                   transition: "all 0.3s ease",
                 }}
               >
@@ -366,12 +382,18 @@ const AllServices = () => {
                   xl: "8px 16px",
                   "2xl": "10px 20px",
                 }}
+                bgImage={`url(${LandlordImg})`}
+                bgSize={"cover"}
+                bgPos={"center"}
+                bgRepeat={"no-repeat"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}
+                color={"black"}
+                backgroundColor={"black"}
                 _hover={{
                   color: "#beab7c",
-                  backgroundColor: "black",
+                  bgImage: "none",
                   transition: "all 0.3s ease",
                 }}
               >
@@ -433,12 +455,18 @@ const AllServices = () => {
                   xl: "8px 16px",
                   "2xl": "10px 20px",
                 }}
+                bgImage={`url(${FamilyImg})`}
+                bgSize={"cover"}
+                bgPos={"center"}
+                bgRepeat={"no-repeat"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}
+                color={"black"}
+                backgroundColor={"black"}
                 _hover={{
                   color: "#beab7c",
-                  backgroundColor: "black",
+                  bgImage: "none",
                   transition: "all 0.3s ease",
                 }}
               >

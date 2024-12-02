@@ -408,7 +408,7 @@ const LandingPage = () => {
                 fontWeight={300}
                 fontFamily="HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
                 textAlign={"left"}
-                color={"white"}
+                color={"black"}
               >
                 A whole paragraph, in further details explaining what Lumine Law
                 does. Go into details. Lorem ipsum dolor sit amet, consectetur
@@ -431,7 +431,7 @@ const LandingPage = () => {
                 fontWeight={300}
                 fontFamily="HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
                 textAlign={"left"}
-                color={"white"}
+                color={"black"}
               >
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco
                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure

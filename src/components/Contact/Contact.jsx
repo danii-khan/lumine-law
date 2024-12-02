@@ -47,10 +47,7 @@ const Contact = () => {
         {/* Contact Header */}
         <Grid
           width={"100%"}
-          bgImage={`url(${ContactImg})`}
-          bgPos={"center"}
-          bgSize={"cover"}
-          bgRepeat={"no-repeat"}
+          backgroundColor={"#BAA990"}
           templateColumns={"3fr 4fr 2fr"}
           borderBottom={"1px solid white"}
         >
