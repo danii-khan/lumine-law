@@ -97,7 +97,7 @@ const SpouseVisa = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "16px", xl: "18px", "2xl": "20px" }}
+                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
               >
                 A few lines on what a Spouse visa is.
@@ -152,11 +152,11 @@ const SpouseVisa = () => {
                   textAlign={"left"}
                   fontSize={{
                     xs: "14px",
-                    sm: "16px",
-                    md: "18px",
-                    lg: "20px",
-                    xl: "22px",
-                    "2xl": "25px",
+                    sm: "14px",
+                    md: "16px",
+                    lg: "16px",
+                    xl: "18px",
+                    "2xl": "20px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
@@ -186,9 +186,9 @@ const SpouseVisa = () => {
                       xs: "12px",
                       sm: "12px",
                       md: "14px",
-                      lg: "16px",
-                      xl: "18px",
-                      "2xl": "20px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -208,9 +208,9 @@ const SpouseVisa = () => {
                       xs: "12px",
                       sm: "12px",
                       md: "14px",
-                      lg: "16px",
-                      xl: "18px",
-                      "2xl": "20px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -264,11 +264,11 @@ const SpouseVisa = () => {
                   textAlign={"left"}
                   fontSize={{
                     xs: "14px",
-                    sm: "16px",
-                    md: "18px",
-                    lg: "20px",
-                    xl: "22px",
-                    "2xl": "25px",
+                    sm: "14px",
+                    md: "16px",
+                    lg: "16px",
+                    xl: "18px",
+                    "2xl": "20px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
@@ -298,9 +298,9 @@ const SpouseVisa = () => {
                       xs: "12px",
                       sm: "12px",
                       md: "14px",
-                      lg: "16px",
-                      xl: "18px",
-                      "2xl": "20px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -316,9 +316,9 @@ const SpouseVisa = () => {
                       xs: "12px",
                       sm: "12px",
                       md: "14px",
-                      lg: "16px",
-                      xl: "18px",
-                      "2xl": "20px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -384,11 +384,11 @@ const SpouseVisa = () => {
                   textAlign={"left"}
                   fontSize={{
                     xs: "14px",
-                    sm: "16px",
-                    md: "18px",
-                    lg: "20px",
-                    xl: "22px",
-                    "2xl": "25px",
+                    sm: "14px",
+                    md: "16px",
+                    lg: "16px",
+                    xl: "18px",
+                    "2xl": "20px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
@@ -418,9 +418,9 @@ const SpouseVisa = () => {
                       xs: "12px",
                       sm: "12px",
                       md: "14px",
-                      lg: "16px",
-                      xl: "18px",
-                      "2xl": "20px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -436,9 +436,9 @@ const SpouseVisa = () => {
                       xs: "12px",
                       sm: "12px",
                       md: "14px",
-                      lg: "16px",
-                      xl: "18px",
-                      "2xl": "20px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -504,11 +504,11 @@ const SpouseVisa = () => {
                   textAlign={"left"}
                   fontSize={{
                     xs: "14px",
-                    sm: "16px",
-                    md: "18px",
-                    lg: "20px",
-                    xl: "22px",
-                    "2xl": "25px",
+                    sm: "14px",
+                    md: "16px",
+                    lg: "16px",
+                    xl: "18px",
+                    "2xl": "20px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
@@ -538,9 +538,9 @@ const SpouseVisa = () => {
                       xs: "12px",
                       sm: "12px",
                       md: "14px",
-                      lg: "16px",
-                      xl: "18px",
-                      "2xl": "20px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -556,9 +556,9 @@ const SpouseVisa = () => {
                       xs: "12px",
                       sm: "12px",
                       md: "14px",
-                      lg: "16px",
-                      xl: "18px",
-                      "2xl": "20px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -624,11 +624,11 @@ const SpouseVisa = () => {
                   textAlign={"left"}
                   fontSize={{
                     xs: "14px",
-                    sm: "16px",
-                    md: "18px",
-                    lg: "20px",
-                    xl: "22px",
-                    "2xl": "25px",
+                    sm: "14px",
+                    md: "16px",
+                    lg: "16px",
+                    xl: "18px",
+                    "2xl": "20px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
@@ -658,9 +658,9 @@ const SpouseVisa = () => {
                       xs: "12px",
                       sm: "12px",
                       md: "14px",
-                      lg: "16px",
-                      xl: "18px",
-                      "2xl": "20px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -676,9 +676,9 @@ const SpouseVisa = () => {
                       xs: "12px",
                       sm: "12px",
                       md: "14px",
-                      lg: "16px",
-                      xl: "18px",
-                      "2xl": "20px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -716,6 +716,7 @@ const SpouseVisa = () => {
 
           {/* Other Services */}
           <Box mb="50px">
+            {/* Header */}
             <HStack justifyContent={"center"} alignItems={"center"}>
               <Text
                 color={"black"}
@@ -723,9 +724,9 @@ const SpouseVisa = () => {
                   xs: "20px",
                   sm: "20px",
                   md: "24px",
-                  lg: "28px",
-                  xl: "32px",
-                  "2xl": "35px",
+                  lg: "26px",
+                  xl: "28px",
+                  "2xl": "30px",
                 }}
                 fontWeight={500}
                 fontStyle={"italic"}
@@ -751,6 +752,8 @@ const SpouseVisa = () => {
                 }}
               ></Box>
             </HStack>
+
+            {/* List */}
             <Box
               width={"100%"}
               display={"flex"}
@@ -759,7 +762,7 @@ const SpouseVisa = () => {
               color={"black"}
             >
               <Grid
-                width={"95%"}
+                width={"90%"}
                 templateColumns={{ xs: "repeat(2, 2fr)", lg: "repeat(4, 1fr)" }}
                 gap={{
                   xs: "25px",
@@ -789,9 +792,14 @@ const SpouseVisa = () => {
                   cursor={"pointer"}
                   _hover={{
                     color: "#beab7c",
+                    background: "black",
                     backgroundColor: "black",
                     transition: "all 0.3s ease",
                   }}
+                  bgImage={`url(${BannerImg})`}
+                  bgPos={"center"}
+                  bgSize={"cover"}
+                  bgRepeat={"no-repeat"}
                 >
                   <Link
                     to={"/all-services/immigration"}
@@ -808,11 +816,11 @@ const SpouseVisa = () => {
                       <Text
                         fontSize={{
                           xs: "14px",
-                          sm: "16px",
-                          md: "18px",
-                          lg: "20px",
-                          xl: "22px",
-                          "2xl": "24px",
+                          sm: "14px",
+                          md: "16px",
+                          lg: "18px",
+                          xl: "20px",
+                          "2xl": "22px",
                         }}
                         fontFamily={"CeraRoundPro"}
                         fontWeight={500}
@@ -882,11 +890,11 @@ const SpouseVisa = () => {
                       <Text
                         fontSize={{
                           xs: "14px",
-                          sm: "16px",
-                          md: "18px",
-                          lg: "20px",
-                          xl: "22px",
-                          "2xl": "24px",
+                          sm: "14px",
+                          md: "16px",
+                          lg: "18px",
+                          xl: "20px",
+                          "2xl": "22px",
                         }}
                         fontFamily={"CeraRoundPro"}
                         fontWeight={500}
@@ -956,11 +964,11 @@ const SpouseVisa = () => {
                       <Text
                         fontSize={{
                           xs: "14px",
-                          sm: "16px",
-                          md: "18px",
-                          lg: "20px",
-                          xl: "22px",
-                          "2xl": "24px",
+                          sm: "14px",
+                          md: "16px",
+                          lg: "18px",
+                          xl: "20px",
+                          "2xl": "22px",
                         }}
                         fontFamily={"CeraRoundPro"}
                         fontWeight={500}
@@ -1030,11 +1038,11 @@ const SpouseVisa = () => {
                       <Text
                         fontSize={{
                           xs: "14px",
-                          sm: "16px",
-                          md: "18px",
-                          lg: "20px",
-                          xl: "22px",
-                          "2xl": "24px",
+                          sm: "14px",
+                          md: "16px",
+                          lg: "18px",
+                          xl: "20px",
+                          "2xl": "22px",
                         }}
                         fontFamily={"CeraRoundPro"}
                         fontWeight={500}
@@ -1096,9 +1104,9 @@ const SpouseVisa = () => {
                   xs: "20px",
                   sm: "20px",
                   md: "24px",
-                  lg: "28px",
-                  xl: "32px",
-                  "2xl": "35px",
+                  lg: "26px",
+                  xl: "28px",
+                  "2xl": "30px",
                 }}
                 fontWeight={500}
                 fontStyle={"italic"}

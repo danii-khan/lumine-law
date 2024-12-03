@@ -627,7 +627,7 @@ const Navbar = () => {
         >
           {/* Logo + Title */}
           <GridItem>
-            <Link to={"/"} textDecoration={"none"}>
+            <Link to={"/lumine-law/"} textDecoration={"none"}>
               <HStack
                 justifyContent={"flex-start"}
                 alignItems={"center"}
