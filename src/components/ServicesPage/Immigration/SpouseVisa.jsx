@@ -55,7 +55,12 @@ const SpouseVisa = () => {
           {/* Banner */}
           <Box
             width={"100%"}
-            height={"200px"}
+            height={{
+              xs: "75px",
+              lg: "100px",
+              xl: "125px",
+              "2xl": "150px",
+            }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
             bgPos={"center"}
@@ -65,14 +70,14 @@ const SpouseVisa = () => {
             alignItems={"center"}
           >
             <Text
-              fontSize={"45px"}
+              fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
               fontStyle={"italic"}
             >
-              Spouse Visa
+              Services
             </Text>
-            <Box width={"60%"}>{/* Empty */}</Box>
+            <Box width={{ xs: "60%", md: "65%", lg: "75%" }}>{/* Empty */}</Box>
           </Box>
 
           {/* Main */}
@@ -83,11 +88,16 @@ const SpouseVisa = () => {
             color={"black"}
           >
             {/* Heading */}
-            <Box width={"90%"} alignSelf={"center"} mb={"5%"} my={"2.5%"}>
+            <Box
+              width={"90%"}
+              alignSelf={"center"}
+              mb={"5%"}
+              my={{ xs: "5%", md: "2.5%" }}
+            >
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={"20px"}
+                fontSize={{ xs: "12px", lg: "16px", xl: "18px", "2xl": "20px" }}
                 textAlign={"left"}
               >
                 A few lines on what a Spouse visa is.
@@ -115,9 +125,23 @@ const SpouseVisa = () => {
                 borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={"15px"}
+                px={{
+                  xs: "8px",
+                  sm: "10px",
+                  md: "12px",
+                  lg: "13px",
+                  xl: "14px",
+                  "2xl": "15px",
+                }}
                 alignItems={"center"}
-                py={"10px"}
+                py={{
+                  xs: "4px",
+                  sm: "6px",
+                  md: "7px",
+                  lg: "8px",
+                  xl: "9px",
+                  "2xl": "10px",
+                }}
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
@@ -126,7 +150,14 @@ const SpouseVisa = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={"25px"}
+                  fontSize={{
+                    xs: "14px",
+                    sm: "16px",
+                    md: "18px",
+                    lg: "20px",
+                    xl: "22px",
+                    "2xl": "25px",
+                  }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
@@ -134,9 +165,9 @@ const SpouseVisa = () => {
                   What is a spouse visa?
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2.5em"} />
+                  <GoPlus color={"#beab7c"} size={"2em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2.5em"} />
+                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
                 )}
               </HStack>
 
@@ -144,14 +175,21 @@ const SpouseVisa = () => {
                 <VStack
                   justifyContent={"center"}
                   alignItems={"flex-start"}
-                  gap={"30px"}
-                  mb={"10px"}
+                  gap={{ xs: "20px", md: "30px" }}
+                  mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
-                  py={"30px"}
+                  py={{ xs: "15px", md: "30px" }}
                 >
                   <Text
                     textAlign={"left"}
-                    fontSize={"20px"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "16px",
+                      xl: "18px",
+                      "2xl": "20px",
+                    }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -166,7 +204,14 @@ const SpouseVisa = () => {
 
                   <Text
                     textAlign={"left"}
-                    fontSize={"20px"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "16px",
+                      xl: "18px",
+                      "2xl": "20px",
+                    }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -192,9 +237,23 @@ const SpouseVisa = () => {
                 borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={"15px"}
+                px={{
+                  xs: "8px",
+                  sm: "10px",
+                  md: "12px",
+                  lg: "13px",
+                  xl: "14px",
+                  "2xl": "15px",
+                }}
                 alignItems={"center"}
-                py={"10px"}
+                py={{
+                  xs: "4px",
+                  sm: "6px",
+                  md: "7px",
+                  lg: "8px",
+                  xl: "9px",
+                  "2xl": "10px",
+                }}
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
@@ -203,7 +262,14 @@ const SpouseVisa = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={"25px"}
+                  fontSize={{
+                    xs: "14px",
+                    sm: "16px",
+                    md: "18px",
+                    lg: "20px",
+                    xl: "22px",
+                    "2xl": "25px",
+                  }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
@@ -211,9 +277,9 @@ const SpouseVisa = () => {
                   Eligibility Requirements
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2.5em"} />
+                  <GoPlus color={"#beab7c"} size={"2em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2.5em"} />
+                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
                 )}
               </HStack>
 
@@ -221,14 +287,21 @@ const SpouseVisa = () => {
                 <VStack
                   justifyContent={"center"}
                   alignItems={"flex-start"}
-                  gap={"30px"}
-                  mb={"10px"}
+                  gap={{ xs: "20px", md: "30px" }}
+                  mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
-                  py={"30px"}
+                  py={{ xs: "15px", md: "30px" }}
                 >
                   <Text
                     textAlign={"left"}
-                    fontSize={"20px"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "16px",
+                      xl: "18px",
+                      "2xl": "20px",
+                    }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -239,7 +312,14 @@ const SpouseVisa = () => {
 
                   <List.Root
                     textAlign={"left"}
-                    fontSize={"20px"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "16px",
+                      xl: "18px",
+                      "2xl": "20px",
+                    }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -277,9 +357,23 @@ const SpouseVisa = () => {
                 borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={"15px"}
+                px={{
+                  xs: "8px",
+                  sm: "10px",
+                  md: "12px",
+                  lg: "13px",
+                  xl: "14px",
+                  "2xl": "15px",
+                }}
                 alignItems={"center"}
-                py={"10px"}
+                py={{
+                  xs: "4px",
+                  sm: "6px",
+                  md: "7px",
+                  lg: "8px",
+                  xl: "9px",
+                  "2xl": "10px",
+                }}
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !applicationState && "black" }}
                 transition={"all 0.3s ease"}
@@ -288,7 +382,14 @@ const SpouseVisa = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={"25px"}
+                  fontSize={{
+                    xs: "14px",
+                    sm: "16px",
+                    md: "18px",
+                    lg: "20px",
+                    xl: "22px",
+                    "2xl": "25px",
+                  }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
@@ -296,9 +397,9 @@ const SpouseVisa = () => {
                   Application Process
                 </Text>
                 {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2.5em"} />
+                  <GoPlus color={"#beab7c"} size={"2em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2.5em"} />
+                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
                 )}
               </HStack>
 
@@ -306,14 +407,21 @@ const SpouseVisa = () => {
                 <VStack
                   justifyContent={"center"}
                   alignItems={"flex-start"}
-                  gap={"30px"}
-                  mb={"10px"}
+                  gap={{ xs: "20px", md: "30px" }}
+                  mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
-                  py={"30px"}
+                  py={{ xs: "15px", md: "30px" }}
                 >
                   <Text
                     textAlign={"left"}
-                    fontSize={"20px"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "16px",
+                      xl: "18px",
+                      "2xl": "20px",
+                    }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -324,7 +432,14 @@ const SpouseVisa = () => {
 
                   <List.Root
                     textAlign={"left"}
-                    fontSize={"20px"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "16px",
+                      xl: "18px",
+                      "2xl": "20px",
+                    }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -362,9 +477,23 @@ const SpouseVisa = () => {
                 borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={"15px"}
+                px={{
+                  xs: "8px",
+                  sm: "10px",
+                  md: "12px",
+                  lg: "13px",
+                  xl: "14px",
+                  "2xl": "15px",
+                }}
                 alignItems={"center"}
-                py={"10px"}
+                py={{
+                  xs: "4px",
+                  sm: "6px",
+                  md: "7px",
+                  lg: "8px",
+                  xl: "9px",
+                  "2xl": "10px",
+                }}
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !decisionState && "black" }}
                 transition={"all 0.3s ease"}
@@ -373,7 +502,14 @@ const SpouseVisa = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={"25px"}
+                  fontSize={{
+                    xs: "14px",
+                    sm: "16px",
+                    md: "18px",
+                    lg: "20px",
+                    xl: "22px",
+                    "2xl": "25px",
+                  }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
@@ -381,9 +517,9 @@ const SpouseVisa = () => {
                   How long does it take to reach a decision?
                 </Text>
                 {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2.5em"} />
+                  <GoPlus color={"#beab7c"} size={"2em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2.5em"} />
+                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
                 )}
               </HStack>
 
@@ -391,14 +527,21 @@ const SpouseVisa = () => {
                 <VStack
                   justifyContent={"center"}
                   alignItems={"flex-start"}
-                  gap={"30px"}
-                  mb={"10px"}
+                  gap={{ xs: "20px", md: "30px" }}
+                  mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
-                  py={"30px"}
+                  py={{ xs: "15px", md: "30px" }}
                 >
                   <Text
                     textAlign={"left"}
-                    fontSize={"20px"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "16px",
+                      xl: "18px",
+                      "2xl": "20px",
+                    }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -409,7 +552,14 @@ const SpouseVisa = () => {
 
                   <List.Root
                     textAlign={"left"}
-                    fontSize={"20px"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "16px",
+                      xl: "18px",
+                      "2xl": "20px",
+                    }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -447,9 +597,23 @@ const SpouseVisa = () => {
                 borderY={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={"15px"}
+                px={{
+                  xs: "8px",
+                  sm: "10px",
+                  md: "12px",
+                  lg: "13px",
+                  xl: "14px",
+                  "2xl": "15px",
+                }}
                 alignItems={"center"}
-                py={"10px"}
+                py={{
+                  xs: "4px",
+                  sm: "6px",
+                  md: "7px",
+                  lg: "8px",
+                  xl: "9px",
+                  "2xl": "10px",
+                }}
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !helpState && "black" }}
                 transition={"all 0.3s ease"}
@@ -458,7 +622,14 @@ const SpouseVisa = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={"25px"}
+                  fontSize={{
+                    xs: "14px",
+                    sm: "16px",
+                    md: "18px",
+                    lg: "20px",
+                    xl: "22px",
+                    "2xl": "25px",
+                  }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
@@ -466,9 +637,9 @@ const SpouseVisa = () => {
                   How can Lumine Solicitors help?
                 </Text>
                 {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2.5em"} />
+                  <GoPlus color={"#beab7c"} size={"2em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2.5em"} />
+                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
                 )}
               </HStack>
 
@@ -476,14 +647,21 @@ const SpouseVisa = () => {
                 <VStack
                   justifyContent={"center"}
                   alignItems={"flex-start"}
-                  gap={"30px"}
-                  mb={"10px"}
+                  gap={{ xs: "20px", md: "30px" }}
+                  mb={{ xs: "4px", md: "10px" }}
                   borderY={"1px solid #adacac"}
-                  py={"30px"}
+                  py={{ xs: "15px", md: "30px" }}
                 >
                   <Text
                     textAlign={"left"}
-                    fontSize={"20px"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "16px",
+                      xl: "18px",
+                      "2xl": "20px",
+                    }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -494,7 +672,14 @@ const SpouseVisa = () => {
 
                   <List.Root
                     textAlign={"left"}
-                    fontSize={"20px"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "16px",
+                      xl: "18px",
+                      "2xl": "20px",
+                    }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -534,14 +719,37 @@ const SpouseVisa = () => {
             <HStack justifyContent={"center"} alignItems={"center"}>
               <Text
                 color={"black"}
-                fontSize={"35px"}
+                fontSize={{
+                  xs: "20px",
+                  sm: "20px",
+                  md: "24px",
+                  lg: "28px",
+                  xl: "32px",
+                  "2xl": "35px",
+                }}
                 fontWeight={500}
                 fontStyle={"italic"}
-                mb={"50px"}
+                mb={{
+                  xs: "25px",
+                  sm: "30px",
+                  md: "35px",
+                  lg: "40px",
+                  xl: "45px",
+                  "2xl": "50px",
+                }}
               >
                 Other Services
               </Text>
-              <Box width={"75%"}></Box>
+              <Box
+                width={{
+                  xs: "55%",
+                  sm: "55%",
+                  md: "60%",
+                  lg: "65%",
+                  xl: "70%",
+                  "2xl": "75%",
+                }}
+              ></Box>
             </HStack>
             <Box
               width={"100%"}
@@ -552,16 +760,30 @@ const SpouseVisa = () => {
             >
               <Grid
                 width={"95%"}
-                templateColumns={"repeat(4, 1fr)"}
-                gap={"50px"}
+                templateColumns={{ xs: "repeat(2, 2fr)", lg: "repeat(4, 1fr)" }}
+                gap={{
+                  xs: "25px",
+                  sm: "30px",
+                  md: "35px",
+                  lg: "40px",
+                  xl: "45px",
+                  "2xl": "50px",
+                }}
                 justifyItems={"center"}
                 alignItems={"center"}
               >
                 {/* Col 1 */}
                 <GridItem
                   width={"100%"}
-                  height={"200px"}
-                  padding={"10px 20px"}
+                  height={{
+                    xs: "115px",
+                    sm: "120px",
+                    md: "125px",
+                    lg: "150px",
+                    xl: "175px",
+                    "2xl": "200px",
+                  }}
+                  padding={{ xs: "5px 10px", lg: "10px 20px" }}
                   border={"1px solid black"}
                   borderRadius={"8px"}
                   cursor={"pointer"}
@@ -584,7 +806,14 @@ const SpouseVisa = () => {
                       gap={"10px"}
                     >
                       <Text
-                        fontSize={"24px"}
+                        fontSize={{
+                          xs: "14px",
+                          sm: "16px",
+                          md: "18px",
+                          lg: "20px",
+                          xl: "22px",
+                          "2xl": "24px",
+                        }}
                         fontFamily={"CeraRoundPro"}
                         fontWeight={500}
                         textAlign={"left"}
@@ -598,13 +827,20 @@ const SpouseVisa = () => {
                         alignItems={"flex-start"}
                       >
                         <Text
-                          fontSize={"18px"}
+                          fontSize={{
+                            xs: "12px",
+                            sm: "13px",
+                            md: "14px",
+                            lg: "15px",
+                            xl: "16px",
+                            "2xl": "18px",
+                          }}
                           fontFamily={"CeraRoundPro"}
                           fontWeight={400}
                         >
                           A lil para about what this service is{" "}
                         </Text>
-                        <HiOutlineArrowLongRight size={"3em"} />
+                        <HiOutlineArrowLongRight size={"2em"} />
                       </VStack>
                     </Box>
                   </Link>
@@ -613,8 +849,15 @@ const SpouseVisa = () => {
                 {/* Col 2 */}
                 <GridItem
                   width={"100%"}
-                  height={"200px"}
-                  padding={"10px 20px"}
+                  height={{
+                    xs: "115px",
+                    sm: "120px",
+                    md: "125px",
+                    lg: "150px",
+                    xl: "175px",
+                    "2xl": "200px",
+                  }}
+                  padding={{ xs: "5px 10px", lg: "10px 20px" }}
                   border={"1px solid black"}
                   borderRadius={"8px"}
                   cursor={"pointer"}
@@ -637,7 +880,14 @@ const SpouseVisa = () => {
                       gap={"10px"}
                     >
                       <Text
-                        fontSize={"24px"}
+                        fontSize={{
+                          xs: "14px",
+                          sm: "16px",
+                          md: "18px",
+                          lg: "20px",
+                          xl: "22px",
+                          "2xl": "24px",
+                        }}
                         fontFamily={"CeraRoundPro"}
                         fontWeight={500}
                         textAlign={"left"}
@@ -651,13 +901,20 @@ const SpouseVisa = () => {
                         alignItems={"flex-start"}
                       >
                         <Text
-                          fontSize={"18px"}
+                          fontSize={{
+                            xs: "12px",
+                            sm: "13px",
+                            md: "14px",
+                            lg: "15px",
+                            xl: "16px",
+                            "2xl": "18px",
+                          }}
                           fontFamily={"CeraRoundPro"}
                           fontWeight={400}
                         >
                           A lil para about what this service is{" "}
                         </Text>
-                        <HiOutlineArrowLongRight size={"3em"} />
+                        <HiOutlineArrowLongRight size={"2em"} />
                       </VStack>
                     </Box>
                   </Link>
@@ -666,8 +923,15 @@ const SpouseVisa = () => {
                 {/* Col 3 */}
                 <GridItem
                   width={"100%"}
-                  height={"200px"}
-                  padding={"10px 20px"}
+                  height={{
+                    xs: "115px",
+                    sm: "120px",
+                    md: "125px",
+                    lg: "150px",
+                    xl: "175px",
+                    "2xl": "200px",
+                  }}
+                  padding={{ xs: "5px 10px", lg: "10px 20px" }}
                   border={"1px solid black"}
                   borderRadius={"8px"}
                   cursor={"pointer"}
@@ -690,7 +954,14 @@ const SpouseVisa = () => {
                       gap={"10px"}
                     >
                       <Text
-                        fontSize={"24px"}
+                        fontSize={{
+                          xs: "14px",
+                          sm: "16px",
+                          md: "18px",
+                          lg: "20px",
+                          xl: "22px",
+                          "2xl": "24px",
+                        }}
                         fontFamily={"CeraRoundPro"}
                         fontWeight={500}
                         textAlign={"left"}
@@ -704,13 +975,20 @@ const SpouseVisa = () => {
                         alignItems={"flex-start"}
                       >
                         <Text
-                          fontSize={"18px"}
+                          fontSize={{
+                            xs: "12px",
+                            sm: "13px",
+                            md: "14px",
+                            lg: "15px",
+                            xl: "16px",
+                            "2xl": "18px",
+                          }}
                           fontFamily={"CeraRoundPro"}
                           fontWeight={400}
                         >
                           A lil para about what this service is{" "}
                         </Text>
-                        <HiOutlineArrowLongRight size={"3em"} />
+                        <HiOutlineArrowLongRight size={"2em"} />
                       </VStack>
                     </Box>
                   </Link>
@@ -719,8 +997,15 @@ const SpouseVisa = () => {
                 {/* Col 4 */}
                 <GridItem
                   width={"100%"}
-                  height={"200px"}
-                  padding={"10px 20px"}
+                  height={{
+                    xs: "115px",
+                    sm: "120px",
+                    md: "125px",
+                    lg: "150px",
+                    xl: "175px",
+                    "2xl": "200px",
+                  }}
+                  padding={{ xs: "5px 10px", lg: "10px 20px" }}
                   border={"1px solid black"}
                   borderRadius={"8px"}
                   cursor={"pointer"}
@@ -743,7 +1028,14 @@ const SpouseVisa = () => {
                       gap={"10px"}
                     >
                       <Text
-                        fontSize={"24px"}
+                        fontSize={{
+                          xs: "14px",
+                          sm: "16px",
+                          md: "18px",
+                          lg: "20px",
+                          xl: "22px",
+                          "2xl": "24px",
+                        }}
                         fontFamily={"CeraRoundPro"}
                         fontWeight={500}
                         textAlign={"left"}
@@ -757,13 +1049,20 @@ const SpouseVisa = () => {
                         alignItems={"flex-start"}
                       >
                         <Text
-                          fontSize={"18px"}
+                          fontSize={{
+                            xs: "12px",
+                            sm: "13px",
+                            md: "14px",
+                            lg: "15px",
+                            xl: "16px",
+                            "2xl": "18px",
+                          }}
                           fontFamily={"CeraRoundPro"}
                           fontWeight={400}
                         >
                           A lil para about what this service is{" "}
                         </Text>
-                        <HiOutlineArrowLongRight size={"3em"} />
+                        <HiOutlineArrowLongRight size={"2em"} />
                       </VStack>
                     </Box>
                   </Link>
@@ -785,6 +1084,7 @@ const SpouseVisa = () => {
             gap={"25px"}
             mb={"50px"}
           >
+            {/* Header */}
             <HStack
               justifyContent={"center"}
               alignItems={"center"}
@@ -792,48 +1092,88 @@ const SpouseVisa = () => {
             >
               <Text
                 color={"black"}
-                fontSize={"35px"}
+                fontSize={{
+                  xs: "20px",
+                  sm: "20px",
+                  md: "24px",
+                  lg: "28px",
+                  xl: "32px",
+                  "2xl": "35px",
+                }}
                 fontWeight={500}
                 fontStyle={"italic"}
               >
                 News and Insights
               </Text>
-              <Box width={"75%"}></Box>
+              <Box
+                width={{
+                  xs: "45%",
+                  sm: "50%",
+                  md: "60%",
+                  lg: "65%",
+                  xl: "70%",
+                  "2xl": "75%",
+                }}
+              ></Box>
             </HStack>
+
+            {/* News and Insights */}
             <HStack
               width={"100%"}
               justifyContent={"center"}
               alignItems={"center"}
-              gap={"50px"}
+              gap={"10px"}
             >
               <Image
                 src={NewsInsightsOne}
-                height={"100%"}
-                width={"15%"}
+                height={{
+                  xs: "150px",
+                  sm: "175px",
+                  md: "225px",
+                  lg: "275px",
+                  xl: "325px",
+                  "2xl": "375px",
+                }}
+                width={{ xs: "22%", md: "24%" }}
                 objectFit={"cover"}
               />
               <Image
                 src={NewsInsightsTwo}
-                height={"100%"}
-                width={"15%"}
+                height={{
+                  xs: "150px",
+                  sm: "175px",
+                  md: "225px",
+                  lg: "275px",
+                  xl: "325px",
+                  "2xl": "375px",
+                }}
+                width={{ xs: "22%", md: "24%" }}
                 objectFit={"cover"}
               />
               <Image
                 src={NewsInsightsThree}
-                height={"100%"}
-                width={"15%"}
+                height={{
+                  xs: "150px",
+                  sm: "175px",
+                  md: "225px",
+                  lg: "275px",
+                  xl: "325px",
+                  "2xl": "375px",
+                }}
+                width={{ xs: "22%", md: "24%" }}
                 objectFit={"cover"}
               />
               <Image
                 src={NewsInsightsFour}
-                height={"100%"}
-                width={"15%"}
-                objectFit={"cover"}
-              />
-              <Image
-                src={NewsInsightsOne}
-                height={"100%"}
-                width={"15%"}
+                height={{
+                  xs: "150px",
+                  sm: "175px",
+                  md: "225px",
+                  lg: "275px",
+                  xl: "325px",
+                  "2xl": "375px",
+                }}
+                width={{ xs: "22%", md: "24%" }}
                 objectFit={"cover"}
               />
             </HStack>

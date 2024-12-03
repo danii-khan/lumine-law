@@ -503,7 +503,7 @@ const Menu = () => {
         </Button>
 
         {/* People */}
-        <Button
+        {/* <Button
           backgroundColor="inherit"
           color="white"
           size="sm"
@@ -538,7 +538,7 @@ const Menu = () => {
           }}
         >
           People
-        </Button>
+        </Button> */}
 
         {/* Services */}
         <ServicesMegaMenu />
