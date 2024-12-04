@@ -94,7 +94,7 @@ const Immigration = () => {
               {/* Spouse Visa */}
               <List.Item
                 as={Link}
-                to={"/all-services/immigration/spouse-visa"}
+                to={"/lumine-law/all-services/immigration/spouse-visa"}
                 color="black"
                 fontSize={"25px"}
                 fontWeight={500}
@@ -109,6 +109,10 @@ const Immigration = () => {
 
               {/* 2 */}
               <List.Item
+                as={Link}
+                to={
+                  "/lumine-law/all-services/immigration/british-citizenship-application"
+                }
                 color="black"
                 fontSize={"25px"}
                 fontWeight={500}
@@ -123,20 +127,8 @@ const Immigration = () => {
 
               {/* 3 */}
               <List.Item
-                color="black"
-                fontSize={"25px"}
-                fontWeight={500}
-                fontFamily={"CeraRoundPro"}
-                cursor={"pointer"}
-                _hover={{ fontWeight: "600", textDecor: "underline" }}
-                gap={"30px"}
-              >
-                <Image src={ArrowImg} width={"75px"} />
-                Skilled Worker Visa{" "}
-              </List.Item>
-
-              {/* 4 */}
-              <List.Item
+                as={Link}
+                to={"/lumine-law/all-services/immigration/uk-visitor-visa"}
                 color="black"
                 fontSize={"25px"}
                 fontWeight={500}
@@ -149,8 +141,26 @@ const Immigration = () => {
                 UK Visitor Visa{" "}
               </List.Item>
 
+              {/* 4 */}
+              <List.Item
+                as={Link}
+                to={"/lumine-law/all-services/immigration/skilled-worker-visa"}
+                color="black"
+                fontSize={"25px"}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+                _hover={{ fontWeight: "600", textDecor: "underline" }}
+                gap={"30px"}
+              >
+                <Image src={ArrowImg} width={"75px"} />
+                Skilled Worker Visa{" "}
+              </List.Item>
+
               {/* 5 */}
               <List.Item
+                as={Link}
+                to="/lumine-law/all-services/immigration/certificate-of-sponsorship"
                 color="black"
                 fontSize={"25px"}
                 fontWeight={500}
@@ -165,6 +175,8 @@ const Immigration = () => {
 
               {/* 6 */}
               <List.Item
+                as={Link}
+                to="/lumine-law/all-services/immigration/student-visa"
                 color="black"
                 fontSize={"25px"}
                 fontWeight={500}

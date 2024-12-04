@@ -97,7 +97,7 @@ const ServicesMegaMenu = () => {
           >
             {/* Header */}
             <Link
-              to={"/all-services/immigration"}
+              to={"/lumine-law/all-services/immigration"}
               style={{ textDecoration: "none" }}
             >
               <Text
@@ -121,7 +121,7 @@ const ServicesMegaMenu = () => {
             {/* Spouse Visa */}
             <Text
               as={Link}
-              to={"/all-services/immigration/spouse-visa"}
+              to={"/lumine-law/all-services/immigration/spouse-visa"}
               fontSize={{
                 // base: {"15px"}
                 lg: "8px",
@@ -256,7 +256,10 @@ const ServicesMegaMenu = () => {
             </Text>
 
             {/* Explore More */}
-            <Link to={"/all-services"} style={{ textDecoration: "none" }}>
+            <Link
+              to={"/lumine-law/all-services"}
+              style={{ textDecoration: "none" }}
+            >
               <Text
                 fontSize={{
                   // base: {"15px"}
@@ -705,7 +708,7 @@ const Navbar = () => {
 
           {/* Contact Button */}
           <GridItem justifySelf={"end"} display={{ xs: "none", md: "grid" }}>
-            <Link to={"/contact"} style={{ textDecoration: "none" }}>
+            <Link to={"/lumine-law/contact"} style={{ textDecoration: "none" }}>
               <Button
                 fontWeight={400}
                 fontSize={{

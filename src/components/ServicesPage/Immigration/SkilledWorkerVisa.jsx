@@ -25,7 +25,7 @@ import BannerImg from "../../../assets/services/main/immigration/main-banner.png
 import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
 import { Helmet } from "react-helmet";
 
-const SpouseVisa = () => {
+const SkilledWorkerVisa = () => {
   const [spouseState, setSpouseState] = useState(false);
   const [eligibilityState, setEligibilityState] = useState(false);
   const [applicationState, setApplicationState] = useState(false);
@@ -46,7 +46,7 @@ const SpouseVisa = () => {
         flexDirection="column"
       >
         <Helmet>
-          <title>Lumine Law Spouse Visa Services</title>
+          <title>Lumine Law Skilled Worker Visa Services</title>
         </Helmet>
 
         <Navbar />
@@ -76,9 +76,9 @@ const SpouseVisa = () => {
               fontFamily={"CeraRoundPro"}
               fontStyle={"italic"}
             >
-              Spouse Visa
+              Skilled Worker Visa
             </Text>
-            <Box width={{ xs: "60%", md: "65%", lg: "75%" }}>{/* Empty */}</Box>
+            <Box width={{ xs: "30%", md: "35%", lg: "45%" }}>{/* Empty */}</Box>
           </Box>
 
           {/* Main */}
@@ -101,7 +101,7 @@ const SpouseVisa = () => {
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
               >
-                A few lines on what a Spouse visa is.
+                A few lines on what a Skilled Worker Visa is.
               </Text>
             </Box>
           </Box>
@@ -112,7 +112,7 @@ const SpouseVisa = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* What is Spouse Visa */}
+            {/* What is Skilled Worker Visa */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -163,7 +163,7 @@ const SpouseVisa = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  What is a spouse visa?
+                  What is a Skilled Worker Visa?
                 </Text>
                 {!spouseState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -180,6 +180,7 @@ const SpouseVisa = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"left"}
@@ -194,37 +195,14 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    The spouse visa enables an eligible foreign national to join
-                    and live with their partner in the UK if they are a British
-                    citizen or settled person e.g. a person with Indefinite
-                    Leave to Remain or EU Settled Status. You must apply for a
-                    Spouse Visa to live in the UK with your partner. Eligible
-                    applicants include those who are married, in a civil
-                    partnership, or unmarried.
-                  </Text>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    Lumine Solicitors’ team of highly experienced professionals
-                    is here to expertly guide you through the spouse visa
-                    application process.
+                    The Skilled Worker visa enables non-UK workers to do certain
+                    eligible jobs for licensed UK employers.
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Eligibility Requirements */}
+            {/* Eligibility */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -275,7 +253,7 @@ const SpouseVisa = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Eligibility Requirements
+                  Eligibility
                 </Text>
                 {!eligibilityState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -292,6 +270,7 @@ const SpouseVisa = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"left"}
@@ -306,9 +285,8 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    To make a successful application for a UK spouse visa
-                    through Lumine Solicitors, you will need to meet the
-                    eligibility requirements, including the following:
+                    Certain requirements must be fulfilled to gain a Skilled
+                    Worker visa. These include:
                   </Text>
 
                   <List.Root
@@ -325,26 +303,33 @@ const SpouseVisa = () => {
                     fontFamily={"CeraRoundPro"}
                   >
                     <List.Item>
-                      You are in a genuine and subsisting relationship with your
-                      partner
+                      Working for a licensed employer in the UK that has been
+                      approved by the Home Office
                     </List.Item>
                     <List.Item>
-                      Your and your partner’s income must be at least £29,000
-                      (if your application was submitted prior to 11 April 2024,
-                      the old income requirement of £18,600 will apply)
+                      Having a valid ‘certificate of sponsorship’ issued by your
+                      employer
                     </List.Item>
                     <List.Item>
-                      Your partner fulfils the English Language requirements
+                      Having a biometric residence permit (BRP)
                     </List.Item>
                     <List.Item>
-                      You and your partner have adequate accommodation in the UK
+                      Your job being on the list of eligible occupations
+                    </List.Item>
+                    <List.Item>
+                      Meeting the English language requirements and minimum
+                      salary requirements
+                    </List.Item>
+                    <List.Item>
+                      Obtaining 70 points under the point-based immigration
+                      system
                     </List.Item>
                   </List.Root>
                 </VStack>
               )}
             </Box>
 
-            {/* Application Process */}
+            {/* Benefits */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -395,7 +380,7 @@ const SpouseVisa = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Application Process
+                  Benefits{" "}
                 </Text>
                 {!applicationState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -426,50 +411,12 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    If you’re applying for the first time and your partner is
-                    outside the UK, they will complete the online application
-                    from their home country or their current residence. Upon
-                    approval, your partner’s visa will be valid for 33 months.
-                  </Text>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    Before the 33-month visa period ends, you’ll need to apply
-                    to extend your partner’s visa. This extension can be
-                    completed within the UK, allowing your partner to remain in
-                    the country while awaiting a decision. After continuously
-                    living in the UK for five years, your partner can apply for
-                    Indefinite Leave to Remain, granting them permanent
-                    residency.
-                  </Text>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    If you’re a British citizen, your partner can also apply for
-                    British citizenship immediately after receiving Indefinite
-                    Leave to Remain.
+                    Lumine Solicitors can assist you in obtaining a Skilled
+                    Worker visa, allowing you to reside in the UK for up to 5
+                    years. This visa may also make you eligible to apply for
+                    indefinite leave to remain. Additionally, you can bring your
+                    eligible spouse and children to the UK, pursue studies, and
+                    travel outside the UK.
                   </Text>
                 </VStack>
               )}
@@ -543,6 +490,7 @@ const SpouseVisa = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"left"}
@@ -557,11 +505,9 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    UK Spouse Visa applications submitted from outside of the UK
-                    typically take around 12 weeks (equivalent to 3 months) to
-                    be processed. However, if the application is made from
-                    within the UK, the processing time is normally between 6 and
-                    8 weeks.
+                    A decision on whether you have successfully gained a Skilled
+                    Worker visa usually takes up to 3 weeks if you are not in
+                    the UK or 8 weeks if you are within the UK.
                   </Text>
                 </VStack>
               )}
@@ -649,13 +595,10 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    At Lumine Solicitors, we strive to simplify the visa
-                    procedure for you. Whether it’s applying for a UK spouse
-                    visa, extending your existing visa, or bringing dependents
-                    along, we’re here to assist you. With our proficient team of
-                    immigration solicitors, we provide professional advice on
-                    selecting the appropriate visa type and guarantee a
-                    hassle-free application process.
+                    Lumine solicitors will get to know you and your employment
+                    goals to advise you on the best way forward. We will support
+                    you from the beginning to the end of your application and
+                    ensure difficult evidential requirements are met.
                   </Text>
 
                   <Text
@@ -1188,4 +1131,4 @@ const SpouseVisa = () => {
   );
 };
 
-export default SpouseVisa;
+export default SkilledWorkerVisa;

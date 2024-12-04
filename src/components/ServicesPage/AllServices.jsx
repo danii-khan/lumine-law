@@ -172,7 +172,7 @@ const AllServices = () => {
                 }}
               >
                 <Link
-                  to={"/all-services/immigration"}
+                  to={"/lumine-law/all-services/immigration"}
                   style={{ textDecoration: "none" }}
                 >
                   <Box

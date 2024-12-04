@@ -25,7 +25,7 @@ import BannerImg from "../../../assets/services/main/immigration/main-banner.png
 import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
 import { Helmet } from "react-helmet";
 
-const SpouseVisa = () => {
+const VisitorVisa = () => {
   const [spouseState, setSpouseState] = useState(false);
   const [eligibilityState, setEligibilityState] = useState(false);
   const [applicationState, setApplicationState] = useState(false);
@@ -46,7 +46,7 @@ const SpouseVisa = () => {
         flexDirection="column"
       >
         <Helmet>
-          <title>Lumine Law Spouse Visa Services</title>
+          <title>Lumine Law Visitor Visa Services</title>
         </Helmet>
 
         <Navbar />
@@ -76,7 +76,7 @@ const SpouseVisa = () => {
               fontFamily={"CeraRoundPro"}
               fontStyle={"italic"}
             >
-              Spouse Visa
+              UK Visitor Visa
             </Text>
             <Box width={{ xs: "60%", md: "65%", lg: "75%" }}>{/* Empty */}</Box>
           </Box>
@@ -101,7 +101,7 @@ const SpouseVisa = () => {
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
               >
-                A few lines on what a Spouse visa is.
+                A few lines on what a Visitor Visa is.
               </Text>
             </Box>
           </Box>
@@ -112,7 +112,7 @@ const SpouseVisa = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* What is Spouse Visa */}
+            {/* What is Visitor Visa */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -163,7 +163,7 @@ const SpouseVisa = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  What is a spouse visa?
+                  What is a visitor visa?
                 </Text>
                 {!spouseState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -194,37 +194,17 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    The spouse visa enables an eligible foreign national to join
-                    and live with their partner in the UK if they are a British
-                    citizen or settled person e.g. a person with Indefinite
-                    Leave to Remain or EU Settled Status. You must apply for a
-                    Spouse Visa to live in the UK with your partner. Eligible
-                    applicants include those who are married, in a civil
-                    partnership, or unmarried.
-                  </Text>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    Lumine Solicitors’ team of highly experienced professionals
-                    is here to expertly guide you through the spouse visa
-                    application process.
+                    At Lumine Solicitors, we can apply for your Visitor visa if
+                    you wish to come to the UK temporarily (often for up to 6
+                    months), for tourism, visiting friends or family, carrying
+                    out a business-related activity, or studying. You must also
+                    adhere to the conditions outlined in Appendix V.
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Eligibility Requirements */}
+            {/* Requirements */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -275,7 +255,7 @@ const SpouseVisa = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Eligibility Requirements
+                  Requirements
                 </Text>
                 {!eligibilityState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -306,9 +286,8 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    To make a successful application for a UK spouse visa
-                    through Lumine Solicitors, you will need to meet the
-                    eligibility requirements, including the following:
+                    The following are a few of the main requirements for a UK
+                    visitor visa:
                   </Text>
 
                   <List.Root
@@ -325,244 +304,22 @@ const SpouseVisa = () => {
                     fontFamily={"CeraRoundPro"}
                   >
                     <List.Item>
-                      You are in a genuine and subsisting relationship with your
-                      partner
+                      You intend to leave the UK at the end of your visit and
+                      return to your country of origin (this is generally met by
+                      showing strong family/financial ties to your country of
+                      residence)
                     </List.Item>
                     <List.Item>
-                      Your and your partner’s income must be at least £29,000
-                      (if your application was submitted prior to 11 April 2024,
-                      the old income requirement of £18,600 will apply)
+                      You will be able to maintain and accommodate yourself
+                      without recourse to public funds or working during your
+                      stay in the UK
                     </List.Item>
                     <List.Item>
-                      Your partner fulfils the English Language requirements
-                    </List.Item>
-                    <List.Item>
-                      You and your partner have adequate accommodation in the UK
+                      You will be able to cover the expense of your travel to
+                      the UK and should have return ticket. In most cases, the
+                      applicant’s travel expenses are covered by the UK sponsor.
                     </List.Item>
                   </List.Root>
-                </VStack>
-              )}
-            </Box>
-
-            {/* Application Process */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !applicationState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
-                onClick={() => setApplicationState(!applicationState)}
-              >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  Application Process
-                </Text>
-                {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
-
-              {applicationState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                >
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    If you’re applying for the first time and your partner is
-                    outside the UK, they will complete the online application
-                    from their home country or their current residence. Upon
-                    approval, your partner’s visa will be valid for 33 months.
-                  </Text>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    Before the 33-month visa period ends, you’ll need to apply
-                    to extend your partner’s visa. This extension can be
-                    completed within the UK, allowing your partner to remain in
-                    the country while awaiting a decision. After continuously
-                    living in the UK for five years, your partner can apply for
-                    Indefinite Leave to Remain, granting them permanent
-                    residency.
-                  </Text>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    If you’re a British citizen, your partner can also apply for
-                    British citizenship immediately after receiving Indefinite
-                    Leave to Remain.
-                  </Text>
-                </VStack>
-              )}
-            </Box>
-
-            {/* Decision */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !decisionState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={decisionState && "black"}
-                onClick={() => setDecisionState(!decisionState)}
-              >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  How long does it take to reach a decision?
-                </Text>
-                {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
-
-              {decisionState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                >
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    UK Spouse Visa applications submitted from outside of the UK
-                    typically take around 12 weeks (equivalent to 3 months) to
-                    be processed. However, if the application is made from
-                    within the UK, the processing time is normally between 6 and
-                    8 weeks.
-                  </Text>
                 </VStack>
               )}
             </Box>
@@ -1188,4 +945,4 @@ const SpouseVisa = () => {
   );
 };
 
-export default SpouseVisa;
+export default VisitorVisa;

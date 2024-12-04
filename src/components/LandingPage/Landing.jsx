@@ -514,7 +514,7 @@ const LandingPage = () => {
               transition={"all 0.3s ease"}
             >
               <Link
-                to={"/all-services/immigration"}
+                to={"/lumine-law/all-services/immigration"}
                 style={{ textDecoration: "none" }}
                 p={0}
                 m={0}
@@ -782,7 +782,7 @@ const LandingPage = () => {
               transition={"all 0.3s ease"}
             >
               <Link
-                to={"/all-services"}
+                to={"/lumine-law/all-services"}
                 style={{ textDecoration: "none" }}
                 p={0}
                 m={0}
@@ -905,7 +905,7 @@ const LandingPage = () => {
           }}
         >
           <Text
-            color="white"
+            color="#000000"
             fontSize={{
               xs: "14px",
               sm: "16px",

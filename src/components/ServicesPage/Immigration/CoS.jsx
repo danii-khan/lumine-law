@@ -25,7 +25,7 @@ import BannerImg from "../../../assets/services/main/immigration/main-banner.png
 import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
 import { Helmet } from "react-helmet";
 
-const SpouseVisa = () => {
+const CoS = () => {
   const [spouseState, setSpouseState] = useState(false);
   const [eligibilityState, setEligibilityState] = useState(false);
   const [applicationState, setApplicationState] = useState(false);
@@ -46,7 +46,7 @@ const SpouseVisa = () => {
         flexDirection="column"
       >
         <Helmet>
-          <title>Lumine Law Spouse Visa Services</title>
+          <title>Lumine Law Certificate of Sponsorship (CoS) Services</title>
         </Helmet>
 
         <Navbar />
@@ -76,9 +76,9 @@ const SpouseVisa = () => {
               fontFamily={"CeraRoundPro"}
               fontStyle={"italic"}
             >
-              Spouse Visa
+              Certificate of Sponsorship (CoS)
             </Text>
-            <Box width={{ xs: "60%", md: "65%", lg: "75%" }}>{/* Empty */}</Box>
+            <Box width={{ xs: "20%", md: "25%", lg: "30%" }}>{/* Empty */}</Box>
           </Box>
 
           {/* Main */}
@@ -101,7 +101,7 @@ const SpouseVisa = () => {
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
               >
-                A few lines on what a Spouse visa is.
+                A few lines on what a Certificate of Sponsorship is.
               </Text>
             </Box>
           </Box>
@@ -112,7 +112,7 @@ const SpouseVisa = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* What is Spouse Visa */}
+            {/* What is Certificate of Sponsorship (CoS) */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -163,7 +163,7 @@ const SpouseVisa = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  What is a spouse visa?
+                  What is a Certificate of Sponsorship (CoS)?
                 </Text>
                 {!spouseState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -194,37 +194,19 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    The spouse visa enables an eligible foreign national to join
-                    and live with their partner in the UK if they are a British
-                    citizen or settled person e.g. a person with Indefinite
-                    Leave to Remain or EU Settled Status. You must apply for a
-                    Spouse Visa to live in the UK with your partner. Eligible
-                    applicants include those who are married, in a civil
-                    partnership, or unmarried.
-                  </Text>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    Lumine Solicitors’ team of highly experienced professionals
-                    is here to expertly guide you through the spouse visa
-                    application process.
+                    For an individual to make a valid application under the
+                    Skilled Worker route and other sponsored work routes, a
+                    sponsor must first assign a Certificate of Sponsorship (CoS)
+                    to them. A CoS serves as an electronic document confirming
+                    that an authorised UK employer or educational institution
+                    has provided a job offer or admission opportunity to an
+                    eligible migrant.
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Eligibility Requirements */}
+            {/* Types of CoS? */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -275,7 +257,7 @@ const SpouseVisa = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Eligibility Requirements
+                  Types of CoS?
                 </Text>
                 {!eligibilityState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -306,9 +288,8 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    To make a successful application for a UK spouse visa
-                    through Lumine Solicitors, you will need to meet the
-                    eligibility requirements, including the following:
+                    There are two types of Certificates of Sponsorship
+                    available: defined and undefined CoS.
                   </Text>
 
                   <List.Root
@@ -325,112 +306,20 @@ const SpouseVisa = () => {
                     fontFamily={"CeraRoundPro"}
                   >
                     <List.Item>
-                      You are in a genuine and subsisting relationship with your
-                      partner
+                      The defined CoS, is specifically for individuals applying
+                      through the Skilled Worker route from outside of the UK.
+                      Upon license confirmation, sponsors typically receive UKVI
+                      approval within a day, enabling them to assign the CoS to
+                      the applicant once available in the SMS
                     </List.Item>
                     <List.Item>
-                      Your and your partner’s income must be at least £29,000
-                      (if your application was submitted prior to 11 April 2024,
-                      the old income requirement of £18,600 will apply)
-                    </List.Item>
-                    <List.Item>
-                      Your partner fulfils the English Language requirements
-                    </List.Item>
-                    <List.Item>
-                      You and your partner have adequate accommodation in the UK
+                      The undefined CoS, On the other hand, is issued for
+                      Skilled Worker Visa applications of employees already
+                      inside the UK, as well as for other visa categories. When
+                      applying for a license, UK sponsors must estimate the
+                      annual requirement for undefined CoS.
                     </List.Item>
                   </List.Root>
-                </VStack>
-              )}
-            </Box>
-
-            {/* Application Process */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !applicationState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
-                onClick={() => setApplicationState(!applicationState)}
-              >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  Application Process
-                </Text>
-                {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
-
-              {applicationState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                >
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    If you’re applying for the first time and your partner is
-                    outside the UK, they will complete the online application
-                    from their home country or their current residence. Upon
-                    approval, your partner’s visa will be valid for 33 months.
-                  </Text>
 
                   <Text
                     textAlign={"left"}
@@ -445,37 +334,15 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Before the 33-month visa period ends, you’ll need to apply
-                    to extend your partner’s visa. This extension can be
-                    completed within the UK, allowing your partner to remain in
-                    the country while awaiting a decision. After continuously
-                    living in the UK for five years, your partner can apply for
-                    Indefinite Leave to Remain, granting them permanent
-                    residency.
-                  </Text>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    If you’re a British citizen, your partner can also apply for
-                    British citizenship immediately after receiving Indefinite
-                    Leave to Remain.
+                    Sponsors can request addition Cos if all others have been
+                    utilised. Lumine Solicitors can guide sponsors through the
+                    process of obtaining and managing CoS effectively.
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Decision */}
+            {/* How Long Does it Take to Get a Certificate of Sponsorship? */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -526,7 +393,7 @@ const SpouseVisa = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  How long does it take to reach a decision?
+                  How Long Does it Take to Get a Certificate of Sponsorship?
                 </Text>
                 {!decisionState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -557,11 +424,11 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    UK Spouse Visa applications submitted from outside of the UK
-                    typically take around 12 weeks (equivalent to 3 months) to
-                    be processed. However, if the application is made from
-                    within the UK, the processing time is normally between 6 and
-                    8 weeks.
+                    A defined CoS is usually received by clients within 1
+                    working day of submitting a request. However, according to
+                    UKVI, this timeline might extend if additional checks or
+                    information are required before a final decision can be
+                    made.
                   </Text>
                 </VStack>
               )}
@@ -649,13 +516,13 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    At Lumine Solicitors, we strive to simplify the visa
-                    procedure for you. Whether it’s applying for a UK spouse
-                    visa, extending your existing visa, or bringing dependents
-                    along, we’re here to assist you. With our proficient team of
-                    immigration solicitors, we provide professional advice on
-                    selecting the appropriate visa type and guarantee a
-                    hassle-free application process.
+                    At Lumine Solicitors, we offer a comprehensive range of
+                    Certificate of Sponsorship services tailored to your needs
+                    including expert advice on selecting the right Certificate
+                    of Sponsorship, guidance on meeting points-based visa
+                    requirements such as minimum salary requirements, assigning
+                    roles to the relevant SOC code and assistance with
+                    correcting errors on the CoS.
                   </Text>
 
                   <Text
@@ -1188,4 +1055,4 @@ const SpouseVisa = () => {
   );
 };
 
-export default SpouseVisa;
+export default CoS;

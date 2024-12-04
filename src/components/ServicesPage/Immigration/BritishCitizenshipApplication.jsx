@@ -25,7 +25,7 @@ import BannerImg from "../../../assets/services/main/immigration/main-banner.png
 import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
 import { Helmet } from "react-helmet";
 
-const SpouseVisa = () => {
+const BritishCitizenshipApplication = () => {
   const [spouseState, setSpouseState] = useState(false);
   const [eligibilityState, setEligibilityState] = useState(false);
   const [applicationState, setApplicationState] = useState(false);
@@ -46,7 +46,7 @@ const SpouseVisa = () => {
         flexDirection="column"
       >
         <Helmet>
-          <title>Lumine Law Spouse Visa Services</title>
+          <title>Lumine Law British Citizenship Applications</title>
         </Helmet>
 
         <Navbar />
@@ -76,9 +76,19 @@ const SpouseVisa = () => {
               fontFamily={"CeraRoundPro"}
               fontStyle={"italic"}
             >
-              Spouse Visa
+              British Citizenship Application
             </Text>
-            <Box width={{ xs: "60%", md: "65%", lg: "75%" }}>{/* Empty */}</Box>
+            <Box
+              width={{
+                xs: "30%",
+                md: "20%",
+                lg: "30%",
+                xl: "35%",
+                "2xl": "40%",
+              }}
+            >
+              {/* Empty */}
+            </Box>
           </Box>
 
           {/* Main */}
@@ -101,7 +111,7 @@ const SpouseVisa = () => {
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
               >
-                A few lines on what a Spouse visa is.
+                A few lines on what a British Citizenship Application is.
               </Text>
             </Box>
           </Box>
@@ -112,7 +122,7 @@ const SpouseVisa = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* What is Spouse Visa */}
+            {/* What is British Cit App */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -163,7 +173,7 @@ const SpouseVisa = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  What is a spouse visa?
+                  What is British Citizenship?
                 </Text>
                 {!spouseState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -194,37 +204,16 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    The spouse visa enables an eligible foreign national to join
-                    and live with their partner in the UK if they are a British
-                    citizen or settled person e.g. a person with Indefinite
-                    Leave to Remain or EU Settled Status. You must apply for a
-                    Spouse Visa to live in the UK with your partner. Eligible
-                    applicants include those who are married, in a civil
-                    partnership, or unmarried.
-                  </Text>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    Lumine Solicitors’ team of highly experienced professionals
-                    is here to expertly guide you through the spouse visa
-                    application process.
+                    British citizenship will enable you to apply for a British
+                    passport and means you can travel freely outside and within
+                    the UK without the need for a visa and freed from
+                    immigration control.
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Eligibility Requirements */}
+            {/* Benefits */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -275,7 +264,7 @@ const SpouseVisa = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Eligibility Requirements
+                  Benefits of British Citizenship
                 </Text>
                 {!eligibilityState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -306,45 +295,15 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    To make a successful application for a UK spouse visa
-                    through Lumine Solicitors, you will need to meet the
-                    eligibility requirements, including the following:
+                    British citizenship will give you the same rights as a
+                    British national. For example, to live in the UK to study,
+                    work, access the NHS at no cost, and claim welfare benefits.
                   </Text>
-
-                  <List.Root
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    <List.Item>
-                      You are in a genuine and subsisting relationship with your
-                      partner
-                    </List.Item>
-                    <List.Item>
-                      Your and your partner’s income must be at least £29,000
-                      (if your application was submitted prior to 11 April 2024,
-                      the old income requirement of £18,600 will apply)
-                    </List.Item>
-                    <List.Item>
-                      Your partner fulfils the English Language requirements
-                    </List.Item>
-                    <List.Item>
-                      You and your partner have adequate accommodation in the UK
-                    </List.Item>
-                  </List.Root>
                 </VStack>
               )}
             </Box>
 
-            {/* Application Process */}
+            {/* Who is Eligible for British Citizenship? */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -395,7 +354,7 @@ const SpouseVisa = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Application Process
+                  Who is Eligible for British Citizenship?
                 </Text>
                 {!applicationState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -426,13 +385,14 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    If you’re applying for the first time and your partner is
-                    outside the UK, they will complete the online application
-                    from their home country or their current residence. Upon
-                    approval, your partner’s visa will be valid for 33 months.
+                    To gain UK citizenship, or <strong>naturalisation</strong>,
+                    certain requirements must be fulfilled. Naturalisation
+                    refers to a person from another country gaining citizenship
+                    in the UK. Lumine solicitors can apply for your British
+                    citizenship if you:
                   </Text>
 
-                  <Text
+                  <List.Root
                     textAlign={"left"}
                     fontSize={{
                       xs: "12px",
@@ -445,32 +405,21 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Before the 33-month visa period ends, you’ll need to apply
-                    to extend your partner’s visa. This extension can be
-                    completed within the UK, allowing your partner to remain in
-                    the country while awaiting a decision. After continuously
-                    living in the UK for five years, your partner can apply for
-                    Indefinite Leave to Remain, granting them permanent
-                    residency.
-                  </Text>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    If you’re a British citizen, your partner can also apply for
-                    British citizenship immediately after receiving Indefinite
-                    Leave to Remain.
-                  </Text>
+                    <List.Item>Are over the age of 18</List.Item>
+                    <List.Item>
+                      Have legally resided in the UK for the required time
+                      period. This will generally be 3 years if your spouse is a
+                      British citizen or 5 years if you have had indefinite
+                      leave to remain for at least a 12-month period
+                    </List.Item>
+                    <List.Item>
+                      Meet the language requirements and residency requirements
+                    </List.Item>
+                    <List.Item>Passed the ‘Life in the UK’ test</List.Item>
+                    <List.Item>Plan to live permanently in the UK</List.Item>
+                    <List.Item>Be of good character</List.Item>
+                    <List.Item>Comply with immigration rules</List.Item>
+                  </List.Root>
                 </VStack>
               )}
             </Box>
@@ -543,6 +492,7 @@ const SpouseVisa = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"left"}
@@ -557,11 +507,9 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    UK Spouse Visa applications submitted from outside of the UK
-                    typically take around 12 weeks (equivalent to 3 months) to
-                    be processed. However, if the application is made from
-                    within the UK, the processing time is normally between 6 and
-                    8 weeks.
+                    Complex cases may take up to 6 months for a decision to be
+                    made. However, Straightforward cases can be decided before
+                    this period.
                   </Text>
                 </VStack>
               )}
@@ -649,13 +597,53 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    At Lumine Solicitors, we strive to simplify the visa
-                    procedure for you. Whether it’s applying for a UK spouse
-                    visa, extending your existing visa, or bringing dependents
-                    along, we’re here to assist you. With our proficient team of
-                    immigration solicitors, we provide professional advice on
-                    selecting the appropriate visa type and guarantee a
-                    hassle-free application process.
+                    Lumine solicitors will support you with the following when
+                    applying for citizenship:
+                  </Text>
+
+                  <List.Root
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <List.Item>
+                      The application process for British citizenship
+                    </List.Item>
+                    <List.Item>
+                      Making an appointment at a UKVCAS to provide your
+                      biometric information
+                    </List.Item>
+                    <List.Item>
+                      Save you time by uploading your documents to UKVI
+                    </List.Item>
+                  </List.Root>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    If the Home Office has questions regarding your application,
+                    they will contact us for more information, so it is
+                    important you respond to any queries we contact you about to
+                    prevent rejection of your application. If successful, you
+                    will be invited to a citizenship ceremony.
                   </Text>
 
                   <Text
@@ -1188,4 +1176,4 @@ const SpouseVisa = () => {
   );
 };
 
-export default SpouseVisa;
+export default BritishCitizenshipApplication;

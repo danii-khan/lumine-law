@@ -25,7 +25,7 @@ import BannerImg from "../../../assets/services/main/immigration/main-banner.png
 import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
 import { Helmet } from "react-helmet";
 
-const SpouseVisa = () => {
+const StudentVisa = () => {
   const [spouseState, setSpouseState] = useState(false);
   const [eligibilityState, setEligibilityState] = useState(false);
   const [applicationState, setApplicationState] = useState(false);
@@ -46,7 +46,7 @@ const SpouseVisa = () => {
         flexDirection="column"
       >
         <Helmet>
-          <title>Lumine Law Spouse Visa Services</title>
+          <title>Lumine Law Student Visa Services</title>
         </Helmet>
 
         <Navbar />
@@ -76,7 +76,7 @@ const SpouseVisa = () => {
               fontFamily={"CeraRoundPro"}
               fontStyle={"italic"}
             >
-              Spouse Visa
+              Student Visa
             </Text>
             <Box width={{ xs: "60%", md: "65%", lg: "75%" }}>{/* Empty */}</Box>
           </Box>
@@ -101,7 +101,7 @@ const SpouseVisa = () => {
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
               >
-                A few lines on what a Spouse visa is.
+                A few lines on what a Student visa is.
               </Text>
             </Box>
           </Box>
@@ -112,7 +112,7 @@ const SpouseVisa = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* What is Spouse Visa */}
+            {/* What is Student Visa */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -163,7 +163,7 @@ const SpouseVisa = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  What is a spouse visa?
+                  What is a Student visa?
                 </Text>
                 {!spouseState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -194,37 +194,18 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    The spouse visa enables an eligible foreign national to join
-                    and live with their partner in the UK if they are a British
-                    citizen or settled person e.g. a person with Indefinite
-                    Leave to Remain or EU Settled Status. You must apply for a
-                    Spouse Visa to live in the UK with your partner. Eligible
-                    applicants include those who are married, in a civil
-                    partnership, or unmarried.
-                  </Text>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    Lumine Solicitors’ team of highly experienced professionals
-                    is here to expertly guide you through the spouse visa
-                    application process.
+                    You can apply for a student visa if you are over the age of
+                    16, want to study at an institute in the UK and have been
+                    offered a place on a course by a licensed student sponsor,
+                    have enough money to support yourself and pay for your
+                    course. Lumine Solicitors experienced members can guide and
+                    assist you in your student visa application.
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Eligibility Requirements */}
+            {/* Benefits */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -275,7 +256,7 @@ const SpouseVisa = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Eligibility Requirements
+                  Benefits
                 </Text>
                 {!eligibilityState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -292,6 +273,7 @@ const SpouseVisa = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"left"}
@@ -306,9 +288,7 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    To make a successful application for a UK spouse visa
-                    through Lumine Solicitors, you will need to meet the
-                    eligibility requirements, including the following:
+                    If you are granted a student visa, You may be able to:
                   </Text>
 
                   <List.Root
@@ -324,27 +304,21 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
+                    <List.Item>Live in the UK</List.Item>
+                    <List.Item>Study in the UK</List.Item>
                     <List.Item>
-                      You are in a genuine and subsisting relationship with your
-                      partner
+                      Work during term time and full time during off-term time
+                      in the UK
                     </List.Item>
                     <List.Item>
-                      Your and your partner’s income must be at least £29,000
-                      (if your application was submitted prior to 11 April 2024,
-                      the old income requirement of £18,600 will apply)
-                    </List.Item>
-                    <List.Item>
-                      Your partner fulfils the English Language requirements
-                    </List.Item>
-                    <List.Item>
-                      You and your partner have adequate accommodation in the UK
+                      Bring immediate family, while studying, to the UK
                     </List.Item>
                   </List.Root>
                 </VStack>
               )}
             </Box>
 
-            {/* Application Process */}
+            {/* Elligibility */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -395,7 +369,7 @@ const SpouseVisa = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Application Process
+                  Elligibility
                 </Text>
                 {!applicationState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -413,7 +387,7 @@ const SpouseVisa = () => {
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
                 >
-                  <Text
+                  <List.Root
                     textAlign={"left"}
                     fontSize={{
                       xs: "12px",
@@ -426,11 +400,27 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    If you’re applying for the first time and your partner is
-                    outside the UK, they will complete the online application
-                    from their home country or their current residence. Upon
-                    approval, your partner’s visa will be valid for 33 months.
-                  </Text>
+                    <List.Item>
+                      You must have confirmation of acceptance for studies (CAS)
+                      from a licensed sponsor
+                    </List.Item>
+                    <List.Item>
+                      You must meet the English language requirements
+                    </List.Item>
+                    <List.Item>
+                      You must be 16 and over ( evidence of parental consent is
+                      required) – you can apply for the Child Student Visa if
+                      your 16-17 year-olds & want to attend a school in the UK
+                    </List.Item>
+                    <List.Item>
+                      You must have been offered a place on a course by a
+                      licenced student sponsor.
+                    </List.Item>
+                    <List.Item>
+                      You must meet financial requirements and have enough money
+                      to cover yourself and your living costs in the UK.
+                    </List.Item>
+                  </List.Root>
 
                   <Text
                     textAlign={"left"}
@@ -445,31 +435,8 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Before the 33-month visa period ends, you’ll need to apply
-                    to extend your partner’s visa. This extension can be
-                    completed within the UK, allowing your partner to remain in
-                    the country while awaiting a decision. After continuously
-                    living in the UK for five years, your partner can apply for
-                    Indefinite Leave to Remain, granting them permanent
-                    residency.
-                  </Text>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    If you’re a British citizen, your partner can also apply for
-                    British citizenship immediately after receiving Indefinite
-                    Leave to Remain.
+                    You will also have to pay the healthcare surcharge fee which
+                    will vary in price depending on how long your visa is for.
                   </Text>
                 </VStack>
               )}
@@ -557,11 +524,10 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    UK Spouse Visa applications submitted from outside of the UK
-                    typically take around 12 weeks (equivalent to 3 months) to
-                    be processed. However, if the application is made from
-                    within the UK, the processing time is normally between 6 and
-                    8 weeks.
+                    Applications submitted in the UK are usually processed
+                    within 8 weeks, and those submitted outside the UK are
+                    usually processed in 3 weeks; however, priority services are
+                    available for applications to be processed faster.
                   </Text>
                 </VStack>
               )}
@@ -649,13 +615,11 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    At Lumine Solicitors, we strive to simplify the visa
-                    procedure for you. Whether it’s applying for a UK spouse
-                    visa, extending your existing visa, or bringing dependents
-                    along, we’re here to assist you. With our proficient team of
-                    immigration solicitors, we provide professional advice on
-                    selecting the appropriate visa type and guarantee a
-                    hassle-free application process.
+                    At Lumine Solicitors we offer expert advice to you on the
+                    application process for a student visa, as well as review
+                    your personal history to see whether you qualify, gather all
+                    the complex evidential requirements and keep you updated on
+                    the progress of your application.
                   </Text>
 
                   <Text
@@ -1188,4 +1152,4 @@ const SpouseVisa = () => {
   );
 };
 
-export default SpouseVisa;
+export default StudentVisa;
