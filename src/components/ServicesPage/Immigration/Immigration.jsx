@@ -1,7 +1,7 @@
 import { Text, Container, Box, HStack, List, Image } from "@chakra-ui/react";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
-import BannerImg from "../../../assets/services/main/immigration/main-banner.png";
+import BannerImg from "../../../assets/services/main/immigration/immigration-banner.png";
 import ArrowImg from "../../../assets/services/main/immigration/main-link-arrow.png";
 import "../../../styles/fonts.css";
 import { Link } from "react-router-dom";
@@ -30,7 +30,7 @@ const Immigration = () => {
           {/* Banner */}
           <Box
             width={"100%"}
-            height={"200px"}
+            height={"300px"}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
             bgPos={"center"}

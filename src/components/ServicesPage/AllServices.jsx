@@ -166,11 +166,9 @@ const AllServices = () => {
                 borderRadius={"8px"}
                 cursor={"pointer"}
                 color={"#ffffff"}
-                backgroundColor={"black"}
                 _hover={{
-                  color: "#beab7c",
-                  bgImage: "none",
-                  transition: "all 0.3s ease",
+                  opacity: "0.8",
+                  transition: "all 0.5s ease",
                 }}
               >
                 <Link
@@ -244,11 +242,9 @@ const AllServices = () => {
                 borderRadius={"8px"}
                 cursor={"pointer"}
                 color={"#ffffff"}
-                backgroundColor={"black"}
                 _hover={{
-                  color: "#beab7c",
-                  bgImage: "none",
-                  transition: "all 0.3s ease",
+                  opacity: "0.8",
+                  transition: "all 0.5s ease",
                 }}
               >
                 <Box
@@ -319,9 +315,8 @@ const AllServices = () => {
                 cursor={"pointer"}
                 color={"black"}
                 _hover={{
-                  color: "#beab7c",
-                  bgImage: "none",
-                  transition: "all 0.3s ease",
+                  opacity: "0.8",
+                  transition: "all 0.5s ease",
                 }}
               >
                 <Box
@@ -392,9 +387,8 @@ const AllServices = () => {
                 cursor={"pointer"}
                 color={"black"}
                 _hover={{
-                  color: "#beab7c",
-                  bgImage: "none",
-                  transition: "all 0.3s ease",
+                  opacity: "0.8",
+                  transition: "all 0.5s ease",
                 }}
               >
                 <Box
@@ -465,9 +459,8 @@ const AllServices = () => {
                 cursor={"pointer"}
                 color={"black"}
                 _hover={{
-                  color: "#beab7c",
-                  bgImage: "none",
-                  transition: "all 0.3s ease",
+                  opacity: "0.8",
+                  transition: "all 0.5s ease",
                 }}
               >
                 <Box
@@ -537,9 +530,8 @@ const AllServices = () => {
                 borderRadius={"8px"}
                 cursor={"pointer"}
                 _hover={{
-                  color: "#beab7c",
-                  backgroundColor: "black",
-                  transition: "all 0.3s ease",
+                  opacity: "0.8",
+                  transition: "all 0.5s ease",
                 }}
               >
                 <Box
@@ -614,9 +606,8 @@ const AllServices = () => {
                 borderRadius={"8px"}
                 cursor={"pointer"}
                 _hover={{
-                  color: "#beab7c",
-                  backgroundColor: "black",
-                  transition: "all 0.3s ease",
+                  opacity: "0.8",
+                  transition: "all 0.5s ease",
                 }}
               >
                 <Box

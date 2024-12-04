@@ -17,12 +17,12 @@ import { useState } from "react";
 import { AiOutlineMinus } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
-import NewsInsightsBg from "../../../assets/landing/news-insights.png";
 import NewsInsightsOne from "../../../assets/landing/news-insights-one.png";
 import NewsInsightsTwo from "../../../assets/landing/news-insights-two.png";
 import NewsInsightsThree from "../../../assets/landing/news-insights-three.png";
 import NewsInsightsFour from "../../../assets/landing/news-insights-four.png";
 import BannerImg from "../../../assets/services/main/immigration/main-banner.png";
+import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
 import { Helmet } from "react-helmet";
 
 const SpouseVisa = () => {
@@ -61,10 +61,11 @@ const SpouseVisa = () => {
               xl: "125px",
               "2xl": "150px",
             }}
-            bgImage={`url(${BannerImg})`}
-            bgSize={"cover"}
-            bgPos={"center"}
-            bgRepeat={"no-repeat"}
+            // bgImage={`url(${BannerImg})`}
+            // bgSize={"cover"}
+            // bgPos={"center"}
+            // bgRepeat={"no-repeat"}
+            backgroundColor={"#9FC3D3"}
             display={"flex"}
             justifyContent={"space-around"}
             alignItems={"center"}
@@ -425,12 +426,13 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    To make a successful application for a UK spouse visa
-                    through Lumine Solicitors, you will need to meet the
-                    eligibility requirements, including the following:
+                    If you’re applying for the first time and your partner is
+                    outside the UK, they will complete the online application
+                    from their home country or their current residence. Upon
+                    approval, your partner’s visa will be valid for 33 months.
                   </Text>
 
-                  <List.Root
+                  <Text
                     textAlign={"left"}
                     fontSize={{
                       xs: "12px",
@@ -443,22 +445,32 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    <List.Item>
-                      You are in a genuine and subsisting relationship with your
-                      partner
-                    </List.Item>
-                    <List.Item>
-                      Your and your partner’s income must be at least £29,000
-                      (if your application was submitted prior to 11 April 2024,
-                      the old income requirement of £18,600 will apply)
-                    </List.Item>
-                    <List.Item>
-                      Your partner fulfils the English Language requirements
-                    </List.Item>
-                    <List.Item>
-                      You and your partner have adequate accommodation in the UK
-                    </List.Item>
-                  </List.Root>
+                    Before the 33-month visa period ends, you’ll need to apply
+                    to extend your partner’s visa. This extension can be
+                    completed within the UK, allowing your partner to remain in
+                    the country while awaiting a decision. After continuously
+                    living in the UK for five years, your partner can apply for
+                    Indefinite Leave to Remain, granting them permanent
+                    residency.
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    If you’re a British citizen, your partner can also apply for
+                    British citizenship immediately after receiving Indefinite
+                    Leave to Remain.
+                  </Text>
                 </VStack>
               )}
             </Box>
@@ -545,40 +557,12 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    To make a successful application for a UK spouse visa
-                    through Lumine Solicitors, you will need to meet the
-                    eligibility requirements, including the following:
+                    UK Spouse Visa applications submitted from outside of the UK
+                    typically take around 12 weeks (equivalent to 3 months) to
+                    be processed. However, if the application is made from
+                    within the UK, the processing time is normally between 6 and
+                    8 weeks.
                   </Text>
-
-                  <List.Root
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    <List.Item>
-                      You are in a genuine and subsisting relationship with your
-                      partner
-                    </List.Item>
-                    <List.Item>
-                      Your and your partner’s income must be at least £29,000
-                      (if your application was submitted prior to 11 April 2024,
-                      the old income requirement of £18,600 will apply)
-                    </List.Item>
-                    <List.Item>
-                      Your partner fulfils the English Language requirements
-                    </List.Item>
-                    <List.Item>
-                      You and your partner have adequate accommodation in the UK
-                    </List.Item>
-                  </List.Root>
                 </VStack>
               )}
             </Box>
@@ -649,7 +633,7 @@ const SpouseVisa = () => {
                   alignItems={"flex-start"}
                   gap={{ xs: "20px", md: "30px" }}
                   mb={{ xs: "4px", md: "10px" }}
-                  borderY={"1px solid #adacac"}
+                  borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
                 >
                   <Text
@@ -665,12 +649,16 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    To make a successful application for a UK spouse visa
-                    through Lumine Solicitors, you will need to meet the
-                    eligibility requirements, including the following:
+                    At Lumine Solicitors, we strive to simplify the visa
+                    procedure for you. Whether it’s applying for a UK spouse
+                    visa, extending your existing visa, or bringing dependents
+                    along, we’re here to assist you. With our proficient team of
+                    immigration solicitors, we provide professional advice on
+                    selecting the appropriate visa type and guarantee a
+                    hassle-free application process.
                   </Text>
 
-                  <List.Root
+                  <Text
                     textAlign={"left"}
                     fontSize={{
                       xs: "12px",
@@ -683,22 +671,13 @@ const SpouseVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    <List.Item>
-                      You are in a genuine and subsisting relationship with your
-                      partner
-                    </List.Item>
-                    <List.Item>
-                      Your and your partner’s income must be at least £29,000
-                      (if your application was submitted prior to 11 April 2024,
-                      the old income requirement of £18,600 will apply)
-                    </List.Item>
-                    <List.Item>
-                      Your partner fulfils the English Language requirements
-                    </List.Item>
-                    <List.Item>
-                      You and your partner have adequate accommodation in the UK
-                    </List.Item>
-                  </List.Root>
+                    For all immigration matters, Please do not hesitate to get
+                    in touch with Lumine solicitors{" "}
+                    <strong>020 3950 2246</strong> or{" "}
+                    <strong>
+                      <Link to={"/contact"}>Contact Us HERE</Link>{" "}
+                    </strong>
+                  </Text>
                 </VStack>
               )}
             </Box>
@@ -791,10 +770,8 @@ const SpouseVisa = () => {
                   borderRadius={"8px"}
                   cursor={"pointer"}
                   _hover={{
-                    color: "#beab7c",
-                    background: "black",
-                    backgroundColor: "black",
-                    transition: "all 0.3s ease",
+                    opacity: "0.8",
+                    transition: "all 0.5s ease",
                   }}
                   bgImage={`url(${BannerImg})`}
                   bgPos={"center"}
@@ -825,6 +802,7 @@ const SpouseVisa = () => {
                         fontFamily={"CeraRoundPro"}
                         fontWeight={500}
                         textAlign={"left"}
+                        color={"#ffffff"}
                       >
                         Immigration
                       </Text>
@@ -843,6 +821,7 @@ const SpouseVisa = () => {
                             xl: "16px",
                             "2xl": "18px",
                           }}
+                          color={"#ffffff"}
                           fontFamily={"CeraRoundPro"}
                           fontWeight={400}
                         >
@@ -870,13 +849,16 @@ const SpouseVisa = () => {
                   borderRadius={"8px"}
                   cursor={"pointer"}
                   _hover={{
-                    color: "#beab7c",
-                    backgroundColor: "black",
-                    transition: "all 0.3s ease",
+                    opacity: "0.8",
+                    transition: "all 0.5s ease",
                   }}
+                  bgImage={`url(${ResidentialImg})`}
+                  bgPos={"center"}
+                  bgSize={"cover"}
+                  bgRepeat={"no-repeat"}
                 >
                   <Link
-                    to={"/all-services/immigration"}
+                    to={"/all-services/residential"}
                     style={{ textDecoration: "none" }}
                   >
                     <Box
@@ -899,8 +881,9 @@ const SpouseVisa = () => {
                         fontFamily={"CeraRoundPro"}
                         fontWeight={500}
                         textAlign={"left"}
+                        color={"#ffffff"}
                       >
-                        Immigration
+                        Residential & Commercial Property
                       </Text>
                       <VStack
                         width={"100%"}
@@ -917,6 +900,7 @@ const SpouseVisa = () => {
                             xl: "16px",
                             "2xl": "18px",
                           }}
+                          color={"#ffffff"}
                           fontFamily={"CeraRoundPro"}
                           fontWeight={400}
                         >
@@ -944,10 +928,13 @@ const SpouseVisa = () => {
                   borderRadius={"8px"}
                   cursor={"pointer"}
                   _hover={{
-                    color: "#beab7c",
-                    backgroundColor: "black",
-                    transition: "all 0.3s ease",
+                    opacity: "0.8",
+                    transition: "all 0.5s ease",
                   }}
+                  bgImage={`url(${BannerImg})`}
+                  bgPos={"center"}
+                  bgSize={"cover"}
+                  bgRepeat={"no-repeat"}
                 >
                   <Link
                     to={"/all-services/immigration"}
@@ -973,6 +960,7 @@ const SpouseVisa = () => {
                         fontFamily={"CeraRoundPro"}
                         fontWeight={500}
                         textAlign={"left"}
+                        color={"#ffffff"}
                       >
                         Immigration
                       </Text>
@@ -991,6 +979,7 @@ const SpouseVisa = () => {
                             xl: "16px",
                             "2xl": "18px",
                           }}
+                          color={"#ffffff"}
                           fontFamily={"CeraRoundPro"}
                           fontWeight={400}
                         >
@@ -1018,13 +1007,16 @@ const SpouseVisa = () => {
                   borderRadius={"8px"}
                   cursor={"pointer"}
                   _hover={{
-                    color: "#beab7c",
-                    backgroundColor: "black",
-                    transition: "all 0.3s ease",
+                    opacity: "0.8",
+                    transition: "all 0.5s ease",
                   }}
+                  bgImage={`url(${ResidentialImg})`}
+                  bgPos={"center"}
+                  bgSize={"cover"}
+                  bgRepeat={"no-repeat"}
                 >
                   <Link
-                    to={"/all-services/immigration"}
+                    to={"/all-services/residential"}
                     style={{ textDecoration: "none" }}
                   >
                     <Box
@@ -1047,8 +1039,9 @@ const SpouseVisa = () => {
                         fontFamily={"CeraRoundPro"}
                         fontWeight={500}
                         textAlign={"left"}
+                        color={"#ffffff"}
                       >
-                        Immigration
+                        Residential & Commercial Property
                       </Text>
                       <VStack
                         width={"100%"}
@@ -1065,6 +1058,7 @@ const SpouseVisa = () => {
                             xl: "16px",
                             "2xl": "18px",
                           }}
+                          color={"#ffffff"}
                           fontFamily={"CeraRoundPro"}
                           fontWeight={400}
                         >
