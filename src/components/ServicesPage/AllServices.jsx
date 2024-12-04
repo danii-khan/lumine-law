@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import BannerImg from "../../assets/services/all/banner.png";
+import BannerImg from "../../assets/services/all/bannertest.png";
 import ImmigrationImg from "../../assets/services/main/immigration/main-banner.png";
 import ResidentialImg from "../../assets/services/main/residential/main-banner.png";
 import DisputeImg from "../../assets/services/main/dispute/main-banner.png";
@@ -44,10 +44,10 @@ const AllServices = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "100px",
+              lg: "125px",
+              xl: "150px",
+              "2xl": "175px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -145,12 +145,12 @@ const AllServices = () => {
             >
               {/* Immigration */}
               <GridItem
-                width={{ xs: "100%", lg: "100%", xl: "100%", "2xl": "90%" }}
+                width={{ xs: "100%", lg: "80%", xl: "80%", "2xl": "80%" }}
                 height={{
                   xs: "125px",
-                  lg: "150px",
-                  xl: "175px",
-                  "2xl": "200px",
+                  lg: "175px",
+                  xl: "200px",
+                  "2xl": "250px",
                 }}
                 padding={{
                   xs: "15% 10px",
@@ -165,7 +165,7 @@ const AllServices = () => {
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}
-                color={"black"}
+                color={"#ffffff"}
                 backgroundColor={"black"}
                 _hover={{
                   color: "#beab7c",
@@ -223,12 +223,12 @@ const AllServices = () => {
               </GridItem>
               {/* Residential + Commercial */}
               <GridItem
-                width={{ xs: "100%", lg: "100%", xl: "100%", "2xl": "90%" }}
+                width={{ xs: "100%", lg: "80%", xl: "80%", "2xl": "80%" }}
                 height={{
                   xs: "125px",
-                  lg: "150px",
-                  xl: "175px",
-                  "2xl": "200px",
+                  lg: "175px",
+                  xl: "200px",
+                  "2xl": "250px",
                 }}
                 padding={{
                   xs: "15% 10px",
@@ -243,7 +243,7 @@ const AllServices = () => {
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}
-                color={"black"}
+                color={"#ffffff"}
                 backgroundColor={"black"}
                 _hover={{
                   color: "#beab7c",
@@ -296,12 +296,12 @@ const AllServices = () => {
               </GridItem>
               {/* Dispute Resolution */}
               <GridItem
-                width={{ xs: "100%", lg: "100%", xl: "100%", "2xl": "90%" }}
+                width={{ xs: "100%", lg: "80%", xl: "80%", "2xl": "80%" }}
                 height={{
                   xs: "125px",
-                  lg: "150px",
-                  xl: "175px",
-                  "2xl": "200px",
+                  lg: "175px",
+                  xl: "200px",
+                  "2xl": "250px",
                 }}
                 padding={{
                   xs: "15% 10px",
@@ -309,15 +309,15 @@ const AllServices = () => {
                   xl: "8px 16px",
                   "2xl": "10px 20px",
                 }}
-                bgImage={`url(${DisputeImg})`}
-                bgSize={"cover"}
-                bgPos={"center"}
-                bgRepeat={"no-repeat"}
+                // bgImage={`url(${DisputeImg})`}
+                // bgSize={"cover"}
+                // bgPos={"center"}
+                // bgRepeat={"no-repeat"}
+                backgroundColor={"#D7E3F1"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}
                 color={"black"}
-                backgroundColor={"black"}
                 _hover={{
                   color: "#beab7c",
                   bgImage: "none",
@@ -369,12 +369,12 @@ const AllServices = () => {
               </GridItem>
               {/* Landlord + Tenant */}
               <GridItem
-                width={{ xs: "100%", lg: "100%", xl: "100%", "2xl": "90%" }}
+                width={{ xs: "100%", lg: "80%", xl: "80%", "2xl": "80%" }}
                 height={{
                   xs: "125px",
-                  lg: "150px",
-                  xl: "175px",
-                  "2xl": "200px",
+                  lg: "175px",
+                  xl: "200px",
+                  "2xl": "250px",
                 }}
                 padding={{
                   xs: "15% 10px",
@@ -382,15 +382,15 @@ const AllServices = () => {
                   xl: "8px 16px",
                   "2xl": "10px 20px",
                 }}
-                bgImage={`url(${LandlordImg})`}
-                bgSize={"cover"}
-                bgPos={"center"}
-                bgRepeat={"no-repeat"}
+                // bgImage={`url(${DisputeImg})`}
+                // bgSize={"cover"}
+                // bgPos={"center"}
+                // bgRepeat={"no-repeat"}
+                backgroundColor={"#D7E3F1"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}
                 color={"black"}
-                backgroundColor={"black"}
                 _hover={{
                   color: "#beab7c",
                   bgImage: "none",
@@ -442,12 +442,12 @@ const AllServices = () => {
               </GridItem>
               {/* Family + Children */}
               <GridItem
-                width={{ xs: "100%", lg: "100%", xl: "100%", "2xl": "90%" }}
+                width={{ xs: "100%", lg: "80%", xl: "80%", "2xl": "80%" }}
                 height={{
                   xs: "125px",
-                  lg: "150px",
-                  xl: "175px",
-                  "2xl": "200px",
+                  lg: "175px",
+                  xl: "200px",
+                  "2xl": "250px",
                 }}
                 padding={{
                   xs: "15% 10px",
@@ -455,15 +455,15 @@ const AllServices = () => {
                   xl: "8px 16px",
                   "2xl": "10px 20px",
                 }}
-                bgImage={`url(${FamilyImg})`}
-                bgSize={"cover"}
-                bgPos={"center"}
-                bgRepeat={"no-repeat"}
+                // bgImage={`url(${DisputeImg})`}
+                // bgSize={"cover"}
+                // bgPos={"center"}
+                // bgRepeat={"no-repeat"}
+                backgroundColor={"#D7E3F1"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}
                 color={"black"}
-                backgroundColor={"black"}
                 _hover={{
                   color: "#beab7c",
                   bgImage: "none",
@@ -515,12 +515,12 @@ const AllServices = () => {
               </GridItem>
               {/* New Service */}
               <GridItem
-                width={{ xs: "100%", lg: "100%", xl: "100%", "2xl": "90%" }}
+                width={{ xs: "100%", lg: "80%", xl: "80%", "2xl": "80%" }}
                 height={{
                   xs: "125px",
-                  lg: "150px",
-                  xl: "175px",
-                  "2xl": "200px",
+                  lg: "175px",
+                  xl: "200px",
+                  "2xl": "250px",
                 }}
                 padding={{
                   xs: "15% 10px",
@@ -528,6 +528,11 @@ const AllServices = () => {
                   xl: "8px 16px",
                   "2xl": "10px 20px",
                 }}
+                // bgImage={`url(${DisputeImg})`}
+                // bgSize={"cover"}
+                // bgPos={"center"}
+                // bgRepeat={"no-repeat"}
+                backgroundColor={"#D7E3F1"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}
@@ -587,12 +592,12 @@ const AllServices = () => {
               {/* New Service*/}
               <GridItem
                 colSpan={{ xs: "2", lg: "1" }}
-                width={{ xs: "100%", lg: "100%", xl: "100%", "2xl": "90%" }}
+                width={{ xs: "100%", lg: "80%", xl: "80%", "2xl": "80%" }}
                 height={{
                   xs: "125px",
-                  lg: "150px",
-                  xl: "175px",
-                  "2xl": "200px",
+                  lg: "175px",
+                  xl: "200px",
+                  "2xl": "250px",
                 }}
                 padding={{
                   xs: "8px 10px",
@@ -600,6 +605,11 @@ const AllServices = () => {
                   xl: "8px 16px",
                   "2xl": "10px 20px",
                 }}
+                // bgImage={`url(${DisputeImg})`}
+                // bgSize={"cover"}
+                // bgPos={"center"}
+                // bgRepeat={"no-repeat"}
+                backgroundColor={"#D7E3F1"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}
