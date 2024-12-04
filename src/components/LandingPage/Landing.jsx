@@ -16,6 +16,9 @@ import AnimatedPanels from "./AnimatedPanels";
 import MainBg from "../../assets/landing/main-bg.png";
 import AboutBg from "../../assets/landing/about-bg.png";
 import ServicesBg from "../../assets/landing/services.png";
+import ImmigrationIcon from "../../assets/landing/landing-icons/immigration-icon.png";
+import ResidentialIcon from "../../assets/landing/landing-icons/residential-icon.png";
+import LandlordIcon from "../../assets/landing/landing-icons/landlord-icon.png";
 import PanelsBg from "../../assets/landing/panels.png";
 import PanelOne from "../../assets/landing/panel-images/panel-barclays.png";
 import PanelTwo from "../../assets/landing/panel-images/panel-santander.png";
@@ -517,21 +520,24 @@ const LandingPage = () => {
                 m={0}
                 width={"80%"}
               >
-                <Text
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "26px",
-                  }}
-                  fontWeight={400}
-                  fontFamily={"CeraRoundPro"}
-                  color={"white"}
-                >
-                  Immigration Services
-                </Text>
+                <VStack>
+                  <Image src={ImmigrationIcon} height={"50px"} />
+                  <Text
+                    fontSize={{
+                      xs: "14px",
+                      sm: "14px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "18px",
+                      "2xl": "22px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                    color={"white"}
+                  >
+                    Immigration Services
+                  </Text>
+                </VStack>
               </Link>
             </GridItem>
 
@@ -553,22 +559,25 @@ const LandingPage = () => {
               }}
               transition={"all 0.3s ease"}
             >
-              <Text
-                fontSize={{
-                  xs: "14px",
-                  sm: "14px",
-                  md: "16px",
-                  lg: "16px",
-                  xl: "18px",
-                  "2xl": "26px",
-                }}
-                fontWeight={400}
-                fontFamily={"CeraRoundPro"}
-                width={"80%"}
-                color={"white"}
-              >
-                Residential and Commercial Property{" "}
-              </Text>
+              <VStack>
+                <Image src={ResidentialIcon} height={"50px"} />
+                <Text
+                  fontSize={{
+                    xs: "14px",
+                    sm: "14px",
+                    md: "16px",
+                    lg: "16px",
+                    xl: "18px",
+                    "2xl": "22px",
+                  }}
+                  fontWeight={400}
+                  fontFamily={"CeraRoundPro"}
+                  width={"80%"}
+                  color={"white"}
+                >
+                  Residential and Commercial Property{" "}
+                </Text>
+              </VStack>
             </GridItem>
 
             {/* 3 */}
@@ -625,22 +634,25 @@ const LandingPage = () => {
               }}
               transition={"all 0.3s ease"}
             >
-              <Text
-                fontSize={{
-                  xs: "14px",
-                  sm: "14px",
-                  md: "16px",
-                  lg: "16px",
-                  xl: "18px",
-                  "2xl": "26px",
-                }}
-                fontWeight={400}
-                fontFamily={"CeraRoundPro"}
-                width={"80%"}
-                color={"white"}
-              >
-                Landlord and Tenant Disputes{" "}
-              </Text>
+              <VStack>
+                <Image src={LandlordIcon} height={"50px"} />
+                <Text
+                  fontSize={{
+                    xs: "14px",
+                    sm: "14px",
+                    md: "16px",
+                    lg: "16px",
+                    xl: "18px",
+                    "2xl": "26px",
+                  }}
+                  fontWeight={400}
+                  fontFamily={"CeraRoundPro"}
+                  width={"80%"}
+                  color={"white"}
+                >
+                  Landlord and Tenant Disputes{" "}
+                </Text>
+              </VStack>
             </GridItem>
 
             {/* 5 */}
