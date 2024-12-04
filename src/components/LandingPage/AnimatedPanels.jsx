@@ -119,9 +119,9 @@ const AnimatedPanels = ({ images }) => {
         position="relative" // This ensures content stays above the background
         zIndex={1} // This ensures content stays above the background
       >
-        <ScrollingRow images={images} direction="left" speed={20} />
-        <ScrollingRow images={images} direction="right" speed={15} />
-        <ScrollingRow images={images} direction="left" speed={10} />
+        <ScrollingRow images={images} direction="left" speed={50} />
+        <ScrollingRow images={images} direction="right" speed={45} />
+        <ScrollingRow images={images} direction="left" speed={30} />
       </VStack>
     </Box>
   );

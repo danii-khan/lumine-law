@@ -17,11 +17,19 @@ import MainBg from "../../assets/landing/main-bg.png";
 import AboutBg from "../../assets/landing/about-bg.png";
 import ServicesBg from "../../assets/landing/services.png";
 import PanelsBg from "../../assets/landing/panels.png";
-import PanelOne from "../../assets/landing/panel-one.png";
-import PanelTwo from "../../assets/landing/panel-two.png";
-import PanelThree from "../../assets/landing/panel-three.png";
-import PanelFour from "../../assets/landing/panel-four.png";
-import NewsInsightsBg from "../../assets/landing/news-insights-bg.png";
+import PanelOne from "../../assets/landing/panel-images/panel-barclays.png";
+import PanelTwo from "../../assets/landing/panel-images/panel-santander.png";
+import PanelThree from "../../assets/landing/panel-images/panel-natwest.png";
+import PanelFour from "../../assets/landing/panel-images/panel-tsb.png";
+import PanelFive from "../../assets/landing/panel-images/panel-hsbc.png";
+import PanelSix from "../../assets/landing/panel-images/panel-pm.png";
+import PanelSeven from "../../assets/landing/panel-images/panel-poi.png";
+import PanelEight from "../../assets/landing/panel-images/panel-clydesdale.png";
+import PanelNine from "../../assets/landing/panel-images/panel-yorkshire.png";
+import PanelTen from "../../assets/landing/panel-images/panel-darlington.png";
+import PanelEleven from "../../assets/landing/panel-images/panel-ipswich.png";
+import PanelTwelve from "../../assets/landing/panel-images/panel-natwest.png";
+import NewsInsightsBg from "../../assets/landing/news-insights.png";
 import NewsInsightsOne from "../../assets/landing/news-insights-one.png";
 import NewsInsightsTwo from "../../assets/landing/news-insights-two.png";
 import NewsInsightsThree from "../../assets/landing/news-insights-three.png";
@@ -834,7 +842,20 @@ const LandingPage = () => {
             lines.{" "}
           </Text>
           <AnimatedPanels
-            images={[PanelOne, PanelTwo, PanelThree, PanelFour]}
+            images={[
+              PanelOne,
+              PanelTwo,
+              PanelThree,
+              PanelFour,
+              PanelFive,
+              PanelSix,
+              PanelSeven,
+              PanelEight,
+              PanelNine,
+              PanelTen,
+              PanelEleven,
+              PanelTwelve,
+            ]}
           />
         </Box>
       </section>
