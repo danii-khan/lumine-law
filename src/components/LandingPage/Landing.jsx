@@ -21,7 +21,7 @@ import PanelOne from "../../assets/landing/panel-one.png";
 import PanelTwo from "../../assets/landing/panel-two.png";
 import PanelThree from "../../assets/landing/panel-three.png";
 import PanelFour from "../../assets/landing/panel-four.png";
-import NewsInsightsBg from "../../assets/landing/news-insights.png";
+import NewsInsightsBg from "../../assets/landing/news-insights-bg.png";
 import NewsInsightsOne from "../../assets/landing/news-insights-one.png";
 import NewsInsightsTwo from "../../assets/landing/news-insights-two.png";
 import NewsInsightsThree from "../../assets/landing/news-insights-three.png";
@@ -147,16 +147,9 @@ const ScrollSpySidebar = () => {
               variant="ghost"
               onClick={() => scrollToSection(id)}
               background="none"
-              color={
-                activeSection === "Panels" || activeSection === "Who-we-are"
-                  ? "black"
-                  : "white"
-              }
+              color={activeSection !== "Panels" ? "black" : "white"}
               _hover={{
-                color:
-                  activeSection === "Panels" || activeSection === "Who-we-are"
-                    ? "white"
-                    : "#beab7c",
+                color: activeSection !== "Panels" ? "white" : "black",
                 opacity: "100%",
               }}
               fontWeight={400}
@@ -184,10 +177,7 @@ const ScrollSpySidebar = () => {
               <span
                 style={{
                   border: "1px solid",
-                  borderColor:
-                    activeSection === "Panels" || activeSection === "Who-we-are"
-                      ? "black"
-                      : "white",
+                  borderColor: activeSection !== "Panels" ? "black" : "white",
                   width: "7.5vw",
                   marginRight: "15px",
                   opacity: activeSection === id ? "100%" : "25%",
@@ -210,16 +200,9 @@ const ScrollSpySidebar = () => {
               variant="ghost"
               onClick={() => scrollToSection(id)}
               background="none"
-              color={
-                activeSection === "Panels" || activeSection === "Who-we-are"
-                  ? "black"
-                  : "white"
-              }
+              color={activeSection !== "Panels" ? "black" : "white"}
               _hover={{
-                color:
-                  activeSection === "Panels" || activeSection === "Who-we-are"
-                    ? "white"
-                    : "#beab7c",
+                color: activeSection !== "Panels" ? "white" : "black",
                 opacity: "100%",
               }}
               fontWeight={400}
@@ -237,10 +220,7 @@ const ScrollSpySidebar = () => {
               <span
                 style={{
                   border: "1px solid",
-                  borderColor:
-                    activeSection === "Panels" || activeSection === "Who-we-are"
-                      ? "black"
-                      : "white",
+                  borderColor: activeSection !== "Panels" ? "black" : "white",
                   width: "2.5vw",
                   opacity: "80%",
                   transition: "opacity 0.3s ease",
@@ -507,7 +487,7 @@ const LandingPage = () => {
             {/* 1 */}
             <GridItem
               border={"1px solid white"}
-              backgroundColor={"#576469"}
+              backgroundColor={"rgba(0, 0, 0, 0.6)"}
               height={"100%"}
               width={"100%"}
               borderRadius={"10px"}
@@ -516,7 +496,7 @@ const LandingPage = () => {
               alignItems={"center"}
               cursor={"pointer"}
               _hover={{
-                backgroundColor: "black",
+                backgroundColor: "rgba(0, 0, 0, 0.9)",
                 borderColor: "#beab7c",
                 color: "#beab7c",
               }}
@@ -550,7 +530,7 @@ const LandingPage = () => {
             {/* 2 */}
             <GridItem
               border={"1px solid white"}
-              backgroundColor={"#576469"}
+              backgroundColor={"rgba(0, 0, 0, 0.6)"}
               height={"100%"}
               width={"100%"}
               borderRadius={"10px"}
@@ -559,7 +539,7 @@ const LandingPage = () => {
               alignItems={"center"}
               cursor={"pointer"}
               _hover={{
-                backgroundColor: "black",
+                backgroundColor: "rgba(0, 0, 0, 0.9)",
                 borderColor: "#beab7c",
                 color: "#beab7c",
               }}
@@ -586,7 +566,7 @@ const LandingPage = () => {
             {/* 3 */}
             <GridItem
               border={"1px solid white"}
-              backgroundColor={"#576469"}
+              backgroundColor={"rgba(0, 0, 0, 0.6)"}
               height={"100%"}
               width={"100%"}
               borderRadius={"10px"}
@@ -595,7 +575,7 @@ const LandingPage = () => {
               alignItems={"center"}
               cursor={"pointer"}
               _hover={{
-                backgroundColor: "black",
+                backgroundColor: "rgba(0, 0, 0, 0.9)",
                 borderColor: "#beab7c",
                 color: "#beab7c",
               }}
@@ -622,7 +602,7 @@ const LandingPage = () => {
             {/* 4 */}
             <GridItem
               border={"1px solid white"}
-              backgroundColor={"#576469"}
+              backgroundColor={"rgba(0, 0, 0, 0.6)"}
               height={"100%"}
               width={"100%"}
               borderRadius={"10px"}
@@ -631,7 +611,7 @@ const LandingPage = () => {
               alignItems={"center"}
               cursor={"pointer"}
               _hover={{
-                backgroundColor: "black",
+                backgroundColor: "rgba(0, 0, 0, 0.9)",
                 borderColor: "#beab7c",
                 color: "#beab7c",
               }}
@@ -658,7 +638,7 @@ const LandingPage = () => {
             {/* 5 */}
             <GridItem
               border={"1px solid white"}
-              backgroundColor={"#8f765b"}
+              backgroundColor={"rgba(0, 0, 0, 0.6)"}
               height={"100%"}
               width={"100%"}
               borderRadius={"10px"}
@@ -667,7 +647,7 @@ const LandingPage = () => {
               alignItems={"center"}
               cursor={"pointer"}
               _hover={{
-                backgroundColor: "black",
+                backgroundColor: "rgba(0, 0, 0, 0.9)",
                 borderColor: "#beab7c",
                 color: "#beab7c",
               }}
@@ -694,7 +674,7 @@ const LandingPage = () => {
             {/* 6 */}
             <GridItem
               border={"1px solid white"}
-              backgroundColor={"#8f765b"}
+              backgroundColor={"rgba(0, 0, 0, 0.6)"}
               height={"100%"}
               width={"100%"}
               borderRadius={"10px"}
@@ -703,7 +683,7 @@ const LandingPage = () => {
               alignItems={"center"}
               cursor={"pointer"}
               _hover={{
-                backgroundColor: "black",
+                backgroundColor: "rgba(0, 0, 0, 0.9)",
                 borderColor: "#beab7c",
                 color: "#beab7c",
               }}
@@ -730,7 +710,7 @@ const LandingPage = () => {
             {/* 7 */}
             <GridItem
               border={"1px solid white"}
-              backgroundColor={"#8f765b"}
+              backgroundColor={"rgba(0, 0, 0, 0.6)"}
               height={"100%"}
               width={"100%"}
               borderRadius={"10px"}
@@ -739,7 +719,7 @@ const LandingPage = () => {
               alignItems={"center"}
               cursor={"pointer"}
               _hover={{
-                backgroundColor: "black",
+                backgroundColor: "rgba(0, 0, 0, 0.9)",
                 borderColor: "#beab7c",
                 color: "#beab7c",
               }}
@@ -766,7 +746,7 @@ const LandingPage = () => {
             {/* 8 */}
             <GridItem
               border={"1px solid white"}
-              backgroundColor={"#8f765b"}
+              backgroundColor={"rgba(0, 0, 0, 0.6)"}
               height={"100%"}
               width={"100%"}
               borderRadius={"10px"}
@@ -775,7 +755,7 @@ const LandingPage = () => {
               alignItems={"center"}
               cursor={"pointer"}
               _hover={{
-                backgroundColor: "black",
+                backgroundColor: "rgba(0, 0, 0, 0.9)",
                 borderColor: "#beab7c",
                 color: "#beab7c",
               }}
