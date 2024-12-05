@@ -478,6 +478,8 @@ const Immigration = () => {
 
             {/* Indefinite Leave To Remain */}
             <GridItem
+              as={Link}
+              to="/lumine-law/all-services/immigration/indefinite-leave"
               color={"black"}
               border={"1px solid black"}
               borderRadius={"8px"}
@@ -510,8 +512,11 @@ const Immigration = () => {
               Indefinite Leave to Remain{" "}
             </GridItem>
 
+            {/* THIS NEEDS TO BE DONE */}
             {/* Private Life/Humans Right-Based Applications */}
             <GridItem
+              as={Link}
+              to="/lumine-law/all-services/immigration/human-rights-app"
               color={"black"}
               border={"1px solid black"}
               borderRadius={"8px"}
@@ -544,6 +549,7 @@ const Immigration = () => {
               Private Life/Humans Right-Based Applications
             </GridItem>
 
+            {/* DO FROM HERE FOR NOW */}
             {/* Discretionary Leave */}
             <GridItem
               color={"black"}

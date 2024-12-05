@@ -15,6 +15,8 @@ import EntryClearance from "../components/ServicesPage/Immigration/EntryClearanc
 import SkilledMigrant from "../components/ServicesPage/Immigration/SkilledMigrant";
 import VisaCategories from "../components/ServicesPage/Immigration/VisaCategories";
 import VisaExtensions from "../components/ServicesPage/Immigration/VisaExtensions";
+import IndefiniteLeave from "../components/ServicesPage/Immigration/IndefiniteLeave";
+import HumanRights from "../components/ServicesPage/Immigration/HumanRights";
 
 function App() {
   return (
@@ -131,6 +133,22 @@ function App() {
             element={
               <PageTransition>
                 <VisaExtensions />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/lumine-law/all-services/immigration/indefinite-leave"
+            element={
+              <PageTransition>
+                <IndefiniteLeave />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/lumine-law/all-services/immigration/human-rights-app"
+            element={
+              <PageTransition>
+                <HumanRights />
               </PageTransition>
             }
           />
