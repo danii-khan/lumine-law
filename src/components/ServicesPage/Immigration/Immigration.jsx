@@ -1,4 +1,13 @@
-import { Text, Container, Box, HStack, List, Image } from "@chakra-ui/react";
+import {
+  Text,
+  Container,
+  Box,
+  HStack,
+  List,
+  Image,
+  Grid,
+  GridItem,
+} from "@chakra-ui/react";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
 import BannerImg from "../../../assets/services/main/immigration/immigration-banner.png";
@@ -14,7 +23,7 @@ const Immigration = () => {
         width="100vw"
         maxWidth="100%"
         minHeight="100vh"
-        backgroundColor={"white"}
+        backgroundColor={"#a2cce0"}
         overflow="auto"
         m={0}
         p={0}
@@ -74,7 +83,11 @@ const Immigration = () => {
             </HStack>
 
             {/* Main Para */}
-            <Box width={"95%"} alignSelf={"center"} mb={"5%"}>
+            <Box
+              width={"95%"}
+              alignSelf={"center"}
+              mb={{ xs: "15%", sm: "10%", md: "7.5%", xl: "5%" }}
+            >
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
@@ -88,139 +101,680 @@ const Immigration = () => {
             </Box>
           </Box>
 
-          {/* List */}
-          <HStack justifyContent={"space-around"} alignItems={"center"}>
-            <List.Root gap="20" variant="plain" align="center" mb={"50px"}>
-              {/* Spouse Visa */}
-              <List.Item
-                as={Link}
-                to={"/lumine-law/all-services/immigration/spouse-visa"}
-                color="black"
-                fontSize={"25px"}
-                fontWeight={500}
-                fontFamily={"CeraRoundPro"}
-                cursor={"pointer"}
-                _hover={{ fontWeight: "600", textDecor: "underline" }}
-                gap={"30px"}
-              >
-                <Image src={ArrowImg} width={"75px"} />
-                Spouse Visa
-              </List.Item>
+          {/* Grid  7x3*/}
+          <Grid
+            templateRows={"repeat(7,1fr)"}
+            templateColumns={"repeat(3, 1fr)"}
+            width={{ xs: "90%", md: "75%", lg: "70%", xl: "60%" }}
+            justifySelf={"center"}
+            justifyItems={"center"}
+            gap={{ xs: "4px", lg: "8px", xl: "10px" }}
+            mb={"100px"}
+          >
+            {/* Spouse Visa */}
+            <GridItem
+              as={Link}
+              to={"/lumine-law/all-services/immigration/spouse-visa"}
+              color={"black"}
+              border={"1px solid black"}
+              borderRadius={"8px"}
+              p={"40px 10px"}
+              width={"80%"}
+              height={"50%"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              backgroundColor={"white"}
+              _hover={{
+                backgroundColor: "#000000",
+                color: "#beab7c",
+                transition: "0.3s ease all",
+                fontWeight: "600",
+                textDecor: "underline",
+              }}
+              fontSize={{
+                xs: "12px",
+                sm: "14px",
+                md: "15px",
+                lg: "16px",
+                xl: "18px",
+                "2xl": " 20px",
+              }}
+              fontWeight={500}
+              fontFamily={"CeraRoundPro"}
+              cursor={"pointer"}
+            >
+              Spouse Visa
+            </GridItem>
 
-              {/* 2 */}
-              <List.Item
-                as={Link}
-                to={
-                  "/lumine-law/all-services/immigration/british-citizenship-application"
-                }
-                color="black"
-                fontSize={"25px"}
-                fontWeight={500}
-                fontFamily={"CeraRoundPro"}
-                cursor={"pointer"}
-                _hover={{ fontWeight: "600", textDecor: "underline" }}
-                gap={"30px"}
-              >
-                <Image src={ArrowImg} width={"75px"} />
-                British Citizenship Application
-              </List.Item>
+            {/* British Citizenship App */}
+            <GridItem
+              as={Link}
+              to={
+                "/lumine-law/all-services/immigration/british-citizenship-application"
+              }
+              color={"black"}
+              border={"1px solid black"}
+              borderRadius={"8px"}
+              p={"40px 10px"}
+              width={"80%"}
+              height={"50%"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              backgroundColor={"white"}
+              _hover={{
+                backgroundColor: "#000000",
+                color: "#beab7c",
+                transition: "0.3s ease all",
+                fontWeight: "600",
+                textDecor: "underline",
+              }}
+              fontSize={{
+                xs: "12px",
+                sm: "14px",
+                md: "15px",
+                lg: "16px",
+                xl: "18px",
+                "2xl": " 20px",
+              }}
+              fontWeight={500}
+              fontFamily={"CeraRoundPro"}
+              cursor={"pointer"}
+            >
+              British Citizenship Application
+            </GridItem>
 
-              {/* 3 */}
-              <List.Item
-                as={Link}
-                to={"/lumine-law/all-services/immigration/uk-visitor-visa"}
-                color="black"
-                fontSize={"25px"}
-                fontWeight={500}
-                fontFamily={"CeraRoundPro"}
-                cursor={"pointer"}
-                _hover={{ fontWeight: "600", textDecor: "underline" }}
-                gap={"30px"}
-              >
-                <Image src={ArrowImg} width={"75px"} />
-                UK Visitor Visa{" "}
-              </List.Item>
+            {/* UK Visitor Visa */}
+            <GridItem
+              as={Link}
+              to={"/lumine-law/all-services/immigration/uk-visitor-visa"}
+              color={"black"}
+              border={"1px solid black"}
+              borderRadius={"8px"}
+              p={"40px 10px"}
+              width={"80%"}
+              height={"50%"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              backgroundColor={"white"}
+              _hover={{
+                backgroundColor: "#000000",
+                color: "#beab7c",
+                transition: "0.3s ease all",
+                fontWeight: "600",
+                textDecor: "underline",
+              }}
+              fontSize={{
+                xs: "12px",
+                sm: "14px",
+                md: "15px",
+                lg: "16px",
+                xl: "18px",
+                "2xl": " 20px",
+              }}
+              fontWeight={500}
+              fontFamily={"CeraRoundPro"}
+              cursor={"pointer"}
+            >
+              UK Visitor Visa{" "}
+            </GridItem>
 
-              {/* 4 */}
-              <List.Item
-                as={Link}
-                to={"/lumine-law/all-services/immigration/skilled-worker-visa"}
-                color="black"
-                fontSize={"25px"}
-                fontWeight={500}
-                fontFamily={"CeraRoundPro"}
-                cursor={"pointer"}
-                _hover={{ fontWeight: "600", textDecor: "underline" }}
-                gap={"30px"}
-              >
-                <Image src={ArrowImg} width={"75px"} />
-                Skilled Worker Visa{" "}
-              </List.Item>
+            {/* Skilled Worker Visa */}
+            <GridItem
+              as={Link}
+              to={"/lumine-law/all-services/immigration/skilled-worker-visa"}
+              color={"black"}
+              border={"1px solid black"}
+              borderRadius={"8px"}
+              p={"40px 10px"}
+              width={"80%"}
+              height={"50%"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              backgroundColor={"white"}
+              _hover={{
+                backgroundColor: "#000000",
+                color: "#beab7c",
+                transition: "0.3s ease all",
+                fontWeight: "600",
+                textDecor: "underline",
+              }}
+              fontSize={{
+                xs: "12px",
+                sm: "14px",
+                md: "15px",
+                lg: "16px",
+                xl: "18px",
+                "2xl": " 20px",
+              }}
+              fontWeight={500}
+              fontFamily={"CeraRoundPro"}
+              cursor={"pointer"}
+            >
+              Skilled Worker Visa{" "}
+            </GridItem>
 
-              {/* 5 */}
-              <List.Item
-                as={Link}
-                to="/lumine-law/all-services/immigration/certificate-of-sponsorship"
-                color="black"
-                fontSize={"25px"}
-                fontWeight={500}
-                fontFamily={"CeraRoundPro"}
-                cursor={"pointer"}
-                _hover={{ fontWeight: "600", textDecor: "underline" }}
-                gap={"30px"}
-              >
-                <Image src={ArrowImg} width={"75px"} />
-                Certificate of Sponsorship{" "}
-              </List.Item>
+            {/* Certificate of Sponsorship */}
+            <GridItem
+              as={Link}
+              to="/lumine-law/all-services/immigration/certificate-of-sponsorship"
+              color={"black"}
+              border={"1px solid black"}
+              borderRadius={"8px"}
+              p={"40px 10px"}
+              width={"80%"}
+              height={"50%"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              backgroundColor={"white"}
+              _hover={{
+                backgroundColor: "#000000",
+                color: "#beab7c",
+                transition: "0.3s ease all",
+                fontWeight: "600",
+                textDecor: "underline",
+              }}
+              fontSize={{
+                xs: "12px",
+                sm: "14px",
+                md: "15px",
+                lg: "16px",
+                xl: "18px",
+                "2xl": " 20px",
+              }}
+              fontWeight={500}
+              fontFamily={"CeraRoundPro"}
+              cursor={"pointer"}
+            >
+              Certificate of Sponsorship{" "}
+            </GridItem>
 
-              {/* 6 */}
-              <List.Item
-                as={Link}
-                to="/lumine-law/all-services/immigration/student-visa"
-                color="black"
-                fontSize={"25px"}
-                fontWeight={500}
-                fontFamily={"CeraRoundPro"}
-                cursor={"pointer"}
-                _hover={{ fontWeight: "600", textDecor: "underline" }}
-                gap={"30px"}
-              >
-                <Image src={ArrowImg} width={"75px"} />
-                Student Visa{" "}
-              </List.Item>
+            {/* Student Visa */}
+            <GridItem
+              as={Link}
+              to="/lumine-law/all-services/immigration/student-visa"
+              color={"black"}
+              border={"1px solid black"}
+              borderRadius={"8px"}
+              p={"40px 10px"}
+              width={"80%"}
+              height={"50%"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              backgroundColor={"white"}
+              _hover={{
+                backgroundColor: "#000000",
+                color: "#beab7c",
+                transition: "0.3s ease all",
+                fontWeight: "600",
+                textDecor: "underline",
+              }}
+              fontSize={{
+                xs: "12px",
+                sm: "14px",
+                md: "15px",
+                lg: "16px",
+                xl: "18px",
+                "2xl": " 20px",
+              }}
+              fontWeight={500}
+              fontFamily={"CeraRoundPro"}
+              cursor={"pointer"}
+            >
+              Student Visa{" "}
+            </GridItem>
 
-              {/* 7 */}
-              <List.Item
-                color="black"
-                fontSize={"25px"}
-                fontWeight={500}
-                fontFamily={"CeraRoundPro"}
-                cursor={"pointer"}
-                _hover={{ fontWeight: "600", textDecor: "underline" }}
-                gap={"30px"}
-              >
-                <Image src={ArrowImg} width={"75px"} />
-                Visa Extensions{" "}
-              </List.Item>
+            {/* Visa Extensions */}
+            <GridItem
+              color={"black"}
+              border={"1px solid black"}
+              borderRadius={"8px"}
+              p={"40px 10px"}
+              width={"80%"}
+              height={"50%"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              backgroundColor={"white"}
+              _hover={{
+                backgroundColor: "#000000",
+                color: "#beab7c",
+                transition: "0.3s ease all",
+                fontWeight: "600",
+                textDecor: "underline",
+              }}
+              fontSize={{
+                xs: "12px",
+                sm: "14px",
+                md: "15px",
+                lg: "16px",
+                xl: "18px",
+                "2xl": " 20px",
+              }}
+              fontWeight={500}
+              fontFamily={"CeraRoundPro"}
+              cursor={"pointer"}
+            >
+              Visa Extensions{" "}
+            </GridItem>
 
-              {/* 8 */}
-              <List.Item
+            {/* Indefinite Leave To Remain */}
+            <GridItem
+              color={"black"}
+              border={"1px solid black"}
+              borderRadius={"8px"}
+              p={"40px 10px"}
+              width={"80%"}
+              height={"50%"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              backgroundColor={"white"}
+              _hover={{
+                backgroundColor: "#000000",
+                color: "#beab7c",
+                transition: "0.3s ease all",
+                fontWeight: "600",
+                textDecor: "underline",
+              }}
+              fontSize={{
+                xs: "12px",
+                sm: "14px",
+                md: "15px",
+                lg: "16px",
+                xl: "18px",
+                "2xl": " 20px",
+              }}
+              fontWeight={500}
+              fontFamily={"CeraRoundPro"}
+              cursor={"pointer"}
+            >
+              Indefinite Leave to Remain{" "}
+            </GridItem>
+
+            {/* Indefinite Leave To Remain */}
+            <GridItem
+              color={"black"}
+              border={"1px solid black"}
+              borderRadius={"8px"}
+              p={"40px 10px"}
+              width={"80%"}
+              height={"50%"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              backgroundColor={"white"}
+              _hover={{
+                backgroundColor: "#000000",
+                color: "#beab7c",
+                transition: "0.3s ease all",
+                fontWeight: "600",
+                textDecor: "underline",
+              }}
+              fontSize={{
+                xs: "12px",
+                sm: "14px",
+                md: "15px",
+                lg: "16px",
+                xl: "18px",
+                "2xl": " 20px",
+              }}
+              fontWeight={500}
+              fontFamily={"CeraRoundPro"}
+              cursor={"pointer"}
+            >
+              Indefinite Leave to Remain{" "}
+            </GridItem>
+
+            {/* Indefinite Leave To Remain */}
+            <GridItem
+              color={"black"}
+              border={"1px solid black"}
+              borderRadius={"8px"}
+              p={"40px 10px"}
+              width={"80%"}
+              height={"50%"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              backgroundColor={"white"}
+              _hover={{
+                backgroundColor: "#000000",
+                color: "#beab7c",
+                transition: "0.3s ease all",
+                fontWeight: "600",
+                textDecor: "underline",
+              }}
+              fontSize={{
+                xs: "12px",
+                sm: "14px",
+                md: "15px",
+                lg: "16px",
+                xl: "18px",
+                "2xl": " 20px",
+              }}
+              fontWeight={500}
+              fontFamily={"CeraRoundPro"}
+              cursor={"pointer"}
+            >
+              Indefinite Leave to Remain{" "}
+            </GridItem>
+
+            {/* Indefinite Leave To Remain */}
+            <GridItem
+              color={"black"}
+              border={"1px solid black"}
+              borderRadius={"8px"}
+              p={"40px 10px"}
+              width={"80%"}
+              height={"50%"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              backgroundColor={"white"}
+              _hover={{
+                backgroundColor: "#000000",
+                color: "#beab7c",
+                transition: "0.3s ease all",
+                fontWeight: "600",
+                textDecor: "underline",
+              }}
+              fontSize={{
+                xs: "12px",
+                sm: "14px",
+                md: "15px",
+                lg: "16px",
+                xl: "18px",
+                "2xl": " 20px",
+              }}
+              fontWeight={500}
+              fontFamily={"CeraRoundPro"}
+              cursor={"pointer"}
+            >
+              Indefinite Leave to Remain{" "}
+            </GridItem>
+
+            {/* Indefinite Leave To Remain */}
+            <GridItem
+              color={"black"}
+              border={"1px solid black"}
+              borderRadius={"8px"}
+              p={"40px 10px"}
+              width={"80%"}
+              height={"50%"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              backgroundColor={"white"}
+              _hover={{
+                backgroundColor: "#000000",
+                color: "#beab7c",
+                transition: "0.3s ease all",
+                fontWeight: "600",
+                textDecor: "underline",
+              }}
+              fontSize={{
+                xs: "12px",
+                sm: "14px",
+                md: "15px",
+                lg: "16px",
+                xl: "18px",
+                "2xl": " 20px",
+              }}
+              fontWeight={500}
+              fontFamily={"CeraRoundPro"}
+              cursor={"pointer"}
+            >
+              Indefinite Leave to Remain{" "}
+            </GridItem>
+
+            {/* Indefinite Leave To Remain */}
+            <GridItem
+              color={"black"}
+              border={"1px solid black"}
+              borderRadius={"8px"}
+              p={"40px 10px"}
+              width={"80%"}
+              height={"50%"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              backgroundColor={"white"}
+            >
+              <Text
                 color="black"
-                fontSize={"25px"}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "18px",
+                  "2xl": " 20px",
+                }}
                 fontWeight={500}
                 fontFamily={"CeraRoundPro"}
                 cursor={"pointer"}
                 _hover={{ fontWeight: "600", textDecor: "underline" }}
-                gap={"30px"}
               >
-                <Image src={ArrowImg} width={"75px"} />
                 Indefinite Leave to Remain{" "}
-              </List.Item>
-            </List.Root>
+              </Text>
+            </GridItem>
 
-            <Box width={"65%"}>{/* empty */}</Box>
-          </HStack>
+            {/* Indefinite Leave To Remain */}
+            <GridItem
+              color={"black"}
+              border={"1px solid black"}
+              borderRadius={"8px"}
+              p={"40px 10px"}
+              width={"80%"}
+              height={"50%"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              backgroundColor={"white"}
+              _hover={{
+                backgroundColor: "#000000",
+                color: "#beab7c",
+                transition: "0.3s ease all",
+                fontWeight: "600",
+                textDecor: "underline",
+              }}
+              fontSize={{
+                xs: "12px",
+                sm: "14px",
+                md: "15px",
+                lg: "16px",
+                xl: "18px",
+                "2xl": " 20px",
+              }}
+              fontWeight={500}
+              fontFamily={"CeraRoundPro"}
+              cursor={"pointer"}
+            >
+              Indefinite Leave to Remain{" "}
+            </GridItem>
 
+            {/* Indefinite Leave To Remain */}
+            <GridItem
+              color={"black"}
+              border={"1px solid black"}
+              borderRadius={"8px"}
+              p={"40px 10px"}
+              width={"80%"}
+              height={"50%"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              backgroundColor={"white"}
+              _hover={{
+                backgroundColor: "#000000",
+                color: "#beab7c",
+                transition: "0.3s ease all",
+                fontWeight: "600",
+                textDecor: "underline",
+              }}
+              fontSize={{
+                xs: "12px",
+                sm: "14px",
+                md: "15px",
+                lg: "16px",
+                xl: "18px",
+                "2xl": " 20px",
+              }}
+              fontWeight={500}
+              fontFamily={"CeraRoundPro"}
+              cursor={"pointer"}
+            >
+              Indefinite Leave to Remain{" "}
+            </GridItem>
+
+            {/* Indefinite Leave To Remain */}
+            <GridItem
+              color={"black"}
+              border={"1px solid black"}
+              borderRadius={"8px"}
+              p={"40px 10px"}
+              width={"80%"}
+              height={"50%"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              backgroundColor={"white"}
+              _hover={{
+                backgroundColor: "#000000",
+                color: "#beab7c",
+                transition: "0.3s ease all",
+                fontWeight: "600",
+                textDecor: "underline",
+              }}
+              fontSize={{
+                xs: "12px",
+                sm: "14px",
+                md: "15px",
+                lg: "16px",
+                xl: "18px",
+                "2xl": " 20px",
+              }}
+              fontWeight={500}
+              fontFamily={"CeraRoundPro"}
+              cursor={"pointer"}
+            >
+              Indefinite Leave to Remain{" "}
+            </GridItem>
+
+            {/* Indefinite Leave To Remain */}
+            <GridItem
+              color={"black"}
+              border={"1px solid black"}
+              borderRadius={"8px"}
+              p={"40px 10px"}
+              width={"80%"}
+              height={"50%"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              backgroundColor={"white"}
+              _hover={{
+                backgroundColor: "#000000",
+                color: "#beab7c",
+                transition: "0.3s ease all",
+                fontWeight: "600",
+                textDecor: "underline",
+              }}
+              fontSize={{
+                xs: "12px",
+                sm: "14px",
+                md: "15px",
+                lg: "16px",
+                xl: "18px",
+                "2xl": " 20px",
+              }}
+              fontWeight={500}
+              fontFamily={"CeraRoundPro"}
+              cursor={"pointer"}
+            >
+              Indefinite Leave to Remain{" "}
+            </GridItem>
+
+            {/* Indefinite Leave To Remain */}
+            <GridItem
+              color={"black"}
+              border={"1px solid black"}
+              borderRadius={"8px"}
+              p={"40px 10px"}
+              width={"80%"}
+              height={"50%"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              backgroundColor={"white"}
+              _hover={{
+                backgroundColor: "#000000",
+                color: "#beab7c",
+                transition: "0.3s ease all",
+                fontWeight: "600",
+                textDecor: "underline",
+              }}
+              fontSize={{
+                xs: "12px",
+                sm: "14px",
+                md: "15px",
+                lg: "16px",
+                xl: "18px",
+                "2xl": " 20px",
+              }}
+              fontWeight={500}
+              fontFamily={"CeraRoundPro"}
+              cursor={"pointer"}
+            >
+              Indefinite Leave to Remain{" "}
+            </GridItem>
+
+            {/* empty */}
+            <GridItem></GridItem>
+
+            {/* Indefinite Leave To Remain */}
+            <GridItem
+              color={"black"}
+              border={"1px solid black"}
+              borderRadius={"8px"}
+              p={"40px 10px"}
+              width={"80%"}
+              height={"50%"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              backgroundColor={"white"}
+              _hover={{
+                backgroundColor: "#000000",
+                color: "#beab7c",
+                transition: "0.3s ease all",
+                fontWeight: "600",
+                textDecor: "underline",
+              }}
+              fontSize={{
+                xs: "12px",
+                sm: "14px",
+                md: "15px",
+                lg: "16px",
+                xl: "18px",
+                "2xl": " 20px",
+              }}
+              fontWeight={500}
+              fontFamily={"CeraRoundPro"}
+              cursor={"pointer"}
+            >
+              Indefinite Leave to Remain{" "}
+            </GridItem>
+
+            {/* empty */}
+            <GridItem></GridItem>
+          </Grid>
           <Footer />
         </Box>
       </Container>
