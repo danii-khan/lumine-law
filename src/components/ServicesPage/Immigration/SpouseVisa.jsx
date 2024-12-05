@@ -67,7 +67,7 @@ const SpouseVisa = () => {
             // bgRepeat={"no-repeat"}
             backgroundColor={"#9FC3D3"}
             display={"flex"}
-            justifyContent={"space-around"}
+            justifyContent={"center"}
             alignItems={"center"}
           >
             <Text
@@ -75,10 +75,11 @@ const SpouseVisa = () => {
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
               fontStyle={"italic"}
+              width={"90%"}
+              textAlign={"left"}
             >
               Spouse Visa
             </Text>
-            <Box width={{ xs: "60%", md: "65%", lg: "75%" }}>{/* Empty */}</Box>
           </Box>
 
           {/* Main */}
@@ -180,6 +181,7 @@ const SpouseVisa = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"left"}
@@ -292,6 +294,7 @@ const SpouseVisa = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"left"}
@@ -412,6 +415,7 @@ const SpouseVisa = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"left"}
@@ -543,6 +547,7 @@ const SpouseVisa = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"left"}
@@ -635,6 +640,7 @@ const SpouseVisa = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"left"}

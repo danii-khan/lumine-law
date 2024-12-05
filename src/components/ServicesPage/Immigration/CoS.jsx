@@ -67,7 +67,7 @@ const CoS = () => {
             // bgRepeat={"no-repeat"}
             backgroundColor={"#9FC3D3"}
             display={"flex"}
-            justifyContent={"space-around"}
+            justifyContent={"center"}
             alignItems={"center"}
           >
             <Text
@@ -75,10 +75,11 @@ const CoS = () => {
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
               fontStyle={"italic"}
+              width={"90%"}
+              textAlign={"left"}
             >
               Certificate of Sponsorship (CoS)
             </Text>
-            <Box width={{ xs: "20%", md: "25%", lg: "30%" }}>{/* Empty */}</Box>
           </Box>
 
           {/* Main */}

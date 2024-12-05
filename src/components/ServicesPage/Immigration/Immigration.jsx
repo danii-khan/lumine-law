@@ -442,6 +442,8 @@ const Immigration = () => {
 
             {/* Visa Extensions */}
             <GridItem
+              as={Link}
+              to="/lumine-law/all-services/immigration/visa-extensions"
               color={"black"}
               border={"1px solid black"}
               borderRadius={"8px"}

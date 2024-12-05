@@ -67,7 +67,7 @@ const VisitorVisa = () => {
             // bgRepeat={"no-repeat"}
             backgroundColor={"#9FC3D3"}
             display={"flex"}
-            justifyContent={"space-around"}
+            justifyContent={"center"}
             alignItems={"center"}
           >
             <Text
@@ -75,10 +75,11 @@ const VisitorVisa = () => {
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
               fontStyle={"italic"}
+              width={"90%"}
+              textAlign={"left"}
             >
               UK Visitor Visa
             </Text>
-            <Box width={{ xs: "60%", md: "65%", lg: "75%" }}>{/* Empty */}</Box>
           </Box>
 
           {/* Main */}

@@ -25,7 +25,7 @@ import BannerImg from "../../../assets/services/main/immigration/main-banner.png
 import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
 import { Helmet } from "react-helmet";
 
-const StudentVisa = () => {
+const EntryClearance = () => {
   const [spouseState, setSpouseState] = useState(false);
   const [eligibilityState, setEligibilityState] = useState(false);
   const [applicationState, setApplicationState] = useState(false);
@@ -46,7 +46,10 @@ const StudentVisa = () => {
         flexDirection="column"
       >
         <Helmet>
-          <title>Lumine Law Student Visa Services</title>
+          <title>
+            Lumine Law Entry Clearance Applications from Outside of the UK
+            Services
+          </title>
         </Helmet>
 
         <Navbar />
@@ -78,8 +81,9 @@ const StudentVisa = () => {
               width={"90%"}
               textAlign={"left"}
             >
-              Student Visa
+              Entry Clearance Applications from Outside of the UK
             </Text>
+            {/* <Box width={{ xs: "60%", md: "65%", lg: "75%" }}>Empty</Box> */}
           </Box>
 
           {/* Main */}
@@ -102,7 +106,7 @@ const StudentVisa = () => {
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
               >
-                A few lines on what a Student visa is.
+                A few lines on what Entry Clearance Applications are.
               </Text>
             </Box>
           </Box>
@@ -113,7 +117,7 @@ const StudentVisa = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* What is Student Visa */}
+            {/* What is Entry Clearance Applications from Outside of the UK */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -164,7 +168,7 @@ const StudentVisa = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  What is a Student visa?
+                  What is Entry Clearance?
                 </Text>
                 {!spouseState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -195,18 +199,18 @@ const StudentVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    You can apply for a student visa if you are over the age of
-                    16, want to study at an institute in the UK and have been
-                    offered a place on a course by a licensed student sponsor,
-                    have enough money to support yourself and pay for your
-                    course. Lumine Solicitors experienced members can guide and
-                    assist you in your student visa application.
+                    If you wish to travel to the UK, you must obtain a valid
+                    entry clearance in advance of your travel, a process that
+                    Lumine Solicitors experienced team can guide you through.
+                    Entry clearance is an application made from outside the UK
+                    and is used by Entry Clearance Officers (ECOs) before you
+                    enter the UK to verify that you qualify for entry to the UK.
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Benefits */}
+            {/* Who Requires UK Entry Clearance?*/}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -257,7 +261,7 @@ const StudentVisa = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Benefits
+                  Who Requires UK Entry Clearance?
                 </Text>
                 {!eligibilityState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -274,7 +278,6 @@ const StudentVisa = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
                 >
                   <Text
                     textAlign={"left"}
@@ -289,7 +292,8 @@ const StudentVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    If you are granted a student visa, You may be able to:
+                    The Immigration Rules specify that UK Entry clearance is
+                    required for the following people to enter the UK:
                   </Text>
 
                   <List.Root
@@ -305,124 +309,65 @@ const StudentVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    <List.Item>Live in the UK</List.Item>
-                    <List.Item>Study in the UK</List.Item>
                     <List.Item>
-                      Work during term time and full time during off-term time
-                      in the UK
+                      <strong>A visa national</strong>
                     </List.Item>
                     <List.Item>
-                      Bring immediate family, while studying, to the UK
+                      a non-visa national not a British national and is seeking
+                      entry for a period exceeding six months, or for a purpose
+                      for which prior entry clearance is required under these
+                      Rules;
                     </List.Item>
+                    <List.Item>
+                      a British national without the right of abode who is
+                      seeking entry for a purpose for which prior entry
+                      clearance is required under these Rules.
+                    </List.Item>
+                    <Text
+                      textAlign={"left"}
+                      fontSize={{
+                        xs: "12px",
+                        sm: "12px",
+                        md: "14px",
+                        lg: "14px",
+                        xl: "16px",
+                        "2xl": "18px",
+                      }}
+                      fontWeight={800}
+                      fontFamily={"CeraRoundPro"}
+                      mt={"10px"}
+                    >
+                      must either:
+                    </Text>
+                    <List.Root
+                      textAlign={"left"}
+                      fontSize={{
+                        xs: "12px",
+                        sm: "12px",
+                        md: "14px",
+                        lg: "14px",
+                        xl: "16px",
+                        "2xl": "18px",
+                      }}
+                      fontWeight={400}
+                      fontFamily={"CeraRoundPro"}
+                      mt={"10px"}
+                    >
+                      <List.Item>
+                        produce to the Immigration Officer a valid passport or
+                        other identity document endorsed with a United Kingdom
+                        entry clearance, issued to him for the purpose for which
+                        he seeks entry, which is still in force,or:
+                      </List.Item>
+                      <List.Item>
+                        where he has been granted a United Kingdom entry
+                        clearance which was issued to him in electronic form for
+                        the purpose for which he seeks entry and which is still
+                        in force, to produce to the Immigration Officer a valid
+                        passport or other identity document.{" "}
+                      </List.Item>
+                    </List.Root>
                   </List.Root>
-                </VStack>
-              )}
-            </Box>
-
-            {/* Elligibility */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !applicationState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
-                onClick={() => setApplicationState(!applicationState)}
-              >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  Elligibility
-                </Text>
-                {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
-
-              {applicationState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                >
-                  <List.Root
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    <List.Item>
-                      You must have confirmation of acceptance for studies (CAS)
-                      from a licensed sponsor
-                    </List.Item>
-                    <List.Item>
-                      You must meet the English language requirements
-                    </List.Item>
-                    <List.Item>
-                      You must be 16 and over ( evidence of parental consent is
-                      required) – you can apply for the Child Student Visa if
-                      your 16-17 year-olds & want to attend a school in the UK
-                    </List.Item>
-                    <List.Item>
-                      You must have been offered a place on a course by a
-                      licenced student sponsor.
-                    </List.Item>
-                    <List.Item>
-                      You must meet financial requirements and have enough money
-                      to cover yourself and your living costs in the UK.
-                    </List.Item>
-                  </List.Root>
-
                   <Text
                     textAlign={"left"}
                     fontSize={{
@@ -436,8 +381,11 @@ const StudentVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    You will also have to pay the healthcare surcharge fee which
-                    will vary in price depending on how long your visa is for.
+                    Such a person will be refused leave to enter if he has no
+                    such current entry clearance. Any other person who wishes to
+                    ascertain in advance whether he is eligible for admission to
+                    the United Kingdom may apply for the issue of an entry
+                    clearance.
                   </Text>
                 </VStack>
               )}
@@ -525,10 +473,10 @@ const StudentVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Applications submitted in the UK are usually processed
-                    within 8 weeks, and those submitted outside the UK are
-                    usually processed in 3 weeks; however, priority services are
-                    available for applications to be processed faster.
+                    Once you have completed your application and attended your
+                    appointment with the Home Office, a decision will be made.
+                    It can take 3-12 weeks for a decision to be reached,
+                    depending on the type of application you have made.
                   </Text>
                 </VStack>
               )}
@@ -616,28 +564,9 @@ const StudentVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    At Lumine Solicitors we offer expert advice to you on the
-                    application process for a student visa, as well as review
-                    your personal history to see whether you qualify, gather all
-                    the complex evidential requirements and keep you updated on
-                    the progress of your application.
-                  </Text>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    For all immigration matters, Please do not hesitate to get
-                    in touch with Lumine solicitors{" "}
+                    If you would like to apply for or need advice on entry
+                    clearance and any other immigration matters, Please do not
+                    hesitate to get in touch with Lumine solicitors
                     <strong>020 3950 2246</strong> or{" "}
                     <strong>
                       <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
@@ -1153,4 +1082,4 @@ const StudentVisa = () => {
   );
 };
 
-export default StudentVisa;
+export default EntryClearance;

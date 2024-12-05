@@ -11,6 +11,10 @@ import VisitorVisa from "../components/ServicesPage/Immigration/VisitorVisa";
 import SkilledWorkerVisa from "../components/ServicesPage/Immigration/SkilledWorkerVisa";
 import CoS from "../components/ServicesPage/Immigration/CoS";
 import StudentVisa from "../components/ServicesPage/Immigration/StudentVisa";
+import EntryClearance from "../components/ServicesPage/Immigration/EntryClearance";
+import SkilledMigrant from "../components/ServicesPage/Immigration/SkilledMigrant";
+import VisaCategories from "../components/ServicesPage/Immigration/VisaCategories";
+import VisaExtensions from "../components/ServicesPage/Immigration/VisaExtensions";
 
 function App() {
   return (
@@ -95,6 +99,38 @@ function App() {
             element={
               <PageTransition>
                 <StudentVisa />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/lumine-law/all-services/immigration/entry-clearance"
+            element={
+              <PageTransition>
+                <EntryClearance />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/lumine-law/all-services/immigration/skilled-migrant"
+            element={
+              <PageTransition>
+                <SkilledMigrant />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/lumine-law/all-services/immigration/visa-categories"
+            element={
+              <PageTransition>
+                <VisaCategories />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/lumine-law/all-services/immigration/visa-extensions"
+            element={
+              <PageTransition>
+                <VisaExtensions />
               </PageTransition>
             }
           />

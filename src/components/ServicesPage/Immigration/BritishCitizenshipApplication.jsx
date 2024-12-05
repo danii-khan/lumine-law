@@ -67,7 +67,7 @@ const BritishCitizenshipApplication = () => {
             // bgRepeat={"no-repeat"}
             backgroundColor={"#9FC3D3"}
             display={"flex"}
-            justifyContent={"space-around"}
+            justifyContent={"center"}
             alignItems={"center"}
           >
             <Text
@@ -75,20 +75,11 @@ const BritishCitizenshipApplication = () => {
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
               fontStyle={"italic"}
+              width={"90%"}
+              textAlign={"left"}
             >
               British Citizenship Application
             </Text>
-            <Box
-              width={{
-                xs: "30%",
-                md: "20%",
-                lg: "30%",
-                xl: "35%",
-                "2xl": "40%",
-              }}
-            >
-              {/* Empty */}
-            </Box>
           </Box>
 
           {/* Main */}

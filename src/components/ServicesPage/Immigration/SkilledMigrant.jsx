@@ -25,7 +25,7 @@ import BannerImg from "../../../assets/services/main/immigration/main-banner.png
 import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
 import { Helmet } from "react-helmet";
 
-const StudentVisa = () => {
+const SkilledMigrant = () => {
   const [spouseState, setSpouseState] = useState(false);
   const [eligibilityState, setEligibilityState] = useState(false);
   const [applicationState, setApplicationState] = useState(false);
@@ -46,7 +46,7 @@ const StudentVisa = () => {
         flexDirection="column"
       >
         <Helmet>
-          <title>Lumine Law Student Visa Services</title>
+          <title>Lumine Law Skilled Migrant Visa Services</title>
         </Helmet>
 
         <Navbar />
@@ -78,7 +78,7 @@ const StudentVisa = () => {
               width={"90%"}
               textAlign={"left"}
             >
-              Student Visa
+              Skilled Migrant
             </Text>
           </Box>
 
@@ -102,7 +102,9 @@ const StudentVisa = () => {
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
               >
-                A few lines on what a Student visa is.
+                An organisation may sponsor employees for its business through a
+                sponsorship licence. Individuals from outside the UK who wish to
+                work/study in the UK can be sponsored.
               </Text>
             </Box>
           </Box>
@@ -113,7 +115,7 @@ const StudentVisa = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* What is Student Visa */}
+            {/* What is Skilled Migrant Visa */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -164,7 +166,7 @@ const StudentVisa = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  What is a Student visa?
+                  Types of Sponsor Licences
                 </Text>
                 {!spouseState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -174,99 +176,6 @@ const StudentVisa = () => {
               </HStack>
 
               {spouseState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                >
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    You can apply for a student visa if you are over the age of
-                    16, want to study at an institute in the UK and have been
-                    offered a place on a course by a licensed student sponsor,
-                    have enough money to support yourself and pay for your
-                    course. Lumine Solicitors experienced members can guide and
-                    assist you in your student visa application.
-                  </Text>
-                </VStack>
-              )}
-            </Box>
-
-            {/* Benefits */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !eligibilityState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
-                onClick={() => setEligibilityState(!eligibilityState)}
-              >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  Benefits
-                </Text>
-                {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
-
-              {eligibilityState && (
                 <VStack
                   justifyContent={"center"}
                   alignItems={"flex-start"}
@@ -289,7 +198,7 @@ const StudentVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    If you are granted a student visa, You may be able to:
+                    There are currently two types of sponsor licence:
                   </Text>
 
                   <List.Root
@@ -305,21 +214,20 @@ const StudentVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    <List.Item>Live in the UK</List.Item>
-                    <List.Item>Study in the UK</List.Item>
                     <List.Item>
-                      Work during term time and full time during off-term time
-                      in the UK
+                      A sponsor licence for ‘Workers’, which includes long-term
+                      employment such as the Skilled Worker visa; and
                     </List.Item>
                     <List.Item>
-                      Bring immediate family, while studying, to the UK
+                      A sponsor licence for ‘Temporary Workers’ for particular
+                      forms of temporary employment, Such as Religious Workers
                     </List.Item>
                   </List.Root>
                 </VStack>
               )}
             </Box>
 
-            {/* Elligibility */}
+            {/* Who Does The Licence Allow You To Sponsor? */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -370,7 +278,7 @@ const StudentVisa = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Elligibility
+                  Who Does The Licence Allow You To Sponsor?
                 </Text>
                 {!applicationState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -387,7 +295,136 @@ const StudentVisa = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    Lumine Solicitors can assist you in applying for a Skilled
+                    Worker Sponsorship Licence, which allows you to sponsor
+                    individuals in various categories, including:
+                  </Text>
+
+                  <List.Root
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <List.Item>Skilled Worker</List.Item>
+                    <List.Item>Minister of Religion</List.Item>
+                    <List.Item>International Sportsperson</List.Item>
+                    <List.Item>Senior or Specialist Worker visa</List.Item>
+                  </List.Root>
+                </VStack>
+              )}
+            </Box>
+
+            {/* Eligibility Requirements */}
+            <Box
+              display={"flex"}
+              flexDir={"column"}
+              color={"black"}
+              width={"90%"}
+              justifyContent={"center"}
+              alignItems={"center"}
+            >
+              {/* Initial Button */}
+              <HStack
+                borderTop={"1px solid #adacac"}
+                width={"100%"}
+                justifyContent={"space-between"}
+                px={{
+                  xs: "8px",
+                  sm: "10px",
+                  md: "12px",
+                  lg: "13px",
+                  xl: "14px",
+                  "2xl": "15px",
+                }}
+                alignItems={"center"}
+                py={{
+                  xs: "4px",
+                  sm: "6px",
+                  md: "7px",
+                  lg: "8px",
+                  xl: "9px",
+                  "2xl": "10px",
+                }}
+                cursor={"pointer"}
+                _hover={{ backgroundColor: !eligibilityState && "black" }}
+                transition={"all 0.3s ease"}
+                backgroundColor={eligibilityState && "black"}
+                onClick={() => setEligibilityState(!eligibilityState)}
+              >
+                <Text
+                  textAlign={"left"}
+                  fontSize={{
+                    xs: "14px",
+                    sm: "14px",
+                    md: "16px",
+                    lg: "16px",
+                    xl: "18px",
+                    "2xl": "20px",
+                  }}
+                  fontWeight={500}
+                  fontFamily={"CeraRoundPro"}
+                  color={"#beab7c"}
+                >
+                  Eligibility Requirements
+                </Text>
+                {!eligibilityState ? (
+                  <GoPlus color={"#beab7c"} size={"2em"} />
+                ) : (
+                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                )}
+              </HStack>
+
+              {eligibilityState && (
+                <VStack
+                  justifyContent={"center"}
+                  alignItems={"flex-start"}
+                  gap={{ xs: "20px", md: "30px" }}
+                  mb={{ xs: "4px", md: "10px" }}
+                  borderTop={"1px solid #adacac"}
+                  py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
+                >
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    The main requirements for a Skilled Worker Sponsorship
+                    Licence Application involve the organisation showing that it
+                    is:
+                  </Text>
+
                   <List.Root
                     textAlign={"left"}
                     fontSize={{
@@ -402,43 +439,12 @@ const StudentVisa = () => {
                     fontFamily={"CeraRoundPro"}
                   >
                     <List.Item>
-                      You must have confirmation of acceptance for studies (CAS)
-                      from a licensed sponsor
+                      A genuine and lawful organisation in the UK
                     </List.Item>
                     <List.Item>
-                      You must meet the English language requirements
-                    </List.Item>
-                    <List.Item>
-                      You must be 16 and over ( evidence of parental consent is
-                      required) – you can apply for the Child Student Visa if
-                      your 16-17 year-olds & want to attend a school in the UK
-                    </List.Item>
-                    <List.Item>
-                      You must have been offered a place on a course by a
-                      licenced student sponsor.
-                    </List.Item>
-                    <List.Item>
-                      You must meet financial requirements and have enough money
-                      to cover yourself and your living costs in the UK.
+                      It has a genuine need for a Skilled Worker sponsor licence
                     </List.Item>
                   </List.Root>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    You will also have to pay the healthcare surcharge fee which
-                    will vary in price depending on how long your visa is for.
-                  </Text>
                 </VStack>
               )}
             </Box>
@@ -511,6 +517,7 @@ const StudentVisa = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"left"}
@@ -525,10 +532,9 @@ const StudentVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Applications submitted in the UK are usually processed
-                    within 8 weeks, and those submitted outside the UK are
-                    usually processed in 3 weeks; however, priority services are
-                    available for applications to be processed faster.
+                    Sponsor licence applications can take up to 8 weeks or
+                    longer to be processed depending on the Home Office
+                    processing times.
                   </Text>
                 </VStack>
               )}
@@ -602,6 +608,7 @@ const StudentVisa = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"left"}
@@ -616,11 +623,15 @@ const StudentVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    At Lumine Solicitors we offer expert advice to you on the
-                    application process for a student visa, as well as review
-                    your personal history to see whether you qualify, gather all
-                    the complex evidential requirements and keep you updated on
-                    the progress of your application.
+                    At Lumine Solicitors, we will take into account your
+                    organisation’s needs and carefully prepare your licence
+                    application to ensure it meets all the necessary
+                    requirements. Our solicitors will also determine the
+                    appropriate sponsorship licence for your organisation.
+                    Contact Lumine Solicitors’ specialised immigration members
+                    regarding the process of applying for a sponsor licence,
+                    renewing sponsor licences, challenging revocations of an
+                    existing sponsor licence, and avoiding licence rejection.
                   </Text>
 
                   <Text
@@ -1153,4 +1164,4 @@ const StudentVisa = () => {
   );
 };
 
-export default StudentVisa;
+export default SkilledMigrant;

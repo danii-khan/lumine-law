@@ -67,7 +67,7 @@ const SkilledWorkerVisa = () => {
             // bgRepeat={"no-repeat"}
             backgroundColor={"#9FC3D3"}
             display={"flex"}
-            justifyContent={"space-around"}
+            justifyContent={"center"}
             alignItems={"center"}
           >
             <Text
@@ -75,10 +75,11 @@ const SkilledWorkerVisa = () => {
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
               fontStyle={"italic"}
+              width={"90%"}
+              textAlign={"left"}
             >
               Skilled Worker Visa
             </Text>
-            <Box width={{ xs: "30%", md: "35%", lg: "45%" }}>{/* Empty */}</Box>
           </Box>
 
           {/* Main */}

@@ -25,7 +25,7 @@ import BannerImg from "../../../assets/services/main/immigration/main-banner.png
 import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
 import { Helmet } from "react-helmet";
 
-const StudentVisa = () => {
+const VisaCategories = () => {
   const [spouseState, setSpouseState] = useState(false);
   const [eligibilityState, setEligibilityState] = useState(false);
   const [applicationState, setApplicationState] = useState(false);
@@ -46,7 +46,9 @@ const StudentVisa = () => {
         flexDirection="column"
       >
         <Helmet>
-          <title>Lumine Law Student Visa Services</title>
+          <title>
+            Lumine Law Switching Visa Categories from Inside the UK Services
+          </title>
         </Helmet>
 
         <Navbar />
@@ -78,7 +80,7 @@ const StudentVisa = () => {
               width={"90%"}
               textAlign={"left"}
             >
-              Student Visa
+              Switching Visa Categories from Inside the UK Services
             </Text>
           </Box>
 
@@ -102,7 +104,7 @@ const StudentVisa = () => {
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
               >
-                A few lines on what a Student visa is.
+                A few lines on what a Switching Visa Categories is.
               </Text>
             </Box>
           </Box>
@@ -113,7 +115,7 @@ const StudentVisa = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* What is Student Visa */}
+            {/* What is Switching Visas? */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -164,7 +166,7 @@ const StudentVisa = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  What is a Student visa?
+                  What is Switching Visas?
                 </Text>
                 {!spouseState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -181,6 +183,7 @@ const StudentVisa = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"left"}
@@ -195,18 +198,17 @@ const StudentVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    You can apply for a student visa if you are over the age of
-                    16, want to study at an institute in the UK and have been
-                    offered a place on a course by a licensed student sponsor,
-                    have enough money to support yourself and pay for your
-                    course. Lumine Solicitors experienced members can guide and
-                    assist you in your student visa application.
+                    Switching’ is where an applicant with one type of leave to
+                    remain/visa category in the UK applies for leave to remain
+                    in the UK to seek stay under a different visa category. For
+                    example, Lumine Solicitors can assist you in switching from
+                    a student visa to a skilled worker visa.
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Benefits */}
+            {/* What Type of Visas Can You Switch? */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -257,7 +259,7 @@ const StudentVisa = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Benefits
+                  What Type of Visas Can You Switch?
                 </Text>
                 {!eligibilityState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -289,7 +291,9 @@ const StudentVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    If you are granted a student visa, You may be able to:
+                    There are several types of visas you can switch from one
+                    type to another, depending on your circumstances. The
+                    following are a few examples:{" "}
                   </Text>
 
                   <List.Root
@@ -305,21 +309,22 @@ const StudentVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    <List.Item>Live in the UK</List.Item>
-                    <List.Item>Study in the UK</List.Item>
                     <List.Item>
-                      Work during term time and full time during off-term time
-                      in the UK
+                      Switching Into Work Visas e.g. innovator founder visa
                     </List.Item>
+                    <List.Item>Switching Into a Student Visa</List.Item>
+                    <List.Item>Switching Into a Skilled Worker Visa</List.Item>
                     <List.Item>
-                      Bring immediate family, while studying, to the UK
+                      Switching into a Leave to Remain as A Family Member Of A
+                      British Citizen or Settled Person, e.g. spouse visa
+                      5yr/10yr route
                     </List.Item>
                   </List.Root>
                 </VStack>
               )}
             </Box>
 
-            {/* Elligibility */}
+            {/* Requirements*/}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -370,7 +375,7 @@ const StudentVisa = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Elligibility
+                  Eligibility Requirements
                 </Text>
                 {!applicationState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -387,7 +392,25 @@ const StudentVisa = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    The following are a few of the main requirements for
+                    switching from one visa type to another:
+                  </Text>
+
                   <List.Root
                     textAlign={"left"}
                     fontSize={{
@@ -402,134 +425,22 @@ const StudentVisa = () => {
                     fontFamily={"CeraRoundPro"}
                   >
                     <List.Item>
-                      You must have confirmation of acceptance for studies (CAS)
-                      from a licensed sponsor
+                      You must be in the UK when you apply, and your current
+                      visa must not have expired
                     </List.Item>
                     <List.Item>
-                      You must meet the English language requirements
+                      You must meet the immigration rules for the visa you are
+                      applying for
                     </List.Item>
                     <List.Item>
-                      You must be 16 and over ( evidence of parental consent is
-                      required) – you can apply for the Child Student Visa if
-                      your 16-17 year-olds & want to attend a school in the UK
+                      You must have adhered to the rules and conditions of stay
+                      of your visa{" "}
                     </List.Item>
                     <List.Item>
-                      You must have been offered a place on a course by a
-                      licenced student sponsor.
+                      You must not have breached the law while in the UK
                     </List.Item>
-                    <List.Item>
-                      You must meet financial requirements and have enough money
-                      to cover yourself and your living costs in the UK.
-                    </List.Item>
+                    <List.Item>You must not be on immigration bail </List.Item>
                   </List.Root>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    You will also have to pay the healthcare surcharge fee which
-                    will vary in price depending on how long your visa is for.
-                  </Text>
-                </VStack>
-              )}
-            </Box>
-
-            {/* Decision */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !decisionState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={decisionState && "black"}
-                onClick={() => setDecisionState(!decisionState)}
-              >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  How long does it take to reach a decision?
-                </Text>
-                {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
-
-              {decisionState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                >
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    Applications submitted in the UK are usually processed
-                    within 8 weeks, and those submitted outside the UK are
-                    usually processed in 3 weeks; however, priority services are
-                    available for applications to be processed faster.
-                  </Text>
                 </VStack>
               )}
             </Box>
@@ -602,6 +513,7 @@ const StudentVisa = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"left"}
@@ -616,12 +528,39 @@ const StudentVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    At Lumine Solicitors we offer expert advice to you on the
-                    application process for a student visa, as well as review
-                    your personal history to see whether you qualify, gather all
-                    the complex evidential requirements and keep you updated on
-                    the progress of your application.
+                    At Lumine Solicitors we can:
                   </Text>
+
+                  <List.Root
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <List.Item>
+                      Confirm if your eligible to switch visas
+                    </List.Item>
+                    <List.Item>
+                      Prepare and submit your visa switch application on your
+                      behalf
+                    </List.Item>
+                    <List.Item>
+                      Handle any queries from the Home Office regarding your
+                      application
+                    </List.Item>
+                    <List.Item>
+                      We can arrange your same-day service appointment with UK
+                      Visas and Immigration for the submission of your
+                      application at your convenience
+                    </List.Item>
+                  </List.Root>
 
                   <Text
                     textAlign={"left"}
@@ -1153,4 +1092,4 @@ const StudentVisa = () => {
   );
 };
 
-export default StudentVisa;
+export default VisaCategories;

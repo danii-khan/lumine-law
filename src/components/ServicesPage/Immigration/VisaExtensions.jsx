@@ -25,7 +25,7 @@ import BannerImg from "../../../assets/services/main/immigration/main-banner.png
 import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
 import { Helmet } from "react-helmet";
 
-const StudentVisa = () => {
+const VisaExtensions = () => {
   const [spouseState, setSpouseState] = useState(false);
   const [eligibilityState, setEligibilityState] = useState(false);
   const [applicationState, setApplicationState] = useState(false);
@@ -46,7 +46,7 @@ const StudentVisa = () => {
         flexDirection="column"
       >
         <Helmet>
-          <title>Lumine Law Student Visa Services</title>
+          <title>Lumine Law Visa Extensions from within the UK </title>
         </Helmet>
 
         <Navbar />
@@ -78,7 +78,7 @@ const StudentVisa = () => {
               width={"90%"}
               textAlign={"left"}
             >
-              Student Visa
+              Visa Extensions from within the UK
             </Text>
           </Box>
 
@@ -102,7 +102,7 @@ const StudentVisa = () => {
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
               >
-                A few lines on what a Student visa is.
+                A few lines on what a Visa Extensions is.
               </Text>
             </Box>
           </Box>
@@ -113,7 +113,7 @@ const StudentVisa = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* What is Student Visa */}
+            {/* When to Apply? */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -164,7 +164,7 @@ const StudentVisa = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  What is a Student visa?
+                  When to Apply?
                 </Text>
                 {!spouseState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -181,6 +181,7 @@ const StudentVisa = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"left"}
@@ -195,18 +196,18 @@ const StudentVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    You can apply for a student visa if you are over the age of
-                    16, want to study at an institute in the UK and have been
-                    offered a place on a course by a licensed student sponsor,
-                    have enough money to support yourself and pay for your
-                    course. Lumine Solicitors experienced members can guide and
-                    assist you in your student visa application.
+                    You must apply for a UK visa extension before your current
+                    visa expires. This is also referred to as a further leave to
+                    remain application and Lumine Solicitors can assist you in
+                    this process. Your application must be received by UK Visas
+                    and Immigration (UKVI) before your visa expires, as if it
+                    expires, you may be deemed an overstayer by the Home Office.
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Benefits */}
+            {/* Eligibility Requirements */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -257,7 +258,7 @@ const StudentVisa = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Benefits
+                  Eligibility Requirements
                 </Text>
                 {!eligibilityState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -289,7 +290,7 @@ const StudentVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    If you are granted a student visa, You may be able to:
+                    A few visas that you can get an extension for include:
                   </Text>
 
                   <List.Root
@@ -305,140 +306,12 @@ const StudentVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    <List.Item>Live in the UK</List.Item>
-                    <List.Item>Study in the UK</List.Item>
-                    <List.Item>
-                      Work during term time and full time during off-term time
-                      in the UK
-                    </List.Item>
-                    <List.Item>
-                      Bring immediate family, while studying, to the UK
-                    </List.Item>
+                    <List.Item>Skilled worker visa</List.Item>
+                    <List.Item>Spouse visa</List.Item>
+                    <List.Item>Investor visa</List.Item>
+                    <List.Item>Ancestry visa</List.Item>
+                    <List.Item>Visitor visa</List.Item>
                   </List.Root>
-                </VStack>
-              )}
-            </Box>
-
-            {/* Elligibility */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !applicationState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
-                onClick={() => setApplicationState(!applicationState)}
-              >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  Elligibility
-                </Text>
-                {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
-
-              {applicationState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                >
-                  <List.Root
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    <List.Item>
-                      You must have confirmation of acceptance for studies (CAS)
-                      from a licensed sponsor
-                    </List.Item>
-                    <List.Item>
-                      You must meet the English language requirements
-                    </List.Item>
-                    <List.Item>
-                      You must be 16 and over ( evidence of parental consent is
-                      required) – you can apply for the Child Student Visa if
-                      your 16-17 year-olds & want to attend a school in the UK
-                    </List.Item>
-                    <List.Item>
-                      You must have been offered a place on a course by a
-                      licenced student sponsor.
-                    </List.Item>
-                    <List.Item>
-                      You must meet financial requirements and have enough money
-                      to cover yourself and your living costs in the UK.
-                    </List.Item>
-                  </List.Root>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    You will also have to pay the healthcare surcharge fee which
-                    will vary in price depending on how long your visa is for.
-                  </Text>
                 </VStack>
               )}
             </Box>
@@ -511,6 +384,7 @@ const StudentVisa = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"left"}
@@ -525,10 +399,11 @@ const StudentVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Applications submitted in the UK are usually processed
-                    within 8 weeks, and those submitted outside the UK are
-                    usually processed in 3 weeks; however, priority services are
-                    available for applications to be processed faster.
+                    When applying for a visa extension, you should normally get
+                    a decision within 6–8 weeks of your application date,
+                    although there can be a backlog. For example, it may take
+                    around 16 weeks to reach a decision on skilled worker
+                    applications.
                   </Text>
                 </VStack>
               )}
@@ -602,6 +477,7 @@ const StudentVisa = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"left"}
@@ -616,11 +492,11 @@ const StudentVisa = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    At Lumine Solicitors we offer expert advice to you on the
-                    application process for a student visa, as well as review
-                    your personal history to see whether you qualify, gather all
-                    the complex evidential requirements and keep you updated on
-                    the progress of your application.
+                    At Lumine Solicitors, we can offer you expert advice on visa
+                    extensions, confirm your eligibility to extend your visa,
+                    prepare and submit your visa extension application on your
+                    behalf, and handle any queries from the Home Office
+                    regarding your application.
                   </Text>
 
                   <Text
@@ -1153,4 +1029,4 @@ const StudentVisa = () => {
   );
 };
 
-export default StudentVisa;
+export default VisaExtensions;
