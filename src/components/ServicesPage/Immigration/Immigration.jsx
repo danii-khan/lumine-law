@@ -139,8 +139,8 @@ const Immigration = () => {
                 sm: "14px",
                 md: "15px",
                 lg: "16px",
-                xl: "18px",
-                "2xl": " 20px",
+                xl: "16px",
+                "2xl": " 16px",
               }}
               fontWeight={500}
               fontFamily={"CeraRoundPro"}
@@ -175,8 +175,8 @@ const Immigration = () => {
                 sm: "14px",
                 md: "15px",
                 lg: "16px",
-                xl: "18px",
-                "2xl": " 20px",
+                xl: "16px",
+                "2xl": " 16px",
               }}
               fontWeight={500}
               fontFamily={"CeraRoundPro"}
@@ -213,8 +213,8 @@ const Immigration = () => {
                 sm: "14px",
                 md: "15px",
                 lg: "16px",
-                xl: "18px",
-                "2xl": " 20px",
+                xl: "16px",
+                "2xl": " 16px",
               }}
               fontWeight={500}
               fontFamily={"CeraRoundPro"}
@@ -249,8 +249,8 @@ const Immigration = () => {
                 sm: "14px",
                 md: "15px",
                 lg: "16px",
-                xl: "18px",
-                "2xl": " 20px",
+                xl: "16px",
+                "2xl": " 16px",
               }}
               fontWeight={500}
               fontFamily={"CeraRoundPro"}
@@ -285,8 +285,8 @@ const Immigration = () => {
                 sm: "14px",
                 md: "15px",
                 lg: "16px",
-                xl: "18px",
-                "2xl": " 20px",
+                xl: "16px",
+                "2xl": " 16px",
               }}
               fontWeight={500}
               fontFamily={"CeraRoundPro"}
@@ -321,8 +321,8 @@ const Immigration = () => {
                 sm: "14px",
                 md: "15px",
                 lg: "16px",
-                xl: "18px",
-                "2xl": " 20px",
+                xl: "16px",
+                "2xl": " 16px",
               }}
               fontWeight={500}
               fontFamily={"CeraRoundPro"}
@@ -358,8 +358,8 @@ const Immigration = () => {
                 sm: "14px",
                 md: "15px",
                 lg: "16px",
-                xl: "18px",
-                "2xl": " 20px",
+                xl: "16px",
+                "2xl": " 16px",
               }}
               fontWeight={500}
               fontFamily={"CeraRoundPro"}
@@ -394,8 +394,8 @@ const Immigration = () => {
                 sm: "14px",
                 md: "15px",
                 lg: "16px",
-                xl: "18px",
-                "2xl": " 20px",
+                xl: "16px",
+                "2xl": " 16px",
               }}
               fontWeight={500}
               fontFamily={"CeraRoundPro"}
@@ -430,8 +430,8 @@ const Immigration = () => {
                 sm: "14px",
                 md: "15px",
                 lg: "16px",
-                xl: "18px",
-                "2xl": " 20px",
+                xl: "16px",
+                "2xl": " 16px",
               }}
               fontWeight={500}
               fontFamily={"CeraRoundPro"}
@@ -464,8 +464,8 @@ const Immigration = () => {
                 sm: "14px",
                 md: "15px",
                 lg: "16px",
-                xl: "18px",
-                "2xl": " 20px",
+                xl: "16px",
+                "2xl": " 16px",
               }}
               fontWeight={500}
               fontFamily={"CeraRoundPro"}
@@ -498,8 +498,8 @@ const Immigration = () => {
                 sm: "14px",
                 md: "15px",
                 lg: "16px",
-                xl: "18px",
-                "2xl": " 20px",
+                xl: "16px",
+                "2xl": " 16px",
               }}
               fontWeight={500}
               fontFamily={"CeraRoundPro"}
@@ -532,8 +532,8 @@ const Immigration = () => {
                 sm: "14px",
                 md: "15px",
                 lg: "16px",
-                xl: "18px",
-                "2xl": " 20px",
+                xl: "16px",
+                "2xl": " 16px",
               }}
               fontWeight={500}
               fontFamily={"CeraRoundPro"}
@@ -566,8 +566,8 @@ const Immigration = () => {
                 sm: "14px",
                 md: "15px",
                 lg: "16px",
-                xl: "18px",
-                "2xl": " 20px",
+                xl: "16px",
+                "2xl": " 16px",
               }}
               fontWeight={500}
               fontFamily={"CeraRoundPro"}
@@ -600,8 +600,8 @@ const Immigration = () => {
                 sm: "14px",
                 md: "15px",
                 lg: "16px",
-                xl: "18px",
-                "2xl": " 20px",
+                xl: "16px",
+                "2xl": " 16px",
               }}
               fontWeight={500}
               fontFamily={"CeraRoundPro"}
@@ -634,8 +634,8 @@ const Immigration = () => {
                 sm: "14px",
                 md: "15px",
                 lg: "16px",
-                xl: "18px",
-                "2xl": " 20px",
+                xl: "16px",
+                "2xl": " 16px",
               }}
               fontWeight={500}
               fontFamily={"CeraRoundPro"}
@@ -668,8 +668,8 @@ const Immigration = () => {
                 sm: "14px",
                 md: "15px",
                 lg: "16px",
-                xl: "18px",
-                "2xl": " 20px",
+                xl: "16px",
+                "2xl": " 16px",
               }}
               fontWeight={500}
               fontFamily={"CeraRoundPro"}
@@ -702,8 +702,8 @@ const Immigration = () => {
                 sm: "14px",
                 md: "15px",
                 lg: "16px",
-                xl: "18px",
-                "2xl": " 20px",
+                xl: "16px",
+                "2xl": " 16px",
               }}
               fontWeight={500}
               fontFamily={"CeraRoundPro"}
@@ -736,8 +736,8 @@ const Immigration = () => {
                 sm: "14px",
                 md: "15px",
                 lg: "16px",
-                xl: "18px",
-                "2xl": " 20px",
+                xl: "16px",
+                "2xl": " 16px",
               }}
               fontWeight={500}
               fontFamily={"CeraRoundPro"}
@@ -773,8 +773,8 @@ const Immigration = () => {
                 sm: "14px",
                 md: "15px",
                 lg: "16px",
-                xl: "18px",
-                "2xl": " 20px",
+                xl: "16px",
+                "2xl": " 16px",
               }}
               fontWeight={500}
               fontFamily={"CeraRoundPro"}
