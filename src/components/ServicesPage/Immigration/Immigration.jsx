@@ -39,24 +39,24 @@ const Immigration = () => {
           {/* Banner */}
           <Box
             width={"100%"}
-            height={"300px"}
+            height={"200px"}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
             bgPos={"center"}
             bgRepeat={"no-repeat"}
             display={"flex"}
-            justifyContent={"space-around"}
+            justifyContent={"flex-start"}
             alignItems={"center"}
           >
             <Text
-              fontSize={"45px"}
+              fontSize={"40px"}
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
               fontStyle={"italic"}
+              ml={"2.5%"}
             >
               Immigration
             </Text>
-            <Box width={"60%"}>{/* Empty */}</Box>
           </Box>
 
           {/* Main */}
@@ -68,18 +68,19 @@ const Immigration = () => {
           >
             {/* Heading */}
             <HStack
-              justifyContent={"space-evenly"}
+              justifyContent={"flex-start"}
               alignItems={"center"}
-              my={"2.5%"}
+              mt={"2%"}
+              mb={"1%"}
+              ml={"2.5%"}
             >
               <Text
                 fontFamily={"CeraRoundPro"}
-                fontSize={"35px"}
-                fontWeight={500}
+                fontSize={"24px"}
+                fontWeight={600}
               >
                 What is Immigration?{" "}
               </Text>
-              <Box width={"70%"}>{/* Empty */}</Box>
             </HStack>
 
             {/* Main Para */}
@@ -91,7 +92,7 @@ const Immigration = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={"20px"}
+                fontSize={"18px"}
                 textAlign={"left"}
               >
                 Our legal services are highly recommended by our clients and
@@ -108,7 +109,8 @@ const Immigration = () => {
             width={{ xs: "90%", md: "75%", lg: "70%", xl: "60%" }}
             justifySelf={"center"}
             justifyItems={"center"}
-            gap={{ xs: "4px", lg: "8px", xl: "10px" }}
+            gap={{ xs: "7.5px", lg: "15px", xl: "30px" }}
+            gapY={0}
             mb={"100px"}
           >
             {/* Spouse Visa */}
@@ -119,8 +121,8 @@ const Immigration = () => {
               border={"1px solid black"}
               borderRadius={"8px"}
               p={"40px 10px"}
-              width={"80%"}
-              height={"50%"}
+              width={"100%"}
+              height={"60%"}
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
@@ -147,44 +149,6 @@ const Immigration = () => {
               Spouse Visa
             </GridItem>
 
-            {/* British Citizenship App */}
-            <GridItem
-              as={Link}
-              to={
-                "/lumine-law/all-services/immigration/british-citizenship-application"
-              }
-              color={"black"}
-              border={"1px solid black"}
-              borderRadius={"8px"}
-              p={"40px 10px"}
-              width={"80%"}
-              height={"50%"}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              backgroundColor={"white"}
-              _hover={{
-                backgroundColor: "#000000",
-                color: "#beab7c",
-                transition: "0.3s ease all",
-                fontWeight: "600",
-                textDecor: "underline",
-              }}
-              fontSize={{
-                xs: "12px",
-                sm: "14px",
-                md: "15px",
-                lg: "16px",
-                xl: "18px",
-                "2xl": " 20px",
-              }}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              cursor={"pointer"}
-            >
-              British Citizenship Application
-            </GridItem>
-
             {/* UK Visitor Visa */}
             <GridItem
               as={Link}
@@ -193,8 +157,8 @@ const Immigration = () => {
               border={"1px solid black"}
               borderRadius={"8px"}
               p={"40px 10px"}
-              width={"80%"}
-              height={"50%"}
+              width={"100%"}
+              height={"60%"}
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
@@ -221,6 +185,80 @@ const Immigration = () => {
               UK Visitor Visa{" "}
             </GridItem>
 
+            {/* British Citizenship App */}
+            <GridItem
+              as={Link}
+              to={
+                "/lumine-law/all-services/immigration/british-citizenship-application"
+              }
+              color={"black"}
+              border={"1px solid black"}
+              borderRadius={"8px"}
+              p={"40px 10px"}
+              width={"100%"}
+              height={"60%"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              backgroundColor={"white"}
+              _hover={{
+                backgroundColor: "#000000",
+                color: "#beab7c",
+                transition: "0.3s ease all",
+                fontWeight: "600",
+                textDecor: "underline",
+              }}
+              fontSize={{
+                xs: "12px",
+                sm: "14px",
+                md: "15px",
+                lg: "16px",
+                xl: "18px",
+                "2xl": " 20px",
+              }}
+              fontWeight={500}
+              fontFamily={"CeraRoundPro"}
+              cursor={"pointer"}
+            >
+              British Citizenship Application
+            </GridItem>
+
+            {/* Entry Clearance Applications from Outside of the UK */}
+            <GridItem
+              as={Link}
+              to={"/lumine-law/all-services/immigration/entry-clearance"}
+              color={"black"}
+              border={"1px solid black"}
+              borderRadius={"8px"}
+              p={"40px 10px"}
+              width={"100%"}
+              height={"60%"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              backgroundColor={"white"}
+              _hover={{
+                backgroundColor: "#000000",
+                color: "#beab7c",
+                transition: "0.3s ease all",
+                fontWeight: "600",
+                textDecor: "underline",
+              }}
+              fontSize={{
+                xs: "12px",
+                sm: "14px",
+                md: "15px",
+                lg: "16px",
+                xl: "18px",
+                "2xl": " 20px",
+              }}
+              fontWeight={500}
+              fontFamily={"CeraRoundPro"}
+              cursor={"pointer"}
+            >
+              Entry Clearance Applications from Outside of the UK
+            </GridItem>
+
             {/* Skilled Worker Visa */}
             <GridItem
               as={Link}
@@ -229,8 +267,8 @@ const Immigration = () => {
               border={"1px solid black"}
               borderRadius={"8px"}
               p={"40px 10px"}
-              width={"80%"}
-              height={"50%"}
+              width={"100%"}
+              height={"60%"}
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
@@ -257,6 +295,43 @@ const Immigration = () => {
               Skilled Worker Visa{" "}
             </GridItem>
 
+            {/* Skilled Migrant Sponsorship License Applications (In All Categories)*/}
+            <GridItem
+              as={Link}
+              to={"/lumine-law/all-services/immigration/skilled-migrant"}
+              color={"black"}
+              border={"1px solid black"}
+              borderRadius={"8px"}
+              p={"40px 10px"}
+              width={"100%"}
+              height={"60%"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              backgroundColor={"white"}
+              _hover={{
+                backgroundColor: "#000000",
+                color: "#beab7c",
+                transition: "0.3s ease all",
+                fontWeight: "600",
+                textDecor: "underline",
+              }}
+              fontSize={{
+                xs: "12px",
+                sm: "14px",
+                md: "15px",
+                lg: "16px",
+                xl: "18px",
+                "2xl": " 20px",
+              }}
+              fontWeight={500}
+              fontFamily={"CeraRoundPro"}
+              cursor={"pointer"}
+            >
+              Skilled Migrant Sponsorship License Applications (In All
+              Categories)
+            </GridItem>
+
             {/* Certificate of Sponsorship */}
             <GridItem
               as={Link}
@@ -265,8 +340,8 @@ const Immigration = () => {
               border={"1px solid black"}
               borderRadius={"8px"}
               p={"40px 10px"}
-              width={"80%"}
-              height={"50%"}
+              width={"100%"}
+              height={"60%"}
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
@@ -301,8 +376,8 @@ const Immigration = () => {
               border={"1px solid black"}
               borderRadius={"8px"}
               p={"40px 10px"}
-              width={"80%"}
-              height={"50%"}
+              width={"100%"}
+              height={"60%"}
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
@@ -329,14 +404,50 @@ const Immigration = () => {
               Student Visa{" "}
             </GridItem>
 
+            {/* Switching Visa Categories from within the UK */}
+            <GridItem
+              as={Link}
+              to="/lumine-law/all-services/immigration/visa-categories"
+              color={"black"}
+              border={"1px solid black"}
+              borderRadius={"8px"}
+              p={"40px 10px"}
+              width={"100%"}
+              height={"60%"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              backgroundColor={"white"}
+              _hover={{
+                backgroundColor: "#000000",
+                color: "#beab7c",
+                transition: "0.3s ease all",
+                fontWeight: "600",
+                textDecor: "underline",
+              }}
+              fontSize={{
+                xs: "12px",
+                sm: "14px",
+                md: "15px",
+                lg: "16px",
+                xl: "18px",
+                "2xl": " 20px",
+              }}
+              fontWeight={500}
+              fontFamily={"CeraRoundPro"}
+              cursor={"pointer"}
+            >
+              Switching Visa Categories from within the UK
+            </GridItem>
+
             {/* Visa Extensions */}
             <GridItem
               color={"black"}
               border={"1px solid black"}
               borderRadius={"8px"}
               p={"40px 10px"}
-              width={"80%"}
-              height={"50%"}
+              width={"100%"}
+              height={"60%"}
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
@@ -369,8 +480,8 @@ const Immigration = () => {
               border={"1px solid black"}
               borderRadius={"8px"}
               p={"40px 10px"}
-              width={"80%"}
-              height={"50%"}
+              width={"100%"}
+              height={"60%"}
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
@@ -397,14 +508,14 @@ const Immigration = () => {
               Indefinite Leave to Remain{" "}
             </GridItem>
 
-            {/* Indefinite Leave To Remain */}
+            {/* Private Life/Humans Right-Based Applications */}
             <GridItem
               color={"black"}
               border={"1px solid black"}
               borderRadius={"8px"}
               p={"40px 10px"}
-              width={"80%"}
-              height={"50%"}
+              width={"100%"}
+              height={"60%"}
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
@@ -428,17 +539,17 @@ const Immigration = () => {
               fontFamily={"CeraRoundPro"}
               cursor={"pointer"}
             >
-              Indefinite Leave to Remain{" "}
+              Private Life/Humans Right-Based Applications
             </GridItem>
 
-            {/* Indefinite Leave To Remain */}
+            {/* Discretionary Leave */}
             <GridItem
               color={"black"}
               border={"1px solid black"}
               borderRadius={"8px"}
               p={"40px 10px"}
-              width={"80%"}
-              height={"50%"}
+              width={"100%"}
+              height={"60%"}
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
@@ -462,17 +573,17 @@ const Immigration = () => {
               fontFamily={"CeraRoundPro"}
               cursor={"pointer"}
             >
-              Indefinite Leave to Remain{" "}
+              Discretionary Leave
             </GridItem>
 
-            {/* Indefinite Leave To Remain */}
+            {/* Immigration Bail and Revocation of a Deportation Order */}
             <GridItem
               color={"black"}
               border={"1px solid black"}
               borderRadius={"8px"}
               p={"40px 10px"}
-              width={"80%"}
-              height={"50%"}
+              width={"100%"}
+              height={"60%"}
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
@@ -496,17 +607,17 @@ const Immigration = () => {
               fontFamily={"CeraRoundPro"}
               cursor={"pointer"}
             >
-              Indefinite Leave to Remain{" "}
+              Immigration Bail and Revocation of a Deportation Order
             </GridItem>
 
-            {/* Indefinite Leave To Remain */}
+            {/* EU Settlement Scheme Applications */}
             <GridItem
               color={"black"}
               border={"1px solid black"}
               borderRadius={"8px"}
               p={"40px 10px"}
-              width={"80%"}
-              height={"50%"}
+              width={"100%"}
+              height={"60%"}
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
@@ -530,49 +641,17 @@ const Immigration = () => {
               fontFamily={"CeraRoundPro"}
               cursor={"pointer"}
             >
-              Indefinite Leave to Remain{" "}
+              EU Settlement Scheme Applications
             </GridItem>
 
-            {/* Indefinite Leave To Remain */}
+            {/* Adminstrative Reviews, Appeals and Judicial Reviews*/}
             <GridItem
               color={"black"}
               border={"1px solid black"}
               borderRadius={"8px"}
               p={"40px 10px"}
-              width={"80%"}
-              height={"50%"}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              backgroundColor={"white"}
-            >
-              <Text
-                color="black"
-                fontSize={{
-                  xs: "12px",
-                  sm: "14px",
-                  md: "15px",
-                  lg: "16px",
-                  xl: "18px",
-                  "2xl": " 20px",
-                }}
-                fontWeight={500}
-                fontFamily={"CeraRoundPro"}
-                cursor={"pointer"}
-                _hover={{ fontWeight: "600", textDecor: "underline" }}
-              >
-                Indefinite Leave to Remain{" "}
-              </Text>
-            </GridItem>
-
-            {/* Indefinite Leave To Remain */}
-            <GridItem
-              color={"black"}
-              border={"1px solid black"}
-              borderRadius={"8px"}
-              p={"40px 10px"}
-              width={"80%"}
-              height={"50%"}
+              width={"100%"}
+              height={"60%"}
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
@@ -596,17 +675,17 @@ const Immigration = () => {
               fontFamily={"CeraRoundPro"}
               cursor={"pointer"}
             >
-              Indefinite Leave to Remain{" "}
+              Adminstrative Reviews, Appeals and Judicial Reviews
             </GridItem>
 
-            {/* Indefinite Leave To Remain */}
+            {/* Asylum */}
             <GridItem
               color={"black"}
               border={"1px solid black"}
               borderRadius={"8px"}
               p={"40px 10px"}
-              width={"80%"}
-              height={"50%"}
+              width={"100%"}
+              height={"60%"}
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
@@ -630,17 +709,17 @@ const Immigration = () => {
               fontFamily={"CeraRoundPro"}
               cursor={"pointer"}
             >
-              Indefinite Leave to Remain{" "}
+              Asylum
             </GridItem>
 
-            {/* Indefinite Leave To Remain */}
+            {/* Innovator Founder Visa */}
             <GridItem
               color={"black"}
               border={"1px solid black"}
               borderRadius={"8px"}
               p={"40px 10px"}
-              width={"80%"}
-              height={"50%"}
+              width={"100%"}
+              height={"60%"}
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
@@ -664,88 +743,20 @@ const Immigration = () => {
               fontFamily={"CeraRoundPro"}
               cursor={"pointer"}
             >
-              Indefinite Leave to Remain{" "}
-            </GridItem>
-
-            {/* Indefinite Leave To Remain */}
-            <GridItem
-              color={"black"}
-              border={"1px solid black"}
-              borderRadius={"8px"}
-              p={"40px 10px"}
-              width={"80%"}
-              height={"50%"}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              backgroundColor={"white"}
-              _hover={{
-                backgroundColor: "#000000",
-                color: "#beab7c",
-                transition: "0.3s ease all",
-                fontWeight: "600",
-                textDecor: "underline",
-              }}
-              fontSize={{
-                xs: "12px",
-                sm: "14px",
-                md: "15px",
-                lg: "16px",
-                xl: "18px",
-                "2xl": " 20px",
-              }}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              cursor={"pointer"}
-            >
-              Indefinite Leave to Remain{" "}
-            </GridItem>
-
-            {/* Indefinite Leave To Remain */}
-            <GridItem
-              color={"black"}
-              border={"1px solid black"}
-              borderRadius={"8px"}
-              p={"40px 10px"}
-              width={"80%"}
-              height={"50%"}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              backgroundColor={"white"}
-              _hover={{
-                backgroundColor: "#000000",
-                color: "#beab7c",
-                transition: "0.3s ease all",
-                fontWeight: "600",
-                textDecor: "underline",
-              }}
-              fontSize={{
-                xs: "12px",
-                sm: "14px",
-                md: "15px",
-                lg: "16px",
-                xl: "18px",
-                "2xl": " 20px",
-              }}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              cursor={"pointer"}
-            >
-              Indefinite Leave to Remain{" "}
+              Innovator Founder Visa
             </GridItem>
 
             {/* empty */}
             <GridItem></GridItem>
 
-            {/* Indefinite Leave To Remain */}
+            {/* Creative Worker Visa */}
             <GridItem
               color={"black"}
               border={"1px solid black"}
               borderRadius={"8px"}
               p={"40px 10px"}
-              width={"80%"}
-              height={"50%"}
+              width={"100%"}
+              height={"60%"}
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
@@ -769,7 +780,7 @@ const Immigration = () => {
               fontFamily={"CeraRoundPro"}
               cursor={"pointer"}
             >
-              Indefinite Leave to Remain{" "}
+              Creative Worker Visa
             </GridItem>
 
             {/* empty */}
