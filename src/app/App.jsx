@@ -17,6 +17,13 @@ import VisaCategories from "../components/ServicesPage/Immigration/VisaCategorie
 import VisaExtensions from "../components/ServicesPage/Immigration/VisaExtensions";
 import IndefiniteLeave from "../components/ServicesPage/Immigration/IndefiniteLeave";
 import HumanRights from "../components/ServicesPage/Immigration/HumanRights";
+import DiscretionaryLeave from "../components/ServicesPage/Immigration/DiscretionaryLeave";
+import BailRevocation from "../components/ServicesPage/Immigration/BailRevocation";
+import EuSettlement from "../components/ServicesPage/Immigration/EuSettlement";
+import ReviewsAppeals from "../components/ServicesPage/Immigration/ReviewsAppeals";
+import Asylum from "../components/ServicesPage/Immigration/Asylum";
+import InnovatorFounder from "../components/ServicesPage/Immigration/InnovatorFounder";
+import CreativeWorker from "../components/ServicesPage/Immigration/CreativeWorker";
 
 function App() {
   return (
@@ -149,6 +156,65 @@ function App() {
             element={
               <PageTransition>
                 <HumanRights />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/lumine-law/all-services/immigration/discretionary-leave"
+            element={
+              <PageTransition>
+                <DiscretionaryLeave />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/lumine-law/all-services/immigration/bail-revocation"
+            element={
+              <PageTransition>
+                <BailRevocation />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/lumine-law/all-services/immigration/eu-settlement"
+            element={
+              <PageTransition>
+                <EuSettlement />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/lumine-law/all-services/immigration/reviews-appeals"
+            element={
+              <PageTransition>
+                <ReviewsAppeals />
+              </PageTransition>
+            }
+          />
+
+          <Route
+            path="/lumine-law/all-services/immigration/asylum"
+            element={
+              <PageTransition>
+                <Asylum />
+              </PageTransition>
+            }
+          />
+
+          <Route
+            path="/lumine-law/all-services/immigration/innovator-founder"
+            element={
+              <PageTransition>
+                <InnovatorFounder />
+              </PageTransition>
+            }
+          />
+
+          <Route
+            path="/lumine-law/all-services/immigration/creative-worker"
+            element={
+              <PageTransition>
+                <CreativeWorker />
               </PageTransition>
             }
           />

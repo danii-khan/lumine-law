@@ -549,9 +549,10 @@ const Immigration = () => {
               Private Life/Humans Right-Based Applications
             </GridItem>
 
-            {/* DO FROM HERE FOR NOW */}
             {/* Discretionary Leave */}
             <GridItem
+              as={Link}
+              to="/lumine-law/all-services/immigration/discretionary-leave"
               color={"black"}
               border={"1px solid black"}
               borderRadius={"8px"}
@@ -586,6 +587,8 @@ const Immigration = () => {
 
             {/* Immigration Bail and Revocation of a Deportation Order */}
             <GridItem
+              as={Link}
+              to="/lumine-law/all-services/immigration/bail-revocation"
               color={"black"}
               border={"1px solid black"}
               borderRadius={"8px"}
@@ -620,6 +623,8 @@ const Immigration = () => {
 
             {/* EU Settlement Scheme Applications */}
             <GridItem
+              as={Link}
+              to="/lumine-law/all-services/immigration/eu-settlement"
               color={"black"}
               border={"1px solid black"}
               borderRadius={"8px"}
@@ -654,6 +659,8 @@ const Immigration = () => {
 
             {/* Adminstrative Reviews, Appeals and Judicial Reviews*/}
             <GridItem
+              as={Link}
+              to="/lumine-law/all-services/immigration/reviews-appeals"
               color={"black"}
               border={"1px solid black"}
               borderRadius={"8px"}
@@ -688,6 +695,8 @@ const Immigration = () => {
 
             {/* Asylum */}
             <GridItem
+              as={Link}
+              to="/lumine-law/all-services/immigration/asylum"
               color={"black"}
               border={"1px solid black"}
               borderRadius={"8px"}
@@ -722,6 +731,8 @@ const Immigration = () => {
 
             {/* Innovator Founder Visa */}
             <GridItem
+              as={Link}
+              to="/lumine-law/all-services/immigration/innovator-founder"
               color={"black"}
               border={"1px solid black"}
               borderRadius={"8px"}
@@ -759,6 +770,8 @@ const Immigration = () => {
 
             {/* Creative Worker Visa */}
             <GridItem
+              as={Link}
+              to="/lumine-law/all-services/immigration/creative-worker"
               color={"black"}
               border={"1px solid black"}
               borderRadius={"8px"}
