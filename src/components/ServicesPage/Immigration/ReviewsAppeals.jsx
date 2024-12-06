@@ -1038,14 +1038,14 @@ const ReviewsAppeals = () => {
                 <GridItem
                   width={"100%"}
                   height={{
-                    xs: "115px",
-                    sm: "120px",
+                    xs: "125px",
+                    sm: "125px",
                     md: "125px",
                     lg: "150px",
                     xl: "175px",
                     "2xl": "200px",
                   }}
-                  padding={{ xs: "5px 10px", lg: "10px 20px" }}
+                  padding={{ xs: "10px 10px", lg: "10px 20px" }}
                   border={"1px solid black"}
                   borderRadius={"8px"}
                   cursor={"pointer"}
@@ -1117,14 +1117,14 @@ const ReviewsAppeals = () => {
                 <GridItem
                   width={"100%"}
                   height={{
-                    xs: "115px",
-                    sm: "120px",
+                    xs: "125px",
+                    sm: "125px",
                     md: "125px",
                     lg: "150px",
                     xl: "175px",
                     "2xl": "200px",
                   }}
-                  padding={{ xs: "5px 10px", lg: "10px 20px" }}
+                  padding={{ xs: "10px 10px", lg: "10px 20px" }}
                   border={"1px solid black"}
                   borderRadius={"8px"}
                   cursor={"pointer"}
@@ -1196,14 +1196,14 @@ const ReviewsAppeals = () => {
                 <GridItem
                   width={"100%"}
                   height={{
-                    xs: "115px",
-                    sm: "120px",
+                    xs: "125px",
+                    sm: "125px",
                     md: "125px",
                     lg: "150px",
                     xl: "175px",
                     "2xl": "200px",
                   }}
-                  padding={{ xs: "5px 10px", lg: "10px 20px" }}
+                  padding={{ xs: "10px 10px", lg: "10px 20px" }}
                   border={"1px solid black"}
                   borderRadius={"8px"}
                   cursor={"pointer"}
@@ -1275,14 +1275,14 @@ const ReviewsAppeals = () => {
                 <GridItem
                   width={"100%"}
                   height={{
-                    xs: "115px",
-                    sm: "120px",
+                    xs: "125px",
+                    sm: "125px",
                     md: "125px",
                     lg: "150px",
                     xl: "175px",
                     "2xl": "200px",
                   }}
-                  padding={{ xs: "5px 10px", lg: "10px 20px" }}
+                  padding={{ xs: "10px 10px", lg: "10px 20px" }}
                   border={"1px solid black"}
                   borderRadius={"8px"}
                   cursor={"pointer"}

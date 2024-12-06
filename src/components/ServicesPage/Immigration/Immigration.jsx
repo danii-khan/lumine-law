@@ -103,709 +103,719 @@ const Immigration = () => {
           </Box>
 
           {/* Grid  7x3*/}
-          <Grid
-            templateRows={"repeat(7,1fr)"}
-            templateColumns={"repeat(3, 1fr)"}
-            width={{ xs: "90%", md: "75%", lg: "70%", xl: "60%" }}
-            justifySelf={"center"}
-            justifyItems={"center"}
-            gap={{ xs: "10px", lg: "15px", xl: "30px" }}
-            gapY={0}
-            mb={"100px"}
+          <Box
+            width={"100%"}
+            display={"flex"}
+            flexFlow={"column"}
+            alignItems={"center"}
+            color={"black"}
+            mb={{ xs: "25px", lg: "50px" }}
           >
-            {/* Spouse Visa */}
-            <GridItem
-              as={Link}
-              to={"/lumine-law/all-services/immigration/spouse-visa"}
-              color={"black"}
-              border={"1px solid black"}
-              borderRadius={"8px"}
-              p={"2.5px 10px"}
-              width={"100%"}
-              height={"100%"}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              backgroundColor={"white"}
-              _hover={{
-                backgroundColor: "#000000",
-                color: "#beab7c",
-                transition: "0.3s ease all",
-                fontWeight: "600",
-                textDecor: "underline",
-              }}
-              fontSize={{
-                xs: "12px",
-                sm: "14px",
-                md: "15px",
-                lg: "16px",
-                xl: "16px",
-                "2xl": " 16px",
-              }}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              cursor={"pointer"}
+            <Grid
+              templateRows={"repeat(7,1fr)"}
+              templateColumns={"repeat(3, 1fr)"}
+              width={{ xs: "90%", md: "75%", lg: "70%", xl: "60%" }}
+              justifySelf={"center"}
+              justifyItems={"center"}
+              gap={{ xs: "10px", lg: "15px", xl: "30px" }}
+              gapY={0}
+              mb={"100px"}
             >
-              Spouse Visa
-            </GridItem>
+              {/* Spouse Visa */}
+              <GridItem
+                as={Link}
+                to={"/lumine-law/all-services/immigration/spouse-visa"}
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"2.5px 10px"}
+                width={"100%"}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
+                }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+              >
+                Spouse Visa
+              </GridItem>
 
-            {/* UK Visitor Visa */}
-            <GridItem
-              as={Link}
-              to={"/lumine-law/all-services/immigration/uk-visitor-visa"}
-              color={"black"}
-              border={"1px solid black"}
-              borderRadius={"8px"}
-              p={"2.5px 10px"}
-              width={"100%"}
-              height={"100%"}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              backgroundColor={"white"}
-              _hover={{
-                backgroundColor: "#000000",
-                color: "#beab7c",
-                transition: "0.3s ease all",
-                fontWeight: "600",
-                textDecor: "underline",
-              }}
-              fontSize={{
-                xs: "12px",
-                sm: "14px",
-                md: "15px",
-                lg: "16px",
-                xl: "16px",
-                "2xl": " 16px",
-              }}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              cursor={"pointer"}
-            >
-              UK Visitor Visa{" "}
-            </GridItem>
+              {/* UK Visitor Visa */}
+              <GridItem
+                as={Link}
+                to={"/lumine-law/all-services/immigration/uk-visitor-visa"}
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"2.5px 10px"}
+                width={"100%"}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
+                }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+              >
+                UK Visitor Visa{" "}
+              </GridItem>
 
-            {/* British Citizenship App */}
-            <GridItem
-              as={Link}
-              to={
-                "/lumine-law/all-services/immigration/british-citizenship-application"
-              }
-              color={"black"}
-              border={"1px solid black"}
-              borderRadius={"8px"}
-              p={"2.5px 10px"}
-              width={"100%"}
-              height={"100%"}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              backgroundColor={"white"}
-              _hover={{
-                backgroundColor: "#000000",
-                color: "#beab7c",
-                transition: "0.3s ease all",
-                fontWeight: "600",
-                textDecor: "underline",
-              }}
-              fontSize={{
-                xs: "12px",
-                sm: "14px",
-                md: "15px",
-                lg: "16px",
-                xl: "16px",
-                "2xl": " 16px",
-              }}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              cursor={"pointer"}
-            >
-              British Citizenship Application
-            </GridItem>
+              {/* British Citizenship App */}
+              <GridItem
+                as={Link}
+                to={
+                  "/lumine-law/all-services/immigration/british-citizenship-application"
+                }
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"2.5px 10px"}
+                width={"100%"}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
+                }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+              >
+                British Citizenship Application
+              </GridItem>
 
-            {/* Entry Clearance Applications from Outside of the UK */}
-            <GridItem
-              as={Link}
-              to={"/lumine-law/all-services/immigration/entry-clearance"}
-              color={"black"}
-              border={"1px solid black"}
-              borderRadius={"8px"}
-              p={"2.5px 10px"}
-              width={"100%"}
-              height={"100%"}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              backgroundColor={"white"}
-              _hover={{
-                backgroundColor: "#000000",
-                color: "#beab7c",
-                transition: "0.3s ease all",
-                fontWeight: "600",
-                textDecor: "underline",
-              }}
-              fontSize={{
-                xs: "12px",
-                sm: "14px",
-                md: "15px",
-                lg: "16px",
-                xl: "16px",
-                "2xl": " 16px",
-              }}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              cursor={"pointer"}
-            >
-              Entry Clearance Applications from Outside of the UK
-            </GridItem>
+              {/* Entry Clearance Applications from Outside of the UK */}
+              <GridItem
+                as={Link}
+                to={"/lumine-law/all-services/immigration/entry-clearance"}
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"2.5px 10px"}
+                width={"100%"}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
+                }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+              >
+                Entry Clearance Applications from Outside of the UK
+              </GridItem>
 
-            {/* Skilled Worker Visa */}
-            <GridItem
-              as={Link}
-              to={"/lumine-law/all-services/immigration/skilled-worker-visa"}
-              color={"black"}
-              border={"1px solid black"}
-              borderRadius={"8px"}
-              p={"2.5px 10px"}
-              width={"100%"}
-              height={"100%"}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              backgroundColor={"white"}
-              _hover={{
-                backgroundColor: "#000000",
-                color: "#beab7c",
-                transition: "0.3s ease all",
-                fontWeight: "600",
-                textDecor: "underline",
-              }}
-              fontSize={{
-                xs: "12px",
-                sm: "14px",
-                md: "15px",
-                lg: "16px",
-                xl: "16px",
-                "2xl": " 16px",
-              }}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              cursor={"pointer"}
-            >
-              Skilled Worker Visa{" "}
-            </GridItem>
+              {/* Skilled Worker Visa */}
+              <GridItem
+                as={Link}
+                to={"/lumine-law/all-services/immigration/skilled-worker-visa"}
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"2.5px 10px"}
+                width={"100%"}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
+                }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+              >
+                Skilled Worker Visa{" "}
+              </GridItem>
 
-            {/* Skilled Migrant Sponsorship License Applications (In All Categories)*/}
-            <GridItem
-              as={Link}
-              to={"/lumine-law/all-services/immigration/skilled-migrant"}
-              color={"black"}
-              border={"1px solid black"}
-              borderRadius={"8px"}
-              p={"2.5px 10px"}
-              width={"100%"}
-              height={"100%"}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              backgroundColor={"white"}
-              _hover={{
-                backgroundColor: "#000000",
-                color: "#beab7c",
-                transition: "0.3s ease all",
-                fontWeight: "600",
-                textDecor: "underline",
-              }}
-              fontSize={{
-                xs: "12px",
-                sm: "14px",
-                md: "15px",
-                lg: "16px",
-                xl: "16px",
-                "2xl": " 16px",
-              }}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              cursor={"pointer"}
-            >
-              Skilled Migrant Sponsorship License Applications (In All
-              Categories)
-            </GridItem>
+              {/* Skilled Migrant Sponsorship License Applications (In All Categories)*/}
+              <GridItem
+                as={Link}
+                to={"/lumine-law/all-services/immigration/skilled-migrant"}
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"2.5px 10px"}
+                width={"100%"}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
+                }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+              >
+                Skilled Migrant Sponsorship License Applications (In All
+                Categories)
+              </GridItem>
 
-            {/* Certificate of Sponsorship */}
-            <GridItem
-              as={Link}
-              to="/lumine-law/all-services/immigration/certificate-of-sponsorship"
-              color={"black"}
-              border={"1px solid black"}
-              borderRadius={"8px"}
-              p={"2.5px 10px"}
-              width={"100%"}
-              height={"100%"}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              backgroundColor={"white"}
-              _hover={{
-                backgroundColor: "#000000",
-                color: "#beab7c",
-                transition: "0.3s ease all",
-                fontWeight: "600",
-                textDecor: "underline",
-              }}
-              fontSize={{
-                xs: "12px",
-                sm: "14px",
-                md: "15px",
-                lg: "16px",
-                xl: "16px",
-                "2xl": " 16px",
-              }}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              cursor={"pointer"}
-            >
-              Certificate of Sponsorship{" "}
-            </GridItem>
+              {/* Certificate of Sponsorship */}
+              <GridItem
+                as={Link}
+                to="/lumine-law/all-services/immigration/certificate-of-sponsorship"
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"2.5px 10px"}
+                width={"100%"}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
+                }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+              >
+                Certificate of Sponsorship{" "}
+              </GridItem>
 
-            {/* Student Visa */}
-            <GridItem
-              as={Link}
-              to="/lumine-law/all-services/immigration/student-visa"
-              color={"black"}
-              border={"1px solid black"}
-              borderRadius={"8px"}
-              p={"2.5px 10px"}
-              width={"100%"}
-              height={"100%"}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              backgroundColor={"white"}
-              _hover={{
-                backgroundColor: "#000000",
-                color: "#beab7c",
-                transition: "0.3s ease all",
-                fontWeight: "600",
-                textDecor: "underline",
-              }}
-              fontSize={{
-                xs: "12px",
-                sm: "14px",
-                md: "15px",
-                lg: "16px",
-                xl: "16px",
-                "2xl": " 16px",
-              }}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              cursor={"pointer"}
-            >
-              Student Visa{" "}
-            </GridItem>
+              {/* Student Visa */}
+              <GridItem
+                as={Link}
+                to="/lumine-law/all-services/immigration/student-visa"
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"2.5px 10px"}
+                width={"100%"}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
+                }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+              >
+                Student Visa{" "}
+              </GridItem>
 
-            {/* Switching Visa Categories from within the UK */}
-            <GridItem
-              as={Link}
-              to="/lumine-law/all-services/immigration/visa-categories"
-              color={"black"}
-              border={"1px solid black"}
-              borderRadius={"8px"}
-              p={"2.5px 10px"}
-              width={"100%"}
-              height={"100%"}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              backgroundColor={"white"}
-              _hover={{
-                backgroundColor: "#000000",
-                color: "#beab7c",
-                transition: "0.3s ease all",
-                fontWeight: "600",
-                textDecor: "underline",
-              }}
-              fontSize={{
-                xs: "12px",
-                sm: "14px",
-                md: "15px",
-                lg: "16px",
-                xl: "16px",
-                "2xl": " 16px",
-              }}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              cursor={"pointer"}
-            >
-              Switching Visa Categories from within the UK
-            </GridItem>
+              {/* Switching Visa Categories from within the UK */}
+              <GridItem
+                as={Link}
+                to="/lumine-law/all-services/immigration/visa-categories"
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"2.5px 10px"}
+                width={"100%"}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
+                }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+              >
+                Switching Visa Categories from within the UK
+              </GridItem>
 
-            {/* Visa Extensions */}
-            <GridItem
-              as={Link}
-              to="/lumine-law/all-services/immigration/visa-extensions"
-              color={"black"}
-              border={"1px solid black"}
-              borderRadius={"8px"}
-              p={"2.5px 10px"}
-              width={"100%"}
-              height={"100%"}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              backgroundColor={"white"}
-              _hover={{
-                backgroundColor: "#000000",
-                color: "#beab7c",
-                transition: "0.3s ease all",
-                fontWeight: "600",
-                textDecor: "underline",
-              }}
-              fontSize={{
-                xs: "12px",
-                sm: "14px",
-                md: "15px",
-                lg: "16px",
-                xl: "16px",
-                "2xl": " 16px",
-              }}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              cursor={"pointer"}
-            >
-              Visa Extensions{" "}
-            </GridItem>
+              {/* Visa Extensions */}
+              <GridItem
+                as={Link}
+                to="/lumine-law/all-services/immigration/visa-extensions"
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"2.5px 10px"}
+                width={"100%"}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
+                }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+              >
+                Visa Extensions{" "}
+              </GridItem>
 
-            {/* Indefinite Leave To Remain */}
-            <GridItem
-              as={Link}
-              to="/lumine-law/all-services/immigration/indefinite-leave"
-              color={"black"}
-              border={"1px solid black"}
-              borderRadius={"8px"}
-              p={"2.5px 10px"}
-              width={"100%"}
-              height={"100%"}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              backgroundColor={"white"}
-              _hover={{
-                backgroundColor: "#000000",
-                color: "#beab7c",
-                transition: "0.3s ease all",
-                fontWeight: "600",
-                textDecor: "underline",
-              }}
-              fontSize={{
-                xs: "12px",
-                sm: "14px",
-                md: "15px",
-                lg: "16px",
-                xl: "16px",
-                "2xl": " 16px",
-              }}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              cursor={"pointer"}
-            >
-              Indefinite Leave to Remain{" "}
-            </GridItem>
+              {/* Indefinite Leave To Remain */}
+              <GridItem
+                as={Link}
+                to="/lumine-law/all-services/immigration/indefinite-leave"
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"2.5px 10px"}
+                width={"100%"}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
+                }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+              >
+                Indefinite Leave to Remain{" "}
+              </GridItem>
 
-            {/* Private Life/Humans Right-Based Applications */}
-            <GridItem
-              as={Link}
-              to="/lumine-law/all-services/immigration/human-rights-app"
-              color={"black"}
-              border={"1px solid black"}
-              borderRadius={"8px"}
-              p={"2.5px 10px"}
-              width={"100%"}
-              height={"100%"}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              backgroundColor={"white"}
-              _hover={{
-                backgroundColor: "#000000",
-                color: "#beab7c",
-                transition: "0.3s ease all",
-                fontWeight: "600",
-                textDecor: "underline",
-              }}
-              fontSize={{
-                xs: "12px",
-                sm: "14px",
-                md: "15px",
-                lg: "16px",
-                xl: "16px",
-                "2xl": " 16px",
-              }}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              cursor={"pointer"}
-            >
-              Private Life/Humans Right-Based Applications
-            </GridItem>
+              {/* Private Life/Humans Right-Based Applications */}
+              <GridItem
+                as={Link}
+                to="/lumine-law/all-services/immigration/human-rights-app"
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"2.5px 10px"}
+                width={"100%"}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
+                }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+              >
+                Private Life/Humans Right-Based Applications
+              </GridItem>
 
-            {/* Discretionary Leave */}
-            <GridItem
-              as={Link}
-              to="/lumine-law/all-services/immigration/discretionary-leave"
-              color={"black"}
-              border={"1px solid black"}
-              borderRadius={"8px"}
-              p={"2.5px 10px"}
-              width={"100%"}
-              height={"100%"}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              backgroundColor={"white"}
-              _hover={{
-                backgroundColor: "#000000",
-                color: "#beab7c",
-                transition: "0.3s ease all",
-                fontWeight: "600",
-                textDecor: "underline",
-              }}
-              fontSize={{
-                xs: "12px",
-                sm: "14px",
-                md: "15px",
-                lg: "16px",
-                xl: "16px",
-                "2xl": " 16px",
-              }}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              cursor={"pointer"}
-            >
-              Discretionary Leave
-            </GridItem>
+              {/* Discretionary Leave */}
+              <GridItem
+                as={Link}
+                to="/lumine-law/all-services/immigration/discretionary-leave"
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"2.5px 10px"}
+                width={"100%"}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
+                }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+              >
+                Discretionary Leave
+              </GridItem>
 
-            {/* Immigration Bail and Revocation of a Deportation Order */}
-            <GridItem
-              as={Link}
-              to="/lumine-law/all-services/immigration/bail-revocation"
-              color={"black"}
-              border={"1px solid black"}
-              borderRadius={"8px"}
-              p={"2.5px 10px"}
-              width={"100%"}
-              height={"100%"}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              backgroundColor={"white"}
-              _hover={{
-                backgroundColor: "#000000",
-                color: "#beab7c",
-                transition: "0.3s ease all",
-                fontWeight: "600",
-                textDecor: "underline",
-              }}
-              fontSize={{
-                xs: "12px",
-                sm: "14px",
-                md: "15px",
-                lg: "16px",
-                xl: "16px",
-                "2xl": " 16px",
-              }}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              cursor={"pointer"}
-            >
-              Immigration Bail and Revocation of a Deportation Order
-            </GridItem>
+              {/* Immigration Bail and Revocation of a Deportation Order */}
+              <GridItem
+                as={Link}
+                to="/lumine-law/all-services/immigration/bail-revocation"
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"2.5px 10px"}
+                width={"100%"}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
+                }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+              >
+                Immigration Bail and Revocation of a Deportation Order
+              </GridItem>
 
-            {/* EU Settlement Scheme Applications */}
-            <GridItem
-              as={Link}
-              to="/lumine-law/all-services/immigration/eu-settlement"
-              color={"black"}
-              border={"1px solid black"}
-              borderRadius={"8px"}
-              p={"2.5px 10px"}
-              width={"100%"}
-              height={"100%"}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              backgroundColor={"white"}
-              _hover={{
-                backgroundColor: "#000000",
-                color: "#beab7c",
-                transition: "0.3s ease all",
-                fontWeight: "600",
-                textDecor: "underline",
-              }}
-              fontSize={{
-                xs: "12px",
-                sm: "14px",
-                md: "15px",
-                lg: "16px",
-                xl: "16px",
-                "2xl": " 16px",
-              }}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              cursor={"pointer"}
-            >
-              EU Settlement Scheme Applications
-            </GridItem>
+              {/* EU Settlement Scheme Applications */}
+              <GridItem
+                as={Link}
+                to="/lumine-law/all-services/immigration/eu-settlement"
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"2.5px 10px"}
+                width={"100%"}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
+                }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+              >
+                EU Settlement Scheme Applications
+              </GridItem>
 
-            {/* Adminstrative Reviews, Appeals and Judicial Reviews*/}
-            <GridItem
-              as={Link}
-              to="/lumine-law/all-services/immigration/reviews-appeals"
-              color={"black"}
-              border={"1px solid black"}
-              borderRadius={"8px"}
-              p={"2.5px 10px"}
-              width={"100%"}
-              height={"100%"}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              backgroundColor={"white"}
-              _hover={{
-                backgroundColor: "#000000",
-                color: "#beab7c",
-                transition: "0.3s ease all",
-                fontWeight: "600",
-                textDecor: "underline",
-              }}
-              fontSize={{
-                xs: "12px",
-                sm: "14px",
-                md: "15px",
-                lg: "16px",
-                xl: "16px",
-                "2xl": " 16px",
-              }}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              cursor={"pointer"}
-            >
-              Adminstrative Reviews, Appeals and Judicial Reviews
-            </GridItem>
+              {/* Adminstrative Reviews, Appeals and Judicial Reviews*/}
+              <GridItem
+                as={Link}
+                to="/lumine-law/all-services/immigration/reviews-appeals"
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"2.5px 10px"}
+                width={"100%"}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
+                }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+              >
+                Adminstrative Reviews, Appeals and Judicial Reviews
+              </GridItem>
 
-            {/* Asylum */}
-            <GridItem
-              as={Link}
-              to="/lumine-law/all-services/immigration/asylum"
-              color={"black"}
-              border={"1px solid black"}
-              borderRadius={"8px"}
-              p={"2.5px 10px"}
-              width={"100%"}
-              height={"100%"}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              backgroundColor={"white"}
-              _hover={{
-                backgroundColor: "#000000",
-                color: "#beab7c",
-                transition: "0.3s ease all",
-                fontWeight: "600",
-                textDecor: "underline",
-              }}
-              fontSize={{
-                xs: "12px",
-                sm: "14px",
-                md: "15px",
-                lg: "16px",
-                xl: "16px",
-                "2xl": " 16px",
-              }}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              cursor={"pointer"}
-            >
-              Asylum
-            </GridItem>
+              {/* Asylum */}
+              <GridItem
+                as={Link}
+                to="/lumine-law/all-services/immigration/asylum"
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"2.5px 10px"}
+                width={"100%"}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
+                }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+              >
+                Asylum
+              </GridItem>
 
-            {/* Innovator Founder Visa */}
-            <GridItem
-              as={Link}
-              to="/lumine-law/all-services/immigration/innovator-founder"
-              color={"black"}
-              border={"1px solid black"}
-              borderRadius={"8px"}
-              p={"2.5px 10px"}
-              width={"100%"}
-              height={"100%"}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              backgroundColor={"white"}
-              _hover={{
-                backgroundColor: "#000000",
-                color: "#beab7c",
-                transition: "0.3s ease all",
-                fontWeight: "600",
-                textDecor: "underline",
-              }}
-              fontSize={{
-                xs: "12px",
-                sm: "14px",
-                md: "15px",
-                lg: "16px",
-                xl: "16px",
-                "2xl": " 16px",
-              }}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              cursor={"pointer"}
-            >
-              Innovator Founder Visa
-            </GridItem>
+              {/* Innovator Founder Visa */}
+              <GridItem
+                as={Link}
+                to="/lumine-law/all-services/immigration/innovator-founder"
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"2.5px 10px"}
+                width={"100%"}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
+                }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+              >
+                Innovator Founder Visa
+              </GridItem>
 
-            {/* empty */}
-            <GridItem></GridItem>
+              {/* empty */}
+              <GridItem></GridItem>
 
-            {/* Creative Worker Visa */}
-            <GridItem
-              as={Link}
-              to="/lumine-law/all-services/immigration/creative-worker"
-              color={"black"}
-              border={"1px solid black"}
-              borderRadius={"8px"}
-              p={"2.5px 10px"}
-              width={"100%"}
-              height={"100%"}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              backgroundColor={"white"}
-              _hover={{
-                backgroundColor: "#000000",
-                color: "#beab7c",
-                transition: "0.3s ease all",
-                fontWeight: "600",
-                textDecor: "underline",
-              }}
-              fontSize={{
-                xs: "12px",
-                sm: "14px",
-                md: "15px",
-                lg: "16px",
-                xl: "16px",
-                "2xl": " 16px",
-              }}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              cursor={"pointer"}
-            >
-              Creative Worker Visa
-            </GridItem>
+              {/* Creative Worker Visa */}
+              <GridItem
+                as={Link}
+                to="/lumine-law/all-services/immigration/creative-worker"
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"2.5px 10px"}
+                width={"100%"}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
+                }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+              >
+                Creative Worker Visa
+              </GridItem>
 
-            {/* empty */}
-            <GridItem></GridItem>
-          </Grid>
+              {/* empty */}
+              <GridItem></GridItem>
+            </Grid>
+          </Box>
+
           <Footer />
         </Box>
       </Container>
