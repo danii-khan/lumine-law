@@ -102,7 +102,8 @@ const HumanRights = () => {
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
               >
-                A few lines on what a Human Rights Application is.
+                A few lines on what a Private Life/ Human Rights-based
+                Applications is.
               </Text>
             </Box>
           </Box>
@@ -113,7 +114,7 @@ const HumanRights = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* What is Spouse Visa */}
+            {/* Private Life/ Human Rights-based Applications */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -164,7 +165,7 @@ const HumanRights = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  What is a spouse visa?
+                  Private Life/ Human Rights-based Applications
                 </Text>
                 {!spouseState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -196,13 +197,10 @@ const HumanRights = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    The spouse visa enables an eligible foreign national to join
-                    and live with their partner in the UK if they are a British
-                    citizen or settled person e.g. a person with Indefinite
-                    Leave to Remain or EU Settled Status. You must apply for a
-                    Spouse Visa to live in the UK with your partner. Eligible
-                    applicants include those who are married, in a civil
-                    partnership, or unmarried.
+                    Lumine Solicitors can assist individuals in making private
+                    life and Human rights-based applications in accordance with
+                    Articles 3 or 8 of the European Convention on Human Rights
+                    (ECHR) for the right to remain in the UK.
                   </Text>
 
                   <Text
@@ -218,9 +216,129 @@ const HumanRights = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Lumine Solicitors’ team of highly experienced professionals
-                    is here to expertly guide you through the spouse visa
-                    application process.
+                    <strong>
+                      Article 3: <u>Prohibition of torture</u>
+                    </strong>
+                    , of the European Convention on Human Rights, says:
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <strong>
+                      ‘No one shall be subjected to torture or to inhuman or
+                      degrading treatment or punishment.’
+                    </strong>
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    You may be able to make a human rights claim under this if
+                    the British government attempts to remove a person from the
+                    UK back to their home country, where there is a genuine risk
+                    of persecution or serious harm.
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <strong>
+                      Article 8: <u>Private life</u>
+                    </strong>
+                    , of the European Convention on Human Rights, says:
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <strong>
+                      8 (1) ‘Everyone has the right to respect for his private
+                      and family life, his home, and his correspondence.’
+                    </strong>
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <strong>
+                      8 (2) ‘There shall be no interference by a public
+                      authority with the exercise of this right except such as
+                      is in accordance with the law and is necessary in a
+                      democratic society in the interests of national security,
+                      public safety, or the economic well-being of the country,
+                      for the prevention of disorder or crime, for the
+                      protection of health or morals, or for the protection of
+                      the rights and freedoms of others.’
+                    </strong>
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    You may be able to make a human rights claim under Article 8
+                    of the ECHR if you have developed strong family ties and
+                    have resided in the UK for many years.
                   </Text>
                 </VStack>
               )}
@@ -309,9 +427,8 @@ const HumanRights = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    To make a successful application for a UK spouse visa
-                    through Lumine Solicitors, you will need to meet the
-                    eligibility requirements, including the following:
+                    Applications based on human rights can be submitted to the
+                    Home Office in many ways including:
                   </Text>
 
                   <List.Root
@@ -328,113 +445,22 @@ const HumanRights = () => {
                     fontFamily={"CeraRoundPro"}
                   >
                     <List.Item>
-                      You are in a genuine and subsisting relationship with your
-                      partner
+                      For leave to remain as a parent of a child in the UK
                     </List.Item>
                     <List.Item>
-                      Your and your partner’s income must be at least £29,000
-                      (if your application was submitted prior to 11 April 2024,
-                      the old income requirement of £18,600 will apply)
+                      For ILR as a child under 18 who has lived in the UK for at
+                      least 7 years
                     </List.Item>
                     <List.Item>
-                      Your partner fulfils the English Language requirements
+                      For ILR as someone aged 18 or above but under 25 who has
+                      lived in the UK for at least ½ their life with continuous
+                      residence.
                     </List.Item>
                     <List.Item>
-                      You and your partner have adequate accommodation in the UK
+                      For ILR on the basis of 20 years of long residence in the
+                      UK
                     </List.Item>
                   </List.Root>
-                </VStack>
-              )}
-            </Box>
-
-            {/* Application Process */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !applicationState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
-                onClick={() => setApplicationState(!applicationState)}
-              >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  Application Process
-                </Text>
-                {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
-
-              {applicationState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    If you’re applying for the first time and your partner is
-                    outside the UK, they will complete the online application
-                    from their home country or their current residence. Upon
-                    approval, your partner’s visa will be valid for 33 months.
-                  </Text>
 
                   <Text
                     textAlign={"left"}
@@ -448,125 +474,10 @@ const HumanRights = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    fontStyle={"italic"}
                   >
-                    Before the 33-month visa period ends, you’ll need to apply
-                    to extend your partner’s visa. This extension can be
-                    completed within the UK, allowing your partner to remain in
-                    the country while awaiting a decision. After continuously
-                    living in the UK for five years, your partner can apply for
-                    Indefinite Leave to Remain, granting them permanent
-                    residency.
-                  </Text>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    If you’re a British citizen, your partner can also apply for
-                    British citizenship immediately after receiving Indefinite
-                    Leave to Remain.
-                  </Text>
-                </VStack>
-              )}
-            </Box>
-
-            {/* Decision */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !decisionState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={decisionState && "black"}
-                onClick={() => setDecisionState(!decisionState)}
-              >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  How long does it take to reach a decision?
-                </Text>
-                {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
-
-              {decisionState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    UK Spouse Visa applications submitted from outside of the UK
-                    typically take around 12 weeks (equivalent to 3 months) to
-                    be processed. However, if the application is made from
-                    within the UK, the processing time is normally between 6 and
-                    8 weeks.
+                    Please be aware that depending on the path you choose, the
+                    application process differs.
                   </Text>
                 </VStack>
               )}
@@ -655,14 +566,34 @@ const HumanRights = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    At Lumine Solicitors, we strive to simplify the visa
-                    procedure for you. Whether it’s applying for a UK spouse
-                    visa, extending your existing visa, or bringing dependents
-                    along, we’re here to assist you. With our proficient team of
-                    immigration solicitors, we provide professional advice on
-                    selecting the appropriate visa type and guarantee a
-                    hassle-free application process.
+                    Lumine solicitors can help you by:
                   </Text>
+
+                  <List.Root
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <List.Item>
+                      Offering expert advice and answer any questions you may
+                      have regarding your private life/ human rights-based
+                      application
+                    </List.Item>
+                    <List.Item>
+                      Preparing and submitting applications on your behalf
+                    </List.Item>
+                    <List.Item>
+                      Obtaining relevant evidential documentation
+                    </List.Item>
+                  </List.Root>
 
                   <Text
                     textAlign={"left"}

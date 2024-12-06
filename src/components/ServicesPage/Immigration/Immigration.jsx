@@ -512,7 +512,6 @@ const Immigration = () => {
               Indefinite Leave to Remain{" "}
             </GridItem>
 
-            {/* THIS NEEDS TO BE DONE */}
             {/* Private Life/Humans Right-Based Applications */}
             <GridItem
               as={Link}
