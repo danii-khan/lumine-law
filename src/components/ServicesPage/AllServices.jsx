@@ -530,7 +530,7 @@ const AllServices = () => {
                 </Link>
               </GridItem>
               {/* New Service */}
-              <GridItem
+              {/* <GridItem
                 width={{ xs: "100%", lg: "80%", xl: "80%", "2xl": "80%" }}
                 height={{
                   xs: "125px",
@@ -600,13 +600,13 @@ const AllServices = () => {
                     <HiOutlineArrowLongRight size={"3em"} />
                   </VStack>
                 </Box>
-              </GridItem>
+              </GridItem> */}
               {/* empty grid */}
               <GridItem display={{ xs: "none", lg: "grid" }}>
                 {/* empty */}
               </GridItem>
               {/* New Service */}
-              <GridItem
+              {/* <GridItem
                 width={{ xs: "100%", lg: "80%", xl: "80%", "2xl": "80%" }}
                 height={{
                   xs: "125px",
@@ -676,7 +676,7 @@ const AllServices = () => {
                     <HiOutlineArrowLongRight size={"3em"} />
                   </VStack>
                 </Box>
-              </GridItem>
+              </GridItem> */}
             </Grid>
           </Box>
 

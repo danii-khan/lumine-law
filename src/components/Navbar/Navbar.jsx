@@ -75,14 +75,14 @@ const ServicesMegaMenu = () => {
         className={`${styles.megaMenuContainer} ${isOpen ? styles.open : ""}`}
       >
         <HStack
-          justifyContent={"center"}
+          justifyContent={"space-evenly"}
           alignItems={"flex-start"}
           py={"10px"}
-          gap={{ xs: "2.5px", sm: "5px", md: "7.5px", xl: "12.5px" }}
+          gap={{ xs: "10px", sm: "15px", md: "25px", xl: "50px" }}
         >
           {/* Immigration Services */}
           <VStack
-            width="15%"
+            // width="30%"
             alignItems={"flex-start"}
             justifyContent={"center"}
             gap={{
@@ -296,109 +296,9 @@ const ServicesMegaMenu = () => {
             </Link>
           </VStack>
 
-          {/* Residential & Commercial Property*/}
-          <VStack
-            width="22%"
-            alignItems={"flex-start"}
-            gap={{
-              // base: {"20px"}
-              xs: "10px",
-              sm: "12px",
-              md: "14px",
-              lg: "16px",
-              xl: "18px",
-              "2xl": "20px",
-            }}
-          >
-            {/* Header */}
-
-            <Text
-              fontSize={{
-                // base: {"18px"}
-                xs: "8px",
-                sm: "10px",
-                md: "12px",
-                lg: "9px",
-                xl: "11px",
-                "2xl": "16px",
-              }}
-              fontWeight={700}
-              className={styles.menuHeader}
-            >
-              Residential and Commercial Property
-            </Text>
-            {/* List */}
-          </VStack>
-
-          {/* Dispute Resolution and Civil Litigation */}
-          <VStack
-            width="22%"
-            alignItems={"flex-start"}
-            gap={{
-              // base: {"20px"}
-              xs: "10px",
-              sm: "12px",
-              md: "14px",
-              lg: "16px",
-              xl: "18px",
-              "2xl": "20px",
-            }}
-          >
-            {/* Header */}
-            <Text
-              fontSize={{
-                // base: {"18px"}
-                xs: "8px",
-                sm: "10px",
-                md: "12px",
-                lg: "9px",
-                xl: "11px",
-                "2xl": "16px",
-              }}
-              fontWeight={700}
-              className={styles.menuHeader}
-            >
-              Dispute Resolution and Civil Litigation
-            </Text>
-            {/* List */}
-          </VStack>
-
-          {/* Landlord and Tenant Disputes */}
-          <VStack
-            width="20%"
-            alignItems={"flex-start"}
-            gap={{
-              // base: {"20px"}
-              xs: "10px",
-              sm: "12px",
-              md: "14px",
-              lg: "16px",
-              xl: "18px",
-              "2xl": "20px",
-            }}
-          >
-            {/* Header */}
-            <Text
-              fontSize={{
-                // base: {"18px"}
-                xs: "8px",
-                sm: "10px",
-                md: "12px",
-                lg: "9px",
-                xl: "11px",
-                "2xl": "16px",
-              }}
-              fontWeight={700}
-              className={styles.menuHeader}
-            >
-              Landlord and Tenant Disputes
-            </Text>
-            {/* List */}
-          </VStack>
-
           {/* Family and Children */}
           <VStack
-            width="16%"
+            // width="30%"
             alignItems={"flex-start"}
             gap={{
               // base: {"20px"}
@@ -572,7 +472,7 @@ const ServicesMegaMenu = () => {
 
           {/* Explore More */}
           <VStack
-            width="16%"
+            // width="30%"
             alignItems={"flex-start"}
             gap={{
               // base: {"20px"}
@@ -610,14 +510,14 @@ const ServicesMegaMenu = () => {
             {/* Residential & Commercial  */}
             <Text
               as={Link}
-              to={"/lumine-law/all-services/family/divorce"}
+              to={"/lumine-law/all-services/residential-commercial"}
               fontSize={{
                 // base: {"15px"}
-                lg: "8px",
-                xl: "10px",
-                "2xl": "15px",
+                lg: "12px",
+                xl: "14px",
+                "2xl": "16px",
               }}
-              fontWeight={400}
+              fontWeight={600}
               className={styles.menuText}
               textAlign={"left"}
               _hover={{ borderBottom: "2px solid #beab7c" }}
@@ -628,14 +528,14 @@ const ServicesMegaMenu = () => {
             {/* Dispute Resolution & Civil Litigation */}
             <Text
               as={Link}
-              to={"/lumine-law/all-services/family/nuptial-agreement"}
+              to={"/lumine-law/all-services/dispute-resolution"}
               fontSize={{
                 // base: {"15px"}
-                lg: "8px",
-                xl: "10px",
-                "2xl": "15px",
+                lg: "12px",
+                xl: "14px",
+                "2xl": "16px",
               }}
-              fontWeight={400}
+              fontWeight={600}
               className={styles.menuText}
               textAlign={"left"}
               _hover={{ borderBottom: "2px solid #beab7c" }}
@@ -646,14 +546,14 @@ const ServicesMegaMenu = () => {
             {/* Landlord & Tenant Disputes */}
             <Text
               as={Link}
-              to={"/lumine-law/all-services/family/child-arrangements"}
+              to={"/lumine-law/all-services/landlord-tenant"}
               fontSize={{
                 // base: {"15px"}
-                lg: "8px",
-                xl: "10px",
-                "2xl": "15px",
+                lg: "12px",
+                xl: "14px",
+                "2xl": "16px",
               }}
-              fontWeight={400}
+              fontWeight={600}
               className={styles.menuText}
               textAlign={"left"}
               _hover={{ borderBottom: "2px solid #beab7c" }}

@@ -514,6 +514,7 @@ const LandingPage = () => {
                 color: "#beab7c",
               }}
               transition={"all 0.3s ease"}
+              zIndex={999}
             >
               <Link
                 to={"/lumine-law/all-services/immigration"}
@@ -561,25 +562,33 @@ const LandingPage = () => {
               }}
               transition={"all 0.3s ease"}
             >
-              <VStack>
-                <Image src={ResidentialIcon} height={"50px"} />
-                <Text
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "22px",
-                  }}
-                  fontWeight={400}
-                  fontFamily={"CeraRoundPro"}
-                  width={"80%"}
-                  color={"white"}
-                >
-                  Residential and Commercial Property{" "}
-                </Text>
-              </VStack>
+              <Link
+                to={"/lumine-law/all-services/residential-commercial"}
+                style={{ textDecoration: "none" }}
+                p={0}
+                m={0}
+                width={"80%"}
+              >
+                <VStack>
+                  <Image src={ResidentialIcon} height={"50px"} />
+                  <Text
+                    fontSize={{
+                      xs: "14px",
+                      sm: "14px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "18px",
+                      "2xl": "22px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                    width={"80%"}
+                    color={"white"}
+                  >
+                    Residential and Commercial Property{" "}
+                  </Text>
+                </VStack>
+              </Link>
             </GridItem>
 
             {/* 3 */}
@@ -600,25 +609,33 @@ const LandingPage = () => {
               }}
               transition={"all 0.3s ease"}
             >
-              <VStack>
-                <Image src={DisputeIcon} height={"50px"} />
-                <Text
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "26px",
-                  }}
-                  fontWeight={400}
-                  fontFamily={"CeraRoundPro"}
-                  width={"80%"}
-                  color={"white"}
-                >
-                  Dispute Resolution and Civil Litigation{" "}
-                </Text>
-              </VStack>
+              <Link
+                to={"/lumine-law/all-services/dispute-resolution"}
+                style={{ textDecoration: "none" }}
+                p={0}
+                m={0}
+                width={"80%"}
+              >
+                <VStack>
+                  <Image src={DisputeIcon} height={"50px"} />
+                  <Text
+                    fontSize={{
+                      xs: "14px",
+                      sm: "14px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "18px",
+                      "2xl": "26px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                    width={"80%"}
+                    color={"white"}
+                  >
+                    Dispute Resolution and Civil Litigation{" "}
+                  </Text>
+                </VStack>
+              </Link>
             </GridItem>
 
             {/* 4 */}
@@ -639,25 +656,33 @@ const LandingPage = () => {
               }}
               transition={"all 0.3s ease"}
             >
-              <VStack>
-                <Image src={LandlordIcon} height={"50px"} />
-                <Text
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "26px",
-                  }}
-                  fontWeight={400}
-                  fontFamily={"CeraRoundPro"}
-                  width={"80%"}
-                  color={"white"}
-                >
-                  Landlord and Tenant Disputes{" "}
-                </Text>
-              </VStack>
+              <Link
+                to={"/lumine-law/all-services/landlord-tenant"}
+                style={{ textDecoration: "none" }}
+                p={0}
+                m={0}
+                width={"80%"}
+              >
+                <VStack>
+                  <Image src={LandlordIcon} height={"50px"} />
+                  <Text
+                    fontSize={{
+                      xs: "14px",
+                      sm: "14px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "18px",
+                      "2xl": "26px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                    width={"80%"}
+                    color={"white"}
+                  >
+                    Landlord and Tenant Disputes{" "}
+                  </Text>
+                </VStack>
+              </Link>
             </GridItem>
 
             {/* 5 */}
@@ -677,6 +702,7 @@ const LandingPage = () => {
                 color: "#beab7c",
               }}
               transition={"all 0.3s ease"}
+              zIndex={999}
             >
               <Link
                 to={"/lumine-law/all-services/family-and-children"}
@@ -708,7 +734,7 @@ const LandingPage = () => {
             </GridItem>
 
             {/* 6 */}
-            <GridItem
+            {/* <GridItem
               border={"1px solid white"}
               backgroundColor={"rgba(0, 0, 0, 0.6)"}
               height={"100%"}
@@ -741,10 +767,10 @@ const LandingPage = () => {
               >
                 New Service
               </Text>
-            </GridItem>
+            </GridItem> */}
 
             {/* 7 */}
-            <GridItem
+            {/* <GridItem
               border={"1px solid white"}
               backgroundColor={"rgba(0, 0, 0, 0.6)"}
               height={"100%"}
@@ -777,7 +803,7 @@ const LandingPage = () => {
               >
                 New Service{" "}
               </Text>
-            </GridItem>
+            </GridItem> */}
 
             {/* 8 */}
             <GridItem
