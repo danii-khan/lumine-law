@@ -247,48 +247,53 @@ const AllServices = () => {
                   transition: "all 0.5s ease",
                 }}
               >
-                <Box
-                  height={"100%"}
-                  display={"flex"}
-                  flexFlow={"column"}
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={"10px"}
+                <Link
+                  to={"/lumine-law/all-services/residential-commercial"}
+                  style={{ textDecoration: "none" }}
                 >
-                  <Text
-                    fontSize={{
-                      xs: "11px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "20px",
-                    }}
-                    fontFamily={"CeraRoundPro"}
-                    fontWeight={500}
-                    textAlign={"left"}
-                  >
-                    Residential & Commercial Property
-                  </Text>
-                  <VStack
-                    width={"100%"}
+                  <Box
                     height={"100%"}
-                    justifyContent={"space-between"}
+                    display={"flex"}
+                    flexFlow={"column"}
+                    justifyContent={"center"}
                     alignItems={"flex-start"}
+                    gap={"10px"}
                   >
                     <Text
                       fontSize={{
-                        xs: "10px",
-                        lg: "12px",
-                        xl: "13px",
-                        "2xl": "16px",
+                        xs: "11px",
+                        lg: "14px",
+                        xl: "16px",
+                        "2xl": "20px",
                       }}
                       fontFamily={"CeraRoundPro"}
-                      fontWeight={400}
+                      fontWeight={500}
+                      textAlign={"left"}
                     >
-                      A lil para about what this service is{" "}
+                      Residential & Commercial Property
                     </Text>
-                    <HiOutlineArrowLongRight size={"3em"} />
-                  </VStack>
-                </Box>
+                    <VStack
+                      width={"100%"}
+                      height={"100%"}
+                      justifyContent={"space-between"}
+                      alignItems={"flex-start"}
+                    >
+                      <Text
+                        fontSize={{
+                          xs: "10px",
+                          lg: "12px",
+                          xl: "13px",
+                          "2xl": "16px",
+                        }}
+                        fontFamily={"CeraRoundPro"}
+                        fontWeight={400}
+                      >
+                        A lil para about what this service is{" "}
+                      </Text>
+                      <HiOutlineArrowLongRight size={"3em"} />
+                    </VStack>
+                  </Box>
+                </Link>
               </GridItem>
               {/* Dispute Resolution */}
               <GridItem
@@ -318,50 +323,55 @@ const AllServices = () => {
                   transition: "all 0.5s ease",
                 }}
               >
-                <Box
-                  height={"100%"}
-                  display={"flex"}
-                  flexFlow={"column"}
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={"10px"}
+                <Link
+                  to={"/lumine-law/all-services/dispute-resolution"}
+                  style={{ textDecoration: "none" }}
                 >
-                  <Text
-                    fontSize={{
-                      xs: "11px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "20px",
-                    }}
-                    fontFamily={"CeraRoundPro"}
-                    fontWeight={500}
-                    textAlign={"left"}
-                    color={"white"}
-                  >
-                    Dispute & Resolution Civil Litigation
-                  </Text>
-                  <VStack
-                    width={"100%"}
+                  <Box
                     height={"100%"}
-                    justifyContent={"space-between"}
+                    display={"flex"}
+                    flexFlow={"column"}
+                    justifyContent={"center"}
                     alignItems={"flex-start"}
+                    gap={"10px"}
                   >
                     <Text
                       fontSize={{
-                        xs: "10px",
-                        lg: "12px",
-                        xl: "13px",
-                        "2xl": "16px",
+                        xs: "11px",
+                        lg: "14px",
+                        xl: "16px",
+                        "2xl": "20px",
                       }}
                       fontFamily={"CeraRoundPro"}
-                      fontWeight={400}
+                      fontWeight={500}
+                      textAlign={"left"}
                       color={"white"}
                     >
-                      A lil para about what this service is{" "}
+                      Dispute & Resolution Civil Litigation
                     </Text>
-                    <HiOutlineArrowLongRight size={"3em"} />
-                  </VStack>
-                </Box>
+                    <VStack
+                      width={"100%"}
+                      height={"100%"}
+                      justifyContent={"space-between"}
+                      alignItems={"flex-start"}
+                    >
+                      <Text
+                        fontSize={{
+                          xs: "10px",
+                          lg: "12px",
+                          xl: "13px",
+                          "2xl": "16px",
+                        }}
+                        fontFamily={"CeraRoundPro"}
+                        fontWeight={400}
+                        color={"white"}
+                      >
+                        A lil para about what this service is{" "}
+                      </Text>
+                      <HiOutlineArrowLongRight size={"3em"} />
+                    </VStack>
+                  </Box>
+                </Link>
               </GridItem>
               {/* Landlord + Tenant */}
               <GridItem
@@ -391,50 +401,55 @@ const AllServices = () => {
                   transition: "all 0.5s ease",
                 }}
               >
-                <Box
-                  height={"100%"}
-                  display={"flex"}
-                  flexFlow={"column"}
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={"10px"}
+                <Link
+                  to="/lumine-law/all-services/landlord-tenant"
+                  style={{ textDecoration: "none" }}
                 >
-                  <Text
-                    fontSize={{
-                      xs: "11px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "20px",
-                    }}
-                    fontFamily={"CeraRoundPro"}
-                    fontWeight={500}
-                    textAlign={"left"}
-                    color={"white"}
-                  >
-                    Landlord & Tenant Disputes
-                  </Text>
-                  <VStack
-                    width={"100%"}
+                  <Box
                     height={"100%"}
-                    justifyContent={"space-between"}
+                    display={"flex"}
+                    flexFlow={"column"}
+                    justifyContent={"center"}
                     alignItems={"flex-start"}
+                    gap={"10px"}
                   >
                     <Text
                       fontSize={{
-                        xs: "10px",
-                        lg: "12px",
-                        xl: "13px",
-                        "2xl": "16px",
+                        xs: "11px",
+                        lg: "14px",
+                        xl: "16px",
+                        "2xl": "20px",
                       }}
                       fontFamily={"CeraRoundPro"}
-                      fontWeight={400}
+                      fontWeight={500}
+                      textAlign={"left"}
                       color={"white"}
                     >
-                      A lil para about what this service is{" "}
+                      Landlord & Tenant Disputes
                     </Text>
-                    <HiOutlineArrowLongRight size={"3em"} />
-                  </VStack>
-                </Box>
+                    <VStack
+                      width={"100%"}
+                      height={"100%"}
+                      justifyContent={"space-between"}
+                      alignItems={"flex-start"}
+                    >
+                      <Text
+                        fontSize={{
+                          xs: "10px",
+                          lg: "12px",
+                          xl: "13px",
+                          "2xl": "16px",
+                        }}
+                        fontFamily={"CeraRoundPro"}
+                        fontWeight={400}
+                        color={"white"}
+                      >
+                        A lil para about what this service is{" "}
+                      </Text>
+                      <HiOutlineArrowLongRight size={"3em"} />
+                    </VStack>
+                  </Box>
+                </Link>
               </GridItem>
               {/* Family + Children */}
               <GridItem

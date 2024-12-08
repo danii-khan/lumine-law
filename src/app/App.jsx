@@ -33,6 +33,9 @@ import ConsentOrders from "../components/ServicesPage/Family/ConsentOrders";
 import FinancialStatements from "../components/ServicesPage/Family/FinancialSettlements";
 import DomesticViolence from "../components/ServicesPage/Family/DomesticViolence";
 import Adoption from "../components/ServicesPage/Family/Adoption";
+import Residential from "../components/ServicesPage/Residential/Residential";
+import DisputeResolution from "../components/ServicesPage/Dispute/DisputeResolution";
+import Landlord from "../components/ServicesPage/Landlord/Landlord";
 
 function App() {
   return (
@@ -355,6 +358,36 @@ function App() {
             element={
               <PageTransition>
                 <Adoption />
+              </PageTransition>
+            }
+          />
+
+          {/* Residential & Commercial Property */}
+          <Route
+            path="/lumine-law/all-services/residential-commercial"
+            element={
+              <PageTransition>
+                <Residential />
+              </PageTransition>
+            }
+          />
+
+          {/* Dispute Resolution */}
+          <Route
+            path="/lumine-law/all-services/dispute-resolution"
+            element={
+              <PageTransition>
+                <DisputeResolution />
+              </PageTransition>
+            }
+          />
+
+          {/* Landlord & Tenant Dispute */}
+          <Route
+            path="/lumine-law/all-services/landlord-tenant"
+            element={
+              <PageTransition>
+                <Landlord />
               </PageTransition>
             }
           />

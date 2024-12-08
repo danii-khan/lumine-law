@@ -114,7 +114,7 @@ const ServicesMegaMenu = () => {
                 className={styles.menuHeader}
                 _hover={{ borderBottom: "2px solid #beab7c" }}
               >
-                Immigration Services
+                Immigration
               </Text>
             </Link>
             {/* List */}
@@ -411,24 +411,32 @@ const ServicesMegaMenu = () => {
             }}
           >
             {/* Header */}
-            <Text
-              fontSize={{
-                // base: {"18px"}
-                xs: "8px",
-                sm: "10px",
-                md: "10px",
-                lg: "9px",
-                xl: "11px",
-                "2xl": "16px",
-              }}
-              fontWeight={700}
-              className={styles.menuHeader}
+            <Link
+              to={"/lumine-law/all-services/family-and-children"}
+              style={{ textDecoration: "none" }}
             >
-              Family and Children
-            </Text>
+              <Text
+                fontSize={{
+                  // base: {"18px"}
+                  xs: "8px",
+                  sm: "10px",
+                  md: "10px",
+                  lg: "9px",
+                  xl: "11px",
+                  "2xl": "16px",
+                }}
+                fontWeight={700}
+                className={styles.menuHeader}
+                _hover={{ borderBottom: "2px solid #beab7c" }}
+              >
+                Family and Children
+              </Text>
+            </Link>
             {/* List */}
             {/* Divorce */}
             <Text
+              as={Link}
+              to={"/lumine-law/all-services/family/divorce"}
               fontSize={{
                 // base: {"15px"}
                 lg: "8px",
@@ -444,6 +452,8 @@ const ServicesMegaMenu = () => {
 
             {/* Pre Nuptial Agreement */}
             <Text
+              as={Link}
+              to={"/lumine-law/all-services/family/nuptial-agreement"}
               fontSize={{
                 // base: {"15px"}
                 lg: "8px",
@@ -459,6 +469,8 @@ const ServicesMegaMenu = () => {
 
             {/* Child Arrangements */}
             <Text
+              as={Link}
+              to={"/lumine-law/all-services/family/child-arrangements"}
               fontSize={{
                 // base: {"15px"}
                 lg: "8px",
@@ -470,6 +482,183 @@ const ServicesMegaMenu = () => {
               textAlign={"left"}
             >
               Child Arrangements{" "}
+            </Text>
+
+            {/* Parental Responsibility */}
+            <Text
+              as={Link}
+              to={"/lumine-law/all-services/family/parental-responsbility"}
+              fontSize={{
+                // base: {"15px"}
+                lg: "8px",
+                xl: "10px",
+                "2xl": "15px",
+              }}
+              fontWeight={400}
+              className={styles.menuText}
+              textAlign={"left"}
+            >
+              Parental Responsibility
+            </Text>
+
+            {/* Consent Orders */}
+            <Text
+              as={Link}
+              to={"/lumine-law/all-services/family/consent-orders"}
+              fontSize={{
+                // base: {"15px"}
+                lg: "8px",
+                xl: "10px",
+                "2xl": "15px",
+              }}
+              fontWeight={400}
+              className={styles.menuText}
+              textAlign={"left"}
+            >
+              Consent Orders
+            </Text>
+
+            {/* Financial Settlements */}
+            <Text
+              as={Link}
+              to={"/lumine-law/all-services/family/financial-settlements"}
+              fontSize={{
+                // base: {"15px"}
+                lg: "8px",
+                xl: "10px",
+                "2xl": "15px",
+              }}
+              fontWeight={400}
+              className={styles.menuText}
+              textAlign={"left"}
+            >
+              Financial Settlements
+            </Text>
+
+            {/* Domestic Violence */}
+            <Text
+              as={Link}
+              to={"/lumine-law/all-services/family/domestic-violence"}
+              fontSize={{
+                // base: {"15px"}
+                lg: "8px",
+                xl: "10px",
+                "2xl": "15px",
+              }}
+              fontWeight={400}
+              className={styles.menuText}
+              textAlign={"left"}
+            >
+              Domestic Violence
+            </Text>
+
+            {/* Adoption and Surrogacy */}
+            <Text
+              as={Link}
+              to={"/lumine-law/all-services/family/adoption-surrogacy"}
+              fontSize={{
+                // base: {"15px"}
+                lg: "8px",
+                xl: "10px",
+                "2xl": "15px",
+              }}
+              fontWeight={400}
+              className={styles.menuText}
+              textAlign={"left"}
+            >
+              Adoption and Surrogacy
+            </Text>
+          </VStack>
+
+          {/* Explore More */}
+          <VStack
+            width="16%"
+            alignItems={"flex-start"}
+            gap={{
+              // base: {"20px"}
+              xs: "10px",
+              sm: "12px",
+              md: "14px",
+              lg: "16px",
+              xl: "18px",
+              "2xl": "20px",
+            }}
+          >
+            {/* Header */}
+            <Link
+              to={"/lumine-law/all-services"}
+              style={{ textDecoration: "none" }}
+            >
+              <Text
+                fontSize={{
+                  // base: {"18px"}
+                  xs: "8px",
+                  sm: "10px",
+                  md: "10px",
+                  lg: "9px",
+                  xl: "11px",
+                  "2xl": "16px",
+                }}
+                fontWeight={700}
+                className={styles.menuHeader}
+                _hover={{ borderBottom: "2px solid #beab7c" }}
+              >
+                Explore More
+              </Text>
+            </Link>
+            {/* List */}
+            {/* Residential & Commercial  */}
+            <Text
+              as={Link}
+              to={"/lumine-law/all-services/family/divorce"}
+              fontSize={{
+                // base: {"15px"}
+                lg: "8px",
+                xl: "10px",
+                "2xl": "15px",
+              }}
+              fontWeight={400}
+              className={styles.menuText}
+              textAlign={"left"}
+              _hover={{ borderBottom: "2px solid #beab7c" }}
+            >
+              Residential and Commercial Property
+            </Text>
+
+            {/* Dispute Resolution & Civil Litigation */}
+            <Text
+              as={Link}
+              to={"/lumine-law/all-services/family/nuptial-agreement"}
+              fontSize={{
+                // base: {"15px"}
+                lg: "8px",
+                xl: "10px",
+                "2xl": "15px",
+              }}
+              fontWeight={400}
+              className={styles.menuText}
+              textAlign={"left"}
+              _hover={{ borderBottom: "2px solid #beab7c" }}
+            >
+              Dispute Resolution and Civil Litigation
+            </Text>
+
+            {/* Landlord & Tenant Disputes */}
+            <Text
+              as={Link}
+              to={"/lumine-law/all-services/family/child-arrangements"}
+              fontSize={{
+                // base: {"15px"}
+                lg: "8px",
+                xl: "10px",
+                "2xl": "15px",
+              }}
+              fontWeight={400}
+              className={styles.menuText}
+              textAlign={"left"}
+              _hover={{ borderBottom: "2px solid #beab7c" }}
+            >
+              Landlord and Tenant Disputes
             </Text>
           </VStack>
         </HStack>
