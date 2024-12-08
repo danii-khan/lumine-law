@@ -36,8 +36,8 @@ const Dispute = () => {
         width="100vw"
         maxWidth="100%"
         minHeight="100vh"
-        // backgroundColor={"#a2cce0"}
-        backgroundColor={"white"}
+        backgroundColor={"#011a29"}
+        // backgroundColor={"white"}
         overflow="auto"
         m={0}
         p={0}
@@ -86,7 +86,7 @@ const Dispute = () => {
             width={"100%"}
             display={"flex"}
             flexFlow={"column"}
-            color={"black"}
+            color={"white"}
           >
             {/* Heading */}
             <Box
@@ -206,6 +206,7 @@ const Dispute = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    color={"white"}
                   >
                     Dispute resolution solicitors in London offer services to
                     settle disputes between individuals. We can assist in the
@@ -224,6 +225,7 @@ const Dispute = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    color={"white"}
                   >
                     <List.Item>Debt matters</List.Item>
                     <List.Item>Contract disputes</List.Item>
@@ -245,6 +247,7 @@ const Dispute = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    color={"white"}
                   >
                     We will clearly set out our fee structure from the outset
                     and we will ensure you are provided the best possible
@@ -336,6 +339,7 @@ const Dispute = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    color={"white"}
                   >
                     When it comes to businesses we know that contracts form the
                     basis of commercial relationships, We adopt a commercially
@@ -355,6 +359,7 @@ const Dispute = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    color={"white"}
                   >
                     <List.Item>
                       Contracts for the supply of goods and services
@@ -448,6 +453,7 @@ const Dispute = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    color={"white"}
                   >
                     If your matter does become litigious we will always provide
                     you with sound commercial advice and make every effort
@@ -467,6 +473,7 @@ const Dispute = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    color={"white"}
                   >
                     For all civil litigation and dispute issues, Please do not
                     hesitate to get in touch with Lumine solicitors{" "}
@@ -495,7 +502,7 @@ const Dispute = () => {
             {/* Header */}
             <HStack justifyContent={"center"} alignItems={"center"}>
               <Text
-                color={"black"}
+                color={"white"}
                 fontSize={{
                   xs: "20px",
                   sm: "20px",
@@ -890,7 +897,7 @@ const Dispute = () => {
               width={"100%"}
             >
               <Text
-                color={"black"}
+                color={"white"}
                 fontSize={{
                   xs: "20px",
                   sm: "20px",

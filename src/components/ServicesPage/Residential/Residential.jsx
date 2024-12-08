@@ -35,8 +35,8 @@ const Residential = () => {
         width="100vw"
         maxWidth="100%"
         minHeight="100vh"
-        // backgroundColor={"#a2cce0"}
-        backgroundColor={"white"}
+        backgroundColor={"#9fabb8"}
+        // backgroundColor={"white"}
         overflow="auto"
         m={0}
         p={0}
@@ -133,7 +133,7 @@ const Residential = () => {
             >
               {/* Initial Button */}
               <HStack
-                borderTop={"1px solid #adacac"}
+                borderTop={"1px solid #000000"}
                 width={"100%"}
                 justifyContent={"space-between"}
                 px={{
@@ -171,14 +171,14 @@ const Residential = () => {
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#ffffff"}
                 >
                   Residential Property
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#ffffff"} size={"2em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#ffffff"} size={"2em"} />
                 )}
               </HStack>
 
@@ -245,7 +245,7 @@ const Residential = () => {
             >
               {/* Initial Button */}
               <HStack
-                borderY={"1px solid #adacac"}
+                borderY={"1px solid #000000"}
                 width={"100%"}
                 justifyContent={"space-between"}
                 px={{
@@ -283,14 +283,14 @@ const Residential = () => {
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#ffffff"}
                 >
                   Commercial Property
                 </Text>
                 {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#ffffff"} size={"2em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#ffffff"} size={"2em"} />
                 )}
               </HStack>
 

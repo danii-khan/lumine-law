@@ -26,18 +26,14 @@ import NewsInsightsFour from "../../../assets/landing/news-insights-four.png";
 import { AiOutlineMinus } from "react-icons/ai";
 
 const Landlord = () => {
-  const [eligibilityState, setEligibilityState] = useState(false);
-  const [applicationState, setApplicationState] = useState(false);
-  const [helpState, setHelpState] = useState(false);
-
   return (
     <>
       <Container
         width="100vw"
         maxWidth="100%"
         minHeight="100vh"
-        // backgroundColor={"#a2cce0"}
-        backgroundColor={"white"}
+        backgroundColor={"#828b8c"}
+        // backgroundColor={"white"}
         overflow="auto"
         m={0}
         p={0}
