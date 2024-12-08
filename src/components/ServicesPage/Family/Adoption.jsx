@@ -25,7 +25,7 @@ import BannerImg from "../../../assets/services/main/immigration/main-banner.png
 import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
 import { Helmet } from "react-helmet";
 
-const Divorce = () => {
+const Adoption = () => {
   const [spouseState, setSpouseState] = useState(false);
   const [eligibilityState, setEligibilityState] = useState(false);
   const [applicationState, setApplicationState] = useState(false);
@@ -47,7 +47,7 @@ const Divorce = () => {
         flexDirection="column"
       >
         <Helmet>
-          <title>Lumine Law Divorce Services</title>
+          <title>Lumine Law Adoption and Surrogacy Services</title>
         </Helmet>
 
         <Navbar />
@@ -79,7 +79,7 @@ const Divorce = () => {
               width={"90%"}
               textAlign={"left"}
             >
-              Divorce
+              Adoption and Surrogacy
             </Text>
           </Box>
 
@@ -103,9 +103,7 @@ const Divorce = () => {
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
               >
-                Lumine Solicitors experienced divorce team is here to help guide
-                you through your divorce, as well as provide services on
-                children’s arrangements and financial settlements.
+                A few lines on what Adoption and Surrogacy are
               </Text>
             </Box>
           </Box>
@@ -116,143 +114,7 @@ const Divorce = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* Eligibility Requirements */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !eligibilityState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
-                onClick={() => setEligibilityState(!eligibilityState)}
-              >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  Eligibility Requirements
-                </Text>
-                {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
-
-              {eligibilityState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    You can apply for a divorce, provided that:
-                  </Text>
-
-                  <List.Root
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    <List.Item>
-                      You have been married for at least 12 months
-                    </List.Item>
-                    <List.Item>
-                      Your marriage is legally recognised in the UK
-                    </List.Item>
-                    <List.Item>
-                      Your marriage has permanently broken down irretrievably
-                    </List.Item>
-                  </List.Root>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    As of April 6, 2022, a new law has come into effect,
-                    replacing the previous system with no fault divorce. Under
-                    this law, individuals seeking divorce or dissolution can
-                    apply jointly with their spouse or civil partner, or
-                    individually. There’s no longer a requirement to provide a
-                    reason for the marriage breakdown or to assign blame to any
-                    party. Instead, a statement confirming the irretrievable
-                    breakdown of the marriage suffices.
-                  </Text>
-                </VStack>
-              )}
-            </Box>
-
-            {/*Time taken */}
+            {/* Adoption */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -303,7 +165,7 @@ const Divorce = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  How Long does the Divorce process take?
+                  What are Child Arrangements?
                 </Text>
                 {!spouseState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -335,104 +197,9 @@ const Divorce = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Various factors, including the agreement on finances by both
-                    partners and the timely return of paperwork, can influence
-                    the duration of the divorce process. On average, divorce
-                    proceedings typically last between 6 and 8 months. We
-                    recognise the importance of completing the divorce process
-                    but advise against rushing such a significant decision to
-                    ensure client satisfaction.
-                  </Text>
-                </VStack>
-              )}
-            </Box>
-
-            {/* Child Arrangements */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !applicationState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
-                onClick={() => setApplicationState(!applicationState)}
-              >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  Child Arrangements
-                </Text>
-                {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
-
-              {applicationState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    Lumine solicitors understand how complex and sensitive the
-                    divorce process is. Thus, we offer children’s services to
-                    make your divorce process smoother, including:
+                    To adopt a child in the UK, an adoption order must be
+                    obtained, and specific requirements need to be met,
+                    including:
                   </Text>
 
                   <List.Root
@@ -445,34 +212,38 @@ const Divorce = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    fontWeight={800}
+                    fontWeight={600}
                     fontFamily={"CeraRoundPro"}
                   >
-                    <List.Item>Child arrangements</List.Item>
-                    <List.Item>Parental responsibility</List.Item>
+                    <List.Item>
+                      The child must be under the age of 18 when the adoption
+                      application is made and must never have been married.
+                    </List.Item>
+                    <List.Item>
+                      The potential adopter must be at least 21 years old.
+                    </List.Item>
+                    <List.Item>
+                      The adopter (and their partner, if applicable) must have
+                      resided in the UK for at least 1 year, unless 'domiciled'
+                      in the UK. Domicile requires at least one member of a
+                      couple to be domiciled in the UK.
+                    </List.Item>
+                    <List.Item>
+                      While marriage is not a strict requirement for adopting as
+                      a couple, a stable and enduring relationship is essential.
+                      Single individuals can also adopt.
+                    </List.Item>
+                    <List.Item>
+                      Additional immigration requirements apply for
+                      international adoption to ensure the child can enter and
+                      reside in the UK post-adoption.
+                    </List.Item>
                   </List.Root>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    Please don’t hesitate to reach out to us if you need
-                    assistance with our children’s services.
-                  </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Financial Settlement */}
+            {/* Surrogacy */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -504,10 +275,10 @@ const Divorce = () => {
                   "2xl": "10px",
                 }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !screening && "black" }}
+                _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={screening && "black"}
-                onClick={() => setScreening(!screening)}
+                backgroundColor={eligibilityState && "black"}
+                onClick={() => setEligibilityState(!eligibilityState)}
               >
                 <Text
                   textAlign={"left"}
@@ -523,16 +294,16 @@ const Divorce = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Financial Settlement
+                  Surrogacy
                 </Text>
-                {!screening ? (
+                {!eligibilityState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
                 ) : (
                   <AiOutlineMinus color={"#beab7c"} size={"2em"} />
                 )}
               </HStack>
 
-              {screening && (
+              {eligibilityState && (
                 <VStack
                   justifyContent={"center"}
                   alignItems={"flex-start"}
@@ -555,12 +326,52 @@ const Divorce = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Financial settlement is often considered one of the most
-                    difficult aspects of divorce. Therefore, Lumine Solicitors
-                    divorce team can provide you with tailored advice so you can
-                    reach a swift solution to the financial settlement in your
-                    divorce matter.
+                    A parental order, which gives legal rights over the child,
+                    must be obtained when choosing to have a child through
+                    surrogacy. A parental order terminates the surrogate’s (and
+                    their spouse’s) legal parental rights and establishes your
+                    legal status as the parents of your child conceived through
+                    surrogacy. The surrogate and her partner continue to be the
+                    legal parents until the order is approved. Here are a few of
+                    the requirements needed to obtain a parental order when
+                    having a child through surrogacy:
                   </Text>
+
+                  <List.Root
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={600}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <List.Item>
+                      The intended parent(s) must be over 18 when the order is
+                      made.
+                    </List.Item>
+                    <List.Item>
+                      The child must be biologically related to at least one of
+                      the intended parents.
+                    </List.Item>
+                    <List.Item>
+                      The intended parents must be domiciled in the UK to apply
+                      for a parental order.
+                    </List.Item>
+                    <List.Item>
+                      Consent from the surrogate and her spouse/civil partner
+                      (if applicable) is required for the parental order.
+                    </List.Item>
+                    <List.Item>
+                      The application for a parental order must be submitted
+                      within 6 months of the child's birth, although exceptional
+                      circumstances may be considered by the court.
+                    </List.Item>
+                  </List.Root>
                 </VStack>
               )}
             </Box>
@@ -648,12 +459,12 @@ const Divorce = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Lumine Solicitors dedicated team is here to provide you with
-                    stress-free guidance through the divorce process, including
-                    childcare arrangements and financial settlements. We will
-                    discuss your circumstances with you to get a better
-                    understanding of your case and explain to you the legal
-                    process and options available to you.
+                    Lumine Solicitors understand that this can seem like a
+                    complex process. Therefore, we ensure to openly discuss with
+                    you the steps required to fulfil adoption requirements or
+                    obtain a parental order. We will provide you with guidance
+                    at every turn, ensuring that you fully comprehend and are at
+                    peace with every step.
                   </Text>
 
                   <Text
@@ -669,28 +480,9 @@ const Divorce = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Whether you’re considering divorce, initiating proceedings,
-                    or dealing with disagreements over assets or child custody,
-                    you can rely on us on us to provide you with compassionate
-                    and knowledgeable guidance during this challenging time.
-                  </Text>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    For all divorce matters, Please do not hesitate to get in
-                    touch with Lumine solicitors <strong>020 3950 2246</strong>{" "}
-                    or{" "}
+                    For all adoption and surrogacy matters, Please do not
+                    hesitate to get in touch with Lumine solicitors{" "}
+                    <strong>020 3950 2246</strong> or{" "}
                     <strong>
                       <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
                     </strong>
@@ -1205,4 +997,4 @@ const Divorce = () => {
   );
 };
 
-export default Divorce;
+export default Adoption;

@@ -160,7 +160,7 @@ const Family = () => {
               {/* Pre Nuptial Agreements */}
               <GridItem
                 as={Link}
-                to={"/lumine-law/all-services/family/divorce"}
+                to={"/lumine-law/all-services/family/nuptial-agreement"}
                 color={"black"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
@@ -196,7 +196,7 @@ const Family = () => {
               {/* Child Arrangements */}
               <GridItem
                 as={Link}
-                to={"/lumine-law/all-services/family/divorce"}
+                to={"/lumine-law/all-services/family/child-arrangements"}
                 color={"black"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
@@ -226,13 +226,13 @@ const Family = () => {
                 fontFamily={"CeraRoundPro"}
                 cursor={"pointer"}
               >
-                Pre Nuptial Agreements
+                Child Arrangements
               </GridItem>
 
               {/* Parental Responsibility */}
               <GridItem
                 as={Link}
-                to={"/lumine-law/all-services/family/divorce"}
+                to={"/lumine-law/all-services/family/parental-responsbility"}
                 color={"black"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
@@ -268,7 +268,7 @@ const Family = () => {
               {/* Consent Orders */}
               <GridItem
                 as={Link}
-                to={"/lumine-law/all-services/family/divorce"}
+                to={"/lumine-law/all-services/family/consent-orders"}
                 color={"black"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
@@ -304,7 +304,7 @@ const Family = () => {
               {/* Financial Statements */}
               <GridItem
                 as={Link}
-                to={"/lumine-law/all-services/family/divorce"}
+                to={"/lumine-law/all-services/family/financial-settlements"}
                 color={"black"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
@@ -334,13 +334,13 @@ const Family = () => {
                 fontFamily={"CeraRoundPro"}
                 cursor={"pointer"}
               >
-                Financial Statements
+                Financial Settlements
               </GridItem>
 
               {/* Domestic Violence */}
               <GridItem
                 as={Link}
-                to={"/lumine-law/all-services/family/divorce"}
+                to={"/lumine-law/all-services/family/domestic-violence"}
                 color={"black"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
@@ -376,7 +376,7 @@ const Family = () => {
               {/* Adoption and Surrogacy */}
               <GridItem
                 as={Link}
-                to={"/lumine-law/all-services/family/divorce"}
+                to={"/lumine-law/all-services/family/adoption-surrogacy"}
                 color={"black"}
                 border={"1px solid black"}
                 borderRadius={"8px"}

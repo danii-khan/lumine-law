@@ -25,7 +25,7 @@ import BannerImg from "../../../assets/services/main/immigration/main-banner.png
 import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
 import { Helmet } from "react-helmet";
 
-const Divorce = () => {
+const NuptialAgreement = () => {
   const [spouseState, setSpouseState] = useState(false);
   const [eligibilityState, setEligibilityState] = useState(false);
   const [applicationState, setApplicationState] = useState(false);
@@ -47,7 +47,7 @@ const Divorce = () => {
         flexDirection="column"
       >
         <Helmet>
-          <title>Lumine Law Divorce Services</title>
+          <title>Lumine Law Pre-Nuptial Agreements Services</title>
         </Helmet>
 
         <Navbar />
@@ -79,7 +79,7 @@ const Divorce = () => {
               width={"90%"}
               textAlign={"left"}
             >
-              Divorce
+              Pre-Nuptial Agreements
             </Text>
           </Box>
 
@@ -103,9 +103,7 @@ const Divorce = () => {
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
               >
-                Lumine Solicitors experienced divorce team is here to help guide
-                you through your divorce, as well as provide services on
-                children’s arrangements and financial settlements.
+                Line about Pre-Nuptial Agreements
               </Text>
             </Box>
           </Box>
@@ -116,143 +114,7 @@ const Divorce = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* Eligibility Requirements */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !eligibilityState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
-                onClick={() => setEligibilityState(!eligibilityState)}
-              >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  Eligibility Requirements
-                </Text>
-                {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
-
-              {eligibilityState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    You can apply for a divorce, provided that:
-                  </Text>
-
-                  <List.Root
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    <List.Item>
-                      You have been married for at least 12 months
-                    </List.Item>
-                    <List.Item>
-                      Your marriage is legally recognised in the UK
-                    </List.Item>
-                    <List.Item>
-                      Your marriage has permanently broken down irretrievably
-                    </List.Item>
-                  </List.Root>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    As of April 6, 2022, a new law has come into effect,
-                    replacing the previous system with no fault divorce. Under
-                    this law, individuals seeking divorce or dissolution can
-                    apply jointly with their spouse or civil partner, or
-                    individually. There’s no longer a requirement to provide a
-                    reason for the marriage breakdown or to assign blame to any
-                    party. Instead, a statement confirming the irretrievable
-                    breakdown of the marriage suffices.
-                  </Text>
-                </VStack>
-              )}
-            </Box>
-
-            {/*Time taken */}
+            {/* What is a Pre-Nuptial Agreement? */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -303,7 +165,7 @@ const Divorce = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  How Long does the Divorce process take?
+                  What is a Pre-Nuptial Agreement?
                 </Text>
                 {!spouseState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -335,19 +197,134 @@ const Divorce = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Various factors, including the agreement on finances by both
-                    partners and the timely return of paperwork, can influence
-                    the duration of the divorce process. On average, divorce
-                    proceedings typically last between 6 and 8 months. We
-                    recognise the importance of completing the divorce process
-                    but advise against rushing such a significant decision to
-                    ensure client satisfaction.
+                    A prenup, or prenuptial agreement, is a contract agreed upon
+                    before marriage that involves creating a document that
+                    clearly defines which property and financial assets belong
+                    to each partner. In most cases, both parties will need to
+                    sign a prenuptial agreement at least 28 days before the
+                    planned wedding date. Lumine solicitors advise that the
+                    agreement is created sufficiently in advance of the marriage
+                    so parties to the agreement have time to consider the terms.
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Child Arrangements */}
+            {/* When may a Pre-Nuptial Agreement be wanted? */}
+            <Box
+              display={"flex"}
+              flexDir={"column"}
+              color={"black"}
+              width={"90%"}
+              justifyContent={"center"}
+              alignItems={"center"}
+            >
+              {/* Initial Button */}
+              <HStack
+                borderTop={"1px solid #adacac"}
+                width={"100%"}
+                justifyContent={"space-between"}
+                px={{
+                  xs: "8px",
+                  sm: "10px",
+                  md: "12px",
+                  lg: "13px",
+                  xl: "14px",
+                  "2xl": "15px",
+                }}
+                alignItems={"center"}
+                py={{
+                  xs: "4px",
+                  sm: "6px",
+                  md: "7px",
+                  lg: "8px",
+                  xl: "9px",
+                  "2xl": "10px",
+                }}
+                cursor={"pointer"}
+                _hover={{ backgroundColor: !eligibilityState && "black" }}
+                transition={"all 0.3s ease"}
+                backgroundColor={eligibilityState && "black"}
+                onClick={() => setEligibilityState(!eligibilityState)}
+              >
+                <Text
+                  textAlign={"left"}
+                  fontSize={{
+                    xs: "14px",
+                    sm: "14px",
+                    md: "16px",
+                    lg: "16px",
+                    xl: "18px",
+                    "2xl": "20px",
+                  }}
+                  fontWeight={500}
+                  fontFamily={"CeraRoundPro"}
+                  color={"#beab7c"}
+                >
+                  When may a Pre-Nuptial Agreement be wanted?
+                </Text>
+                {!eligibilityState ? (
+                  <GoPlus color={"#beab7c"} size={"2em"} />
+                ) : (
+                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                )}
+              </HStack>
+
+              {eligibilityState && (
+                <VStack
+                  justifyContent={"center"}
+                  alignItems={"flex-start"}
+                  gap={{ xs: "20px", md: "30px" }}
+                  mb={{ xs: "4px", md: "10px" }}
+                  borderTop={"1px solid #adacac"}
+                  py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
+                >
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    There are many reasons you may want a pre-nuptial agreement
+                    such as:
+                  </Text>
+
+                  <List.Root
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <List.Item>
+                      You have been married for at least 12 months
+                    </List.Item>
+                    <List.Item>
+                      Your marriage is legally recognised in the UK
+                    </List.Item>
+                    <List.Item>
+                      Your marriage has permanently broken down irretrievably
+                    </List.Item>
+                  </List.Root>
+                </VStack>
+              )}
+            </Box>
+
+            {/* Is a Pre-Nuptial Agreement legally binding? */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -398,7 +375,7 @@ const Divorce = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Child Arrangements
+                  Is a Pre-Nuptial Agreement legally binding?
                 </Text>
                 {!applicationState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -430,49 +407,16 @@ const Divorce = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Lumine solicitors understand how complex and sensitive the
-                    divorce process is. Thus, we offer children’s services to
-                    make your divorce process smoother, including:
-                  </Text>
-
-                  <List.Root
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={800}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    <List.Item>Child arrangements</List.Item>
-                    <List.Item>Parental responsibility</List.Item>
-                  </List.Root>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    Please don’t hesitate to reach out to us if you need
-                    assistance with our children’s services.
+                    Prenup agreements are not legally enforceable in England and
+                    Wales. However courts sometimes consider them important,
+                    especially when there’s a financial gap between partners.
+                    It’s wise to have one if financial situations differ.
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Financial Settlement */}
+            {/* How long does the agreement process take? */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -523,7 +467,7 @@ const Divorce = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Financial Settlement
+                  How long does the agreement process take?
                 </Text>
                 {!screening ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -555,11 +499,9 @@ const Divorce = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Financial settlement is often considered one of the most
-                    difficult aspects of divorce. Therefore, Lumine Solicitors
-                    divorce team can provide you with tailored advice so you can
-                    reach a swift solution to the financial settlement in your
-                    divorce matter.
+                    Depending on factors such as the complexity of the agreement
+                    and the availabilities of the parties, it can take several
+                    weeks to several months to complete the process.
                   </Text>
                 </VStack>
               )}
@@ -648,12 +590,9 @@ const Divorce = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Lumine Solicitors dedicated team is here to provide you with
-                    stress-free guidance through the divorce process, including
-                    childcare arrangements and financial settlements. We will
-                    discuss your circumstances with you to get a better
-                    understanding of your case and explain to you the legal
-                    process and options available to you.
+                    Lumine Solicitors family law team has expert experience in
+                    advising clients, drafting, and signing prenuptial
+                    agreements.
                   </Text>
 
                   <Text
@@ -669,28 +608,9 @@ const Divorce = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Whether you’re considering divorce, initiating proceedings,
-                    or dealing with disagreements over assets or child custody,
-                    you can rely on us on us to provide you with compassionate
-                    and knowledgeable guidance during this challenging time.
-                  </Text>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    For all divorce matters, Please do not hesitate to get in
-                    touch with Lumine solicitors <strong>020 3950 2246</strong>{" "}
-                    or{" "}
+                    For all pre-nuptial agreement matters, Please do not
+                    hesitate to get in touch with Lumine solicitors{" "}
+                    <strong>020 3950 2246</strong> or{" "}
                     <strong>
                       <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
                     </strong>
@@ -1205,4 +1125,4 @@ const Divorce = () => {
   );
 };
 
-export default Divorce;
+export default NuptialAgreement;

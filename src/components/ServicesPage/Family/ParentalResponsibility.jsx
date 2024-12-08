@@ -25,7 +25,7 @@ import BannerImg from "../../../assets/services/main/immigration/main-banner.png
 import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
 import { Helmet } from "react-helmet";
 
-const Divorce = () => {
+const ParentalResponsiblity = () => {
   const [spouseState, setSpouseState] = useState(false);
   const [eligibilityState, setEligibilityState] = useState(false);
   const [applicationState, setApplicationState] = useState(false);
@@ -47,7 +47,7 @@ const Divorce = () => {
         flexDirection="column"
       >
         <Helmet>
-          <title>Lumine Law Divorce Services</title>
+          <title>Lumine Law Parental Responsibility Services</title>
         </Helmet>
 
         <Navbar />
@@ -79,7 +79,7 @@ const Divorce = () => {
               width={"90%"}
               textAlign={"left"}
             >
-              Divorce
+              Parental Responsibility
             </Text>
           </Box>
 
@@ -103,9 +103,7 @@ const Divorce = () => {
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
               >
-                Lumine Solicitors experienced divorce team is here to help guide
-                you through your divorce, as well as provide services on
-                children’s arrangements and financial settlements.
+                A few lines on what Parental Responsibility is
               </Text>
             </Box>
           </Box>
@@ -116,143 +114,7 @@ const Divorce = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* Eligibility Requirements */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !eligibilityState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
-                onClick={() => setEligibilityState(!eligibilityState)}
-              >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  Eligibility Requirements
-                </Text>
-                {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
-
-              {eligibilityState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    You can apply for a divorce, provided that:
-                  </Text>
-
-                  <List.Root
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    <List.Item>
-                      You have been married for at least 12 months
-                    </List.Item>
-                    <List.Item>
-                      Your marriage is legally recognised in the UK
-                    </List.Item>
-                    <List.Item>
-                      Your marriage has permanently broken down irretrievably
-                    </List.Item>
-                  </List.Root>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    As of April 6, 2022, a new law has come into effect,
-                    replacing the previous system with no fault divorce. Under
-                    this law, individuals seeking divorce or dissolution can
-                    apply jointly with their spouse or civil partner, or
-                    individually. There’s no longer a requirement to provide a
-                    reason for the marriage breakdown or to assign blame to any
-                    party. Instead, a statement confirming the irretrievable
-                    breakdown of the marriage suffices.
-                  </Text>
-                </VStack>
-              )}
-            </Box>
-
-            {/*Time taken */}
+            {/* What is Parental Responsibility? */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -303,7 +165,7 @@ const Divorce = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  How Long does the Divorce process take?
+                  What is Parental Responsibility?
                 </Text>
                 {!spouseState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -335,19 +197,158 @@ const Divorce = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Various factors, including the agreement on finances by both
-                    partners and the timely return of paperwork, can influence
-                    the duration of the divorce process. On average, divorce
-                    proceedings typically last between 6 and 8 months. We
-                    recognise the importance of completing the divorce process
-                    but advise against rushing such a significant decision to
-                    ensure client satisfaction.
+                    Parental responsibility refers to all of the rights, duties,
+                    and responsibilities a parent has in relation to their
+                    child. Both parents will usually have parental
+                    responsibility and can meet it individually on a day-to-day
+                    basis, provided they do so within the terms of the order.
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Child Arrangements */}
+            {/* Who can have Parental Responsibility? */}
+            <Box
+              display={"flex"}
+              flexDir={"column"}
+              color={"black"}
+              width={"90%"}
+              justifyContent={"center"}
+              alignItems={"center"}
+            >
+              {/* Initial Button */}
+              <HStack
+                borderTop={"1px solid #adacac"}
+                width={"100%"}
+                justifyContent={"space-between"}
+                px={{
+                  xs: "8px",
+                  sm: "10px",
+                  md: "12px",
+                  lg: "13px",
+                  xl: "14px",
+                  "2xl": "15px",
+                }}
+                alignItems={"center"}
+                py={{
+                  xs: "4px",
+                  sm: "6px",
+                  md: "7px",
+                  lg: "8px",
+                  xl: "9px",
+                  "2xl": "10px",
+                }}
+                cursor={"pointer"}
+                _hover={{ backgroundColor: !eligibilityState && "black" }}
+                transition={"all 0.3s ease"}
+                backgroundColor={eligibilityState && "black"}
+                onClick={() => setEligibilityState(!eligibilityState)}
+              >
+                <Text
+                  textAlign={"left"}
+                  fontSize={{
+                    xs: "14px",
+                    sm: "14px",
+                    md: "16px",
+                    lg: "16px",
+                    xl: "18px",
+                    "2xl": "20px",
+                  }}
+                  fontWeight={500}
+                  fontFamily={"CeraRoundPro"}
+                  color={"#beab7c"}
+                >
+                  Who can have Parental Responsibility?
+                </Text>
+                {!eligibilityState ? (
+                  <GoPlus color={"#beab7c"} size={"2em"} />
+                ) : (
+                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                )}
+              </HStack>
+
+              {eligibilityState && (
+                <VStack
+                  justifyContent={"center"}
+                  alignItems={"flex-start"}
+                  gap={{ xs: "20px", md: "30px" }}
+                  mb={{ xs: "4px", md: "10px" }}
+                  borderTop={"1px solid #adacac"}
+                  py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
+                >
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    Parental responsibility is typically shared by both parents,
+                    allowing them to make day-to-day decisions within the terms
+                    of the order. The following people may have parental
+                    responsibility:
+                  </Text>
+
+                  <List.Root
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={600}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <List.Item>
+                      The mother of a child has Parental Responsibility from
+                      birth.
+                    </List.Item>
+                    <List.Item>
+                      The father will also have Parental Responsibility if he is
+                      married to the child’s mother OR if he is listed on the
+                      birth certificate and the child was born after 1 December
+                      2003, OR if he signs a Parental Responsibility agreement
+                      with the mother.
+                    </List.Item>
+                    <List.Item>
+                      In cases of adoption, both parents have Parental
+                      Responsibility.
+                    </List.Item>
+                    <List.Item>
+                      In cases of same-sex partners who were civil partners at
+                      the time of IVF treatment, both partners will have
+                      Parental Responsibility.
+                    </List.Item>
+                    <List.Item>
+                      In cases where a couple may have separated, one parent is
+                      usually the resident parent with Parental Responsibility
+                      and the legal right to make day-to-day decisions over the
+                      care of their child, while the non-resident parent has
+                      Parental Responsibility, allowing them contact with their
+                      children and the right to have a say in how their children
+                      are brought up.
+                    </List.Item>
+                    <List.Item>
+                      Can also be assigned under the law e.g. surrogate mother
+                      carries a child and intended parents apply for Parental
+                      Responsibility.
+                    </List.Item>
+                  </List.Root>
+                </VStack>
+              )}
+            </Box>
+
+            {/* Duties under the Law */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -398,7 +399,7 @@ const Divorce = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Child Arrangements
+                  Duties under the Law
                 </Text>
                 {!applicationState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -430,9 +431,7 @@ const Divorce = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Lumine solicitors understand how complex and sensitive the
-                    divorce process is. Thus, we offer children’s services to
-                    make your divorce process smoother, including:
+                    According to the law, a parent’s responsibilities include:
                   </Text>
 
                   <List.Root
@@ -445,11 +444,22 @@ const Divorce = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    fontWeight={800}
+                    fontWeight={600}
                     fontFamily={"CeraRoundPro"}
                   >
-                    <List.Item>Child arrangements</List.Item>
-                    <List.Item>Parental responsibility</List.Item>
+                    <List.Item>To provide a home for the child</List.Item>
+                    <List.Item>To protect and maintain the child</List.Item>
+                    <List.Item>To discipline the child</List.Item>
+                    <List.Item>
+                      Choosing and providing for the child’s education
+                    </List.Item>
+                    <List.Item>
+                      Agreeing to the child’s medical treatment
+                    </List.Item>
+                    <List.Item>
+                      Naming the child and agreeing to any change of name
+                    </List.Item>
+                    <List.Item>Looking after the child’s property.</List.Item>
                   </List.Root>
 
                   <Text
@@ -465,101 +475,8 @@ const Divorce = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Please don’t hesitate to reach out to us if you need
-                    assistance with our children’s services.
-                  </Text>
-                </VStack>
-              )}
-            </Box>
-
-            {/* Financial Settlement */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !screening && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={screening && "black"}
-                onClick={() => setScreening(!screening)}
-              >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  Financial Settlement
-                </Text>
-                {!screening ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
-
-              {screening && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    Financial settlement is often considered one of the most
-                    difficult aspects of divorce. Therefore, Lumine Solicitors
-                    divorce team can provide you with tailored advice so you can
-                    reach a swift solution to the financial settlement in your
-                    divorce matter.
+                    Whether or not a parent has Parental Responsibility, parents
+                    have a financial responsibility towards their children.
                   </Text>
                 </VStack>
               )}
@@ -648,12 +565,10 @@ const Divorce = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Lumine Solicitors dedicated team is here to provide you with
-                    stress-free guidance through the divorce process, including
-                    childcare arrangements and financial settlements. We will
-                    discuss your circumstances with you to get a better
-                    understanding of your case and explain to you the legal
-                    process and options available to you.
+                    Lumine Solicitors’ family law team can provide guidance to
+                    parents regarding Parental Responsibility matters, such as
+                    assisting with court order applications and offering advice
+                    on disputes related to Parental Responsibility.
                   </Text>
 
                   <Text
@@ -669,26 +584,7 @@ const Divorce = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Whether you’re considering divorce, initiating proceedings,
-                    or dealing with disagreements over assets or child custody,
-                    you can rely on us on us to provide you with compassionate
-                    and knowledgeable guidance during this challenging time.
-                  </Text>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    For all divorce matters, Please do not hesitate to get in
+                    For all family matters, Please do not hesitate to get in
                     touch with Lumine solicitors <strong>020 3950 2246</strong>{" "}
                     or{" "}
                     <strong>
@@ -1205,4 +1101,4 @@ const Divorce = () => {
   );
 };
 
-export default Divorce;
+export default ParentalResponsiblity;

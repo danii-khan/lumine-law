@@ -26,6 +26,13 @@ import InnovatorFounder from "../components/ServicesPage/Immigration/InnovatorFo
 import CreativeWorker from "../components/ServicesPage/Immigration/CreativeWorker";
 import Family from "../components/ServicesPage/Family/Family";
 import Divorce from "../components/ServicesPage/Family/Divorce";
+import NuptialAgreement from "../components/ServicesPage/Family/NuptialAgreement";
+import ChildArrangements from "../components/ServicesPage/Family/ChildArrangements";
+import ParentalResponsiblity from "../components/ServicesPage/Family/ParentalResponsibility";
+import ConsentOrders from "../components/ServicesPage/Family/ConsentOrders";
+import FinancialStatements from "../components/ServicesPage/Family/FinancialSettlements";
+import DomesticViolence from "../components/ServicesPage/Family/DomesticViolence";
+import Adoption from "../components/ServicesPage/Family/Adoption";
 
 function App() {
   return (
@@ -278,6 +285,76 @@ function App() {
             element={
               <PageTransition>
                 <Divorce />
+              </PageTransition>
+            }
+          />
+
+          {/* Family Sub Service */}
+          <Route
+            path="/lumine-law/all-services/family/nuptial-agreement"
+            element={
+              <PageTransition>
+                <NuptialAgreement />
+              </PageTransition>
+            }
+          />
+
+          {/* Family Sub Service */}
+          <Route
+            path="/lumine-law/all-services/family/child-arrangements"
+            element={
+              <PageTransition>
+                <ChildArrangements />
+              </PageTransition>
+            }
+          />
+
+          {/* Family Sub Service */}
+          <Route
+            path="/lumine-law/all-services/family/parental-responsbility"
+            element={
+              <PageTransition>
+                <ParentalResponsiblity />
+              </PageTransition>
+            }
+          />
+
+          {/* Family Sub Service */}
+          <Route
+            path="/lumine-law/all-services/family/consent-orders"
+            element={
+              <PageTransition>
+                <ConsentOrders />
+              </PageTransition>
+            }
+          />
+
+          {/* Family Sub Service */}
+          <Route
+            path="/lumine-law/all-services/family/financial-settlements"
+            element={
+              <PageTransition>
+                <FinancialStatements />
+              </PageTransition>
+            }
+          />
+
+          {/* Family Sub Service */}
+          <Route
+            path="/lumine-law/all-services/family/domestic-violence"
+            element={
+              <PageTransition>
+                <DomesticViolence />
+              </PageTransition>
+            }
+          />
+
+          {/* Family Sub Service */}
+          <Route
+            path="/lumine-law/all-services/family/adoption-surrogacy"
+            element={
+              <PageTransition>
+                <Adoption />
               </PageTransition>
             }
           />

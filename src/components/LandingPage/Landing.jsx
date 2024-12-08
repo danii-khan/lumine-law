@@ -678,26 +678,33 @@ const LandingPage = () => {
               }}
               transition={"all 0.3s ease"}
             >
-              <VStack>
-                <Image src={FamilyIcon} height={"50px"} />
-
-                <Text
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "26px",
-                  }}
-                  fontWeight={400}
-                  fontFamily={"CeraRoundPro"}
-                  width={"80%"}
-                  color={"white"}
-                >
-                  Family and Children{" "}
-                </Text>
-              </VStack>
+              <Link
+                to={"/lumine-law/all-services/family-and-children"}
+                style={{ textDecoration: "none" }}
+                p={0}
+                m={0}
+                width={"80%"}
+              >
+                <VStack>
+                  <Image src={FamilyIcon} height={"50px"} />
+                  <Text
+                    fontSize={{
+                      xs: "14px",
+                      sm: "14px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "18px",
+                      "2xl": "26px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                    width={"80%"}
+                    color={"white"}
+                  >
+                    Family and Children{" "}
+                  </Text>
+                </VStack>
+              </Link>
             </GridItem>
 
             {/* 6 */}
