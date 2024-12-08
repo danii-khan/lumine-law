@@ -39,7 +39,12 @@ const Family = () => {
           {/* Banner */}
           <Box
             width={"100%"}
-            height={"200px"}
+            height={{
+              xs: "200px",
+              lg: "250px",
+              xl: "300px",
+              "2xl": "350px",
+            }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
             bgPos={"center"}

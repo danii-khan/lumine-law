@@ -44,10 +44,10 @@ const AllServices = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "100px",
-              lg: "125px",
-              xl: "150px",
-              "2xl": "175px",
+              xs: "200px",
+              lg: "250px",
+              xl: "300px",
+              "2xl": "350px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}

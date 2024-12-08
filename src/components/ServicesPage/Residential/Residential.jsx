@@ -53,10 +53,10 @@ const Residential = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "200px",
+              lg: "250px",
+              xl: "300px",
+              "2xl": "350px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}

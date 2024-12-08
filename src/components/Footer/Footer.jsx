@@ -32,7 +32,7 @@ const Footer = () => {
         width={"100%"}
         borderTop={"0.5px solid #707070"}
         px={{ xs: "5%", lg: "2.5%" }}
-        py={{ xs: "0px", lg: "10px" }}
+        py={{ xs: "20px", lg: "20px" }}
         style={{ fontFamily: "CeraRoundPro" }}
         backgroundColor={"black"}
       >
