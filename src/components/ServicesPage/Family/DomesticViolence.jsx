@@ -22,7 +22,11 @@ import NewsInsightsTwo from "../../../assets/landing/news-insights-two.png";
 import NewsInsightsThree from "../../../assets/landing/news-insights-three.png";
 import NewsInsightsFour from "../../../assets/landing/news-insights-four.png";
 import BannerImg from "../../../assets/services/main/immigration/main-banner.png";
+import ImmigrationImg from "../../../assets/services/main/immigration/main-banner.png";
 import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
+import DisputeImg from "../../../assets/services/main/dispute/main-banner.png";
+import LandlordImg from "../../../assets/services/main/landlord/main-banner.png";
+import FamilyImg from "../../../assets/services/main/family/main-banner.png";
 import { Helmet } from "react-helmet";
 
 const DomesticViolence = () => {
@@ -544,12 +548,12 @@ const DomesticViolence = () => {
                 <GridItem
                   width={"100%"}
                   height={{
-                    xs: "125px",
-                    sm: "125px",
-                    md: "125px",
-                    lg: "150px",
-                    xl: "175px",
-                    "2xl": "200px",
+                    xs: "175px",
+                    sm: "175px",
+                    md: "175px",
+                    lg: "200px",
+                    xl: "225px",
+                    "2xl": "250px",
                   }}
                   padding={{ xs: "10px 10px", lg: "10px 20px" }}
                   border={"1px solid black"}
@@ -559,7 +563,7 @@ const DomesticViolence = () => {
                     opacity: "0.8",
                     transition: "all 0.5s ease",
                   }}
-                  bgImage={`url(${BannerImg})`}
+                  bgImage={`url(${ImmigrationImg})`}
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}
@@ -613,7 +617,10 @@ const DomesticViolence = () => {
                         >
                           A lil para about what this service is{" "}
                         </Text>
-                        <HiOutlineArrowLongRight size={"2em"} />
+                        <HiOutlineArrowLongRight
+                          color={"#ffffff"}
+                          size={"2em"}
+                        />
                       </VStack>
                     </Box>
                   </Link>
@@ -623,12 +630,12 @@ const DomesticViolence = () => {
                 <GridItem
                   width={"100%"}
                   height={{
-                    xs: "125px",
-                    sm: "125px",
-                    md: "125px",
-                    lg: "150px",
-                    xl: "175px",
-                    "2xl": "200px",
+                    xs: "175px",
+                    sm: "175px",
+                    md: "175px",
+                    lg: "200px",
+                    xl: "225px",
+                    "2xl": "250px",
                   }}
                   padding={{ xs: "10px 10px", lg: "10px 20px" }}
                   border={"1px solid black"}
@@ -644,7 +651,7 @@ const DomesticViolence = () => {
                   bgRepeat={"no-repeat"}
                 >
                   <Link
-                    to={"/lumine-law/all-services/residential"}
+                    to={"/lumine-law/all-services/residential-commercial"}
                     style={{ textDecoration: "none" }}
                   >
                     <Box
@@ -692,7 +699,10 @@ const DomesticViolence = () => {
                         >
                           A lil para about what this service is{" "}
                         </Text>
-                        <HiOutlineArrowLongRight size={"2em"} />
+                        <HiOutlineArrowLongRight
+                          color={"#ffffff"}
+                          size={"2em"}
+                        />
                       </VStack>
                     </Box>
                   </Link>
@@ -702,12 +712,12 @@ const DomesticViolence = () => {
                 <GridItem
                   width={"100%"}
                   height={{
-                    xs: "125px",
-                    sm: "125px",
-                    md: "125px",
-                    lg: "150px",
-                    xl: "175px",
-                    "2xl": "200px",
+                    xs: "175px",
+                    sm: "175px",
+                    md: "175px",
+                    lg: "200px",
+                    xl: "225px",
+                    "2xl": "250px",
                   }}
                   padding={{ xs: "10px 10px", lg: "10px 20px" }}
                   border={"1px solid black"}
@@ -717,13 +727,13 @@ const DomesticViolence = () => {
                     opacity: "0.8",
                     transition: "all 0.5s ease",
                   }}
-                  bgImage={`url(${BannerImg})`}
+                  bgImage={`url(${DisputeImg})`}
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}
                 >
                   <Link
-                    to={"/lumine-law/all-services/immigration"}
+                    to={"/lumine-law/all-services/dispute-resolution"}
                     style={{ textDecoration: "none" }}
                   >
                     <Box
@@ -748,7 +758,7 @@ const DomesticViolence = () => {
                         textAlign={"left"}
                         color={"#ffffff"}
                       >
-                        Immigration
+                        Dispute Resolution and Civil Litigation
                       </Text>
                       <VStack
                         width={"100%"}
@@ -771,7 +781,10 @@ const DomesticViolence = () => {
                         >
                           A lil para about what this service is{" "}
                         </Text>
-                        <HiOutlineArrowLongRight size={"2em"} />
+                        <HiOutlineArrowLongRight
+                          color={"#ffffff"}
+                          size={"2em"}
+                        />
                       </VStack>
                     </Box>
                   </Link>
@@ -781,12 +794,12 @@ const DomesticViolence = () => {
                 <GridItem
                   width={"100%"}
                   height={{
-                    xs: "125px",
-                    sm: "125px",
-                    md: "125px",
-                    lg: "150px",
-                    xl: "175px",
-                    "2xl": "200px",
+                    xs: "175px",
+                    sm: "175px",
+                    md: "175px",
+                    lg: "200px",
+                    xl: "225px",
+                    "2xl": "250px",
                   }}
                   padding={{ xs: "10px 10px", lg: "10px 20px" }}
                   border={"1px solid black"}
@@ -796,13 +809,13 @@ const DomesticViolence = () => {
                     opacity: "0.8",
                     transition: "all 0.5s ease",
                   }}
-                  bgImage={`url(${ResidentialImg})`}
+                  bgImage={`url(${LandlordImg})`}
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}
                 >
                   <Link
-                    to={"/lumine-law/all-services/residential"}
+                    to={"/lumine-law/all-services/landlord-tenant"}
                     style={{ textDecoration: "none" }}
                   >
                     <Box
@@ -827,7 +840,7 @@ const DomesticViolence = () => {
                         textAlign={"left"}
                         color={"#ffffff"}
                       >
-                        Residential & Commercial Property
+                        Landlord & Tenant Disputes
                       </Text>
                       <VStack
                         width={"100%"}
@@ -850,7 +863,10 @@ const DomesticViolence = () => {
                         >
                           A lil para about what this service is{" "}
                         </Text>
-                        <HiOutlineArrowLongRight size={"2em"} />
+                        <HiOutlineArrowLongRight
+                          color={"#ffffff"}
+                          size={"2em"}
+                        />
                       </VStack>
                     </Box>
                   </Link>

@@ -382,7 +382,10 @@ const Landlord = () => {
                         >
                           A lil para about what this service is{" "}
                         </Text>
-                        <HiOutlineArrowLongRight size={"2em"} />
+                        <HiOutlineArrowLongRight
+                          color={"#ffffff"}
+                          size={"2em"}
+                        />
                       </VStack>
                     </Box>
                   </Link>
@@ -461,7 +464,10 @@ const Landlord = () => {
                         >
                           A lil para about what this service is{" "}
                         </Text>
-                        <HiOutlineArrowLongRight size={"2em"} />
+                        <HiOutlineArrowLongRight
+                          color={"#ffffff"}
+                          size={"2em"}
+                        />
                       </VStack>
                     </Box>
                   </Link>

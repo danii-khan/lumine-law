@@ -716,7 +716,10 @@ const Dispute = () => {
                         >
                           A lil para about what this service is{" "}
                         </Text>
-                        <HiOutlineArrowLongRight size={"2em"} />
+                        <HiOutlineArrowLongRight
+                          color={"#ffffff"}
+                          size={"2em"}
+                        />
                       </VStack>
                     </Box>
                   </Link>
@@ -795,7 +798,10 @@ const Dispute = () => {
                         >
                           A lil para about what this service is{" "}
                         </Text>
-                        <HiOutlineArrowLongRight size={"2em"} />
+                        <HiOutlineArrowLongRight
+                          color={"#ffffff"}
+                          size={"2em"}
+                        />
                       </VStack>
                     </Box>
                   </Link>
@@ -874,7 +880,10 @@ const Dispute = () => {
                         >
                           A lil para about what this service is{" "}
                         </Text>
-                        <HiOutlineArrowLongRight size={"2em"} />
+                        <HiOutlineArrowLongRight
+                          color={"#ffffff"}
+                          size={"2em"}
+                        />
                       </VStack>
                     </Box>
                   </Link>
