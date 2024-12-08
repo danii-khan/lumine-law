@@ -464,50 +464,55 @@ const AllServices = () => {
                   transition: "all 0.5s ease",
                 }}
               >
-                <Box
-                  height={"100%"}
-                  display={"flex"}
-                  flexFlow={"column"}
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={"10px"}
+                <Link
+                  to={"/lumine-law/all-services/family-and-children"}
+                  style={{ textDecoration: "none" }}
                 >
-                  <Text
-                    fontSize={{
-                      xs: "11px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "20px",
-                    }}
-                    fontFamily={"CeraRoundPro"}
-                    fontWeight={500}
-                    textAlign={"left"}
-                    color={"white"}
-                  >
-                    Family & Children
-                  </Text>
-                  <VStack
-                    width={"100%"}
+                  <Box
                     height={"100%"}
-                    justifyContent={"space-between"}
+                    display={"flex"}
+                    flexFlow={"column"}
+                    justifyContent={"center"}
                     alignItems={"flex-start"}
+                    gap={"10px"}
                   >
                     <Text
                       fontSize={{
-                        xs: "10px",
-                        lg: "12px",
-                        xl: "13px",
-                        "2xl": "16px",
+                        xs: "11px",
+                        lg: "14px",
+                        xl: "16px",
+                        "2xl": "20px",
                       }}
                       fontFamily={"CeraRoundPro"}
-                      fontWeight={400}
+                      fontWeight={500}
+                      textAlign={"left"}
                       color={"white"}
                     >
-                      A lil para about what this service is{" "}
+                      Family & Children
                     </Text>
-                    <HiOutlineArrowLongRight size={"3em"} />
-                  </VStack>
-                </Box>
+                    <VStack
+                      width={"100%"}
+                      height={"100%"}
+                      justifyContent={"space-between"}
+                      alignItems={"flex-start"}
+                    >
+                      <Text
+                        fontSize={{
+                          xs: "10px",
+                          lg: "12px",
+                          xl: "13px",
+                          "2xl": "16px",
+                        }}
+                        fontFamily={"CeraRoundPro"}
+                        fontWeight={400}
+                        color={"white"}
+                      >
+                        A lil para about what this service is{" "}
+                      </Text>
+                      <HiOutlineArrowLongRight size={"3em"} />
+                    </VStack>
+                  </Box>
+                </Link>
               </GridItem>
               {/* New Service */}
               <GridItem

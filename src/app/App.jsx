@@ -24,12 +24,15 @@ import ReviewsAppeals from "../components/ServicesPage/Immigration/ReviewsAppeal
 import Asylum from "../components/ServicesPage/Immigration/Asylum";
 import InnovatorFounder from "../components/ServicesPage/Immigration/InnovatorFounder";
 import CreativeWorker from "../components/ServicesPage/Immigration/CreativeWorker";
+import Family from "../components/ServicesPage/Family/Family";
+import Divorce from "../components/ServicesPage/Family/Divorce";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
+          {/* Landing */}
           <Route
             path="/lumine-law/"
             element={
@@ -38,6 +41,8 @@ function App() {
               </PageTransition>
             }
           />
+
+          {/* Contact */}
           <Route
             path="/lumine-law/contact"
             element={
@@ -46,6 +51,8 @@ function App() {
               </PageTransition>
             }
           />
+
+          {/* All Services */}
           <Route
             path="/lumine-law/all-services"
             element={
@@ -54,6 +61,8 @@ function App() {
               </PageTransition>
             }
           />
+
+          {/* Immigration */}
           <Route
             path="/lumine-law/all-services/immigration"
             element={
@@ -63,6 +72,7 @@ function App() {
             }
           />
 
+          {/* Immigration Sub Service */}
           <Route
             path="/lumine-law/all-services/immigration/spouse-visa"
             element={
@@ -71,6 +81,8 @@ function App() {
               </PageTransition>
             }
           />
+
+          {/* Immigration Sub Service */}
           <Route
             path="/lumine-law/all-services/immigration/british-citizenship-application"
             element={
@@ -79,6 +91,8 @@ function App() {
               </PageTransition>
             }
           />
+
+          {/* Immigration Sub Service */}
           <Route
             path="/lumine-law/all-services/immigration/uk-visitor-visa"
             element={
@@ -87,6 +101,8 @@ function App() {
               </PageTransition>
             }
           />
+
+          {/* Immigration Sub Service */}
           <Route
             path="/lumine-law/all-services/immigration/skilled-worker-visa"
             element={
@@ -95,6 +111,8 @@ function App() {
               </PageTransition>
             }
           />
+
+          {/* Immigration Sub Service */}
           <Route
             path="/lumine-law/all-services/immigration/certificate-of-sponsorship"
             element={
@@ -103,6 +121,8 @@ function App() {
               </PageTransition>
             }
           />
+
+          {/* Immigration Sub Service */}
           <Route
             path="/lumine-law/all-services/immigration/student-visa"
             element={
@@ -111,6 +131,8 @@ function App() {
               </PageTransition>
             }
           />
+
+          {/* Immigration Sub Service */}
           <Route
             path="/lumine-law/all-services/immigration/entry-clearance"
             element={
@@ -119,6 +141,8 @@ function App() {
               </PageTransition>
             }
           />
+
+          {/* Immigration Sub Service */}
           <Route
             path="/lumine-law/all-services/immigration/skilled-migrant"
             element={
@@ -127,6 +151,8 @@ function App() {
               </PageTransition>
             }
           />
+
+          {/* Immigration Sub Service */}
           <Route
             path="/lumine-law/all-services/immigration/visa-categories"
             element={
@@ -135,6 +161,8 @@ function App() {
               </PageTransition>
             }
           />
+
+          {/* Immigration Sub Service */}
           <Route
             path="/lumine-law/all-services/immigration/visa-extensions"
             element={
@@ -143,6 +171,8 @@ function App() {
               </PageTransition>
             }
           />
+
+          {/* Immigration Sub Service */}
           <Route
             path="/lumine-law/all-services/immigration/indefinite-leave"
             element={
@@ -151,6 +181,8 @@ function App() {
               </PageTransition>
             }
           />
+
+          {/* Immigration Sub Service */}
           <Route
             path="/lumine-law/all-services/immigration/human-rights-app"
             element={
@@ -159,6 +191,8 @@ function App() {
               </PageTransition>
             }
           />
+
+          {/* Immigration Sub Service */}
           <Route
             path="/lumine-law/all-services/immigration/discretionary-leave"
             element={
@@ -167,6 +201,8 @@ function App() {
               </PageTransition>
             }
           />
+
+          {/* Immigration Sub Service */}
           <Route
             path="/lumine-law/all-services/immigration/bail-revocation"
             element={
@@ -175,6 +211,8 @@ function App() {
               </PageTransition>
             }
           />
+
+          {/* Immigration Sub Service */}
           <Route
             path="/lumine-law/all-services/immigration/eu-settlement"
             element={
@@ -183,6 +221,8 @@ function App() {
               </PageTransition>
             }
           />
+
+          {/* Immigration Sub Service */}
           <Route
             path="/lumine-law/all-services/immigration/reviews-appeals"
             element={
@@ -192,6 +232,7 @@ function App() {
             }
           />
 
+          {/* Immigration Sub Service */}
           <Route
             path="/lumine-law/all-services/immigration/asylum"
             element={
@@ -201,6 +242,7 @@ function App() {
             }
           />
 
+          {/* Immigration Sub Service */}
           <Route
             path="/lumine-law/all-services/immigration/innovator-founder"
             element={
@@ -210,11 +252,32 @@ function App() {
             }
           />
 
+          {/* Immigration Sub Service */}
           <Route
             path="/lumine-law/all-services/immigration/creative-worker"
             element={
               <PageTransition>
                 <CreativeWorker />
+              </PageTransition>
+            }
+          />
+
+          {/* Family */}
+          <Route
+            path="/lumine-law/all-services/family-and-children"
+            element={
+              <PageTransition>
+                <Family />
+              </PageTransition>
+            }
+          />
+
+          {/* Family Sub Service */}
+          <Route
+            path="/lumine-law/all-services/family/divorce"
+            element={
+              <PageTransition>
+                <Divorce />
               </PageTransition>
             }
           />
