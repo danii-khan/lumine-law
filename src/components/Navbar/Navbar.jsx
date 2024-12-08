@@ -135,23 +135,10 @@ const ServicesMegaMenu = () => {
               Spouse Visa
             </Text>
 
-            {/* Citizenship App */}
-            <Text
-              fontSize={{
-                // base: {"15px"}
-                lg: "8px",
-                xl: "10px",
-                "2xl": "15px",
-              }}
-              fontWeight={400}
-              textAlign={"left"}
-              className={styles.menuText}
-            >
-              British Citizenship Application
-            </Text>
-
             {/* Visitor Visa */}
             <Text
+              as={Link}
+              to={"/lumine-law/all-services/immigration/uk-visitor-visa"}
               fontSize={{
                 // base: {"15px"}
                 lg: "8px",
@@ -165,8 +152,12 @@ const ServicesMegaMenu = () => {
               UK Visitor Visa
             </Text>
 
-            {/* Clearance from Outside UK */}
+            {/* Citizenship App */}
             <Text
+              as={Link}
+              to={
+                "/lumine-law/all-services/immigration/british-citizenship-application"
+              }
               fontSize={{
                 // base: {"15px"}
                 lg: "8px",
@@ -177,11 +168,30 @@ const ServicesMegaMenu = () => {
               textAlign={"left"}
               className={styles.menuText}
             >
-              Entry Clearance Applications from Outside of UK
+              British Citizenship Application
+            </Text>
+
+            {/* Clearance from Outside UK */}
+            <Text
+              as={Link}
+              to={"/lumine-law/all-services/immigration/entry-clearance"}
+              fontSize={{
+                // base: {"15px"}
+                lg: "8px",
+                xl: "10px",
+                "2xl": "15px",
+              }}
+              fontWeight={400}
+              textAlign={"left"}
+              className={styles.menuText}
+            >
+              Entry Clearance Applications from Outside of the UK
             </Text>
 
             {/* Skilled Work Visa */}
             <Text
+              as={Link}
+              to={"/lumine-law/all-services/immigration/skilled-worker-visa"}
               fontSize={{
                 // base: {"15px"}
                 lg: "8px",
@@ -197,6 +207,10 @@ const ServicesMegaMenu = () => {
 
             {/* Cert of Sponsorship */}
             <Text
+              as={Link}
+              to={
+                "/lumine-law/all-services/immigration/certificate-of-sponsorship"
+              }
               fontSize={{
                 // base: {"15px"}
                 lg: "8px",
@@ -212,6 +226,8 @@ const ServicesMegaMenu = () => {
 
             {/* Student Visa */}
             <Text
+              as={Link}
+              to={"/lumine-law/all-services/immigration/student-visa"}
               fontSize={{
                 // base: {"15px"}
                 lg: "8px",
@@ -225,8 +241,10 @@ const ServicesMegaMenu = () => {
               Student Visa
             </Text>
 
-            {/* Visa Extensions */}
+            {/* Visa Categories */}
             <Text
+              as={Link}
+              to={"/lumine-law/all-services/immigration/visa-categories"}
               fontSize={{
                 // base: {"15px"}
                 lg: "8px",
@@ -237,11 +255,13 @@ const ServicesMegaMenu = () => {
               className={styles.menuText}
               textAlign={"left"}
             >
-              Visa Extensions
+              Visa Categories
             </Text>
 
             {/* Indefinite Leave */}
             <Text
+              as={Link}
+              to={"/lumine-law/all-services/immigration/indefinite-leave"}
               fontSize={{
                 // base: {"15px"}
                 lg: "8px",

@@ -305,15 +305,14 @@ const AllServices = () => {
                   xl: "8px 16px",
                   "2xl": "10px 20px",
                 }}
-                // bgImage={`url(${DisputeImg})`}
-                // bgSize={"cover"}
-                // bgPos={"center"}
-                // bgRepeat={"no-repeat"}
-                backgroundColor={"#D7E3F1"}
+                bgImage={`url(${DisputeImg})`}
+                bgSize={"cover"}
+                bgPos={"center"}
+                bgRepeat={"no-repeat"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}
-                color={"black"}
+                color={"#ffffff"}
                 _hover={{
                   opacity: "0.8",
                   transition: "all 0.5s ease",
@@ -337,6 +336,7 @@ const AllServices = () => {
                     fontFamily={"CeraRoundPro"}
                     fontWeight={500}
                     textAlign={"left"}
+                    color={"white"}
                   >
                     Dispute & Resolution Civil Litigation
                   </Text>
@@ -355,6 +355,7 @@ const AllServices = () => {
                       }}
                       fontFamily={"CeraRoundPro"}
                       fontWeight={400}
+                      color={"white"}
                     >
                       A lil para about what this service is{" "}
                     </Text>
@@ -377,15 +378,14 @@ const AllServices = () => {
                   xl: "8px 16px",
                   "2xl": "10px 20px",
                 }}
-                // bgImage={`url(${DisputeImg})`}
-                // bgSize={"cover"}
-                // bgPos={"center"}
-                // bgRepeat={"no-repeat"}
-                backgroundColor={"#D7E3F1"}
+                bgImage={`url(${LandlordImg})`}
+                bgSize={"cover"}
+                bgPos={"center"}
+                bgRepeat={"no-repeat"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}
-                color={"black"}
+                color={"#ffffff"}
                 _hover={{
                   opacity: "0.8",
                   transition: "all 0.5s ease",
@@ -409,6 +409,7 @@ const AllServices = () => {
                     fontFamily={"CeraRoundPro"}
                     fontWeight={500}
                     textAlign={"left"}
+                    color={"white"}
                   >
                     Landlord & Tenant Disputes
                   </Text>
@@ -427,6 +428,7 @@ const AllServices = () => {
                       }}
                       fontFamily={"CeraRoundPro"}
                       fontWeight={400}
+                      color={"white"}
                     >
                       A lil para about what this service is{" "}
                     </Text>
@@ -449,15 +451,14 @@ const AllServices = () => {
                   xl: "8px 16px",
                   "2xl": "10px 20px",
                 }}
-                // bgImage={`url(${DisputeImg})`}
-                // bgSize={"cover"}
-                // bgPos={"center"}
-                // bgRepeat={"no-repeat"}
-                backgroundColor={"#D7E3F1"}
+                bgImage={`url(${FamilyImg})`}
+                bgSize={"cover"}
+                bgPos={"center"}
+                bgRepeat={"no-repeat"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}
-                color={"black"}
+                color={"#ffffff"}
                 _hover={{
                   opacity: "0.8",
                   transition: "all 0.5s ease",
@@ -481,6 +482,7 @@ const AllServices = () => {
                     fontFamily={"CeraRoundPro"}
                     fontWeight={500}
                     textAlign={"left"}
+                    color={"white"}
                   >
                     Family & Children
                   </Text>
@@ -499,6 +501,7 @@ const AllServices = () => {
                       }}
                       fontFamily={"CeraRoundPro"}
                       fontWeight={400}
+                      color={"white"}
                     >
                       A lil para about what this service is{" "}
                     </Text>
@@ -526,6 +529,7 @@ const AllServices = () => {
                 // bgPos={"center"}
                 // bgRepeat={"no-repeat"}
                 backgroundColor={"#D7E3F1"}
+                color={"#000000"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}
@@ -581,9 +585,8 @@ const AllServices = () => {
               <GridItem display={{ xs: "none", lg: "grid" }}>
                 {/* empty */}
               </GridItem>
-              {/* New Service*/}
+              {/* New Service */}
               <GridItem
-                colSpan={{ xs: "2", lg: "1" }}
                 width={{ xs: "100%", lg: "80%", xl: "80%", "2xl": "80%" }}
                 height={{
                   xs: "125px",
@@ -592,7 +595,7 @@ const AllServices = () => {
                   "2xl": "250px",
                 }}
                 padding={{
-                  xs: "8px 10px",
+                  xs: "15% 10px",
                   lg: "6px 14px",
                   xl: "8px 16px",
                   "2xl": "10px 20px",
@@ -602,6 +605,7 @@ const AllServices = () => {
                 // bgPos={"center"}
                 // bgRepeat={"no-repeat"}
                 backgroundColor={"#D7E3F1"}
+                color={"#000000"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}

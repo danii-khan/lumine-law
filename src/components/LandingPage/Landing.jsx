@@ -19,6 +19,8 @@ import ServicesBg from "../../assets/landing/services.png";
 import ImmigrationIcon from "../../assets/landing/landing-icons/immigration-icon.png";
 import ResidentialIcon from "../../assets/landing/landing-icons/residential-icon.png";
 import LandlordIcon from "../../assets/landing/landing-icons/landlord-icon.png";
+import DisputeIcon from "../../assets/landing/landing-icons/dispute-icon.png";
+import FamilyIcon from "../../assets/landing/landing-icons/family-icon.png";
 import PanelsBg from "../../assets/landing/panels.png";
 import PanelOne from "../../assets/landing/panel-images/panel-barclays.png";
 import PanelTwo from "../../assets/landing/panel-images/panel-santander.png";
@@ -598,22 +600,25 @@ const LandingPage = () => {
               }}
               transition={"all 0.3s ease"}
             >
-              <Text
-                fontSize={{
-                  xs: "14px",
-                  sm: "14px",
-                  md: "16px",
-                  lg: "16px",
-                  xl: "18px",
-                  "2xl": "26px",
-                }}
-                fontWeight={400}
-                fontFamily={"CeraRoundPro"}
-                width={"80%"}
-                color={"white"}
-              >
-                Dispute Resolution and Civil Litigation{" "}
-              </Text>
+              <VStack>
+                <Image src={DisputeIcon} height={"50px"} />
+                <Text
+                  fontSize={{
+                    xs: "14px",
+                    sm: "14px",
+                    md: "16px",
+                    lg: "16px",
+                    xl: "18px",
+                    "2xl": "26px",
+                  }}
+                  fontWeight={400}
+                  fontFamily={"CeraRoundPro"}
+                  width={"80%"}
+                  color={"white"}
+                >
+                  Dispute Resolution and Civil Litigation{" "}
+                </Text>
+              </VStack>
             </GridItem>
 
             {/* 4 */}
@@ -673,22 +678,26 @@ const LandingPage = () => {
               }}
               transition={"all 0.3s ease"}
             >
-              <Text
-                fontSize={{
-                  xs: "14px",
-                  sm: "14px",
-                  md: "16px",
-                  lg: "16px",
-                  xl: "18px",
-                  "2xl": "26px",
-                }}
-                fontWeight={400}
-                fontFamily={"CeraRoundPro"}
-                width={"80%"}
-                color={"white"}
-              >
-                Family and Children{" "}
-              </Text>
+              <VStack>
+                <Image src={FamilyIcon} height={"50px"} />
+
+                <Text
+                  fontSize={{
+                    xs: "14px",
+                    sm: "14px",
+                    md: "16px",
+                    lg: "16px",
+                    xl: "18px",
+                    "2xl": "26px",
+                  }}
+                  fontWeight={400}
+                  fontFamily={"CeraRoundPro"}
+                  width={"80%"}
+                  color={"white"}
+                >
+                  Family and Children{" "}
+                </Text>
+              </VStack>
             </GridItem>
 
             {/* 6 */}
@@ -723,7 +732,7 @@ const LandingPage = () => {
                 width={"80%"}
                 color={"white"}
               >
-                Personal Injury{" "}
+                New Service
               </Text>
             </GridItem>
 
