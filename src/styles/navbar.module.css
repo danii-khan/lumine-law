@@ -2,6 +2,7 @@
 .servicesMegaMenuButton[data-state="open"] {
   color: white !important;
   background-color: black !important;
+  border-bottom: 5px solid #beab7c !important;
 }
 
 .servicesMegaMenuButton img:first-of-type {
