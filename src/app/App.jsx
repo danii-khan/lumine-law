@@ -36,6 +36,7 @@ import Adoption from "../components/ServicesPage/Family/Adoption";
 import Residential from "../components/ServicesPage/Residential/Residential";
 import DisputeResolution from "../components/ServicesPage/Dispute/DisputeResolution";
 import Landlord from "../components/ServicesPage/Landlord/Landlord";
+import PropertyPrices from "../components/Prices/PropertyPrices";
 
 function App() {
   return (
@@ -388,6 +389,16 @@ function App() {
             element={
               <PageTransition>
                 <Landlord />
+              </PageTransition>
+            }
+          />
+
+          {/* Property Prices */}
+          <Route
+            path="/lumine-law/prices/property-prices"
+            element={
+              <PageTransition>
+                <PropertyPrices />
               </PageTransition>
             }
           />

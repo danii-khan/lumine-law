@@ -650,34 +650,10 @@ const PricesMenu = () => {
           >
             {/* Menu Items */}
             <VStack alignItems={"center"} justifyContent={"center"}>
-              {/* Header */}
-              {/* <Link
-              to={"/lumine-law/all-services/immigration"}
-              style={{ textDecoration: "none" }}
-            >
-              <Text
-                fontSize={{
-                  // base: {"18px"}
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "9px",
-                  xl: "11px",
-                  "2xl": "16px",
-                }}
-                fontWeight={700}
-                className={styles.menuHeader}
-                _hover={{ borderBottom: "2px solid #beab7c" }}
-              >
-                Immigration
-              </Text>
-            </Link> */}
-
-              {/* List */}
               {/* Property Prices */}
               <Text
                 as={Link}
-                to={"/lumine-law/all-services/immigration/spouse-visa"}
+                to={"/lumine-law/prices/property-prices"}
                 fontSize={{
                   // base: {"15px"}
                   lg: "10px",
@@ -695,7 +671,7 @@ const PricesMenu = () => {
               {/* Debt Recovery Prices */}
               <Text
                 as={Link}
-                to={"/lumine-law/all-services/immigration/uk-visitor-visa"}
+                to={"/lumine-law/prices/debt-recovery-prices"}
                 fontSize={{
                   // base: {"15px"}
                   lg: "10px",
@@ -713,9 +689,7 @@ const PricesMenu = () => {
               {/* Immigration Prices */}
               <Text
                 as={Link}
-                to={
-                  "/lumine-law/all-services/immigration/british-citizenship-application"
-                }
+                to={"/lumine-law/prices/immigration-prices"}
                 fontSize={{
                   // base: {"15px"}
                   lg: "10px",
