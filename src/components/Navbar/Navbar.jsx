@@ -671,7 +671,7 @@ const PricesMenu = () => {
               {/* Debt Recovery Prices */}
               <Text
                 as={Link}
-                to={"/lumine-law/prices/debt-recovery-prices"}
+                to="/lumine-law/prices/debt-recovery"
                 fontSize={{
                   // base: {"15px"}
                   lg: "10px",
