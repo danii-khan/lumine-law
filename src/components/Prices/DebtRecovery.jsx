@@ -38,12 +38,8 @@ const DebtRecovery = () => {
   const [serviceState, setServiceState] = useState(false);
   const [leaseholdState, setLeaseholdState] = useState(false);
   const [houseState, setHouseState] = useState(false);
-  const [feeState, setFeeState] = useState(false);
   const [residentialState, setResidentialState] = useState(false);
-  const [likelyState, setLikelyState] = useState(false);
-  const [additionalState, setAdditionalState] = useState(false);
   const [timescaleState, setTimescaleState] = useState(false);
-  const [nameState, setNameState] = useState(false);
 
   return (
     <>

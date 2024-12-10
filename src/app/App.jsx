@@ -38,6 +38,7 @@ import DisputeResolution from "../components/ServicesPage/Dispute/DisputeResolut
 import Landlord from "../components/ServicesPage/Landlord/Landlord";
 import PropertyPrices from "../components/Prices/PropertyPrices";
 import DebtRecovery from "../components/Prices/DebtRecovery";
+import ImmigrationPrices from "../components/Prices/ImmigrationPrices";
 
 function App() {
   return (
@@ -410,6 +411,16 @@ function App() {
             element={
               <PageTransition>
                 <DebtRecovery />
+              </PageTransition>
+            }
+          />
+
+          {/* Immigration Prices */}
+          <Route
+            path="/lumine-law/prices/immigration-prices"
+            element={
+              <PageTransition>
+                <ImmigrationPrices />
               </PageTransition>
             }
           />
