@@ -216,79 +216,9 @@ const ServicesMegaMenu = () => {
                 Skilled Worker Visa
               </Text>
 
-              {/* Cert of Sponsorship */}
-              <Text
-                as={Link}
-                to={
-                  "/lumine-law/all-services/immigration/certificate-of-sponsorship"
-                }
-                fontSize={{
-                  // base: {"15px"}
-                  lg: "8px",
-                  xl: "10px",
-                  "2xl": "15px",
-                }}
-                fontWeight={400}
-                className={styles.menuText}
-                textAlign={"left"}
-              >
-                Certificate of Sponsorship
-              </Text>
-
-              {/* Student Visa */}
-              <Text
-                as={Link}
-                to={"/lumine-law/all-services/immigration/student-visa"}
-                fontSize={{
-                  // base: {"15px"}
-                  lg: "8px",
-                  xl: "10px",
-                  "2xl": "15px",
-                }}
-                fontWeight={400}
-                className={styles.menuText}
-                textAlign={"left"}
-              >
-                Student Visa
-              </Text>
-
-              {/* Visa Categories */}
-              <Text
-                as={Link}
-                to={"/lumine-law/all-services/immigration/visa-categories"}
-                fontSize={{
-                  // base: {"15px"}
-                  lg: "8px",
-                  xl: "10px",
-                  "2xl": "15px",
-                }}
-                fontWeight={400}
-                className={styles.menuText}
-                textAlign={"left"}
-              >
-                Visa Categories
-              </Text>
-
-              {/* Indefinite Leave */}
-              <Text
-                as={Link}
-                to={"/lumine-law/all-services/immigration/indefinite-leave"}
-                fontSize={{
-                  // base: {"15px"}
-                  lg: "8px",
-                  xl: "10px",
-                  "2xl": "15px",
-                }}
-                fontWeight={400}
-                className={styles.menuText}
-                textAlign={"left"}
-              >
-                Indefinite Leave to Remain
-              </Text>
-
               {/* Explore More */}
               <Link
-                to={"/lumine-law/all-services"}
+                to={"/lumine-law/all-services/immigration"}
                 style={{ textDecoration: "none" }}
               >
                 <Text
@@ -302,7 +232,7 @@ const ServicesMegaMenu = () => {
                   className={styles.menuText}
                   textAlign={"left"}
                 >
-                  Explore More
+                  ...
                 </Text>
               </Link>
             </VStack>
@@ -429,56 +359,25 @@ const ServicesMegaMenu = () => {
                 Consent Orders
               </Text>
 
-              {/* Financial Settlements */}
-              <Text
-                as={Link}
-                to={"/lumine-law/all-services/family/financial-settlements"}
-                fontSize={{
-                  // base: {"15px"}
-                  lg: "8px",
-                  xl: "10px",
-                  "2xl": "15px",
-                }}
-                fontWeight={400}
-                className={styles.menuText}
-                textAlign={"left"}
+              {/* Explore More */}
+              <Link
+                to={"/lumine-law/all-services/family-and-children"}
+                style={{ textDecoration: "none" }}
               >
-                Financial Settlements
-              </Text>
-
-              {/* Domestic Violence */}
-              <Text
-                as={Link}
-                to={"/lumine-law/all-services/family/domestic-violence"}
-                fontSize={{
-                  // base: {"15px"}
-                  lg: "8px",
-                  xl: "10px",
-                  "2xl": "15px",
-                }}
-                fontWeight={400}
-                className={styles.menuText}
-                textAlign={"left"}
-              >
-                Domestic Violence
-              </Text>
-
-              {/* Adoption and Surrogacy */}
-              <Text
-                as={Link}
-                to={"/lumine-law/all-services/family/adoption-surrogacy"}
-                fontSize={{
-                  // base: {"15px"}
-                  lg: "8px",
-                  xl: "10px",
-                  "2xl": "15px",
-                }}
-                fontWeight={400}
-                className={styles.menuText}
-                textAlign={"left"}
-              >
-                Adoption and Surrogacy
-              </Text>
+                <Text
+                  fontSize={{
+                    // base: {"15px"}
+                    lg: "8px",
+                    xl: "10px",
+                    "2xl": "15px",
+                  }}
+                  fontWeight={700}
+                  className={styles.menuText}
+                  textAlign={"left"}
+                >
+                  ...
+                </Text>
+              </Link>
             </VStack>
 
             {/* Explore More */}
