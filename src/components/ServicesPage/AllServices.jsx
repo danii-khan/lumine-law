@@ -19,6 +19,8 @@ import "../../styles/fonts.css";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import AllPrices from "../NavLinks/AllPrices";
+import AllNewsInsights from "../NavLinks/AllNewsInsights";
 
 const AllServices = () => {
   return (
@@ -138,7 +140,7 @@ const AllServices = () => {
             <Grid
               width={{ xs: "95%", lg: "95%", xl: "95%", "2xl": "80%" }}
               templateColumns={{ xs: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }}
-              templateRows={{ xs: "repeat(4, 1fr)", lg: "repeat(3, 1fr)" }}
+              templateRows={{ xs: "repeat(3, 1fr)", lg: "repeat(2, 1fr)" }}
               gap={{ xs: "10px", lg: "20px", xl: "25px", "2xl": "30px" }}
               justifyItems={"center"}
               alignItems={"center"}
@@ -680,6 +682,11 @@ const AllServices = () => {
             </Grid>
           </Box>
 
+          {/* Prices */}
+          <AllPrices />
+
+          {/* News N Insights */}
+          <AllNewsInsights />
           <Footer />
         </Box>
       </Container>

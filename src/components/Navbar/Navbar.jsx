@@ -591,8 +591,8 @@ const PricesMenu = () => {
         height="100%"
       >
         <Button
-          as={Link}
-          to={"/lumine-law/prices"}
+          // as={Link}
+          // to={"/lumine-law/prices"}
           backgroundColor="inherit"
           color="white"
           size="sm"
