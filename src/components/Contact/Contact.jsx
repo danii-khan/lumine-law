@@ -9,6 +9,7 @@ import {
   Input,
   Textarea,
   Button,
+  Flex,
 } from "@chakra-ui/react";
 import { Field } from "../../lib/chakra-components/ui/field";
 import Navbar from "../Navbar/Navbar";
@@ -20,6 +21,9 @@ import { LuPhoneCall } from "react-icons/lu";
 import { TiPrinter } from "react-icons/ti";
 import { TfiEmail } from "react-icons/tfi";
 import { Helmet } from "react-helmet";
+import AllServiceLinks from "../NavLinks/AllServiceLinks";
+import AllPrices from "../NavLinks/AllPrices";
+import AllNewsInsights from "../NavLinks/AllNewsInsights";
 
 const Contact = () => {
   return (
@@ -30,14 +34,7 @@ const Contact = () => {
       overflow="auto"
       m={0}
       p={0}
-      background="linear-gradient(0deg, 
-    #000000 12.5%, 
-    #124F66 35.68%, 
-    #249ECB 47.23%, 
-    #124F66 58.12%, 
-    #1B7798 67%, 
-    #000000 93%
-  )"
+      backgroundColor={"white"}
     >
       <Helmet>
         <title>Lumine Law Contact</title>
@@ -48,18 +45,28 @@ const Contact = () => {
         <Grid
           width={"100%"}
           backgroundColor={"#BAA990"}
-          templateColumns={"3fr 4fr 2fr"}
+          templateColumns={{ xs: "1fr", xl: "3fr 4fr 2fr" }}
+          templateRows={{ xs: "repeat(3, 1fr)", xl: "1fr" }}
           borderBottom={"1px solid white"}
+          minHeight={"300px"}
+          maxHeight={"400px"}
         >
           {/* Contact Us */}
           <GridItem
-            height={"300px"}
             display={"flex"}
             justifyContent={"center"}
             alignItems={"center"}
+            border={"1px solid white"}
           >
             <Text
-              fontSize={"55px"}
+              fontSize={{
+                xs: "18px",
+                sm: "20px",
+                md: "24px",
+                lg: "30px",
+                xl: "36px",
+                "2xl": "40px",
+              }}
               fontFamily={"CeraRoundPro"}
               fontWeight={600}
             >
@@ -69,9 +76,9 @@ const Contact = () => {
 
           {/* 2nd Col */}
           <GridItem
-            height={"300px"}
             borderLeft={"1px solid white"}
             borderRight={"1px solid white"}
+            border={"1px solid white"}
           >
             <Grid
               height={"100%"}
@@ -80,18 +87,25 @@ const Contact = () => {
               alignItems={"center"}
             >
               {/* First Row */}
-              <GridItem>
+              <GridItem py={"10px"}>
                 <VStack
                   justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  ml={"2.5%"}
+                  alignItems={{ xs: "center", xl: "flex-start" }}
+                  ml={{ xs: "0%", xl: "2.5%" }}
                 >
                   <HStack gap={"10px"}>
                     <Box w={"2em"} display={"flex"} alignItems={"center"}>
                       <IoLocationOutline size={"2em"} color="white" />
                     </Box>
                     <Text
-                      fontSize={"25px"}
+                      fontSize={{
+                        xs: "14px",
+                        sm: "16px",
+                        md: "18px",
+                        lg: "20px",
+                        xl: "21px",
+                        "2xl": "22px",
+                      }}
                       fontWeight={500}
                       fontFamily={"CeraRoundPro"}
                     >
@@ -99,9 +113,18 @@ const Contact = () => {
                     </Text>
                   </HStack>
                   <HStack gap={"10px"}>
-                    <Box w={"2em"}>{/* this is meant to be empty */}</Box>
+                    <Box w={"2em"} display={{ xs: "none", xl: "block" }}>
+                      {/* this is meant to be empty */}
+                    </Box>
                     <Text
-                      fontSize={"20px"}
+                      fontSize={{
+                        xs: "14px",
+                        sm: "14px",
+                        md: "16px",
+                        lg: "16px",
+                        xl: "18px",
+                        "2xl": "20px",
+                      }}
                       fontWeight={400}
                       fontFamily={
                         "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
@@ -119,20 +142,28 @@ const Contact = () => {
                 borderBottom={"1px solid white"}
                 templateColumns={"repeat(2, 1fr)"}
                 width={"100%"}
+                py={"10px"}
               >
                 {/* Telephone*/}
                 <GridItem borderRight={"1px solid white"}>
                   <VStack
                     justifyContent={"center"}
-                    alignItems={"flex-start"}
-                    ml={"5%"}
+                    alignItems={{ xs: "center", xl: "flex-start" }}
+                    ml={{ xs: "0%", xl: "5%" }}
                   >
                     <HStack gap={"10px"}>
                       <Box w={"2em"} display={"flex"} alignItems={"center"}>
                         <LuPhoneCall size={"2em"} color="white" />
                       </Box>
                       <Text
-                        fontSize={"25px"}
+                        fontSize={{
+                          xs: "14px",
+                          sm: "16px",
+                          md: "18px",
+                          lg: "20px",
+                          xl: "21px",
+                          "2xl": "22px",
+                        }}
                         fontWeight={500}
                         fontFamily={"CeraRoundPro"}
                       >
@@ -140,9 +171,18 @@ const Contact = () => {
                       </Text>
                     </HStack>
                     <HStack gap={"10px"}>
-                      <Box w={"2em"}>{/* this is meant to be empty */}</Box>
+                      <Box w={"2em"} display={{ xs: "none", xl: "block" }}>
+                        {/* this is meant to be empty */}
+                      </Box>
                       <Text
-                        fontSize={"20px"}
+                        fontSize={{
+                          xs: "14px",
+                          sm: "14px",
+                          md: "16px",
+                          lg: "16px",
+                          xl: "18px",
+                          "2xl": "20px",
+                        }}
                         fontWeight={400}
                         fontFamily={
                           "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
@@ -158,15 +198,22 @@ const Contact = () => {
                 <GridItem>
                   <VStack
                     justifyContent={"center"}
-                    alignItems={"flex-start"}
-                    ml={"5%"}
+                    alignItems={{ xs: "center", xl: "flex-start" }}
+                    ml={{ xs: "0%", xl: "5%" }}
                   >
                     <HStack gap={"10px"}>
                       <Box w={"2em"} display={"flex"} alignItems={"center"}>
                         <TiPrinter size={"2em"} color="white" />
                       </Box>
                       <Text
-                        fontSize={"25px"}
+                        fontSize={{
+                          xs: "14px",
+                          sm: "16px",
+                          md: "18px",
+                          lg: "20px",
+                          xl: "21px",
+                          "2xl": "22px",
+                        }}
                         fontWeight={500}
                         fontFamily={"CeraRoundPro"}
                       >
@@ -174,9 +221,18 @@ const Contact = () => {
                       </Text>
                     </HStack>
                     <HStack gap={"10px"}>
-                      <Box w={"2em"}>{/* this is meant to be empty */}</Box>
+                      <Box w={"2em"} display={{ xs: "none", xl: "block" }}>
+                        {/* this is meant to be empty */}
+                      </Box>
                       <Text
-                        fontSize={"20px"}
+                        fontSize={{
+                          xs: "14px",
+                          sm: "14px",
+                          md: "16px",
+                          lg: "16px",
+                          xl: "18px",
+                          "2xl": "20px",
+                        }}
                         fontWeight={400}
                         fontFamily={
                           "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
@@ -190,18 +246,25 @@ const Contact = () => {
               </Grid>
 
               {/* Third Row */}
-              <GridItem>
+              <GridItem py={"10px"}>
                 <VStack
                   justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  ml={"2.5%"}
+                  alignItems={{ xs: "center", xl: "flex-start" }}
+                  ml={{ xs: "0%", xl: "2.5%" }}
                 >
                   <HStack gap={"10px"}>
                     <Box w={"2em"} display={"flex"} alignItems={"center"}>
                       <TfiEmail size={"2em"} color="white" />
                     </Box>
                     <Text
-                      fontSize={"25px"}
+                      fontSize={{
+                        xs: "14px",
+                        sm: "16px",
+                        md: "18px",
+                        lg: "20px",
+                        xl: "21px",
+                        "2xl": "22px",
+                      }}
                       fontWeight={500}
                       fontFamily={"CeraRoundPro"}
                     >
@@ -209,9 +272,18 @@ const Contact = () => {
                     </Text>
                   </HStack>
                   <HStack gap={"10px"}>
-                    <Box w={"2em"}>{/* this is meant to be empty */}</Box>
+                    <Box w={"2em"} display={{ xs: "none", xl: "block" }}>
+                      {/* this is meant to be empty */}
+                    </Box>
                     <Text
-                      fontSize={"20px"}
+                      fontSize={{
+                        xs: "14px",
+                        sm: "14px",
+                        md: "16px",
+                        lg: "16px",
+                        xl: "18px",
+                        "2xl": "20px",
+                      }}
                       fontWeight={400}
                       fontFamily={
                         "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
@@ -227,25 +299,42 @@ const Contact = () => {
 
           {/* Opening Hours */}
           <GridItem
-            height={"300px"}
             display={"flex"}
-            flexDir={"column"}
+            flexDir={{ xs: "row", xl: "column" }}
             justifyContent={"center"}
-            alignItems={"flex-start"}
-            ml={"10%"}
+            alignItems={{ xs: "center", xl: "flex-start" }}
+            ml={{ xs: "0%", xl: "10%" }}
             gap={"25px"}
           >
             <Text
               fontFamily={"CeraRoundPro"}
-              fontSize={"25px"}
+              fontSize={{
+                xs: "14px",
+                sm: "16px",
+                md: "18px",
+                lg: "20px",
+                xl: "21px",
+                "2xl": "22px",
+              }}
               fontWeight={"500"}
             >
               Opening Hours
             </Text>
 
-            <VStack justifyContent={"center"} alignItems={"flex-start"}>
+            <Flex
+              flexFlow={{ xs: "row", xl: "column" }}
+              justifyContent={"center"}
+              alignItems={"flex-start"}
+            >
               <Text
-                fontSize={"20px"}
+                fontSize={{
+                  xs: "14px",
+                  sm: "14px",
+                  md: "16px",
+                  lg: "16px",
+                  xl: "18px",
+                  "2xl": "20px",
+                }}
                 fontWeight={"400"}
                 fontFamily={
                   "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
@@ -254,7 +343,14 @@ const Contact = () => {
                 Mon-Fri:
               </Text>
               <Text
-                fontSize={"20px"}
+                fontSize={{
+                  xs: "14px",
+                  sm: "14px",
+                  md: "16px",
+                  lg: "16px",
+                  xl: "18px",
+                  "2xl": "20px",
+                }}
                 fontWeight={"400"}
                 fontFamily={
                   "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
@@ -262,11 +358,22 @@ const Contact = () => {
               >
                 9:30 am - 5:30pm
               </Text>
-            </VStack>
+            </Flex>
 
-            <VStack justifyContent={"center"} alignItems={"flex-start"}>
+            <Flex
+              flexFlow={{ xs: "row", xl: "column" }}
+              justifyContent={"center"}
+              alignItems={"flex-start"}
+            >
               <Text
-                fontSize={"20px"}
+                fontSize={{
+                  xs: "14px",
+                  sm: "14px",
+                  md: "16px",
+                  lg: "16px",
+                  xl: "18px",
+                  "2xl": "20px",
+                }}
                 fontWeight={"400"}
                 fontFamily={
                   "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
@@ -275,7 +382,14 @@ const Contact = () => {
                 Sat-Sun:
               </Text>
               <Text
-                fontSize={"20px"}
+                fontSize={{
+                  xs: "14px",
+                  sm: "14px",
+                  md: "16px",
+                  lg: "16px",
+                  xl: "18px",
+                  "2xl": "20px",
+                }}
                 fontWeight={"400"}
                 fontFamily={
                   "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
@@ -283,256 +397,313 @@ const Contact = () => {
               >
                 Closed
               </Text>
-            </VStack>
+            </Flex>
           </GridItem>
         </Grid>
 
         {/* Main */}
-        <Grid width="100%" my={"20px"} templateColumns={"repeat(2, 1fr)"}>
-          <GridItem
-            display={"flex"}
-            flexDirection={"column"}
-            justifyContent={"flex-start"}
-            alignItems={"flex-start"}
-            pl={"10%"}
-            gap={"10px"}
-          >
-            {/* get in touch */}
-            <Text
-              fontSize={"45px"}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              textAlign={"left"}
-            >
-              Get In Touch
-            </Text>
-
-            {/* instructions */}
-            <Text
-              fontSize={"25px"}
-              fontWeight={400}
-              fontFamily={"CeraRoundPro"}
-              width={"600px"}
-              textAlign={"left"}
-            >
-              Please fill in the form and we’ll get back to you as soon as we
-              can.
-            </Text>
-
-            {/* form */}
-            <VStack
-              gap="6"
-              justifyContent={"center"}
-              alignItems={"flex-start"}
-              textAlign={"left"}
-            >
-              {/* Names */}
-              <HStack gap={"50px"}>
-                {/* First */}
-                <Field
-                  orientation="vertical"
-                  label="First Name"
-                  required
-                  unstyled="true"
-                  fontSize="25px"
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  maxWidth={"300px"}
-                >
-                  <Input
-                    placeholder="John"
-                    flex="1"
-                    fontFamily={
-                      "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
-                    }
-                    backgroundColor={"white"}
-                    color={"black"}
-                    borderColor={"white"}
-                    borderRadius={"8px"}
-                    height={"40px"}
-                  />
-                </Field>
-
-                {/* Last */}
-                <Field
-                  orientation="vertical"
-                  label="Last Name"
-                  required
-                  unstyled="true"
-                  fontSize="25px"
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  maxWidth={"300px"}
-                >
-                  <Input
-                    placeholder="Doe"
-                    flex="1"
-                    fontFamily={
-                      "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
-                    }
-                    backgroundColor={"white"}
-                    color={"black"}
-                    borderColor={"white"}
-                    borderRadius={"8px"}
-                    height={"40px"}
-                  />
-                </Field>
-              </HStack>
-
-              {/* Email */}
-              <Field
-                label="Email Address"
-                required
-                unstyled="true"
-                fontSize="25px"
-                fontWeight={500}
-                fontFamily={"CeraRoundPro"}
-                width={"625px"}
-              >
-                <Input
-                  placeholder="me@example.com"
-                  fontFamily={
-                    "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
-                  }
-                  backgroundColor={"white"}
-                  color={"black"}
-                  borderColor={"white"}
-                  borderRadius={"8px"}
-                  height={"40px"}
-                />
-              </Field>
-
-              {/* Number */}
-              <Field
-                label="Phone Number"
-                required
-                unstyled="true"
-                fontSize="25px"
-                fontWeight={500}
-                fontFamily={"CeraRoundPro"}
-                width={"625px"}
-              >
-                <Input
-                  placeholder="+44 1234567890"
-                  fontFamily={
-                    "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
-                  }
-                  backgroundColor={"white"}
-                  color={"black"}
-                  borderColor={"white"}
-                  borderRadius={"8px"}
-                  height={"40px"}
-                />
-              </Field>
-
-              {/* Message */}
-              <Field
-                label="Message"
-                required
-                unstyled="true"
-                fontSize="25px"
-                fontWeight={500}
-                fontFamily={"CeraRoundPro"}
-                width={"625px"}
-              >
-                <Textarea
-                  placeholder="Hi, I would like to know more about..."
-                  fontFamily={
-                    "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
-                  }
-                  backgroundColor={"white"}
-                  color={"black"}
-                  borderColor={"white"}
-                  borderRadius={"8px"}
-                  height={"350px"}
-                />
-              </Field>
-            </VStack>
-
-            <Button
-              background={"none"}
-              color={"white"}
-              border={"1px solid #FFFFFF"}
-              borderRadius={"8px"}
-              fontSize={"16px"}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              _hover={{
-                borderColor: "#beab7c",
-                backgroundColor: "black",
-                color: "#beab7c",
-                transition: "all 0.3s ease",
-              }}
-            >
-              Send Now
-            </Button>
-
-            {/* Google Maps */}
-            <Box
-              width="625px"
-              height="500px"
-              mt={6}
-              mb={"50px"}
-              borderRadius="8px"
-              overflow="hidden"
-              border="1px solid white"
-            >
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.004089600194!2d-0.19325174666734102!3d51.494792439171626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b4b49fb8783%3A0x22f7a54aa37a1eb3!2sLumine%20Solicitors!5e0!3m2!1sen!2s!4v1732136989695!5m2!1sen!2s"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </Box>
-          </GridItem>
-          <GridItem>2</GridItem>
-        </Grid>
-
-        {/* Chat With Us */}
-        <HStack
-          justifyContent={"flex-end"}
-          alignItems={"flex-end"}
-          mb={"25px"}
-          mr={"10px"}
+        <VStack
+          width="100%"
+          my={"20px"}
+          justifyContent={"center"}
+          alignItems={"center"}
+          gap={"20px"}
+          mb={"50px"}
         >
-          <Button
-            borderRadius={"12px"}
-            _hover={{ backgroundColor: "black", color: "#beab7c" }}
+          {/* get in touch */}
+          <Text
+            fontSize={{
+              xs: "16px",
+              sm: "18px",
+              md: "20px",
+              lg: "24px",
+              xl: "30px",
+              "2xl": "36px",
+            }}
+            fontWeight={600}
+            fontFamily={"CeraRoundPro"}
+            textAlign={"left"}
+            color={"black"}
+            mb={"25px"}
           >
-            <Text
-              fontWeight="400"
-              fontSize="12px"
-              fontFamily="Inter"
-              transition="all 0.3s ease"
-              _groupHover={{ color: "#beab7c" }}
+            Get In Touch
+          </Text>
+          <Grid
+            templateColumns={{ xs: "1fr", xl: "repeat(2, 1fr)" }}
+            templateRows={{ xs: "repeat(2, 1fr)", xl: "1fr" }}
+            justifyContent={"center"}
+            alignItems={"center"}
+            width={"100%"}
+          >
+            <GridItem
+              justifySelf={"center"}
+              display={"flex"}
+              flexDirection={"column"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              gap={"10px"}
+              border={"1px solid black"}
+              borderRadius={"12px"}
+              width={"90%"}
+              py={"10px"}
+              backgroundColor={"#ffe7c5"}
             >
-              Need help?
-            </Text>
-            <Text
-              fontWeight="600"
-              fontSize="12px"
-              fontFamily="HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
-              transition="all 0.3s ease"
-              _groupHover={{ color: "#beab7c" }}
-            >
-              Chat with us.
-            </Text>
-          </Button>
+              {/* instructions */}
+              <Text
+                fontSize={{
+                  xs: "14px",
+                  sm: "16px",
+                  md: "18px",
+                  xl: "20px",
+                  "2xl": "22px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                textAlign={"center"}
+                color={"black"}
+                mb={"25px"}
+              >
+                Please fill in the form and we’ll get back to you as soon as we
+                can.
+              </Text>
 
-          {/* WhatsApp logo */}
-          <Box
-            borderRadius="100%"
-            transition="all 0.3s ease"
-            backgroundColor={"#4caf50"}
-            _hover={{ backgroundColor: "black", color: "#beab7c" }}
-            cursor="pointer"
-          >
-            <IoLogoWhatsapp size="5em" />
-          </Box>
-        </HStack>
+              {/* form */}
+              <VStack
+                gap="6"
+                justifyContent={"center"}
+                alignItems={"flex-start"}
+                textAlign={"left"}
+              >
+                {/* Names */}
+                <VStack gap={"10px"}>
+                  {/* First */}
+                  <Field
+                    orientation="vertical"
+                    label="First Name"
+                    required
+                    unstyled="true"
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={500}
+                    color={"black"}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <Input
+                      placeholder="John"
+                      flex="1"
+                      fontFamily={
+                        "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
+                      }
+                      backgroundColor={"white"}
+                      color={"black"}
+                      borderColor={"black"}
+                      borderRadius={"4px"}
+                    />
+                  </Field>
+
+                  {/* Last */}
+                  <Field
+                    orientation="vertical"
+                    label="Last Name"
+                    required
+                    unstyled="true"
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={500}
+                    fontFamily={"CeraRoundPro"}
+                    color={"black"}
+                  >
+                    <Input
+                      placeholder="Doe"
+                      flex="1"
+                      fontFamily={
+                        "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
+                      }
+                      backgroundColor={"white"}
+                      color={"black"}
+                      borderColor={"black"}
+                      borderRadius={"4px"}
+                    />
+                  </Field>
+                </VStack>
+
+                {/* Email */}
+                <Field
+                  label="Email Address"
+                  required
+                  unstyled="true"
+                  fontSize={{
+                    xs: "12px",
+                    sm: "12px",
+                    md: "14px",
+                    xl: "16px",
+                    "2xl": "18px",
+                  }}
+                  fontWeight={500}
+                  fontFamily={"CeraRoundPro"}
+                  color={"black"}
+                >
+                  <Input
+                    placeholder="me@example.com"
+                    fontFamily={
+                      "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
+                    }
+                    backgroundColor={"white"}
+                    color={"black"}
+                    borderColor={"black"}
+                    borderRadius={"4px"}
+                    width={"90%"}
+                  />
+                </Field>
+
+                {/* Number */}
+                <Field
+                  label="Phone Number"
+                  required
+                  unstyled="true"
+                  fontSize={{
+                    xs: "12px",
+                    sm: "12px",
+                    md: "14px",
+                    xl: "16px",
+                    "2xl": "18px",
+                  }}
+                  fontWeight={500}
+                  fontFamily={"CeraRoundPro"}
+                  color={"black"}
+                >
+                  <Input
+                    placeholder="+44 1234567890"
+                    fontFamily={
+                      "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
+                    }
+                    backgroundColor={"white"}
+                    color={"black"}
+                    borderColor={"black"}
+                    borderRadius={"4px"}
+                    width={"90%"}
+                  />
+                </Field>
+
+                {/* Message */}
+                <Field
+                  label="Message"
+                  required
+                  unstyled="true"
+                  fontSize={{
+                    xs: "12px",
+                    sm: "12px",
+                    md: "14px",
+                    xl: "16px",
+                    "2xl": "18px",
+                  }}
+                  fontWeight={500}
+                  fontFamily={"CeraRoundPro"}
+                  color={"black"}
+                  width={"100%"}
+                >
+                  <Textarea
+                    placeholder="Hi, I would like to know more about..."
+                    fontFamily={
+                      "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
+                    }
+                    backgroundColor={"white"}
+                    color={"black"}
+                    borderColor={"black"}
+                    borderRadius={"4px"}
+                    minHeight={"150px"}
+                    maxHeight={"200px"}
+                  />
+                </Field>
+              </VStack>
+
+              <Button
+                fontSize={{
+                  //base: {"18px"}
+                  xs: "12px",
+                  md: "14px",
+                  lg: "14px",
+                  xl: "16px",
+                  "2xl": "18px",
+                }}
+                py={{
+                  //base: {"15px"}
+                  xs: "6px",
+                  md: "8px",
+                  lg: "10px",
+                  xl: "12px",
+                  "2xl": "15px",
+                }}
+                backgroundColor={"black"}
+                color={"white"}
+                border={"1px solid #FFFFFF"}
+                borderRadius={"8px"}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                _hover={{
+                  borderColor: "#beab7c",
+                  backgroundColor: "black",
+                  color: "#beab7c",
+                  transition: "all 0.3s ease",
+                }}
+              >
+                Send Now
+              </Button>
+            </GridItem>
+            <GridItem
+              alignSelf={{ xs: "center", lg: "flex-start" }}
+              justifySelf={"center"}
+              width="90%"
+            >
+              {/* Google Maps */}
+              <Box
+                width={"100%"}
+                height={{
+                  xs: "400px",
+                  sm: "450px",
+                  md: "500px",
+                  lg: "550px",
+                  xl: "600px",
+                  "2xl": "600px",
+                }}
+                mt={6}
+                mb={"50px"}
+                borderRadius="8px"
+                overflow="hidden"
+                border="1px solid white"
+              >
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.004089600194!2d-0.19325174666734102!3d51.494792439171626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b4b49fb8783%3A0x22f7a54aa37a1eb3!2sLumine%20Solicitors!5e0!3m2!1sen!2s!4v1732136989695!5m2!1sen!2s"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </Box>
+            </GridItem>
+          </Grid>
+        </VStack>
+
+        {/* Other Services */}
+        <AllServiceLinks />
+
+        {/* Prices */}
+        <AllPrices />
+
+        {/* News and Insights */}
+        <AllNewsInsights />
 
         {/* Footer */}
         <Footer />

@@ -50,7 +50,7 @@ const AllPrices = () => {
       >
         <Grid
           width={"90%"}
-          templateColumns={{ xs: "repeat(3, 1fr)", lg: "repeat(3, 1fr)" }}
+          templateColumns={{ xs: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }}
           gap={{
             xs: "25px",
             sm: "30px",
