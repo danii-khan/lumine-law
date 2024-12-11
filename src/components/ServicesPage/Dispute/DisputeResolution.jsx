@@ -6,7 +6,6 @@ import {
   VStack,
   HStack,
   List,
-  Image,
   Grid,
   GridItem,
 } from "@chakra-ui/react";
@@ -25,7 +24,6 @@ import FamilyImg from "../../../assets/services/main/family/main-banner.png";
 import { AiOutlineMinus } from "react-icons/ai";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
 import AllPrices from "../../NavLinks/AllPrices";
-import DisputeImg from "../../../assets/services/main/dispute/main-banner.png";
 import AllServicesImg from "../../../assets/services/all/bannertest.png";
 
 const Dispute = () => {

@@ -4,10 +4,8 @@ import {
   Box,
   HStack,
   VStack,
-  List,
   Grid,
   GridItem,
-  Image,
   Flex,
 } from "@chakra-ui/react";
 import Navbar from "../Navbar/Navbar";
@@ -18,17 +16,8 @@ import { useState } from "react";
 import { AiOutlineMinus } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
-import NewsInsightsOne from "../../assets/landing/news-insights-one.png";
-import NewsInsightsTwo from "../../assets/landing/news-insights-two.png";
-import NewsInsightsThree from "../../assets/landing/news-insights-three.png";
-import NewsInsightsFour from "../../assets/landing/news-insights-four.png";
-import BannerImg from "../../assets/services/main/immigration/main-banner.png";
 import ImmigrationImg from "../../assets/services/main/immigration/main-banner.png";
 import ResidentialImg from "../../assets/services/main/residential/main-banner.png";
-import DisputeImg from "../../assets/services/main/dispute/main-banner.png";
-import LandlordImg from "../../assets/services/main/landlord/main-banner.png";
-import FamilyImg from "../../assets/services/main/family/main-banner.png";
-import AllServicesImg from "../../assets/services/all/bannertest.png";
 
 import { Helmet } from "react-helmet";
 import AllServiceLinks from "../NavLinks/AllServiceLinks";

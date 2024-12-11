@@ -6,7 +6,6 @@ import {
   VStack,
   HStack,
   List,
-  Image,
   Grid,
   GridItem,
 } from "@chakra-ui/react";
@@ -19,7 +18,6 @@ import { Helmet } from "react-helmet";
 import { GoPlus } from "react-icons/go";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import ImmigrationImg from "../../../assets/services/main/immigration/main-banner.png";
-import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
 import DisputeImg from "../../../assets/services/main/dispute/main-banner.png";
 import LandlordImg from "../../../assets/services/main/landlord/main-banner.png";
 import FamilyImg from "../../../assets/services/main/family/main-banner.png";

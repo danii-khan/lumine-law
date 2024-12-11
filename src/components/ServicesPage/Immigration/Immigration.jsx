@@ -4,8 +4,6 @@ import {
   Box,
   HStack,
   VStack,
-  List,
-  Image,
   Grid,
   GridItem,
 } from "@chakra-ui/react";

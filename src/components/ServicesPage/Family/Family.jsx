@@ -4,15 +4,12 @@ import {
   Box,
   HStack,
   VStack,
-  List,
-  Image,
   Grid,
   GridItem,
 } from "@chakra-ui/react";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
 import BannerImg from "../../../assets/services/main/family/family-banner.png";
-import ArrowImg from "../../../assets/services/main/immigration/main-link-arrow.png";
 import "../../../styles/fonts.css";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -22,7 +19,6 @@ import ImmigrationImg from "../../../assets/services/main/immigration/main-banne
 import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
 import DisputeImg from "../../../assets/services/main/dispute/main-banner.png";
 import LandlordImg from "../../../assets/services/main/landlord/main-banner.png";
-import FamilyImg from "../../../assets/services/main/family/main-banner.png";
 import AllServicesImg from "../../../assets/services/all/bannertest.png";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 

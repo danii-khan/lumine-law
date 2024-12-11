@@ -14,9 +14,8 @@ import {
 import { Field } from "../../lib/chakra-components/ui/field";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import ContactImg from "../../assets/contact/contact-top.png";
 import "../../styles/fonts.css";
-import { IoLocationOutline, IoLogoWhatsapp } from "react-icons/io5";
+import { IoLocationOutline } from "react-icons/io5";
 import { LuPhoneCall } from "react-icons/lu";
 import { TiPrinter } from "react-icons/ti";
 import { TfiEmail } from "react-icons/tfi";
