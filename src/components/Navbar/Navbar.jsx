@@ -1,23 +1,6 @@
-import { useState } from "react";
-import {
-  HStack,
-  Image,
-  Text,
-  Grid,
-  GridItem,
-  Box,
-  VStack,
-  MenuRoot,
-  MenuTrigger,
-  MenuContent,
-  MenuItem,
-  MenuItemCommand,
-  Container,
-} from "@chakra-ui/react";
+import { HStack, Image, Text, Grid, GridItem, Box } from "@chakra-ui/react";
 import { Button } from "../../lib/chakra-components/ui/button";
 import LumineLogo from "../../assets/navbar/logo.png";
-import MenuIcon from "../../assets/navbar/menu-dropdown-icon.png";
-import BlackMenuIcon from "../../assets/navbar/menu-dropdown-icon-black.png";
 import "../../styles/fonts.css";
 import styles from "../../styles/navbar.module.css";
 import { Link } from "react-router-dom";
