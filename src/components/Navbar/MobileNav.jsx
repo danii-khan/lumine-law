@@ -14,11 +14,21 @@ import "../../styles/fonts.css";
 import styles from "../../styles/navbar.module.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import BackArrow from "../../assets/navbar/back-arrow.png";
+import ForwardArrow from "../../assets/navbar/forward-arrow.png";
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [serviceItems, setServiceItems] = useState(false);
-  const [priceItems, setPriceItems] = useState(false);
+  const [activeSection, setActiveSection] = useState(null);
+
+  const handleSectionClick = (section) => {
+    if (activeSection === section) {
+      setActiveSection(null);
+    } else {
+      setActiveSection(section);
+    }
+  };
 
   return (
     <>
@@ -52,433 +62,529 @@ const Menu = () => {
           cursor={"pointer"}
         />
       </Box>
-      {isOpen && (
-        <VStack
-          py={"10px"}
-          backgroundColor={"black"}
-          position="fixed"
-          top="50px"
-          right="0px"
-          height={"100vh"}
-          width={"70vw"}
-          justifyContent={"flex-start"}
-          alignItems={"flex-start"}
-          gap={"10px"}
-        >
-          {/* About */}
-          <Box
-            backgroundColor="black"
-            width={"100%"}
-            borderBottom={"1px solid white"}
-            display={"flex"}
-            justifyContent={"flex-start"}
+
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ x: "100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: "100%" }}
+            transition={{ type: "tween", duration: 0.25 }}
+            style={{
+              position: "fixed",
+              top: "50px",
+              right: "0px",
+              height: "100vh",
+              width: "70vw",
+              backgroundColor: "black",
+            }}
           >
-            <Button
-              as={Link}
-              to={"/lumine-law/about"}
-              backgroundColor={"black"}
-              color="white"
-              size="sm"
-              fontSize={{
-                xs: "20px",
-                md: "22px",
-                lg: "24px",
-              }}
-              fontWeight={500}
-              className={styles.menuButton}
-              css={{
-                transition: "all 0.3s ease",
-              }}
+            <VStack
+              py="10px"
+              justifyContent="flex-start"
+              alignItems="flex-start"
+              gap="10px"
+              height="100%"
             >
-              About
-            </Button>
-          </Box>
-
-          {/* Services */}
-          <Box
-            backgroundColor="black"
-            width={"100%"}
-            borderBottom={"1px solid"}
-            borderColor={serviceItems ? "#beab7c" : "white"}
-            display={"flex"}
-            flexFlow={"column"}
-            justifyContent={"flex-start"}
-            alignItems={"flex-start"}
-          >
-            <Button
-              backgroundColor="inherit"
-              color={serviceItems ? "#beab7c" : "white"}
-              size="sm"
-              fontSize={{
-                xs: "20px",
-                md: "22px",
-                lg: "24px",
-              }}
-              fontWeight={500}
-              className={styles.menuButton}
-              css={{
-                transition: "all 0.3s ease",
-              }}
-              onClick={() => setServiceItems(!serviceItems)}
-            >
-              Services
-            </Button>
-            {/* Service Menu Items */}
-            {serviceItems && (
-              <VStack
-                justifyContent={"flex-start"}
-                alignItems={"flex-start"}
-                width={"100%"}
-              >
-                {/* All */}
-                <Box
-                  width={"100%"}
-                  borderY={"1px solid #beab7c"}
-                  display={"flex"}
+              {/* Main Menu */}
+              {activeSection === null && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  style={{ width: "100%" }}
                 >
-                  <Button
+                  {/* About */}
+                  <Box
                     as={Link}
-                    to={"/lumine-law/all-services"}
-                    ml={"5%"}
-                    backgroundColor="inherit"
-                    color="#beab7c"
-                    size="sm"
-                    fontSize={{
-                      xs: "14px",
-                      md: "16px",
-                      lg: "18px",
-                    }}
-                    fontWeight={500}
-                    className={styles.menuButton}
-                    css={{
-                      transition: "all 0.3s ease",
-                    }}
-                    onClick={() => setServiceItems(!serviceItems)}
+                    to={"/lumine-law/about"}
+                    backgroundColor="black"
+                    width={"100%"}
+                    borderBottom={"1px solid white"}
+                    display={"flex"}
+                    justifyContent={"flex-start"}
+                    py={"10px"}
                   >
-                    All Services
-                  </Button>
-                </Box>
+                    <Button
+                      backgroundColor={"black"}
+                      color="white"
+                      size="sm"
+                      fontSize={{
+                        xs: "20px",
+                        md: "22px",
+                        lg: "24px",
+                      }}
+                      fontWeight={500}
+                      className={styles.menuButton}
+                      css={{
+                        transition: "all 0.3s ease",
+                      }}
+                    >
+                      About
+                    </Button>
+                  </Box>
 
-                {/* Immigration */}
-                <Box
-                  width={"100%"}
-                  borderBottom={"1px solid #beab7c"}
-                  display={"flex"}
-                >
-                  <Button
+                  {/* Services */}
+                  <Box
+                    backgroundColor="black"
+                    width={"100%"}
+                    borderBottom={"1px solid white"}
+                    display={"flex"}
+                    justifyContent={"flex-start"}
+                    py={"10px"}
+                    onClick={() => handleSectionClick("services")}
+                  >
+                    <Button
+                      backgroundColor="inherit"
+                      color={"white"}
+                      size="sm"
+                      fontSize={{
+                        xs: "20px",
+                        md: "22px",
+                        lg: "24px",
+                      }}
+                      fontWeight={500}
+                      className={styles.menuButton}
+                      css={{
+                        transition: "all 0.3s ease",
+                      }}
+                    >
+                      Services
+                    </Button>
+                  </Box>
+
+                  {/* Prices */}
+                  <Box
+                    backgroundColor="black"
+                    width={"100%"}
+                    borderBottom={"1px solid white"}
+                    display={"flex"}
+                    justifyContent={"flex-start"}
+                    py={"10px"}
+                    onClick={() => handleSectionClick("prices")}
+                  >
+                    <Button
+                      backgroundColor="inherit"
+                      color={"white"}
+                      size="sm"
+                      fontSize={{
+                        xs: "20px",
+                        md: "22px",
+                        lg: "24px",
+                      }}
+                      fontWeight={500}
+                      className={styles.menuButton}
+                      css={{
+                        transition: "all 0.3s ease",
+                      }}
+                    >
+                      Prices
+                    </Button>
+                  </Box>
+
+                  {/* News + Insights */}
+                  <Box
+                    backgroundColor="black"
+                    width={"100%"}
+                    borderBottom={"1px solid white"}
+                    display={"flex"}
+                    justifyContent={"flex-start"}
+                    py={"10px"}
+                  >
+                    <Button
+                      backgroundColor="inherit"
+                      color="white"
+                      size="sm"
+                      fontSize={{
+                        xs: "20px",
+                        md: "22px",
+                        lg: "24px",
+                      }}
+                      fontWeight={500}
+                      className={styles.menuButton}
+                      css={{
+                        transition: "all 0.3s ease",
+                      }}
+                    >
+                      News and Insights
+                    </Button>
+                  </Box>
+
+                  {/* Contact Us */}
+                  <Box
+                    backgroundColor="black"
+                    width={"100%"}
+                    borderBottom={"1px solid white"}
+                    display={"flex"}
+                    justifyContent={"flex-start"}
+                    py={"10px"}
                     as={Link}
-                    to={"/lumine-law/all-services/immigration"}
-                    ml={"5%"}
-                    backgroundColor="inherit"
-                    color="#beab7c"
-                    size="sm"
-                    fontSize={{
-                      xs: "14px",
-                      md: "16px",
-                      lg: "18px",
-                    }}
-                    fontWeight={500}
-                    className={styles.menuButton}
-                    css={{
-                      transition: "all 0.3s ease",
-                    }}
+                    to={"/lumine-law/contact"}
                   >
-                    Immigration Services
-                  </Button>
-                </Box>
+                    <Button
+                      backgroundColor="inherit"
+                      color="white"
+                      size="sm"
+                      fontSize={{
+                        xs: "20px",
+                        md: "22px",
+                        lg: "24px",
+                      }}
+                      fontWeight={500}
+                      className={styles.menuButton}
+                      css={{
+                        transition: "all 0.3s ease",
+                      }}
+                    >
+                      Contact Us
+                    </Button>
+                  </Box>
+                </motion.div>
+              )}
 
-                {/* Residential & Commercial Property */}
-                <Box
-                  width={"100%"}
-                  borderBottom={"1px solid #beab7c"}
-                  display={"flex"}
-                >
-                  <Button
-                    as={Link}
-                    to={"/lumine-law/all-services/residential-commercial"}
-                    ml={"5%"}
-                    backgroundColor="inherit"
-                    color="#beab7c"
-                    size="sm"
-                    fontSize={{
-                      xs: "14px",
-                      md: "16px",
-                      lg: "18px",
-                    }}
-                    fontWeight={500}
-                    className={styles.menuButton}
-                    css={{
-                      transition: "all 0.3s ease",
-                    }}
+              {/* Services Section */}
+              <AnimatePresence>
+                {activeSection === "services" && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -20 }}
+                    transition={{ duration: 0.2 }}
+                    style={{ width: "100%" }}
                   >
-                    Residential & Commercial Property
-                  </Button>
-                </Box>
+                    {/* Back */}
+                    <Box
+                      width="100%"
+                      display={"flex"}
+                      flexDir={"row"}
+                      justifyContent={"flex-start"}
+                      alignItems={"center"}
+                      gap={"0"}
+                      onClick={() => setActiveSection(null)}
+                    >
+                      <Image src={BackArrow} height={"30px"} />
+                      <Button variant="ghost" color="white">
+                        Back
+                      </Button>
+                    </Box>
 
-                {/* Dispute Resolution & Civil Litigation */}
-                <Box
-                  width={"100%"}
-                  borderBottom={"1px solid #beab7c"}
-                  display={"flex"}
-                >
-                  <Button
-                    as={Link}
-                    to={"/lumine-law/all-services/dispute-resolution"}
-                    ml={"5%"}
-                    backgroundColor="inherit"
-                    color="#beab7c"
-                    size="sm"
-                    fontSize={{
-                      xs: "14px",
-                      md: "16px",
-                      lg: "18px",
-                    }}
-                    fontWeight={500}
-                    className={styles.menuButton}
-                    css={{
-                      transition: "all 0.3s ease",
-                    }}
+                    <VStack
+                      justifyContent={"flex-start"}
+                      alignItems={"flex-start"}
+                      width={"100%"}
+                    >
+                      {/* All */}
+                      <Box
+                        width={"100%"}
+                        borderY={"1px solid #beab7c"}
+                        display={"flex"}
+                        py={"5px"}
+                        as={Link}
+                        to={"/lumine-law/all-services"}
+                      >
+                        <Button
+                          ml={"5%"}
+                          backgroundColor="inherit"
+                          color="#beab7c"
+                          size="sm"
+                          fontSize={{
+                            xs: "14px",
+                            md: "16px",
+                            lg: "18px",
+                          }}
+                          fontWeight={500}
+                          className={styles.menuButton}
+                          css={{
+                            transition: "all 0.3s ease",
+                          }}
+                          onClick={() => setIsOpen(false)}
+                        >
+                          All Services
+                        </Button>
+                      </Box>
+
+                      {/* Immigration */}
+                      <Box
+                        width={"100%"}
+                        borderBottom={"1px solid #beab7c"}
+                        display={"flex"}
+                        py={"5px"}
+                        as={Link}
+                        to={"/lumine-law/all-services/immigration"}
+                      >
+                        <Button
+                          ml={"5%"}
+                          backgroundColor="inherit"
+                          color="#beab7c"
+                          size="sm"
+                          fontSize={{
+                            xs: "14px",
+                            md: "16px",
+                            lg: "18px",
+                          }}
+                          fontWeight={500}
+                          className={styles.menuButton}
+                          css={{
+                            transition: "all 0.3s ease",
+                          }}
+                          onClick={() => setIsOpen(false)}
+                        >
+                          Immigration Services
+                        </Button>
+                      </Box>
+
+                      {/* Residential & Commercial Property */}
+                      <Box
+                        width={"100%"}
+                        borderBottom={"1px solid #beab7c"}
+                        display={"flex"}
+                        py={"5px"}
+                        as={Link}
+                        to={"/lumine-law/all-services/residential-commercial"}
+                      >
+                        <Button
+                          ml={"5%"}
+                          backgroundColor="inherit"
+                          color="#beab7c"
+                          size="sm"
+                          fontSize={{
+                            xs: "14px",
+                            md: "16px",
+                            lg: "18px",
+                          }}
+                          fontWeight={500}
+                          className={styles.menuButton}
+                          css={{
+                            transition: "all 0.3s ease",
+                          }}
+                          onClick={() => setIsOpen(false)}
+                        >
+                          Residential & Commercial Property
+                        </Button>
+                      </Box>
+
+                      {/* Dispute Resolution & Civil Litigation */}
+                      <Box
+                        width={"100%"}
+                        borderBottom={"1px solid #beab7c"}
+                        display={"flex"}
+                        py={"5px"}
+                        as={Link}
+                        to={"/lumine-law/all-services/dispute-resolution"}
+                      >
+                        <Button
+                          ml={"5%"}
+                          backgroundColor="inherit"
+                          color="#beab7c"
+                          size="sm"
+                          fontSize={{
+                            xs: "14px",
+                            md: "16px",
+                            lg: "18px",
+                          }}
+                          fontWeight={500}
+                          className={styles.menuButton}
+                          css={{
+                            transition: "all 0.3s ease",
+                          }}
+                          onClick={() => setIsOpen(false)}
+                        >
+                          Dispute Resolution & Civil Litigation
+                        </Button>
+                      </Box>
+
+                      {/* Landlord & Tenant Disputes */}
+                      <Box
+                        width={"100%"}
+                        borderBottom={"1px solid #beab7c"}
+                        display={"flex"}
+                        py={"5px"}
+                        as={Link}
+                        to={"/lumine-law/all-services/landlord-tenant"}
+                      >
+                        <Button
+                          ml={"5%"}
+                          backgroundColor="inherit"
+                          color="#beab7c"
+                          size="sm"
+                          fontSize={{
+                            xs: "14px",
+                            md: "16px",
+                            lg: "18px",
+                          }}
+                          fontWeight={500}
+                          className={styles.menuButton}
+                          css={{
+                            transition: "all 0.3s ease",
+                          }}
+                          onClick={() => setIsOpen(false)}
+                        >
+                          Landlord & Tenant Disputes
+                        </Button>
+                      </Box>
+
+                      {/* Family and Children */}
+                      <Box
+                        width={"100%"}
+                        display={"flex"}
+                        borderBottom={"1px solid #beab7c"}
+                        py={"5px"}
+                        as={Link}
+                        to={"/lumine-law/all-services/family-and-children"}
+                      >
+                        <Button
+                          ml={"5%"}
+                          backgroundColor="inherit"
+                          color="#beab7c"
+                          size="sm"
+                          fontSize={{
+                            xs: "14px",
+                            md: "16px",
+                            lg: "18px",
+                          }}
+                          fontWeight={500}
+                          className={styles.menuButton}
+                          css={{
+                            transition: "all 0.3s ease",
+                          }}
+                          onClick={() => setIsOpen(false)}
+                        >
+                          Family and Children
+                        </Button>
+                      </Box>
+                    </VStack>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
+              {/* Prices Section */}
+              <AnimatePresence>
+                {activeSection === "prices" && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -20 }}
+                    transition={{ duration: 0.2 }}
+                    style={{ width: "100%" }}
                   >
-                    Dispute Resolution & Civil Litigation
-                  </Button>
-                </Box>
+                    {/* Back */}
+                    <Box
+                      width="100%"
+                      display={"flex"}
+                      flexDir={"row"}
+                      justifyContent={"flex-start"}
+                      alignItems={"center"}
+                      gap={"0"}
+                      onClick={() => setActiveSection(null)}
+                    >
+                      <Image src={BackArrow} height={"30px"} />
+                      <Button variant="ghost" color="white">
+                        Back
+                      </Button>
+                    </Box>
 
-                {/* Landlord & Tenant Disputes */}
-                <Box
-                  width={"100%"}
-                  borderBottom={"1px solid #beab7c"}
-                  display={"flex"}
-                >
-                  <Button
-                    as={Link}
-                    to={"/lumine-law/all-services/landlord-tenant"}
-                    ml={"5%"}
-                    backgroundColor="inherit"
-                    color="#beab7c"
-                    size="sm"
-                    fontSize={{
-                      xs: "14px",
-                      md: "16px",
-                      lg: "18px",
-                    }}
-                    fontWeight={500}
-                    className={styles.menuButton}
-                    css={{
-                      transition: "all 0.3s ease",
-                    }}
-                  >
-                    Landlord & Tenant Disputes
-                  </Button>
-                </Box>
+                    <VStack
+                      justifyContent={"flex-start"}
+                      alignItems={"flex-start"}
+                      width={"100%"}
+                    >
+                      {/* Property Prices */}
+                      <Box
+                        width={"100%"}
+                        borderY={"1px solid #beab7c"}
+                        display={"flex"}
+                        py={"5px"}
+                        as={Link}
+                        to={"/lumine-law/prices/property-prices"}
+                      >
+                        <Button
+                          ml={"5%"}
+                          backgroundColor="inherit"
+                          color="#beab7c"
+                          size="sm"
+                          fontSize={{
+                            xs: "14px",
+                            md: "16px",
+                            lg: "18px",
+                          }}
+                          fontWeight={500}
+                          className={styles.menuButton}
+                          css={{
+                            transition: "all 0.3s ease",
+                          }}
+                          onClick={() => setIsOpen(false)}
+                        >
+                          Property Prices
+                        </Button>
+                      </Box>
 
-                {/* Family and Children */}
-                <Box width={"100%"} display={"flex"}>
-                  <Button
-                    as={Link}
-                    to={"/lumine-law/all-services/family-and-children"}
-                    ml={"5%"}
-                    backgroundColor="inherit"
-                    color="#beab7c"
-                    size="sm"
-                    fontSize={{
-                      xs: "14px",
-                      md: "16px",
-                      lg: "18px",
-                    }}
-                    fontWeight={500}
-                    className={styles.menuButton}
-                    css={{
-                      transition: "all 0.3s ease",
-                    }}
-                  >
-                    Family and Children
-                  </Button>
-                </Box>
-              </VStack>
-            )}
-          </Box>
+                      {/* Debt Recovery Prices */}
+                      <Box
+                        width={"100%"}
+                        borderBottom={"1px solid #beab7c"}
+                        display={"flex"}
+                        py={"5px"}
+                        as={Link}
+                        to="/lumine-law/prices/debt-recovery"
+                      >
+                        <Button
+                          ml={"5%"}
+                          backgroundColor="inherit"
+                          color="#beab7c"
+                          size="sm"
+                          fontSize={{
+                            xs: "14px",
+                            md: "16px",
+                            lg: "18px",
+                          }}
+                          fontWeight={500}
+                          className={styles.menuButton}
+                          css={{
+                            transition: "all 0.3s ease",
+                          }}
+                          onClick={() => setIsOpen(false)}
+                        >
+                          Debt Recovery Prices
+                        </Button>
+                      </Box>
 
-          {/* Prices */}
-          <Box
-            backgroundColor="black"
-            width={"100%"}
-            borderBottom={"1px solid"}
-            borderColor={priceItems ? "#beab7c" : "white"}
-            display={"flex"}
-            flexFlow={"column"}
-            justifyContent={"flex-start"}
-            alignItems={"flex-start"}
-          >
-            <Button
-              backgroundColor="inherit"
-              color={priceItems ? "#beab7c" : "white"}
-              size="sm"
-              fontSize={{
-                xs: "20px",
-                md: "22px",
-                lg: "24px",
-              }}
-              fontWeight={500}
-              className={styles.menuButton}
-              css={{
-                transition: "all 0.3s ease",
-              }}
-              onClick={() => setPriceItems(!priceItems)}
-            >
-              Prices
-            </Button>
-            {/* Service Menu Items */}
-            {priceItems && (
-              <VStack
-                justifyContent={"flex-start"}
-                alignItems={"flex-start"}
-                width={"100%"}
-              >
-                {/* Property Prices */}
-                <Box
-                  width={"100%"}
-                  borderY={"1px solid #beab7c"}
-                  display={"flex"}
-                >
-                  <Button
-                    as={Link}
-                    to={"/lumine-law/prices/property-prices"}
-                    ml={"5%"}
-                    backgroundColor="inherit"
-                    color="#beab7c"
-                    size="sm"
-                    fontSize={{
-                      xs: "14px",
-                      md: "16px",
-                      lg: "18px",
-                    }}
-                    fontWeight={500}
-                    className={styles.menuButton}
-                    css={{
-                      transition: "all 0.3s ease",
-                    }}
-                    onClick={() => setServiceItems(!serviceItems)}
-                  >
-                    Property Prices
-                  </Button>
-                </Box>
-
-                {/* Debt Recovery Prices */}
-                <Box
-                  width={"100%"}
-                  borderBottom={"1px solid #beab7c"}
-                  display={"flex"}
-                >
-                  <Button
-                    as={Link}
-                    to="/lumine-law/prices/debt-recovery"
-                    ml={"5%"}
-                    backgroundColor="inherit"
-                    color="#beab7c"
-                    size="sm"
-                    fontSize={{
-                      xs: "14px",
-                      md: "16px",
-                      lg: "18px",
-                    }}
-                    fontWeight={500}
-                    className={styles.menuButton}
-                    css={{
-                      transition: "all 0.3s ease",
-                    }}
-                  >
-                    Debt Recovery Prices
-                  </Button>
-                </Box>
-
-                {/* Immigration Prices */}
-                <Box
-                  width={"100%"}
-                  borderBottom={"1px solid #beab7c"}
-                  display={"flex"}
-                >
-                  <Button
-                    as={Link}
-                    to="/lumine-law/prices/immigration-prices"
-                    ml={"5%"}
-                    backgroundColor="inherit"
-                    color="#beab7c"
-                    size="sm"
-                    fontSize={{
-                      xs: "14px",
-                      md: "16px",
-                      lg: "18px",
-                    }}
-                    fontWeight={500}
-                    className={styles.menuButton}
-                    css={{
-                      transition: "all 0.3s ease",
-                    }}
-                  >
-                    Immigration Prices
-                  </Button>
-                </Box>
-              </VStack>
-            )}
-          </Box>
-
-          {/* News + Insights */}
-          <Box
-            backgroundColor="black"
-            width={"100%"}
-            borderBottom={"1px solid white"}
-            display={"flex"}
-            justifyContent={"flex-start"}
-          >
-            <Button
-              backgroundColor="inherit"
-              color="white"
-              size="sm"
-              fontSize={{
-                xs: "20px",
-                md: "22px",
-                lg: "24px",
-              }}
-              fontWeight={500}
-              className={styles.menuButton}
-              css={{
-                transition: "all 0.3s ease",
-              }}
-            >
-              News and Insights
-            </Button>
-          </Box>
-
-          {/* Contact Us */}
-          <Box
-            backgroundColor="black"
-            width={"100%"}
-            borderBottom={"1px solid white"}
-            display={"flex"}
-            justifyContent={"flex-start"}
-          >
-            <Button
-              as={Link}
-              to={"/lumine-law/contact"}
-              backgroundColor="inherit"
-              color="white"
-              size="sm"
-              fontSize={{
-                xs: "20px",
-                md: "22px",
-                lg: "24px",
-              }}
-              fontWeight={500}
-              className={styles.menuButton}
-              css={{
-                transition: "all 0.3s ease",
-              }}
-            >
-              Contact Us
-            </Button>
-          </Box>
-        </VStack>
-      )}
+                      {/* Immigration Prices */}
+                      <Box
+                        width={"100%"}
+                        borderBottom={"1px solid #beab7c"}
+                        display={"flex"}
+                        py={"5px"}
+                        as={Link}
+                        to="/lumine-law/prices/immigration-prices"
+                      >
+                        <Button
+                          ml={"5%"}
+                          backgroundColor="inherit"
+                          color="#beab7c"
+                          size="sm"
+                          fontSize={{
+                            xs: "14px",
+                            md: "16px",
+                            lg: "18px",
+                          }}
+                          fontWeight={500}
+                          className={styles.menuButton}
+                          css={{
+                            transition: "all 0.3s ease",
+                          }}
+                          onClick={() => setIsOpen(false)}
+                        >
+                          Immigration Prices
+                        </Button>
+                      </Box>
+                    </VStack>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </VStack>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 };
