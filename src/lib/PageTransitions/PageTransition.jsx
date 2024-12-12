@@ -1,31 +1,15 @@
+import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLocation } from "react-router-dom";
 
 const PageTransition = ({ children }) => {
   const location = useLocation();
 
-  const pageVariants = {
-    // initial: {
-    //   opacity: 0,
-    //   y: 0,
-    // },
-    // animate: {
-    //   opacity: 1,
-    //   y: 0,
-    //   transition: {
-    //     duration: 0.3,
-    //     ease: "easeOut",
-    //   },
-    // },
-    // exit: {
-    //   opacity: 0,
-    //   y: 0,
-    //   transition: {
-    //     duration: 0.2,
-    //     ease: "easeIn",
-    //   },
-    // },
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
+  const pageVariants = {
     initial: { opacity: 0 },
     animate: { opacity: 1 },
     exit: { opacity: 0 },
