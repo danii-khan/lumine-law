@@ -6,6 +6,7 @@ import styles from "../../styles/navbar.module.css";
 import { Link } from "react-router-dom";
 import PricesMenu from "./PricesMenu";
 import ServicesMegaMenu from "./ServicesMegaMenu";
+import MobileNav from "./MobileNav";
 
 const Menu = () => {
   return (
@@ -55,44 +56,6 @@ const Menu = () => {
         >
           About
         </Button>
-
-        {/* People */}
-        {/* <Button
-          backgroundColor="inherit"
-          color="white"
-          size="sm"
-          fontSize={{
-            //base: {"18px"}
-            xs: "12px",
-            md: "14px",
-            lg: "14px",
-            xl: "16px",
-            "2xl": "18px",
-          }}
-          fontWeight={500}
-          height="100%"
-          borderRadius="0px"
-          position="relative"
-          px={{
-            //base: "20px"
-            xs: "4px",
-            md: "8px",
-            lg: "12px",
-            xl: "14px",
-            "2xl": "16px",
-          }}
-          _hover={{
-            color: "white",
-            backgroundColor: "black",
-            borderBottom: "5px solid #BEAB7C",
-          }}
-          className={styles.menuButton}
-          css={{
-            transition: "all 0.3s ease",
-          }}
-        >
-          People
-        </Button> */}
 
         {/* Services */}
         <ServicesMegaMenu />
@@ -145,7 +108,11 @@ const Menu = () => {
 const Navbar = () => {
   return (
     <>
-      <Box position={"relative"} zIndex={1000}>
+      <Box
+        position={"relative"}
+        zIndex={1000}
+        display={{ xs: "none", lg: "block" }}
+      >
         <Grid
           templateColumns={"repeat(3, 1fr)"}
           height={"50px"}
@@ -252,11 +219,7 @@ const Navbar = () => {
           </GridItem>
 
           {/* Menu Options */}
-          <GridItem
-            height={"100%"}
-            justifySelf={"center"}
-            display={{ xs: "none", md: "grid" }}
-          >
+          <GridItem height={"100%"} justifySelf={"center"}>
             <Menu />
           </GridItem>
 
@@ -302,6 +265,8 @@ const Navbar = () => {
           </GridItem>
         </Grid>
       </Box>
+
+      <MobileNav />
     </>
   );
 };

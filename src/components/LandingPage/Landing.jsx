@@ -43,6 +43,7 @@ import "../../styles/fonts.css";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
+import MobileNav from "../Navbar/MobileNav";
 
 const ScrollSpySidebar = () => {
   const [activeSection, setActiveSection] = useState("none");
@@ -269,6 +270,7 @@ const LandingPage = () => {
       <Helmet>
         <title>Lumine Law</title>
       </Helmet>
+
       <Navbar />
 
       {/* Hero section content */}
