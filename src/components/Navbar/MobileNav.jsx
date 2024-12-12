@@ -130,7 +130,8 @@ const Menu = () => {
                     width={"100%"}
                     borderBottom={"1px solid white"}
                     display={"flex"}
-                    justifyContent={"flex-start"}
+                    justifyContent={"space-between"}
+                    alignItems={"center"}
                     py={"10px"}
                     onClick={() => handleSectionClick("services")}
                   >
@@ -151,6 +152,7 @@ const Menu = () => {
                     >
                       Services
                     </Button>
+                    <Image src={ForwardArrow} height={"30px"} />
                   </Box>
 
                   {/* Prices */}
@@ -159,7 +161,7 @@ const Menu = () => {
                     width={"100%"}
                     borderBottom={"1px solid white"}
                     display={"flex"}
-                    justifyContent={"flex-start"}
+                    justifyContent={"space-between"}
                     py={"10px"}
                     onClick={() => handleSectionClick("prices")}
                   >
@@ -180,6 +182,7 @@ const Menu = () => {
                     >
                       Prices
                     </Button>
+                    <Image src={ForwardArrow} height={"30px"} />
                   </Box>
 
                   {/* News + Insights */}
@@ -261,9 +264,18 @@ const Menu = () => {
                       alignItems={"center"}
                       gap={"0"}
                       onClick={() => setActiveSection(null)}
+                      py={"10px"}
                     >
                       <Image src={BackArrow} height={"30px"} />
-                      <Button variant="ghost" color="white">
+                      <Button
+                        variant="ghost"
+                        color="white"
+                        fontSize={{
+                          xs: "20px",
+                          md: "22px",
+                          lg: "24px",
+                        }}
+                      >
                         Back
                       </Button>
                     </Box>
@@ -476,9 +488,18 @@ const Menu = () => {
                       alignItems={"center"}
                       gap={"0"}
                       onClick={() => setActiveSection(null)}
+                      py={"10px"}
                     >
                       <Image src={BackArrow} height={"30px"} />
-                      <Button variant="ghost" color="white">
+                      <Button
+                        variant="ghost"
+                        color="white"
+                        fontSize={{
+                          xs: "20px",
+                          md: "22px",
+                          lg: "24px",
+                        }}
+                      >
                         Back
                       </Button>
                     </Box>
