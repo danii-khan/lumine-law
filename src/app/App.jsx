@@ -64,6 +64,7 @@ import EstatePlanning from "../components/ServicesPage/WillsAndProbate/EstatePla
 import InheritanceTaxPlanning from "../components/ServicesPage/WillsAndProbate/InheritanceTaxPlanning";
 import WealthManagement from "../components/ServicesPage/WillsAndProbate/WealthManagement";
 import SuccessionPlanning from "../components/ServicesPage/WillsAndProbate/SuccessionPlanning";
+import IntellectualProperty from "../components/ServicesPage/IntellectualProperty/IntellectualProperty";
 
 function App() {
   return (
@@ -656,6 +657,16 @@ function App() {
             element={
               <PageTransition>
                 <SuccessionPlanning />
+              </PageTransition>
+            }
+          />
+
+          {/* Intellectual Property */}
+          <Route
+            path="/lumine-law/all-services/intellectual-property"
+            element={
+              <PageTransition>
+                <IntellectualProperty />
               </PageTransition>
             }
           />

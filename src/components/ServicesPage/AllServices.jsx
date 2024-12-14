@@ -373,6 +373,84 @@ const AllServices = () => {
                   </Box>
                 </Link>
               </GridItem>
+              {/* Intellectual Property */}
+              <GridItem
+                width={{ xs: "100%", lg: "80%", xl: "80%", "2xl": "80%" }}
+                height={{
+                  xs: "125px",
+                  lg: "175px",
+                  xl: "200px",
+                  "2xl": "250px",
+                }}
+                padding={{
+                  xs: "15% 10px",
+                  lg: "6px 14px",
+                  xl: "8px 16px",
+                  "2xl": "10px 20px",
+                }}
+                bgImage={`url(${DisputeImg})`}
+                bgSize={"cover"}
+                bgPos={"center"}
+                bgRepeat={"no-repeat"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                cursor={"pointer"}
+                color={"#ffffff"}
+                _hover={{
+                  opacity: "0.8",
+                  transition: "all 0.5s ease",
+                }}
+              >
+                <Link
+                  to={"/lumine-law/all-services/intellectual-property"}
+                  style={{ textDecoration: "none" }}
+                >
+                  <Box
+                    height={"100%"}
+                    display={"flex"}
+                    flexFlow={"column"}
+                    justifyContent={"center"}
+                    alignItems={"flex-start"}
+                    gap={"10px"}
+                  >
+                    <Text
+                      fontSize={{
+                        xs: "11px",
+                        lg: "14px",
+                        xl: "16px",
+                        "2xl": "20px",
+                      }}
+                      fontFamily={"CeraRoundPro"}
+                      fontWeight={500}
+                      textAlign={"left"}
+                      color={"white"}
+                    >
+                      Intellectual Property
+                    </Text>
+                    <VStack
+                      width={"100%"}
+                      height={"100%"}
+                      justifyContent={"space-between"}
+                      alignItems={"flex-start"}
+                    >
+                      <Text
+                        fontSize={{
+                          xs: "10px",
+                          lg: "12px",
+                          xl: "13px",
+                          "2xl": "16px",
+                        }}
+                        fontFamily={"CeraRoundPro"}
+                        fontWeight={400}
+                        color={"white"}
+                      >
+                        A lil para about what this service is{" "}
+                      </Text>
+                      <HiOutlineArrowLongRight size={"3em"} />
+                    </VStack>
+                  </Box>
+                </Link>
+              </GridItem>
               {/* Dispute Resolution */}
               <GridItem
                 width={{ xs: "100%", lg: "80%", xl: "80%", "2xl": "80%" }}
@@ -607,8 +685,6 @@ const AllServices = () => {
                   </Box>
                 </Link>
               </GridItem>
-              {/* empty grid */}
-              <GridItem display={{ xs: "none", lg: "grid" }}></GridItem>
               {/* Wills and Probate */}
               <GridItem
                 width={{ xs: "100%", lg: "80%", xl: "80%", "2xl": "80%" }}
