@@ -174,7 +174,7 @@ const Residential = () => {
               {/*	Freehold and Leasehold Purchases  */}
               <GridItem
                 as={Link}
-                to={"/lumine-law/all-services/immigration/uk-visitor-visa"}
+                to={"/lumine-law/all-services/residential/freehold-purchases"}
                 color={"black"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
