@@ -58,6 +58,7 @@ import SchedulesConditions from "../components/ServicesPage/Commercial/Schedules
 import AdviceMultiple from "../components/ServicesPage/Commercial/AdviceMultiple";
 import WillsAndProbate from "../components/ServicesPage/WillsAndProbate/WillsAndProbate";
 import Wills from "../components/ServicesPage/WillsAndProbate/Wills";
+import Trusts from "../components/ServicesPage/WillsAndProbate/Trusts";
 
 function App() {
   return (
@@ -590,6 +591,16 @@ function App() {
             element={
               <PageTransition>
                 <Wills />
+              </PageTransition>
+            }
+          />
+
+          {/* Wills and Probate Subservice */}
+          <Route
+            path="/lumine-law/all-services/wills-probate/trusts"
+            element={
+              <PageTransition>
+                <Trusts />
               </PageTransition>
             }
           />

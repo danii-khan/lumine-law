@@ -210,7 +210,7 @@ const WillsAndProbate = () => {
               {/*	Trusts */}
               <GridItem
                 as={Link}
-                to={"/lumine-law/all-services/residential/freehold-purchases"}
+                to={"/lumine-law/all-services/wills-probate/trusts"}
                 color={"black"}
                 border={"1px solid black"}
                 borderRadius={"8px"}

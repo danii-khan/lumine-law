@@ -11,7 +11,7 @@ import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
 
-const Wills = () => {
+const Trusts = () => {
   const [spouseState, setSpouseState] = useState(false);
   const [eligibilityState, setEligibilityState] = useState(false);
   const [applicationState, setApplicationState] = useState(false);
@@ -32,7 +32,7 @@ const Wills = () => {
         flexDirection="column"
       >
         <Helmet>
-          <title>Lumine Law Wills Services</title>
+          <title>Lumine Law Trusts Services</title>
         </Helmet>
 
         <Navbar />
@@ -64,7 +64,7 @@ const Wills = () => {
               width={"90%"}
               textAlign={"left"}
             >
-              Wills
+              Trusts
             </Text>
           </Box>
 
@@ -88,13 +88,11 @@ const Wills = () => {
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
               >
-                A will, when planned effectively, ensures your assets and wealth
-                are distributed as per your wishes and secures the future of the
-                ones you love. Failure to make a will results in the law
-                dividing your estate according to their rules of intestacy.
-                These are fixed and may not reflect the way you wish for your
-                wealth and assets to be distributed or reflect what is tax
-                efficient.
+                Trusts are a form of wealth management. This includes property
+                investments or land for a family member or another person whom
+                you wish to benefit (trustees). Different types of trusts are
+                taxed differently, so it is important to get the right legal
+                advice.
               </Text>
 
               <Text
@@ -103,9 +101,11 @@ const Wills = () => {
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
               >
-                Our experienced solicitors will assist you in deciding what
-                service suits you best, ensure tax efficiency, and tailor your
-                will in accordance with your unique circumstances.
+                Our solicitors will work with you in accordance with your needs
+                and offer you advice on the drafting, creation, and
+                administration of your trust for your loved ones. We guarantee
+                to communicate effectively with you to maintain your peace of
+                mind through the process.
               </Text>
             </Box>
           </Box>
@@ -116,7 +116,7 @@ const Wills = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* Creating a Will*/}
+            {/* Administering Trusts */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -167,7 +167,7 @@ const Wills = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Creating a Will
+                  Administering Trusts
                 </Text>
                 {!spouseState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -199,8 +199,30 @@ const Wills = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Our expert solicitors will help with writing your will and
-                    ensuring that
+                    Administering a trust can be a challenging task, often
+                    requiring significant time and expertise. At our firm, we
+                    understand the complexities involved in trust management and
+                    offer tailored solutions to assist trustees in fulfilling
+                    their duties effectively.
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    We aim to maximise benefits for beneficiaries while ensuring
+                    assets are protected. Our team is committed to delivering
+                    personalised assistance tailored to the unique needs of each
+                    trust, and our services include:
                   </Text>
 
                   <List.Root
@@ -217,23 +239,25 @@ const Wills = () => {
                     fontFamily={"CeraRoundPro"}
                   >
                     <List.Item>
-                      Your assets are distributed to whomever you want and in
-                      accordance with your wishes.
-                    </List.Item>
-                    <List.Item>Inheritance tax is minimal</List.Item>
-                    <List.Item>
-                      Guardians are legally appointed for any minor children.
+                      Guaranteeing complete adherence to legal and tax
+                      regulations
                     </List.Item>
                     <List.Item>
-                      Amendments are made to reflect any changes in your life,
-                      such as divorce or the birth of children.
+                      Administration and management of trusts
+                    </List.Item>
+                    <List.Item>
+                      Offering guidance on trustees' legal authority and
+                      responsibility
+                    </List.Item>
+                    <List.Item>
+                      Serving as a professional trustee when required
                     </List.Item>
                   </List.Root>
                 </VStack>
               )}
             </Box>
 
-            {/* Sharia-Compliant Wills*/}
+            {/* Will Trusts */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -284,7 +308,7 @@ const Wills = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Sharia-Compliant Wills
+                  Will Trusts
                 </Text>
                 {!eligibilityState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -316,12 +340,9 @@ const Wills = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    A Sharia (Islamic) will is different from a traditional will
-                    as it adheres to the strict guidelines set down in Sharia
-                    law and integrates Islamic beliefs. It takes into account
-                    the notion of inheritance in Islam, which contains rules
-                    about how assets should be divided among beneficiaries
-                    according to their relationship to the deceased.
+                    A will trust offers a way for your assets to be safeguarded
+                    while providing for your loved ones' future. This can be
+                    incorporated into your will to take effect after your death.
                   </Text>
 
                   <Text
@@ -337,15 +358,54 @@ const Wills = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Our expert solicitors can help ensure your will is Sharia
-                    law-compliant and provide for your family in a way that is
-                    specially tailored to your faith.
+                    In essence, will trusts provide:
+                  </Text>
+
+                  <List.Root
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <List.Item>A flexible approach</List.Item>
+                    <List.Item>
+                      Providing benefits to individuals in unforeseen ways
+                      during will drafting
+                    </List.Item>
+                    <List.Item>
+                      Adjustments to new circumstances as they arise
+                    </List.Item>
+                  </List.Root>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    Our experienced solicitors will help you set up a will
+                    trust, manage finances that meet your specific needs, and
+                    provide comprehensive support throughout the process.
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Making updates or changing an Existing Will (Codicil */}
+            {/* Discretionary and Family Trusts */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -396,7 +456,7 @@ const Wills = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Making Updates or Changing an Existing Will (Codicil)
+                  Discretionary and Family Trusts
                 </Text>
                 {!applicationState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -427,14 +487,14 @@ const Wills = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Ensuring your will stays up to date is crucial to reflect
-                    your present circumstances and include all desired
-                    beneficiaries. It’s advisable to revisit your will every
-                    five years, particularly to accommodate any shifts in tax
-                    regulations that might impact you. Consider reviewing your
-                    will after significant life events such as marriage,
-                    divorce, births, and financial alterations, as these could
-                    affect your estate's value and tax liabilities.
+                    A discretionary trust, often referred to as a family trust
+                    or trust fund, is a legal arrangement in which an individual
+                    (referred to as the settlor) transfers property, assets, or
+                    funds to a trustee. The trustee is then responsible for
+                    holding and managing these assets on behalf of a group of
+                    beneficiaries. Unlike other types of trusts, the identities
+                    and entitlements of beneficiaries to the trust's income or
+                    capital are not predetermined.
                   </Text>
 
                   <Text
@@ -450,19 +510,60 @@ const Wills = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Whether you opt for a codicil or write a new will depends on
-                    the extent and number of alterations needed. While a codicil
-                    suffices for minor changes, major changes often require the
-                    creation of a new will to prevent confusion. Lumine
-                    solicitors can sit down and discuss these options with you
-                    and offer guidance tailored to your situation and your loved
-                    ones' needs.
+                    These are best suited for those who are unable to manage
+                    their assets, such as children, who may have a disability or
+                    mental illness that affects their capacity to make
+                    decisions.
                   </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    With our expertise in trust creation and administration, our
+                    services include:
+                  </Text>
+
+                  <List.Root
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <List.Item>Optimising tax efficiency</List.Item>
+                    <List.Item>
+                      Providing expert guidance on legal requirements
+                    </List.Item>
+                    <List.Item>Updating you on changes to tax laws</List.Item>
+                    <List.Item>
+                      Managing all compliance requirements, including trust
+                      registration, preparing tax returns, and assessing fees.
+                    </List.Item>
+                    <List.Item>
+                      Ensuring your assets and family are protected
+                    </List.Item>
+                  </List.Root>
                 </VStack>
               )}
             </Box>
 
-            {/* Contesting A Will */}
+            {/* Personal Injury Trusts */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -513,7 +614,7 @@ const Wills = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Contesting A Will
+                  Personal Injury Trusts
                 </Text>
                 {!helpState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -544,14 +645,46 @@ const Wills = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    f you find yourself in a position where you are excluded
-                    from a will, receive less than anticipated, or believe the
-                    will contains errors, you may be entitled to challenge it.
-                    Whether you are the executor or someone who is set to
-                    benefit from the assets, our solicitors will support you in
-                    defending a will claim, as we understand it can’t be a
-                    complicated process.
+                    A personal injury trust allows individuals who have obtained
+                    compensation from a successful personal injury claim to
+                    safeguard their compensation from being considered for
+                    means-tested benefits. We can help you or a loved one set up
+                    a personal injury trust.
                   </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    The benefits of a personal injury trust include:
+                  </Text>
+
+                  <List.Root
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <List.Item>Tax-efficiency</List.Item>
+                    <List.Item>Management of future care costs</List.Item>
+                    <List.Item>Protection from means-tested benefits</List.Item>
+                  </List.Root>
                 </VStack>
               )}
             </Box>
@@ -666,4 +799,4 @@ const Wills = () => {
   );
 };
 
-export default Wills;
+export default Trusts;
