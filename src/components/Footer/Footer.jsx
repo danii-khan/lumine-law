@@ -190,13 +190,14 @@ const Footer = () => {
               }}
               objectFit={"contain"}
             ></Image>
-            <Box
-              background={"white"}
+            <Image
+              src={LexcelLogo}
+              alt="Lexcel"
               height={{
-                xs: "40px",
-                md: "45px",
-                lg: "50px",
-                xl: "60px",
+                xs: "70px",
+                md: "75px",
+                lg: "80px",
+                xl: "90px",
               }}
               width={{
                 xs: "80px",
@@ -204,17 +205,8 @@ const Footer = () => {
                 lg: "90px",
                 xl: "100px",
               }}
-              border={"0px"}
-              borderRadius={"4px"}
-            >
-              <Image
-                src={LexcelLogo}
-                alt="Lexcel"
-                height={"100%"}
-                width={"100%"}
-                objectFit={"contain"}
-              ></Image>
-            </Box>
+              objectFit={"contain"}
+            ></Image>
           </HStack>
         </Flex>
 
@@ -283,21 +275,22 @@ const Footer = () => {
                   src={LumineLogo}
                   alt="Lumine Logo"
                   height={{
-                    // base: {"65px"}
-                    xs: "35px",
-                    md: "40px",
-                    lg: "45px",
-                    xl: "55px",
-                    "2xl": "65px",
-                  }}
-                  width={{
-                    // base: {"50px"}
+                    // base: 50px
                     xs: "20px",
                     md: "25px",
                     lg: "30px",
-                    xl: "40px",
-                    "2xl": "50px",
+                    xl: "30px",
+                    "2xl": "40px",
                   }}
+                  width={{
+                    // base: 50px
+                    xs: "20px",
+                    md: "25px",
+                    lg: "30px",
+                    xl: "30px",
+                    "2xl": "40px",
+                  }}
+                  fit={"cover"}
                 />
                 <Text
                   fontSize={{

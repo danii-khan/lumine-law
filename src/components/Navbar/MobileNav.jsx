@@ -667,26 +667,28 @@ const MobileNav = () => {
                 }}
                 cursor={"pointer"}
                 className={styles.chakraStack}
+                gap={"5px"}
               >
                 <Image
                   src={LumineLogo}
                   alt=""
                   height={{
                     // base: 50px
-                    xs: "25px",
-                    md: "30px",
-                    lg: "35px",
-                    xl: "35px",
-                    "2xl": "50px",
+                    xs: "20px",
+                    md: "25px",
+                    lg: "30px",
+                    xl: "30px",
+                    "2xl": "40px",
                   }}
                   width={{
                     // base: 50px
-                    xs: "25px",
-                    md: "30px",
-                    lg: "35px",
-                    xl: "35px",
-                    "2xl": "50px",
+                    xs: "20px",
+                    md: "25px",
+                    lg: "30px",
+                    xl: "30px",
+                    "2xl": "40px",
                   }}
+                  fit={"cover"}
                 />
                 <Text
                   fontSize={{
