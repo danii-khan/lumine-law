@@ -246,7 +246,7 @@ const WillsAndProbate = () => {
               {/* Power of Attorney   */}
               <GridItem
                 as={Link}
-                to={"/lumine-law/all-services/residential/transfer-of-equity"}
+                to={"/lumine-law/all-services/wills-probate/power-attorney"}
                 color={"black"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
@@ -282,7 +282,7 @@ const WillsAndProbate = () => {
               {/*	Estate Planning   */}
               <GridItem
                 as={Link}
-                to={"/lumine-law/all-services/residential/lease-terms-advice"}
+                to={"/lumine-law/all-services/wills-probate/estate-planning"}
                 color={"black"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
@@ -318,7 +318,9 @@ const WillsAndProbate = () => {
               {/*	Inheritance Tax Planning    */}
               <GridItem
                 as={Link}
-                to={"/lumine-law/all-services/residential/lease-terms-advice"}
+                to={
+                  "/lumine-law/all-services/wills-probate/inheritance-tax-planning"
+                }
                 color={"black"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
@@ -354,7 +356,9 @@ const WillsAndProbate = () => {
               {/*	Private Wealth Management   */}
               <GridItem
                 as={Link}
-                to={"/lumine-law/all-services/residential/lease-terms-advice"}
+                to={
+                  "/lumine-law/all-services/wills-probate/private-wealth-management"
+                }
                 color={"black"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
@@ -390,7 +394,9 @@ const WillsAndProbate = () => {
               {/*	Succession Planning   */}
               <GridItem
                 as={Link}
-                to={"/lumine-law/all-services/residential/lease-terms-advice"}
+                to={
+                  "/lumine-law/all-services/wills-probate/succession-planning"
+                }
                 color={"black"}
                 border={"1px solid black"}
                 borderRadius={"8px"}

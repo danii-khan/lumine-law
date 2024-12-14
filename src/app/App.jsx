@@ -59,6 +59,11 @@ import AdviceMultiple from "../components/ServicesPage/Commercial/AdviceMultiple
 import WillsAndProbate from "../components/ServicesPage/WillsAndProbate/WillsAndProbate";
 import Wills from "../components/ServicesPage/WillsAndProbate/Wills";
 import Trusts from "../components/ServicesPage/WillsAndProbate/Trusts";
+import PowerOfAttorney from "../components/ServicesPage/WillsAndProbate/PowerOfAttorney";
+import EstatePlanning from "../components/ServicesPage/WillsAndProbate/EstatePlanning";
+import InheritanceTaxPlanning from "../components/ServicesPage/WillsAndProbate/InheritanceTaxPlanning";
+import WealthManagement from "../components/ServicesPage/WillsAndProbate/WealthManagement";
+import SuccessionPlanning from "../components/ServicesPage/WillsAndProbate/SuccessionPlanning";
 
 function App() {
   return (
@@ -601,6 +606,56 @@ function App() {
             element={
               <PageTransition>
                 <Trusts />
+              </PageTransition>
+            }
+          />
+
+          {/* Wills and Probate Subservice */}
+          <Route
+            path="/lumine-law/all-services/wills-probate/power-attorney"
+            element={
+              <PageTransition>
+                <PowerOfAttorney />
+              </PageTransition>
+            }
+          />
+
+          {/* Wills and Probate Subservice */}
+          <Route
+            path="/lumine-law/all-services/wills-probate/estate-planning"
+            element={
+              <PageTransition>
+                <EstatePlanning />
+              </PageTransition>
+            }
+          />
+
+          {/* Wills and Probate Subservice */}
+          <Route
+            path="/lumine-law/all-services/wills-probate/inheritance-tax-planning"
+            element={
+              <PageTransition>
+                <InheritanceTaxPlanning />
+              </PageTransition>
+            }
+          />
+
+          {/* Wills and Probate Subservice */}
+          <Route
+            path="/lumine-law/all-services/wills-probate/private-wealth-management"
+            element={
+              <PageTransition>
+                <WealthManagement />
+              </PageTransition>
+            }
+          />
+
+          {/* Wills and Probate Subservice */}
+          <Route
+            path="/lumine-law/all-services/wills-probate/succession-planning"
+            element={
+              <PageTransition>
+                <SuccessionPlanning />
               </PageTransition>
             }
           />

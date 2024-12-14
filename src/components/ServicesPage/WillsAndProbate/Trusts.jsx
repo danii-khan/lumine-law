@@ -772,7 +772,7 @@ const Trusts = () => {
                     fontFamily={"CeraRoundPro"}
                   >
                     If you have any further queries or are interested in our
-                    will services please do not hesitate to get in touch with
+                    trusts services please do not hesitate to get in touch with
                     Lumine solicitors <strong>020 3950 2246</strong> or{" "}
                     <strong>
                       <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
