@@ -138,7 +138,7 @@ const Residential = () => {
               {/* Freehold and Leasehold Sales  */}
               <GridItem
                 as={Link}
-                to={"/lumine-law/all-services/immigration/spouse-visa"}
+                to={"/lumine-law/all-services/residential/freehold-sales"}
                 color={"black"}
                 border={"1px solid black"}
                 borderRadius={"8px"}

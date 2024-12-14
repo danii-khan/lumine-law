@@ -40,6 +40,7 @@ import PropertyPrices from "../components/Prices/PropertyPrices";
 import DebtRecovery from "../components/Prices/DebtRecovery";
 import ImmigrationPrices from "../components/Prices/ImmigrationPrices";
 import About from "../components/About/About";
+import FreeholdSales from "../components/ServicesPage/Residential/FreeholdSales";
 
 function App() {
   return (
@@ -366,12 +367,22 @@ function App() {
             }
           />
 
-          {/* Residential & Commercial Property */}
+          {/* Residential Property */}
           <Route
             path="/lumine-law/all-services/residential"
             element={
               <PageTransition>
                 <Residential />
+              </PageTransition>
+            }
+          />
+
+          {/* Residential Subservice */}
+          <Route
+            path="/lumine-law/all-services/residential/freehold-sales"
+            element={
+              <PageTransition>
+                <FreeholdSales />
               </PageTransition>
             }
           />
