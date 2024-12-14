@@ -762,7 +762,7 @@ const Divorce = () => {
               )}
             </Box>
 
-            {/* The Divorce Process */}
+            {/* Our Services */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -813,7 +813,7 @@ const Divorce = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  The Divorce Process
+                  Our Services
                 </Text>
                 {!decisionState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
