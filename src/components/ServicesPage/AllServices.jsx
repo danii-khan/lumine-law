@@ -221,7 +221,83 @@ const AllServices = () => {
                   </Box>
                 </Link>
               </GridItem>
-              {/* Residential + Commercial */}
+              {/* Residential  */}
+              <GridItem
+                width={{ xs: "100%", lg: "80%", xl: "80%", "2xl": "80%" }}
+                height={{
+                  xs: "125px",
+                  lg: "175px",
+                  xl: "200px",
+                  "2xl": "250px",
+                }}
+                padding={{
+                  xs: "15% 10px",
+                  lg: "6px 14px",
+                  xl: "8px 16px",
+                  "2xl": "10px 20px",
+                }}
+                bgImage={`url(${ResidentialImg})`}
+                bgSize={"cover"}
+                bgPos={"center"}
+                bgRepeat={"no-repeat"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                cursor={"pointer"}
+                color={"#ffffff"}
+                _hover={{
+                  opacity: "0.8",
+                  transition: "all 0.5s ease",
+                }}
+              >
+                <Link
+                  to={"/lumine-law/all-services/residential"}
+                  style={{ textDecoration: "none" }}
+                >
+                  <Box
+                    height={"100%"}
+                    display={"flex"}
+                    flexFlow={"column"}
+                    justifyContent={"center"}
+                    alignItems={"flex-start"}
+                    gap={"10px"}
+                  >
+                    <Text
+                      fontSize={{
+                        xs: "11px",
+                        lg: "14px",
+                        xl: "16px",
+                        "2xl": "20px",
+                      }}
+                      fontFamily={"CeraRoundPro"}
+                      fontWeight={500}
+                      textAlign={"left"}
+                    >
+                      Residential Property
+                    </Text>
+                    <VStack
+                      width={"100%"}
+                      height={"100%"}
+                      justifyContent={"space-between"}
+                      alignItems={"flex-start"}
+                    >
+                      <Text
+                        fontSize={{
+                          xs: "10px",
+                          lg: "12px",
+                          xl: "13px",
+                          "2xl": "16px",
+                        }}
+                        fontFamily={"CeraRoundPro"}
+                        fontWeight={400}
+                      >
+                        A lil para about what this service is{" "}
+                      </Text>
+                      <HiOutlineArrowLongRight size={"3em"} />
+                    </VStack>
+                  </Box>
+                </Link>
+              </GridItem>
+              {/* Commercial */}
               <GridItem
                 width={{ xs: "100%", lg: "80%", xl: "80%", "2xl": "80%" }}
                 height={{
@@ -272,7 +348,7 @@ const AllServices = () => {
                       fontWeight={500}
                       textAlign={"left"}
                     >
-                      Residential & Commercial Property
+                      Commercial Property
                     </Text>
                     <VStack
                       width={"100%"}
@@ -531,84 +607,10 @@ const AllServices = () => {
                   </Box>
                 </Link>
               </GridItem>
-              {/* New Service */}
-              {/* <GridItem
-                width={{ xs: "100%", lg: "80%", xl: "80%", "2xl": "80%" }}
-                height={{
-                  xs: "125px",
-                  lg: "175px",
-                  xl: "200px",
-                  "2xl": "250px",
-                }}
-                padding={{
-                  xs: "15% 10px",
-                  lg: "6px 14px",
-                  xl: "8px 16px",
-                  "2xl": "10px 20px",
-                }}
-                // bgImage={`url(${DisputeImg})`}
-                // bgSize={"cover"}
-                // bgPos={"center"}
-                // bgRepeat={"no-repeat"}
-                backgroundColor={"#D7E3F1"}
-                color={"#000000"}
-                border={"1px solid black"}
-                borderRadius={"8px"}
-                cursor={"pointer"}
-                _hover={{
-                  opacity: "0.8",
-                  transition: "all 0.5s ease",
-                }}
-              >
-                <Box
-                  height={"100%"}
-                  display={"flex"}
-                  flexFlow={"column"}
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={"10px"}
-                >
-                  <Text
-                    fontSize={{
-                      xs: "11px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "20px",
-                    }}
-                    fontFamily={"CeraRoundPro"}
-                    fontWeight={500}
-                    textAlign={"left"}
-                  >
-                    New Service
-                  </Text>
-                  <VStack
-                    width={"100%"}
-                    height={"100%"}
-                    justifyContent={"space-between"}
-                    alignItems={"flex-start"}
-                  >
-                    <Text
-                      fontSize={{
-                        xs: "10px",
-                        lg: "12px",
-                        xl: "13px",
-                        "2xl": "16px",
-                      }}
-                      fontFamily={"CeraRoundPro"}
-                      fontWeight={400}
-                    >
-                      A lil para about what this service is{" "}
-                    </Text>
-                    <HiOutlineArrowLongRight size={"3em"} />
-                  </VStack>
-                </Box>
-              </GridItem> */}
               {/* empty grid */}
-              <GridItem display={{ xs: "none", lg: "grid" }}>
-                {/* empty */}
-              </GridItem>
-              {/* New Service */}
-              {/* <GridItem
+              <GridItem display={{ xs: "none", lg: "grid" }}></GridItem>
+              {/* Wills and Probate */}
+              <GridItem
                 width={{ xs: "100%", lg: "80%", xl: "80%", "2xl": "80%" }}
                 height={{
                   xs: "125px",
@@ -622,63 +624,71 @@ const AllServices = () => {
                   xl: "8px 16px",
                   "2xl": "10px 20px",
                 }}
-                // bgImage={`url(${DisputeImg})`}
-                // bgSize={"cover"}
-                // bgPos={"center"}
-                // bgRepeat={"no-repeat"}
-                backgroundColor={"#D7E3F1"}
-                color={"#000000"}
+                bgImage={`url(${FamilyImg})`}
+                bgSize={"cover"}
+                bgPos={"center"}
+                bgRepeat={"no-repeat"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
                 cursor={"pointer"}
+                color={"#ffffff"}
                 _hover={{
                   opacity: "0.8",
                   transition: "all 0.5s ease",
                 }}
               >
-                <Box
-                  height={"100%"}
-                  display={"flex"}
-                  flexFlow={"column"}
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={"10px"}
+                <Link
+                  to={"/lumine-law/all-services/family-and-children"}
+                  style={{ textDecoration: "none" }}
                 >
-                  <Text
-                    fontSize={{
-                      xs: "11px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "20px",
-                    }}
-                    fontFamily={"CeraRoundPro"}
-                    fontWeight={500}
-                    textAlign={"left"}
-                  >
-                    New Service
-                  </Text>
-                  <VStack
-                    width={"100%"}
+                  <Box
                     height={"100%"}
-                    justifyContent={"space-between"}
+                    display={"flex"}
+                    flexFlow={"column"}
+                    justifyContent={"center"}
                     alignItems={"flex-start"}
+                    gap={"10px"}
                   >
                     <Text
                       fontSize={{
-                        xs: "10px",
-                        lg: "12px",
-                        xl: "13px",
-                        "2xl": "16px",
+                        xs: "11px",
+                        lg: "14px",
+                        xl: "16px",
+                        "2xl": "20px",
                       }}
                       fontFamily={"CeraRoundPro"}
-                      fontWeight={400}
+                      fontWeight={500}
+                      textAlign={"left"}
+                      color={"white"}
                     >
-                      A lil para about what this service is{" "}
+                      Wills and Probate
                     </Text>
-                    <HiOutlineArrowLongRight size={"3em"} />
-                  </VStack>
-                </Box>
-              </GridItem> */}
+                    <VStack
+                      width={"100%"}
+                      height={"100%"}
+                      justifyContent={"space-between"}
+                      alignItems={"flex-start"}
+                    >
+                      <Text
+                        fontSize={{
+                          xs: "10px",
+                          lg: "12px",
+                          xl: "13px",
+                          "2xl": "16px",
+                        }}
+                        fontFamily={"CeraRoundPro"}
+                        fontWeight={400}
+                        color={"white"}
+                      >
+                        A lil para about what this service is{" "}
+                      </Text>
+                      <HiOutlineArrowLongRight size={"3em"} />
+                    </VStack>
+                  </Box>
+                </Link>
+              </GridItem>
+              {/* empty grid */}
+              <GridItem display={{ xs: "none", lg: "grid" }}></GridItem>
             </Grid>
           </Box>
 

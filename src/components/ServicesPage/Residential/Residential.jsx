@@ -45,7 +45,7 @@ const Residential = () => {
         flexDirection="column"
       >
         <Helmet>
-          <title>Lumine Law Residential and Commercial Property Services</title>
+          <title>Lumine Law Residential Property Services</title>
         </Helmet>
         <Navbar />
 
@@ -75,7 +75,7 @@ const Residential = () => {
               width={"90%"}
               textAlign={"left"}
             >
-              Residential and Commercial Property
+              Residential Property
             </Text>
           </Box>
 
@@ -100,7 +100,7 @@ const Residential = () => {
                 textAlign={"left"}
                 mb={"2.5%"}
               >
-                Residential and Commercial Property
+                Residential Property
               </Text>
 
               <Text
@@ -117,247 +117,171 @@ const Residential = () => {
             </Box>
           </Box>
 
-          {/* Dropdown info */}
-          <VStack
-            justifyContent={"space-around"}
+          {/* Grid  7x3*/}
+          <Box
+            width={"100%"}
+            display={"flex"}
+            flexFlow={"column"}
             alignItems={"center"}
-            mb={"50px"}
+            color={"black"}
+            mb={{ xs: "25px", lg: "50px" }}
           >
-            {/* Residential Property */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
+            <Grid
+              templateColumns={"repeat(2, 1fr)"}
+              width={{ xs: "80%", md: "65%", lg: "60%", xl: "50%" }}
+              justifySelf={"center"}
+              justifyItems={"center"}
+              gap={{ xs: "10px", lg: "15px", xl: "30px" }}
+              gapY={0}
+              // mb={"100px"}
             >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #000000"}
+              {/* Freehold and Leasehold Sales  */}
+              <GridItem
+                as={Link}
+                to={"/lumine-law/all-services/immigration/spouse-visa"}
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"2.5px 10px"}
                 width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
                 }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !eligibilityState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
-                onClick={() => setEligibilityState(!eligibilityState)}
               >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#ffffff"}
-                >
-                  Residential Property
-                </Text>
-                {!eligibilityState ? (
-                  <GoPlus color={"#ffffff"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#ffffff"} size={"2em"} />
-                )}
-              </HStack>
+                Freehold and Leasehold Sales
+              </GridItem>
 
-              {eligibilityState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <List.Root
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    <List.Item>Freehold and leasehold sales</List.Item>
-                    <List.Item>Freehold and leasehold purchases</List.Item>
-                    <List.Item>Transfers of equity</List.Item>
-                    <List.Item>Advice on lease terms</List.Item>
-                  </List.Root>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    We appreciate that moving home can be a stressful experience
-                    and we aim to reduce this as much as practically possible.
-                    We assist our clients in dealing with the formalities and
-                    technicalities of a house purchase or sale to enable matters
-                    to be concluded smoothly and quickly.
-                  </Text>
-                </VStack>
-              )}
-            </Box>
-
-            {/* Commercial Property */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderY={"1px solid #000000"}
+              {/*	Freehold and Leasehold Purchases  */}
+              <GridItem
+                as={Link}
+                to={"/lumine-law/all-services/immigration/uk-visitor-visa"}
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"2.5px 10px"}
                 width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
                 }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !applicationState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
-                onClick={() => setApplicationState(!applicationState)}
               >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#ffffff"}
-                >
-                  Commercial Property
-                </Text>
-                {!applicationState ? (
-                  <GoPlus color={"#ffffff"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#ffffff"} size={"2em"} />
-                )}
-              </HStack>
+                Freehold and Leasehold Purchases
+              </GridItem>
 
-              {applicationState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    Our services include:
-                  </Text>
+              {/* Transfers of Equity  */}
+              <GridItem
+                as={Link}
+                to={
+                  "/lumine-law/all-services/immigration/british-citizenship-application"
+                }
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"2.5px 10px"}
+                width={"100%"}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
+                }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+              >
+                Transfers of Equity
+              </GridItem>
 
-                  <List.Root
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    <List.Item>Purchase of commercial property</List.Item>
-                    <List.Item>
-                      Purchase of Business and licences to assign
-                    </List.Item>
-                    <List.Item>Sale of commercial property</List.Item>
-                    <List.Item>
-                      Grants of commercial leases and licences
-                    </List.Item>
-                    <List.Item>Lease renewals</List.Item>
-                    <List.Item>
-                      Advice on commercial lease terms, survey reports and
-                      repairing obligations
-                    </List.Item>
-                    <List.Item>Rent recovery</List.Item>
-                    <List.Item>Forfeiture and notices</List.Item>
-                    <List.Item>Break clauses and rent reviews</List.Item>
-                    <List.Item>Consents for alterations</List.Item>
-                    <List.Item>Commercial property dilapidations</List.Item>
-                    <List.Item>Schedules of conditions</List.Item>
-                  </List.Root>
-                </VStack>
-              )}
-            </Box>
-          </VStack>
+              {/*	Lease Terms Advice  */}
+              <GridItem
+                as={Link}
+                to={"/lumine-law/all-services/immigration/entry-clearance"}
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"2.5px 10px"}
+                width={"100%"}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
+                }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+              >
+                Lease Terms Advice
+              </GridItem>
+            </Grid>
+          </Box>
 
           {/* Other Services */}
           <Box mb="50px">

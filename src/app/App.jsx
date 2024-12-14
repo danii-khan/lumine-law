@@ -368,7 +368,7 @@ function App() {
 
           {/* Residential & Commercial Property */}
           <Route
-            path="/lumine-law/all-services/residential-commercial"
+            path="/lumine-law/all-services/residential"
             element={
               <PageTransition>
                 <Residential />
