@@ -42,6 +42,7 @@ import ImmigrationPrices from "../components/Prices/ImmigrationPrices";
 import About from "../components/About/About";
 import FreeholdSales from "../components/ServicesPage/Residential/FreeholdSales";
 import FreeholdPurchases from "../components/ServicesPage/Residential/FreeholdPurchases";
+import TransfersOfEquity from "../components/ServicesPage/Residential/TransfersOfEquity";
 
 function App() {
   return (
@@ -394,6 +395,16 @@ function App() {
             element={
               <PageTransition>
                 <FreeholdPurchases />
+              </PageTransition>
+            }
+          />
+
+          {/* Residential Subservice */}
+          <Route
+            path="/lumine-law/all-services/residential/transfer-of-equity"
+            element={
+              <PageTransition>
+                <TransfersOfEquity />
               </PageTransition>
             }
           />

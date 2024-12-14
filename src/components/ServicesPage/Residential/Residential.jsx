@@ -210,9 +210,7 @@ const Residential = () => {
               {/* Transfers of Equity  */}
               <GridItem
                 as={Link}
-                to={
-                  "/lumine-law/all-services/immigration/british-citizenship-application"
-                }
+                to={"/lumine-law/all-services/residential/transfer-of-equity"}
                 color={"black"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
