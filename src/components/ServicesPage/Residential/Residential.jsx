@@ -246,7 +246,7 @@ const Residential = () => {
               {/*	Lease Terms Advice  */}
               <GridItem
                 as={Link}
-                to={"/lumine-law/all-services/immigration/entry-clearance"}
+                to={"/lumine-law/all-services/residential/lease-terms-advice"}
                 color={"black"}
                 border={"1px solid black"}
                 borderRadius={"8px"}

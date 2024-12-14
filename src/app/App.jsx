@@ -43,6 +43,7 @@ import About from "../components/About/About";
 import FreeholdSales from "../components/ServicesPage/Residential/FreeholdSales";
 import FreeholdPurchases from "../components/ServicesPage/Residential/FreeholdPurchases";
 import TransfersOfEquity from "../components/ServicesPage/Residential/TransfersOfEquity";
+import LeaseTermsAdvice from "../components/ServicesPage/Residential/LeaseTermsAdvice";
 
 function App() {
   return (
@@ -405,6 +406,16 @@ function App() {
             element={
               <PageTransition>
                 <TransfersOfEquity />
+              </PageTransition>
+            }
+          />
+
+          {/* Residential Subservice */}
+          <Route
+            path="/lumine-law/all-services/residential/lease-terms-advice"
+            element={
+              <PageTransition>
+                <LeaseTermsAdvice />
               </PageTransition>
             }
           />
