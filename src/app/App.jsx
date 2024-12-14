@@ -56,6 +56,8 @@ import ConsentAlterations from "../components/ServicesPage/Commercial/ConsentAlt
 import PropertyDilapidations from "../components/ServicesPage/Commercial/PropertyDilapidations";
 import SchedulesConditions from "../components/ServicesPage/Commercial/SchedulesConditions";
 import AdviceMultiple from "../components/ServicesPage/Commercial/AdviceMultiple";
+import WillsAndProbate from "../components/ServicesPage/WillsAndProbate/WillsAndProbate";
+import Wills from "../components/ServicesPage/WillsAndProbate/Wills";
 
 function App() {
   return (
@@ -568,6 +570,26 @@ function App() {
             element={
               <PageTransition>
                 <Landlord />
+              </PageTransition>
+            }
+          />
+
+          {/* Wills and Probate */}
+          <Route
+            path="/lumine-law/all-services/wills-probate"
+            element={
+              <PageTransition>
+                <WillsAndProbate />
+              </PageTransition>
+            }
+          />
+
+          {/* Wills and Probate Subservice */}
+          <Route
+            path="/lumine-law/all-services/wills-probate/wills"
+            element={
+              <PageTransition>
+                <Wills />
               </PageTransition>
             }
           />

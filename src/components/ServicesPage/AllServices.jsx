@@ -638,7 +638,7 @@ const AllServices = () => {
                 }}
               >
                 <Link
-                  to={"/lumine-law/all-services/family-and-children"}
+                  to={"/lumine-law/all-services/wills-probate"}
                   style={{ textDecoration: "none" }}
                 >
                   <Box
