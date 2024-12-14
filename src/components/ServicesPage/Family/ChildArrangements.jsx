@@ -69,10 +69,6 @@ const ChildArrangements = () => {
               xl: "125px",
               "2xl": "150px",
             }}
-            // bgImage={`url(${BannerImg})`}
-            // bgSize={"cover"}
-            // bgPos={"center"}
-            // bgRepeat={"no-repeat"}
             backgroundColor={"#60657e"}
             display={"flex"}
             justifyContent={"center"}
@@ -86,7 +82,7 @@ const ChildArrangements = () => {
               width={"90%"}
               textAlign={"left"}
             >
-              Child Arrangements
+              Child Arrangements: Prioritizing your Child's Best Interests
             </Text>
           </Box>
 
@@ -110,7 +106,35 @@ const ChildArrangements = () => {
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
               >
-                A few lines on what Child Arrangements are
+                Legal issues concerning child arrangements can often be
+                stressful and, at times, upsetting. At Lumine Solicitors, we
+                provide expert legal advice with compassion and understanding to
+                help you prioritize your child's best interests.
+              </Text>
+
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={400}
+                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                textAlign={"left"}
+              >
+                Sometimes it may be necessary to issue a court application. In
+                all cases, we ensure that you maintain the strongest possible
+                co-parenting relationship. We always prioritize the best
+                interests of your children. Our children law solicitors have
+                extensive experience in all areas of children law proceedings,
+                including complex cases involving serious allegations of abuse
+                and the involvement of agencies such as Social Services.
+              </Text>
+
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={400}
+                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                textAlign={"left"}
+              >
+                There are three main Orders available through the court under
+                the Children Act 1989 to address disputes about children:
               </Text>
             </Box>
           </Box>
@@ -121,100 +145,7 @@ const ChildArrangements = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* What are Child Arrangements? */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !spouseState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
-                onClick={() => setSpouseState(!spouseState)}
-              >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  What are Child Arrangements?
-                </Text>
-                {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
-
-              {spouseState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    Child arrangements are made when two parents separate and
-                    there is an agreement made for their children’s future
-                    living arrangements, the amount of time they will spend with
-                    each parent after a divorce, and other factors like
-                    finances, schooling, and travel.
-                  </Text>
-                </VStack>
-              )}
-            </Box>
-
-            {/* Deciding on Child Arrangements Post-Divorce */}
+            {/* Child Arrangements Order */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -265,7 +196,7 @@ const ChildArrangements = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Deciding on Child Arrangements Post-Divorce
+                  Child Arrangements Order
                 </Text>
                 {!eligibilityState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -297,9 +228,9 @@ const ChildArrangements = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Lumine Solicitors advises divorcing couples to carefully
-                    consider the following factors when making child
-                    arrangements:
+                    A Child Arrangements Order deals with issues that were
+                    previously referred to as Residence and Custody. The Order
+                    specifies:
                   </Text>
 
                   <List.Root
@@ -316,25 +247,115 @@ const ChildArrangements = () => {
                     fontFamily={"CeraRoundPro"}
                   >
                     <List.Item>
-                      What will make the child/children happy?
+                      With whom a child is to live, spend time, or otherwise
+                      have contact.
                     </List.Item>
                     <List.Item>
-                      The primary residence of the child/children following the
-                      divorce.
+                      When a child is to live, spend time, or otherwise have
+                      contact with any other person, including telephone and
+                      letter contact.
                     </List.Item>
-                    <List.Item>
-                      The distance of their residence from places such as
-                      school.
-                    </List.Item>
-                    <List.Item>
-                      How can sufficient time be spent with both parents.
-                    </List.Item>
+                    <List.Item>Whether contact should be supervised.</List.Item>
                   </List.Root>
                 </VStack>
               )}
             </Box>
 
-            {/* If an agreement cannot be reached Post-Divorce */}
+            {/* Prohibited Steps Order */}
+            <Box
+              display={"flex"}
+              flexDir={"column"}
+              color={"black"}
+              width={"90%"}
+              justifyContent={"center"}
+              alignItems={"center"}
+            >
+              {/* Initial Button */}
+              <HStack
+                borderTop={"1px solid #adacac"}
+                width={"100%"}
+                justifyContent={"space-between"}
+                px={{
+                  xs: "8px",
+                  sm: "10px",
+                  md: "12px",
+                  lg: "13px",
+                  xl: "14px",
+                  "2xl": "15px",
+                }}
+                alignItems={"center"}
+                py={{
+                  xs: "4px",
+                  sm: "6px",
+                  md: "7px",
+                  lg: "8px",
+                  xl: "9px",
+                  "2xl": "10px",
+                }}
+                cursor={"pointer"}
+                _hover={{ backgroundColor: !spouseState && "black" }}
+                transition={"all 0.3s ease"}
+                backgroundColor={spouseState && "black"}
+                onClick={() => setSpouseState(!spouseState)}
+              >
+                <Text
+                  textAlign={"left"}
+                  fontSize={{
+                    xs: "14px",
+                    sm: "14px",
+                    md: "16px",
+                    lg: "16px",
+                    xl: "18px",
+                    "2xl": "20px",
+                  }}
+                  fontWeight={500}
+                  fontFamily={"CeraRoundPro"}
+                  color={"#beab7c"}
+                >
+                  Prohibited Steps Order
+                </Text>
+                {!spouseState ? (
+                  <GoPlus color={"#beab7c"} size={"2em"} />
+                ) : (
+                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                )}
+              </HStack>
+
+              {spouseState && (
+                <VStack
+                  justifyContent={"center"}
+                  alignItems={"flex-start"}
+                  gap={{ xs: "20px", md: "30px" }}
+                  mb={{ xs: "4px", md: "10px" }}
+                  borderTop={"1px solid #adacac"}
+                  py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
+                >
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    A Prohibited Steps Order is used to restrict when certain
+                    parental rights and duties can be exercised. For example, it
+                    can prevent a child from being removed from their school or
+                    taken abroad. Once a Prohibited Steps Order is made, the
+                    other parent is prevented from taking that step without the
+                    court's consent.
+                  </Text>
+                </VStack>
+              )}
+            </Box>
+
+            {/* Specific Issue Order */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -385,7 +406,7 @@ const ChildArrangements = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  If an agreement cannot be reached Post-Divorce
+                  Specific Issue Order
                 </Text>
                 {!applicationState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -417,13 +438,240 @@ const ChildArrangements = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    If parents cannot come to an agreement after divorce, an
-                    alternative is to apply for a Child Arrangement Order. This
-                    order, issued by a judge, outlines where the child will live
-                    and the time they will spend with each parent. It is a
-                    legally binding document. Lumine Solicitors advises
-                    consulting our experienced family law team if you’re
-                    considering pursuing a Child Arrangement Order.
+                    If you cannot agree on a decision relating to your child's
+                    care, aside from contact and residence issues, you may need
+                    to apply for a Specific Issue Order.
+                  </Text>
+                </VStack>
+              )}
+            </Box>
+
+            {/* Our Services */}
+            <Box
+              display={"flex"}
+              flexDir={"column"}
+              color={"black"}
+              width={"90%"}
+              justifyContent={"center"}
+              alignItems={"center"}
+            >
+              {/* Initial Button */}
+              <HStack
+                borderTop={"1px solid #adacac"}
+                width={"100%"}
+                justifyContent={"space-between"}
+                px={{
+                  xs: "8px",
+                  sm: "10px",
+                  md: "12px",
+                  lg: "13px",
+                  xl: "14px",
+                  "2xl": "15px",
+                }}
+                alignItems={"center"}
+                py={{
+                  xs: "4px",
+                  sm: "6px",
+                  md: "7px",
+                  lg: "8px",
+                  xl: "9px",
+                  "2xl": "10px",
+                }}
+                cursor={"pointer"}
+                _hover={{ backgroundColor: !decisionState && "black" }}
+                transition={"all 0.3s ease"}
+                backgroundColor={decisionState && "black"}
+                onClick={() => setDecisionState(!decisionState)}
+              >
+                <Text
+                  textAlign={"left"}
+                  fontSize={{
+                    xs: "14px",
+                    sm: "14px",
+                    md: "16px",
+                    lg: "16px",
+                    xl: "18px",
+                    "2xl": "20px",
+                  }}
+                  fontWeight={500}
+                  fontFamily={"CeraRoundPro"}
+                  color={"#beab7c"}
+                >
+                  Our Services
+                </Text>
+                {!decisionState ? (
+                  <GoPlus color={"#beab7c"} size={"2em"} />
+                ) : (
+                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                )}
+              </HStack>
+
+              {decisionState && (
+                <VStack
+                  justifyContent={"center"}
+                  alignItems={"flex-start"}
+                  gap={{ xs: "20px", md: "30px" }}
+                  mb={{ xs: "4px", md: "10px" }}
+                  borderTop={"1px solid #adacac"}
+                  py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
+                >
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    At Lumine, we offer comprehensive services to assist you
+                    with child arrangements effectively:
+                  </Text>
+
+                  {/* Understanding your Needs */}
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={600}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    Understanding Your Needs
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    We take the time to listen to your concerns and understand
+                    your family dynamics, ensuring that our advice and solutions
+                    are tailored to your specific situation.
+                  </Text>
+
+                  {/* Creating a Parental Plan */}
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={600}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    Creating a Parenting Plan
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    Our experienced solicitors help you develop a comprehensive
+                    parenting plan that covers all aspects of child
+                    arrangements, including living arrangements, education,
+                    healthcare, and extracurricular activities.
+                  </Text>
+
+                  {/* Ensuring Stability and Continuity */}
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={600}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    Ensuring Stability and Continuity
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    We focus on creating arrangements that provide stability and
+                    continuity for your child, minimizing disruption and
+                    fostering a positive environment.
+                  </Text>
+
+                  {/* Addressing Special Circumstances */}
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={600}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    Addressing Special Circumstances
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    We are equipped to handle cases involving special
+                    circumstances, such as relocation, international child
+                    abduction, and complex family structures.
                   </Text>
                 </VStack>
               )}
@@ -512,14 +760,10 @@ const ChildArrangements = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    When it comes to contact agreements, schooling plans, and
-                    financial support, Lumine Solicitors offer guidance to
-                    parents looking for simplicity and structure in their
-                    children’s arrangements. Our focus is on parental
-                    responsibility and the child’s best interests, assisting you
-                    in coming to decisions that prioritise their welfare and
-                    your peace of mind. If you would like to formalise
-                    agreements, we can help draft child arrangement orders.
+                    At Lumine Law, we understand the intricacies of child
+                    arrangement cases and are dedicated to providing
+                    personalized and effective solutions. Here's how we can
+                    help:
                   </Text>
 
                   <Text
@@ -535,27 +779,91 @@ const ChildArrangements = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    For all family matters, Please do not hesitate to get in
-                    touch with Lumine solicitors <strong>020 3950 2246</strong>{" "}
-                    or{" "}
+                    <strong>Expert Advice</strong>: We offer clear, concise, and
+                    practical legal advice tailored to your specific
+                    circumstances.
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <strong> Compassionate Support</strong>: Our team provides
+                    compassionate support throughout the divorce process,
+                    ensuring you feel understood and supported.
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <strong> Strategic Approach</strong>: We develop customized
+                    strategies to achieve the best possible outcome for you.
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <strong> Cost Certainty</strong>: We offer fixed,
+                    competitive, and transparent fee packages to maintain cost
+                    certainty.
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    For assistance with divorce matters, please do not hesitate
+                    to get in touch with Lumine solicitors{" "}
+                    <strong>020 3950 2246</strong> or{" "}
                     <strong>
                       <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
                     </strong>
+                    We are here to help you navigate the complexities of family
+                    law and achieve the best possible resolution for your
+                    situation.
                   </Text>
                 </VStack>
               )}
             </Box>
           </VStack>
-
-          {/* Pricing TODO when design complete */}
-          {/* <Box
-            width={"90%"}
-            height={"300px"}
-            border={"1px solid black"}
-            borderRadius={"10px"}
-            justifySelf={"center"}
-            mb={"50px"}
-          ></Box> */}
 
           {/* Other Services */}
           <AllServiceLinks />

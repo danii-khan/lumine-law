@@ -110,7 +110,49 @@ const ConsentOrders = () => {
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
               >
-                A few lines on what Consent Orders are
+                Legal issues concerning consent orders can often be complex and
+                require careful navigation. At Lumine Solicitors, we provide
+                expert legal advice with compassion and understanding to help
+                you formalize agreements with legal certainty.
+              </Text>
+
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={400}
+                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                textAlign={"left"}
+              >
+                Most divorcing couples now voluntarily agree on how their
+                finances will be divided through a divorce settlement. Applying
+                for a consent order makes this agreement legally binding,
+                eliminating the risk of your spouse changing their mind in the
+                future.
+              </Text>
+
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={400}
+                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                textAlign={"left"}
+              >
+                Without a consent order, your ex could potentially make a claim
+                for a share of your assets, property, income, or pensions down
+                the line. A consent order formalizes the financial agreement
+                you've reached with your former spouse and severs the financial
+                ties between you.
+              </Text>
+
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={400}
+                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                textAlign={"left"}
+              >
+                It is strongly recommended that you seek expert legal advice on
+                the terms of your settlement before applying for a consent
+                order. Once a consent order has been issued, you cannot legally
+                change the terms of the settlement without your ex’s agreement
+                if you need to vary the terms.
               </Text>
             </Box>
           </Box>
@@ -121,99 +163,7 @@ const ConsentOrders = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* What is a Consent Order? */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !spouseState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
-                onClick={() => setSpouseState(!spouseState)}
-              >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  What is a Consent Order?
-                </Text>
-                {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
-
-              {spouseState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    A consent order is a legally binding agreement between a
-                    divorcing couple that specifies how their assets, including
-                    money, property, investments, pensions, and savings, will be
-                    distributed after the divorce.
-                  </Text>
-                </VStack>
-              )}
-            </Box>
-
-            {/* Advantages of a Consent Order */}
+            {/* Four Reasons You Need a Consent Order */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -264,7 +214,7 @@ const ConsentOrders = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Advantages of a Consent Order
+                  Four Reasons You Need a Consent Order
                 </Text>
                 {!eligibilityState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -283,22 +233,6 @@ const ConsentOrders = () => {
                   py={{ xs: "15px", md: "30px" }}
                   width={"100%"}
                 >
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    The advantages of a consent order include that:
-                  </Text>
-
                   <List.Root
                     textAlign={"left"}
                     fontSize={{
@@ -309,29 +243,45 @@ const ConsentOrders = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    as={"ol"}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
                     <List.Item>
-                      A consent order provides you with assurance and peace of
-                      mind.
+                      <strong>Avoid Future Disputes</strong>: A consent order
+                      formalizes your financial settlement, reducing the
+                      likelihood of future disagreements. It minimizes the risk
+                      of court litigation and associated costs by leaving less
+                      room for confusion over the terms.
                     </List.Item>
                     <List.Item>
-                      A consent order prevents future disagreements. By for
-                      malising the terms of your settlement with a consent
-                      order, you can lessen the possibility of future conflicts
-                      by reducing opportunities for misunderstandings.
+                      <strong>Enforce Settlement Agreements </strong>: If one
+                      party defaults on agreed payments, a consent order allows
+                      you to enforce the settlement through the court. Without a
+                      consent order, you risk losing claims on sole-owned
+                      properties, especially if not professionally advised to
+                      place a Restriction on the property.
                     </List.Item>
                     <List.Item>
-                      A consent order provides protection for your assets
-                      against any future claims by your former partner.
+                      <strong>Protect Against Future Claims</strong>: A consent
+                      order protects you and your estate from future claims by
+                      your ex-spouse. This includes shielding any future income
+                      increases, inheritances, or your estate after death from
+                      being claimed by your ex.
+                    </List.Item>
+                    <List.Item>
+                      <strong>Provide Certainty and Peace of Mind </strong>:
+                      Making your divorce settlement binding with a consent
+                      order gives both parties clarity and security, allowing
+                      you to focus on important matters such as effective
+                      co-parenting.
                     </List.Item>
                   </List.Root>
                 </VStack>
               )}
             </Box>
 
-            {/* How long does it take to obtain a Consent Order? */}
+            {/* Our Services */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -363,10 +313,10 @@ const ConsentOrders = () => {
                   "2xl": "10px",
                 }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !applicationState && "black" }}
+                _hover={{ backgroundColor: !decisionState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
-                onClick={() => setApplicationState(!applicationState)}
+                backgroundColor={decisionState && "black"}
+                onClick={() => setDecisionState(!decisionState)}
               >
                 <Text
                   textAlign={"left"}
@@ -382,16 +332,16 @@ const ConsentOrders = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  How long does it take to obtain a Consent Order?
+                  Our Services
                 </Text>
-                {!applicationState ? (
+                {!decisionState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
                 ) : (
                   <AiOutlineMinus color={"#beab7c"} size={"2em"} />
                 )}
               </HStack>
 
-              {applicationState && (
+              {decisionState && (
                 <VStack
                   justifyContent={"center"}
                   alignItems={"flex-start"}
@@ -414,10 +364,121 @@ const ConsentOrders = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    The court’s workload determines how long it takes to approve
-                    the order, but it usually takes between 2 and 4 weeks. The
-                    judge will get in touch with us for more information, if
-                    they have any, and we will respond as soon as possible.
+                    At Lumine, we offer comprehensive services to assist you
+                    with the consent orders effectively:
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <strong>Initial Consultation</strong>: We offer an initial
+                    consultation to understand your unique circumstances and
+                    provide you with clear advice on the purpose and process of
+                    obtaining a consent order.
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <strong>Drafting Consent Orders</strong>: Our experienced
+                    solicitors draft consent orders that accurately reflect the
+                    terms of your agreement, ensuring they meet legal standards
+                    and are enforceable.
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <strong>Review and Approval</strong>:We review existing
+                    agreements and advise on their suitability for a consent
+                    order. We also assist in obtaining court approval to
+                    formalize the agreement
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <strong>Negotiation and Amendments</strong>: We negotiate
+                    with your former spouse regarding any necessary amendments
+                    to the draft consent order and respond to changes requested
+                    by the court.
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <strong>Dispute Resolution</strong>: If disputes arise
+                    during the process, we employ negotiation and mediation
+                    techniques to resolve issues amicably and reach a mutually
+                    agreeable consent order.
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <strong>Enforcement and Breach</strong>: We can take action
+                    if your ex breaches the consent order or accuses you of
+                    breaching it, ensuring your rights are protected.
                   </Text>
                 </VStack>
               )}
@@ -506,16 +567,9 @@ const ConsentOrders = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Our team of experienced family solicitors specialises in
-                    assisting our clients with obtaining consent orders that are
-                    tailored to their specific circumstances. Whether it’s
-                    related to financial matters, property distribution, or
-                    child custody, our consent order solicitors in London
-                    provide professional advice and expert guidance. To ensure
-                    that our clients are informed and empowered throughout the
-                    process, we focus on clear communication and personalized
-                    attention to make the process of getting a consent order as
-                    simple and stress-free as possible.
+                    At Lumine Solicitors, we understand the intricacies of
+                    consent orders and are dedicated to providing personalized
+                    and effective solutions. Here's how we can help:
                   </Text>
 
                   <Text
@@ -531,12 +585,86 @@ const ConsentOrders = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    For all family matters, Please do not hesitate to get in
-                    touch with Lumine solicitors <strong>020 3950 2246</strong>{" "}
-                    or{" "}
+                    <strong>Expert Advice</strong>: We offer clear, concise, and
+                    practical legal advice tailored to your specific
+                    circumstances.
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <strong> Compassionate Support</strong>: Our team provides
+                    compassionate support throughout the divorce process,
+                    ensuring you feel understood and supported.
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <strong> Strategic Approach</strong>: We develop customized
+                    strategies to achieve the best possible outcome for you.
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <strong> Cost Certainty</strong>: We offer fixed,
+                    competitive, and transparent fee packages to maintain cost
+                    certainty.
+                  </Text>
+
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    For assistance with divorce matters, please do not hesitate
+                    to get in touch with Lumine solicitors{" "}
+                    <strong>020 3950 2246</strong> or{" "}
                     <strong>
                       <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
                     </strong>
+                    We are here to help you navigate the complexities of family
+                    law and achieve the best possible resolution for your
+                    situation.
                   </Text>
                 </VStack>
               )}
