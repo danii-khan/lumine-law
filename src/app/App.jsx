@@ -44,6 +44,18 @@ import FreeholdSales from "../components/ServicesPage/Residential/FreeholdSales"
 import FreeholdPurchases from "../components/ServicesPage/Residential/FreeholdPurchases";
 import TransfersOfEquity from "../components/ServicesPage/Residential/TransfersOfEquity";
 import LeaseTermsAdvice from "../components/ServicesPage/Residential/LeaseTermsAdvice";
+import Commercial from "../components/ServicesPage/Commercial/Commercial";
+import PurchaseCommercial from "../components/ServicesPage/Commercial/PurchaseCommercial";
+import SaleCommercial from "../components/ServicesPage/Commercial/SaleCommercial";
+import BusinessAndLicense from "../components/ServicesPage/Commercial/BusinessAndLicense";
+import LeaseRenewals from "../components/ServicesPage/Commercial/LeaseRenewals";
+import RentRecovery from "../components/ServicesPage/Commercial/RentRecovery";
+import ForfeitureAndNotices from "../components/ServicesPage/Commercial/ForfeitureAndNotices";
+import BreakRent from "../components/ServicesPage/Commercial/BreakRent";
+import ConsentAlterations from "../components/ServicesPage/Commercial/ConsentAlterations";
+import PropertyDilapidations from "../components/ServicesPage/Commercial/PropertyDilapidations";
+import SchedulesConditions from "../components/ServicesPage/Commercial/SchedulesConditions";
+import AdviceMultiple from "../components/ServicesPage/Commercial/AdviceMultiple";
 
 function App() {
   return (
@@ -416,6 +428,126 @@ function App() {
             element={
               <PageTransition>
                 <LeaseTermsAdvice />
+              </PageTransition>
+            }
+          />
+
+          {/* Commercial Property */}
+          <Route
+            path="/lumine-law/all-services/commercial"
+            element={
+              <PageTransition>
+                <Commercial />
+              </PageTransition>
+            }
+          />
+
+          {/* Commercial Subservice */}
+          <Route
+            path="/lumine-law/all-services/residential/purchase-commercial"
+            element={
+              <PageTransition>
+                <PurchaseCommercial />
+              </PageTransition>
+            }
+          />
+
+          {/* Commercial Subservice */}
+          <Route
+            path="/lumine-law/all-services/residential/sales-commercial"
+            element={
+              <PageTransition>
+                <SaleCommercial />
+              </PageTransition>
+            }
+          />
+
+          {/* Commercial Subservice */}
+          <Route
+            path="/lumine-law/all-services/residential/business-licenses"
+            element={
+              <PageTransition>
+                <BusinessAndLicense />
+              </PageTransition>
+            }
+          />
+
+          {/* Commercial Subservice */}
+          <Route
+            path="/lumine-law/all-services/residential/lease-renewals"
+            element={
+              <PageTransition>
+                <LeaseRenewals />
+              </PageTransition>
+            }
+          />
+
+          {/* Commercial Subservice */}
+          <Route
+            path="/lumine-law/all-services/residential/rent-recovery"
+            element={
+              <PageTransition>
+                <RentRecovery />
+              </PageTransition>
+            }
+          />
+
+          {/* Commercial Subservice */}
+          <Route
+            path="/lumine-law/all-services/residential/forfeiture-notices"
+            element={
+              <PageTransition>
+                <ForfeitureAndNotices />
+              </PageTransition>
+            }
+          />
+
+          {/* Commercial Subservice */}
+          <Route
+            path="/lumine-law/all-services/residential/break-rent"
+            element={
+              <PageTransition>
+                <BreakRent />
+              </PageTransition>
+            }
+          />
+
+          {/* Commercial Subservice */}
+          <Route
+            path="/lumine-law/all-services/residential/consent-alterations"
+            element={
+              <PageTransition>
+                <ConsentAlterations />
+              </PageTransition>
+            }
+          />
+
+          {/* Commercial Subservice */}
+          <Route
+            path="/lumine-law/all-services/residential/property-dilapidations"
+            element={
+              <PageTransition>
+                <PropertyDilapidations />
+              </PageTransition>
+            }
+          />
+
+          {/* Commercial Subservice */}
+          <Route
+            path="/lumine-law/all-services/residential/schedules-conditions"
+            element={
+              <PageTransition>
+                <SchedulesConditions />
+              </PageTransition>
+            }
+          />
+
+          {/* Commercial Subservice */}
+          <Route
+            path="/lumine-law/all-services/residential/advice-multiple"
+            element={
+              <PageTransition>
+                <AdviceMultiple />
               </PageTransition>
             }
           />
