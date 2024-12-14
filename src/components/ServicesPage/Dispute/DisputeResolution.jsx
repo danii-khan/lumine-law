@@ -119,374 +119,278 @@ const Dispute = () => {
             </Box>
           </Box>
 
-          {/* Dropdown info */}
-          <VStack
-            justifyContent={"space-around"}
+          {/* Grid */}
+          <Box
+            width={"100%"}
+            display={"flex"}
+            flexFlow={"column"}
             alignItems={"center"}
-            mb={"50px"}
+            color={"black"}
+            // mb={{ xs: "25px", lg: "50px" }}
           >
-            {/* Services */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
+            <Grid
+              // templateRows={"repeat(7,1fr)"}
+              templateColumns={"repeat(3, 1fr)"}
+              width={{ xs: "90%", md: "75%", lg: "70%", xl: "60%" }}
+              justifySelf={"center"}
+              justifyItems={"center"}
+              gap={{ xs: "10px", lg: "15px", xl: "30px" }}
+              gapY={0}
+              mb={"100px"}
             >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
+              {/* Debt Matters */}
+              <GridItem
+                as={Link}
+                to={"/lumine-law/all-services/family/divorce"}
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"25px 10px"}
                 width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
                 }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !eligibilityState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
-                onClick={() => setEligibilityState(!eligibilityState)}
               >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  Services
-                </Text>
-                {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
+                Debt Matters
+              </GridItem>
 
-              {eligibilityState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                    color={"white"}
-                  >
-                    Dispute resolution solicitors in London offer services to
-                    settle disputes between individuals. We can assist in the
-                    resolution of disputes of various natures such as:
-                  </Text>
-
-                  <List.Root
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                    color={"white"}
-                  >
-                    <List.Item>Debt matters</List.Item>
-                    <List.Item>Contract disputes</List.Item>
-                    <List.Item>
-                      Corporate and personal bankruptcy matters
-                    </List.Item>
-                    <List.Item>Building contract disputes</List.Item>
-                  </List.Root>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                    color={"white"}
-                  >
-                    We will clearly set out our fee structure from the outset
-                    and we will ensure you are provided the best possible
-                    information on costs and fee budgeting.
-                  </Text>
-                </VStack>
-              )}
-            </Box>
-
-            {/* Advice */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
+              {/* Contract Disputes */}
+              <GridItem
+                as={Link}
+                to={"/lumine-law/all-services/family/nuptial-agreement"}
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"25px 10px"}
                 width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
                 }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !applicationState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
-                onClick={() => setApplicationState(!applicationState)}
               >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  Advice
-                </Text>
-                {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
+                Contract Disputes
+              </GridItem>
 
-              {applicationState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                    color={"white"}
-                  >
-                    When it comes to businesses we know that contracts form the
-                    basis of commercial relationships, We adopt a commercially
-                    pragmatic approach to business disputes and resolution
-                    efforts. We advise on matters such as:
-                  </Text>
-
-                  <List.Root
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                    color={"white"}
-                  >
-                    <List.Item>
-                      Contracts for the supply of goods and services
-                    </List.Item>
-                    <List.Item>Building contracts</List.Item>
-                    <List.Item>Debt recovery</List.Item>
-                  </List.Root>
-                </VStack>
-              )}
-            </Box>
-
-            {/* Help */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderY={"1px solid #adacac"}
+              {/* Corporate and Personal Bankruptcy Matters  */}
+              <GridItem
+                as={Link}
+                to={"/lumine-law/all-services/family/child-arrangements"}
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"25px 10px"}
                 width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
                 }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !helpState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={helpState && "black"}
-                onClick={() => setHelpState(!helpState)}
               >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  How can Lumine Solicitors help?
-                </Text>
-                {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
+                Corporate and Personal Bankruptcy Matters
+              </GridItem>
 
-              {helpState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                    color={"white"}
-                  >
-                    If your matter does become litigious we will always provide
-                    you with sound commercial advice and make every effort
-                    possible to settle your matter without resorting to
-                    litigating unnecessarily.
-                  </Text>
+              {/* Building Contract Disputes */}
+              <GridItem
+                as={Link}
+                to={"/lumine-law/all-services/family/parental-responsbility"}
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"25px 10px"}
+                width={"100%"}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
+                }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+              >
+                Building Contract Disputes
+              </GridItem>
 
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                    color={"white"}
-                  >
-                    For all civil litigation and dispute issues, Please do not
-                    hesitate to get in touch with Lumine solicitors{" "}
-                    <strong>020 3950 2246</strong> or{" "}
-                    <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
-                    </strong>
-                  </Text>
-                </VStack>
-              )}
-            </Box>
-          </VStack>
+              {/* Contracts for the Supply of Goods and Services  */}
+              <GridItem
+                as={Link}
+                to={"/lumine-law/all-services/family/consent-orders"}
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"25px 10px"}
+                width={"100%"}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
+                }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+              >
+                Contracts for the Supply of Goods and Services
+              </GridItem>
+
+              {/* Building Contracts */}
+              <GridItem
+                as={Link}
+                to={"/lumine-law/all-services/family/financial-settlements"}
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"25px 10px"}
+                width={"100%"}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
+                }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+              >
+                Building Contracts
+              </GridItem>
+
+              {/* Debt Recovery */}
+              <GridItem
+                as={Link}
+                to={"/lumine-law/all-services/family/domestic-violence"}
+                color={"black"}
+                border={"1px solid black"}
+                borderRadius={"8px"}
+                p={"25px 10px"}
+                width={"100%"}
+                height={"100%"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                backgroundColor={"white"}
+                _hover={{
+                  backgroundColor: "#000000",
+                  color: "#beab7c",
+                  transition: "0.3s ease all",
+                  fontWeight: "600",
+                  textDecor: "underline",
+                }}
+                fontSize={{
+                  xs: "12px",
+                  sm: "14px",
+                  md: "15px",
+                  lg: "16px",
+                  xl: "16px",
+                  "2xl": " 16px",
+                }}
+                fontWeight={500}
+                fontFamily={"CeraRoundPro"}
+                cursor={"pointer"}
+              >
+                Debt Recovery
+              </GridItem>
+            </Grid>
+          </Box>
 
           {/* Other Services */}
           <Box mb="50px">
