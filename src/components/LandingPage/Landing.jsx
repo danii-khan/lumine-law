@@ -499,7 +499,7 @@ const LandingPage = () => {
             alignItems={"center"}
             justifyItems={"center"}
           >
-            {/* 1 */}
+            {/* Immigration */}
             <GridItem
               border={"1px solid white"}
               backgroundColor={"rgba(0, 0, 0, 0.6)"}
@@ -546,7 +546,7 @@ const LandingPage = () => {
               </Link>
             </GridItem>
 
-            {/* 2 */}
+            {/* Residential Property */}
             <GridItem
               border={"1px solid white"}
               backgroundColor={"rgba(0, 0, 0, 0.6)"}
@@ -563,9 +563,10 @@ const LandingPage = () => {
                 color: "#beab7c",
               }}
               transition={"all 0.3s ease"}
+              zIndex={999}
             >
               <Link
-                to={"/lumine-law/all-services/residential-commercial"}
+                to={"/lumine-law/all-services/residential"}
                 style={{ textDecoration: "none" }}
                 p={0}
                 m={0}
@@ -587,13 +588,13 @@ const LandingPage = () => {
                     width={"80%"}
                     color={"white"}
                   >
-                    Residential and Commercial Property{" "}
+                    Residential Property
                   </Text>
                 </VStack>
               </Link>
             </GridItem>
 
-            {/* 3 */}
+            {/* Commercial Property */}
             <GridItem
               border={"1px solid white"}
               backgroundColor={"rgba(0, 0, 0, 0.6)"}
@@ -610,6 +611,103 @@ const LandingPage = () => {
                 color: "#beab7c",
               }}
               transition={"all 0.3s ease"}
+              zIndex={999}
+            >
+              <Link
+                to={"/lumine-law/all-services/commercial"}
+                style={{ textDecoration: "none" }}
+                p={0}
+                m={0}
+                width={"80%"}
+              >
+                <VStack>
+                  <Image src={ResidentialIcon} height={"50px"} />
+                  <Text
+                    fontSize={{
+                      xs: "14px",
+                      sm: "14px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "18px",
+                      "2xl": "22px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                    width={"80%"}
+                    color={"white"}
+                  >
+                    Commercial Property{" "}
+                  </Text>
+                </VStack>
+              </Link>
+            </GridItem>
+
+            {/* Intellectual Property */}
+            <GridItem
+              border={"1px solid white"}
+              backgroundColor={"rgba(0, 0, 0, 0.6)"}
+              height={"100%"}
+              width={"100%"}
+              borderRadius={"10px"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              cursor={"pointer"}
+              _hover={{
+                backgroundColor: "rgba(0, 0, 0, 0.9)",
+                borderColor: "#beab7c",
+                color: "#beab7c",
+              }}
+              transition={"all 0.3s ease"}
+              zIndex={999}
+            >
+              <Link
+                to={"/lumine-law/all-services/intellectual-property"}
+                style={{ textDecoration: "none" }}
+                p={0}
+                m={0}
+                width={"80%"}
+              >
+                <VStack>
+                  <Image src={DisputeIcon} height={"50px"} />
+                  <Text
+                    fontSize={{
+                      xs: "14px",
+                      sm: "14px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "18px",
+                      "2xl": "26px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                    width={"80%"}
+                    color={"white"}
+                  >
+                    Intellectual Property
+                  </Text>
+                </VStack>
+              </Link>
+            </GridItem>
+
+            {/* Dispute Resolution */}
+            <GridItem
+              border={"1px solid white"}
+              backgroundColor={"rgba(0, 0, 0, 0.6)"}
+              height={"100%"}
+              width={"100%"}
+              borderRadius={"10px"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              cursor={"pointer"}
+              _hover={{
+                backgroundColor: "rgba(0, 0, 0, 0.9)",
+                borderColor: "#beab7c",
+                color: "#beab7c",
+              }}
+              transition={"all 0.3s ease"}
+              zIndex={999}
             >
               <Link
                 to={"/lumine-law/all-services/dispute-resolution"}
@@ -640,7 +738,7 @@ const LandingPage = () => {
               </Link>
             </GridItem>
 
-            {/* 4 */}
+            {/* Landlord & Tenant Disputes */}
             <GridItem
               border={"1px solid white"}
               backgroundColor={"rgba(0, 0, 0, 0.6)"}
@@ -657,6 +755,7 @@ const LandingPage = () => {
                 color: "#beab7c",
               }}
               transition={"all 0.3s ease"}
+              zIndex={999}
             >
               <Link
                 to={"/lumine-law/all-services/landlord-tenant"}
@@ -687,7 +786,7 @@ const LandingPage = () => {
               </Link>
             </GridItem>
 
-            {/* 5 */}
+            {/* Family & Children */}
             <GridItem
               border={"1px solid white"}
               backgroundColor={"rgba(0, 0, 0, 0.6)"}
@@ -735,79 +834,7 @@ const LandingPage = () => {
               </Link>
             </GridItem>
 
-            {/* 6 */}
-            {/* <GridItem
-              border={"1px solid white"}
-              backgroundColor={"rgba(0, 0, 0, 0.6)"}
-              height={"100%"}
-              width={"100%"}
-              borderRadius={"10px"}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              cursor={"pointer"}
-              _hover={{
-                backgroundColor: "rgba(0, 0, 0, 0.9)",
-                borderColor: "#beab7c",
-                color: "#beab7c",
-              }}
-              transition={"all 0.3s ease"}
-            >
-              <Text
-                fontSize={{
-                  xs: "14px",
-                  sm: "14px",
-                  md: "16px",
-                  lg: "16px",
-                  xl: "18px",
-                  "2xl": "26px",
-                }}
-                fontWeight={400}
-                fontFamily={"CeraRoundPro"}
-                width={"80%"}
-                color={"white"}
-              >
-                New Service
-              </Text>
-            </GridItem> */}
-
-            {/* 7 */}
-            {/* <GridItem
-              border={"1px solid white"}
-              backgroundColor={"rgba(0, 0, 0, 0.6)"}
-              height={"100%"}
-              width={"100%"}
-              borderRadius={"10px"}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              cursor={"pointer"}
-              _hover={{
-                backgroundColor: "rgba(0, 0, 0, 0.9)",
-                borderColor: "#beab7c",
-                color: "#beab7c",
-              }}
-              transition={"all 0.3s ease"}
-            >
-              <Text
-                fontSize={{
-                  xs: "14px",
-                  sm: "14px",
-                  md: "16px",
-                  lg: "16px",
-                  xl: "18px",
-                  "2xl": "26px",
-                }}
-                fontWeight={400}
-                fontFamily={"CeraRoundPro"}
-                width={"80%"}
-                color={"white"}
-              >
-                New Service{" "}
-              </Text>
-            </GridItem> */}
-
-            {/* 8 */}
+            {/* Wills & Probate */}
             <GridItem
               border={"1px solid white"}
               backgroundColor={"rgba(0, 0, 0, 0.6)"}
@@ -824,32 +851,77 @@ const LandingPage = () => {
                 color: "#beab7c",
               }}
               transition={"all 0.3s ease"}
+              zIndex={999}
             >
               <Link
-                to={"/lumine-law/all-services"}
+                to={"/lumine-law/all-services/wills-probate"}
                 style={{ textDecoration: "none" }}
                 p={0}
                 m={0}
                 width={"80%"}
               >
-                <Text
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "26px",
-                  }}
-                  fontWeight={400}
-                  fontFamily={"CeraRoundPro"}
-                  color={"white"}
-                >
-                  All Services{" "}
-                </Text>
+                <VStack>
+                  <Image src={FamilyIcon} height={"50px"} />
+                  <Text
+                    fontSize={{
+                      xs: "14px",
+                      sm: "14px",
+                      md: "16px",
+                      lg: "16px",
+                      xl: "18px",
+                      "2xl": "26px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                    width={"80%"}
+                    color={"white"}
+                  >
+                    Wills and Probate
+                  </Text>
+                </VStack>
               </Link>
             </GridItem>
           </Grid>
+
+          <Button
+            as={Link}
+            to={"/lumine-law/all-services"}
+            style={{ textDecoration: "none" }}
+            border={"1px solid white"}
+            backgroundColor={"rgba(0, 0, 0, 0.6)"}
+            py={{
+              //base: {"15px"}
+              xs: "6px",
+              md: "8px",
+              lg: "10px",
+              xl: "12px",
+              "2xl": "15px",
+            }}
+            borderRadius={"10px"}
+            display={"flex"}
+            justifyContent={"center"}
+            alignItems={"center"}
+            cursor={"pointer"}
+            _hover={{
+              backgroundColor: "rgba(0, 0, 0, 0.9)",
+              borderColor: "#beab7c",
+              color: "#beab7c",
+            }}
+            transition={"all 0.3s ease"}
+            fontSize={{
+              xs: "14px",
+              sm: "14px",
+              md: "16px",
+              lg: "16px",
+              xl: "18px",
+              "2xl": "20px",
+            }}
+            fontWeight={400}
+            fontFamily={"CeraRoundPro"}
+            color={"white"}
+          >
+            All Services{" "}
+          </Button>
         </Box>
       </section>
 
