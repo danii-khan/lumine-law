@@ -11,12 +11,11 @@ import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
 
-const DebtMatters = () => {
+const ContractDisputes = () => {
   const [spouseState, setSpouseState] = useState(false);
   const [eligibilityState, setEligibilityState] = useState(false);
   const [applicationState, setApplicationState] = useState(false);
   const [screening, setScreening] = useState(false);
-  const [decisionState, setDecisionState] = useState(false);
   const [helpState, setHelpState] = useState(false);
 
   return (
@@ -33,7 +32,7 @@ const DebtMatters = () => {
         flexDirection="column"
       >
         <Helmet>
-          <title>Lumine Law Debt Matters Services</title>
+          <title>Lumine Law Contract Disputes Services</title>
         </Helmet>
 
         <Navbar />
@@ -61,7 +60,7 @@ const DebtMatters = () => {
               width={"90%"}
               textAlign={"left"}
             >
-              Debt Matters
+              Contract Disputes
             </Text>
           </Box>
 
@@ -85,13 +84,36 @@ const DebtMatters = () => {
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
               >
-                Managing debt is a crucial aspect of financial stability for
-                both individuals and businesses. Debt matters encompass a range
-                of services designed to help manage, recover, and resolve
-                financial obligations efficiently and legally. At Lumine
-                Solicitors, we provide comprehensive support to navigate the
-                complexities of debt-related issues, ensuring our clients
-                achieve the best possible outcomes.
+                Contract disputes can arise in both personal and business
+                contexts, often leading to significant financial and operational
+                challenges. Virtually every commercial relationship you enter as
+                a business is governed by contracts, making disputes almost
+                inevitable. These disputes can stem from various issues such as
+                alleged misrepresentation, breach of contract, or failure to
+                comply with fiduciary duties in agreements based on trust and
+                confidence, such as agency agreements. Understanding and
+                navigating the complexities of contract law under the updated UK
+                laws is essential for achieving a fair and timely resolution.
+              </Text>
+
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={400}
+                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                textAlign={"left"}
+              >
+                At Lumine Solicitors, we recognize the profound impact that
+                contract disputes can have on your business operations and
+                personal affairs. Our goal is to help you resolve these disputes
+                efficiently and effectively, minimizing disruption and
+                safeguarding your interests. We provide expert guidance and
+                representation tailored to your specific needs, ensuring that
+                you understand your rights and options at every stage of the
+                dispute resolution process. Whether your objective is to bring
+                an immediate halt to activities being carried out in breach of
+                contract, to maintain a valuable commercial relationship, or to
+                keep the details of your disputes confidential, we offer
+                strategic advice and solutions to meet your goals.
               </Text>
             </Box>
           </Box>
@@ -102,7 +124,7 @@ const DebtMatters = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* Debt Recovery */}
+            {/* Contract Review and Advice */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -153,7 +175,7 @@ const DebtMatters = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Debt Recovery
+                  Contract Review and Advice
                 </Text>
                 {!eligibilityState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -185,12 +207,11 @@ const DebtMatters = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Our team of skilled solicitors will guide you through the
-                    debt recovery process, ensuring that you recover what is
-                    owed to you. We employ a strategic approach, starting with
-                    sending formal demand letters, negotiating payment plans,
-                    and, if necessary, initiating legal proceedings to recover
-                    outstanding debts. Our services include:
+                    Our team of experienced solicitors will thoroughly review
+                    your contracts and provide clear, practical advice on your
+                    legal position. We help identify potential issues and advise
+                    on the best course of action to protect your interests. This
+                    includes:
                   </Text>
 
                   <List.Root
@@ -207,44 +228,27 @@ const DebtMatters = () => {
                     fontFamily={"CeraRoundPro"}
                   >
                     <List.Item>
-                      <strong>Credit Control Policy Advice</strong>: We help
-                      reduce average debtor days by advising on effective credit
-                      control policies.
+                      <strong>Contract Analysis</strong>: Detailed examination
+                      of contract terms to identify any ambiguities, breaches,
+                      or areas of potential conflict.
                     </List.Item>
                     <List.Item>
-                      <strong>Pre-Litigation Advice</strong>: Utilizing letters
-                      before action to prompt payment and avoid litigation.
+                      <strong>Legal Position</strong>: Explanation of your
+                      rights and obligations under the contract to ensure you
+                      are fully informed.
                     </List.Item>
                     <List.Item>
-                      <strong>Bulk Debt Claims</strong>: Handling multiple debt
-                      claims efficiently.
-                    </List.Item>
-                    <List.Item>
-                      <strong>Legal Proceedings</strong>: Managing debt recovery
-                      cases, including international and cross-border debt, and
-                      defended actions
-                    </List.Item>
-                    <List.Item>
-                      <strong>Enforcing Judgments</strong>: Assisting in the
-                      enforcement of bad debt judgments.
-                    </List.Item>
-                    <List.Item>
-                      <strong>
-                        Statutory Demands and Bankruptcy Petitions
-                      </strong>
-                      : Issuing statutory demands and filing bankruptcy
-                      petitions when necessary
-                    </List.Item>
-                    <List.Item>
-                      <strong>Winding-Up Petitions</strong>: Pursuing winding-up
-                      petitions to recover debts.
+                      <strong>Strategic Advice</strong>: Recommendations on the
+                      most appropriate steps to take based on your objectives,
+                      whether it be pursuing enforcement, seeking amendments, or
+                      initiating dispute resolution processes.
                     </List.Item>
                   </List.Root>
                 </VStack>
               )}
             </Box>
 
-            {/* Debt Management */}
+            {/* Alternative Dispute Resolution (ADR) */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -295,7 +299,7 @@ const DebtMatters = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Debt Management
+                  Alternative Dispute Resolution (ADR)
                 </Text>
                 {!spouseState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -327,18 +331,46 @@ const DebtMatters = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    For individuals and businesses struggling with debt, we
-                    provide expert advice on debt management. We work with you
-                    to develop tailored strategies to manage and reduce your
-                    debt burden, including negotiating with creditors,
-                    consolidating debts, and exploring insolvency options if
-                    required.
+                    We prioritize resolving disputes amicably whenever possible.
+                    Our skilled negotiators will work to achieve a mutually
+                    satisfactory agreement, utilizing mediation and other ADR
+                    methods to facilitate constructive dialogue between parties.
+                    Benefits include:
                   </Text>
+
+                  <List.Root
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <List.Item>
+                      <strong>Confidentiality</strong>: Ensuring that sensitive
+                      business information and details of the dispute remain
+                      private.
+                    </List.Item>
+                    <List.Item>
+                      <strong>Cost-Effectiveness</strong>: Reducing the
+                      financial burden associated with prolonged litigation.
+                    </List.Item>
+                    <List.Item>
+                      <strong>Preservation of Relationships</strong>:
+                      Maintaining business relationships by finding a
+                      cooperative resolution.
+                    </List.Item>
+                  </List.Root>
                 </VStack>
               )}
             </Box>
 
-            {/* Litigation and Enforcement */}
+            {/* Litigation */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -389,7 +421,7 @@ const DebtMatters = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Litigation and Enforcement
+                  Litigation
                 </Text>
                 {!applicationState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -421,16 +453,46 @@ const DebtMatters = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    When amicable solutions are not possible, we represent your
-                    interests in court to secure a favorable judgment. We also
-                    assist with the enforcement of court orders to ensure that
-                    you receive the payments you are entitled to.
+                    When a negotiated settlement cannot be reached, we are
+                    prepared to represent your interests in court. Our
+                    litigation team has extensive experience in handling complex
+                    contract disputes, ensuring that your case is presented
+                    effectively to achieve a favorable outcome. Our litigation
+                    services include:
                   </Text>
+
+                  <List.Root
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <List.Item>
+                      <strong>Court Representation</strong>: Advocating on your
+                      behalf in court to present a compelling case
+                    </List.Item>
+                    <List.Item>
+                      <strong>Evidence Gathering</strong>: Collecting and
+                      organizing necessary evidence to support your claims.
+                    </List.Item>
+                    <List.Item>
+                      <strong>Strategic Litigation</strong>: Developing a
+                      litigation strategy tailored to your specific situation to
+                      maximize the chances of a successful resolution.
+                    </List.Item>
+                  </List.Root>
                 </VStack>
               )}
             </Box>
 
-            {/* Insolvency Services */}
+            {/* Enforcement of Judgments */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -481,7 +543,7 @@ const DebtMatters = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Insolvency Services
+                  Enforcement of Judgements
                 </Text>
                 {!screening ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -513,87 +575,13 @@ const DebtMatters = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    If your debt situation is severe, we offer insolvency
-                    services, including advice on bankruptcy, individual
-                    voluntary arrangements (IVAs), and company liquidation. Our
-                    goal is to help you find the most appropriate solution to
-                    your financial difficulties.
+                    If a court judgment is obtained in your favor, we assist
+                    with the enforcement process to ensure that you receive the
+                    compensation or specific performance ordered by the court.
+                    This includes:
                   </Text>
-                </VStack>
-              )}
-            </Box>
 
-            {/* The Benefits of Effective Debt Recovery Services */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !decisionState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={decisionState && "black"}
-                onClick={() => setDecisionState(!decisionState)}
-              >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  The Benefits of Effective Debt Recovery Services
-                </Text>
-                {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
-
-              {decisionState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
+                  <List.Root
                     textAlign={"left"}
                     fontSize={{
                       xs: "12px",
@@ -606,14 +594,17 @@ const DebtMatters = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    There is nothing more disappointing than doing an excellent
-                    job, whether producing a product or delivering a service,
-                    and not getting paid for contracted work. Whether your
-                    company is UK-based, Europe-based, or an international
-                    business with a base in the UK, and whether you are a
-                    start-up, SME, or PLC, it is essential to have the right
-                    debt recovery service to support your business needs.
-                  </Text>
+                    <List.Item>
+                      <strong>Execution of Judgments</strong>: Taking necessary
+                      legal steps to enforce court orders, such as garnishment
+                      of wages, seizing assets, or placing liens on property.
+                    </List.Item>
+                    <List.Item>
+                      <strong>Follow-Up Actions</strong>: Monitoring compliance
+                      with court orders and taking additional legal action if
+                      necessary to ensure full enforcement.
+                    </List.Item>
+                  </List.Root>
                 </VStack>
               )}
             </Box>
@@ -701,11 +692,11 @@ const DebtMatters = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    At Lumine , we understand the intricacies of debt recovery
-                    and management under the updated UK laws. Our experienced
+                    At Lumine, we understand the intricacies of contract
+                    disputes under the updated UK laws. Our experienced
                     solicitors are dedicated to providing personalized and
-                    effective solutions to your debt-related issues. Here's how
-                    we can help:
+                    effective solutions to your contract-related issues. Here's
+                    how we can help:
                   </Text>
 
                   <Text
@@ -740,7 +731,7 @@ const DebtMatters = () => {
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong>Strategic Approach</strong>: Our team develops
-                    customized strategies to recover and manage debts,
+                    customized strategies to resolve contract disputes,
                     maximizing your chances of a successful outcome.
                   </Text>
 
@@ -759,8 +750,8 @@ const DebtMatters = () => {
                   >
                     <strong>Comprehensive Support</strong>: From initial
                     consultations to court representation, we provide
-                    comprehensive support throughout the debt recovery and
-                    management process.
+                    comprehensive support throughout the contract dispute
+                    resolution process.
                   </Text>
 
                   <Text
@@ -794,8 +785,8 @@ const DebtMatters = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    For assistance with debt recovery and management, please do
-                    not hesitate to get in touch with Lumine solicitors{" "}
+                    For assistance with contract disputes, please do not
+                    hesitate to get in touch with Lumine solicitors{" "}
                     <strong>020 3950 2246</strong> or{" "}
                     <strong>
                       <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
@@ -825,4 +816,4 @@ const DebtMatters = () => {
   );
 };
 
-export default DebtMatters;
+export default ContractDisputes;

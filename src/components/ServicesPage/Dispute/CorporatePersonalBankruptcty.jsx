@@ -11,7 +11,7 @@ import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
 
-const DebtMatters = () => {
+const CorporatePersonalBankruptcy = () => {
   const [spouseState, setSpouseState] = useState(false);
   const [eligibilityState, setEligibilityState] = useState(false);
   const [applicationState, setApplicationState] = useState(false);
@@ -33,7 +33,9 @@ const DebtMatters = () => {
         flexDirection="column"
       >
         <Helmet>
-          <title>Lumine Law Debt Matters Services</title>
+          <title>
+            Lumine Law Corporate and Personal Bankruptcy Matters Services
+          </title>
         </Helmet>
 
         <Navbar />
@@ -61,7 +63,7 @@ const DebtMatters = () => {
               width={"90%"}
               textAlign={"left"}
             >
-              Debt Matters
+              Corporate and Personal Bankruptcy Matters
             </Text>
           </Box>
 
@@ -85,13 +87,29 @@ const DebtMatters = () => {
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
               >
-                Managing debt is a crucial aspect of financial stability for
-                both individuals and businesses. Debt matters encompass a range
-                of services designed to help manage, recover, and resolve
-                financial obligations efficiently and legally. At Lumine
-                Solicitors, we provide comprehensive support to navigate the
-                complexities of debt-related issues, ensuring our clients
-                achieve the best possible outcomes.
+                Facing bankruptcy can be an overwhelming and stressful
+                experience, whether as a business or an individual. The
+                complexities of navigating corporate and personal bankruptcy
+                under the updated UK laws can be daunting, but you don't have to
+                face it alone. Lumine Solicitors is here to assist you every
+                step of the way. Our experienced team provides the expertise and
+                support needed to achieve a successful resolution, ensuring that
+                you can move forward with confidence.
+              </Text>
+
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={400}
+                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                textAlign={"left"}
+              >
+                At Lumine, we understand that every bankruptcy situation is
+                unique, requiring tailored solutions and a compassionate
+                approach. Our goal is to alleviate the burden of financial
+                distress by offering comprehensive services designed to address
+                both immediate concerns and long-term recovery. We are committed
+                to helping you explore all available options, protect your
+                interests, and achieve the best possible outcome.
               </Text>
             </Box>
           </Box>
@@ -102,7 +120,7 @@ const DebtMatters = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* Debt Recovery */}
+            {/* Corporate Bankruptcy */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -153,7 +171,7 @@ const DebtMatters = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Debt Recovery
+                  Corporate Bankruptcy
                 </Text>
                 {!eligibilityState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -185,12 +203,8 @@ const DebtMatters = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Our team of skilled solicitors will guide you through the
-                    debt recovery process, ensuring that you recover what is
-                    owed to you. We employ a strategic approach, starting with
-                    sending formal demand letters, negotiating payment plans,
-                    and, if necessary, initiating legal proceedings to recover
-                    outstanding debts. Our services include:
+                    Our team of experienced solicitors provides expert guidance
+                    on corporate insolvency proceedings. We specialize in:
                   </Text>
 
                   <List.Root
@@ -207,44 +221,35 @@ const DebtMatters = () => {
                     fontFamily={"CeraRoundPro"}
                   >
                     <List.Item>
-                      <strong>Credit Control Policy Advice</strong>: We help
-                      reduce average debtor days by advising on effective credit
-                      control policies.
+                      <strong>Administration</strong>: We help businesses
+                      undergo administration, a process designed to rescue the
+                      company as a going concern or achieve a better result for
+                      creditors than liquidation. Our team works to manage the
+                      company's affairs, business, and property, providing the
+                      necessary support to stabilize operations.
                     </List.Item>
                     <List.Item>
-                      <strong>Pre-Litigation Advice</strong>: Utilizing letters
-                      before action to prompt payment and avoid litigation.
+                      <strong>Liquidation</strong>: : In cases where a business
+                      cannot be saved, we assist with the liquidation process,
+                      ensuring that assets are distributed fairly among
+                      creditors. We handle both compulsory and voluntary
+                      liquidations, offering clear advice and efficient
+                      management throughout the procedure.
                     </List.Item>
                     <List.Item>
-                      <strong>Bulk Debt Claims</strong>: Handling multiple debt
-                      claims efficiently.
-                    </List.Item>
-                    <List.Item>
-                      <strong>Legal Proceedings</strong>: Managing debt recovery
-                      cases, including international and cross-border debt, and
-                      defended actions
-                    </List.Item>
-                    <List.Item>
-                      <strong>Enforcing Judgments</strong>: Assisting in the
-                      enforcement of bad debt judgments.
-                    </List.Item>
-                    <List.Item>
-                      <strong>
-                        Statutory Demands and Bankruptcy Petitions
-                      </strong>
-                      : Issuing statutory demands and filing bankruptcy
-                      petitions when necessary
-                    </List.Item>
-                    <List.Item>
-                      <strong>Winding-Up Petitions</strong>: Pursuing winding-up
-                      petitions to recover debts.
+                      <strong>Company Voluntary Arrangements (CVAs)</strong>: We
+                      facilitate CVAs, which allow a company to reach an
+                      agreement with its creditors to pay off debts over a set
+                      period. This option can enable businesses to continue
+                      trading while repaying their obligations in a manageable
+                      way.
                     </List.Item>
                   </List.Root>
                 </VStack>
               )}
             </Box>
 
-            {/* Debt Management */}
+            {/* Personal Bankruptcy */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -295,7 +300,7 @@ const DebtMatters = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Debt Management
+                  Personal Bankruptcy
                 </Text>
                 {!spouseState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -327,18 +332,49 @@ const DebtMatters = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    For individuals and businesses struggling with debt, we
-                    provide expert advice on debt management. We work with you
-                    to develop tailored strategies to manage and reduce your
-                    debt burden, including negotiating with creditors,
-                    consolidating debts, and exploring insolvency options if
-                    required.
+                    For individuals facing insolvency, we offer personalized
+                    advice and support. Our services include:
                   </Text>
+
+                  <List.Root
+                    textAlign={"left"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    <List.Item>
+                      <strong>Bankruptcy Proceedings</strong>: We guide
+                      individuals through the bankruptcy process, helping them
+                      understand their rights and obligations. Our aim is to
+                      minimize stress and provide clarity on the steps involved.
+                    </List.Item>
+                    <List.Item>
+                      <strong>Individual Voluntary Arrangements (IVAs)</strong>:
+                      We assist in setting up IVAs, which enable individuals to
+                      repay their debts through a formal agreement with
+                      creditors. This solution can help avoid the consequences
+                      of bankruptcy while providing a structured repayment plan.
+                    </List.Item>
+                    <List.Item>
+                      <strong>Debt Relief Orders (DROs)</strong>: For those with
+                      lower levels of debt, we offer assistance with DROs, which
+                      provide a way to write off debts for those who meet
+                      specific criteria. Our team ensures that clients
+                      understand the implications and benefits of this option.
+                    </List.Item>
+                  </List.Root>
                 </VStack>
               )}
             </Box>
 
-            {/* Litigation and Enforcement */}
+            {/* Debt Restructuring and Negotiation */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -389,7 +425,7 @@ const DebtMatters = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Litigation and Enforcement
+                  Debt Restructuring and Negotiation
                 </Text>
                 {!applicationState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -421,16 +457,20 @@ const DebtMatters = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    When amicable solutions are not possible, we represent your
-                    interests in court to secure a favorable judgment. We also
-                    assist with the enforcement of court orders to ensure that
-                    you receive the payments you are entitled to.
+                    We assist businesses and individuals in negotiating with
+                    creditors to restructure debts and create manageable
+                    repayment plans. Our strategic approach aims to achieve
+                    mutually beneficial agreements that avoid the need for
+                    formal insolvency proceedings. We work diligently to
+                    negotiate terms that provide relief and sustainability,
+                    helping our clients regain control of their financial
+                    situations.
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Insolvency Services */}
+            {/* Litigation and Dispute Resolution */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -481,7 +521,7 @@ const DebtMatters = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  Insolvency Services
+                  Litigation and Dispute Resolution
                 </Text>
                 {!screening ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
@@ -513,87 +553,14 @@ const DebtMatters = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    If your debt situation is severe, we offer insolvency
-                    services, including advice on bankruptcy, individual
-                    voluntary arrangements (IVAs), and company liquidation. Our
-                    goal is to help you find the most appropriate solution to
-                    your financial difficulties.
+                    When disputes arise during the bankruptcy process, our
+                    litigation team is ready to represent your interests in
+                    court. We handle complex bankruptcy-related litigation to
+                    ensure that your rights and assets are protected. Our
+                    services include:
                   </Text>
-                </VStack>
-              )}
-            </Box>
 
-            {/* The Benefits of Effective Debt Recovery Services */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !decisionState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={decisionState && "black"}
-                onClick={() => setDecisionState(!decisionState)}
-              >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  The Benefits of Effective Debt Recovery Services
-                </Text>
-                {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
-
-              {decisionState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
+                  <List.Root
                     textAlign={"left"}
                     fontSize={{
                       xs: "12px",
@@ -606,14 +573,18 @@ const DebtMatters = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    There is nothing more disappointing than doing an excellent
-                    job, whether producing a product or delivering a service,
-                    and not getting paid for contracted work. Whether your
-                    company is UK-based, Europe-based, or an international
-                    business with a base in the UK, and whether you are a
-                    start-up, SME, or PLC, it is essential to have the right
-                    debt recovery service to support your business needs.
-                  </Text>
+                    <List.Item>
+                      <strong>Representation in Court</strong>: We provide
+                      robust representation in insolvency litigation,
+                      safeguarding your interests against claims and disputes.
+                    </List.Item>
+                    <List.Item>
+                      <strong>Mediation and Arbitration</strong>: Where
+                      appropriate, we offer mediation and arbitration services
+                      to resolve disputes outside of court, aiming for efficient
+                      and amicable solutions.
+                    </List.Item>
+                  </List.Root>
                 </VStack>
               )}
             </Box>
@@ -701,11 +672,11 @@ const DebtMatters = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    At Lumine , we understand the intricacies of debt recovery
-                    and management under the updated UK laws. Our experienced
-                    solicitors are dedicated to providing personalized and
-                    effective solutions to your debt-related issues. Here's how
-                    we can help:
+                    At Lumine Law, we understand the intricacies of corporate
+                    and personal bankruptcy under the updated UK laws. Our
+                    experienced solicitors are dedicated to providing
+                    personalized and effective solutions to your
+                    bankruptcy-related issues. Here's how we can help:
                   </Text>
 
                   <Text
@@ -740,8 +711,8 @@ const DebtMatters = () => {
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong>Strategic Approach</strong>: Our team develops
-                    customized strategies to recover and manage debts,
-                    maximizing your chances of a successful outcome.
+                    customized strategies to manage and resolve bankruptcy
+                    matters, maximizing your chances of a successful outcome.
                   </Text>
 
                   <Text
@@ -759,8 +730,7 @@ const DebtMatters = () => {
                   >
                     <strong>Comprehensive Support</strong>: From initial
                     consultations to court representation, we provide
-                    comprehensive support throughout the debt recovery and
-                    management process.
+                    comprehensive support throughout the bankruptcy process.
                   </Text>
 
                   <Text
@@ -794,9 +764,9 @@ const DebtMatters = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    For assistance with debt recovery and management, please do
-                    not hesitate to get in touch with Lumine solicitors{" "}
-                    <strong>020 3950 2246</strong> or{" "}
+                    For assistance with corporate and personal bankruptcy
+                    matters, please do not hesitate to get in touch with Lumine
+                    solicitors <strong>020 3950 2246</strong> or{" "}
                     <strong>
                       <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
                     </strong>
@@ -825,4 +795,4 @@ const DebtMatters = () => {
   );
 };
 
-export default DebtMatters;
+export default CorporatePersonalBankruptcy;

@@ -66,6 +66,9 @@ import WealthManagement from "../components/ServicesPage/WillsAndProbate/WealthM
 import SuccessionPlanning from "../components/ServicesPage/WillsAndProbate/SuccessionPlanning";
 import IntellectualProperty from "../components/ServicesPage/IntellectualProperty/IntellectualProperty";
 import DebtMatters from "../components/ServicesPage/Dispute/DebtMatters";
+import ContractDisputes from "../components/ServicesPage/Dispute/ContractDisputes";
+import CorporatePersonalBankruptcy from "../components/ServicesPage/Dispute/CorporatePersonalBankruptcty";
+import BuildingContractDisputes from "../components/ServicesPage/Dispute/BuildingContractDisputes";
 
 function App() {
   return (
@@ -587,7 +590,7 @@ function App() {
             path="/lumine-law/all-services/dispute-resolution/contract-disputes"
             element={
               <PageTransition>
-                <DebtMatters />
+                <ContractDisputes />
               </PageTransition>
             }
           />
@@ -597,7 +600,7 @@ function App() {
             path="/lumine-law/all-services/dispute-resolution/bankruptcy-matters"
             element={
               <PageTransition>
-                <DebtMatters />
+                <CorporatePersonalBankruptcy />
               </PageTransition>
             }
           />
@@ -607,7 +610,7 @@ function App() {
             path="/lumine-law/all-services/dispute-resolution/building-contract-disputes"
             element={
               <PageTransition>
-                <DebtMatters />
+                <BuildingContractDisputes />
               </PageTransition>
             }
           />
