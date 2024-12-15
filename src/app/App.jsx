@@ -69,6 +69,9 @@ import DebtMatters from "../components/ServicesPage/Dispute/DebtMatters";
 import ContractDisputes from "../components/ServicesPage/Dispute/ContractDisputes";
 import CorporatePersonalBankruptcy from "../components/ServicesPage/Dispute/CorporatePersonalBankruptcty";
 import BuildingContractDisputes from "../components/ServicesPage/Dispute/BuildingContractDisputes";
+import SupplyGoodsServices from "../components/ServicesPage/Dispute/SupplyGoodsServices";
+import BuildingContracts from "../components/ServicesPage/Dispute/BuildingContracts";
+import DisputeDebtRecovery from "../components/ServicesPage/Dispute/DisputeDebtRecovery";
 
 function App() {
   return (
@@ -620,7 +623,7 @@ function App() {
             path="/lumine-law/all-services/dispute-resolution/supply-goods-services"
             element={
               <PageTransition>
-                <DebtMatters />
+                <SupplyGoodsServices />
               </PageTransition>
             }
           />
@@ -630,7 +633,7 @@ function App() {
             path="/lumine-law/all-services/dispute-resolution/building-contracts"
             element={
               <PageTransition>
-                <DebtMatters />
+                <BuildingContracts />
               </PageTransition>
             }
           />
@@ -640,7 +643,7 @@ function App() {
             path="/lumine-law/all-services/dispute-resolution/debt-recovery"
             element={
               <PageTransition>
-                <DebtMatters />
+                <DisputeDebtRecovery />
               </PageTransition>
             }
           />
