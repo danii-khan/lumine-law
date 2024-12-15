@@ -63,7 +63,7 @@ const Menu = () => {
         {/* Prices */}
         <PricesMenu />
 
-        {/* News + Insights */}
+        {/* News */}
         <Button
           backgroundColor="inherit"
           color="white"
@@ -98,7 +98,45 @@ const Menu = () => {
             transition: "all 0.3s ease",
           }}
         >
-          News and Insights
+          News
+        </Button>
+
+        {/* Insights */}
+        <Button
+          backgroundColor="inherit"
+          color="white"
+          size="sm"
+          fontSize={{
+            //base: {"18px"}
+            xs: "12px",
+            md: "14px",
+            lg: "14px",
+            xl: "16px",
+            "2xl": "18px",
+          }}
+          fontWeight={500}
+          height="100%"
+          borderRadius="0px"
+          position="relative"
+          px={{
+            //base: "20px"
+            xs: "4px",
+            md: "8px",
+            lg: "12px",
+            xl: "14px",
+            "2xl": "16px",
+          }}
+          _hover={{
+            color: "white",
+            backgroundColor: "black",
+            borderBottom: "5px solid #BEAB7C",
+          }}
+          className={styles.menuButton}
+          css={{
+            transition: "all 0.3s ease",
+          }}
+        >
+          Insights
         </Button>
       </HStack>
     </>

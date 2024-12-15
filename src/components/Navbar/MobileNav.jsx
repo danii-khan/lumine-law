@@ -185,7 +185,7 @@ const Menu = () => {
                     <Image src={ForwardArrow} height={"30px"} />
                   </Box>
 
-                  {/* News + Insights */}
+                  {/* News */}
                   <Box
                     backgroundColor="black"
                     width={"100%"}
@@ -209,7 +209,35 @@ const Menu = () => {
                         transition: "all 0.3s ease",
                       }}
                     >
-                      News and Insights
+                      News
+                    </Button>
+                  </Box>
+
+                  {/* Insights */}
+                  <Box
+                    backgroundColor="black"
+                    width={"100%"}
+                    borderBottom={"1px solid white"}
+                    display={"flex"}
+                    justifyContent={"flex-start"}
+                    py={"10px"}
+                  >
+                    <Button
+                      backgroundColor="inherit"
+                      color="white"
+                      size="sm"
+                      fontSize={{
+                        xs: "20px",
+                        md: "22px",
+                        lg: "24px",
+                      }}
+                      fontWeight={500}
+                      className={styles.menuButton}
+                      css={{
+                        transition: "all 0.3s ease",
+                      }}
+                    >
+                      Insights
                     </Button>
                   </Box>
 
@@ -345,14 +373,14 @@ const Menu = () => {
                         </Button>
                       </Box>
 
-                      {/* Residential & Commercial Property */}
+                      {/* Residential Property */}
                       <Box
                         width={"100%"}
                         borderBottom={"1px solid #beab7c"}
                         display={"flex"}
                         py={"5px"}
                         as={Link}
-                        to={"/lumine-law/all-services/residential-commercial"}
+                        to={"/lumine-law/all-services/residential"}
                       >
                         <Button
                           ml={"5%"}
@@ -371,7 +399,67 @@ const Menu = () => {
                           }}
                           onClick={() => setIsOpen(false)}
                         >
-                          Residential & Commercial Property
+                          Residential Property
+                        </Button>
+                      </Box>
+
+                      {/* Commercial Property */}
+                      <Box
+                        width={"100%"}
+                        borderBottom={"1px solid #beab7c"}
+                        display={"flex"}
+                        py={"5px"}
+                        as={Link}
+                        to={"/lumine-law/all-services/commercial"}
+                      >
+                        <Button
+                          ml={"5%"}
+                          backgroundColor="inherit"
+                          color="#beab7c"
+                          size="sm"
+                          fontSize={{
+                            xs: "14px",
+                            md: "16px",
+                            lg: "18px",
+                          }}
+                          fontWeight={500}
+                          className={styles.menuButton}
+                          css={{
+                            transition: "all 0.3s ease",
+                          }}
+                          onClick={() => setIsOpen(false)}
+                        >
+                          Commercial Property
+                        </Button>
+                      </Box>
+
+                      {/* Intellectual Property */}
+                      <Box
+                        width={"100%"}
+                        borderBottom={"1px solid #beab7c"}
+                        display={"flex"}
+                        py={"5px"}
+                        as={Link}
+                        to={"/lumine-law/all-services/intellectual-property"}
+                      >
+                        <Button
+                          ml={"5%"}
+                          backgroundColor="inherit"
+                          color="#beab7c"
+                          size="sm"
+                          fontSize={{
+                            xs: "14px",
+                            md: "16px",
+                            lg: "18px",
+                          }}
+                          fontWeight={500}
+                          className={styles.menuButton}
+                          css={{
+                            transition: "all 0.3s ease",
+                          }}
+                          onClick={() => setIsOpen(false)}
+                        >
+                          Intellectual Property
                         </Button>
                       </Box>
 
@@ -462,6 +550,36 @@ const Menu = () => {
                           onClick={() => setIsOpen(false)}
                         >
                           Family and Children
+                        </Button>
+                      </Box>
+
+                      {/* Wills and Probate */}
+                      <Box
+                        width={"100%"}
+                        display={"flex"}
+                        borderBottom={"1px solid #beab7c"}
+                        py={"5px"}
+                        as={Link}
+                        to={"/lumine-law/all-services/wills-probate"}
+                      >
+                        <Button
+                          ml={"5%"}
+                          backgroundColor="inherit"
+                          color="#beab7c"
+                          size="sm"
+                          fontSize={{
+                            xs: "14px",
+                            md: "16px",
+                            lg: "18px",
+                          }}
+                          fontWeight={500}
+                          className={styles.menuButton}
+                          css={{
+                            transition: "all 0.3s ease",
+                          }}
+                          onClick={() => setIsOpen(false)}
+                        >
+                          Wills and Probate
                         </Button>
                       </Box>
                     </VStack>
