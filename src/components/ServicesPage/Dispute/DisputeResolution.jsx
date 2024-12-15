@@ -141,7 +141,7 @@ const Dispute = () => {
               {/* Debt Matters */}
               <GridItem
                 as={Link}
-                to={"/lumine-law/all-services/family/divorce"}
+                to={"/lumine-law/all-services/dispute-resolution/debt-matters"}
                 color={"black"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
@@ -177,7 +177,9 @@ const Dispute = () => {
               {/* Contract Disputes */}
               <GridItem
                 as={Link}
-                to={"/lumine-law/all-services/family/nuptial-agreement"}
+                to={
+                  "/lumine-law/all-services/dispute-resolution/contract-disputes"
+                }
                 color={"black"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
@@ -213,7 +215,9 @@ const Dispute = () => {
               {/* Corporate and Personal Bankruptcy Matters  */}
               <GridItem
                 as={Link}
-                to={"/lumine-law/all-services/family/child-arrangements"}
+                to={
+                  "/lumine-law/all-services/dispute-resolution/bankruptcy-matters"
+                }
                 color={"black"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
@@ -249,7 +253,9 @@ const Dispute = () => {
               {/* Building Contract Disputes */}
               <GridItem
                 as={Link}
-                to={"/lumine-law/all-services/family/parental-responsbility"}
+                to={
+                  "/lumine-law/all-services/dispute-resolution/building-contract-disputes"
+                }
                 color={"black"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
@@ -285,7 +291,9 @@ const Dispute = () => {
               {/* Contracts for the Supply of Goods and Services  */}
               <GridItem
                 as={Link}
-                to={"/lumine-law/all-services/family/consent-orders"}
+                to={
+                  "/lumine-law/all-services/dispute-resolution/supply-goods-services"
+                }
                 color={"black"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
@@ -321,7 +329,9 @@ const Dispute = () => {
               {/* Building Contracts */}
               <GridItem
                 as={Link}
-                to={"/lumine-law/all-services/family/financial-settlements"}
+                to={
+                  "/lumine-law/all-services/dispute-resolution/building-contracts"
+                }
                 color={"black"}
                 border={"1px solid black"}
                 borderRadius={"8px"}
@@ -357,7 +367,7 @@ const Dispute = () => {
               {/* Debt Recovery */}
               <GridItem
                 as={Link}
-                to={"/lumine-law/all-services/family/domestic-violence"}
+                to={"/lumine-law/all-services/dispute-resolution/debt-recovery"}
                 color={"black"}
                 border={"1px solid black"}
                 borderRadius={"8px"}

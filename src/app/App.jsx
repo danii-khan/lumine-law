@@ -65,6 +65,7 @@ import InheritanceTaxPlanning from "../components/ServicesPage/WillsAndProbate/I
 import WealthManagement from "../components/ServicesPage/WillsAndProbate/WealthManagement";
 import SuccessionPlanning from "../components/ServicesPage/WillsAndProbate/SuccessionPlanning";
 import IntellectualProperty from "../components/ServicesPage/IntellectualProperty/IntellectualProperty";
+import DebtMatters from "../components/ServicesPage/Dispute/DebtMatters";
 
 function App() {
   return (
@@ -567,6 +568,76 @@ function App() {
             element={
               <PageTransition>
                 <DisputeResolution />
+              </PageTransition>
+            }
+          />
+
+          {/* Dispute Resolution Subservice*/}
+          <Route
+            path="/lumine-law/all-services/dispute-resolution/debt-matters"
+            element={
+              <PageTransition>
+                <DebtMatters />
+              </PageTransition>
+            }
+          />
+
+          {/* Dispute Resolution Subservice*/}
+          <Route
+            path="/lumine-law/all-services/dispute-resolution/contract-disputes"
+            element={
+              <PageTransition>
+                <DebtMatters />
+              </PageTransition>
+            }
+          />
+
+          {/* Dispute Resolution Subservice*/}
+          <Route
+            path="/lumine-law/all-services/dispute-resolution/bankruptcy-matters"
+            element={
+              <PageTransition>
+                <DebtMatters />
+              </PageTransition>
+            }
+          />
+
+          {/* Dispute Resolution Subservice*/}
+          <Route
+            path="/lumine-law/all-services/dispute-resolution/building-contract-disputes"
+            element={
+              <PageTransition>
+                <DebtMatters />
+              </PageTransition>
+            }
+          />
+
+          {/* Dispute Resolution Subservice*/}
+          <Route
+            path="/lumine-law/all-services/dispute-resolution/supply-goods-services"
+            element={
+              <PageTransition>
+                <DebtMatters />
+              </PageTransition>
+            }
+          />
+
+          {/* Dispute Resolution Subservice*/}
+          <Route
+            path="/lumine-law/all-services/dispute-resolution/building-contracts"
+            element={
+              <PageTransition>
+                <DebtMatters />
+              </PageTransition>
+            }
+          />
+
+          {/* Dispute Resolution Subservice*/}
+          <Route
+            path="/lumine-law/all-services/dispute-resolution/debt-recovery"
+            element={
+              <PageTransition>
+                <DebtMatters />
               </PageTransition>
             }
           />

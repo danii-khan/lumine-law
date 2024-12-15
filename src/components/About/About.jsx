@@ -23,7 +23,7 @@ const About = () => {
         flexDirection="column"
       >
         <Helmet>
-          <title>Lumine Law Spouse Visa Services</title>
+          <title>Lumine Law About Us</title>
         </Helmet>
 
         <Navbar />
@@ -54,7 +54,7 @@ const About = () => {
               width={"90%"}
               textAlign={"left"}
             >
-              Spouse Visa
+              About Us
             </Text>
           </Box>
 

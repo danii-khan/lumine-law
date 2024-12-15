@@ -176,6 +176,7 @@ const Navbar = () => {
                 cursor={"pointer"}
                 className={styles.chakraStack}
                 gap={"10px"}
+                py={"5px"}
               >
                 <Image
                   src={LumineLogo}
