@@ -9,7 +9,7 @@ import DisputeImg from "../../assets/services/main/dispute/main-banner.png";
 
 const AllPrices = () => {
   return (
-    <Box mb="50px">
+    <Box mb="50px" _loading={"lazy"}>
       {/* Header */}
       <Box width={"100%"} display={"flex"} flexFlow={"column"} color={"black"}>
         <Box width={"90%"} alignSelf={"center"}>

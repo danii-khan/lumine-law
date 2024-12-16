@@ -43,8 +43,6 @@ import "../../styles/fonts.css";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import MobileNav from "../Navbar/MobileNav";
-import AllServiceLinks from "../NavLinks/AllServiceLinks";
 
 const ScrollSpySidebar = () => {
   const [activeSection, setActiveSection] = useState("none");
@@ -403,6 +401,7 @@ const LandingPage = () => {
           bgRepeat={"no-repeat"}
           display={"flex"}
           alignItems={"center"}
+          _loading={"lazy"}
         >
           <Grid
             templateColumns={"repeat(6, 1fr)"}
@@ -483,6 +482,7 @@ const LandingPage = () => {
           bgSize={"cover"}
           bgRepeat={"no-repeat"}
           pt={{ xs: "20%", md: "3%" }}
+          _loading={"lazy"}
         >
           <Grid
             templateColumns={{ xs: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
@@ -950,6 +950,7 @@ const LandingPage = () => {
           bgPos={"center"}
           bgSize={"cover"}
           bgRepeat={"no-repeat"}
+          _loading={"lazy"}
         >
           <Text
             color="black"
@@ -1020,6 +1021,7 @@ const LandingPage = () => {
             xl: "13.5%",
             "2xl": "13.5%",
           }}
+          _loading={"lazy"}
         >
           <Text
             color="#000000"
@@ -1053,8 +1055,8 @@ const LandingPage = () => {
             alignItems={"center"}
             gap={"10px"}
           >
-            <VStack>
-              <HStack>
+            <VStack width={"45%"} gap={"10px"}>
+              <HStack width={"100%"}>
                 <Image
                   src={NewsInsightsOne}
                   height={{
@@ -1121,8 +1123,8 @@ const LandingPage = () => {
                 News
               </Button>
             </VStack>
-            <VStack>
-              <HStack>
+            <VStack width={"45%"} gap={"10px"}>
+              <HStack width={"100%"}>
                 <Image
                   src={NewsInsightsThree}
                   height={{

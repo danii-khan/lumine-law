@@ -35,6 +35,7 @@ const Footer = () => {
         py={{ xs: "20px", lg: "20px" }}
         style={{ fontFamily: "CeraRoundPro" }}
         backgroundColor={"black"}
+        _loading={"lazy"}
       >
         {/* Top */}
         <Flex

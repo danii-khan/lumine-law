@@ -18,6 +18,7 @@ const AllNewsInsights = () => {
       justifyContent={"center"}
       gap={"25px"}
       mb={"50px"}
+      _loading={"lazy"}
     >
       {/* Header */}
       <Box width={"100%"} display={"flex"} flexFlow={"column"} color={"black"}>
