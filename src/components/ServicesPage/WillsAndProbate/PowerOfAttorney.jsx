@@ -12,11 +12,7 @@ import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
 
 const PowerOfAttorney = () => {
-  const [spouseState, setSpouseState] = useState(false);
-  const [eligibilityState, setEligibilityState] = useState(false);
-  const [applicationState, setApplicationState] = useState(false);
   const [decisionState, setDecisionState] = useState(false);
-  const [helpState, setHelpState] = useState(false);
 
   return (
     <>

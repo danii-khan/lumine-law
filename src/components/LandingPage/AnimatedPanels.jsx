@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Image, Text, VStack } from "@chakra-ui/react";
+import { Box, Image, VStack } from "@chakra-ui/react";
 
 const ScrollingRow = ({ images, direction, speed }) => {
   // Create four sets of images to ensure no gaps

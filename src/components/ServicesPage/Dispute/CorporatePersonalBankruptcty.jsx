@@ -16,7 +16,6 @@ const CorporatePersonalBankruptcy = () => {
   const [eligibilityState, setEligibilityState] = useState(false);
   const [applicationState, setApplicationState] = useState(false);
   const [screening, setScreening] = useState(false);
-  const [decisionState, setDecisionState] = useState(false);
   const [helpState, setHelpState] = useState(false);
 
   return (

@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Text,
-  HStack,
-  VStack,
-  List,
-  Grid,
-  GridItem,
-} from "@chakra-ui/react";
+import { Box, Text, HStack, VStack, Grid, GridItem } from "@chakra-ui/react";
 import { GoPlus } from "react-icons/go";
 import { AiOutlineMinus } from "react-icons/ai";
 

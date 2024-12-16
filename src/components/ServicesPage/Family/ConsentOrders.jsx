@@ -1,14 +1,4 @@
-import {
-  Text,
-  Container,
-  Box,
-  HStack,
-  VStack,
-  List,
-  Grid,
-  GridItem,
-  Image,
-} from "@chakra-ui/react";
+import { Text, Container, Box, HStack, VStack, List } from "@chakra-ui/react";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
 import "../../../styles/fonts.css";
@@ -16,27 +6,13 @@ import { GoPlus } from "react-icons/go";
 import { useState } from "react";
 import { AiOutlineMinus } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { HiOutlineArrowLongRight } from "react-icons/hi2";
-import NewsInsightsOne from "../../../assets/landing/news-insights-one.png";
-import NewsInsightsTwo from "../../../assets/landing/news-insights-two.png";
-import NewsInsightsThree from "../../../assets/landing/news-insights-three.png";
-import NewsInsightsFour from "../../../assets/landing/news-insights-four.png";
-import BannerImg from "../../../assets/services/main/immigration/main-banner.png";
-import ImmigrationImg from "../../../assets/services/main/immigration/main-banner.png";
-import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
-import DisputeImg from "../../../assets/services/main/dispute/main-banner.png";
-import LandlordImg from "../../../assets/services/main/landlord/main-banner.png";
-import FamilyImg from "../../../assets/services/main/family/main-banner.png";
 import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
 
 const ConsentOrders = () => {
-  const [spouseState, setSpouseState] = useState(false);
   const [eligibilityState, setEligibilityState] = useState(false);
-  const [applicationState, setApplicationState] = useState(false);
-  const [screening, setScreening] = useState(false);
   const [decisionState, setDecisionState] = useState(false);
   const [helpState, setHelpState] = useState(false);
 
@@ -569,7 +545,7 @@ const ConsentOrders = () => {
                   >
                     At Lumine Solicitors, we understand the intricacies of
                     consent orders and are dedicated to providing personalized
-                    and effective solutions. Here's how we can help:
+                    and effective solutions. Here's how we can hel:
                   </Text>
 
                   <Text

@@ -13,7 +13,6 @@ import AllNewsInsights from "../../NavLinks/AllNewsInsights";
 import AllPrices from "../../NavLinks/AllPrices";
 
 const TransfersOfEquity = () => {
-  const [spouseState, setSpouseState] = useState(false);
   const [eligibilityState, setEligibilityState] = useState(false);
   const [helpState, setHelpState] = useState(false);
 

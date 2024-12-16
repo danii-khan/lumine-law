@@ -1,21 +1,11 @@
 import { useState } from "react";
-import {
-  Text,
-  Container,
-  Box,
-  VStack,
-  HStack,
-  List,
-  Grid,
-  GridItem,
-} from "@chakra-ui/react";
+import { Text, Container, Box, VStack, Grid, GridItem } from "@chakra-ui/react";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
 import BannerImg from "../../../assets/services/main/dispute/dispute-banner.png";
 import "../../../styles/fonts.css";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { GoPlus } from "react-icons/go";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
 import ImmigrationImg from "../../../assets/services/main/immigration/main-banner.png";
@@ -27,10 +17,6 @@ import AllPrices from "../../NavLinks/AllPrices";
 import AllServicesImg from "../../../assets/services/all/bannertest.png";
 
 const Dispute = () => {
-  const [eligibilityState, setEligibilityState] = useState(false);
-  const [applicationState, setApplicationState] = useState(false);
-  const [helpState, setHelpState] = useState(false);
-
   return (
     <>
       <Container

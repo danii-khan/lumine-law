@@ -1,5 +1,4 @@
 import { Text, Box, Grid, GridItem } from "@chakra-ui/react";
-
 import "../../styles/fonts.css";
 import { Link } from "react-router-dom";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";

@@ -1,22 +1,8 @@
 import React from "react";
-import {
-  Text,
-  Container,
-  Box,
-  HStack,
-  VStack,
-  List,
-  Grid,
-  GridItem,
-  Image,
-  Flex,
-} from "@chakra-ui/react";
+import { Text, Box, HStack, VStack, Grid, GridItem } from "@chakra-ui/react";
 import "../../../styles/fonts.css";
 import { GoPlus } from "react-icons/go";
-import { useState } from "react";
 import { AiOutlineMinus } from "react-icons/ai";
-import { Link } from "react-router-dom";
-import { HiOutlineArrowLongRight } from "react-icons/hi2";
 
 const UKWorkVisa = ({ isOpen, onToggle }) => {
   // Data for visa types and costs
