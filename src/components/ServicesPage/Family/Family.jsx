@@ -19,6 +19,7 @@ import ImmigrationImg from "../../../assets/services/main/immigration/main-banne
 import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
 import DisputeImg from "../../../assets/services/main/dispute/main-banner.png";
 import LandlordImg from "../../../assets/services/main/landlord/main-banner.png";
+import FamilyImg from "../../../assets/services/main/family/main-banner.png";
 import AllServicesImg from "../../../assets/services/all/bannertest.png";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 
@@ -469,7 +470,7 @@ const Family = () => {
             >
               <Grid
                 width={"90%"}
-                templateColumns={{ xs: "repeat(2, 2fr)", lg: "repeat(3, 1fr)" }}
+                templateColumns={{ xs: "repeat(2, 2fr)", lg: "repeat(4, 1fr)" }}
                 gap={{
                   xs: "25px",
                   sm: "30px",
@@ -563,7 +564,7 @@ const Family = () => {
                   </Link>
                 </GridItem>
 
-                {/* Col 2 */}
+                {/* Residential */}
                 <GridItem
                   width={"100%"}
                   height={{
@@ -588,7 +589,7 @@ const Family = () => {
                   bgRepeat={"no-repeat"}
                 >
                   <Link
-                    to={"/lumine-law/all-services/residential-commercial"}
+                    to={"/lumine-law/all-services/residential"}
                     style={{ textDecoration: "none" }}
                   >
                     <Box
@@ -613,7 +614,171 @@ const Family = () => {
                         textAlign={"left"}
                         color={"#ffffff"}
                       >
-                        Residential & Commercial Property
+                        Residential Property
+                      </Text>
+                      <VStack
+                        width={"100%"}
+                        height={"100%"}
+                        justifyContent={"space-between"}
+                        alignItems={"flex-start"}
+                      >
+                        <Text
+                          fontSize={{
+                            xs: "12px",
+                            sm: "13px",
+                            md: "14px",
+                            lg: "15px",
+                            xl: "16px",
+                            "2xl": "18px",
+                          }}
+                          color={"#ffffff"}
+                          fontFamily={"CeraRoundPro"}
+                          fontWeight={400}
+                        >
+                          A lil para about what this service is{" "}
+                        </Text>
+                        <HiOutlineArrowLongRight
+                          color={"#ffffff"}
+                          size={"2em"}
+                        />
+                      </VStack>
+                    </Box>
+                  </Link>
+                </GridItem>
+
+                {/* Commercial */}
+                <GridItem
+                  width={"100%"}
+                  height={{
+                    xs: "175px",
+                    sm: "175px",
+                    md: "175px",
+                    lg: "200px",
+                    xl: "225px",
+                    "2xl": "250px",
+                  }}
+                  padding={{ xs: "10px 10px", lg: "10px 20px" }}
+                  border={"1px solid black"}
+                  borderRadius={"8px"}
+                  cursor={"pointer"}
+                  _hover={{
+                    opacity: "0.8",
+                    transition: "all 0.5s ease",
+                  }}
+                  bgImage={`url(${ResidentialImg})`}
+                  bgPos={"center"}
+                  bgSize={"cover"}
+                  bgRepeat={"no-repeat"}
+                >
+                  <Link
+                    to={"/lumine-law/all-services/commercial"}
+                    style={{ textDecoration: "none" }}
+                  >
+                    <Box
+                      height={"100%"}
+                      display={"flex"}
+                      flexFlow={"column"}
+                      justifyContent={"center"}
+                      alignItems={"flex-start"}
+                      gap={"10px"}
+                    >
+                      <Text
+                        fontSize={{
+                          xs: "14px",
+                          sm: "14px",
+                          md: "16px",
+                          lg: "18px",
+                          xl: "20px",
+                          "2xl": "22px",
+                        }}
+                        fontFamily={"CeraRoundPro"}
+                        fontWeight={500}
+                        textAlign={"left"}
+                        color={"#ffffff"}
+                      >
+                        Commercial Property
+                      </Text>
+                      <VStack
+                        width={"100%"}
+                        height={"100%"}
+                        justifyContent={"space-between"}
+                        alignItems={"flex-start"}
+                      >
+                        <Text
+                          fontSize={{
+                            xs: "12px",
+                            sm: "13px",
+                            md: "14px",
+                            lg: "15px",
+                            xl: "16px",
+                            "2xl": "18px",
+                          }}
+                          color={"#ffffff"}
+                          fontFamily={"CeraRoundPro"}
+                          fontWeight={400}
+                        >
+                          A lil para about what this service is{" "}
+                        </Text>
+                        <HiOutlineArrowLongRight
+                          color={"#ffffff"}
+                          size={"2em"}
+                        />
+                      </VStack>
+                    </Box>
+                  </Link>
+                </GridItem>
+
+                {/* Intellectual */}
+                <GridItem
+                  width={"100%"}
+                  height={{
+                    xs: "175px",
+                    sm: "175px",
+                    md: "175px",
+                    lg: "200px",
+                    xl: "225px",
+                    "2xl": "250px",
+                  }}
+                  padding={{ xs: "10px 10px", lg: "10px 20px" }}
+                  border={"1px solid black"}
+                  borderRadius={"8px"}
+                  cursor={"pointer"}
+                  _hover={{
+                    opacity: "0.8",
+                    transition: "all 0.5s ease",
+                  }}
+                  bgImage={`url(${DisputeImg})`}
+                  bgPos={"center"}
+                  bgSize={"cover"}
+                  bgRepeat={"no-repeat"}
+                >
+                  <Link
+                    to={"/lumine-law/all-services/intellectual-property"}
+                    style={{ textDecoration: "none" }}
+                  >
+                    <Box
+                      height={"100%"}
+                      display={"flex"}
+                      flexFlow={"column"}
+                      justifyContent={"center"}
+                      alignItems={"flex-start"}
+                      gap={"10px"}
+                    >
+                      <Text
+                        fontSize={{
+                          xs: "14px",
+                          sm: "14px",
+                          md: "16px",
+                          lg: "18px",
+                          xl: "20px",
+                          "2xl": "22px",
+                        }}
+                        fontFamily={"CeraRoundPro"}
+                        fontWeight={500}
+                        textAlign={"left"}
+                        color={"#ffffff"}
+                      >
+                        Intellectual Property
                       </Text>
                       <VStack
                         width={"100%"}
@@ -778,6 +943,88 @@ const Family = () => {
                         color={"#ffffff"}
                       >
                         Landlord & Tenant Disputes
+                      </Text>
+                      <VStack
+                        width={"100%"}
+                        height={"100%"}
+                        justifyContent={"space-between"}
+                        alignItems={"flex-start"}
+                      >
+                        <Text
+                          fontSize={{
+                            xs: "12px",
+                            sm: "13px",
+                            md: "14px",
+                            lg: "15px",
+                            xl: "16px",
+                            "2xl": "18px",
+                          }}
+                          color={"#ffffff"}
+                          fontFamily={"CeraRoundPro"}
+                          fontWeight={400}
+                        >
+                          A lil para about what this service is{" "}
+                        </Text>
+                        <HiOutlineArrowLongRight
+                          color={"#ffffff"}
+                          size={"2em"}
+                        />
+                      </VStack>
+                    </Box>
+                  </Link>
+                </GridItem>
+
+                {/* Wills and Probate */}
+                <GridItem
+                  width={"100%"}
+                  height={{
+                    xs: "175px",
+                    sm: "175px",
+                    md: "175px",
+                    lg: "200px",
+                    xl: "225px",
+                    "2xl": "250px",
+                  }}
+                  padding={{ xs: "10px 10px", lg: "10px 20px" }}
+                  border={"1px solid black"}
+                  borderRadius={"8px"}
+                  cursor={"pointer"}
+                  _hover={{
+                    opacity: "0.8",
+                    transition: "all 0.5s ease",
+                  }}
+                  bgImage={`url(${FamilyImg})`}
+                  bgPos={"center"}
+                  bgSize={"cover"}
+                  bgRepeat={"no-repeat"}
+                >
+                  <Link
+                    to={"/lumine-law/all-services/wills-probate"}
+                    style={{ textDecoration: "none" }}
+                  >
+                    <Box
+                      height={"100%"}
+                      display={"flex"}
+                      flexFlow={"column"}
+                      justifyContent={"center"}
+                      alignItems={"flex-start"}
+                      gap={"10px"}
+                    >
+                      <Text
+                        fontSize={{
+                          xs: "14px",
+                          sm: "14px",
+                          md: "16px",
+                          lg: "18px",
+                          xl: "20px",
+                          "2xl": "22px",
+                        }}
+                        fontFamily={"CeraRoundPro"}
+                        fontWeight={500}
+                        textAlign={"left"}
+                        color={"#ffffff"}
+                      >
+                        Wills and Probate
                       </Text>
                       <VStack
                         width={"100%"}
