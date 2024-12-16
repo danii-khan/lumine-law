@@ -20,7 +20,7 @@ import { Link } from "react-router-dom";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import ImmigrationImg from "../../assets/services/main/immigration/main-banner.png";
 import ResidentialImg from "../../assets/services/main/residential/main-banner.png";
-
+import BannerImg from "../../assets/pricing/immigration.png";
 import { Helmet } from "react-helmet";
 import UKWorkVisa from "./Immigration/UKWorkVisa";
 import TimeFrameSection from "./Immigration/TimeFrameSection";
@@ -74,16 +74,15 @@ const ImmigrationPrices = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "200px",
+              lg: "250px",
+              xl: "300px",
+              "2xl": "350px",
             }}
-            // bgImage={`url(${BannerImg})`}
-            // bgSize={"cover"}
-            // bgPos={"center"}
-            // bgRepeat={"no-repeat"}
-            backgroundColor={"#60657e"}
+            bgImage={`url(${BannerImg})`}
+            bgSize={"cover"}
+            bgPos={"center"}
+            bgRepeat={"no-repeat"}
             display={"flex"}
             justifyContent={"center"}
             alignItems={"center"}
