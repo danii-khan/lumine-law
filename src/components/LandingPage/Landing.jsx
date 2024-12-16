@@ -44,6 +44,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import MobileNav from "../Navbar/MobileNav";
+import AllServiceLinks from "../NavLinks/AllServiceLinks";
 
 const ScrollSpySidebar = () => {
   const [activeSection, setActiveSection] = useState("none");
@@ -481,7 +482,7 @@ const LandingPage = () => {
           bgPos={"center"}
           bgSize={"cover"}
           bgRepeat={"no-repeat"}
-          pt={{ xs: "20%", md: "1%" }}
+          pt={{ xs: "20%", md: "3%" }}
         >
           <Grid
             templateColumns={{ xs: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
@@ -494,8 +495,8 @@ const LandingPage = () => {
               xl: "22px",
               "2xl": "25px",
             }}
-            height={{ xs: "45%", md: "55%" }}
-            width={{ xs: "95%", md: "80%" }}
+            height={{ xs: "35%", md: "45%" }}
+            width={{ xs: "85%", md: "70%" }}
             alignItems={"center"}
             justifyItems={"center"}
           >
@@ -526,7 +527,7 @@ const LandingPage = () => {
                 width={"80%"}
               >
                 <VStack>
-                  <Image src={ImmigrationIcon} height={"50px"} />
+                  <Image src={ImmigrationIcon} height={"40px"} />
                   <Text
                     fontSize={{
                       xs: "14px",
@@ -534,7 +535,7 @@ const LandingPage = () => {
                       md: "16px",
                       lg: "16px",
                       xl: "18px",
-                      "2xl": "22px",
+                      "2xl": "20px",
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -573,7 +574,7 @@ const LandingPage = () => {
                 width={"80%"}
               >
                 <VStack>
-                  <Image src={ResidentialIcon} height={"50px"} />
+                  <Image src={ResidentialIcon} height={"40px"} />
                   <Text
                     fontSize={{
                       xs: "14px",
@@ -581,7 +582,7 @@ const LandingPage = () => {
                       md: "16px",
                       lg: "16px",
                       xl: "18px",
-                      "2xl": "22px",
+                      "2xl": "20px",
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -621,7 +622,7 @@ const LandingPage = () => {
                 width={"80%"}
               >
                 <VStack>
-                  <Image src={ResidentialIcon} height={"50px"} />
+                  <Image src={ResidentialIcon} height={"40px"} />
                   <Text
                     fontSize={{
                       xs: "14px",
@@ -629,7 +630,7 @@ const LandingPage = () => {
                       md: "16px",
                       lg: "16px",
                       xl: "18px",
-                      "2xl": "22px",
+                      "2xl": "20px",
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -669,7 +670,7 @@ const LandingPage = () => {
                 width={"80%"}
               >
                 <VStack>
-                  <Image src={DisputeIcon} height={"50px"} />
+                  <Image src={DisputeIcon} height={"40px"} />
                   <Text
                     fontSize={{
                       xs: "14px",
@@ -677,7 +678,7 @@ const LandingPage = () => {
                       md: "16px",
                       lg: "16px",
                       xl: "18px",
-                      "2xl": "26px",
+                      "2xl": "20px",
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -717,7 +718,7 @@ const LandingPage = () => {
                 width={"80%"}
               >
                 <VStack>
-                  <Image src={DisputeIcon} height={"50px"} />
+                  <Image src={DisputeIcon} height={"40px"} />
                   <Text
                     fontSize={{
                       xs: "14px",
@@ -725,7 +726,7 @@ const LandingPage = () => {
                       md: "16px",
                       lg: "16px",
                       xl: "18px",
-                      "2xl": "26px",
+                      "2xl": "20px",
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -765,7 +766,7 @@ const LandingPage = () => {
                 width={"80%"}
               >
                 <VStack>
-                  <Image src={LandlordIcon} height={"50px"} />
+                  <Image src={LandlordIcon} height={"40px"} />
                   <Text
                     fontSize={{
                       xs: "14px",
@@ -773,7 +774,7 @@ const LandingPage = () => {
                       md: "16px",
                       lg: "16px",
                       xl: "18px",
-                      "2xl": "26px",
+                      "2xl": "20px",
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -813,7 +814,7 @@ const LandingPage = () => {
                 width={"80%"}
               >
                 <VStack>
-                  <Image src={FamilyIcon} height={"50px"} />
+                  <Image src={FamilyIcon} height={"40px"} />
                   <Text
                     fontSize={{
                       xs: "14px",
@@ -821,7 +822,7 @@ const LandingPage = () => {
                       md: "16px",
                       lg: "16px",
                       xl: "18px",
-                      "2xl": "26px",
+                      "2xl": "20px",
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -861,7 +862,7 @@ const LandingPage = () => {
                 width={"80%"}
               >
                 <VStack>
-                  <Image src={FamilyIcon} height={"50px"} />
+                  <Image src={FamilyIcon} height={"40px"} />
                   <Text
                     fontSize={{
                       xs: "14px",
@@ -869,7 +870,7 @@ const LandingPage = () => {
                       md: "16px",
                       lg: "16px",
                       xl: "18px",
-                      "2xl": "26px",
+                      "2xl": "20px",
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
