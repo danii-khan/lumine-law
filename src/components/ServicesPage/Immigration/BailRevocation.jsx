@@ -601,7 +601,7 @@ const BailRevocation = () => {
           <AllPrices />
 
           {/* News and Insights */}
-          <AllNewsInsight />
+          <AllNewsInsights />
 
           <Footer />
         </Box>
