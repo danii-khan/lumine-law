@@ -476,12 +476,12 @@ const LandingPage = () => {
           flexFlow={"column"}
           alignItems={"center"}
           justifyContent={"center"}
-          gap={"50px"}
+          // gap={"50px"}
           bgImage={`url(${ServicesBg})`}
           bgPos={"center"}
           bgSize={"cover"}
           bgRepeat={"no-repeat"}
-          pt={{ xs: "20%", md: "3%" }}
+          pt={{ xs: "0%", md: "3%" }}
           _loading={"lazy"}
         >
           <Grid
@@ -882,47 +882,49 @@ const LandingPage = () => {
                 </VStack>
               </Link>
             </GridItem>
-          </Grid>
 
-          <Button
-            as={Link}
-            to={"/lumine-law/all-services"}
-            style={{ textDecoration: "none" }}
-            border={"1px solid white"}
-            backgroundColor={"rgba(0, 0, 0, 0.6)"}
-            py={{
-              //base: {"15px"}
-              xs: "6px",
-              md: "8px",
-              lg: "10px",
-              xl: "12px",
-              "2xl": "15px",
-            }}
-            borderRadius={"10px"}
-            display={"flex"}
-            justifyContent={"center"}
-            alignItems={"center"}
-            cursor={"pointer"}
-            _hover={{
-              backgroundColor: "rgba(0, 0, 0, 0.9)",
-              borderColor: "#beab7c",
-              color: "#beab7c",
-            }}
-            transition={"all 0.3s ease"}
-            fontSize={{
-              xs: "14px",
-              sm: "14px",
-              md: "16px",
-              lg: "16px",
-              xl: "18px",
-              "2xl": "20px",
-            }}
-            fontWeight={400}
-            fontFamily={"CeraRoundPro"}
-            color={"white"}
-          >
-            All Services{" "}
-          </Button>
+            <GridItem colSpan={{ xs: "2", lg: "4" }}>
+              <Button
+                as={Link}
+                to={"/lumine-law/all-services"}
+                style={{ textDecoration: "none" }}
+                border={"1px solid white"}
+                backgroundColor={"rgba(0, 0, 0, 0.6)"}
+                py={{
+                  //base: {"15px"}
+                  xs: "6px",
+                  md: "8px",
+                  lg: "10px",
+                  xl: "12px",
+                  "2xl": "15px",
+                }}
+                borderRadius={"10px"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                cursor={"pointer"}
+                _hover={{
+                  backgroundColor: "rgba(0, 0, 0, 0.9)",
+                  borderColor: "#beab7c",
+                  color: "#beab7c",
+                }}
+                transition={"all 0.3s ease"}
+                fontSize={{
+                  xs: "14px",
+                  sm: "14px",
+                  md: "16px",
+                  lg: "16px",
+                  xl: "18px",
+                  "2xl": "20px",
+                }}
+                fontWeight={400}
+                fontFamily={"CeraRoundPro"}
+                color={"white"}
+              >
+                All Services{" "}
+              </Button>
+            </GridItem>
+          </Grid>
         </Box>
       </section>
 
