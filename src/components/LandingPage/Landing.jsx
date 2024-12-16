@@ -1052,58 +1052,142 @@ const LandingPage = () => {
             alignItems={"center"}
             gap={"10px"}
           >
-            <Image
-              src={NewsInsightsOne}
-              height={{
-                xs: "150px",
-                sm: "175px",
-                md: "225px",
-                lg: "275px",
-                xl: "325px",
-                "2xl": "375px",
-              }}
-              width={{ xs: "22%", md: "24%" }}
-              objectFit={"cover"}
-            />
-            <Image
-              src={NewsInsightsTwo}
-              height={{
-                xs: "150px",
-                sm: "175px",
-                md: "225px",
-                lg: "275px",
-                xl: "325px",
-                "2xl": "375px",
-              }}
-              width={{ xs: "22%", md: "24%" }}
-              objectFit={"cover"}
-            />
-            <Image
-              src={NewsInsightsThree}
-              height={{
-                xs: "150px",
-                sm: "175px",
-                md: "225px",
-                lg: "275px",
-                xl: "325px",
-                "2xl": "375px",
-              }}
-              width={{ xs: "22%", md: "24%" }}
-              objectFit={"cover"}
-            />
-            <Image
-              src={NewsInsightsFour}
-              height={{
-                xs: "150px",
-                sm: "175px",
-                md: "225px",
-                lg: "275px",
-                xl: "325px",
-                "2xl": "375px",
-              }}
-              width={{ xs: "22%", md: "24%" }}
-              objectFit={"cover"}
-            />
+            <VStack>
+              <HStack>
+                <Image
+                  src={NewsInsightsOne}
+                  height={{
+                    xs: "150px",
+                    sm: "175px",
+                    md: "225px",
+                    lg: "275px",
+                    xl: "325px",
+                    "2xl": "375px",
+                  }}
+                  width={"50%"}
+                  objectFit={"cover"}
+                />
+                <Image
+                  src={NewsInsightsTwo}
+                  height={{
+                    xs: "150px",
+                    sm: "175px",
+                    md: "225px",
+                    lg: "275px",
+                    xl: "325px",
+                    "2xl": "375px",
+                  }}
+                  width={"50%"}
+                  objectFit={"cover"}
+                />
+              </HStack>
+              <Button
+                as={Link}
+                to={"/lumine-law/all-services"}
+                style={{ textDecoration: "none" }}
+                border={"1px solid white"}
+                backgroundColor={"black"}
+                py={{
+                  //base: {"15px"}
+                  xs: "6px",
+                  md: "8px",
+                  lg: "10px",
+                  xl: "12px",
+                  "2xl": "15px",
+                }}
+                borderRadius={"10px"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                cursor={"pointer"}
+                _hover={{
+                  borderColor: "#beab7c",
+                  color: "#beab7c",
+                }}
+                transition={"all 0.3s ease"}
+                fontSize={{
+                  xs: "14px",
+                  sm: "14px",
+                  md: "16px",
+                  lg: "16px",
+                  xl: "18px",
+                  "2xl": "20px",
+                }}
+                fontWeight={400}
+                fontFamily={"CeraRoundPro"}
+                color={"white"}
+              >
+                News
+              </Button>
+            </VStack>
+            <VStack>
+              <HStack>
+                <Image
+                  src={NewsInsightsThree}
+                  height={{
+                    xs: "150px",
+                    sm: "175px",
+                    md: "225px",
+                    lg: "275px",
+                    xl: "325px",
+                    "2xl": "375px",
+                  }}
+                  width={"50%"}
+                  objectFit={"cover"}
+                />
+                <Image
+                  src={NewsInsightsFour}
+                  height={{
+                    xs: "150px",
+                    sm: "175px",
+                    md: "225px",
+                    lg: "275px",
+                    xl: "325px",
+                    "2xl": "375px",
+                  }}
+                  width={"50%"}
+                  objectFit={"cover"}
+                />
+              </HStack>
+              <Button
+                as={Link}
+                to={"/lumine-law/all-services"}
+                style={{ textDecoration: "none" }}
+                border={"1px solid white"}
+                backgroundColor={"black"}
+                py={{
+                  //base: {"15px"}
+                  xs: "6px",
+                  md: "8px",
+                  lg: "10px",
+                  xl: "12px",
+                  "2xl": "15px",
+                }}
+                borderRadius={"10px"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                cursor={"pointer"}
+                _hover={{
+                  borderColor: "#beab7c",
+                  color: "#beab7c",
+                }}
+                transition={"all 0.3s ease"}
+                fontSize={{
+                  xs: "14px",
+                  sm: "14px",
+                  md: "16px",
+                  lg: "16px",
+                  xl: "18px",
+                  "2xl": "20px",
+                }}
+                fontWeight={400}
+                fontFamily={"CeraRoundPro"}
+                color={"white"}
+              >
+                Insights
+              </Button>
+            </VStack>
           </HStack>
         </Box>
       </section>
