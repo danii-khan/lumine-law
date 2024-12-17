@@ -2,9 +2,9 @@ import { Text, Box, Grid, GridItem } from "@chakra-ui/react";
 import "../../styles/fonts.css";
 import { Link } from "react-router-dom";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
-import ImmigrationImg from "../../assets/services/main/immigration/main-banner.png";
-import ResidentialImg from "../../assets/services/main/residential/main-banner.png";
-import DisputeImg from "../../assets/services/main/dispute/main-banner.png";
+import ImmigrationImg from "../../assets/pricing/immigration.png";
+import PropertyImg from "../../assets/pricing/property-prices.png";
+import DebtImg from "../../assets/pricing/debt-recovery.png";
 
 const AllPrices = () => {
   return (
@@ -34,7 +34,7 @@ const AllPrices = () => {
             }}
             textAlign={"left"}
           >
-            Prices
+            Pricing
           </Text>
         </Box>
       </Box>
@@ -80,7 +80,7 @@ const AllPrices = () => {
               opacity: "0.8",
               transition: "all 0.5s ease",
             }}
-            bgImage={`url(${ImmigrationImg})`}
+            bgImage={`url(${PropertyImg})`}
             bgPos={"center"}
             bgSize={"cover"}
             bgRepeat={"no-repeat"}
@@ -93,7 +93,7 @@ const AllPrices = () => {
                 height={"100%"}
                 display={"flex"}
                 flexFlow={"column"}
-                justifyContent={"space-between"}
+                justifyContent={"space-evenly"}
                 alignItems={"flex-start"}
                 gap={"10px"}
               >
@@ -137,7 +137,7 @@ const AllPrices = () => {
               opacity: "0.8",
               transition: "all 0.5s ease",
             }}
-            bgImage={`url(${ResidentialImg})`}
+            bgImage={`url(${DebtImg})`}
             bgPos={"center"}
             bgSize={"cover"}
             bgRepeat={"no-repeat"}
@@ -150,7 +150,7 @@ const AllPrices = () => {
                 height={"100%"}
                 display={"flex"}
                 flexFlow={"column"}
-                justifyContent={"space-between"}
+                justifyContent={"space-evenly"}
                 alignItems={"flex-start"}
                 gap={"10px"}
               >
@@ -194,7 +194,7 @@ const AllPrices = () => {
               opacity: "0.8",
               transition: "all 0.5s ease",
             }}
-            bgImage={`url(${DisputeImg})`}
+            bgImage={`url(${ImmigrationImg})`}
             bgPos={"center"}
             bgSize={"cover"}
             bgRepeat={"no-repeat"}
@@ -207,7 +207,7 @@ const AllPrices = () => {
                 height={"100%"}
                 display={"flex"}
                 flexFlow={"column"}
-                justifyContent={"space-between"}
+                justifyContent={"space-evenly"}
                 alignItems={"flex-start"}
                 gap={"10px"}
               >

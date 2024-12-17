@@ -19,8 +19,6 @@ const PricesMenu = () => {
         height="100%"
       >
         <Button
-          // as={Link}
-          // to={"/lumine-law/prices"}
           backgroundColor="inherit"
           color="white"
           size="sm"
@@ -54,7 +52,7 @@ const PricesMenu = () => {
             borderBottom: isOpen ? "5px solid #BEAB7C" : "none",
           }}
         >
-          Prices
+          Pricing
           <Image src={MenuIcon} />
           <Image src={BlackMenuIcon} />
         </Button>

@@ -180,7 +180,7 @@ const Menu = () => {
                         transition: "all 0.3s ease",
                       }}
                     >
-                      Prices
+                      Pricing
                     </Button>
                     <Image src={ForwardArrow} height={"30px"} />
                   </Box>
