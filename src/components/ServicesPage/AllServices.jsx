@@ -11,10 +11,13 @@ import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import BannerImg from "../../assets/services/all/bannertest.png";
 import ImmigrationImg from "../../assets/services/main/immigration/main-banner.png";
-import ResidentialImg from "../../assets/services/main/residential/main-banner.png";
 import DisputeImg from "../../assets/services/main/dispute/main-banner.png";
 import LandlordImg from "../../assets/services/main/landlord/main-banner.png";
 import FamilyImg from "../../assets/services/main/family/main-banner.png";
+import IntellectualImg from "../../assets/services/main/intellectual/main-banner.png";
+import ResidentialImg from "../../assets/services/main/residential/main-banner.png";
+import CommercialImg from "../../assets/services/main/commercial/main-banner.png";
+import WillsProbateImg from "../../assets/services/main/wills-probate/main-banner.png";
 import "../../styles/fonts.css";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import { Link } from "react-router-dom";
@@ -271,6 +274,7 @@ const AllServices = () => {
                       fontFamily={"CeraRoundPro"}
                       fontWeight={500}
                       textAlign={"left"}
+                      color={"white"}
                     >
                       Residential Property
                     </Text>
@@ -289,10 +293,11 @@ const AllServices = () => {
                         }}
                         fontFamily={"CeraRoundPro"}
                         fontWeight={400}
+                        color={"white"}
                       >
                         A lil para about what this service is{" "}
                       </Text>
-                      <HiOutlineArrowLongRight size={"3em"} />
+                      <HiOutlineArrowLongRight size={"3em"} color={"white"} />
                     </VStack>
                   </Box>
                 </Link>
@@ -312,7 +317,7 @@ const AllServices = () => {
                   xl: "8px 16px",
                   "2xl": "10px 20px",
                 }}
-                bgImage={`url(${ResidentialImg})`}
+                bgImage={`url(${CommercialImg})`}
                 bgSize={"cover"}
                 bgPos={"center"}
                 bgRepeat={"no-repeat"}
@@ -388,7 +393,7 @@ const AllServices = () => {
                   xl: "8px 16px",
                   "2xl": "10px 20px",
                 }}
-                bgImage={`url(${DisputeImg})`}
+                bgImage={`url(${IntellectualImg})`}
                 bgSize={"cover"}
                 bgPos={"center"}
                 bgRepeat={"no-repeat"}
@@ -579,7 +584,7 @@ const AllServices = () => {
                       fontFamily={"CeraRoundPro"}
                       fontWeight={500}
                       textAlign={"left"}
-                      color={"white"}
+                      color={"black"}
                     >
                       Landlord & Tenant Disputes
                     </Text>
@@ -598,11 +603,11 @@ const AllServices = () => {
                         }}
                         fontFamily={"CeraRoundPro"}
                         fontWeight={400}
-                        color={"white"}
+                        color={"black"}
                       >
                         A lil para about what this service is{" "}
                       </Text>
-                      <HiOutlineArrowLongRight size={"3em"} />
+                      <HiOutlineArrowLongRight size={"3em"} color="black" />
                     </VStack>
                   </Box>
                 </Link>
@@ -700,7 +705,7 @@ const AllServices = () => {
                   xl: "8px 16px",
                   "2xl": "10px 20px",
                 }}
-                bgImage={`url(${FamilyImg})`}
+                bgImage={`url(${WillsProbateImg})`}
                 bgSize={"cover"}
                 bgPos={"center"}
                 bgRepeat={"no-repeat"}

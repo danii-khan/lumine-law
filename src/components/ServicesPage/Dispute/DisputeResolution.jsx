@@ -8,10 +8,12 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
+import CommercialImg from "../../../assets/services/main/commercial/main-banner.png";
 import ImmigrationImg from "../../../assets/services/main/immigration/main-banner.png";
+import IntellectualImg from "../../../assets/services/main/intellectual/main-banner.png";
 import LandlordImg from "../../../assets/services/main/landlord/main-banner.png";
 import FamilyImg from "../../../assets/services/main/family/main-banner.png";
-import DisputeImg from "../../../assets/services/main/dispute/main-banner.png";
+import WillsProbateImg from "../../../assets/services/main/wills-probate/main-banner.png";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllServicesImg from "../../../assets/services/all/bannertest.png";
@@ -23,8 +25,7 @@ const Dispute = () => {
         width="100vw"
         maxWidth="100%"
         minHeight="100vh"
-        backgroundColor={"#011a29"}
-        // backgroundColor={"white"}
+        backgroundColor={"#93d4eb"}
         overflow="auto"
         m={0}
         p={0}
@@ -88,6 +89,7 @@ const Dispute = () => {
                 fontWeight={600}
                 textAlign={"left"}
                 mb={"2.5%"}
+                color={"black"}
               >
                 Dispute Resolution and Civil Litigation Services
               </Text>
@@ -97,6 +99,7 @@ const Dispute = () => {
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
+                color={"black"}
               >
                 Dispute resolution solicitors in London offer a range of
                 services to settle disputes between individuals and also for
@@ -630,7 +633,7 @@ const Dispute = () => {
                     opacity: "0.8",
                     transition: "all 0.5s ease",
                   }}
-                  bgImage={`url(${ResidentialImg})`}
+                  bgImage={`url(${CommercialImg})`}
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}
@@ -712,7 +715,7 @@ const Dispute = () => {
                     opacity: "0.8",
                     transition: "all 0.5s ease",
                   }}
-                  bgImage={`url(${DisputeImg})`}
+                  bgImage={`url(${IntellectualImg})`}
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}
@@ -823,7 +826,7 @@ const Dispute = () => {
                         fontFamily={"CeraRoundPro"}
                         fontWeight={500}
                         textAlign={"left"}
-                        color={"#ffffff"}
+                        color={"#000000"}
                       >
                         Landlord & Tenant Disputes
                       </Text>
@@ -842,14 +845,14 @@ const Dispute = () => {
                             xl: "16px",
                             "2xl": "18px",
                           }}
-                          color={"#ffffff"}
+                          color={"#000000"}
                           fontFamily={"CeraRoundPro"}
                           fontWeight={400}
                         >
                           A lil para about what this service is{" "}
                         </Text>
                         <HiOutlineArrowLongRight
-                          color={"#ffffff"}
+                          color={"#000000"}
                           size={"2em"}
                         />
                       </VStack>
@@ -958,7 +961,7 @@ const Dispute = () => {
                     opacity: "0.8",
                     transition: "all 0.5s ease",
                   }}
-                  bgImage={`url(${FamilyImg})`}
+                  bgImage={`url(${WillsProbateImg})`}
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}

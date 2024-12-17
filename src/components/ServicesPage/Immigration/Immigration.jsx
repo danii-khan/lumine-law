@@ -15,11 +15,14 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
-import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
 import DisputeImg from "../../../assets/services/main/dispute/main-banner.png";
 import LandlordImg from "../../../assets/services/main/landlord/main-banner.png";
 import FamilyImg from "../../../assets/services/main/family/main-banner.png";
 import AllServicesImg from "../../../assets/services/all/bannertest.png";
+import IntellectualImg from "../../../assets/services/main/intellectual/main-banner.png";
+import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
+import CommercialImg from "../../../assets/services/main/commercial/main-banner.png";
+import WillsProbateImg from "../../../assets/services/main/wills-probate/main-banner.png";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 
 const Immigration = () => {
@@ -987,7 +990,7 @@ const Immigration = () => {
                     opacity: "0.8",
                     transition: "all 0.5s ease",
                   }}
-                  bgImage={`url(${ResidentialImg})`}
+                  bgImage={`url(${CommercialImg})`}
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}
@@ -1069,7 +1072,7 @@ const Immigration = () => {
                     opacity: "0.8",
                     transition: "all 0.5s ease",
                   }}
-                  bgImage={`url(${DisputeImg})`}
+                  bgImage={`url(${IntellectualImg})`}
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}
@@ -1262,7 +1265,7 @@ const Immigration = () => {
                         fontFamily={"CeraRoundPro"}
                         fontWeight={500}
                         textAlign={"left"}
-                        color={"#ffffff"}
+                        color={"#000000"}
                       >
                         Landlord & Tenant Disputes
                       </Text>
@@ -1281,14 +1284,14 @@ const Immigration = () => {
                             xl: "16px",
                             "2xl": "18px",
                           }}
-                          color={"#ffffff"}
+                          color={"#000000"}
                           fontFamily={"CeraRoundPro"}
                           fontWeight={400}
                         >
                           A lil para about what this service is{" "}
                         </Text>
                         <HiOutlineArrowLongRight
-                          color={"#ffffff"}
+                          color={"#000000"}
                           size={"2em"}
                         />
                       </VStack>
@@ -1397,7 +1400,7 @@ const Immigration = () => {
                     opacity: "0.8",
                     transition: "all 0.5s ease",
                   }}
-                  bgImage={`url(${FamilyImg})`}
+                  bgImage={`url(${WillsProbateImg})`}
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}

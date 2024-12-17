@@ -16,8 +16,11 @@ import { Helmet } from "react-helmet";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import ImmigrationImg from "../../../assets/services/main/immigration/main-banner.png";
 import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
+import CommercialImg from "../../../assets/services/main/commercial/main-banner.png";
+import IntellectualImg from "../../../assets/services/main/intellectual/main-banner.png";
 import DisputeImg from "../../../assets/services/main/dispute/main-banner.png";
 import FamilyImg from "../../../assets/services/main/family/main-banner.png";
+import WillsProbateImg from "../../../assets/services/main/wills-probate/main-banner.png";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllServicesImg from "../../../assets/services/all/bannertest.png";
@@ -29,8 +32,7 @@ const Landlord = () => {
         width="100vw"
         maxWidth="100%"
         minHeight="100vh"
-        backgroundColor={"#828b8c"}
-        // backgroundColor={"white"}
+        backgroundColor={"#ffffff"}
         overflow="auto"
         m={0}
         p={0}
@@ -67,6 +69,7 @@ const Landlord = () => {
               fontStyle={"italic"}
               width={"90%"}
               textAlign={"left"}
+              color={"black"}
             >
               Landlord and Tenant Disputes
             </Text>
@@ -391,7 +394,7 @@ const Landlord = () => {
                     opacity: "0.8",
                     transition: "all 0.5s ease",
                   }}
-                  bgImage={`url(${ResidentialImg})`}
+                  bgImage={`url(${CommercialImg})`}
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}
@@ -473,7 +476,7 @@ const Landlord = () => {
                     opacity: "0.8",
                     transition: "all 0.5s ease",
                   }}
-                  bgImage={`url(${DisputeImg})`}
+                  bgImage={`url(${IntellectualImg})`}
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}
@@ -719,7 +722,7 @@ const Landlord = () => {
                     opacity: "0.8",
                     transition: "all 0.5s ease",
                   }}
-                  bgImage={`url(${FamilyImg})`}
+                  bgImage={`url(${WillsProbateImg})`}
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}

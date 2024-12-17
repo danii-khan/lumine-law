@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Text, Container, Box, VStack, Grid, GridItem } from "@chakra-ui/react";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
@@ -11,7 +10,9 @@ import ImmigrationImg from "../../../assets/services/main/immigration/main-banne
 import DisputeImg from "../../../assets/services/main/dispute/main-banner.png";
 import LandlordImg from "../../../assets/services/main/landlord/main-banner.png";
 import FamilyImg from "../../../assets/services/main/family/main-banner.png";
-import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
+import CommercialImg from "../../../assets/services/main/commercial/main-banner.png";
+import IntellectualImg from "../../../assets/services/main/intellectual/main-banner.png";
+import WillsProbateImg from "../../../assets/services/main/wills-probate/main-banner.png";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllServicesImg from "../../../assets/services/all/bannertest.png";
@@ -23,8 +24,7 @@ const Residential = () => {
         width="100vw"
         maxWidth="100%"
         minHeight="100vh"
-        backgroundColor={"#9fabb8"}
-        // backgroundColor={"white"}
+        backgroundColor={"#c4c0db"}
         overflow="auto"
         m={0}
         p={0}
@@ -428,7 +428,7 @@ const Residential = () => {
                     opacity: "0.8",
                     transition: "all 0.5s ease",
                   }}
-                  bgImage={`url(${ResidentialImg})`}
+                  bgImage={`url(${CommercialImg})`}
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}
@@ -510,7 +510,7 @@ const Residential = () => {
                     opacity: "0.8",
                     transition: "all 0.5s ease",
                   }}
-                  bgImage={`url(${DisputeImg})`}
+                  bgImage={`url(${IntellectualImg})`}
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}
@@ -703,7 +703,7 @@ const Residential = () => {
                         fontFamily={"CeraRoundPro"}
                         fontWeight={500}
                         textAlign={"left"}
-                        color={"#ffffff"}
+                        color={"#000000"}
                       >
                         Landlord & Tenant Disputes
                       </Text>
@@ -722,14 +722,14 @@ const Residential = () => {
                             xl: "16px",
                             "2xl": "18px",
                           }}
-                          color={"#ffffff"}
+                          color={"#000000"}
                           fontFamily={"CeraRoundPro"}
                           fontWeight={400}
                         >
                           A lil para about what this service is{" "}
                         </Text>
                         <HiOutlineArrowLongRight
-                          color={"#ffffff"}
+                          color={"#000000"}
                           size={"2em"}
                         />
                       </VStack>
@@ -838,7 +838,7 @@ const Residential = () => {
                     opacity: "0.8",
                     transition: "all 0.5s ease",
                   }}
-                  bgImage={`url(${FamilyImg})`}
+                  bgImage={`url(${WillsProbateImg})`}
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}

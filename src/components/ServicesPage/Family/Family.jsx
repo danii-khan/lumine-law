@@ -17,9 +17,11 @@ import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
 import ImmigrationImg from "../../../assets/services/main/immigration/main-banner.png";
 import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
+import CommercialImg from "../../../assets/services/main/commercial/main-banner.png";
+import IntellectualImg from "../../../assets/services/main/intellectual/main-banner.png";
 import DisputeImg from "../../../assets/services/main/dispute/main-banner.png";
 import LandlordImg from "../../../assets/services/main/landlord/main-banner.png";
-import FamilyImg from "../../../assets/services/main/family/main-banner.png";
+import WillsProbateImg from "../../../assets/services/main/wills-probate/main-banner.png";
 import AllServicesImg from "../../../assets/services/all/bannertest.png";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 
@@ -30,7 +32,7 @@ const Family = () => {
         width="100vw"
         maxWidth="100%"
         minHeight="100vh"
-        backgroundColor={"#a2cce0"}
+        backgroundColor={"#fccab3"}
         overflow="auto"
         m={0}
         p={0}
@@ -665,7 +667,7 @@ const Family = () => {
                     opacity: "0.8",
                     transition: "all 0.5s ease",
                   }}
-                  bgImage={`url(${ResidentialImg})`}
+                  bgImage={`url(${CommercialImg})`}
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}
@@ -747,7 +749,7 @@ const Family = () => {
                     opacity: "0.8",
                     transition: "all 0.5s ease",
                   }}
-                  bgImage={`url(${DisputeImg})`}
+                  bgImage={`url(${IntellectualImg})`}
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}
@@ -993,7 +995,7 @@ const Family = () => {
                     opacity: "0.8",
                     transition: "all 0.5s ease",
                   }}
-                  bgImage={`url(${FamilyImg})`}
+                  bgImage={`url(${WillsProbateImg})`}
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}

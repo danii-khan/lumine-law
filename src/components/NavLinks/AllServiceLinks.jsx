@@ -7,6 +7,10 @@ import ResidentialImg from "../../assets/services/main/residential/main-banner.p
 import DisputeImg from "../../assets/services/main/dispute/main-banner.png";
 import LandlordImg from "../../assets/services/main/landlord/main-banner.png";
 import FamilyImg from "../../assets/services/main/family/main-banner.png";
+import IntellectualImg from "../../assets/services/main/intellectual/main-banner.png";
+import CommercialImg from "../../assets/services/main/commercial/main-banner.png";
+import WillsProbateImg from "../../assets/services/main/wills-probate/main-banner.png";
+
 import AllServicesImg from "../../assets/services/all/bannertest.png";
 
 const AllServiceLinks = () => {
@@ -241,7 +245,7 @@ const AllServiceLinks = () => {
               opacity: "0.8",
               transition: "all 0.5s ease",
             }}
-            bgImage={`url(${ResidentialImg})`}
+            bgImage={`url(${CommercialImg})`}
             bgPos={"center"}
             bgSize={"cover"}
             bgRepeat={"no-repeat"}
@@ -320,7 +324,7 @@ const AllServiceLinks = () => {
               opacity: "0.8",
               transition: "all 0.5s ease",
             }}
-            bgImage={`url(${DisputeImg})`}
+            bgImage={`url(${IntellectualImg})`}
             bgPos={"center"}
             bgSize={"cover"}
             bgRepeat={"no-repeat"}
@@ -507,7 +511,7 @@ const AllServiceLinks = () => {
                   fontFamily={"CeraRoundPro"}
                   fontWeight={500}
                   textAlign={"left"}
-                  color={"#ffffff"}
+                  color={"#000000"}
                 >
                   Landlord & Tenant Disputes
                 </Text>
@@ -526,13 +530,13 @@ const AllServiceLinks = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    color={"#ffffff"}
+                    color={"#000000"}
                     fontFamily={"CeraRoundPro"}
                     fontWeight={400}
                   >
                     A lil para about what this service is{" "}
                   </Text>
-                  <HiOutlineArrowLongRight color={"#ffffff"} size={"2em"} />
+                  <HiOutlineArrowLongRight color={"#000000"} size={"2em"} />
                 </VStack>
               </Box>
             </Link>
@@ -636,7 +640,7 @@ const AllServiceLinks = () => {
               opacity: "0.8",
               transition: "all 0.5s ease",
             }}
-            bgImage={`url(${FamilyImg})`}
+            bgImage={`url(${WillsProbateImg})`}
             bgPos={"center"}
             bgSize={"cover"}
             bgRepeat={"no-repeat"}

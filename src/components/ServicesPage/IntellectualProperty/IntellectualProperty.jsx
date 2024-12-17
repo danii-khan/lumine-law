@@ -11,15 +11,17 @@ import {
 } from "@chakra-ui/react";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
-import BannerImg from "../../../assets/services/main/dispute/dispute-banner.png";
+import BannerImg from "../../../assets/services/main/intellectual/intellectual-banner.png";
 import "../../../styles/fonts.css";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { GoPlus } from "react-icons/go";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
+import CommercialImg from "../../../assets/services/main/commercial/main-banner.png";
 import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
 import ImmigrationImg from "../../../assets/services/main/immigration/main-banner.png";
 import LandlordImg from "../../../assets/services/main/landlord/main-banner.png";
+import IntellectualImg from "../../../assets/services/main/intellectual/main-banner.png";
 import FamilyImg from "../../../assets/services/main/family/main-banner.png";
 import DisputeImg from "../../../assets/services/main/dispute/main-banner.png";
 import { AiOutlineMinus } from "react-icons/ai";
@@ -39,8 +41,7 @@ const IntellectualProperty = () => {
         width="100vw"
         maxWidth="100%"
         minHeight="100vh"
-        backgroundColor={"#011a29"}
-        // backgroundColor={"white"}
+        backgroundColor={"#99acbd"}
         overflow="auto"
         m={0}
         p={0}
@@ -48,7 +49,7 @@ const IntellectualProperty = () => {
         flexDirection="column"
       >
         <Helmet>
-          <title>Lumine Law Dispute Intellectual Property Services</title>
+          <title>Lumine Law Intellectual Property Services</title>
         </Helmet>
         <Navbar />
 
@@ -102,6 +103,7 @@ const IntellectualProperty = () => {
                 fontWeight={600}
                 textAlign={"left"}
                 mb={"2.5%"}
+                color={"black"}
               >
                 Intellectual property (IP) rights are designed to protect the
                 creations of human intellect, such as inventions, literary and
@@ -116,6 +118,7 @@ const IntellectualProperty = () => {
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
+                color={"black"}
               >
                 There are several reasons why IP rights are important:
               </Text>
@@ -131,6 +134,7 @@ const IntellectualProperty = () => {
                   xl: "16px",
                   "2xl": "18px",
                 }}
+                color={"black"}
                 fontWeight={400}
                 fontFamily={"CeraRoundPro"}
               >
@@ -171,6 +175,7 @@ const IntellectualProperty = () => {
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
+                color={"black"}
               >
                 We, at Lumine Solicitors help individuals and businesses protect
                 their intellectual property rights, which are trademarks,
@@ -219,7 +224,7 @@ const IntellectualProperty = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
+                backgroundColor={eligibilityState ? "black" : "#2e2d2d"}
                 onClick={() => setEligibilityState(!eligibilityState)}
               >
                 <Text
@@ -267,7 +272,7 @@ const IntellectualProperty = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                    color={"white"}
+                    color={"black"}
                   >
                     A Trademark is a distinctive symbol, word, phrase, design,
                     or combination of these elements that identifies and
@@ -288,7 +293,7 @@ const IntellectualProperty = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                    color={"white"}
+                    color={"black"}
                   >
                     Trademarks are used to establish brand identity and prevent
                     others from using similar marks that could confuse consumers
@@ -311,7 +316,7 @@ const IntellectualProperty = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                    color={"white"}
+                    color={"black"}
                   >
                     It is important to note that trademark rights are limited to
                     specific goods or services and geographical regions.
@@ -357,7 +362,7 @@ const IntellectualProperty = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !applicationState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
+                backgroundColor={applicationState ? "black" : "#2e2d2d"}
                 onClick={() => setApplicationState(!applicationState)}
               >
                 <Text
@@ -405,7 +410,7 @@ const IntellectualProperty = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                    color={"white"}
+                    color={"black"}
                   >
                     A copyright is a form of intellectual property protection
                     granted to the creators of original works, such as literary,
@@ -426,7 +431,7 @@ const IntellectualProperty = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                    color={"white"}
+                    color={"black"}
                   >
                     With copyrights the creator has the sole right to reproduce
                     the work, prepare derivative works based on the original,
@@ -450,7 +455,7 @@ const IntellectualProperty = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                    color={"white"}
+                    color={"black"}
                   >
                     It is important to note that copyright protects the
                     expression of ideas, not the ideas themselves. Additionally,
@@ -497,7 +502,7 @@ const IntellectualProperty = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !patentState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={patentState && "black"}
+                backgroundColor={patentState ? "black" : "#2e2d2d"}
                 onClick={() => setPatentState(!patentState)}
               >
                 <Text
@@ -545,7 +550,7 @@ const IntellectualProperty = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                    color={"white"}
+                    color={"black"}
                   >
                     A Patent is a form of intellectual property protection
                     granted to inventors for their novel inventions. It provides
@@ -566,7 +571,7 @@ const IntellectualProperty = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                    color={"white"}
+                    color={"black"}
                   >
                     A patent is granted by a government authority, in exchange
                     for the public disclosure of the invention. This means that
@@ -588,7 +593,7 @@ const IntellectualProperty = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                    color={"white"}
+                    color={"black"}
                   >
                     Patents protect a wide range of inventions, including new
                     and useful processes, machines, compositions of matter, and
@@ -610,7 +615,7 @@ const IntellectualProperty = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                    color={"white"}
+                    color={"black"}
                   >
                     It is worth mentioning that obtaining a patent can be a
                     complex and time- consuming process, involving a thorough
@@ -655,7 +660,7 @@ const IntellectualProperty = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !helpState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={helpState && "black"}
+                backgroundColor={helpState ? "black" : "#2e2d2d"}
                 onClick={() => setHelpState(!helpState)}
               >
                 <Text
@@ -703,7 +708,7 @@ const IntellectualProperty = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                    color={"white"}
+                    color={"black"}
                   >
                     Intellectual property is a valuable asset that can be used
                     to generate revenue, attract investors, and differentiate a
@@ -725,7 +730,7 @@ const IntellectualProperty = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                    color={"white"}
+                    color={"black"}
                   >
                     We can help with:
                   </Text>
@@ -742,7 +747,7 @@ const IntellectualProperty = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                    color={"white"}
+                    color={"black"}
                   >
                     <List.Item>
                       Provide individuals and businesses legal advice on how to
@@ -770,7 +775,7 @@ const IntellectualProperty = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                    color={"white"}
+                    color={"black"}
                   >
                     For all intellectual property issues, Please do not hesitate
                     to get in touch with Lumine solicitors{" "}
@@ -1026,7 +1031,7 @@ const IntellectualProperty = () => {
                     opacity: "0.8",
                     transition: "all 0.5s ease",
                   }}
-                  bgImage={`url(${ResidentialImg})`}
+                  bgImage={`url(${CommercialImg})`}
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}
@@ -1108,7 +1113,7 @@ const IntellectualProperty = () => {
                     opacity: "0.8",
                     transition: "all 0.5s ease",
                   }}
-                  bgImage={`url(${DisputeImg})`}
+                  bgImage={`url(${IntellectualImg})`}
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}
@@ -1301,7 +1306,7 @@ const IntellectualProperty = () => {
                         fontFamily={"CeraRoundPro"}
                         fontWeight={500}
                         textAlign={"left"}
-                        color={"#ffffff"}
+                        color={"#000000"}
                       >
                         Landlord & Tenant Disputes
                       </Text>
@@ -1320,14 +1325,14 @@ const IntellectualProperty = () => {
                             xl: "16px",
                             "2xl": "18px",
                           }}
-                          color={"#ffffff"}
+                          color={"#000000"}
                           fontFamily={"CeraRoundPro"}
                           fontWeight={400}
                         >
                           A lil para about what this service is{" "}
                         </Text>
                         <HiOutlineArrowLongRight
-                          color={"#ffffff"}
+                          color={"#000000"}
                           size={"2em"}
                         />
                       </VStack>

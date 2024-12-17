@@ -1,7 +1,7 @@
 import { Text, Container, Box, VStack, Grid, GridItem } from "@chakra-ui/react";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
-import BannerImg from "../../../assets/services/main/residential/residential-banner.png";
+import BannerImg from "../../../assets/services/main/wills-probate/wills-probate-banner.png";
 import "../../../styles/fonts.css";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -10,6 +10,8 @@ import ImmigrationImg from "../../../assets/services/main/immigration/main-banne
 import DisputeImg from "../../../assets/services/main/dispute/main-banner.png";
 import LandlordImg from "../../../assets/services/main/landlord/main-banner.png";
 import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
+import CommercialImg from "../../../assets/services/main/commercial/main-banner.png";
+import IntellectualImg from "../../../assets/services/main/intellectual/main-banner.png";
 import FamilyImg from "../../../assets/services/main/family/main-banner.png";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
 import AllPrices from "../../NavLinks/AllPrices";
@@ -22,8 +24,7 @@ const WillsAndProbate = () => {
         width="100vw"
         maxWidth="100%"
         minHeight="100vh"
-        backgroundColor={"#9fabb8"}
-        // backgroundColor={"white"}
+        backgroundColor={"#ffffff"}
         overflow="auto"
         m={0}
         p={0}
@@ -674,7 +675,7 @@ const WillsAndProbate = () => {
                     opacity: "0.8",
                     transition: "all 0.5s ease",
                   }}
-                  bgImage={`url(${ResidentialImg})`}
+                  bgImage={`url(${CommercialImg})`}
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}
@@ -756,7 +757,7 @@ const WillsAndProbate = () => {
                     opacity: "0.8",
                     transition: "all 0.5s ease",
                   }}
-                  bgImage={`url(${DisputeImg})`}
+                  bgImage={`url(${IntellectualImg})`}
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}
