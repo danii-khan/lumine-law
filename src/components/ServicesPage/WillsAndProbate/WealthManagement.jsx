@@ -10,6 +10,7 @@ import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
+import BannerImg from "../../../assets/services/main/sub-services/wills-probate.png";
 
 const WealthManagement = () => {
   const [applicationState, setApplicationState] = useState(false);
@@ -44,11 +45,10 @@ const WealthManagement = () => {
               xl: "125px",
               "2xl": "150px",
             }}
-            // bgImage={`url(${BannerImg})`}
-            // bgSize={"cover"}
-            // bgPos={"center"}
-            // bgRepeat={"no-repeat"}
-            backgroundColor={"#9FC3D3"}
+            bgImage={`url(${BannerImg})`}
+            bgSize={"cover"}
+            bgPos={"center"}
+            bgRepeat={"no-repeat"}
             display={"flex"}
             justifyContent={"center"}
             alignItems={"center"}
