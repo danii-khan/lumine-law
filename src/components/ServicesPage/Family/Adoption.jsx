@@ -6,7 +6,7 @@ import { GoPlus } from "react-icons/go";
 import { useState } from "react";
 import { AiOutlineMinus } from "react-icons/ai";
 import { Link } from "react-router-dom";
-
+import BannerImg from "../../../assets/services/main/sub-services/family.png";
 import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
@@ -48,11 +48,10 @@ const Adoption = () => {
               xl: "125px",
               "2xl": "150px",
             }}
-            // bgImage={`url(${BannerImg})`}
-            // bgSize={"cover"}
-            // bgPos={"center"}
-            // bgRepeat={"no-repeat"}
-            backgroundColor={"#60657e"}
+            bgImage={`url(${BannerImg})`}
+            bgSize={"cover"}
+            bgPos={"center"}
+            bgRepeat={"no-repeat"}
             display={"flex"}
             justifyContent={"center"}
             alignItems={"center"}

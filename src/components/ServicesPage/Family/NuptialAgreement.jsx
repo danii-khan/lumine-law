@@ -10,6 +10,7 @@ import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
+import BannerImg from "../../../assets/services/main/sub-services/family.png";
 
 const NuptialAgreement = () => {
   const [spouseState, setSpouseState] = useState(false);
@@ -48,11 +49,10 @@ const NuptialAgreement = () => {
               xl: "125px",
               "2xl": "150px",
             }}
-            // bgImage={`url(${BannerImg})`}
-            // bgSize={"cover"}
-            // bgPos={"center"}
-            // bgRepeat={"no-repeat"}
-            backgroundColor={"#60657e"}
+            bgImage={`url(${BannerImg})`}
+            bgSize={"cover"}
+            bgPos={"center"}
+            bgRepeat={"no-repeat"}
             display={"flex"}
             justifyContent={"center"}
             alignItems={"center"}
