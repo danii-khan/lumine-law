@@ -10,6 +10,7 @@ import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
+import BannerImg from "../../../assets/services/main/sub-services/dispute.png";
 
 const BuildingContractDisputes = () => {
   const [eligibilityState, setEligibilityState] = useState(false);
@@ -44,7 +45,10 @@ const BuildingContractDisputes = () => {
               xl: "125px",
               "2xl": "150px",
             }}
-            backgroundColor={"#60657e"}
+            bgImage={`url(${BannerImg})`}
+            bgSize={"cover"}
+            bgPos={"center"}
+            bgRepeat={"no-repeat"}
             display={"flex"}
             justifyContent={"center"}
             alignItems={"center"}
