@@ -6,11 +6,11 @@ import { GoPlus } from "react-icons/go";
 import { useState } from "react";
 import { AiOutlineMinus } from "react-icons/ai";
 import { Link } from "react-router-dom";
-
 import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
 import AllPrices from "../../NavLinks/AllPrices";
+import BannerImg from "../../../assets/services/main/sub-services/residential.png";
 
 const FreeholdSales = () => {
   const [eligibilityState, setEligibilityState] = useState(false);
@@ -45,7 +45,10 @@ const FreeholdSales = () => {
               xl: "125px",
               "2xl": "150px",
             }}
-            backgroundColor={"#60657e"}
+            bgImage={`url(${BannerImg})`}
+            bgSize={"cover"}
+            bgPos={"center"}
+            bgRepeat={"no-repeat"}
             display={"flex"}
             justifyContent={"center"}
             alignItems={"center"}
