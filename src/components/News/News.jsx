@@ -8,6 +8,7 @@ import {
   Grid,
   GridItem,
   Image,
+  Flex,
 } from "@chakra-ui/react";
 import { InputGroup } from "../../lib/chakra-components/ui/input-group";
 import {
@@ -103,14 +104,27 @@ const News = () => {
               mb={"5%"}
               my={{ xs: "5%", md: "2.5%" }}
             >
-              <HStack>
+              <Flex
+                flexFlow={{ xs: "column", lg: "row" }}
+                justifyContent={"center"}
+                alignItems={"center"}
+                gap={"10px"}
+              >
                 {/* Search */}
-                <InputGroup flex="1" endElement={<LuSearch />} width={"80%"}>
+                <InputGroup
+                  flex="1"
+                  endElement={<LuSearch />}
+                  width={{ xs: "100%", lg: "80%" }}
+                >
                   <Input placeholder="Search" />
                 </InputGroup>
 
                 {/* Filter */}
-                <SelectRoot collection={frameworks} size="sm" width="20%">
+                <SelectRoot
+                  collection={frameworks}
+                  size="sm"
+                  width={{ xs: "100%", lg: "20%" }}
+                >
                   <SelectTrigger>
                     <SelectValueText placeholder="Type" />
                   </SelectTrigger>
@@ -127,7 +141,7 @@ const News = () => {
                     ))}
                   </SelectContent>
                 </SelectRoot>
-              </HStack>
+              </Flex>
             </Box>
 
             {/* Grid Box*/}
@@ -138,7 +152,6 @@ const News = () => {
               border={"1px solid black"}
               borderRadius={"8px"}
               justifySelf={"center"}
-              mt={"2.5%"}
               overflow={"scroll"}
               css={{
                 "&::-webkit-scrollbar": {
