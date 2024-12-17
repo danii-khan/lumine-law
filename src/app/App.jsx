@@ -72,6 +72,7 @@ import BuildingContractDisputes from "../components/ServicesPage/Dispute/Buildin
 import SupplyGoodsServices from "../components/ServicesPage/Dispute/SupplyGoodsServices";
 import BuildingContracts from "../components/ServicesPage/Dispute/BuildingContracts";
 import DisputeDebtRecovery from "../components/ServicesPage/Dispute/DisputeDebtRecovery";
+import News from "../components/News/News";
 
 function App() {
   return (
@@ -784,6 +785,16 @@ function App() {
             element={
               <PageTransition>
                 <About />
+              </PageTransition>
+            }
+          />
+
+          {/* News */}
+          <Route
+            path="/lumine-law/news"
+            element={
+              <PageTransition>
+                <News />
               </PageTransition>
             }
           />

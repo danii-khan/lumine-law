@@ -74,7 +74,7 @@ const ServicesMegaMenu = () => {
             justifyContent={"center"}
             alignItems={"flex-start"}
             py={"10px"}
-            // gap={{ lg: "10px", xl: "20px" }}
+            gap={{ lg: "10px", xl: "20px" }}
           >
             {/* Immigration Services */}
             <VStack
@@ -95,8 +95,8 @@ const ServicesMegaMenu = () => {
                 <Text
                   fontSize={{
                     lg: "10px",
-                    xl: "11px",
-                    "2xl": "12px",
+                    xl: "12px",
+                    "2xl": "14px",
                   }}
                   fontWeight={700}
                   className={styles.menuHeader}
@@ -210,8 +210,8 @@ const ServicesMegaMenu = () => {
                 <Text
                   fontSize={{
                     lg: "10px",
-                    xl: "11px",
-                    "2xl": "12px",
+                    xl: "12px",
+                    "2xl": "14px",
                   }}
                   fontWeight={700}
                   className={styles.menuHeader}
@@ -323,8 +323,8 @@ const ServicesMegaMenu = () => {
                 <Text
                   fontSize={{
                     lg: "10px",
-                    xl: "11px",
-                    "2xl": "12px",
+                    xl: "12px",
+                    "2xl": "14px",
                   }}
                   fontWeight={700}
                   className={styles.menuHeader}
@@ -436,8 +436,8 @@ const ServicesMegaMenu = () => {
                 <Text
                   fontSize={{
                     lg: "10px",
-                    xl: "11px",
-                    "2xl": "12px",
+                    xl: "12px",
+                    "2xl": "14px",
                   }}
                   fontWeight={700}
                   className={styles.menuHeader}
@@ -539,7 +539,7 @@ const ServicesMegaMenu = () => {
                 xl: "18px",
                 "2xl": "20px",
               }}
-              width={"18%"}
+              width={"22%"}
             >
               {/* Header */}
               <Link
@@ -549,8 +549,8 @@ const ServicesMegaMenu = () => {
                 <Text
                   fontSize={{
                     lg: "10px",
-                    xl: "11px",
-                    "2xl": "12px",
+                    xl: "12px",
+                    "2xl": "14px",
                   }}
                   fontWeight={700}
                   className={styles.menuHeader}
@@ -650,119 +650,6 @@ const ServicesMegaMenu = () => {
               </Link>
             </VStack>
 
-            {/* Family and Children */}
-            <VStack
-              alignItems={"flex-start"}
-              gap={{
-                lg: "16px",
-                xl: "18px",
-                "2xl": "20px",
-              }}
-              width={"12%"}
-            >
-              {/* Header */}
-              <Link
-                to={"/lumine-law/all-services/family-and-children"}
-                style={{ textDecoration: "none" }}
-              >
-                <Text
-                  fontSize={{
-                    lg: "10px",
-                    xl: "11px",
-                    "2xl": "12px",
-                  }}
-                  fontWeight={700}
-                  className={styles.menuHeader}
-                  _hover={{ borderBottom: "2px solid #beab7c" }}
-                >
-                  Family and Children
-                </Text>
-              </Link>
-              {/* List */}
-              {/* Divorce */}
-              <Text
-                as={Link}
-                to={"/lumine-law/all-services/family/divorce"}
-                fontSize={{
-                  lg: "9px",
-                  xl: "10px",
-                  "2xl": "11px",
-                }}
-                fontWeight={400}
-                className={styles.menuText}
-                textAlign={"left"}
-              >
-                Divorce
-              </Text>
-
-              {/* Pre-Nuptial Agreements */}
-              <Text
-                as={Link}
-                to={"/lumine-law/all-services/family/nuptial-agreement"}
-                fontSize={{
-                  lg: "9px",
-                  xl: "10px",
-                  "2xl": "11px",
-                }}
-                fontWeight={400}
-                className={styles.menuText}
-                textAlign={"left"}
-              >
-                Pre-Nuptial Agreements
-              </Text>
-
-              {/* Child Arrangements */}
-              <Text
-                as={Link}
-                to={"/lumine-law/all-services/family/child-arrangements"}
-                fontSize={{
-                  lg: "9px",
-                  xl: "10px",
-                  "2xl": "11px",
-                }}
-                fontWeight={400}
-                className={styles.menuText}
-                textAlign={"left"}
-              >
-                Child Arrangements
-              </Text>
-
-              {/* Parental Responsibility */}
-              <Text
-                as={Link}
-                to={"/lumine-law/all-services/family/parental-responsbility"}
-                fontSize={{
-                  lg: "9px",
-                  xl: "10px",
-                  "2xl": "11px",
-                }}
-                fontWeight={400}
-                className={styles.menuText}
-                textAlign={"left"}
-              >
-                Parental Responsibility
-              </Text>
-
-              {/* Explore More */}
-              <Link
-                to={"/lumine-law/all-services/family-and-children"}
-                style={{ textDecoration: "none" }}
-              >
-                <Text
-                  fontSize={{
-                    lg: "9px",
-                    xl: "10px",
-                    "2xl": "11px",
-                  }}
-                  fontWeight={700}
-                  className={styles.menuText}
-                  textAlign={"left"}
-                >
-                  ...
-                </Text>
-              </Link>
-            </VStack>
-
             {/* Wills and Probate */}
             <VStack
               alignItems={"flex-start"}
@@ -781,8 +668,8 @@ const ServicesMegaMenu = () => {
                 <Text
                   fontSize={{
                     lg: "10px",
-                    xl: "11px",
-                    "2xl": "12px",
+                    xl: "12px",
+                    "2xl": "14px",
                   }}
                   fontWeight={700}
                   className={styles.menuHeader}
@@ -894,8 +781,8 @@ const ServicesMegaMenu = () => {
                 <Text
                   fontSize={{
                     lg: "10px",
-                    xl: "11px",
-                    "2xl": "12px",
+                    xl: "12px",
+                    "2xl": "14px",
                   }}
                   fontWeight={700}
                   className={styles.menuHeader}
