@@ -73,6 +73,7 @@ import SupplyGoodsServices from "../components/ServicesPage/Dispute/SupplyGoodsS
 import BuildingContracts from "../components/ServicesPage/Dispute/BuildingContracts";
 import DisputeDebtRecovery from "../components/ServicesPage/Dispute/DisputeDebtRecovery";
 import News from "../components/News/News";
+import Insights from "../components/Insights/Insights";
 
 function App() {
   return (
@@ -795,6 +796,16 @@ function App() {
             element={
               <PageTransition>
                 <News />
+              </PageTransition>
+            }
+          />
+
+          {/* Insights */}
+          <Route
+            path="/lumine-law/insights"
+            element={
+              <PageTransition>
+                <Insights />
               </PageTransition>
             }
           />

@@ -187,6 +187,8 @@ const Menu = () => {
 
                   {/* News */}
                   <Box
+                    as={Link}
+                    to={"/lumine-law/news"}
                     backgroundColor="black"
                     width={"100%"}
                     borderBottom={"1px solid white"}
@@ -215,6 +217,8 @@ const Menu = () => {
 
                   {/* Insights */}
                   <Box
+                    as={Link}
+                    to={"/lumine-law/insights"}
                     backgroundColor="black"
                     width={"100%"}
                     borderBottom={"1px solid white"}

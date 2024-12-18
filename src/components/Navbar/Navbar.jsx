@@ -105,6 +105,8 @@ const Menu = () => {
 
         {/* Insights */}
         <Button
+          as={Link}
+          to={"/lumine-law/insights"}
           backgroundColor="inherit"
           color="white"
           size="sm"
