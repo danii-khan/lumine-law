@@ -21,6 +21,8 @@ import ResidentialIcon from "../../assets/landing/landing-icons/residential-icon
 import LandlordIcon from "../../assets/landing/landing-icons/landlord-icon.png";
 import DisputeIcon from "../../assets/landing/landing-icons/dispute-icon.png";
 import FamilyIcon from "../../assets/landing/landing-icons/family-icon.png";
+import IntellectualIcon from "../../assets/landing/landing-icons/intellectual-icon.png";
+import WillsProbateIcon from "../../assets/landing/landing-icons/wills-probate-icon.png";
 import PanelsBg from "../../assets/landing/panels.png";
 import PanelOne from "../../assets/landing/panel-images/panel-barclays.png";
 import PanelTwo from "../../assets/landing/panel-images/panel-santander.png";
@@ -118,7 +120,7 @@ const ScrollSpySidebar = () => {
         activeSection === "Who-we-are"
           ? { xs: "55%", md: "60%", lg: "55%", xl: "52.5%", "2xl": "55%" }
           : activeSection === "Our-Services"
-          ? { xs: "55%", md: "50%", lg: "50%", xl: "50%", "2xl": "50%" }
+          ? { xs: "52.5%", md: "50%", lg: "50%", xl: "50%", "2xl": "50%" }
           : activeSection === "Panels"
           ? { xs: "57.5%", md: "55%", lg: "50%", xl: "50%", "2xl": "50%" }
           : activeSection === "News-and-Insights"
@@ -495,9 +497,9 @@ const LandingPage = () => {
               xl: "22px",
               "2xl": "25px",
             }}
-            height={{ xs: "35%", md: "45%" }}
+            height={{ xs: "50%", md: "45%" }}
             width={{ xs: "85%", md: "70%" }}
-            alignItems={"center"}
+            alignItems={"flex-start"}
             justifyItems={"center"}
           >
             {/* Immigration */}
@@ -527,10 +529,13 @@ const LandingPage = () => {
                 width={"80%"}
               >
                 <VStack>
-                  <Image src={ImmigrationIcon} height={"40px"} />
+                  <Image
+                    src={ImmigrationIcon}
+                    height={{ xs: "30px", md: "40px" }}
+                  />
                   <Text
                     fontSize={{
-                      xs: "14px",
+                      xs: "12px",
                       sm: "14px",
                       md: "16px",
                       lg: "16px",
@@ -574,10 +579,13 @@ const LandingPage = () => {
                 width={"80%"}
               >
                 <VStack>
-                  <Image src={ResidentialIcon} height={"40px"} />
+                  <Image
+                    src={ResidentialIcon}
+                    height={{ xs: "30px", md: "40px" }}
+                  />
                   <Text
                     fontSize={{
-                      xs: "14px",
+                      xs: "12px",
                       sm: "14px",
                       md: "16px",
                       lg: "16px",
@@ -622,10 +630,13 @@ const LandingPage = () => {
                 width={"80%"}
               >
                 <VStack>
-                  <Image src={ResidentialIcon} height={"40px"} />
+                  <Image
+                    src={ResidentialIcon}
+                    height={{ xs: "30px", md: "40px" }}
+                  />
                   <Text
                     fontSize={{
-                      xs: "14px",
+                      xs: "12px",
                       sm: "14px",
                       md: "16px",
                       lg: "16px",
@@ -670,10 +681,13 @@ const LandingPage = () => {
                 width={"80%"}
               >
                 <VStack>
-                  <Image src={DisputeIcon} height={"40px"} />
+                  <Image
+                    src={IntellectualIcon}
+                    height={{ xs: "30px", md: "40px" }}
+                  />
                   <Text
                     fontSize={{
-                      xs: "14px",
+                      xs: "12px",
                       sm: "14px",
                       md: "16px",
                       lg: "16px",
@@ -718,10 +732,13 @@ const LandingPage = () => {
                 width={"80%"}
               >
                 <VStack>
-                  <Image src={DisputeIcon} height={"40px"} />
+                  <Image
+                    src={DisputeIcon}
+                    height={{ xs: "30px", md: "40px" }}
+                  />
                   <Text
                     fontSize={{
-                      xs: "14px",
+                      xs: "12px",
                       sm: "14px",
                       md: "16px",
                       lg: "16px",
@@ -766,10 +783,13 @@ const LandingPage = () => {
                 width={"80%"}
               >
                 <VStack>
-                  <Image src={LandlordIcon} height={"40px"} />
+                  <Image
+                    src={LandlordIcon}
+                    height={{ xs: "30px", md: "40px" }}
+                  />
                   <Text
                     fontSize={{
-                      xs: "14px",
+                      xs: "12px",
                       sm: "14px",
                       md: "16px",
                       lg: "16px",
@@ -814,10 +834,10 @@ const LandingPage = () => {
                 width={"80%"}
               >
                 <VStack>
-                  <Image src={FamilyIcon} height={"40px"} />
+                  <Image src={FamilyIcon} height={{ xs: "30px", md: "40px" }} />
                   <Text
                     fontSize={{
-                      xs: "14px",
+                      xs: "12px",
                       sm: "14px",
                       md: "16px",
                       lg: "16px",
@@ -862,10 +882,13 @@ const LandingPage = () => {
                 width={"80%"}
               >
                 <VStack>
-                  <Image src={FamilyIcon} height={"40px"} />
+                  <Image
+                    src={WillsProbateIcon}
+                    height={{ xs: "30px", md: "40px" }}
+                  />
                   <Text
                     fontSize={{
-                      xs: "14px",
+                      xs: "12px",
                       sm: "14px",
                       md: "16px",
                       lg: "16px",

@@ -7,8 +7,6 @@ import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
 import AllPrices from "../../NavLinks/AllPrices";
-
-// Import all images
 import BannerImg from "../../../assets/services/main/wills-probate/wills-probate-banner.png";
 import ImmigrationImg from "../../../assets/services/main/immigration/main-banner.png";
 import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";

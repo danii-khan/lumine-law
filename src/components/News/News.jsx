@@ -140,7 +140,10 @@ const News = () => {
             {/* Grid Box*/}
             <Box
               width={"90%"}
+              display={"grid"}
               alignSelf={"center"}
+              justifyContent={"center"}
+              alignItems={"center"}
               mb={"5%"}
               border={"1px solid black"}
               borderRadius={"8px"}

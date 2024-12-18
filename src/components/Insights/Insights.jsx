@@ -249,6 +249,7 @@ const Insights = () => {
 
             {/* Grid Box*/}
             <Box
+              display={"grid"}
               width={"90%"}
               alignSelf={"center"}
               mb={"5%"}
@@ -264,7 +265,12 @@ const Insights = () => {
                 scrollbarWidth: "none", // Optional: hides scrollbar in Firefox
               }}
             >
-              <Box width={"90%"} justifySelf={"center"} mt={"2.5%"}>
+              <Box
+                width={"90%"}
+                justifySelf={"center"}
+                alignSelf={"center"}
+                mt={"2.5%"}
+              >
                 {/* Sub Heading */}
                 <Box mb={"2.5%"}>
                   <Text
