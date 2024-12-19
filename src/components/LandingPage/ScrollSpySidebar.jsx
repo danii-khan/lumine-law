@@ -80,7 +80,7 @@ const ScrollSpySidebar = () => {
           : activeSection === "Panels"
           ? { xs: "57.5%", md: "55%", lg: "50%", xl: "50%", "2xl": "50%" }
           : activeSection === "News-and-Insights"
-          ? { xs: "55%", md: "50%", lg: "50%", xl: "50%", "2xl": "50%" }
+          ? { xs: "50%", md: "45%", lg: "45%", xl: "50%", "2xl": "50%" }
           : "50%"
       }
       transform="translateY(-50%)"

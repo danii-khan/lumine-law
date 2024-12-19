@@ -1,4 +1,12 @@
-import { Box, Text, VStack, Button, HStack, Image } from "@chakra-ui/react";
+import {
+  Box,
+  Text,
+  Button,
+  Image,
+  Flex,
+  Grid,
+  GridItem,
+} from "@chakra-ui/react";
 import NewsInsightsBg from "../../assets/landing/news-insights.png";
 import NewsInsightsOne from "../../assets/landing/news-insights-one.png";
 import NewsInsightsTwo from "../../assets/landing/news-insights-two.png";
@@ -6,6 +14,149 @@ import NewsInsightsThree from "../../assets/landing/news-insights-three.png";
 import NewsInsightsFour from "../../assets/landing/news-insights-four.png";
 import "../../styles/fonts.css";
 import { Link } from "react-router-dom";
+
+const images = [
+  NewsInsightsOne,
+  NewsInsightsTwo,
+  NewsInsightsThree,
+  NewsInsightsFour,
+];
+
+const news = [
+  // 1
+  {
+    key: 1,
+    image: images[0],
+    date: "10 December 2023",
+    heading:
+      "Understanding the role of Solicitors in London in Property Transactions",
+    description:
+      "Understand the role of Solicitors in London in property transactions. Learn why choosing local solicitors in London offers a personal touch, in depth market knowledge",
+  },
+
+  // 2
+  {
+    key: 2,
+    image: images[1],
+    date: "10 November 2023",
+    heading:
+      "The Building Safety Act 2022 and Establishment of the New Homes Ombudsman Scheme",
+    description:
+      "A few intro lines to this article and what it holds or signifies, just so the reader has an idea what they are about to read.",
+  },
+];
+
+const articles = [
+  // 1
+  {
+    key: 1,
+    image: images[2],
+    date: "02 October 2023",
+    heading: "LATEST ‘HOW TO RENT’ GUIDE",
+    description:
+      "A few intro lines to this article and what it holds or signifies, just so the reader has an idea what they are about to read.",
+  },
+
+  // 2
+  {
+    key: 2,
+    image: images[3],
+    date: "10 December 2023",
+    heading:
+      "Understanding the role of Solicitors in London in Property Transactions",
+    description:
+      "Understand the role of Solicitors in London in property transactions. Learn why choosing local solicitors in London offers a personal touch, in depth market knowledge",
+  },
+];
+
+const Card = ({ item }) => (
+  <Flex
+    as={Link}
+    to="/lumine-law/article-page"
+    direction="column"
+    width="100%"
+    height="100%"
+    cursor="pointer"
+    border="1px solid black"
+    borderRadius="8px"
+    overflow="hidden"
+    _hover={{ opacity: "0.85" }}
+    transition="0.3s all ease"
+  >
+    <Box flexShrink={0}>
+      <Image
+        src={item.image}
+        height={{
+          xs: "75px",
+          sm: "100px",
+          md: "125px",
+          lg: "150px",
+          xl: "175px",
+          "2xl": "200px",
+        }}
+        width="100%"
+        objectFit="cover"
+      />
+    </Box>
+
+    <Flex
+      flex="1"
+      direction="column"
+      gap="5px"
+      p="10px"
+      backgroundColor={"#d9d9d9"}
+      color={"black"}
+      fontFamily="CeraRoundPro"
+    >
+      {/* Date */}
+      <Text
+        display={{ xs: "none", xl: "grid" }}
+        textAlign={"left"}
+        fontSize={{
+          xs: "8px",
+          md: "9px",
+          "2xl": "10px",
+        }}
+        fontWeight={300}
+      >
+        {item.date}
+      </Text>
+
+      {/* Heading */}
+      <Text
+        textAlign={"left"}
+        fontSize={{
+          xs: "10px",
+          sm: "10px",
+          md: "12px",
+          lg: "12px",
+          xl: "14px",
+          "2xl": "15px",
+        }}
+        fontWeight={600}
+      >
+        {item.heading}
+      </Text>
+
+      {/* Description */}
+      <Text
+        display={{ xs: "none", lg: "grid" }}
+        textAlign={"left"}
+        fontSize={{
+          xs: "8px",
+          sm: "10px",
+          md: "10px",
+          lg: "10px",
+          xl: "12px",
+          "2xl": "13px",
+        }}
+        fontWeight={400}
+      >
+        {item.description}
+      </Text>
+    </Flex>
+  </Flex>
+);
 
 const NewsNInsightsSection = () => {
   return (
@@ -24,7 +175,7 @@ const NewsNInsightsSection = () => {
       bgSize={"cover"}
       bgRepeat={"no-repeat"}
       pt={{
-        xs: "20%",
+        xs: "5%",
         sm: "5%",
         md: "6%",
         lg: "13.5%",
@@ -33,6 +184,7 @@ const NewsNInsightsSection = () => {
       }}
       _loading={"lazy"}
     >
+      {/* Heading */}
       <Text
         color="#000000"
         fontSize={{
@@ -59,149 +211,105 @@ const NewsNInsightsSection = () => {
         A small intro about what our team is like, diverse etc. just a few
         lines.{" "}
       </Text>
-      <HStack
-        width={"100%"}
-        justifyContent={"center"}
-        alignItems={"center"}
-        gap={"10px"}
+      {/* Content */}
+      <Flex
+        width="90%"
+        mx="auto"
+        direction={{ base: "column", xl: "row", "2xl": "row" }}
+        gap={{ xs: "10px", lg: "20px" }}
       >
-        <VStack width={"45%"} gap={"10px"}>
-          <HStack width={"100%"}>
-            <Image
-              src={NewsInsightsOne}
-              height={{
-                xs: "150px",
-                sm: "175px",
-                md: "225px",
-                lg: "275px",
-                xl: "325px",
-                "2xl": "375px",
-              }}
-              width={"50%"}
-              objectFit={"cover"}
-            />
-            <Image
-              src={NewsInsightsTwo}
-              height={{
-                xs: "150px",
-                sm: "175px",
-                md: "225px",
-                lg: "275px",
-                xl: "325px",
-                "2xl": "375px",
-              }}
-              width={"50%"}
-              objectFit={"cover"}
-            />
-          </HStack>
+        {/* News Section */}
+        <Flex direction="column" flex="1" gap="20px">
+          <Grid
+            templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(2, 1fr)" }}
+            gap={{ xs: "5px", lg: "10px" }}
+            height="100%"
+          >
+            {news.map((item) => (
+              <GridItem key={item.key} height="100%">
+                <Card item={item} />
+              </GridItem>
+            ))}
+          </Grid>
+
           <Button
             as={Link}
-            to={"/lumine-law/all-services"}
-            style={{ textDecoration: "none" }}
-            border={"1px solid white"}
-            backgroundColor={"black"}
+            to="/lumine-law/news"
+            alignSelf="center"
+            width={{ base: "100%", md: "25%" }}
+            backgroundColor="black"
+            color="white"
             py={{
-              //base: {"15px"}
               xs: "6px",
               md: "8px",
               lg: "10px",
               xl: "12px",
               "2xl": "15px",
             }}
-            borderRadius={"10px"}
-            display={"flex"}
-            justifyContent={"center"}
-            alignItems={"center"}
-            cursor={"pointer"}
+            borderRadius="10px"
             _hover={{
               borderColor: "#beab7c",
               color: "#beab7c",
             }}
-            transition={"all 0.3s ease"}
+            transition="all 0.3s ease"
             fontSize={{
               xs: "14px",
-              sm: "14px",
               md: "16px",
-              lg: "16px",
               xl: "18px",
               "2xl": "20px",
             }}
-            fontWeight={400}
-            fontFamily={"CeraRoundPro"}
-            color={"white"}
+            fontFamily="CeraRoundPro"
           >
             News
           </Button>
-        </VStack>
-        <VStack width={"45%"} gap={"10px"}>
-          <HStack width={"100%"}>
-            <Image
-              src={NewsInsightsThree}
-              height={{
-                xs: "150px",
-                sm: "175px",
-                md: "225px",
-                lg: "275px",
-                xl: "325px",
-                "2xl": "375px",
-              }}
-              width={"50%"}
-              objectFit={"cover"}
-            />
-            <Image
-              src={NewsInsightsFour}
-              height={{
-                xs: "150px",
-                sm: "175px",
-                md: "225px",
-                lg: "275px",
-                xl: "325px",
-                "2xl": "375px",
-              }}
-              width={"50%"}
-              objectFit={"cover"}
-            />
-          </HStack>
+        </Flex>
+
+        {/* Articles Section */}
+        <Flex direction="column" flex="1" gap="20px">
+          <Grid
+            templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(2, 1fr)" }}
+            gap={{ xs: "5px", lg: "10px" }}
+            height="100%"
+          >
+            {articles.map((item) => (
+              <GridItem key={item.key} height="100%">
+                <Card item={item} />
+              </GridItem>
+            ))}
+          </Grid>
+
           <Button
             as={Link}
-            to={"/lumine-law/all-services"}
-            style={{ textDecoration: "none" }}
-            border={"1px solid white"}
-            backgroundColor={"black"}
+            to="/lumine-law/insights"
+            alignSelf="center"
+            width={{ base: "100%", md: "25%" }}
+            backgroundColor="black"
+            color="white"
             py={{
-              //base: {"15px"}
               xs: "6px",
               md: "8px",
               lg: "10px",
               xl: "12px",
               "2xl": "15px",
             }}
-            borderRadius={"10px"}
-            display={"flex"}
-            justifyContent={"center"}
-            alignItems={"center"}
-            cursor={"pointer"}
+            borderRadius="10px"
             _hover={{
               borderColor: "#beab7c",
               color: "#beab7c",
             }}
-            transition={"all 0.3s ease"}
+            transition="all 0.3s ease"
             fontSize={{
               xs: "14px",
-              sm: "14px",
               md: "16px",
-              lg: "16px",
               xl: "18px",
               "2xl": "20px",
             }}
-            fontWeight={400}
-            fontFamily={"CeraRoundPro"}
-            color={"white"}
+            fontFamily="CeraRoundPro"
           >
             Insights
           </Button>
-        </VStack>
-      </HStack>
+        </Flex>
+      </Flex>
     </Box>
   );
 };
