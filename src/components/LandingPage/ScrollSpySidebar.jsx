@@ -34,7 +34,7 @@ const ScrollSpySidebar = () => {
           }
         });
       },
-      { threshold: isMobile ? 0.5 : 0.9 } // Lower threshold for mobile
+      { threshold: isMobile ? 0.8 : 0.9 } // Lower threshold for mobile
     );
 
     document.querySelectorAll("section[id]").forEach((section) => {

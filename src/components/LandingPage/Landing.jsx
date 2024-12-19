@@ -9,8 +9,79 @@ import ServicesSection from "./ServicesSection";
 import PanelsSection from "./PanelsSection";
 import NewsNInsightsSection from "./NewsNInisghtsSection";
 import ScrollSpySidebar from "./ScrollSpySidebar";
+import { useEffect, useRef } from "react";
 
 const LandingPage = () => {
+  const containerRef = useRef(null);
+  const lastScrollPositionRef = useRef(0);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    const handleWheel = (e) => {
+      const footerSection = document.getElementById("Footer");
+      if (!footerSection) return;
+
+      const footerRect = footerSection.getBoundingClientRect();
+      const isFooterInView =
+        footerRect.top <= window.innerHeight && footerRect.bottom >= 0;
+
+      if (isFooterInView) {
+        // Allow only upward scrolling when footer is in view
+        if (e.deltaY > 0) {
+          // Attempting to scroll down
+          e.preventDefault();
+          return false;
+        }
+      }
+
+      lastScrollPositionRef.current = container.scrollTop;
+    };
+
+    // Handle touch events for mobile
+    let touchStart = 0;
+    const handleTouchStart = (e) => {
+      touchStart = e.touches[0].clientY;
+    };
+
+    const handleTouchMove = (e) => {
+      const footerSection = document.getElementById("Footer");
+      if (!footerSection) return;
+
+      const footerRect = footerSection.getBoundingClientRect();
+      const isFooterInView =
+        footerRect.top <= window.innerHeight && footerRect.bottom >= 0;
+
+      if (isFooterInView) {
+        const touchEnd = e.touches[0].clientY;
+        const delta = touchStart - touchEnd;
+
+        // Prevent downward scrolling when footer is in view
+        if (delta > 0) {
+          // Attempting to scroll down
+          e.preventDefault();
+          return false;
+        }
+      }
+    };
+
+    // Add event listeners
+    container.addEventListener("wheel", handleWheel, { passive: false });
+    container.addEventListener("touchstart", handleTouchStart, {
+      passive: true,
+    });
+    container.addEventListener("touchmove", handleTouchMove, {
+      passive: false,
+    });
+
+    return () => {
+      container.removeEventListener("wheel", handleWheel);
+      container.removeEventListener("touchstart", handleTouchStart);
+      container.removeEventListener("touchmove", handleTouchMove);
+    };
+  }, []);
+
   return (
     <Container
       className="scroll-container"
@@ -195,10 +266,21 @@ const LandingPage = () => {
 
       {/* Footer  */}
       <section
-        id="none"
+        id="Footer"
         style={{
           scrollSnapAlign: "start",
-          scrollSnapStop: "always",
+          // height: { xs: "90vh", lg: "none" },
+          scrollBehavior: "smooth",
+          overscrollBehavior: "none",
+          WebkitOverflowScrolling: "touch", // For older iOS
+          touchAction: "none",
+          position: "relative", // Helps with iOS momentum scrolling
+          zIndex: 1, // Ensures proper stacking context
+          // Prevents bounce effect on iOS
+          WebkitBounce: "none",
+          // Additional properties for cross-browser compatibility
+          MozOverscrollBehavior: "none",
+          msOverscrollBehavior: "none",
         }}
       >
         <Footer />
