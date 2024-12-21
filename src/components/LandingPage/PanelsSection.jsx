@@ -35,7 +35,7 @@ const PanelsSection = () => {
       _loading={"lazy"}
     >
       <Text
-        color="black"
+        color="white"
         fontSize={{
           xs: "12px",
           sm: "14px",

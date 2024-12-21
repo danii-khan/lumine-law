@@ -462,7 +462,7 @@ const IntellectualProperty = () => {
             width="90%"
             textAlign="left"
           >
-            Intellectual Property Services
+            Intellectual Property
           </Text>
         </Box>
 

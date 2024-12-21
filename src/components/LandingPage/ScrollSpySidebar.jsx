@@ -118,9 +118,16 @@ const ScrollSpySidebar = () => {
               variant="ghost"
               onClick={() => scrollToSection(id)}
               background="none"
-              color={activeSection !== "Panels" ? "black" : "white"}
+              color={
+                activeSection === "Who-we-are" || activeSection === "Panels"
+                  ? "white"
+                  : "black"
+              }
               _hover={{
-                color: activeSection !== "Panels" ? "white" : "black",
+                color:
+                  activeSection === "Who-we-are" || activeSection === "Panels"
+                    ? "#beab7c"
+                    : "#383636",
                 opacity: "100%",
               }}
               fontWeight={400}
@@ -148,7 +155,10 @@ const ScrollSpySidebar = () => {
               <span
                 style={{
                   border: "1px solid",
-                  borderColor: activeSection !== "Panels" ? "black" : "white",
+                  borderColor:
+                    activeSection === "Who-we-are" || activeSection === "Panels"
+                      ? "white"
+                      : "black",
                   width: "7.5vw",
                   marginRight: "15px",
                   opacity: activeSection === id ? "100%" : "25%",
@@ -171,9 +181,16 @@ const ScrollSpySidebar = () => {
               variant="ghost"
               onClick={() => scrollToSection(id)}
               background="none"
-              color={activeSection !== "Panels" ? "black" : "white"}
+              color={
+                activeSection === "Who-we-are" || activeSection === "Panels"
+                  ? "white"
+                  : "black"
+              }
               _hover={{
-                color: activeSection !== "Panels" ? "white" : "black",
+                color:
+                  activeSection === "Who-we-are" || activeSection === "Panels"
+                    ? "#beab7c"
+                    : "#383636",
                 opacity: "100%",
               }}
               fontWeight={400}
@@ -191,7 +208,10 @@ const ScrollSpySidebar = () => {
               <span
                 style={{
                   border: "1px solid",
-                  borderColor: activeSection !== "Panels" ? "black" : "white",
+                  borderColor:
+                    activeSection === "Who-we-are" || activeSection === "Panels"
+                      ? "white"
+                      : "black",
                   width: "2.5vw",
                   opacity: "80%",
                   transition: "opacity 0.3s ease",

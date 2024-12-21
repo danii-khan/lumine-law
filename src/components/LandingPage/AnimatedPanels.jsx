@@ -104,7 +104,7 @@ const AnimatedPanels = ({ images }) => {
         left={0}
         right={0}
         bottom={0}
-        backgroundColor={"rgba(0, 0, 0, 0.25)"}
+        backgroundColor={"rgba(243, 239, 239, 0.53)"}
         opacity={0.75}
         borderRadius="inherit"
       />
