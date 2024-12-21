@@ -20,22 +20,6 @@ import AllServicesImg from "../../../assets/services/all/bannertest.png";
 // Wills and Probate services data
 const willsServices = [
   {
-    title: "Wills",
-    path: "/lumine-law/all-services/wills-probate/wills",
-  },
-  {
-    title: "Probate",
-    path: "/lumine-law/all-services/wills-probate/probate",
-  },
-  {
-    title: "Trusts",
-    path: "/lumine-law/all-services/wills-probate/trusts",
-  },
-  {
-    title: "Power of Attorney",
-    path: "/lumine-law/all-services/wills-probate/power-attorney",
-  },
-  {
     title: "Estate Planning",
     path: "/lumine-law/all-services/wills-probate/estate-planning",
   },
@@ -44,12 +28,28 @@ const willsServices = [
     path: "/lumine-law/all-services/wills-probate/inheritance-tax-planning",
   },
   {
+    title: "Power of Attorney",
+    path: "/lumine-law/all-services/wills-probate/power-attorney",
+  },
+  {
     title: "Private Wealth Management",
     path: "/lumine-law/all-services/wills-probate/private-wealth-management",
   },
   {
+    title: "Probate",
+    path: "/lumine-law/all-services/wills-probate/probate",
+  },
+  {
     title: "Succession Planning",
     path: "/lumine-law/all-services/wills-probate/succession-planning",
+  },
+  {
+    title: "Trusts",
+    path: "/lumine-law/all-services/wills-probate/trusts",
+  },
+  {
+    title: "Wills",
+    path: "/lumine-law/all-services/wills-probate/wills",
   },
 ];
 

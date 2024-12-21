@@ -122,16 +122,16 @@ const otherServices = [
 
 const IPServices = [
   {
-    title: "Trademark",
-    path: "/lumine-law/all-services/intellectual-property/trademark",
-  },
-  {
     title: "Copyright",
     path: "/lumine-law/all-services/intellectual-property/copyright",
   },
   {
     title: "Patent",
     path: "/lumine-law/all-services/intellectual-property/patent",
+  },
+  {
+    title: "Trademark",
+    path: "/lumine-law/all-services/intellectual-property/trademark",
   },
 ];
 

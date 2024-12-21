@@ -22,49 +22,49 @@ import "../../../styles/fonts.css";
 // Commercial services data
 const commercialServices = [
   {
-    title: "Purchase of Commercial Property",
-    path: "/lumine-law/all-services/residential/purchase-commercial",
-  },
-  {
-    title: "Sales of Commercial Property",
-    path: "/lumine-law/all-services/residential/sales-commercial",
-  },
-  {
-    title: "Purchase of Business and Licenses to Assign",
-    path: "/lumine-law/all-services/residential/business-licenses",
-  },
-  {
-    title: "Lease Renewals",
-    path: "/lumine-law/all-services/residential/lease-renewals",
-  },
-  {
-    title: "Rent Recovery",
-    path: "/lumine-law/all-services/residential/rent-recovery",
-  },
-  {
-    title: "Forfeiture and Notices",
-    path: "/lumine-law/all-services/residential/forfeiture-notices",
+    title:
+      "Advice on Commercial Lease Terms, Survey Reports, and Repairing Obligations",
+    path: "/lumine-law/all-services/residential/advice-multiple",
   },
   {
     title: "Break Clauses and Rent Reviews",
     path: "/lumine-law/all-services/residential/break-rent",
   },
   {
-    title: "Consents for Alterations",
-    path: "/lumine-law/all-services/residential/consent-alterations",
-  },
-  {
     title: "Commercial Property Dilapidations",
     path: "/lumine-law/all-services/residential/property-dilapidations",
   },
   {
-    title: "Schedules of Conditions",
-    path: "/lumine-law/all-services/residential/schedules-conditions",
+    title: "Consents for Alterations",
+    path: "/lumine-law/all-services/residential/consent-alterations",
   },
   {
-    title:
-      "Advice on Commercial Lease Terms, Survey Reports, and Repairing Obligations",
-    path: "/lumine-law/all-services/residential/advice-multiple",
+    title: "Forfeiture and Notices",
+    path: "/lumine-law/all-services/residential/forfeiture-notices",
+  },
+  {
+    title: "Lease Renewals",
+    path: "/lumine-law/all-services/residential/lease-renewals",
+  },
+  {
+    title: "Purchase of Business and Licenses to Assign",
+    path: "/lumine-law/all-services/residential/business-licenses",
+  },
+  {
+    title: "Purchase of Commercial Property",
+    path: "/lumine-law/all-services/residential/purchase-commercial",
+  },
+  {
+    title: "Rent Recovery",
+    path: "/lumine-law/all-services/residential/rent-recovery",
+  },
+  {
+    title: "Sales of Commercial Property",
+    path: "/lumine-law/all-services/residential/sales-commercial",
+  },
+  {
+    title: "Schedules of Conditions",
+    path: "/lumine-law/all-services/residential/schedules-conditions",
   },
 ];
 

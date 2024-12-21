@@ -21,28 +21,28 @@ import "../../../styles/fonts.css";
 // Dispute services data
 const disputeServices = [
   {
-    title: "Debt Matters",
-    path: "/lumine-law/all-services/dispute-resolution/debt-matters",
+    title: "Building Contract Disputes",
+    path: "/lumine-law/all-services/dispute-resolution/building-contract-disputes",
+  },
+  {
+    title: "Building Contracts",
+    path: "/lumine-law/all-services/dispute-resolution/building-contracts",
   },
   {
     title: "Contract Disputes",
     path: "/lumine-law/all-services/dispute-resolution/contract-disputes",
   },
   {
-    title: "Corporate and Personal Bankruptcy Matters",
-    path: "/lumine-law/all-services/dispute-resolution/bankruptcy-matters",
-  },
-  {
-    title: "Building Contract Disputes",
-    path: "/lumine-law/all-services/dispute-resolution/building-contract-disputes",
-  },
-  {
     title: "Contracts for the Supply of Goods and Services",
     path: "/lumine-law/all-services/dispute-resolution/supply-goods-services",
   },
   {
-    title: "Building Contracts",
-    path: "/lumine-law/all-services/dispute-resolution/building-contracts",
+    title: "Corporate and Personal Bankruptcy Matters",
+    path: "/lumine-law/all-services/dispute-resolution/bankruptcy-matters",
+  },
+  {
+    title: "Debt Matters",
+    path: "/lumine-law/all-services/dispute-resolution/debt-matters",
   },
   {
     title: "Debt Recovery",

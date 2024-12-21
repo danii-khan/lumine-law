@@ -30,36 +30,36 @@ import AllServicesImg from "../../../assets/services/all/bannertest.png";
 // Family services data
 const familyServices = [
   {
-    title: "Divorce",
-    path: "/lumine-law/all-services/family/divorce",
-  },
-  {
-    title: "Pre Nuptial Agreements",
-    path: "/lumine-law/all-services/family/nuptial-agreement",
+    title: "Adoption and Surrogacy",
+    path: "/lumine-law/all-services/family/adoption-surrogacy",
   },
   {
     title: "Child Arrangements",
     path: "/lumine-law/all-services/family/child-arrangements",
   },
   {
-    title: "Parental Responsibility",
-    path: "/lumine-law/all-services/family/parental-responsbility",
-  },
-  {
     title: "Consent Orders",
     path: "/lumine-law/all-services/family/consent-orders",
   },
   {
-    title: "Financial Settlements",
-    path: "/lumine-law/all-services/family/financial-settlements",
+    title: "Divorce",
+    path: "/lumine-law/all-services/family/divorce",
   },
   {
     title: "Domestic Violence",
     path: "/lumine-law/all-services/family/domestic-violence",
   },
   {
-    title: "Adoption and Surrogacy",
-    path: "/lumine-law/all-services/family/adoption-surrogacy",
+    title: "Financial Settlements",
+    path: "/lumine-law/all-services/family/financial-settlements",
+  },
+  {
+    title: "Parental Responsibility",
+    path: "/lumine-law/all-services/family/parental-responsbility",
+  },
+  {
+    title: "Pre Nuptial Agreements",
+    path: "/lumine-law/all-services/family/nuptial-agreement",
   },
 ];
 

@@ -30,24 +30,52 @@ import "../../../styles/fonts.css";
 // Immigration services data
 const immigrationServices = [
   {
-    title: "Spouse Visa",
-    path: "/lumine-law/all-services/immigration/spouse-visa",
+    title: "Administrative Reviews, Appeals and Judicial Reviews",
+    path: "/lumine-law/all-services/immigration/reviews-appeals",
   },
   {
-    title: "UK Visitor Visa",
-    path: "/lumine-law/all-services/immigration/uk-visitor-visa",
+    title: "Asylum",
+    path: "/lumine-law/all-services/immigration/asylum",
   },
   {
     title: "British Citizenship Application",
     path: "/lumine-law/all-services/immigration/british-citizenship-application",
   },
   {
+    title: "Certificate of Sponsorship",
+    path: "/lumine-law/all-services/immigration/certificate-of-sponsorship",
+  },
+  {
+    title: "Creative Worker Visa",
+    path: "/lumine-law/all-services/immigration/creative-worker",
+  },
+  {
+    title: "Discretionary Leave",
+    path: "/lumine-law/all-services/immigration/discretionary-leave",
+  },
+  {
     title: "Entry Clearance Applications from Outside of the UK",
     path: "/lumine-law/all-services/immigration/entry-clearance",
   },
   {
-    title: "Skilled Worker Visa",
-    path: "/lumine-law/all-services/immigration/skilled-worker-visa",
+    title: "EU Settlement Scheme Applications",
+    path: "/lumine-law/all-services/immigration/eu-settlement",
+  },
+  {
+    title: "Immigration Bail and Revocation of a Deportation Order",
+    path: "/lumine-law/all-services/immigration/bail-revocation",
+  },
+  {
+    title: "Indefinite Leave to Remain",
+    path: "/lumine-law/all-services/immigration/indefinite-leave",
+  },
+  {
+    title: "Innovator Founder Visa",
+    path: "/lumine-law/all-services/immigration/innovator-founder",
+  },
+  {
+    title: "Private Life/Humans Right-Based Applications",
+    path: "/lumine-law/all-services/immigration/human-rights-app",
   },
   {
     title:
@@ -55,8 +83,12 @@ const immigrationServices = [
     path: "/lumine-law/all-services/immigration/skilled-migrant",
   },
   {
-    title: "Certificate of Sponsorship",
-    path: "/lumine-law/all-services/immigration/certificate-of-sponsorship",
+    title: "Skilled Worker Visa",
+    path: "/lumine-law/all-services/immigration/skilled-worker-visa",
+  },
+  {
+    title: "Spouse Visa",
+    path: "/lumine-law/all-services/immigration/spouse-visa",
   },
   {
     title: "Student Visa",
@@ -67,44 +99,12 @@ const immigrationServices = [
     path: "/lumine-law/all-services/immigration/visa-categories",
   },
   {
+    title: "UK Visitor Visa",
+    path: "/lumine-law/all-services/immigration/uk-visitor-visa",
+  },
+  {
     title: "Visa Extensions",
     path: "/lumine-law/all-services/immigration/visa-extensions",
-  },
-  {
-    title: "Indefinite Leave to Remain",
-    path: "/lumine-law/all-services/immigration/indefinite-leave",
-  },
-  {
-    title: "Private Life/Humans Right-Based Applications",
-    path: "/lumine-law/all-services/immigration/human-rights-app",
-  },
-  {
-    title: "Discretionary Leave",
-    path: "/lumine-law/all-services/immigration/discretionary-leave",
-  },
-  {
-    title: "Immigration Bail and Revocation of a Deportation Order",
-    path: "/lumine-law/all-services/immigration/bail-revocation",
-  },
-  {
-    title: "EU Settlement Scheme Applications",
-    path: "/lumine-law/all-services/immigration/eu-settlement",
-  },
-  {
-    title: "Administrative Reviews, Appeals and Judicial Reviews",
-    path: "/lumine-law/all-services/immigration/reviews-appeals",
-  },
-  {
-    title: "Asylum",
-    path: "/lumine-law/all-services/immigration/asylum",
-  },
-  {
-    title: "Innovator Founder Visa",
-    path: "/lumine-law/all-services/immigration/innovator-founder",
-  },
-  {
-    title: "Creative Worker Visa",
-    path: "/lumine-law/all-services/immigration/creative-worker",
   },
 ];
 

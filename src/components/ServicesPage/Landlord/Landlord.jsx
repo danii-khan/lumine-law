@@ -81,16 +81,16 @@ const serviceCards = [
 
 const landlordServices = [
   {
+    title: "Claims for Disrepair",
+    path: "/lumine-law/all-services/landlord-tenant/claims-disrepair",
+  },
+  {
     title: "Possession Claims",
     path: "/lumine-law/all-services/landlord-tenant/possession-claims",
   },
   {
     title: "Recovery of Rent Arrears",
     path: "/lumine-law/all-services/landlord-tenant/recovery-rent",
-  },
-  {
-    title: "Claims for Disrepair",
-    path: "/lumine-law/all-services/landlord-tenant/claims-disrepair",
   },
 ];
 

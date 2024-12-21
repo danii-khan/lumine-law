@@ -28,12 +28,12 @@ const residentialServices = [
     path: "/lumine-law/all-services/residential/freehold-purchases",
   },
   {
-    title: "Transfers of Equity",
-    path: "/lumine-law/all-services/residential/transfer-of-equity",
-  },
-  {
     title: "Lease Terms Advice",
     path: "/lumine-law/all-services/residential/lease-terms-advice",
+  },
+  {
+    title: "Transfers of Equity",
+    path: "/lumine-law/all-services/residential/transfer-of-equity",
   },
 ];
 
