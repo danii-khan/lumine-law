@@ -79,6 +79,9 @@ import Probate from "../components/ServicesPage/WillsAndProbate/Probate";
 import PossessionClaims from "../components/ServicesPage/Landlord/PossessionClaims";
 import RecoveryRent from "../components/ServicesPage/Landlord/RecoveryRent";
 import ClaimsDisrepair from "../components/ServicesPage/Landlord/ClaimsDisrepair";
+import Trademark from "../components/ServicesPage/IntellectualProperty/Trademark";
+import Copyright from "../components/ServicesPage/IntellectualProperty/Copyright";
+import Patent from "../components/ServicesPage/IntellectualProperty/Patent";
 
 function App() {
   return (
@@ -791,6 +794,46 @@ function App() {
             element={
               <PageTransition>
                 <IntellectualProperty />
+              </PageTransition>
+            }
+          />
+
+          {/* Intellectual Property Subservice */}
+          <Route
+            path="/lumine-law/all-services/intellectual-property"
+            element={
+              <PageTransition>
+                <IntellectualProperty />
+              </PageTransition>
+            }
+          />
+
+          {/* Intellectual Property Subservice */}
+          <Route
+            path="/lumine-law/all-services/intellectual-property/trademark"
+            element={
+              <PageTransition>
+                <Trademark />
+              </PageTransition>
+            }
+          />
+
+          {/* Intellectual Property Subservice */}
+          <Route
+            path="/lumine-law/all-services/intellectual-property/copyright"
+            element={
+              <PageTransition>
+                <Copyright />
+              </PageTransition>
+            }
+          />
+
+          {/* Intellectual Property Subservice */}
+          <Route
+            path="/lumine-law/all-services/intellectual-property/patent"
+            element={
+              <PageTransition>
+                <Patent />
               </PageTransition>
             }
           />

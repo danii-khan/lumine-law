@@ -30,55 +30,6 @@ import DisputeImg from "../../../assets/services/main/dispute/main-banner.png";
 import AllServicesImg from "../../../assets/services/all/bannertest.png";
 import "../../../styles/fonts.css";
 
-// Dropdown sections data
-const dropdownSections = [
-  {
-    id: "eligibility",
-    title: "Trademark",
-    content: [
-      "A Trademark is a distinctive symbol, word, phrase, design, or combination of these elements that identifies and distinguishes the sources of goods or services from those of others. It is a form of intellectual property protection that grants exclusive rights to owner of the trademark.",
-      "Trademarks are used to establish brand identity and prevent others from using similar marks that could confuse consumers or dilute the reputation of the original mark. By registering a trademark with the government authority, the owner obtains legal protection and the exclusive right to use the mark in connection with the goods or services specified in the registration.",
-      "It is important to note that trademark rights are limited to specific goods or services and geographical regions. Additionally, trademarks can be registered at both national and international levels, depending on the scope of protection desired by the owner.",
-    ],
-  },
-  {
-    id: "copyright",
-    title: "Copyright",
-    content: [
-      "A copyright is a form of intellectual property protection granted to the creators of original works, such as literary, artistic, musical, or dramatic creations. It provides the creators with exclusive rights to control the use and distribution of their work.",
-      "With copyrights the creator has the sole right to reproduce the work, prepare derivative works based on the original, distribute copies of the work, publicly display the work, and perform the work publicly. These rights are granted automatically upon the creation of the work and do not require registration, although registering with government authorities can provide additional benefits and legal protections.",
-      "It is important to note that copyright protects the expression of ideas, not the ideas themselves. Additionally, there are limitations and exceptions to copyright, such as fair use or fair dealing provisions, which allows certain uses of copyrighted works without the permission from the copyright owner.",
-    ],
-  },
-  {
-    id: "patent",
-    title: "Patent",
-    content: [
-      "A Patent is a form of intellectual property protection granted to inventors for their novel inventions. It provides the inventor with exclusive rights to prevent others from making, using, selling, or importing the patented invention without their permission.",
-      "A patent is granted by a government authority, in exchange for the public disclosure of the invention. This means that the inventor must provide a detailed description of the invention in a patent application, enabling others to understand and replicate the invention after the patent expires.",
-      "Patents protect a wide range of inventions, including new and useful processes, machines, compositions of matter, and improvements thereof. Patent duration varies depending on the type of Patent and the country in which it is granted. In general, Patents have a duration of 20 years from the date of the patent application.",
-      "It is worth mentioning that obtaining a patent can be a complex and time- consuming process, involving a thorough examination by the patent office to determine the novelty, usefulness, and non-obviousness of the invention.",
-    ],
-  },
-  {
-    id: "help",
-    title: "How can Lumine Solicitors help?",
-    content: {
-      text: [
-        "Intellectual property is a valuable asset that can be used to generate revenue, attract investors, and differentiate a company's products or services from competitors. However, without proper protection, intellectual property can be stolen or infringed upon, resulting in lost revenue and damage to a company's reputation.",
-        "We can help with:",
-      ],
-      listItems: [
-        "Provide individuals and businesses legal advice on how to protect their intellectual property.",
-        "Filing and registering Trademark, Copyrights, Patents and Trade Secret with the appropriate government agencies",
-        "We also help our clients in negotiating licensing agreements, and taking legal action against infringers.",
-      ],
-      contact:
-        "For all intellectual property issues, Please do not hesitate to get in touch with Lumine solicitors 020 3950 2246 or Contact Us HERE",
-    },
-  },
-];
-
 const introContent = {
   mainText:
     "Intellectual property (IP) rights are designed to protect the creations of human intellect, such as inventions, literary and artistic works, symbols, names, images, and designs. These rights allow individuals or organizations to have exclusive control over their creations and prevent others from using them without permission.",
@@ -168,6 +119,58 @@ const otherServices = [
     textColor: "#ffffff",
   },
 ];
+
+const IPServices = [
+  {
+    title: "Trademark",
+    path: "/lumine-law/all-services/intellectual-property/trademark",
+  },
+  {
+    title: "Copyright",
+    path: "/lumine-law/all-services/intellectual-property/copyright",
+  },
+  {
+    title: "Patent",
+    path: "/lumine-law/all-services/intellectual-property/patent",
+  },
+];
+
+const IPServiceButton = ({ title, path }) => (
+  <GridItem
+    as={Link}
+    to={path}
+    color="black"
+    border="1px solid black"
+    borderRadius="8px"
+    p="2.5px 10px"
+    width="100%"
+    height="100%"
+    display="flex"
+    justifyContent="center"
+    alignItems="center"
+    backgroundColor="white"
+    _hover={{
+      backgroundColor: "#000000",
+      color: "#beab7c",
+      transition: "0.3s ease all",
+      fontWeight: "600",
+      textDecor: "underline",
+    }}
+    fontSize={{
+      xs: "12px",
+      sm: "14px",
+      md: "15px",
+      lg: "16px",
+      xl: "16px",
+      "2xl": "16px",
+    }}
+    fontWeight={500}
+    fontFamily="CeraRoundPro"
+    cursor="pointer"
+  >
+    {title}
+  </GridItem>
+);
 
 // Reusable Dropdown Component
 const DropdownSection = ({ title, isOpen, onToggle, children }) => (
@@ -326,99 +329,6 @@ const ServiceCard = ({ service }) => (
 
 // Main Component
 const IntellectualProperty = () => {
-  const [openSections, setOpenSections] = useState({});
-
-  const toggleSection = (id) => {
-    setOpenSections((prev) => ({
-      ...prev,
-      [id]: !prev[id],
-    }));
-  };
-
-  const renderDropdownContent = (section) => {
-    if (Array.isArray(section.content)) {
-      return section.content.map((text, index) => (
-        <Text
-          key={index}
-          textAlign="left"
-          fontSize={{
-            xs: "12px",
-            sm: "12px",
-            md: "14px",
-            lg: "14px",
-            xl: "16px",
-            "2xl": "18px",
-          }}
-          fontWeight={400}
-          fontFamily="CeraRoundPro"
-          color="black"
-        >
-          {text}
-        </Text>
-      ));
-    }
-
-    if (section.content.text) {
-      return (
-        <>
-          {section.content.text.map((text, index) => (
-            <Text
-              key={index}
-              textAlign="left"
-              fontSize={{
-                xs: "12px",
-                sm: "12px",
-                md: "14px",
-                lg: "14px",
-                xl: "16px",
-                "2xl": "18px",
-              }}
-              fontWeight={400}
-              fontFamily="CeraRoundPro"
-              color="black"
-            >
-              {text}
-            </Text>
-          ))}
-          <List.Root
-            textAlign="left"
-            fontSize={{
-              xs: "12px",
-              sm: "12px",
-              md: "14px",
-              lg: "14px",
-              xl: "16px",
-              "2xl": "18px",
-            }}
-            fontWeight={400}
-            fontFamily="CeraRoundPro"
-            color="black"
-          >
-            {section.content.listItems.map((item, index) => (
-              <List.Item key={index}>{item}</List.Item>
-            ))}
-          </List.Root>
-          <Text
-            textAlign="left"
-            fontSize={{
-              xs: "12px",
-              sm: "12px",
-              md: "14px",
-              lg: "14px",
-              xl: "16px",
-              "2xl": "18px",
-            }}
-            fontWeight={400}
-            fontFamily="CeraRoundPro"
-            color="black"
-          >
-            {section.content.contact}
-          </Text>
-        </>
-      );
-    }
-  };
-
   return (
     <Container
       width="100vw"
@@ -527,21 +437,46 @@ const IntellectualProperty = () => {
               {introContent.conclusion}
             </Text>
           </Box>
+          <Box width="90%" alignSelf="center" my={{ xs: "5%", md: "0%" }}>
+            <Text
+              fontFamily="CeraRoundPro"
+              fontSize="24px"
+              fontWeight={600}
+              textAlign="left"
+              mb="2.5%"
+              color={"black"}
+            >
+              Services
+            </Text>
+          </Box>
         </Box>
 
-        {/* Dropdown info */}
-        <VStack justifyContent="space-around" alignItems="center" mb="50px">
-          {dropdownSections.map((section) => (
-            <DropdownSection
-              key={section.id}
-              title={section.title}
-              isOpen={openSections[section.id]}
-              onToggle={() => toggleSection(section.id)}
-            >
-              {renderDropdownContent(section)}
-            </DropdownSection>
-          ))}
-        </VStack>
+        {/* Services Grid */}
+        <Box
+          width="100%"
+          display="flex"
+          flexFlow="column"
+          alignItems="center"
+          color="black"
+          mb={{ xs: "25px", lg: "50px" }}
+        >
+          <Grid
+            templateColumns="repeat(3, 1fr)"
+            width={{ xs: "90%", md: "75%", lg: "70%", xl: "60%" }}
+            justifySelf="center"
+            justifyItems="center"
+            gap={{ xs: "10px", lg: "15px", xl: "30px" }}
+            gapY={0}
+          >
+            {IPServices.map((service) => (
+              <IPServiceButton
+                key={service.title}
+                title={service.title}
+                path={service.path}
+              />
+            ))}
+          </Grid>
+        </Box>
 
         {/* Other Services */}
         <Box mb="50px">
