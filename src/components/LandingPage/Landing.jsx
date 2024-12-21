@@ -93,6 +93,7 @@ const LandingPage = () => {
       p={0}
       css={{
         scrollSnapType: "y mandatory",
+        scrollSnapAlign: "start none",
         "&::-webkit-scrollbar": {
           display: "none", // Optional: hides scrollbar
         },
@@ -268,12 +269,12 @@ const LandingPage = () => {
       <section
         id="Footer"
         style={{
-          scrollSnapAlign: "start",
+          scrollSnapAlign: "start none",
           // height: { xs: "90vh", lg: "none" },
           scrollBehavior: "smooth",
           overscrollBehavior: "none",
           WebkitOverflowScrolling: "touch", // For older iOS
-          touchAction: "none",
+          // touchAction: "none",
           position: "relative", // Helps with iOS momentum scrolling
           zIndex: 1, // Ensures proper stacking context
           // Prevents bounce effect on iOS
@@ -281,6 +282,7 @@ const LandingPage = () => {
           // Additional properties for cross-browser compatibility
           MozOverscrollBehavior: "none",
           msOverscrollBehavior: "none",
+          overflow: "hidden",
         }}
       >
         <Footer />
