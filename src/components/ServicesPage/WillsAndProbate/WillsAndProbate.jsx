@@ -24,6 +24,10 @@ const willsServices = [
     path: "/lumine-law/all-services/wills-probate/wills",
   },
   {
+    title: "Probate",
+    path: "/lumine-law/all-services/wills-probate/probate",
+  },
+  {
     title: "Trusts",
     path: "/lumine-law/all-services/wills-probate/trusts",
   },
@@ -261,12 +265,7 @@ const WillsAndProbate = () => {
 
           {/* Main Content */}
           <Box width="100%" display="flex" flexFlow="column" color="black">
-            <Box
-              width="90%"
-              alignSelf="center"
-              mb="5%"
-              my={{ xs: "5%", md: "2.5%" }}
-            >
+            <Box width="90%" alignSelf="center" mt={{ xs: "5%", md: "2.5%" }}>
               <Text
                 fontFamily="CeraRoundPro"
                 fontSize="24px"
@@ -284,48 +283,11 @@ const WillsAndProbate = () => {
                 textAlign="left"
                 mb="20px"
               >
-                Probate involves the administration process of a deceased
-                person's estate. To begin the administration of the estate, it
-                must be established whether a valid will has been left by the
-                deceased, what assets and possessions are owned by the deceased,
-                and any debts owed by the deceased. Using this, the inheritance
-                tax due is calculated. To prevent liability, taxes and debts
-                must be paid, and assets and the estate must be distributed
-                accordingly. If the deceased fails to make a will, then it can
-                lead to their assets being distributed according to the rules of
-                intestacy and not as per their wishes.
-              </Text>
-
-              <Text
-                fontFamily="CeraRoundPro"
-                fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign="left"
-                mb="20px"
-              >
-                When it comes to your probate matter, we will arrange a personal
-                meaning that will provide you with the processing time and cost
-                of your matter. Following this, we will calculate the value of
-                all the assets and complete the inheritance tax forms for
-                payments to be made. A grant of probate will need to be
-                received. This is a legal document that gives authority to deal
-                with the deceased's estate.
-              </Text>
-
-              <Text
-                fontFamily="CeraRoundPro"
-                fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign="left"
-              >
-                Lumine solicitors recognise that discussing and planning the
-                death or loss of a loved one is never an easy process, but we
-                ensure to take the necessary legal steps to protect your wealth
-                and assets for your loved one's future.
+                Intro content about Wills and Probate
               </Text>
             </Box>
 
-            <Box width="90%" alignSelf="center" my={{ xs: "5%", md: "2.5%" }}>
+            <Box width="90%" alignSelf="center" my={{ xs: "5%", md: "0%" }}>
               <Text
                 fontFamily="CeraRoundPro"
                 fontSize="24px"

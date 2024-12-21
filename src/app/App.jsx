@@ -75,6 +75,7 @@ import DisputeDebtRecovery from "../components/ServicesPage/Dispute/DisputeDebtR
 import News from "../components/News/News";
 import Insights from "../components/Insights/Insights";
 import Article from "../components/Article/Article";
+import Probate from "../components/ServicesPage/WillsAndProbate/Probate";
 
 function App() {
   return (
@@ -677,6 +678,16 @@ function App() {
             element={
               <PageTransition>
                 <Wills />
+              </PageTransition>
+            }
+          />
+
+          {/* Wills and Probate Subservice */}
+          <Route
+            path="/lumine-law/all-services/wills-probate/probate"
+            element={
+              <PageTransition>
+                <Probate />
               </PageTransition>
             }
           />
