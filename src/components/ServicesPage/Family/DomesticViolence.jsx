@@ -37,8 +37,6 @@ const DomesticViolence = () => {
           <title>Lumine Law Domestic Violence Services</title>
         </Helmet>
 
-        <Navbar />
-
         <Box width="100%" flex="1" p={0} m={0} pt={"50px"}>
           {/* Banner */}
           <Box

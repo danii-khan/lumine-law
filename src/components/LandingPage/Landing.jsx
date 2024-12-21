@@ -105,8 +105,6 @@ const LandingPage = () => {
         <title>Lumine Law</title>
       </Helmet>
 
-      <Navbar />
-
       {/* Hero section content */}
       <section
         id="none"

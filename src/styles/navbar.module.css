@@ -109,6 +109,7 @@
   color: #beab7c;
 }
 
+/* navbar.module.css */
 .megaMenuContainer {
   position: absolute;
   top: 100%;
@@ -123,6 +124,7 @@
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transform-origin: top center;
   pointer-events: none;
+  will-change: transform, opacity, visibility;
 }
 
 .megaMenuContainer.open {
@@ -130,4 +132,9 @@
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+}
+
+/* Add this to ensure styles are loaded before animation */
+.mounted .megaMenuContainer {
+  transition-delay: 0.1s;
 }

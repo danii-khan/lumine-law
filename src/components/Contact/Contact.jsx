@@ -38,7 +38,6 @@ const Contact = () => {
       <Helmet>
         <title>Lumine Law Contact</title>
       </Helmet>
-      <Navbar />
       <Box width="100%" height="calc(100% - 50px)" p={0} m={0} pt={"50px"}>
         {/* Contact Header */}
         <Grid

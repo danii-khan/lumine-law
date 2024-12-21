@@ -1,100 +1,298 @@
 import "../styles/App.css";
+import React, { Suspense, Component } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LandingPage from "../components/LandingPage/Landing";
-import Contact from "../components/Contact/Contact";
-import AllServices from "../components/ServicesPage/AllServices";
-import Immigration from "../components/ServicesPage/Immigration/Immigration";
-import PageTransition from "../lib/PageTransitions/PageTransition";
-import SpouseVisa from "../components/ServicesPage/Immigration/SpouseVisa";
-import BritishCitizenshipApplication from "../components/ServicesPage/Immigration/BritishCitizenshipApplication";
-import VisitorVisa from "../components/ServicesPage/Immigration/VisitorVisa";
-import SkilledWorkerVisa from "../components/ServicesPage/Immigration/SkilledWorkerVisa";
-import CoS from "../components/ServicesPage/Immigration/CoS";
-import StudentVisa from "../components/ServicesPage/Immigration/StudentVisa";
-import EntryClearance from "../components/ServicesPage/Immigration/EntryClearance";
-import SkilledMigrant from "../components/ServicesPage/Immigration/SkilledMigrant";
-import VisaCategories from "../components/ServicesPage/Immigration/VisaCategories";
-import VisaExtensions from "../components/ServicesPage/Immigration/VisaExtensions";
-import IndefiniteLeave from "../components/ServicesPage/Immigration/IndefiniteLeave";
-import HumanRights from "../components/ServicesPage/Immigration/HumanRights";
-import DiscretionaryLeave from "../components/ServicesPage/Immigration/DiscretionaryLeave";
-import BailRevocation from "../components/ServicesPage/Immigration/BailRevocation";
-import EuSettlement from "../components/ServicesPage/Immigration/EuSettlement";
-import ReviewsAppeals from "../components/ServicesPage/Immigration/ReviewsAppeals";
-import Asylum from "../components/ServicesPage/Immigration/Asylum";
-import InnovatorFounder from "../components/ServicesPage/Immigration/InnovatorFounder";
-import CreativeWorker from "../components/ServicesPage/Immigration/CreativeWorker";
-import Family from "../components/ServicesPage/Family/Family";
-import Divorce from "../components/ServicesPage/Family/Divorce";
-import NuptialAgreement from "../components/ServicesPage/Family/NuptialAgreement";
-import ChildArrangements from "../components/ServicesPage/Family/ChildArrangements";
-import ParentalResponsiblity from "../components/ServicesPage/Family/ParentalResponsibility";
-import ConsentOrders from "../components/ServicesPage/Family/ConsentOrders";
-import FinancialStatements from "../components/ServicesPage/Family/FinancialSettlements";
-import DomesticViolence from "../components/ServicesPage/Family/DomesticViolence";
-import Adoption from "../components/ServicesPage/Family/Adoption";
-import Residential from "../components/ServicesPage/Residential/Residential";
-import DisputeResolution from "../components/ServicesPage/Dispute/DisputeResolution";
-import Landlord from "../components/ServicesPage/Landlord/Landlord";
-import PropertyPrices from "../components/Prices/PropertyPrices";
-import DebtRecovery from "../components/Prices/DebtRecovery";
-import ImmigrationPrices from "../components/Prices/ImmigrationPrices";
-import About from "../components/About/About";
-import FreeholdSales from "../components/ServicesPage/Residential/FreeholdSales";
-import FreeholdPurchases from "../components/ServicesPage/Residential/FreeholdPurchases";
-import TransfersOfEquity from "../components/ServicesPage/Residential/TransfersOfEquity";
-import LeaseTermsAdvice from "../components/ServicesPage/Residential/LeaseTermsAdvice";
-import Commercial from "../components/ServicesPage/Commercial/Commercial";
-import PurchaseCommercial from "../components/ServicesPage/Commercial/PurchaseCommercial";
-import SaleCommercial from "../components/ServicesPage/Commercial/SaleCommercial";
-import BusinessAndLicense from "../components/ServicesPage/Commercial/BusinessAndLicense";
-import LeaseRenewals from "../components/ServicesPage/Commercial/LeaseRenewals";
-import RentRecovery from "../components/ServicesPage/Commercial/RentRecovery";
-import ForfeitureAndNotices from "../components/ServicesPage/Commercial/ForfeitureAndNotices";
-import BreakRent from "../components/ServicesPage/Commercial/BreakRent";
-import ConsentAlterations from "../components/ServicesPage/Commercial/ConsentAlterations";
-import PropertyDilapidations from "../components/ServicesPage/Commercial/PropertyDilapidations";
-import SchedulesConditions from "../components/ServicesPage/Commercial/SchedulesConditions";
-import AdviceMultiple from "../components/ServicesPage/Commercial/AdviceMultiple";
-import WillsAndProbate from "../components/ServicesPage/WillsAndProbate/WillsAndProbate";
-import Wills from "../components/ServicesPage/WillsAndProbate/Wills";
-import Trusts from "../components/ServicesPage/WillsAndProbate/Trusts";
-import PowerOfAttorney from "../components/ServicesPage/WillsAndProbate/PowerOfAttorney";
-import EstatePlanning from "../components/ServicesPage/WillsAndProbate/EstatePlanning";
-import InheritanceTaxPlanning from "../components/ServicesPage/WillsAndProbate/InheritanceTaxPlanning";
-import WealthManagement from "../components/ServicesPage/WillsAndProbate/WealthManagement";
-import SuccessionPlanning from "../components/ServicesPage/WillsAndProbate/SuccessionPlanning";
-import IntellectualProperty from "../components/ServicesPage/IntellectualProperty/IntellectualProperty";
-import DebtMatters from "../components/ServicesPage/Dispute/DebtMatters";
-import ContractDisputes from "../components/ServicesPage/Dispute/ContractDisputes";
-import CorporatePersonalBankruptcy from "../components/ServicesPage/Dispute/CorporatePersonalBankruptcty";
-import BuildingContractDisputes from "../components/ServicesPage/Dispute/BuildingContractDisputes";
-import SupplyGoodsServices from "../components/ServicesPage/Dispute/SupplyGoodsServices";
-import BuildingContracts from "../components/ServicesPage/Dispute/BuildingContracts";
-import DisputeDebtRecovery from "../components/ServicesPage/Dispute/DisputeDebtRecovery";
-import News from "../components/News/News";
-import Insights from "../components/Insights/Insights";
-import Article from "../components/Article/Article";
-import Probate from "../components/ServicesPage/WillsAndProbate/Probate";
-import PossessionClaims from "../components/ServicesPage/Landlord/PossessionClaims";
-import RecoveryRent from "../components/ServicesPage/Landlord/RecoveryRent";
-import ClaimsDisrepair from "../components/ServicesPage/Landlord/ClaimsDisrepair";
-import Trademark from "../components/ServicesPage/IntellectualProperty/Trademark";
-import Copyright from "../components/ServicesPage/IntellectualProperty/Copyright";
-import Patent from "../components/ServicesPage/IntellectualProperty/Patent";
+import Navbar from "../components/Navbar/Navbar";
+const LandingPage = React.lazy(() =>
+  import("../components/LandingPage/Landing")
+);
+const Contact = React.lazy(() => import("../components/Contact/Contact"));
+const AllServices = React.lazy(() =>
+  import("../components/ServicesPage/AllServices")
+);
+const Immigration = React.lazy(() =>
+  import("../components/ServicesPage/Immigration/Immigration")
+);
+const PageTransition = React.lazy(() =>
+  import("../lib/PageTransitions/PageTransition")
+);
+const SpouseVisa = React.lazy(() =>
+  import("../components/ServicesPage/Immigration/SpouseVisa")
+);
+const BritishCitizenshipApplication = React.lazy(() =>
+  import("../components/ServicesPage/Immigration/BritishCitizenshipApplication")
+);
+const VisitorVisa = React.lazy(() =>
+  import("../components/ServicesPage/Immigration/VisitorVisa")
+);
+const SkilledWorkerVisa = React.lazy(() =>
+  import("../components/ServicesPage/Immigration/SkilledWorkerVisa")
+);
+const CoS = React.lazy(() =>
+  import("../components/ServicesPage/Immigration/CoS")
+);
+const StudentVisa = React.lazy(() =>
+  import("../components/ServicesPage/Immigration/StudentVisa")
+);
+const EntryClearance = React.lazy(() =>
+  import("../components/ServicesPage/Immigration/EntryClearance")
+);
+const SkilledMigrant = React.lazy(() =>
+  import("../components/ServicesPage/Immigration/SkilledMigrant")
+);
+const VisaCategories = React.lazy(() =>
+  import("../components/ServicesPage/Immigration/VisaCategories")
+);
+const VisaExtensions = React.lazy(() =>
+  import("../components/ServicesPage/Immigration/VisaExtensions")
+);
+const IndefiniteLeave = React.lazy(() =>
+  import("../components/ServicesPage/Immigration/IndefiniteLeave")
+);
+const HumanRights = React.lazy(() =>
+  import("../components/ServicesPage/Immigration/HumanRights")
+);
+const DiscretionaryLeave = React.lazy(() =>
+  import("../components/ServicesPage/Immigration/DiscretionaryLeave")
+);
+const BailRevocation = React.lazy(() =>
+  import("../components/ServicesPage/Immigration/BailRevocation")
+);
+const EuSettlement = React.lazy(() =>
+  import("../components/ServicesPage/Immigration/EuSettlement")
+);
+const ReviewsAppeals = React.lazy(() =>
+  import("../components/ServicesPage/Immigration/ReviewsAppeals")
+);
+const Asylum = React.lazy(() =>
+  import("../components/ServicesPage/Immigration/Asylum")
+);
+const InnovatorFounder = React.lazy(() =>
+  import("../components/ServicesPage/Immigration/InnovatorFounder")
+);
+const CreativeWorker = React.lazy(() =>
+  import("../components/ServicesPage/Immigration/CreativeWorker")
+);
+const Family = React.lazy(() =>
+  import("../components/ServicesPage/Family/Family")
+);
+const Divorce = React.lazy(() =>
+  import("../components/ServicesPage/Family/Divorce")
+);
+const NuptialAgreement = React.lazy(() =>
+  import("../components/ServicesPage/Family/NuptialAgreement")
+);
+const ChildArrangements = React.lazy(() =>
+  import("../components/ServicesPage/Family/ChildArrangements")
+);
+const ParentalResponsiblity = React.lazy(() =>
+  import("../components/ServicesPage/Family/ParentalResponsibility")
+);
+const ConsentOrders = React.lazy(() =>
+  import("../components/ServicesPage/Family/ConsentOrders")
+);
+const FinancialStatements = React.lazy(() =>
+  import("../components/ServicesPage/Family/FinancialSettlements")
+);
+const DomesticViolence = React.lazy(() =>
+  import("../components/ServicesPage/Family/DomesticViolence")
+);
+const Adoption = React.lazy(() =>
+  import("../components/ServicesPage/Family/Adoption")
+);
+const Residential = React.lazy(() =>
+  import("../components/ServicesPage/Residential/Residential")
+);
+const DisputeResolution = React.lazy(() =>
+  import("../components/ServicesPage/Dispute/DisputeResolution")
+);
+const Landlord = React.lazy(() =>
+  import("../components/ServicesPage/Landlord/Landlord")
+);
+const PropertyPrices = React.lazy(() =>
+  import("../components/Prices/PropertyPrices")
+);
+const DebtRecovery = React.lazy(() =>
+  import("../components/Prices/DebtRecovery")
+);
+const ImmigrationPrices = React.lazy(() =>
+  import("../components/Prices/ImmigrationPrices")
+);
+const About = React.lazy(() => import("../components/About/About"));
+const FreeholdSales = React.lazy(() =>
+  import("../components/ServicesPage/Residential/FreeholdSales")
+);
+const FreeholdPurchases = React.lazy(() =>
+  import("../components/ServicesPage/Residential/FreeholdPurchases")
+);
+const TransfersOfEquity = React.lazy(() =>
+  import("../components/ServicesPage/Residential/TransfersOfEquity")
+);
+const LeaseTermsAdvice = React.lazy(() =>
+  import("../components/ServicesPage/Residential/LeaseTermsAdvice")
+);
+const Commercial = React.lazy(() =>
+  import("../components/ServicesPage/Commercial/Commercial")
+);
+const PurchaseCommercial = React.lazy(() =>
+  import("../components/ServicesPage/Commercial/PurchaseCommercial")
+);
+const SaleCommercial = React.lazy(() =>
+  import("../components/ServicesPage/Commercial/SaleCommercial")
+);
+const BusinessAndLicense = React.lazy(() =>
+  import("../components/ServicesPage/Commercial/BusinessAndLicense")
+);
+const LeaseRenewals = React.lazy(() =>
+  import("../components/ServicesPage/Commercial/LeaseRenewals")
+);
+const RentRecovery = React.lazy(() =>
+  import("../components/ServicesPage/Commercial/RentRecovery")
+);
+const ForfeitureAndNotices = React.lazy(() =>
+  import("../components/ServicesPage/Commercial/ForfeitureAndNotices")
+);
+const BreakRent = React.lazy(() =>
+  import("../components/ServicesPage/Commercial/BreakRent")
+);
+const ConsentAlterations = React.lazy(() =>
+  import("../components/ServicesPage/Commercial/ConsentAlterations")
+);
+const PropertyDilapidations = React.lazy(() =>
+  import("../components/ServicesPage/Commercial/PropertyDilapidations")
+);
+const SchedulesConditions = React.lazy(() =>
+  import("../components/ServicesPage/Commercial/SchedulesConditions")
+);
+const AdviceMultiple = React.lazy(() =>
+  import("../components/ServicesPage/Commercial/AdviceMultiple")
+);
+const WillsAndProbate = React.lazy(() =>
+  import("../components/ServicesPage/WillsAndProbate/WillsAndProbate")
+);
+const Wills = React.lazy(() =>
+  import("../components/ServicesPage/WillsAndProbate/Wills")
+);
+const Trusts = React.lazy(() =>
+  import("../components/ServicesPage/WillsAndProbate/Trusts")
+);
+const PowerOfAttorney = React.lazy(() =>
+  import("../components/ServicesPage/WillsAndProbate/PowerOfAttorney")
+);
+const EstatePlanning = React.lazy(() =>
+  import("../components/ServicesPage/WillsAndProbate/EstatePlanning")
+);
+const InheritanceTaxPlanning = React.lazy(() =>
+  import("../components/ServicesPage/WillsAndProbate/InheritanceTaxPlanning")
+);
+const WealthManagement = React.lazy(() =>
+  import("../components/ServicesPage/WillsAndProbate/WealthManagement")
+);
+const SuccessionPlanning = React.lazy(() =>
+  import("../components/ServicesPage/WillsAndProbate/SuccessionPlanning")
+);
+const IntellectualProperty = React.lazy(() =>
+  import("../components/ServicesPage/IntellectualProperty/IntellectualProperty")
+);
+const DebtMatters = React.lazy(() =>
+  import("../components/ServicesPage/Dispute/DebtMatters")
+);
+const ContractDisputes = React.lazy(() =>
+  import("../components/ServicesPage/Dispute/ContractDisputes")
+);
+const CorporatePersonalBankruptcy = React.lazy(() =>
+  import("../components/ServicesPage/Dispute/CorporatePersonalBankruptcty")
+);
+const BuildingContractDisputes = React.lazy(() =>
+  import("../components/ServicesPage/Dispute/BuildingContractDisputes")
+);
+const SupplyGoodsServices = React.lazy(() =>
+  import("../components/ServicesPage/Dispute/SupplyGoodsServices")
+);
+const BuildingContracts = React.lazy(() =>
+  import("../components/ServicesPage/Dispute/BuildingContracts")
+);
+const DisputeDebtRecovery = React.lazy(() =>
+  import("../components/ServicesPage/Dispute/DisputeDebtRecovery")
+);
+const News = React.lazy(() => import("../components/News/News"));
+const Insights = React.lazy(() => import("../components/Insights/Insights"));
+const Article = React.lazy(() => import("../components/Article/Article"));
+const Probate = React.lazy(() =>
+  import("../components/ServicesPage/WillsAndProbate/Probate")
+);
+const PossessionClaims = React.lazy(() =>
+  import("../components/ServicesPage/Landlord/PossessionClaims")
+);
+const RecoveryRent = React.lazy(() =>
+  import("../components/ServicesPage/Landlord/RecoveryRent")
+);
+const ClaimsDisrepair = React.lazy(() =>
+  import("../components/ServicesPage/Landlord/ClaimsDisrepair")
+);
+const Trademark = React.lazy(() =>
+  import("../components/ServicesPage/IntellectualProperty/Trademark")
+);
+const Copyright = React.lazy(() =>
+  import("../components/ServicesPage/IntellectualProperty/Copyright")
+);
+const Patent = React.lazy(() =>
+  import("../components/ServicesPage/IntellectualProperty/Patent")
+);
+// import ResourceLoader from "../utils/ResourceLoader";
+import { Box, Spinner, Center, VStack, Text, Image } from "@chakra-ui/react";
+import Logo from "../assets/navbar/logo.png";
+
+const LoadingSpinner = () => (
+  <Center minH="100vh" bg="black">
+    <VStack spacing={8}>
+      <Box w="200px" h="200px" mb={4}>
+        <Image
+          src={Logo}
+          alt="Lumine Law Logo"
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "contain",
+          }}
+        />
+      </Box>
+      <VStack spacing={4}>
+        <Spinner
+          thickness="4px"
+          speed="0.65s"
+          emptyColor="gray.200"
+          color="#beab7c"
+          size="xl"
+        />
+        <Text color="#beab7c" fontSize="lg">
+          Loading...
+        </Text>
+      </VStack>
+    </VStack>
+  </Center>
+);
+
+const SuspensePageTransition = ({ children }) => (
+  <Suspense fallback={<LoadingSpinner />}>
+    <PageTransition>{children}</PageTransition>
+  </Suspense>
+);
 
 function App() {
   return (
     <>
+      {/* <ResourceLoader /> */}
       <BrowserRouter>
+        <Navbar />
+        {/* <Suspense fallback={<LoadingSpinner />}> */}
         <Routes>
           {/* Landing */}
           <Route
             path="/lumine-law/"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <LandingPage />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -102,9 +300,9 @@ function App() {
           <Route
             path="/lumine-law/contact"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <Contact />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -112,9 +310,9 @@ function App() {
           <Route
             path="/lumine-law/all-services"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <AllServices />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -122,9 +320,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/immigration"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <Immigration />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -132,9 +330,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/immigration/spouse-visa"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <SpouseVisa />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -142,9 +340,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/immigration/british-citizenship-application"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <BritishCitizenshipApplication />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -152,9 +350,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/immigration/uk-visitor-visa"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <VisitorVisa />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -162,9 +360,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/immigration/skilled-worker-visa"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <SkilledWorkerVisa />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -172,9 +370,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/immigration/certificate-of-sponsorship"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <CoS />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -182,9 +380,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/immigration/student-visa"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <StudentVisa />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -192,9 +390,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/immigration/entry-clearance"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <EntryClearance />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -202,9 +400,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/immigration/skilled-migrant"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <SkilledMigrant />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -212,9 +410,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/immigration/visa-categories"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <VisaCategories />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -222,9 +420,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/immigration/visa-extensions"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <VisaExtensions />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -232,9 +430,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/immigration/indefinite-leave"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <IndefiniteLeave />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -242,9 +440,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/immigration/human-rights-app"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <HumanRights />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -252,9 +450,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/immigration/discretionary-leave"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <DiscretionaryLeave />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -262,9 +460,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/immigration/bail-revocation"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <BailRevocation />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -272,9 +470,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/immigration/eu-settlement"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <EuSettlement />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -282,9 +480,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/immigration/reviews-appeals"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <ReviewsAppeals />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -292,9 +490,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/immigration/asylum"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <Asylum />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -302,9 +500,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/immigration/innovator-founder"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <InnovatorFounder />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -312,9 +510,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/immigration/creative-worker"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <CreativeWorker />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -322,9 +520,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/family-and-children"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <Family />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -332,9 +530,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/family/divorce"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <Divorce />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -342,9 +540,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/family/nuptial-agreement"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <NuptialAgreement />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -352,9 +550,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/family/child-arrangements"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <ChildArrangements />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -362,9 +560,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/family/parental-responsbility"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <ParentalResponsiblity />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -372,9 +570,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/family/consent-orders"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <ConsentOrders />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -382,9 +580,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/family/financial-settlements"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <FinancialStatements />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -392,9 +590,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/family/domestic-violence"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <DomesticViolence />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -402,9 +600,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/family/adoption-surrogacy"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <Adoption />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -412,9 +610,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/residential"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <Residential />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -422,9 +620,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/residential/freehold-sales"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <FreeholdSales />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -432,9 +630,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/residential/freehold-purchases"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <FreeholdPurchases />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -442,9 +640,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/residential/transfer-of-equity"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <TransfersOfEquity />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -452,9 +650,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/residential/lease-terms-advice"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <LeaseTermsAdvice />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -462,9 +660,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/commercial"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <Commercial />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -472,9 +670,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/residential/purchase-commercial"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <PurchaseCommercial />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -482,9 +680,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/residential/sales-commercial"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <SaleCommercial />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -492,9 +690,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/residential/business-licenses"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <BusinessAndLicense />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -502,9 +700,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/residential/lease-renewals"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <LeaseRenewals />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -512,9 +710,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/residential/rent-recovery"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <RentRecovery />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -522,9 +720,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/residential/forfeiture-notices"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <ForfeitureAndNotices />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -532,9 +730,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/residential/break-rent"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <BreakRent />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -542,9 +740,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/residential/consent-alterations"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <ConsentAlterations />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -552,9 +750,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/residential/property-dilapidations"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <PropertyDilapidations />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -562,9 +760,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/residential/schedules-conditions"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <SchedulesConditions />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -572,9 +770,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/residential/advice-multiple"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <AdviceMultiple />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -582,9 +780,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/dispute-resolution"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <DisputeResolution />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -592,9 +790,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/dispute-resolution/debt-matters"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <DebtMatters />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -602,9 +800,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/dispute-resolution/contract-disputes"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <ContractDisputes />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -612,9 +810,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/dispute-resolution/bankruptcy-matters"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <CorporatePersonalBankruptcy />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -622,9 +820,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/dispute-resolution/building-contract-disputes"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <BuildingContractDisputes />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -632,9 +830,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/dispute-resolution/supply-goods-services"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <SupplyGoodsServices />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -642,9 +840,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/dispute-resolution/building-contracts"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <BuildingContracts />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -652,9 +850,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/dispute-resolution/debt-recovery"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <DisputeDebtRecovery />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -662,9 +860,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/landlord-tenant"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <Landlord />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -672,9 +870,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/landlord-tenant/possession-claims"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <PossessionClaims />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -682,9 +880,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/landlord-tenant/recovery-rent"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <RecoveryRent />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -692,9 +890,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/landlord-tenant/claims-disrepair"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <ClaimsDisrepair />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -702,9 +900,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/wills-probate"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <WillsAndProbate />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -712,9 +910,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/wills-probate/wills"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <Wills />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -722,9 +920,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/wills-probate/probate"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <Probate />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -732,9 +930,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/wills-probate/trusts"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <Trusts />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -742,9 +940,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/wills-probate/power-attorney"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <PowerOfAttorney />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -752,9 +950,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/wills-probate/estate-planning"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <EstatePlanning />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -762,9 +960,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/wills-probate/inheritance-tax-planning"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <InheritanceTaxPlanning />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -772,9 +970,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/wills-probate/private-wealth-management"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <WealthManagement />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -782,9 +980,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/wills-probate/succession-planning"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <SuccessionPlanning />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -792,9 +990,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/intellectual-property"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <IntellectualProperty />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -802,9 +1000,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/intellectual-property"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <IntellectualProperty />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -812,9 +1010,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/intellectual-property/trademark"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <Trademark />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -822,9 +1020,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/intellectual-property/copyright"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <Copyright />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -832,9 +1030,9 @@ function App() {
           <Route
             path="/lumine-law/all-services/intellectual-property/patent"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <Patent />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -842,9 +1040,9 @@ function App() {
           <Route
             path="/lumine-law/prices/property-prices"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <PropertyPrices />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -852,9 +1050,9 @@ function App() {
           <Route
             path="/lumine-law/prices/debt-recovery"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <DebtRecovery />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -862,9 +1060,9 @@ function App() {
           <Route
             path="/lumine-law/prices/immigration-prices"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <ImmigrationPrices />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -872,9 +1070,9 @@ function App() {
           <Route
             path="/lumine-law/about"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <About />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -882,9 +1080,9 @@ function App() {
           <Route
             path="/lumine-law/news"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <News />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -892,9 +1090,9 @@ function App() {
           <Route
             path="/lumine-law/insights"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <Insights />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
 
@@ -902,12 +1100,13 @@ function App() {
           <Route
             path="/lumine-law/article-page"
             element={
-              <PageTransition>
+              <SuspensePageTransition>
                 <Article />
-              </PageTransition>
+              </SuspensePageTransition>
             }
           />
         </Routes>
+        {/* </Suspense> */}
       </BrowserRouter>
     </>
   );
