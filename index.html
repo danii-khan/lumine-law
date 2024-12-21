@@ -4,14 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lumine Law</title>
+
+    <!-- Critical CSS inline -->
+    <style>
+      /* Minimal styles to prevent FOUC (Flash of Unstyled Content) */
+      body {
+        margin: 0;
+        opacity: 0;
+        transition: opacity 0.1s;
+        background: #000;
+      }
+      body.ready {
+        opacity: 1;
+      }
+
+      /* Loading state styles */
+      .loading-placeholder {
+        background: #f0f0f0;
+        animation: pulse 1.5s infinite;
+      }
+      @keyframes pulse {
+        0% {
+          opacity: 0.6;
+        }
+        50% {
+          opacity: 0.8;
+        }
+        100% {
+          opacity: 0.6;
+        }
+      }
+    </style>
+
+    <!-- Preload critical assets -->
+    <link rel="modulepreload" href="data:text/jsx;base64,aW1wb3J0IHsgUHJvdmlkZXIgfSBmcm9tICIuLi9saWIvY2hha3JhLWNvbXBvbmVudHMvdWkvcHJvdmlkZXIuanN4IjsNCmltcG9ydCB7IFN0cmljdE1vZGUgfSBmcm9tICJyZWFjdCI7DQppbXBvcnQgeyBjcmVhdGVSb290IH0gZnJvbSAicmVhY3QtZG9tL2NsaWVudCI7DQppbXBvcnQgIi4uL3N0eWxlcy9pbmRleC5jc3MiOw0KaW1wb3J0IEFwcCBmcm9tICIuL0FwcC5qc3giOw0KDQpjcmVhdGVSb290KGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJyb290IikpLnJlbmRlcigNCiAgPFN0cmljdE1vZGU+DQogICAgPFByb3ZpZGVyPg0KICAgICAgPEFwcCAvPg0KICAgIDwvUHJvdmlkZXI+DQogIDwvU3RyaWN0TW9kZT4NCik7DQo=" as="script" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/lumine-law/assets/logo-D12RNAeZ.png"
+      href="/lumine-law/assets/logo.D12RNAeZ.png"
     />
-    <script type="module" crossorigin src="/lumine-law/assets/index-DJ7tb7rf.js"></script>
-    <link rel="stylesheet" crossorigin href="/lumine-law/assets/index-DY7B7rpC.css">
+
+    <!-- Add class when DOM is ready -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.add("ready");
+      });
+    </script>
+    <script type="module" crossorigin src="/lumine-law/assets/index.RLCOleKW.js"></script>
+    <link rel="stylesheet" crossorigin href="/lumine-law/assets/index.DG0p4QjP.css">
   </head>
   <body>
     <div id="root"></div>
