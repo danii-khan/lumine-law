@@ -229,7 +229,7 @@ const MainContent = () => (
         fontFamily="CeraRoundPro"
         fontWeight={400}
         fontSize={{ xs: "10px", lg: "12px", xl: "14px", "2xl": "16px" }}
-        textAlign="left"
+        textAlign="justify"
       >
         Our legal services are highly recommended by our clients and other
         professionals such as barristers and other solicitors. Our immigration

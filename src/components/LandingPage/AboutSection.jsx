@@ -36,7 +36,7 @@ const AboutSection = () => {
             }}
             fontWeight={300}
             fontFamily="HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
-            textAlign={"left"}
+            textAlign={"justify"}
             color={"white"}
           >
             A whole paragraph, in further details explaining what Lumine Law
@@ -59,7 +59,7 @@ const AboutSection = () => {
             }}
             fontWeight={300}
             fontFamily="HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
-            textAlign={"left"}
+            textAlign={"justify"}
             color={"white"}
           >
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris

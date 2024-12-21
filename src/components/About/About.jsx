@@ -101,7 +101,7 @@ const About = () => {
                   xl: "17px",
                   "2xl": "18px",
                 }}
-                textAlign={"left"}
+                textAlign={"justify"}
               >
                 Lumine Solicitors is an SRA regulated firm of solicitors. We
                 offer the dedicated support and advice you require from the very
