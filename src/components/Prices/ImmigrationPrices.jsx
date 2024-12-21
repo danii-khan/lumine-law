@@ -84,6 +84,7 @@ const ImmigrationPrices = () => {
             display={"flex"}
             justifyContent={"center"}
             alignItems={"center"}
+            _loading={"lazy"}
           >
             <Text
               fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
@@ -1247,6 +1248,7 @@ const ImmigrationPrices = () => {
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}
+                  _loading={"lazy"}
                 >
                   <Link
                     to={"/lumine-law/prices/property-prices"}
@@ -1304,6 +1306,7 @@ const ImmigrationPrices = () => {
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}
+                  _loading={"lazy"}
                 >
                   <Link
                     to={"/lumine-law/prices/debt-recovery"}

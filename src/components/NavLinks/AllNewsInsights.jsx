@@ -95,6 +95,7 @@ const Card = ({ item }) => (
         }}
         width="100%"
         objectFit="cover"
+        loading="lazy"
       />
     </Box>
 

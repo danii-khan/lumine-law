@@ -2041,6 +2041,7 @@ const PropertyPrices = () => {
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}
+                  _loading={"lazy"}
                 >
                   <Link
                     to={"/lumine-law/prices/debt-recovery"}
@@ -2098,6 +2099,7 @@ const PropertyPrices = () => {
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}
+                  _loading={"lazy"}
                 >
                   <Link
                     to={"/lumine-law/prices/immigration-prices"}

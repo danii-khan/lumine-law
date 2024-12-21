@@ -141,6 +141,7 @@ const ServicesSection = () => {
                 <Image
                   src={content.image}
                   height={{ xs: "30px", md: "40px" }}
+                  loading="lazy"
                 />
                 <Text
                   fontSize={{

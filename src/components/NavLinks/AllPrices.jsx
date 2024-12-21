@@ -49,6 +49,7 @@ const PriceCard = ({ item }) => (
     bgPos="center"
     bgSize="cover"
     bgRepeat="no-repeat"
+    _loading={"lazy"}
   >
     <Link to={item.path} style={{ textDecoration: "none" }}>
       <Box

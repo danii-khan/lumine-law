@@ -152,6 +152,7 @@ const InsightsArticles = () => {
             width={"100%"}
             borderRadius={"8px"}
             objectFit={"cover"}
+            loading="lazy"
           />
           <Box
             height={"100%"}

@@ -73,6 +73,7 @@ const ScrollingRow = ({ images, direction, speed }) => {
                 "2xl": "175px",
               }}
               objectFit="contain"
+              loading="lazy"
             />
           </Box>
         ))}

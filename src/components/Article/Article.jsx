@@ -247,6 +247,7 @@ const Article = () => {
                     width="100%"
                     borderRadius="8px"
                     mb={"10px"}
+                    loading="lazy"
                   />
                 </GridItem>
               </Grid>
@@ -278,6 +279,7 @@ const Article = () => {
                     height="300px"
                     width="100%"
                     borderRadius="8px"
+                    loading="lazy"
                   />
                 </GridItem>
                 <GridItem display="flex" flexFlow="column" gap="20px">

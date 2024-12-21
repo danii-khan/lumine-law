@@ -105,6 +105,7 @@ const ServiceCard = ({ service }) => (
     bgPos="center"
     bgSize="cover"
     bgRepeat="no-repeat"
+    _loading={"lazy"}
   >
     <Link to={service.path} style={{ textDecoration: "none" }}>
       <Box

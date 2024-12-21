@@ -174,6 +174,7 @@ const Footer = () => {
                 xl: "100px",
               }}
               objectFit={"contain"}
+              loading="lazy"
             ></Image>
             <Image
               src={AccreditLogo}
@@ -191,6 +192,7 @@ const Footer = () => {
                 xl: "100px",
               }}
               objectFit={"contain"}
+              loading="lazy"
             ></Image>
             <Image
               src={LexcelLogo}
@@ -208,6 +210,7 @@ const Footer = () => {
                 xl: "100px",
               }}
               objectFit={"contain"}
+              loading="lazy"
             ></Image>
           </HStack>
         </Flex>
@@ -293,6 +296,7 @@ const Footer = () => {
                     "2xl": "40px",
                   }}
                   fit={"cover"}
+                  loading="lazy"
                 />
                 <Text
                   fontSize={{
@@ -355,6 +359,7 @@ const Footer = () => {
                     "2xl": "30px",
                   }}
                   cursor={"pointer"}
+                  loading="lazy"
                 />
               </Link>
 
@@ -376,6 +381,7 @@ const Footer = () => {
                     "2xl": "30px",
                   }}
                   cursor={"pointer"}
+                  loading="lazy"
                 />
               </Link>
 
@@ -397,6 +403,7 @@ const Footer = () => {
                     "2xl": "30px",
                   }}
                   cursor={"pointer"}
+                  loading="lazy"
                 />
               </Link>
 
@@ -418,6 +425,7 @@ const Footer = () => {
                     "2xl": "30px",
                   }}
                   cursor={"pointer"}
+                  loading="lazy"
                 />
               </Link>
 
@@ -439,6 +447,7 @@ const Footer = () => {
                     "2xl": "30px",
                   }}
                   cursor={"pointer"}
+                  loading="lazy"
                 />
               </Link>
             </Center>

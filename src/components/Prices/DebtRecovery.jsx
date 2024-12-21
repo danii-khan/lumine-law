@@ -1863,6 +1863,7 @@ const DebtRecovery = () => {
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}
+                  _loading={"lazy"}
                 >
                   <Link
                     to={"/lumine-law/prices/property-prices"}
@@ -1920,6 +1921,7 @@ const DebtRecovery = () => {
                   bgPos={"center"}
                   bgSize={"cover"}
                   bgRepeat={"no-repeat"}
+                  _loading={"lazy"}
                 >
                   <Link
                     to={"/lumine-law/prices/immigration-prices"}
