@@ -1,15 +1,15 @@
+import React, { Suspense, useEffect, useRef } from "react";
 import { Container, Box, Text, VStack, Button } from "@chakra-ui/react";
-import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import MainBg from "../../assets/landing/main-bg.webp";
 import "../../styles/fonts.css";
 import { Helmet } from "react-helmet";
-import AboutSection from "./AboutSection";
-import ServicesSection from "./ServicesSection";
-import PanelsSection from "./PanelsSection";
-import NewsNInsightsSection from "./NewsNInisghtsSection";
-import ScrollSpySidebar from "./ScrollSpySidebar";
-import { useEffect, useRef } from "react";
+const ScrollSpySidebar = React.lazy(() => import("./ScrollSpySidebar"));
+const AboutSection = React.lazy(() => import("./AboutSection"));
+const ServicesSection = React.lazy(() => import("./ServicesSection"));
+const PanelsSection = React.lazy(() => import("./PanelsSection"));
+const NewsNInsightsSection = React.lazy(() => import("./NewsNInisghtsSection"));
+const Footer = React.lazy(() => import("../Footer/Footer"));
 
 const LandingPage = () => {
   const containerRef = useRef(null);
@@ -226,7 +226,9 @@ const LandingPage = () => {
       </section>
 
       {/* Sidebar */}
-      <ScrollSpySidebar />
+      <Suspense fallback={<div>Loading sidebar</div>}>
+        <ScrollSpySidebar />
+      </Suspense>
 
       {/* About */}
       <section
@@ -237,7 +239,9 @@ const LandingPage = () => {
           height: "100vh",
         }}
       >
-        <AboutSection />
+        <Suspense fallback={<div>Loading About Section...</div>}>
+          <AboutSection />
+        </Suspense>
       </section>
 
       {/* Services content */}
@@ -250,7 +254,9 @@ const LandingPage = () => {
           // paddingTop: "50px",
         }}
       >
-        <ServicesSection />
+        <Suspense fallback={<div>Loading Services Section...</div>}>
+          <ServicesSection />
+        </Suspense>
       </section>
 
       {/* Panels content */}
@@ -262,7 +268,9 @@ const LandingPage = () => {
           height: "100vh",
         }}
       >
-        <PanelsSection />
+        <Suspense fallback={<div>Loading Panels Section...</div>}>
+          <PanelsSection />
+        </Suspense>
       </section>
 
       {/* News and Insights content */}
@@ -274,7 +282,9 @@ const LandingPage = () => {
           height: "100vh",
         }}
       >
-        <NewsNInsightsSection />
+        <Suspense fallback={<div>Loading News and Insights Section...</div>}>
+          <NewsNInsightsSection />
+        </Suspense>
       </section>
 
       {/* Footer  */}
@@ -297,7 +307,9 @@ const LandingPage = () => {
           overflow: "hidden",
         }}
       >
-        <Footer />
+        <Suspense fallback={<div>Loading Footer...</div>}>
+          <Footer />
+        </Suspense>
       </section>
     </Container>
   );
