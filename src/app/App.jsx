@@ -242,6 +242,7 @@ import ResourceLoader from "../utils/ResourceLoader";
 import { Box, Spinner, Center, VStack, Text, Image } from "@chakra-ui/react";
 import Logo from "../assets/navbar/logo.png";
 import FontPreloader from "../utils/FontPreLoader";
+import ResourceHints from "../utils/ResourceHints";
 
 const LoadingSpinner = () => (
   <Center minH="100vh" bg="black">
@@ -283,6 +284,7 @@ function App() {
   return (
     <>
       <ResourceLoader />
+      <ResourceHints />
       <FontPreloader />
       <BrowserRouter>
         <Navbar />
