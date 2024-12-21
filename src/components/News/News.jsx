@@ -18,7 +18,7 @@ import { LuSearch } from "react-icons/lu";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import "../../styles/fonts.css";
-import BannerImg from "../../assets/news/news.png";
+import BannerImg from "../../assets/news/news.webp";
 import { Helmet } from "react-helmet";
 import AllServiceLinks from "../NavLinks/AllServiceLinks";
 import AllPrices from "../NavLinks/AllPrices";

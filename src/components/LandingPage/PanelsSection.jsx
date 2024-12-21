@@ -1,6 +1,6 @@
 import { Box, Text } from "@chakra-ui/react";
 import AnimatedPanels from "./AnimatedPanels";
-import PanelsBg from "../../assets/landing/panels.png";
+import PanelsBg from "../../assets/landing/panels.webp";
 import PanelOne from "../../assets/landing/panel-images/panel-barclays.png";
 import PanelTwo from "../../assets/landing/panel-images/panel-santander.png";
 import PanelThree from "../../assets/landing/panel-images/panel-natwest.png";

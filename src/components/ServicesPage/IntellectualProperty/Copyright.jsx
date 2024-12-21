@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
-import BannerImg from "../../../assets/services/main/sub-services/ip.png";
+import BannerImg from "../../../assets/services/main/sub-services/ip.webp";
 
 const Copyright = () => {
   const [spouseState, setSpouseState] = useState(false);

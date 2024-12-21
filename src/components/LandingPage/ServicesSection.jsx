@@ -7,7 +7,7 @@ import {
   GridItem,
   Image,
 } from "@chakra-ui/react";
-import ServicesBg from "../../assets/landing/services.png";
+import ServicesBg from "../../assets/landing/services.webp";
 import ImmigrationIcon from "../../assets/landing/landing-icons/immigration-icon.png";
 import ResidentialIcon from "../../assets/landing/landing-icons/residential-icon.png";
 import LandlordIcon from "../../assets/landing/landing-icons/landlord-icon.png";

@@ -1,5 +1,5 @@
 import { Box, Grid, GridItem, Text } from "@chakra-ui/react";
-import AboutBg from "../../assets/landing/about-bg.png";
+import AboutBg from "../../assets/landing/about-bg.webp";
 import "../../styles/fonts.css";
 
 const AboutSection = () => {

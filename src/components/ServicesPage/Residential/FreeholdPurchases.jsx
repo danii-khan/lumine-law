@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
 import AllPrices from "../../NavLinks/AllPrices";
-import BannerImg from "../../../assets/services/main/sub-services/residential.png";
+import BannerImg from "../../../assets/services/main/sub-services/residential.webp";
 
 const FreeholdPurchases = () => {
   const [eligibilityState, setEligibilityState] = useState(false);

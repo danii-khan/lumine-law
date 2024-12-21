@@ -1,9 +1,8 @@
 import { Text, Container, Box } from "@chakra-ui/react";
-import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import "../../styles/fonts.css";
 import { Helmet } from "react-helmet";
-import BannerImg from "../../assets/about/about.png";
+import BannerImg from "../../assets/about/about.webp";
 import AllServiceLinks from "../NavLinks/AllServiceLinks";
 import AllPrices from "../NavLinks/AllPrices";
 import AllNewsInsights from "../NavLinks/AllNewsInsights";

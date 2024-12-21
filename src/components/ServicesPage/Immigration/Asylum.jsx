@@ -7,7 +7,7 @@ import { useState } from "react";
 import { AiOutlineMinus } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import BannerImg from "../../../assets/services/main/sub-services/immigration.png";
+import BannerImg from "../../../assets/services/main/sub-services/immigration.webp";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";

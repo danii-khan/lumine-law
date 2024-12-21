@@ -1,7 +1,7 @@
 import { Container, Box, Text, VStack, Button } from "@chakra-ui/react";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
-import MainBg from "../../assets/landing/main-bg.png";
+import MainBg from "../../assets/landing/main-bg.webp";
 import "../../styles/fonts.css";
 import { Helmet } from "react-helmet";
 import AboutSection from "./AboutSection";

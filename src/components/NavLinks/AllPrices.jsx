@@ -2,9 +2,9 @@ import { Text, Box, Grid, GridItem } from "@chakra-ui/react";
 import "../../styles/fonts.css";
 import { Link } from "react-router-dom";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
-import ImmigrationImg from "../../assets/pricing/immigration.png";
-import PropertyImg from "../../assets/pricing/property-prices.png";
-import DebtImg from "../../assets/pricing/debt-recovery.png";
+import ImmigrationImg from "../../assets/pricing/immigration.webp";
+import PropertyImg from "../../assets/pricing/property-prices.webp";
+import DebtImg from "../../assets/pricing/debt-recovery.webp";
 
 // Price card data
 const priceCards = [

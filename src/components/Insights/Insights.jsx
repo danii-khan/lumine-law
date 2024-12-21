@@ -19,11 +19,11 @@ import { LuSearch } from "react-icons/lu";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import "../../styles/fonts.css";
-import BannerImg from "../../assets/insights/insights.png";
+import BannerImg from "../../assets/insights/insights.webp";
 import { Helmet } from "react-helmet";
 import AllServiceLinks from "../NavLinks/AllServiceLinks";
 import AllPrices from "../NavLinks/AllPrices";
-import MainArticle from "../../assets/insights/main-article.png";
+import MainArticle from "../../assets/insights/main-article.webp";
 import InsightsArticles from "./InsightsArticles";
 import { Link } from "react-router-dom";
 

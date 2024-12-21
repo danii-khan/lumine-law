@@ -17,15 +17,15 @@ import AllNewsInsights from "../../NavLinks/AllNewsInsights";
 import AllPrices from "../../NavLinks/AllPrices";
 
 // Import all images
-import BannerImg from "../../../assets/services/main/landlord/landlord-banner.png";
-import ImmigrationImg from "../../../assets/services/main/immigration/main-banner.png";
-import ResidentialImg from "../../../assets/services/main/residential/main-banner.png";
-import CommercialImg from "../../../assets/services/main/commercial/main-banner.png";
-import IntellectualImg from "../../../assets/services/main/intellectual/main-banner.png";
-import DisputeImg from "../../../assets/services/main/dispute/main-banner.png";
-import FamilyImg from "../../../assets/services/main/family/main-banner.png";
-import WillsProbateImg from "../../../assets/services/main/wills-probate/main-banner.png";
-import AllServicesImg from "../../../assets/services/all/bannertest.png";
+import BannerImg from "../../../assets/services/main/landlord/landlord-banner.webp";
+import ImmigrationImg from "../../../assets/services/main/immigration/main-banner.webp";
+import ResidentialImg from "../../../assets/services/main/residential/main-banner.webp";
+import CommercialImg from "../../../assets/services/main/commercial/main-banner.webp";
+import IntellectualImg from "../../../assets/services/main/intellectual/main-banner.webp";
+import DisputeImg from "../../../assets/services/main/dispute/main-banner.webp";
+import FamilyImg from "../../../assets/services/main/family/main-banner.webp";
+import WillsProbateImg from "../../../assets/services/main/wills-probate/main-banner.webp";
+import AllServicesImg from "../../../assets/services/all/bannertest.webp";
 
 // Service card data
 const serviceCards = [

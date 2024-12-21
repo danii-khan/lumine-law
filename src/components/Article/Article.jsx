@@ -15,9 +15,9 @@ import Footer from "../Footer/Footer";
 import AllNewsInsights from "../NavLinks/AllNewsInsights";
 import AllPrices from "../NavLinks/AllPrices";
 import AllServiceLinks from "../NavLinks/AllServiceLinks";
-import BannerImg from "../../assets/article/article.png";
-import ImageOne from "../../assets/landing/news-insights-two.png";
-import ImageTwo from "../../assets/landing/news-insights-four.png";
+import BannerImg from "../../assets/article/article.webp";
+import ImageOne from "../../assets/landing/news-insights-two.webp";
+import ImageTwo from "../../assets/landing/news-insights-four.webp";
 import "../../styles/fonts.css";
 
 // Constants

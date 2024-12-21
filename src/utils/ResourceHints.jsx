@@ -20,7 +20,7 @@ const ResourceHints = () => {
       />
 
       {/* Prefetch important images */}
-      <link rel="prefetch" href="/assets/landing/main-bg.png" />
+      <link rel="prefetch" href="/assets/landing/main-bg.webp" />
 
       {/* DNS Prefetch */}
       <link rel="dns-prefetch" href="https://daniikhan23.github.io" />

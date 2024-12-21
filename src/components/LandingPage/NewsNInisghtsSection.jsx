@@ -7,11 +7,11 @@ import {
   Grid,
   GridItem,
 } from "@chakra-ui/react";
-import NewsInsightsBg from "../../assets/landing/news-insights.png";
-import NewsInsightsOne from "../../assets/landing/news-insights-one.png";
-import NewsInsightsTwo from "../../assets/landing/news-insights-two.png";
-import NewsInsightsThree from "../../assets/landing/news-insights-three.png";
-import NewsInsightsFour from "../../assets/landing/news-insights-four.png";
+import NewsInsightsBg from "../../assets/landing/news-insights.webp";
+import NewsInsightsOne from "../../assets/landing/news-insights-one.webp";
+import NewsInsightsTwo from "../../assets/landing/news-insights-two.webp";
+import NewsInsightsThree from "../../assets/landing/news-insights-three.webp";
+import NewsInsightsFour from "../../assets/landing/news-insights-four.webp";
 import "../../styles/fonts.css";
 import { Link } from "react-router-dom";
 

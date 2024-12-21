@@ -6,7 +6,7 @@ import { GoPlus } from "react-icons/go";
 import { useState } from "react";
 import { AiOutlineMinus } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import BannerImg from "../../../assets/services/main/sub-services/family.png";
+import BannerImg from "../../../assets/services/main/sub-services/family.webp";
 import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
