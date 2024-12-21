@@ -241,6 +241,7 @@ const Patent = React.lazy(() =>
 import ResourceLoader from "../utils/ResourceLoader";
 import { Box, Spinner, Center, VStack, Text, Image } from "@chakra-ui/react";
 import Logo from "../assets/navbar/logo.png";
+import FontPreloader from "../utils/FontPreLoader";
 
 const LoadingSpinner = () => (
   <Center minH="100vh" bg="black">
@@ -281,7 +282,8 @@ const SuspensePageTransition = ({ children }) => (
 function App() {
   return (
     <>
-      {/* <ResourceLoader /> */}
+      <ResourceLoader />
+      <FontPreloader />
       <BrowserRouter>
         <Navbar />
         <Suspense fallback={<LoadingSpinner />}>

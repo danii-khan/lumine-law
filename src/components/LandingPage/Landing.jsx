@@ -82,6 +82,16 @@ const LandingPage = () => {
     };
   }, []);
 
+  useEffect(() => {
+    // Update title when component mounts
+    document.title = "Lumine Law Home";
+
+    // Optionally, reset title when component unmounts
+    return () => {
+      document.title = "Lumine Law"; // Default title
+    };
+  }, []);
+
   return (
     <Container
       className="scroll-container"
@@ -103,6 +113,10 @@ const LandingPage = () => {
     >
       <Helmet>
         <title>Lumine Law Home</title>
+        <meta
+          name="description"
+          content="Welcome to Lumine Law - Legal services and expertise"
+        />
       </Helmet>
 
       {/* Hero section content */}

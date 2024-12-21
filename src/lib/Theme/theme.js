@@ -10,6 +10,10 @@ const customConfig = defineConfig({
       xl: "1200px", // Extra large: 1200px and up
       "2xl": "1400px", // Extra extra large: 1400px and up
     },
+    fonts: {
+      body: `'CeraRoundPro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif`,
+      heading: `'CeraRoundPro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif`,
+    },
   },
   components: {
     Image: {
