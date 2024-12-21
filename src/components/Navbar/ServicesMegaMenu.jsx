@@ -811,7 +811,7 @@ const ServicesMegaMenu = () => {
               {/* Landlord and Tenant Disputes  */}
               <Text
                 as={Link}
-                to={"/lumine-law/all-services/intellectual-property"}
+                to={"/lumine-law/all-services/landlord-tenant"}
                 fontSize={{
                   lg: "9px",
                   xl: "10px",

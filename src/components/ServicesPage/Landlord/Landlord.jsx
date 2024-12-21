@@ -79,6 +79,58 @@ const serviceCards = [
   },
 ];
 
+const landlordServices = [
+  {
+    title: "Possession Claims",
+    path: "/lumine-law/all-services/landlord-tenant/possession-claims",
+  },
+  {
+    title: "Recovery of Rent Arrears",
+    path: "/lumine-law/all-services/landlord-tenant/recovery-rent",
+  },
+  {
+    title: "Claims for Disrepair",
+    path: "/lumine-law/all-services/landlord-tenant/claims-disrepair",
+  },
+];
+
+const LandlordServiceButton = ({ title, path }) => (
+  <GridItem
+    as={Link}
+    to={path}
+    color="black"
+    border="1px solid black"
+    borderRadius="8px"
+    p="2.5px 10px"
+    width="100%"
+    height="100%"
+    display="flex"
+    justifyContent="center"
+    alignItems="center"
+    backgroundColor="white"
+    _hover={{
+      backgroundColor: "#000000",
+      color: "#beab7c",
+      transition: "0.3s ease all",
+      fontWeight: "600",
+      textDecor: "underline",
+    }}
+    fontSize={{
+      xs: "12px",
+      sm: "14px",
+      md: "15px",
+      lg: "16px",
+      xl: "16px",
+      "2xl": "16px",
+    }}
+    fontWeight={500}
+    fontFamily="CeraRoundPro"
+    cursor="pointer"
+  >
+    {title}
+  </GridItem>
+);
+
 // Reusable Service Card Component
 const ServiceCard = ({ title, path, image, description }) => (
   <GridItem
@@ -233,51 +285,48 @@ const Landlord = () => {
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign="left"
               >
-                We can assist you in the following areas:
-              </Text>
-
-              <List.Root
-                textAlign="left"
-                fontSize={{
-                  xs: "12px",
-                  sm: "12px",
-                  md: "14px",
-                  lg: "14px",
-                  xl: "16px",
-                  "2xl": "18px",
-                }}
-                fontWeight={400}
-                fontFamily="CeraRoundPro"
-              >
-                <List.Item>
-                  Possession claims including the preparation, service and
-                  defence of section 8 and section 21 notices
-                </List.Item>
-                <List.Item>Recovery of rent arrears</List.Item>
-                <List.Item>Claims for disrepair</List.Item>
-              </List.Root>
-
-              <Text
-                textAlign="left"
-                fontSize={{
-                  xs: "12px",
-                  sm: "12px",
-                  md: "14px",
-                  lg: "14px",
-                  xl: "16px",
-                  "2xl": "18px",
-                }}
-                fontWeight={400}
-                fontFamily="CeraRoundPro"
-              >
-                For all civil litigation and dispute issues, Please do not
-                hesitate to get in touch with Lumine solicitors{" "}
-                <strong>020 3950 2246</strong> or{" "}
-                <strong>
-                  <Link to="/lumine-law/contact">Contact Us HERE</Link>
-                </strong>
+                Intro content about Landlord and Tenant Disputes
               </Text>
             </Box>
+
+            <Box width="90%" alignSelf="center" my={{ xs: "5%", md: "0%" }}>
+              <Text
+                fontFamily="CeraRoundPro"
+                fontSize="24px"
+                fontWeight={600}
+                textAlign="left"
+                mb="2.5%"
+              >
+                Services
+              </Text>
+            </Box>
+          </Box>
+
+          {/* Services Grid */}
+          <Box
+            width="100%"
+            display="flex"
+            flexFlow="column"
+            alignItems="center"
+            color="black"
+            mb={{ xs: "25px", lg: "50px" }}
+          >
+            <Grid
+              templateColumns="repeat(3, 1fr)"
+              width={{ xs: "90%", md: "75%", lg: "70%", xl: "60%" }}
+              justifySelf="center"
+              justifyItems="center"
+              gap={{ xs: "10px", lg: "15px", xl: "30px" }}
+              gapY={0}
+            >
+              {landlordServices.map((service) => (
+                <LandlordServiceButton
+                  key={service.title}
+                  title={service.title}
+                  path={service.path}
+                />
+              ))}
+            </Grid>
           </Box>
 
           {/* Other Services */}

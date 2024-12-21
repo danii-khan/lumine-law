@@ -76,6 +76,9 @@ import News from "../components/News/News";
 import Insights from "../components/Insights/Insights";
 import Article from "../components/Article/Article";
 import Probate from "../components/ServicesPage/WillsAndProbate/Probate";
+import PossessionClaims from "../components/ServicesPage/Landlord/PossessionClaims";
+import RecoveryRent from "../components/ServicesPage/Landlord/RecoveryRent";
+import ClaimsDisrepair from "../components/ServicesPage/Landlord/ClaimsDisrepair";
 
 function App() {
   return (
@@ -658,6 +661,36 @@ function App() {
             element={
               <PageTransition>
                 <Landlord />
+              </PageTransition>
+            }
+          />
+
+          {/* Landlord & Tenant Dispute Subpages */}
+          <Route
+            path="/lumine-law/all-services/landlord-tenant/possession-claims"
+            element={
+              <PageTransition>
+                <PossessionClaims />
+              </PageTransition>
+            }
+          />
+
+          {/* Landlord & Tenant Dispute Subpages */}
+          <Route
+            path="/lumine-law/all-services/landlord-tenant/recovery-rent"
+            element={
+              <PageTransition>
+                <RecoveryRent />
+              </PageTransition>
+            }
+          />
+
+          {/* Landlord & Tenant Dispute Subpages */}
+          <Route
+            path="/lumine-law/all-services/landlord-tenant/claims-disrepair"
+            element={
+              <PageTransition>
+                <ClaimsDisrepair />
               </PageTransition>
             }
           />
