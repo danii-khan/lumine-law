@@ -102,7 +102,7 @@ const LandingPage = () => {
       }}
     >
       <Helmet>
-        <title>Lumine Law</title>
+        <title>Lumine Law Home</title>
       </Helmet>
 
       {/* Hero section content */}

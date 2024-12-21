@@ -238,7 +238,7 @@ const Copyright = React.lazy(() =>
 const Patent = React.lazy(() =>
   import("../components/ServicesPage/IntellectualProperty/Patent")
 );
-// import ResourceLoader from "../utils/ResourceLoader";
+import ResourceLoader from "../utils/ResourceLoader";
 import { Box, Spinner, Center, VStack, Text, Image } from "@chakra-ui/react";
 import Logo from "../assets/navbar/logo.png";
 
@@ -284,829 +284,829 @@ function App() {
       {/* <ResourceLoader /> */}
       <BrowserRouter>
         <Navbar />
-        {/* <Suspense fallback={<LoadingSpinner />}> */}
-        <Routes>
-          {/* Landing */}
-          <Route
-            path="/lumine-law/"
-            element={
-              <SuspensePageTransition>
-                <LandingPage />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Contact */}
-          <Route
-            path="/lumine-law/contact"
-            element={
-              <SuspensePageTransition>
-                <Contact />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* All Services */}
-          <Route
-            path="/lumine-law/all-services"
-            element={
-              <SuspensePageTransition>
-                <AllServices />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Immigration */}
-          <Route
-            path="/lumine-law/all-services/immigration"
-            element={
-              <SuspensePageTransition>
-                <Immigration />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Immigration Sub Service */}
-          <Route
-            path="/lumine-law/all-services/immigration/spouse-visa"
-            element={
-              <SuspensePageTransition>
-                <SpouseVisa />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Immigration Sub Service */}
-          <Route
-            path="/lumine-law/all-services/immigration/british-citizenship-application"
-            element={
-              <SuspensePageTransition>
-                <BritishCitizenshipApplication />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Immigration Sub Service */}
-          <Route
-            path="/lumine-law/all-services/immigration/uk-visitor-visa"
-            element={
-              <SuspensePageTransition>
-                <VisitorVisa />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Immigration Sub Service */}
-          <Route
-            path="/lumine-law/all-services/immigration/skilled-worker-visa"
-            element={
-              <SuspensePageTransition>
-                <SkilledWorkerVisa />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Immigration Sub Service */}
-          <Route
-            path="/lumine-law/all-services/immigration/certificate-of-sponsorship"
-            element={
-              <SuspensePageTransition>
-                <CoS />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Immigration Sub Service */}
-          <Route
-            path="/lumine-law/all-services/immigration/student-visa"
-            element={
-              <SuspensePageTransition>
-                <StudentVisa />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Immigration Sub Service */}
-          <Route
-            path="/lumine-law/all-services/immigration/entry-clearance"
-            element={
-              <SuspensePageTransition>
-                <EntryClearance />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Immigration Sub Service */}
-          <Route
-            path="/lumine-law/all-services/immigration/skilled-migrant"
-            element={
-              <SuspensePageTransition>
-                <SkilledMigrant />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Immigration Sub Service */}
-          <Route
-            path="/lumine-law/all-services/immigration/visa-categories"
-            element={
-              <SuspensePageTransition>
-                <VisaCategories />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Immigration Sub Service */}
-          <Route
-            path="/lumine-law/all-services/immigration/visa-extensions"
-            element={
-              <SuspensePageTransition>
-                <VisaExtensions />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Immigration Sub Service */}
-          <Route
-            path="/lumine-law/all-services/immigration/indefinite-leave"
-            element={
-              <SuspensePageTransition>
-                <IndefiniteLeave />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Immigration Sub Service */}
-          <Route
-            path="/lumine-law/all-services/immigration/human-rights-app"
-            element={
-              <SuspensePageTransition>
-                <HumanRights />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Immigration Sub Service */}
-          <Route
-            path="/lumine-law/all-services/immigration/discretionary-leave"
-            element={
-              <SuspensePageTransition>
-                <DiscretionaryLeave />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Immigration Sub Service */}
-          <Route
-            path="/lumine-law/all-services/immigration/bail-revocation"
-            element={
-              <SuspensePageTransition>
-                <BailRevocation />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Immigration Sub Service */}
-          <Route
-            path="/lumine-law/all-services/immigration/eu-settlement"
-            element={
-              <SuspensePageTransition>
-                <EuSettlement />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Immigration Sub Service */}
-          <Route
-            path="/lumine-law/all-services/immigration/reviews-appeals"
-            element={
-              <SuspensePageTransition>
-                <ReviewsAppeals />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Immigration Sub Service */}
-          <Route
-            path="/lumine-law/all-services/immigration/asylum"
-            element={
-              <SuspensePageTransition>
-                <Asylum />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Immigration Sub Service */}
-          <Route
-            path="/lumine-law/all-services/immigration/innovator-founder"
-            element={
-              <SuspensePageTransition>
-                <InnovatorFounder />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Immigration Sub Service */}
-          <Route
-            path="/lumine-law/all-services/immigration/creative-worker"
-            element={
-              <SuspensePageTransition>
-                <CreativeWorker />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Family */}
-          <Route
-            path="/lumine-law/all-services/family-and-children"
-            element={
-              <SuspensePageTransition>
-                <Family />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Family Sub Service */}
-          <Route
-            path="/lumine-law/all-services/family/divorce"
-            element={
-              <SuspensePageTransition>
-                <Divorce />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Family Sub Service */}
-          <Route
-            path="/lumine-law/all-services/family/nuptial-agreement"
-            element={
-              <SuspensePageTransition>
-                <NuptialAgreement />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Family Sub Service */}
-          <Route
-            path="/lumine-law/all-services/family/child-arrangements"
-            element={
-              <SuspensePageTransition>
-                <ChildArrangements />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Family Sub Service */}
-          <Route
-            path="/lumine-law/all-services/family/parental-responsbility"
-            element={
-              <SuspensePageTransition>
-                <ParentalResponsiblity />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Family Sub Service */}
-          <Route
-            path="/lumine-law/all-services/family/consent-orders"
-            element={
-              <SuspensePageTransition>
-                <ConsentOrders />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Family Sub Service */}
-          <Route
-            path="/lumine-law/all-services/family/financial-settlements"
-            element={
-              <SuspensePageTransition>
-                <FinancialStatements />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Family Sub Service */}
-          <Route
-            path="/lumine-law/all-services/family/domestic-violence"
-            element={
-              <SuspensePageTransition>
-                <DomesticViolence />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Family Sub Service */}
-          <Route
-            path="/lumine-law/all-services/family/adoption-surrogacy"
-            element={
-              <SuspensePageTransition>
-                <Adoption />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Residential Property */}
-          <Route
-            path="/lumine-law/all-services/residential"
-            element={
-              <SuspensePageTransition>
-                <Residential />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Residential Subservice */}
-          <Route
-            path="/lumine-law/all-services/residential/freehold-sales"
-            element={
-              <SuspensePageTransition>
-                <FreeholdSales />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Residential Subservice */}
-          <Route
-            path="/lumine-law/all-services/residential/freehold-purchases"
-            element={
-              <SuspensePageTransition>
-                <FreeholdPurchases />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Residential Subservice */}
-          <Route
-            path="/lumine-law/all-services/residential/transfer-of-equity"
-            element={
-              <SuspensePageTransition>
-                <TransfersOfEquity />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Residential Subservice */}
-          <Route
-            path="/lumine-law/all-services/residential/lease-terms-advice"
-            element={
-              <SuspensePageTransition>
-                <LeaseTermsAdvice />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Commercial Property */}
-          <Route
-            path="/lumine-law/all-services/commercial"
-            element={
-              <SuspensePageTransition>
-                <Commercial />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Commercial Subservice */}
-          <Route
-            path="/lumine-law/all-services/residential/purchase-commercial"
-            element={
-              <SuspensePageTransition>
-                <PurchaseCommercial />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Commercial Subservice */}
-          <Route
-            path="/lumine-law/all-services/residential/sales-commercial"
-            element={
-              <SuspensePageTransition>
-                <SaleCommercial />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Commercial Subservice */}
-          <Route
-            path="/lumine-law/all-services/residential/business-licenses"
-            element={
-              <SuspensePageTransition>
-                <BusinessAndLicense />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Commercial Subservice */}
-          <Route
-            path="/lumine-law/all-services/residential/lease-renewals"
-            element={
-              <SuspensePageTransition>
-                <LeaseRenewals />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Commercial Subservice */}
-          <Route
-            path="/lumine-law/all-services/residential/rent-recovery"
-            element={
-              <SuspensePageTransition>
-                <RentRecovery />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Commercial Subservice */}
-          <Route
-            path="/lumine-law/all-services/residential/forfeiture-notices"
-            element={
-              <SuspensePageTransition>
-                <ForfeitureAndNotices />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Commercial Subservice */}
-          <Route
-            path="/lumine-law/all-services/residential/break-rent"
-            element={
-              <SuspensePageTransition>
-                <BreakRent />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Commercial Subservice */}
-          <Route
-            path="/lumine-law/all-services/residential/consent-alterations"
-            element={
-              <SuspensePageTransition>
-                <ConsentAlterations />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Commercial Subservice */}
-          <Route
-            path="/lumine-law/all-services/residential/property-dilapidations"
-            element={
-              <SuspensePageTransition>
-                <PropertyDilapidations />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Commercial Subservice */}
-          <Route
-            path="/lumine-law/all-services/residential/schedules-conditions"
-            element={
-              <SuspensePageTransition>
-                <SchedulesConditions />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Commercial Subservice */}
-          <Route
-            path="/lumine-law/all-services/residential/advice-multiple"
-            element={
-              <SuspensePageTransition>
-                <AdviceMultiple />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Dispute Resolution */}
-          <Route
-            path="/lumine-law/all-services/dispute-resolution"
-            element={
-              <SuspensePageTransition>
-                <DisputeResolution />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Dispute Resolution Subservice*/}
-          <Route
-            path="/lumine-law/all-services/dispute-resolution/debt-matters"
-            element={
-              <SuspensePageTransition>
-                <DebtMatters />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Dispute Resolution Subservice*/}
-          <Route
-            path="/lumine-law/all-services/dispute-resolution/contract-disputes"
-            element={
-              <SuspensePageTransition>
-                <ContractDisputes />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Dispute Resolution Subservice*/}
-          <Route
-            path="/lumine-law/all-services/dispute-resolution/bankruptcy-matters"
-            element={
-              <SuspensePageTransition>
-                <CorporatePersonalBankruptcy />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Dispute Resolution Subservice*/}
-          <Route
-            path="/lumine-law/all-services/dispute-resolution/building-contract-disputes"
-            element={
-              <SuspensePageTransition>
-                <BuildingContractDisputes />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Dispute Resolution Subservice*/}
-          <Route
-            path="/lumine-law/all-services/dispute-resolution/supply-goods-services"
-            element={
-              <SuspensePageTransition>
-                <SupplyGoodsServices />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Dispute Resolution Subservice*/}
-          <Route
-            path="/lumine-law/all-services/dispute-resolution/building-contracts"
-            element={
-              <SuspensePageTransition>
-                <BuildingContracts />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Dispute Resolution Subservice*/}
-          <Route
-            path="/lumine-law/all-services/dispute-resolution/debt-recovery"
-            element={
-              <SuspensePageTransition>
-                <DisputeDebtRecovery />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Landlord & Tenant Dispute */}
-          <Route
-            path="/lumine-law/all-services/landlord-tenant"
-            element={
-              <SuspensePageTransition>
-                <Landlord />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Landlord & Tenant Dispute Subpages */}
-          <Route
-            path="/lumine-law/all-services/landlord-tenant/possession-claims"
-            element={
-              <SuspensePageTransition>
-                <PossessionClaims />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Landlord & Tenant Dispute Subpages */}
-          <Route
-            path="/lumine-law/all-services/landlord-tenant/recovery-rent"
-            element={
-              <SuspensePageTransition>
-                <RecoveryRent />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Landlord & Tenant Dispute Subpages */}
-          <Route
-            path="/lumine-law/all-services/landlord-tenant/claims-disrepair"
-            element={
-              <SuspensePageTransition>
-                <ClaimsDisrepair />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Wills and Probate */}
-          <Route
-            path="/lumine-law/all-services/wills-probate"
-            element={
-              <SuspensePageTransition>
-                <WillsAndProbate />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Wills and Probate Subservice */}
-          <Route
-            path="/lumine-law/all-services/wills-probate/wills"
-            element={
-              <SuspensePageTransition>
-                <Wills />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Wills and Probate Subservice */}
-          <Route
-            path="/lumine-law/all-services/wills-probate/probate"
-            element={
-              <SuspensePageTransition>
-                <Probate />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Wills and Probate Subservice */}
-          <Route
-            path="/lumine-law/all-services/wills-probate/trusts"
-            element={
-              <SuspensePageTransition>
-                <Trusts />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Wills and Probate Subservice */}
-          <Route
-            path="/lumine-law/all-services/wills-probate/power-attorney"
-            element={
-              <SuspensePageTransition>
-                <PowerOfAttorney />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Wills and Probate Subservice */}
-          <Route
-            path="/lumine-law/all-services/wills-probate/estate-planning"
-            element={
-              <SuspensePageTransition>
-                <EstatePlanning />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Wills and Probate Subservice */}
-          <Route
-            path="/lumine-law/all-services/wills-probate/inheritance-tax-planning"
-            element={
-              <SuspensePageTransition>
-                <InheritanceTaxPlanning />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Wills and Probate Subservice */}
-          <Route
-            path="/lumine-law/all-services/wills-probate/private-wealth-management"
-            element={
-              <SuspensePageTransition>
-                <WealthManagement />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Wills and Probate Subservice */}
-          <Route
-            path="/lumine-law/all-services/wills-probate/succession-planning"
-            element={
-              <SuspensePageTransition>
-                <SuccessionPlanning />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Intellectual Property */}
-          <Route
-            path="/lumine-law/all-services/intellectual-property"
-            element={
-              <SuspensePageTransition>
-                <IntellectualProperty />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Intellectual Property Subservice */}
-          <Route
-            path="/lumine-law/all-services/intellectual-property"
-            element={
-              <SuspensePageTransition>
-                <IntellectualProperty />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Intellectual Property Subservice */}
-          <Route
-            path="/lumine-law/all-services/intellectual-property/trademark"
-            element={
-              <SuspensePageTransition>
-                <Trademark />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Intellectual Property Subservice */}
-          <Route
-            path="/lumine-law/all-services/intellectual-property/copyright"
-            element={
-              <SuspensePageTransition>
-                <Copyright />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Intellectual Property Subservice */}
-          <Route
-            path="/lumine-law/all-services/intellectual-property/patent"
-            element={
-              <SuspensePageTransition>
-                <Patent />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Property Prices */}
-          <Route
-            path="/lumine-law/prices/property-prices"
-            element={
-              <SuspensePageTransition>
-                <PropertyPrices />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Debt Recovery Prices */}
-          <Route
-            path="/lumine-law/prices/debt-recovery"
-            element={
-              <SuspensePageTransition>
-                <DebtRecovery />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Immigration Prices */}
-          <Route
-            path="/lumine-law/prices/immigration-prices"
-            element={
-              <SuspensePageTransition>
-                <ImmigrationPrices />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* About */}
-          <Route
-            path="/lumine-law/about"
-            element={
-              <SuspensePageTransition>
-                <About />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* News */}
-          <Route
-            path="/lumine-law/news"
-            element={
-              <SuspensePageTransition>
-                <News />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Insights */}
-          <Route
-            path="/lumine-law/insights"
-            element={
-              <SuspensePageTransition>
-                <Insights />
-              </SuspensePageTransition>
-            }
-          />
-
-          {/* Article */}
-          <Route
-            path="/lumine-law/article-page"
-            element={
-              <SuspensePageTransition>
-                <Article />
-              </SuspensePageTransition>
-            }
-          />
-        </Routes>
-        {/* </Suspense> */}
+        <Suspense fallback={<LoadingSpinner />}>
+          <Routes>
+            {/* Landing */}
+            <Route
+              path="/lumine-law/"
+              element={
+                <SuspensePageTransition>
+                  <LandingPage />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Contact */}
+            <Route
+              path="/lumine-law/contact"
+              element={
+                <SuspensePageTransition>
+                  <Contact />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* All Services */}
+            <Route
+              path="/lumine-law/all-services"
+              element={
+                <SuspensePageTransition>
+                  <AllServices />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Immigration */}
+            <Route
+              path="/lumine-law/all-services/immigration"
+              element={
+                <SuspensePageTransition>
+                  <Immigration />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Immigration Sub Service */}
+            <Route
+              path="/lumine-law/all-services/immigration/spouse-visa"
+              element={
+                <SuspensePageTransition>
+                  <SpouseVisa />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Immigration Sub Service */}
+            <Route
+              path="/lumine-law/all-services/immigration/british-citizenship-application"
+              element={
+                <SuspensePageTransition>
+                  <BritishCitizenshipApplication />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Immigration Sub Service */}
+            <Route
+              path="/lumine-law/all-services/immigration/uk-visitor-visa"
+              element={
+                <SuspensePageTransition>
+                  <VisitorVisa />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Immigration Sub Service */}
+            <Route
+              path="/lumine-law/all-services/immigration/skilled-worker-visa"
+              element={
+                <SuspensePageTransition>
+                  <SkilledWorkerVisa />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Immigration Sub Service */}
+            <Route
+              path="/lumine-law/all-services/immigration/certificate-of-sponsorship"
+              element={
+                <SuspensePageTransition>
+                  <CoS />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Immigration Sub Service */}
+            <Route
+              path="/lumine-law/all-services/immigration/student-visa"
+              element={
+                <SuspensePageTransition>
+                  <StudentVisa />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Immigration Sub Service */}
+            <Route
+              path="/lumine-law/all-services/immigration/entry-clearance"
+              element={
+                <SuspensePageTransition>
+                  <EntryClearance />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Immigration Sub Service */}
+            <Route
+              path="/lumine-law/all-services/immigration/skilled-migrant"
+              element={
+                <SuspensePageTransition>
+                  <SkilledMigrant />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Immigration Sub Service */}
+            <Route
+              path="/lumine-law/all-services/immigration/visa-categories"
+              element={
+                <SuspensePageTransition>
+                  <VisaCategories />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Immigration Sub Service */}
+            <Route
+              path="/lumine-law/all-services/immigration/visa-extensions"
+              element={
+                <SuspensePageTransition>
+                  <VisaExtensions />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Immigration Sub Service */}
+            <Route
+              path="/lumine-law/all-services/immigration/indefinite-leave"
+              element={
+                <SuspensePageTransition>
+                  <IndefiniteLeave />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Immigration Sub Service */}
+            <Route
+              path="/lumine-law/all-services/immigration/human-rights-app"
+              element={
+                <SuspensePageTransition>
+                  <HumanRights />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Immigration Sub Service */}
+            <Route
+              path="/lumine-law/all-services/immigration/discretionary-leave"
+              element={
+                <SuspensePageTransition>
+                  <DiscretionaryLeave />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Immigration Sub Service */}
+            <Route
+              path="/lumine-law/all-services/immigration/bail-revocation"
+              element={
+                <SuspensePageTransition>
+                  <BailRevocation />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Immigration Sub Service */}
+            <Route
+              path="/lumine-law/all-services/immigration/eu-settlement"
+              element={
+                <SuspensePageTransition>
+                  <EuSettlement />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Immigration Sub Service */}
+            <Route
+              path="/lumine-law/all-services/immigration/reviews-appeals"
+              element={
+                <SuspensePageTransition>
+                  <ReviewsAppeals />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Immigration Sub Service */}
+            <Route
+              path="/lumine-law/all-services/immigration/asylum"
+              element={
+                <SuspensePageTransition>
+                  <Asylum />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Immigration Sub Service */}
+            <Route
+              path="/lumine-law/all-services/immigration/innovator-founder"
+              element={
+                <SuspensePageTransition>
+                  <InnovatorFounder />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Immigration Sub Service */}
+            <Route
+              path="/lumine-law/all-services/immigration/creative-worker"
+              element={
+                <SuspensePageTransition>
+                  <CreativeWorker />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Family */}
+            <Route
+              path="/lumine-law/all-services/family-and-children"
+              element={
+                <SuspensePageTransition>
+                  <Family />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Family Sub Service */}
+            <Route
+              path="/lumine-law/all-services/family/divorce"
+              element={
+                <SuspensePageTransition>
+                  <Divorce />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Family Sub Service */}
+            <Route
+              path="/lumine-law/all-services/family/nuptial-agreement"
+              element={
+                <SuspensePageTransition>
+                  <NuptialAgreement />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Family Sub Service */}
+            <Route
+              path="/lumine-law/all-services/family/child-arrangements"
+              element={
+                <SuspensePageTransition>
+                  <ChildArrangements />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Family Sub Service */}
+            <Route
+              path="/lumine-law/all-services/family/parental-responsbility"
+              element={
+                <SuspensePageTransition>
+                  <ParentalResponsiblity />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Family Sub Service */}
+            <Route
+              path="/lumine-law/all-services/family/consent-orders"
+              element={
+                <SuspensePageTransition>
+                  <ConsentOrders />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Family Sub Service */}
+            <Route
+              path="/lumine-law/all-services/family/financial-settlements"
+              element={
+                <SuspensePageTransition>
+                  <FinancialStatements />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Family Sub Service */}
+            <Route
+              path="/lumine-law/all-services/family/domestic-violence"
+              element={
+                <SuspensePageTransition>
+                  <DomesticViolence />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Family Sub Service */}
+            <Route
+              path="/lumine-law/all-services/family/adoption-surrogacy"
+              element={
+                <SuspensePageTransition>
+                  <Adoption />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Residential Property */}
+            <Route
+              path="/lumine-law/all-services/residential"
+              element={
+                <SuspensePageTransition>
+                  <Residential />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Residential Subservice */}
+            <Route
+              path="/lumine-law/all-services/residential/freehold-sales"
+              element={
+                <SuspensePageTransition>
+                  <FreeholdSales />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Residential Subservice */}
+            <Route
+              path="/lumine-law/all-services/residential/freehold-purchases"
+              element={
+                <SuspensePageTransition>
+                  <FreeholdPurchases />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Residential Subservice */}
+            <Route
+              path="/lumine-law/all-services/residential/transfer-of-equity"
+              element={
+                <SuspensePageTransition>
+                  <TransfersOfEquity />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Residential Subservice */}
+            <Route
+              path="/lumine-law/all-services/residential/lease-terms-advice"
+              element={
+                <SuspensePageTransition>
+                  <LeaseTermsAdvice />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Commercial Property */}
+            <Route
+              path="/lumine-law/all-services/commercial"
+              element={
+                <SuspensePageTransition>
+                  <Commercial />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Commercial Subservice */}
+            <Route
+              path="/lumine-law/all-services/residential/purchase-commercial"
+              element={
+                <SuspensePageTransition>
+                  <PurchaseCommercial />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Commercial Subservice */}
+            <Route
+              path="/lumine-law/all-services/residential/sales-commercial"
+              element={
+                <SuspensePageTransition>
+                  <SaleCommercial />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Commercial Subservice */}
+            <Route
+              path="/lumine-law/all-services/residential/business-licenses"
+              element={
+                <SuspensePageTransition>
+                  <BusinessAndLicense />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Commercial Subservice */}
+            <Route
+              path="/lumine-law/all-services/residential/lease-renewals"
+              element={
+                <SuspensePageTransition>
+                  <LeaseRenewals />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Commercial Subservice */}
+            <Route
+              path="/lumine-law/all-services/residential/rent-recovery"
+              element={
+                <SuspensePageTransition>
+                  <RentRecovery />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Commercial Subservice */}
+            <Route
+              path="/lumine-law/all-services/residential/forfeiture-notices"
+              element={
+                <SuspensePageTransition>
+                  <ForfeitureAndNotices />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Commercial Subservice */}
+            <Route
+              path="/lumine-law/all-services/residential/break-rent"
+              element={
+                <SuspensePageTransition>
+                  <BreakRent />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Commercial Subservice */}
+            <Route
+              path="/lumine-law/all-services/residential/consent-alterations"
+              element={
+                <SuspensePageTransition>
+                  <ConsentAlterations />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Commercial Subservice */}
+            <Route
+              path="/lumine-law/all-services/residential/property-dilapidations"
+              element={
+                <SuspensePageTransition>
+                  <PropertyDilapidations />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Commercial Subservice */}
+            <Route
+              path="/lumine-law/all-services/residential/schedules-conditions"
+              element={
+                <SuspensePageTransition>
+                  <SchedulesConditions />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Commercial Subservice */}
+            <Route
+              path="/lumine-law/all-services/residential/advice-multiple"
+              element={
+                <SuspensePageTransition>
+                  <AdviceMultiple />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Dispute Resolution */}
+            <Route
+              path="/lumine-law/all-services/dispute-resolution"
+              element={
+                <SuspensePageTransition>
+                  <DisputeResolution />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Dispute Resolution Subservice*/}
+            <Route
+              path="/lumine-law/all-services/dispute-resolution/debt-matters"
+              element={
+                <SuspensePageTransition>
+                  <DebtMatters />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Dispute Resolution Subservice*/}
+            <Route
+              path="/lumine-law/all-services/dispute-resolution/contract-disputes"
+              element={
+                <SuspensePageTransition>
+                  <ContractDisputes />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Dispute Resolution Subservice*/}
+            <Route
+              path="/lumine-law/all-services/dispute-resolution/bankruptcy-matters"
+              element={
+                <SuspensePageTransition>
+                  <CorporatePersonalBankruptcy />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Dispute Resolution Subservice*/}
+            <Route
+              path="/lumine-law/all-services/dispute-resolution/building-contract-disputes"
+              element={
+                <SuspensePageTransition>
+                  <BuildingContractDisputes />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Dispute Resolution Subservice*/}
+            <Route
+              path="/lumine-law/all-services/dispute-resolution/supply-goods-services"
+              element={
+                <SuspensePageTransition>
+                  <SupplyGoodsServices />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Dispute Resolution Subservice*/}
+            <Route
+              path="/lumine-law/all-services/dispute-resolution/building-contracts"
+              element={
+                <SuspensePageTransition>
+                  <BuildingContracts />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Dispute Resolution Subservice*/}
+            <Route
+              path="/lumine-law/all-services/dispute-resolution/debt-recovery"
+              element={
+                <SuspensePageTransition>
+                  <DisputeDebtRecovery />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Landlord & Tenant Dispute */}
+            <Route
+              path="/lumine-law/all-services/landlord-tenant"
+              element={
+                <SuspensePageTransition>
+                  <Landlord />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Landlord & Tenant Dispute Subpages */}
+            <Route
+              path="/lumine-law/all-services/landlord-tenant/possession-claims"
+              element={
+                <SuspensePageTransition>
+                  <PossessionClaims />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Landlord & Tenant Dispute Subpages */}
+            <Route
+              path="/lumine-law/all-services/landlord-tenant/recovery-rent"
+              element={
+                <SuspensePageTransition>
+                  <RecoveryRent />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Landlord & Tenant Dispute Subpages */}
+            <Route
+              path="/lumine-law/all-services/landlord-tenant/claims-disrepair"
+              element={
+                <SuspensePageTransition>
+                  <ClaimsDisrepair />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Wills and Probate */}
+            <Route
+              path="/lumine-law/all-services/wills-probate"
+              element={
+                <SuspensePageTransition>
+                  <WillsAndProbate />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Wills and Probate Subservice */}
+            <Route
+              path="/lumine-law/all-services/wills-probate/wills"
+              element={
+                <SuspensePageTransition>
+                  <Wills />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Wills and Probate Subservice */}
+            <Route
+              path="/lumine-law/all-services/wills-probate/probate"
+              element={
+                <SuspensePageTransition>
+                  <Probate />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Wills and Probate Subservice */}
+            <Route
+              path="/lumine-law/all-services/wills-probate/trusts"
+              element={
+                <SuspensePageTransition>
+                  <Trusts />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Wills and Probate Subservice */}
+            <Route
+              path="/lumine-law/all-services/wills-probate/power-attorney"
+              element={
+                <SuspensePageTransition>
+                  <PowerOfAttorney />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Wills and Probate Subservice */}
+            <Route
+              path="/lumine-law/all-services/wills-probate/estate-planning"
+              element={
+                <SuspensePageTransition>
+                  <EstatePlanning />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Wills and Probate Subservice */}
+            <Route
+              path="/lumine-law/all-services/wills-probate/inheritance-tax-planning"
+              element={
+                <SuspensePageTransition>
+                  <InheritanceTaxPlanning />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Wills and Probate Subservice */}
+            <Route
+              path="/lumine-law/all-services/wills-probate/private-wealth-management"
+              element={
+                <SuspensePageTransition>
+                  <WealthManagement />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Wills and Probate Subservice */}
+            <Route
+              path="/lumine-law/all-services/wills-probate/succession-planning"
+              element={
+                <SuspensePageTransition>
+                  <SuccessionPlanning />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Intellectual Property */}
+            <Route
+              path="/lumine-law/all-services/intellectual-property"
+              element={
+                <SuspensePageTransition>
+                  <IntellectualProperty />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Intellectual Property Subservice */}
+            <Route
+              path="/lumine-law/all-services/intellectual-property"
+              element={
+                <SuspensePageTransition>
+                  <IntellectualProperty />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Intellectual Property Subservice */}
+            <Route
+              path="/lumine-law/all-services/intellectual-property/trademark"
+              element={
+                <SuspensePageTransition>
+                  <Trademark />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Intellectual Property Subservice */}
+            <Route
+              path="/lumine-law/all-services/intellectual-property/copyright"
+              element={
+                <SuspensePageTransition>
+                  <Copyright />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Intellectual Property Subservice */}
+            <Route
+              path="/lumine-law/all-services/intellectual-property/patent"
+              element={
+                <SuspensePageTransition>
+                  <Patent />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Property Prices */}
+            <Route
+              path="/lumine-law/prices/property-prices"
+              element={
+                <SuspensePageTransition>
+                  <PropertyPrices />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Debt Recovery Prices */}
+            <Route
+              path="/lumine-law/prices/debt-recovery"
+              element={
+                <SuspensePageTransition>
+                  <DebtRecovery />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Immigration Prices */}
+            <Route
+              path="/lumine-law/prices/immigration-prices"
+              element={
+                <SuspensePageTransition>
+                  <ImmigrationPrices />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* About */}
+            <Route
+              path="/lumine-law/about"
+              element={
+                <SuspensePageTransition>
+                  <About />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* News */}
+            <Route
+              path="/lumine-law/news"
+              element={
+                <SuspensePageTransition>
+                  <News />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Insights */}
+            <Route
+              path="/lumine-law/insights"
+              element={
+                <SuspensePageTransition>
+                  <Insights />
+                </SuspensePageTransition>
+              }
+            />
+
+            {/* Article */}
+            <Route
+              path="/lumine-law/article-page"
+              element={
+                <SuspensePageTransition>
+                  <Article />
+                </SuspensePageTransition>
+              }
+            />
+          </Routes>
+        </Suspense>
       </BrowserRouter>
     </>
   );

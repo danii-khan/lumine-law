@@ -11,6 +11,53 @@ const customConfig = defineConfig({
       "2xl": "1400px", // Extra extra large: 1400px and up
     },
   },
+  components: {
+    Image: {
+      baseStyle: {
+        loading: "lazy",
+        decoding: "async",
+      },
+      defaultProps: {
+        loading: "lazy",
+        decoding: "async",
+      },
+    },
+    Box: {
+      baseStyle: ({ bgImage }) => ({
+        position: bgImage ? "relative" : "static",
+        "&[data-bg]": {
+          backgroundImage: "none",
+          "&.visible": {
+            backgroundImage: bgImage,
+            transition: "background-image 0.3s ease-in-out",
+          },
+        },
+      }),
+    },
+  },
 });
 
 export const system = createSystem(defaultConfig, customConfig);
+
+// Add background image observer
+if (typeof window !== "undefined") {
+  window.addEventListener("load", () => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      {
+        rootMargin: "50px",
+        threshold: 0.1,
+      }
+    );
+
+    document
+      .querySelectorAll("[data-bg]")
+      .forEach((el) => observer.observe(el));
+  });
+}

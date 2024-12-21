@@ -119,6 +119,7 @@ const Menu = () => {
                       css={{
                         transition: "all 0.3s ease",
                       }}
+                      onClick={() => setIsOpen(!isOpen)}
                     >
                       About
                     </Button>
@@ -210,6 +211,7 @@ const Menu = () => {
                       css={{
                         transition: "all 0.3s ease",
                       }}
+                      onClick={() => setIsOpen(!isOpen)}
                     >
                       News
                     </Button>
@@ -240,6 +242,7 @@ const Menu = () => {
                       css={{
                         transition: "all 0.3s ease",
                       }}
+                      onClick={() => setIsOpen(!isOpen)}
                     >
                       Insights
                     </Button>
@@ -270,6 +273,7 @@ const Menu = () => {
                       css={{
                         transition: "all 0.3s ease",
                       }}
+                      onClick={() => setIsOpen(!isOpen)}
                     >
                       Contact Us
                     </Button>
