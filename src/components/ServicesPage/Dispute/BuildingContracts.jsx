@@ -84,7 +84,7 @@ const BuildingContracts = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign={"left"}
+                textAlign={"justify"}
               >
                 Building contracts are crucial for the successful execution of
                 construction projects, defining the rights and obligations of
@@ -101,7 +101,7 @@ const BuildingContracts = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign={"left"}
+                textAlign={"justify"}
               >
                 Building contracts encompass a wide range of agreements, from
                 the initial stages of planning and design to the final stages of
@@ -193,7 +193,7 @@ const BuildingContracts = () => {
                 >
                   {/* 1 - Heading */}
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -210,7 +210,7 @@ const BuildingContracts = () => {
 
                   {/* Content */}
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -231,7 +231,7 @@ const BuildingContracts = () => {
 
                   {/* List */}
                   <List.Root
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -260,7 +260,7 @@ const BuildingContracts = () => {
 
                   {/* 2 - Heading */}
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -277,7 +277,7 @@ const BuildingContracts = () => {
 
                   {/* Content */}
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -300,7 +300,7 @@ const BuildingContracts = () => {
 
                   {/* List */}
                   <List.Root
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -328,7 +328,7 @@ const BuildingContracts = () => {
 
                   {/* 3 - Heading */}
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -345,7 +345,7 @@ const BuildingContracts = () => {
 
                   {/* Content */}
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -366,7 +366,7 @@ const BuildingContracts = () => {
 
                   {/* List */}
                   <List.Root
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -396,7 +396,7 @@ const BuildingContracts = () => {
 
                   {/* 4 - Heading */}
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -413,7 +413,7 @@ const BuildingContracts = () => {
 
                   {/* Content */}
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -435,7 +435,7 @@ const BuildingContracts = () => {
 
                   {/* List */}
                   <List.Root
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -463,7 +463,7 @@ const BuildingContracts = () => {
 
                   {/* 5 - Heading */}
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -480,7 +480,7 @@ const BuildingContracts = () => {
 
                   {/* Content */}
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -500,7 +500,7 @@ const BuildingContracts = () => {
 
                   {/* List */}
                   <List.Root
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -599,7 +599,7 @@ const BuildingContracts = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -620,7 +620,7 @@ const BuildingContracts = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -714,7 +714,7 @@ const BuildingContracts = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -737,7 +737,7 @@ const BuildingContracts = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -831,7 +831,7 @@ const BuildingContracts = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -851,7 +851,7 @@ const BuildingContracts = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -869,7 +869,7 @@ const BuildingContracts = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -888,7 +888,7 @@ const BuildingContracts = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -907,7 +907,7 @@ const BuildingContracts = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -925,7 +925,7 @@ const BuildingContracts = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",

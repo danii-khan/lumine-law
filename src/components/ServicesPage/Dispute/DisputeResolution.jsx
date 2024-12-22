@@ -292,7 +292,7 @@ const Dispute = () => {
               fontFamily="CeraRoundPro"
               fontSize="24px"
               fontWeight={600}
-              textAlign="left"
+              textAlign="justify"
               mb="2.5%"
               color="black"
             >
@@ -303,7 +303,7 @@ const Dispute = () => {
               fontFamily="CeraRoundPro"
               fontWeight={400}
               fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-              textAlign="left"
+              textAlign="justify"
               color="black"
             >
               Dispute resolution solicitors in London offer a range of services

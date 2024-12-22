@@ -82,7 +82,7 @@ const DisputeDebtRecovery = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign={"left"}
+                textAlign={"justify"}
               >
                 Dealing with debt-related issues can be a challenging and
                 stressful experience, whether you are an individual or a
@@ -98,7 +98,7 @@ const DisputeDebtRecovery = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign={"left"}
+                textAlign={"justify"}
               >
                 Effective debt recovery is essential for maintaining a healthy
                 cash flow and protecting your business reputation. Without a
@@ -189,7 +189,7 @@ const DisputeDebtRecovery = () => {
                 >
                   {/* 1 - Heading */}
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -206,7 +206,7 @@ const DisputeDebtRecovery = () => {
 
                   {/* Content */}
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -228,7 +228,7 @@ const DisputeDebtRecovery = () => {
 
                   {/* List */}
                   <List.Root
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -267,7 +267,7 @@ const DisputeDebtRecovery = () => {
 
                   {/* 2 - Heading */}
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -284,7 +284,7 @@ const DisputeDebtRecovery = () => {
 
                   {/* Content */}
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -306,7 +306,7 @@ const DisputeDebtRecovery = () => {
 
                   {/* List */}
                   <List.Root
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -338,7 +338,7 @@ const DisputeDebtRecovery = () => {
 
                   {/* 3 - Heading */}
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -355,7 +355,7 @@ const DisputeDebtRecovery = () => {
 
                   {/* Content */}
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -376,7 +376,7 @@ const DisputeDebtRecovery = () => {
 
                   {/* List */}
                   <List.Root
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -417,7 +417,7 @@ const DisputeDebtRecovery = () => {
 
                   {/* 4 - Heading */}
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -434,7 +434,7 @@ const DisputeDebtRecovery = () => {
 
                   {/* Content */}
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -456,7 +456,7 @@ const DisputeDebtRecovery = () => {
 
                   {/* List */}
                   <List.Root
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -562,7 +562,7 @@ const DisputeDebtRecovery = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -581,7 +581,7 @@ const DisputeDebtRecovery = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -599,7 +599,7 @@ const DisputeDebtRecovery = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -617,7 +617,7 @@ const DisputeDebtRecovery = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -636,7 +636,7 @@ const DisputeDebtRecovery = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -654,7 +654,7 @@ const DisputeDebtRecovery = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
