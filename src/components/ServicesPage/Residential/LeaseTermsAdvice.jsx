@@ -82,7 +82,7 @@ const LeaseTermsAdvice = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign={"left"}
+                textAlign={"justify"}
               >
                 At Lumine Solicitors, we recognise that entering into a lease
                 agreement can be a complex process, whether you are a tenant or
@@ -171,7 +171,7 @@ const LeaseTermsAdvice = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -267,7 +267,7 @@ const LeaseTermsAdvice = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
