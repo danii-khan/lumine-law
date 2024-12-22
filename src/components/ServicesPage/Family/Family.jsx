@@ -260,6 +260,7 @@ const Family = () => {
             display="flex"
             justifyContent="flex-start"
             alignItems="center"
+            _loading={"eager"}
           >
             <Text
               fontSize="40px"

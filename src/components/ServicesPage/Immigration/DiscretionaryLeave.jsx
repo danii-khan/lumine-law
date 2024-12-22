@@ -52,6 +52,7 @@ const DiscretionaryLeave = () => {
             display={"flex"}
             justifyContent={"center"}
             alignItems={"center"}
+            _loading={"eager"}
           >
             <Text
               fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}

@@ -140,6 +140,7 @@ const LandingPage = () => {
           display={"flex"}
           alignItems={"center"}
           mt={"10px"}
+          _loading={"eager"}
         >
           <VStack
             justifyContent={"flex-start"}
