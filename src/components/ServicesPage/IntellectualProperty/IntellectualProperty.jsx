@@ -389,7 +389,7 @@ const IntellectualProperty = () => {
               fontFamily="CeraRoundPro"
               fontSize={{ xs: "14px", lg: "16px", xl: "20px", "2xl": "24px" }}
               fontWeight={600}
-              textAlign="left"
+              textAlign="justify"
               mb="2.5%"
               color="black"
             >
@@ -400,7 +400,7 @@ const IntellectualProperty = () => {
               fontFamily="CeraRoundPro"
               fontWeight={400}
               fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-              textAlign="left"
+              textAlign="justify"
               color="black"
             >
               {introContent.subText}
@@ -408,7 +408,7 @@ const IntellectualProperty = () => {
 
             <List.Root
               as="ol"
-              textAlign="left"
+              textAlign="justify"
               fontSize={{
                 xs: "12px",
                 sm: "12px",
@@ -432,7 +432,7 @@ const IntellectualProperty = () => {
               fontFamily="CeraRoundPro"
               fontWeight={400}
               fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-              textAlign="left"
+              textAlign="justify"
               color="black"
             >
               {introContent.conclusion}
