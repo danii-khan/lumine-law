@@ -171,7 +171,7 @@ const EntryClearance = () => {
                   py={{ xs: "15px", md: "30px" }}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -264,7 +264,7 @@ const EntryClearance = () => {
                   py={{ xs: "15px", md: "30px" }}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -281,7 +281,7 @@ const EntryClearance = () => {
                   </Text>
 
                   <List.Root
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -308,7 +308,7 @@ const EntryClearance = () => {
                       clearance is required under these Rules.
                     </List.Item>
                     <Text
-                      textAlign={"left"}
+                      textAlign={"justify"}
                       fontSize={{
                         xs: "12px",
                         sm: "12px",
@@ -324,7 +324,7 @@ const EntryClearance = () => {
                       must either:
                     </Text>
                     <List.Root
-                      textAlign={"left"}
+                      textAlign={"justify"}
                       fontSize={{
                         xs: "12px",
                         sm: "12px",
@@ -353,7 +353,7 @@ const EntryClearance = () => {
                     </List.Root>
                   </List.Root>
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -445,7 +445,7 @@ const EntryClearance = () => {
                   py={{ xs: "15px", md: "30px" }}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -536,7 +536,7 @@ const EntryClearance = () => {
                   py={{ xs: "15px", md: "30px" }}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
