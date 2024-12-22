@@ -1,3 +1,4 @@
+import React, { Suspense } from "react";
 import {
   Container,
   Box,
@@ -20,9 +21,9 @@ import { LuPhoneCall } from "react-icons/lu";
 import { TiPrinter } from "react-icons/ti";
 import { TfiEmail } from "react-icons/tfi";
 import { Helmet } from "react-helmet";
-import AllServiceLinks from "../NavLinks/AllServiceLinks";
-import AllPrices from "../NavLinks/AllPrices";
-import AllNewsInsights from "../NavLinks/AllNewsInsights";
+const AllServiceLinks = React.lazy(() => import("../NavLinks/AllServiceLinks"));
+const AllPrices = React.lazy(() => import("../NavLinks/AllPrices"));
+const AllNewsInsights = React.lazy(() => import("../NavLinks/AllNewsInsights"));
 
 const Contact = () => {
   return (
@@ -695,13 +696,19 @@ const Contact = () => {
         </VStack>
 
         {/* Other Services */}
-        <AllServiceLinks />
+        <Suspense fallback={<div>Loading All Services ...</div>}>
+          <AllServiceLinks />
+        </Suspense>
 
         {/* Prices */}
-        <AllPrices />
+        <Suspense fallback={<div>Loading All Prices ...</div>}>
+          <AllPrices />
+        </Suspense>
 
         {/* News and Insights */}
-        <AllNewsInsights />
+        <Suspense fallback={<div>Loading All News and Insights ...</div>}>
+          <AllNewsInsights />
+        </Suspense>
 
         {/* Footer */}
         <Footer />

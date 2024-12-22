@@ -1,3 +1,4 @@
+import React, { Suspense } from "react";
 import {
   Text,
   Container,
@@ -12,8 +13,8 @@ import Footer from "../Footer/Footer";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import AllPrices from "../NavLinks/AllPrices";
-import AllNewsInsights from "../NavLinks/AllNewsInsights";
+const AllPrices = React.lazy(() => import("../NavLinks/AllPrices"));
+const AllNewsInsights = React.lazy(() => import("../NavLinks/AllNewsInsights"));
 
 // Import all images
 import BannerImg from "../../assets/services/all/bannertest.webp";
@@ -291,8 +292,12 @@ const AllServices = () => {
         <Banner />
         <MainContent />
         <ServicesGrid />
-        <AllPrices />
-        <AllNewsInsights />
+        <Suspense fallback={<div>Loading All Prices ...</div>}>
+          <AllPrices />
+        </Suspense>
+        <Suspense fallback={<div>Loading All News and Insights ...</div>}>
+          <AllNewsInsights />
+        </Suspense>
         <Footer />
       </Box>
     </Container>

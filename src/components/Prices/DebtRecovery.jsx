@@ -1,3 +1,4 @@
+import React, { Suspense } from "react";
 import {
   Text,
   Container,
@@ -20,8 +21,8 @@ import ImmigrationImg from "../../assets/pricing/property-prices.webp";
 import ResidentialImg from "../../assets/pricing/immigration.webp";
 import BannerImg from "../../assets/pricing/debt-recovery.webp";
 import { Helmet } from "react-helmet";
-import AllServiceLinks from "../NavLinks/AllServiceLinks";
-import AllNewsInsights from "../NavLinks/AllNewsInsights";
+const AllServiceLinks = React.lazy(() => import("../NavLinks/AllServiceLinks"));
+const AllNewsInsights = React.lazy(() => import("../NavLinks/AllNewsInsights"));
 
 const DebtRecovery = () => {
   const [purchaseState, setPurchaseState] = useState(false);
@@ -1960,10 +1961,14 @@ const DebtRecovery = () => {
           </Box>
 
           {/* All Services */}
-          <AllServiceLinks />
+          <Suspense fallback={<div>Loading All Services ...</div>}>
+            <AllServiceLinks />
+          </Suspense>
 
           {/* News and Insights */}
-          <AllNewsInsights />
+          <Suspense fallback={<div>Loading All News and Insights ...</div>}>
+            <AllNewsInsights />
+          </Suspense>
 
           <Footer />
         </Box>

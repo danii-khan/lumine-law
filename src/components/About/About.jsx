@@ -1,11 +1,12 @@
+import React, { Suspense } from "react";
 import { Text, Container, Box } from "@chakra-ui/react";
 import Footer from "../Footer/Footer";
 import "../../styles/fonts.css";
 import { Helmet } from "react-helmet";
 import BannerImg from "../../assets/about/about.webp";
-import AllServiceLinks from "../NavLinks/AllServiceLinks";
-import AllPrices from "../NavLinks/AllPrices";
-import AllNewsInsights from "../NavLinks/AllNewsInsights";
+const AllServiceLinks = React.lazy(() => import("../NavLinks/AllServiceLinks"));
+const AllPrices = React.lazy(() => import("../NavLinks/AllPrices"));
+const AllNewsInsights = React.lazy(() => import("../NavLinks/AllNewsInsights"));
 
 const About = () => {
   return (
@@ -138,13 +139,19 @@ const About = () => {
           </Box>
 
           {/* Other Services */}
-          <AllServiceLinks />
+          <Suspense fallback={<div>Loading All Services ...</div>}>
+            <AllServiceLinks />
+          </Suspense>
 
           {/* Prices */}
-          <AllPrices />
+          <Suspense fallback={<div>Loading All Prices...</div>}>
+            <AllPrices />
+          </Suspense>
 
           {/* News and Insights */}
-          <AllNewsInsights />
+          <Suspense fallback={<div>Loading All News and Insights...</div>}>
+            <AllNewsInsights />
+          </Suspense>
 
           <Footer />
         </Box>

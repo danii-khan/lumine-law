@@ -1,3 +1,4 @@
+import React, { Suspense } from "react";
 import {
   Text,
   Container,
@@ -1345,10 +1346,14 @@ const ImmigrationPrices = () => {
           </Box>
 
           {/* All Services */}
-          <AllServiceLinks />
+          <Suspense fallback={<div>Loading All Services ...</div>}>
+            <AllServiceLinks />
+          </Suspense>
 
           {/* News and Insights */}
-          <AllNewsInsights />
+          <Suspense fallback={<div>Loading All News and Insights ...</div>}>
+            <AllNewsInsights />
+          </Suspense>
 
           <Footer />
         </Box>

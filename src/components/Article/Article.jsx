@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import {
   Text,
   Container,
@@ -12,9 +12,9 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import AllNewsInsights from "../NavLinks/AllNewsInsights";
-import AllPrices from "../NavLinks/AllPrices";
-import AllServiceLinks from "../NavLinks/AllServiceLinks";
+const AllServiceLinks = React.lazy(() => import("../NavLinks/AllServiceLinks"));
+const AllPrices = React.lazy(() => import("../NavLinks/AllPrices"));
+const AllNewsInsights = React.lazy(() => import("../NavLinks/AllNewsInsights"));
 import BannerImg from "../../assets/article/article.webp";
 import ImageOne from "../../assets/landing/news-insights-two.webp";
 import ImageTwo from "../../assets/landing/news-insights-four.webp";
@@ -477,9 +477,15 @@ const Article = () => {
           </Box>
 
           {/* Navigation Components */}
-          <AllServiceLinks />
-          <AllPrices />
-          <AllNewsInsights />
+          <Suspense fallback={<div>Loading All Services...</div>}>
+            <AllServiceLinks />
+          </Suspense>
+          <Suspense fallback={<div>Loading All Prices...</div>}>
+            <AllPrices />
+          </Suspense>
+          <Suspense fallback={<div>Loading All News and Insights...</div>}>
+            <AllNewsInsights />
+          </Suspense>
           <Footer />
         </Box>
       </Container>

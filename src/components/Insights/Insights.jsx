@@ -1,3 +1,4 @@
+import React, { Suspense } from "react";
 import {
   Text,
   Container,
@@ -21,8 +22,8 @@ import Footer from "../Footer/Footer";
 import "../../styles/fonts.css";
 import BannerImg from "../../assets/insights/insights.webp";
 import { Helmet } from "react-helmet";
-import AllServiceLinks from "../NavLinks/AllServiceLinks";
-import AllPrices from "../NavLinks/AllPrices";
+const AllServiceLinks = React.lazy(() => import("../NavLinks/AllServiceLinks"));
+const AllPrices = React.lazy(() => import("../NavLinks/AllPrices"));
 import MainArticle from "../../assets/insights/main-article.webp";
 import InsightsArticles from "./InsightsArticles";
 import { Link } from "react-router-dom";
@@ -305,10 +306,14 @@ const Insights = () => {
           </Box>
 
           {/* Other Services */}
-          <AllServiceLinks />
+          <Suspense fallback={<div>Loading All Services ...</div>}>
+            <AllServiceLinks />
+          </Suspense>
 
           {/* Prices */}
-          <AllPrices />
+          <Suspense fallback={<div>Loading All Prices ...</div>}>
+            <AllPrices />
+          </Suspense>
 
           <Footer />
         </Box>
