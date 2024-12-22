@@ -296,7 +296,7 @@ const Family = () => {
                 fontFamily="CeraRoundPro"
                 fontWeight={400}
                 fontSize="18px"
-                textAlign="left"
+                textAlign="justify"
               >
                 Our legal services are highly recommended by our clients and
                 other professionals such as barristers and other solicitors. Our
