@@ -32,14 +32,14 @@ const ResourceLoader = () => {
       {/* Preload critical fonts */}
       <link
         rel="preload"
-        href="/assets/fonts/CeraRoundPro/fontspring-demo-ceraroundpro-regular.otf"
+        href="../assets/fonts/CeraRoundPro/fontspring-demo-ceraroundpro-regular.otf"
         as="font"
         type="font/otf"
         crossOrigin="anonymous"
       />
       <link
         rel="preload"
-        href="/assets/fonts/CeraRoundPro/fontspring-demo-ceraroundpro-medium.otf"
+        href="../assets/fonts/CeraRoundPro/fontspring-demo-ceraroundpro-medium.otf"
         as="font"
         type="font/otf"
         crossOrigin="anonymous"

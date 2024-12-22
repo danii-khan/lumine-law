@@ -21,6 +21,7 @@ import { Link } from "react-router-dom";
 const servicesContent = [
   // Immigration
   {
+    key: "Immigration",
     link: "/lumine-law/all-services/immigration",
     image: ImmigrationIcon,
     heading: "Immigration Services",
@@ -28,6 +29,7 @@ const servicesContent = [
 
   //  Residential Property
   {
+    key: "Residential",
     link: "/lumine-law/all-services/residential",
     image: ResidentialIcon,
     heading: "Residential Property",
@@ -35,6 +37,7 @@ const servicesContent = [
 
   //  Commercial Property
   {
+    key: "Commercial",
     link: "/lumine-law/all-services/commercial",
     image: ResidentialIcon,
     heading: "Commercial Property",
@@ -42,6 +45,7 @@ const servicesContent = [
 
   //  Intellectual Property
   {
+    key: "Intellectual",
     link: "/lumine-law/all-services/intellectual-property",
     image: IntellectualIcon,
     heading: "Intellectual Property",
@@ -49,6 +53,7 @@ const servicesContent = [
 
   //  Dispute Resolution
   {
+    key: "Dispute",
     link: "/lumine-law/all-services/dispute-resolution",
     image: DisputeIcon,
     heading: "Dispute Resolution",
@@ -56,6 +61,7 @@ const servicesContent = [
 
   //  Landlord & Tenant Disputes
   {
+    key: "Landlord",
     link: "/lumine-law/all-services/landlord-tenant",
     image: LandlordIcon,
     heading: "Landlord & Tenant Disputes",
@@ -63,6 +69,7 @@ const servicesContent = [
 
   //  Family & Children
   {
+    key: "Family",
     link: "/lumine-law/all-services/family-and-children",
     image: FamilyIcon,
     heading: "Family & Children",
@@ -70,6 +77,7 @@ const servicesContent = [
 
   //  Wills & Probate
   {
+    key: "Wills",
     link: "/lumine-law/all-services/wills-probate",
     image: WillsProbateIcon,
     heading: "Wills & Probate",
@@ -113,6 +121,7 @@ const ServicesSection = () => {
         {/* Service Items */}
         {servicesContent.map((content) => (
           <GridItem
+            key={content.key}
             border={"1px solid white"}
             backgroundColor={"rgba(0, 0, 0, 0.6)"}
             height={"100%"}
