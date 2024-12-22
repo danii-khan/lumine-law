@@ -284,7 +284,7 @@ const Landlord = () => {
                 fontFamily="CeraRoundPro"
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign="left"
+                textAlign="justify"
               >
                 Intro content about Landlord and Tenant Disputes
               </Text>
