@@ -85,7 +85,7 @@ const Wills = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign={"left"}
+                textAlign={"justify"}
               >
                 A will, when planned effectively, ensures your assets and wealth
                 are distributed as per your wishes and secures the future of the
@@ -100,7 +100,7 @@ const Wills = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign={"left"}
+                textAlign={"justify"}
               >
                 Our experienced solicitors will assist you in deciding what
                 service suits you best, ensure tax efficiency, and tailor your
@@ -183,10 +183,10 @@ const Wills = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
-                  textAlign={"left"}
+                  textAlign={"justify"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -203,7 +203,7 @@ const Wills = () => {
                   </Text>
 
                   <List.Root
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -303,7 +303,7 @@ const Wills = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -324,7 +324,7 @@ const Wills = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -414,7 +414,7 @@ const Wills = () => {
                   py={{ xs: "15px", md: "30px" }}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -437,7 +437,7 @@ const Wills = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -531,7 +531,7 @@ const Wills = () => {
                   py={{ xs: "15px", md: "30px" }}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -625,7 +625,7 @@ const Wills = () => {
                   py={{ xs: "15px", md: "30px" }}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",

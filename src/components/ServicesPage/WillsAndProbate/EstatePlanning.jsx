@@ -82,7 +82,7 @@ const EstatePlanning = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign={"left"}
+                textAlign={"justify"}
               >
                 Estate planning involves using various legal strategies to
                 manage your financial matters, with a focus on tax efficiency.
@@ -168,10 +168,10 @@ const EstatePlanning = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
-                  textAlign={"left"}
+                  textAlign={"justify"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -187,7 +187,7 @@ const EstatePlanning = () => {
                   </Text>
 
                   <List.Root
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -259,7 +259,7 @@ const EstatePlanning = () => {
                   </List.Root>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -349,7 +349,7 @@ const EstatePlanning = () => {
                   py={{ xs: "15px", md: "30px" }}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",

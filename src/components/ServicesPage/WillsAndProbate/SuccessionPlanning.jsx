@@ -83,7 +83,7 @@ const SuccessionPlanning = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign={"left"}
+                textAlign={"justify"}
               >
                 At Lumine Solicitors, our team of succession planning advisers
                 assists families in making and executing critical decisions to
@@ -166,10 +166,10 @@ const SuccessionPlanning = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
-                  textAlign={"left"}
+                  textAlign={"justify"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -263,7 +263,7 @@ const SuccessionPlanning = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -279,7 +279,7 @@ const SuccessionPlanning = () => {
                   </Text>
 
                   <List.Root
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -378,7 +378,7 @@ const SuccessionPlanning = () => {
                   py={{ xs: "15px", md: "30px" }}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -393,7 +393,7 @@ const SuccessionPlanning = () => {
                     Lumine solicitors can help you in
                   </Text>
                   <List.Root
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -419,7 +419,7 @@ const SuccessionPlanning = () => {
                     </List.Item>
                   </List.Root>
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",

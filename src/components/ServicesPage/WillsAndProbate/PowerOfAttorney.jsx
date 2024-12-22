@@ -81,7 +81,7 @@ const PowerOfAttorney = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign={"left"}
+                textAlign={"justify"}
               >
                 A power of attorney can be appointed to take care of important
                 decisions such as finances and health. This is in case you lose
@@ -169,7 +169,7 @@ const PowerOfAttorney = () => {
                   py={{ xs: "15px", md: "30px" }}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",

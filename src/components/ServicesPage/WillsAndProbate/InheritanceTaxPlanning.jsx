@@ -81,7 +81,7 @@ const InheritanceTaxPlanning = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign={"left"}
+                textAlign={"justify"}
               >
                 As the law is constantly subject to change, inheritance tax
                 rules may mean that your loved ones might not profit from the
@@ -170,7 +170,7 @@ const InheritanceTaxPlanning = () => {
                   py={{ xs: "15px", md: "30px" }}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",

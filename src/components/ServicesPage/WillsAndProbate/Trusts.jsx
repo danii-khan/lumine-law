@@ -85,7 +85,7 @@ const Trusts = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign={"left"}
+                textAlign={"justify"}
               >
                 Trusts are a form of wealth management. This includes property
                 investments or land for a family member or another person whom
@@ -98,7 +98,7 @@ const Trusts = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign={"left"}
+                textAlign={"justify"}
               >
                 Our solicitors will work with you in accordance with your needs
                 and offer you advice on the drafting, creation, and
@@ -183,10 +183,10 @@ const Trusts = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
-                  textAlign={"left"}
+                  textAlign={"justify"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -206,7 +206,7 @@ const Trusts = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -225,7 +225,7 @@ const Trusts = () => {
                   </Text>
 
                   <List.Root
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -327,7 +327,7 @@ const Trusts = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -345,7 +345,7 @@ const Trusts = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -361,7 +361,7 @@ const Trusts = () => {
                   </Text>
 
                   <List.Root
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -384,7 +384,7 @@ const Trusts = () => {
                   </List.Root>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -474,7 +474,7 @@ const Trusts = () => {
                   py={{ xs: "15px", md: "30px" }}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -497,7 +497,7 @@ const Trusts = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -516,7 +516,7 @@ const Trusts = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -533,7 +533,7 @@ const Trusts = () => {
                   </Text>
 
                   <List.Root
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -632,7 +632,7 @@ const Trusts = () => {
                   py={{ xs: "15px", md: "30px" }}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -652,7 +652,7 @@ const Trusts = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -668,7 +668,7 @@ const Trusts = () => {
                   </Text>
 
                   <List.Root
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -758,7 +758,7 @@ const Trusts = () => {
                   py={{ xs: "15px", md: "30px" }}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",

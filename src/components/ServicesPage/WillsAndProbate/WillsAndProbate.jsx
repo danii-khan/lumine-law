@@ -271,7 +271,7 @@ const WillsAndProbate = () => {
                 fontFamily="CeraRoundPro"
                 fontSize="24px"
                 fontWeight={600}
-                textAlign="left"
+                textAlign="justify"
                 mb="2.5%"
               >
                 Wills and Probate
@@ -281,7 +281,7 @@ const WillsAndProbate = () => {
                 fontFamily="CeraRoundPro"
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign="left"
+                textAlign="justify"
                 mb="20px"
               >
                 Intro content about Wills and Probate
@@ -293,7 +293,7 @@ const WillsAndProbate = () => {
                 fontFamily="CeraRoundPro"
                 fontSize="24px"
                 fontWeight={600}
-                textAlign="left"
+                textAlign="justify"
                 mb="2.5%"
               >
                 Services

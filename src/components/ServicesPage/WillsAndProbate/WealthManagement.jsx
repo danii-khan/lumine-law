@@ -82,7 +82,7 @@ const WealthManagement = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign={"left"}
+                textAlign={"justify"}
               >
                 Lumine Solicitors wealth management advisers work closely with
                 you to save you money, tax and time, all in one location.
@@ -166,7 +166,7 @@ const WealthManagement = () => {
                   py={{ xs: "15px", md: "30px" }}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -182,7 +182,7 @@ const WealthManagement = () => {
                   </Text>
 
                   <List.Root
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -277,7 +277,7 @@ const WealthManagement = () => {
                   py={{ xs: "15px", md: "30px" }}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
