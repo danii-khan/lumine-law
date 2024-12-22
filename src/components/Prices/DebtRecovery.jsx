@@ -183,7 +183,7 @@ const DebtRecovery = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -202,7 +202,7 @@ const DebtRecovery = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -294,7 +294,7 @@ const DebtRecovery = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -389,7 +389,7 @@ const DebtRecovery = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -405,7 +405,7 @@ const DebtRecovery = () => {
                     have more information about your specific case.
                   </Text>
 
-                  <Flex flexFlow={{ xs: "column", md: "row" }} gap={"10px"}>
+                  <Flex flexFlow={{ xs: "column", md: "row" }} gap={"20px"}>
                     {/* 1st col */}
                     <Flex
                       flexFlow={"column"}
@@ -413,7 +413,7 @@ const DebtRecovery = () => {
                       width={{ xs: "100%", lg: "50%" }}
                     >
                       <Text
-                        textAlign={"left"}
+                        textAlign={"justify"}
                         fontSize={{
                           xs: "12px",
                           sm: "12px",
@@ -429,7 +429,7 @@ const DebtRecovery = () => {
                       </Text>
 
                       <Text
-                        textAlign={"left"}
+                        textAlign={"justify"}
                         fontSize={{
                           xs: "12px",
                           sm: "12px",
@@ -457,7 +457,7 @@ const DebtRecovery = () => {
                       width={{ xs: "100%", lg: "50%" }}
                     >
                       <Text
-                        textAlign={"left"}
+                        textAlign={"justify"}
                         fontSize={{
                           xs: "12px",
                           sm: "12px",
@@ -473,7 +473,7 @@ const DebtRecovery = () => {
                       </Text>
 
                       <Text
-                        textAlign={"left"}
+                        textAlign={"justify"}
                         fontSize={{
                           xs: "12px",
                           sm: "12px",
@@ -565,7 +565,7 @@ const DebtRecovery = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -1231,7 +1231,7 @@ const DebtRecovery = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -1247,7 +1247,7 @@ const DebtRecovery = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -1268,7 +1268,7 @@ const DebtRecovery = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -1286,7 +1286,7 @@ const DebtRecovery = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -1302,7 +1302,7 @@ const DebtRecovery = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -1322,7 +1322,7 @@ const DebtRecovery = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -1338,7 +1338,7 @@ const DebtRecovery = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",

@@ -133,7 +133,7 @@ const DisbursementsSection = ({ isOpen, onToggle }) => {
           width="100%"
         >
           <Text
-            textAlign="left"
+            textAlign="justify"
             fontSize={{
               xs: "12px",
               sm: "12px",
@@ -153,7 +153,7 @@ const DisbursementsSection = ({ isOpen, onToggle }) => {
           </Text>
 
           <Text
-            textAlign="left"
+            textAlign="justify"
             fontSize={{
               xs: "12px",
               sm: "12px",
@@ -169,7 +169,7 @@ const DisbursementsSection = ({ isOpen, onToggle }) => {
           </Text>
 
           <List.Root
-            textAlign="left"
+            textAlign="justify"
             fontSize={{
               xs: "12px",
               sm: "12px",

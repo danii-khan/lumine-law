@@ -190,7 +190,7 @@ const PropertyPrices = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -210,7 +210,7 @@ const PropertyPrices = () => {
                   </Text>
 
                   <List.Root
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -229,7 +229,7 @@ const PropertyPrices = () => {
                   </List.Root>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -564,7 +564,7 @@ const PropertyPrices = () => {
                   width={"100%"}
                 >
                   <List.Root
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -613,7 +613,7 @@ const PropertyPrices = () => {
                   </List.Root>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -632,7 +632,7 @@ const PropertyPrices = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -724,10 +724,10 @@ const PropertyPrices = () => {
                   py={{ xs: "15px", md: "30px" }}
                   width={"100%"}
                 >
-                  <Flex flexFlow={{ xs: "column", md: "row" }} gap={"10px"}>
+                  <Flex flexFlow={{ xs: "column", md: "row" }} gap={"15px"}>
                     {/* 1st col */}
                     <List.Root
-                      textAlign={"left"}
+                      textAlign={"justify"}
                       fontSize={{
                         xs: "12px",
                         xl: "14px",
@@ -769,7 +769,7 @@ const PropertyPrices = () => {
 
                     {/* 2nd col */}
                     <List.Root
-                      textAlign={"left"}
+                      textAlign={"justify"}
                       fontSize={{
                         xs: "12px",
                         xl: "14px",
@@ -876,7 +876,7 @@ const PropertyPrices = () => {
                   width={"100%"}
                 >
                   <List.Root
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "14px",
                       xl: "16px",
@@ -973,7 +973,7 @@ const PropertyPrices = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -1067,7 +1067,7 @@ const PropertyPrices = () => {
                 >
                   <List.Root
                     as={"ol"}
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "14px",
                       xl: "16px",
@@ -1507,7 +1507,7 @@ const PropertyPrices = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -1525,7 +1525,7 @@ const PropertyPrices = () => {
                   </Text>
 
                   <List.Root
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "14px",
                       xl: "16px",
@@ -1624,7 +1624,7 @@ const PropertyPrices = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -1646,7 +1646,7 @@ const PropertyPrices = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -1667,7 +1667,7 @@ const PropertyPrices = () => {
                   </Text>
 
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -1764,7 +1764,7 @@ const PropertyPrices = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -1863,10 +1863,10 @@ const PropertyPrices = () => {
                   py={{ xs: "15px", md: "30px" }}
                   width={"100%"}
                 >
-                  <Flex flexFlow={{ xs: "column", md: "row" }} gap={"10px"}>
+                  <Flex flexFlow={{ xs: "column", md: "row" }} gap={"15px"}>
                     {/* 1st col */}
                     <List.Root
-                      textAlign={"left"}
+                      textAlign={"justify"}
                       fontSize={{
                         xs: "12px",
                         xl: "14px",
@@ -1904,7 +1904,7 @@ const PropertyPrices = () => {
 
                     {/* 2nd col */}
                     <List.Root
-                      textAlign={"left"}
+                      textAlign={"justify"}
                       fontSize={{
                         xs: "12px",
                         xl: "14px",
