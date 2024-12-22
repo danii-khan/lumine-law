@@ -84,6 +84,7 @@ const Card = ({ item }) => (
   >
     <Box flexShrink={0}>
       <Image
+        alt="Lumine Solicitors News and Insights"
         src={item.image}
         height={{
           xs: "150px",

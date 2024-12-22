@@ -240,7 +240,7 @@ const Patent = React.lazy(() =>
 );
 import ResourceLoader from "../utils/ResourceLoader";
 import { Box, Spinner, Center, VStack, Text, Image } from "@chakra-ui/react";
-import Logo from "../assets/navbar/logo.png";
+import Logo from "../assets/navbar/logo.webp";
 import FontPreloader from "../utils/FontPreLoader";
 import ResourceHints from "../utils/ResourceHints";
 

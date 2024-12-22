@@ -13,7 +13,7 @@ import {
 import SRA from "../../assets/footer/sra-logo.png";
 import AccreditLogo from "../../assets/footer/accredit.png";
 import LexcelLogo from "../../assets/footer/lexcel.png";
-import LumineLogo from "../../assets/navbar/logo.png";
+import LumineLogo from "../../assets/navbar/logo.webp";
 import TwitterLogo from "../../assets/footer/twitter.png";
 import LinkedInLogo from "../../assets/footer/linkedin.png";
 import InstagramLogo from "../../assets/footer/instagram.png";
@@ -178,7 +178,7 @@ const Footer = () => {
             ></Image>
             <Image
               src={AccreditLogo}
-              alt="Accredited"
+              alt="Conveyancing Quality Scheme Accreditation"
               height={{
                 xs: "70px",
                 md: "75px",

@@ -141,6 +141,7 @@ const InsightsArticles = () => {
         >
           <Image
             src={article.image}
+            alt="Lumine Solicitors Article"
             height={{
               xs: "150px",
               sm: "175px",

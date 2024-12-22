@@ -1,6 +1,6 @@
 import { HStack, Image, Text, Grid, GridItem, Box } from "@chakra-ui/react";
 import { Button } from "../../lib/chakra-components/ui/button";
-import LumineLogo from "../../assets/navbar/logo.png";
+import LumineLogo from "../../assets/navbar/logo.webp";
 import "../../styles/fonts.css";
 import styles from "../../styles/navbar.module.css";
 import { Link } from "react-router-dom";
@@ -222,7 +222,7 @@ const Navbar = () => {
               >
                 <Image
                   src={LumineLogo}
-                  alt=""
+                  alt="Lumine Solicitors Logo"
                   height={{
                     // base: 50px
                     xs: "20px",

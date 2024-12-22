@@ -108,6 +108,7 @@ const NewsArticles = () => {
         >
           <Image
             src={article.image}
+            alt="Lumine Solicitors News"
             height={{
               xs: "150px",
               sm: "175px",

@@ -139,8 +139,11 @@ const ServicesSection = () => {
             >
               <VStack>
                 <Image
+                  alt="Lumine Solicitors Services"
                   src={content.image}
                   height={{ xs: "30px", md: "40px" }}
+                  // remove this if theres issues
+                  width={"auto"}
                   loading="lazy"
                 />
                 <Text

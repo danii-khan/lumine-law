@@ -8,7 +8,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { Button } from "../../lib/chakra-components/ui/button";
-import LumineLogo from "../../assets/navbar/logo.png";
+import LumineLogo from "../../assets/navbar/logo.webp";
 import HamburgerMenu from "../../assets/navbar/hamburger-menu.png";
 import "../../styles/fonts.css";
 import styles from "../../styles/navbar.module.css";
@@ -42,6 +42,7 @@ const Menu = () => {
       >
         <Image
           src={HamburgerMenu}
+          alt="Lumine Solicitors Mobile Menu"
           height={{
             // base: 50px
             xs: "25px",
@@ -153,7 +154,13 @@ const Menu = () => {
                     >
                       Services
                     </Button>
-                    <Image src={ForwardArrow} height={"30px"} />
+                    <Image
+                      src={ForwardArrow}
+                      height={"30px"}
+                      // remove this if theres issues
+                      width={"auto"}
+                      alt="Forward Arrow"
+                    />
                   </Box>
 
                   {/* Prices */}
@@ -183,7 +190,13 @@ const Menu = () => {
                     >
                       Pricing
                     </Button>
-                    <Image src={ForwardArrow} height={"30px"} />
+                    <Image
+                      src={ForwardArrow}
+                      height={"30px"}
+                      // remove this if theres issues
+                      width={"auto"}
+                      alt="Forward Arrow"
+                    />
                   </Box>
 
                   {/* News */}
@@ -302,7 +315,12 @@ const Menu = () => {
                       onClick={() => setActiveSection(null)}
                       py={"10px"}
                     >
-                      <Image src={BackArrow} height={"30px"} />
+                      <Image
+                        src={BackArrow}
+                        height={"30px"} // remove this if theres issues
+                        width={"auto"}
+                        alt="Back Arrow"
+                      />
                       <Button
                         variant="ghost"
                         color="white"
@@ -616,7 +634,12 @@ const Menu = () => {
                       onClick={() => setActiveSection(null)}
                       py={"10px"}
                     >
-                      <Image src={BackArrow} height={"30px"} />
+                      <Image
+                        src={BackArrow}
+                        height={"30px"} // remove this if theres issues
+                        width={"auto"}
+                        alt="Back Arrow"
+                      />
                       <Button
                         variant="ghost"
                         color="white"
@@ -797,7 +820,7 @@ const MobileNav = () => {
               >
                 <Image
                   src={LumineLogo}
-                  alt=""
+                  alt="Lumine Solicitors Logo"
                   height={{
                     // base: 50px
                     xs: "20px",

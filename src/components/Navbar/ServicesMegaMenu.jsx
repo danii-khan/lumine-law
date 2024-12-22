@@ -83,8 +83,18 @@ const ServicesMegaMenu = () => {
             }}
           >
             Services
-            <Image src={MenuIcon} />
-            <Image src={BlackMenuIcon} />
+            <Image
+              src={MenuIcon}
+              // remove this if theres issues
+              width={"auto"}
+              alt="Menu Icon"
+            />
+            <Image
+              src={BlackMenuIcon}
+              // remove this if theres issues
+              width={"auto"}
+              alt="Black Menu Icon"
+            />
           </Button>
           <Box
             position="fixed"

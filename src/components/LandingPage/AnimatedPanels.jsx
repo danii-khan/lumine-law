@@ -56,6 +56,7 @@ const ScrollingRow = ({ images, direction, speed }) => {
           >
             <Image
               src={img}
+              alt="Lumine Solicitors Panels"
               height={{
                 xs: "25px",
                 sm: "25px",
