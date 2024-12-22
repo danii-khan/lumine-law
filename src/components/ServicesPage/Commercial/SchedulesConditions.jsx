@@ -82,7 +82,7 @@ const SchedulesConditions = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign={"left"}
+                textAlign={"justify"}
               >
                 One essential service we offer involves creating and overseeing
                 Schedules of Conditions.
@@ -92,7 +92,7 @@ const SchedulesConditions = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign={"left"}
+                textAlign={"justify"}
               >
                 A Schedule of Conditions is a detailed record documenting the
                 condition of a property at a specific point in time. It includes
@@ -180,7 +180,7 @@ const SchedulesConditions = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -278,7 +278,7 @@ const SchedulesConditions = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",

@@ -86,7 +86,7 @@ const AdviceMultiple = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign={"left"}
+                textAlign={"justify"}
               >
                 Commercial lease agreements require careful consideration of
                 terms and obligations that significantly impact your business's
@@ -97,7 +97,7 @@ const AdviceMultiple = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign={"left"}
+                textAlign={"justify"}
               >
                 A <strong>commercial lease</strong> is a legally binding
                 contract that outlines the rights and responsibilities of
@@ -190,7 +190,7 @@ const AdviceMultiple = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -286,7 +286,7 @@ const AdviceMultiple = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"left"}
+                    textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
