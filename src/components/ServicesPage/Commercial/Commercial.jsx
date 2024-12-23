@@ -24,47 +24,47 @@ const commercialServices = [
   {
     title:
       "Advice on Commercial Lease Terms, Survey Reports, and Repairing Obligations",
-    path: "/lumine-law/all-services/residential/advice-multiple",
+    path: "/lumine-law/all-services/commercial/advice-multiple",
   },
   {
     title: "Break Clauses and Rent Reviews",
-    path: "/lumine-law/all-services/residential/break-rent",
+    path: "/lumine-law/all-services/commercial/break-rent",
   },
   {
     title: "Commercial Property Dilapidations",
-    path: "/lumine-law/all-services/residential/property-dilapidations",
+    path: "/lumine-law/all-services/commercial/property-dilapidations",
   },
   {
     title: "Consents for Alterations",
-    path: "/lumine-law/all-services/residential/consent-alterations",
+    path: "/lumine-law/all-services/commercial/consent-alterations",
   },
   {
     title: "Forfeiture and Notices",
-    path: "/lumine-law/all-services/residential/forfeiture-notices",
+    path: "/lumine-law/all-services/commercial/forfeiture-notices",
   },
   {
     title: "Lease Renewals",
-    path: "/lumine-law/all-services/residential/lease-renewals",
+    path: "/lumine-law/all-services/commercial/lease-renewals",
   },
   {
     title: "Purchase of Business and Licenses to Assign",
-    path: "/lumine-law/all-services/residential/business-licenses",
+    path: "/lumine-law/all-services/commercial/business-licenses",
   },
   {
     title: "Purchase of Commercial Property",
-    path: "/lumine-law/all-services/residential/purchase-commercial",
+    path: "/lumine-law/all-services/commercial/purchase-commercial",
   },
   {
     title: "Rent Recovery",
-    path: "/lumine-law/all-services/residential/rent-recovery",
+    path: "/lumine-law/all-services/commercial/rent-recovery",
   },
   {
     title: "Sales of Commercial Property",
-    path: "/lumine-law/all-services/residential/sales-commercial",
+    path: "/lumine-law/all-services/commercial/sales-commercial",
   },
   {
     title: "Schedules of Conditions",
-    path: "/lumine-law/all-services/residential/schedules-conditions",
+    path: "/lumine-law/all-services/commercial/schedules-conditions",
   },
 ];
 

@@ -114,7 +114,7 @@ const ServicesMegaMenu = () => {
               {/* Row 1 */}
               <HStack
                 justifyContent={"center"}
-                alignItems={"center"}
+                alignItems={"flex-start"}
                 py={"10px"}
                 px={"10px"}
                 gap={{ lg: "20px", xl: "30px" }}
@@ -148,6 +148,53 @@ const ServicesMegaMenu = () => {
                     </Text>
                   </Link>
                   {/* List */}
+                  {/* Asylum */}
+                  <Text
+                    as={Link}
+                    to={"/lumine-law/all-services/immigration/asylum"}
+                    fontSize={{
+                      lg: "9px",
+                      xl: "10px",
+                      "2xl": "11px",
+                    }}
+                    fontWeight={400}
+                    textAlign={"left"}
+                    className={styles.menuText}
+                  >
+                    Asylum
+                  </Text>
+                  {/* Creative Worker Visa */}
+                  {/* <Text
+                    as={Link}
+                    to={"/lumine-law/all-services/immigration/creative-worker"}
+                    fontSize={{
+                      lg: "9px",
+                      xl: "10px",
+                      "2xl": "11px",
+                    }}
+                    fontWeight={400}
+                    textAlign={"left"}
+                    className={styles.menuText}
+                  >
+                    Creative Worker Visa
+                  </Text> */}
+                  {/* Skilled Worker Visa */}
+                  <Text
+                    as={Link}
+                    to={
+                      "/lumine-law/all-services/immigration/skilled-worker-visa"
+                    }
+                    fontSize={{
+                      lg: "9px",
+                      xl: "10px",
+                      "2xl": "11px",
+                    }}
+                    fontWeight={400}
+                    textAlign={"left"}
+                    className={styles.menuText}
+                  >
+                    Skilled Worker Visa
+                  </Text>
                   {/* Spouse Visa */}
                   <Text
                     as={Link}
@@ -180,42 +227,25 @@ const ServicesMegaMenu = () => {
                     UK Visitor Visa
                   </Text>
 
-                  {/* Citizenship App */}
-                  <Text
-                    as={Link}
-                    to={
-                      "/lumine-law/all-services/immigration/british-citizenship-application"
-                    }
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    textAlign={"left"}
-                    className={styles.menuText}
-                  >
-                    British Citizenship Application
-                  </Text>
-
                   {/* Explore More */}
-                  {/* <Link
-                  to={"/lumine-law/all-services/immigration"}
-                  style={{ textDecoration: "none" }}
-                >
-                  <Text
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={700}
-                    className={styles.menuText}
-                    textAlign={"left"}
+                  <Link
+                    to={"/lumine-law/all-services/immigration"}
+                    style={{ textDecoration: "none" }}
                   >
-                    ...
-                  </Text>
-                </Link> */}
+                    <Text
+                      fontSize={{
+                        lg: "9px",
+                        xl: "10px",
+                        "2xl": "11px",
+                      }}
+                      fontWeight={700}
+                      className={styles.menuText}
+                      textAlign={"left"}
+                    >
+                      {/* ... */}
+                      Explore More
+                    </Text>
+                  </Link>
                 </VStack>
 
                 {/* Residential Property */}
@@ -280,6 +310,24 @@ const ServicesMegaMenu = () => {
                     Freehold and Leasehold Purchases
                   </Text>
 
+                  {/* Lease Terms Advice */}
+                  <Text
+                    as={Link}
+                    to={
+                      "/lumine-law/all-services/residential/lease-terms-advice"
+                    }
+                    fontSize={{
+                      lg: "9px",
+                      xl: "10px",
+                      "2xl": "11px",
+                    }}
+                    fontWeight={400}
+                    className={styles.menuText}
+                    textAlign={"left"}
+                  >
+                    Lease Terms Advice
+                  </Text>
+
                   {/* Transfers of Equity */}
                   <Text
                     as={Link}
@@ -297,25 +345,6 @@ const ServicesMegaMenu = () => {
                   >
                     Transfers of Equity
                   </Text>
-
-                  {/* Explore More */}
-                  {/* <Link
-                  to={"/lumine-law/all-services/residential"}
-                  style={{ textDecoration: "none" }}
-                >
-                  <Text
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={700}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    ...
-                  </Text>
-                </Link> */}
                 </VStack>
 
                 {/* Commercial Property */}
@@ -346,11 +375,44 @@ const ServicesMegaMenu = () => {
                     </Text>
                   </Link>
                   {/* List */}
+
+                  {/* Lease Renewals */}
+                  <Text
+                    as={Link}
+                    to={"/lumine-law/all-services/commercial/lease-renewals"}
+                    fontSize={{
+                      lg: "9px",
+                      xl: "10px",
+                      "2xl": "11px",
+                    }}
+                    fontWeight={400}
+                    className={styles.menuText}
+                    textAlign={"left"}
+                  >
+                    Lease Renewals
+                  </Text>
+
+                  {/* Purchase of Business and Licenses to Align */}
+                  <Text
+                    as={Link}
+                    to={"/lumine-law/all-services/commercial/business-licenses"}
+                    fontSize={{
+                      lg: "9px",
+                      xl: "10px",
+                      "2xl": "11px",
+                    }}
+                    fontWeight={400}
+                    className={styles.menuText}
+                    textAlign={"left"}
+                  >
+                    Purchase of Business and Licenses to Align
+                  </Text>
+
                   {/* Purchase of Commercial Property */}
                   <Text
                     as={Link}
                     to={
-                      "/lumine-law/all-services/residential/purchase-commercial"
+                      "/lumine-law/all-services/commercial/purchase-commercial"
                     }
                     fontSize={{
                       lg: "9px",
@@ -367,7 +429,7 @@ const ServicesMegaMenu = () => {
                   {/* Sales of Commercial Property */}
                   <Text
                     as={Link}
-                    to={"/lumine-law/all-services/residential/sales-commercial"}
+                    to={"/lumine-law/all-services/commercial/sales-commercial"}
                     fontSize={{
                       lg: "9px",
                       xl: "10px",
@@ -380,42 +442,25 @@ const ServicesMegaMenu = () => {
                     Sales of Commercial Property
                   </Text>
 
-                  {/* Purchase of Business and Licenses to Align */}
-                  <Text
-                    as={Link}
-                    to={
-                      "/lumine-law/all-services/residential/business-licenses"
-                    }
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Purchase of Business and Licenses to Align
-                  </Text>
-
                   {/* Explore More */}
-                  {/* <Link
-                  to={"/lumine-law/all-services/commercial"}
-                  style={{ textDecoration: "none" }}
-                >
-                  <Text
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={700}
-                    className={styles.menuText}
-                    textAlign={"left"}
+                  <Link
+                    to={"/lumine-law/all-services/commercial"}
+                    style={{ textDecoration: "none" }}
                   >
-                    ...
-                  </Text>
-                </Link> */}
+                    <Text
+                      fontSize={{
+                        lg: "9px",
+                        xl: "10px",
+                        "2xl": "11px",
+                      }}
+                      fontWeight={700}
+                      className={styles.menuText}
+                      textAlign={"left"}
+                    >
+                      {/* ... */}
+                      Explore More
+                    </Text>
+                  </Link>
                 </VStack>
 
                 {/* Intellectual Property */}
@@ -429,7 +474,7 @@ const ServicesMegaMenu = () => {
                 >
                   {/* Header */}
                   <Link
-                    to={"/lumine-law/all-services/wills-probate"}
+                    to={"/lumine-law/all-services/intellectual-property"}
                     style={{ textDecoration: "none" }}
                   >
                     <Text
@@ -446,10 +491,12 @@ const ServicesMegaMenu = () => {
                     </Text>
                   </Link>
                   {/* List */}
-                  {/* Wills */}
+                  {/* Copyright */}
                   <Text
                     as={Link}
-                    to={"/lumine-law/all-services/wills-probate/wills"}
+                    to={
+                      "/lumine-law/all-services/intellectual-property/copyright"
+                    }
                     fontSize={{
                       lg: "9px",
                       xl: "10px",
@@ -459,13 +506,13 @@ const ServicesMegaMenu = () => {
                     className={styles.menuText}
                     textAlign={"left"}
                   >
-                    Wills
+                    Copyright
                   </Text>
 
-                  {/* Trusts */}
+                  {/* Patent */}
                   <Text
                     as={Link}
-                    to={"/lumine-law/all-services/wills-probate/trusts"}
+                    to={"/lumine-law/all-services/intellectual-property/patent"}
                     fontSize={{
                       lg: "9px",
                       xl: "10px",
@@ -475,13 +522,15 @@ const ServicesMegaMenu = () => {
                     className={styles.menuText}
                     textAlign={"left"}
                   >
-                    Trusts
+                    Patent
                   </Text>
 
-                  {/* Power of Attorney */}
+                  {/* Trademark */}
                   <Text
                     as={Link}
-                    to={"/lumine-law/all-services/wills-probate/power-attorney"}
+                    to={
+                      "/lumine-law/all-services/intellectual-property/trademark"
+                    }
                     fontSize={{
                       lg: "9px",
                       xl: "10px",
@@ -491,27 +540,8 @@ const ServicesMegaMenu = () => {
                     className={styles.menuText}
                     textAlign={"left"}
                   >
-                    Power of Attorney
+                    Trademark
                   </Text>
-
-                  {/* Explore More */}
-                  {/* <Link
-                  to={"/lumine-law/all-services/wills-probate"}
-                  style={{ textDecoration: "none" }}
-                >
-                  <Text
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={700}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    ...
-                  </Text>
-                </Link> */}
                 </VStack>
 
                 {/* Dispute Resolution and Civil Litigation Services*/}
@@ -542,11 +572,11 @@ const ServicesMegaMenu = () => {
                     </Text>
                   </Link>
                   {/* List */}
-                  {/* Debt Matters */}
+                  {/* Building Contracts */}
                   <Text
                     as={Link}
                     to={
-                      "/lumine-law/all-services/dispute-resolution/debt-matters"
+                      "/lumine-law/all-services/dispute-resolution/building-contracts"
                     }
                     fontSize={{
                       lg: "9px",
@@ -557,7 +587,7 @@ const ServicesMegaMenu = () => {
                     className={styles.menuText}
                     textAlign={"left"}
                   >
-                    Debt Matters
+                    Building Contracts
                   </Text>
 
                   {/* Contract Disputes */}
@@ -578,8 +608,26 @@ const ServicesMegaMenu = () => {
                     Contract Disputes
                   </Text>
 
-                  {/* Corporate and Personal Bankruptcy Matters */}
+                  {/* Contracts for the Supply of Goods and Services */}
                   <Text
+                    as={Link}
+                    to={
+                      "/lumine-law/all-services/dispute-resolution/supply-goods-services"
+                    }
+                    fontSize={{
+                      lg: "9px",
+                      xl: "10px",
+                      "2xl": "11px",
+                    }}
+                    fontWeight={400}
+                    className={styles.menuText}
+                    textAlign={"left"}
+                  >
+                    Contracts for the Supply of Goods and Services
+                  </Text>
+
+                  {/* Corporate and Personal Bankruptcy Matters */}
+                  {/* <Text
                     as={Link}
                     to={
                       "/lumine-law/all-services/dispute-resolution/bankruptcy-matters"
@@ -594,26 +642,45 @@ const ServicesMegaMenu = () => {
                     textAlign={"left"}
                   >
                     Corporate and Personal Bankruptcy Matters
-                  </Text>
+                  </Text> */}
 
-                  {/* Explore More */}
-                  {/* <Link
-                  to={"/lumine-law/all-services/dispute-resolution"}
-                  style={{ textDecoration: "none" }}
-                >
+                  {/* Debt Matters */}
                   <Text
+                    as={Link}
+                    to={
+                      "/lumine-law/all-services/dispute-resolution/debt-matters"
+                    }
                     fontSize={{
                       lg: "9px",
                       xl: "10px",
                       "2xl": "11px",
                     }}
-                    fontWeight={700}
+                    fontWeight={400}
                     className={styles.menuText}
                     textAlign={"left"}
                   >
-                    ...
+                    Debt Matters
                   </Text>
-                </Link> */}
+
+                  {/* Explore More */}
+                  <Link
+                    to={"/lumine-law/all-services/dispute-resolution"}
+                    style={{ textDecoration: "none" }}
+                  >
+                    <Text
+                      fontSize={{
+                        lg: "9px",
+                        xl: "10px",
+                        "2xl": "11px",
+                      }}
+                      fontWeight={700}
+                      className={styles.menuText}
+                      textAlign={"left"}
+                    >
+                      {/* ... */}
+                      Explore More
+                    </Text>
+                  </Link>
                 </VStack>
               </HStack>
 
@@ -635,7 +702,7 @@ const ServicesMegaMenu = () => {
                 >
                   {/* Header */}
                   <Link
-                    to={"/lumine-law/all-services/wills-probate"}
+                    to={"/lumine-law/all-services/landlord-tenant"}
                     style={{ textDecoration: "none" }}
                   >
                     <Text
@@ -652,10 +719,12 @@ const ServicesMegaMenu = () => {
                     </Text>
                   </Link>
                   {/* List */}
-                  {/* Wills */}
+                  {/* Claims for Disrepair */}
                   <Text
                     as={Link}
-                    to={"/lumine-law/all-services/wills-probate/wills"}
+                    to={
+                      "/lumine-law/all-services/landlord-tenant/claims-disrepair"
+                    }
                     fontSize={{
                       lg: "9px",
                       xl: "10px",
@@ -665,13 +734,15 @@ const ServicesMegaMenu = () => {
                     className={styles.menuText}
                     textAlign={"left"}
                   >
-                    Wills
+                    Claims for Disrepair
                   </Text>
 
-                  {/* Trusts */}
+                  {/* Possession Claims */}
                   <Text
                     as={Link}
-                    to={"/lumine-law/all-services/wills-probate/trusts"}
+                    to={
+                      "/lumine-law/all-services/landlord-tenant/possession-claims"
+                    }
                     fontSize={{
                       lg: "9px",
                       xl: "10px",
@@ -681,13 +752,15 @@ const ServicesMegaMenu = () => {
                     className={styles.menuText}
                     textAlign={"left"}
                   >
-                    Trusts
+                    Possession Claims
                   </Text>
 
-                  {/* Power of Attorney */}
+                  {/* Recovery of Rent Arrears */}
                   <Text
                     as={Link}
-                    to={"/lumine-law/all-services/wills-probate/power-attorney"}
+                    to={
+                      "/lumine-law/all-services/landlord-tenant/recovery-rent"
+                    }
                     fontSize={{
                       lg: "9px",
                       xl: "10px",
@@ -697,27 +770,8 @@ const ServicesMegaMenu = () => {
                     className={styles.menuText}
                     textAlign={"left"}
                   >
-                    Power of Attorney
+                    Recovery of Rent Arrears
                   </Text>
-
-                  {/* Explore More */}
-                  {/* <Link
-                  to={"/lumine-law/all-services/wills-probate"}
-                  style={{ textDecoration: "none" }}
-                >
-                  <Text
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={700}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    ...
-                  </Text>
-                </Link> */}
                 </VStack>
                 {/* Family and Children */}
                 <VStack
@@ -763,6 +817,40 @@ const ServicesMegaMenu = () => {
                     Divorce{" "}
                   </Text>
 
+                  {/* Domestic Violence */}
+                  <Text
+                    as={Link}
+                    to={"/lumine-law/all-services/family/domestic-violence"}
+                    fontSize={{
+                      lg: "9px",
+                      xl: "10px",
+                      "2xl": "11px",
+                    }}
+                    fontWeight={400}
+                    className={styles.menuText}
+                    textAlign={"left"}
+                  >
+                    Domestic Violence
+                  </Text>
+
+                  {/* Parental Responsibility */}
+                  <Text
+                    as={Link}
+                    to={
+                      "/lumine-law/all-services/family/parental-responsbility"
+                    }
+                    fontSize={{
+                      lg: "9px",
+                      xl: "10px",
+                      "2xl": "11px",
+                    }}
+                    fontWeight={400}
+                    className={styles.menuText}
+                    textAlign={"left"}
+                  >
+                    Parental Responsibility
+                  </Text>
+
                   {/* Pre Nuptial Agreement */}
                   <Text
                     as={Link}
@@ -779,21 +867,25 @@ const ServicesMegaMenu = () => {
                     Pre Nuptial Agreements{" "}
                   </Text>
 
-                  {/* Child Arrangements */}
-                  <Text
-                    as={Link}
-                    to={"/lumine-law/all-services/family/child-arrangements"}
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
+                  {/* Explore more */}
+                  <Link
+                    to={"/lumine-law/all-services/family-and-children"}
+                    style={{ textDecoration: "none" }}
                   >
-                    Child Arrangements{" "}
-                  </Text>
+                    <Text
+                      fontSize={{
+                        lg: "9px",
+                        xl: "10px",
+                        "2xl": "11px",
+                      }}
+                      fontWeight={700}
+                      className={styles.menuText}
+                      textAlign={"left"}
+                    >
+                      {/* ... */}
+                      Explore More
+                    </Text>
+                  </Link>
                 </VStack>
 
                 {/* Wills and Probate */}
@@ -824,6 +916,58 @@ const ServicesMegaMenu = () => {
                     </Text>
                   </Link>
                   {/* List */}
+                  {/* Inheritance Tax Planning */}
+                  {/* <Text
+                    as={Link}
+                    to={
+                      "/lumine-law/all-services/wills-probate/inheritance-tax-planning"
+                    }
+                    fontSize={{
+                      lg: "9px",
+                      xl: "10px",
+                      "2xl": "11px",
+                    }}
+                    fontWeight={400}
+                    className={styles.menuText}
+                    textAlign={"left"}
+                  >
+                    Inheritance Tax Planning
+                  </Text> */}
+
+                  {/* Probate */}
+                  <Text
+                    as={Link}
+                    to={"/lumine-law/all-services/wills-probate/probate"}
+                    fontSize={{
+                      lg: "9px",
+                      xl: "10px",
+                      "2xl": "11px",
+                    }}
+                    fontWeight={400}
+                    className={styles.menuText}
+                    textAlign={"left"}
+                  >
+                    Probate
+                  </Text>
+
+                  {/* Succession Planning */}
+                  <Text
+                    as={Link}
+                    to={
+                      "/lumine-law/all-services/wills-probate/succession-planning"
+                    }
+                    fontSize={{
+                      lg: "9px",
+                      xl: "10px",
+                      "2xl": "11px",
+                    }}
+                    fontWeight={400}
+                    className={styles.menuText}
+                    textAlign={"left"}
+                  >
+                    Succession Planning
+                  </Text>
+
                   {/* Wills */}
                   <Text
                     as={Link}
@@ -856,21 +1000,25 @@ const ServicesMegaMenu = () => {
                     Trusts
                   </Text>
 
-                  {/* Power of Attorney */}
-                  <Text
-                    as={Link}
-                    to={"/lumine-law/all-services/wills-probate/power-attorney"}
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
+                  {/* Explore more */}
+                  <Link
+                    to={"/lumine-law/all-services/wills-probate"}
+                    style={{ textDecoration: "none" }}
                   >
-                    Power of Attorney
-                  </Text>
+                    <Text
+                      fontSize={{
+                        lg: "9px",
+                        xl: "10px",
+                        "2xl": "11px",
+                      }}
+                      fontWeight={700}
+                      className={styles.menuText}
+                      textAlign={"left"}
+                    >
+                      {/* ... */}
+                      Explore More
+                    </Text>
+                  </Link>
                 </VStack>
               </HStack>
             </VStack>

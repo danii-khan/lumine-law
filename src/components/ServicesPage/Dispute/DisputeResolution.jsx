@@ -21,12 +21,12 @@ import "../../../styles/fonts.css";
 // Dispute services data
 const disputeServices = [
   {
-    title: "Building Contract Disputes",
-    path: "/lumine-law/all-services/dispute-resolution/building-contract-disputes",
-  },
-  {
     title: "Building Contracts",
     path: "/lumine-law/all-services/dispute-resolution/building-contracts",
+  },
+  {
+    title: "Building Contract Disputes",
+    path: "/lumine-law/all-services/dispute-resolution/building-contract-disputes",
   },
   {
     title: "Contract Disputes",
