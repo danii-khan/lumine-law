@@ -124,7 +124,7 @@ const About = () => {
                 which all available options will be discussed. We build and
                 maintain relationships with our clients that are based on mutual
                 respect. Our hard-earned reputation is based on traditional
-                client centred values, and our objective is to meet our clients
+                client centred values, and our objective is to meet our clients
                 needs in every matter. We correspond with clients in a manner
                 that is best suited to their individual needs. We can use video
                 calls for meetings and appointments where appropriate. Clients

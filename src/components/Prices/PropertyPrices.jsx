@@ -88,7 +88,7 @@ const PropertyPrices = () => {
             </Text>
           </Box>
 
-          {/* Main */}
+          {/* Purchase */}
           <Box
             width={"100%"}
             display={"flex"}
@@ -104,21 +104,17 @@ const PropertyPrices = () => {
             >
               <Text
                 fontFamily={"CeraRoundPro"}
-                fontWeight={400}
+                fontWeight={600}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
               >
-                A few lines on Property Prices
+                Purchase of Residential Property Freehold and Leasehold
               </Text>
             </Box>
           </Box>
 
-          {/* Dropdown info */}
-          <VStack
-            justifyContent={"space-around"}
-            alignItems={"center"}
-            mb={"50px"}
-          >
+          {/* Purchase Dropdown info */}
+          <VStack justifyContent={"space-around"} alignItems={"center"}>
             {/* Purchase of residential property freehold and leasehold */}
             <Box
               display={"flex"}
@@ -1105,7 +1101,39 @@ const PropertyPrices = () => {
                 </VStack>
               )}
             </Box>
+          </VStack>
 
+          {/* Sale */}
+          <Box
+            width={"100%"}
+            display={"flex"}
+            flexFlow={"column"}
+            color={"black"}
+          >
+            {/* Heading */}
+            <Box
+              width={"90%"}
+              alignSelf={"center"}
+              mb={"5%"}
+              my={{ xs: "5%", md: "2.5%" }}
+            >
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={600}
+                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                textAlign={"left"}
+              >
+                Sale of Residential Property Freehold and Leasehold
+              </Text>
+            </Box>
+          </Box>
+
+          {/* Sales Dropdown info */}
+          <VStack
+            justifyContent={"space-around"}
+            alignItems={"center"}
+            mb={"50px"}
+          >
             {/* Residential sale freehold and leasehold estimated fee */}
             <Box
               display={"flex"}
@@ -1841,10 +1869,7 @@ const PropertyPrices = () => {
                   fontFamily={"CeraRoundPro"}
                   color={"#beab7c"}
                 >
-                  As Part of Our Professional Service we will:{" "}
-                  <span style={{ color: "red", fontWeight: 900 }}>
-                    Change Name
-                  </span>
+                  As Part of Our Professional Service we will:
                 </Text>
                 {!nameState ? (
                   <GoPlus color={"#beab7c"} size={"2em"} />
