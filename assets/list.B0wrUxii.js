@@ -1,1 +1,0 @@
-import{c as o}from"./create-slot-recipe-context.Dsb6H7Kx.js";const{withProvider:e,withContext:t,useStyles:i,PropsProvider:r}=o({key:"list"}),l=e("ul","root",{defaultProps:{role:"list"}}),a=t("li","item");t("span","indicator");export{l as L,a};
