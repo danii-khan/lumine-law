@@ -422,7 +422,7 @@ const IntellectualProperty = () => {
               fontFamily="CeraRoundPro"
             >
               {introContent.listItems.map((item, index) => (
-                <List.Item key={index}>
+                <List.Item key={index} _marker={{ color: "black" }}>
                   <strong>{item.title}</strong>: {item.content}
                 </List.Item>
               ))}

@@ -107,8 +107,13 @@ const LandingPage = () => {
         "&::-webkit-scrollbar": {
           display: "none", // Optional: hides scrollbar
         },
+        "::-webkit-scrollbar": {
+          display: "none", // Safari and Chrome
+        },
         msOverflowStyle: "none", // Optional: hides scrollbar in IE
         scrollbarWidth: "none", // Optional: hides scrollbar in Firefox
+        overflow: "hidden",
+        WebkitOverflowScrolling: " touch",
       }}
     >
       <Helmet>
@@ -126,6 +131,7 @@ const LandingPage = () => {
           scrollSnapAlign: "start",
           scrollSnapStop: "always",
           height: "100vh",
+          overflow: "hidden",
         }}
       >
         <Box
@@ -238,6 +244,7 @@ const LandingPage = () => {
           scrollSnapAlign: "start",
           scrollSnapStop: "always",
           height: "100vh",
+          overflow: "hidden",
         }}
       >
         <Suspense fallback={<div>Loading About Section...</div>}>
@@ -252,7 +259,7 @@ const LandingPage = () => {
           scrollSnapAlign: "start",
           scrollSnapStop: "always",
           height: "100vh",
-          // paddingTop: "50px",
+          overflow: "hidden",
         }}
       >
         <Suspense fallback={<div>Loading Services Section...</div>}>
@@ -267,6 +274,7 @@ const LandingPage = () => {
           scrollSnapAlign: "start",
           scrollSnapStop: "always",
           height: "100vh",
+          overflow: "hidden",
         }}
       >
         <Suspense fallback={<div>Loading Panels Section...</div>}>
@@ -281,6 +289,7 @@ const LandingPage = () => {
           scrollSnapAlign: "start",
           scrollSnapStop: "always",
           height: "100vh",
+          overflow: "hidden",
         }}
       >
         <Suspense fallback={<div>Loading News and Insights Section...</div>}>
@@ -293,19 +302,13 @@ const LandingPage = () => {
         id="Footer"
         style={{
           scrollSnapAlign: "start none",
-          // height: { xs: "90vh", lg: "none" },
           scrollBehavior: "smooth",
           overscrollBehavior: "none",
-          WebkitOverflowScrolling: "touch", // For older iOS
-          // touchAction: "none",
-          position: "relative", // Helps with iOS momentum scrolling
-          zIndex: 1, // Ensures proper stacking context
-          // Prevents bounce effect on iOS
-          WebkitBounce: "none",
-          // Additional properties for cross-browser compatibility
-          MozOverscrollBehavior: "none",
-          msOverscrollBehavior: "none",
+          WebkitOverflowScrolling: "touch",
+          position: "relative",
+          zIndex: 1,
           overflow: "hidden",
+          msScrollSnapY: "start",
         }}
       >
         <Suspense fallback={<div>Loading Footer...</div>}>

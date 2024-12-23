@@ -318,7 +318,7 @@ const Commercial = () => {
               fontFamily="CeraRoundPro"
               fontWeight={400}
               fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-              textAlign="left"
+              textAlign="justify"
             >
               When it comes to legal matters concerning property we provide
               expertise that you can rely on and trust. Whether it's for

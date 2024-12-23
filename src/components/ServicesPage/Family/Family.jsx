@@ -263,7 +263,7 @@ const Family = () => {
             _loading={"eager"}
           >
             <Text
-              fontSize="40px"
+              fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
               fontWeight={600}
               fontFamily="CeraRoundPro"
               fontStyle="italic"
@@ -275,27 +275,16 @@ const Family = () => {
 
           {/* Main Content */}
           <Box width="100%" display="flex" flexFlow="column" color="black">
-            <HStack
-              justifyContent="flex-start"
-              alignItems="center"
-              mt="2%"
-              mb="1%"
-              ml="2.5%"
-            >
-              <Text fontFamily="CeraRoundPro" fontSize="24px" fontWeight={600}>
-                What is Family and Children services?
-              </Text>
-            </HStack>
-
             <Box
               width="95%"
               alignSelf="center"
-              mb={{ xs: "15%", sm: "10%", md: "7.5%", xl: "5%" }}
+              mt={{ xs: "10%", sm: "10%", md: "7.5%", xl: "5%" }}
+              mb={{ xs: "10%", sm: "10%", md: "7.5%", xl: "5%" }}
             >
               <Text
                 fontFamily="CeraRoundPro"
                 fontWeight={400}
-                fontSize="18px"
+                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign="justify"
               >
                 Our legal services are highly recommended by our clients and
