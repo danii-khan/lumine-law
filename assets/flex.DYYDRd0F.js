@@ -1,0 +1,1 @@
+import{r as c,j,b as p}from"./index.BPFYR4T7.js";const m=c.forwardRef(function(s,e){const{direction:i,align:r,justify:n,wrap:t,basis:a,grow:l,shrink:x,inline:f,...o}=s;return j.jsx(p.div,{ref:e,...o,css:{display:f?"inline-flex":"flex",flexDirection:i,alignItems:r,justifyContent:n,flexWrap:t,flexBasis:a,flexGrow:l,flexShrink:x,...s.css}})});export{m as F};
