@@ -266,6 +266,24 @@ const LandingPage = () => {
           height: "100vh",
           overflow: "hidden",
         }}
+        onTouchStart={() => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }}
+        onTouchMove={() => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }}
+        onTouchEnd={() => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }}
       >
         <Suspense fallback={<div>Loading News and Insights Section...</div>}>
           <NewsNInsightsSection />
@@ -274,16 +292,28 @@ const LandingPage = () => {
 
       {/* Footer  */}
       <section
-        id="Footer"
+        id="none"
         style={{
           scrollSnapAlign: "start none",
           scrollBehavior: "smooth",
           overscrollBehavior: "none",
-          WebkitOverflowScrolling: "touch",
+          WebkitOverflowScrolling: "revert",
           position: "relative",
           zIndex: 1,
           overflow: "hidden",
           msScrollSnapY: "start",
+        }}
+        onTouchStart={() => {
+          window.scrollTo({
+            top: 100,
+            behavior: "smooth",
+          });
+        }}
+        onTouchMove={() => {
+          window.scrollTo({
+            top: 100,
+            behavior: "smooth",
+          });
         }}
       >
         <Suspense fallback={<div>Loading Footer...</div>}>
