@@ -117,15 +117,19 @@ const ScrollSpySidebar = () => {
               pl={0}
               variant="ghost"
               onClick={() => scrollToSection(id)}
-              background="none"
+              background={"none"}
               color={
-                activeSection === "Who-we-are" || activeSection === "Panels"
+                activeSection === "Who-we-are" ||
+                activeSection === "Panels" ||
+                activeSection === "Our-Services"
                   ? "white"
                   : "black"
               }
               _hover={{
                 color:
-                  activeSection === "Who-we-are" || activeSection === "Panels"
+                  activeSection === "Who-we-are" ||
+                  activeSection === "Panels" ||
+                  activeSection === "Our-Services"
                     ? "#beab7c"
                     : "#383636",
                 opacity: "100%",
@@ -155,7 +159,9 @@ const ScrollSpySidebar = () => {
                 style={{
                   border: "1px solid",
                   borderColor:
-                    activeSection === "Who-we-are" || activeSection === "Panels"
+                    activeSection === "Who-we-are" ||
+                    activeSection === "Panels" ||
+                    activeSection === "Our-Services"
                       ? "white"
                       : "black",
                   width: "7.5vw",
@@ -181,13 +187,17 @@ const ScrollSpySidebar = () => {
               onClick={() => scrollToSection(id)}
               background="none"
               color={
-                activeSection === "Who-we-are" || activeSection === "Panels"
+                activeSection === "Who-we-are" ||
+                activeSection === "Panels" ||
+                activeSection === "Our-Services"
                   ? "white"
                   : "black"
               }
               _hover={{
                 color:
-                  activeSection === "Who-we-are" || activeSection === "Panels"
+                  activeSection === "Who-we-are" ||
+                  activeSection === "Panels" ||
+                  activeSection === "Our-Services"
                     ? "#beab7c"
                     : "#383636",
                 opacity: "100%",
@@ -207,7 +217,9 @@ const ScrollSpySidebar = () => {
                 style={{
                   border: "1px solid",
                   borderColor:
-                    activeSection === "Who-we-are" || activeSection === "Panels"
+                    activeSection === "Who-we-are" ||
+                    activeSection === "Panels" ||
+                    activeSection === "Our-Services"
                       ? "white"
                       : "black",
                   width: "2.5vw",

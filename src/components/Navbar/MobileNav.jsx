@@ -105,6 +105,7 @@ const Menu = () => {
                     display={"flex"}
                     justifyContent={"flex-start"}
                     py={"10px"}
+                    onClick={() => handleSectionClick(null)}
                   >
                     <Button
                       backgroundColor={"black"}
@@ -209,6 +210,7 @@ const Menu = () => {
                     display={"flex"}
                     justifyContent={"flex-start"}
                     py={"10px"}
+                    onClick={() => handleSectionClick(null)}
                   >
                     <Button
                       backgroundColor="inherit"
@@ -240,6 +242,7 @@ const Menu = () => {
                     display={"flex"}
                     justifyContent={"flex-start"}
                     py={"10px"}
+                    onClick={() => handleSectionClick(null)}
                   >
                     <Button
                       backgroundColor="inherit"
@@ -271,6 +274,7 @@ const Menu = () => {
                     py={"10px"}
                     as={Link}
                     to={"/lumine-law/contact"}
+                    onClick={() => handleSectionClick(null)}
                   >
                     <Button
                       backgroundColor="inherit"
