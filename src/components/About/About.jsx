@@ -52,7 +52,7 @@ const About = () => {
               width={"90%"}
               textAlign={"left"}
             >
-              About Us
+              About Lumine Solicitors
             </Text>
           </Box>
 
