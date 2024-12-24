@@ -176,7 +176,6 @@ const AllNewsInsights = () => {
             "2xl": "30px",
           }}
           fontWeight={500}
-          fontStyle="italic"
           mb={{
             xs: "25px",
             sm: "30px",

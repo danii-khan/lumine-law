@@ -110,7 +110,11 @@ const ServicesMegaMenu = () => {
               isOpen ? styles.open : ""
             }`}
           >
-            <VStack justifyContent={"center"} alignItems={"center"}>
+            <VStack
+              justifyContent={"center"}
+              alignItems={"center"}
+              onClick={() => setIsOpen(false)}
+            >
               {/* Row 1 */}
               <HStack
                 justifyContent={"center"}

@@ -57,7 +57,6 @@ const HumanRights = () => {
               fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
-              fontStyle={"italic"}
               width={"90%"}
               textAlign={"left"}
             >
@@ -457,7 +456,6 @@ const HumanRights = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                    fontStyle={"italic"}
                   >
                     Please be aware that depending on the path you choose, the
                     application process differs.

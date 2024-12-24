@@ -304,13 +304,7 @@ const Banner = () => (
     alignItems="center"
     _loading={"eager"}
   >
-    <Text
-      fontSize="40px"
-      fontWeight={600}
-      fontFamily="CeraRoundPro"
-      fontStyle="italic"
-      ml="2.5%"
-    >
+    <Text fontSize="40px" fontWeight={600} fontFamily="CeraRoundPro" ml="2.5%">
       Immigration
     </Text>
   </Box>
@@ -393,7 +387,6 @@ const OtherServices = () => (
             "2xl": "30px",
           }}
           fontWeight={500}
-          fontStyle="italic"
           mb={{
             xs: "25px",
             sm: "30px",

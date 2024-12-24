@@ -49,7 +49,6 @@ const About = () => {
               fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
-              fontStyle={"italic"}
               width={"90%"}
               textAlign={"left"}
             >
@@ -70,24 +69,6 @@ const About = () => {
               mb={"5%"}
               my={{ xs: "5%", md: "2.5%" }}
             >
-              {/* Heading */}
-              <Text
-                fontFamily={"CeraRoundPro"}
-                fontWeight={500}
-                fontSize={{
-                  xs: "20px",
-                  sm: "22px",
-                  md: "24px",
-                  lg: "28px",
-                  xl: "32px",
-                  "2xl": "36px",
-                }}
-                textAlign={"left"}
-                mb={"2.5%"}
-              >
-                Who are Lumine Solicitors?
-              </Text>
-
               {/* Content */}
               <Text
                 fontFamily={"CeraRoundPro"}
@@ -140,19 +121,19 @@ const About = () => {
           </Box>
 
           {/* Other Services */}
-          <Suspense fallback={<div>Loading All Services ...</div>}>
+          {/* <Suspense fallback={<div>Loading All Services ...</div>}>
             <AllServiceLinks />
-          </Suspense>
+          </Suspense> */}
 
           {/* Prices */}
-          <Suspense fallback={<div>Loading All Prices...</div>}>
+          {/* <Suspense fallback={<div>Loading All Prices...</div>}>
             <AllPrices />
-          </Suspense>
+          </Suspense> */}
 
           {/* News and Insights */}
-          <Suspense fallback={<div>Loading All News and Insights...</div>}>
+          {/* <Suspense fallback={<div>Loading All News and Insights...</div>}>
             <AllNewsInsights />
-          </Suspense>
+          </Suspense> */}
 
           <Footer />
         </Box>

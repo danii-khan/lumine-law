@@ -91,7 +91,6 @@ const ImmigrationPrices = () => {
               fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
-              fontStyle={"italic"}
               width={"90%"}
               textAlign={"left"}
             >
@@ -1188,7 +1187,6 @@ const ImmigrationPrices = () => {
                     "2xl": "30px",
                   }}
                   fontWeight={500}
-                  fontStyle={"italic"}
                   mb={{
                     xs: "25px",
                     sm: "30px",

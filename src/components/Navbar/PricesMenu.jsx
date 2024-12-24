@@ -75,6 +75,7 @@ const PricesMenu = () => {
           zIndex={9999}
           boxShadow="0 4px 6px rgba(0, 0, 0, 0.1)"
           className={`${styles.megaMenuContainer} ${isOpen ? styles.open : ""}`}
+          onClick={() => setIsOpen(false)}
         >
           <HStack
             justifyContent={"center"}

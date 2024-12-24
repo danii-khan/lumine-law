@@ -266,7 +266,6 @@ const Family = () => {
               fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
               fontWeight={600}
               fontFamily="CeraRoundPro"
-              fontStyle="italic"
               ml="2.5%"
             >
               Family and Children
@@ -335,7 +334,6 @@ const Family = () => {
                   "2xl": "30px",
                 }}
                 fontWeight={500}
-                fontStyle="italic"
                 mb={{
                   xs: "25px",
                   sm: "30px",

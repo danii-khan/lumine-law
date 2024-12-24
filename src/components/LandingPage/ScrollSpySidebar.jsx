@@ -131,7 +131,6 @@ const ScrollSpySidebar = () => {
                 opacity: "100%",
               }}
               fontWeight={400}
-              fontStyle="italic"
               fontSize={
                 activeSection === id
                   ? {
@@ -194,7 +193,6 @@ const ScrollSpySidebar = () => {
                 opacity: "100%",
               }}
               fontWeight={400}
-              fontStyle="italic"
               fontSize={{
                 xs: "8px",
                 md: "10px",

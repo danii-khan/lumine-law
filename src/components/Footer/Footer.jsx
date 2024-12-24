@@ -29,7 +29,7 @@ const Footer = () => {
   return (
     <>
       <Box
-        height={{ xs: "90vh", md: "100%" }}
+        maxHeight={{ xs: "90vh", md: "60vh" }}
         width={"100%"}
         borderTop={"0.5px solid #707070"}
         px={{ xs: "5%", lg: "2.5%" }}

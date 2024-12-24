@@ -43,10 +43,10 @@ const Contact = () => {
         {/* Contact Header */}
         <Grid
           width={"100%"}
-          backgroundColor={"#BAA990"}
+          backgroundColor={"#ffe7c5"}
           templateColumns={{ xs: "1fr", xl: "3fr 4fr 2fr" }}
           templateRows={{ xs: "repeat(3, 1fr)", xl: "1fr" }}
-          borderBottom={"1px solid white"}
+          borderBottom={"1px solid black"}
           minHeight={"300px"}
           maxHeight={"400px"}
         >
@@ -55,7 +55,6 @@ const Contact = () => {
             display={"flex"}
             justifyContent={"center"}
             alignItems={"center"}
-            border={"1px solid white"}
           >
             <Text
               fontSize={{
@@ -68,6 +67,7 @@ const Contact = () => {
               }}
               fontFamily={"CeraRoundPro"}
               fontWeight={600}
+              color={"black"}
             >
               Contact Us
             </Text>
@@ -75,9 +75,8 @@ const Contact = () => {
 
           {/* 2nd Col */}
           <GridItem
-            borderLeft={"1px solid white"}
-            borderRight={"1px solid white"}
-            border={"1px solid white"}
+            borderLeft={"1px solid black"}
+            borderRight={"1px solid black"}
           >
             <Grid
               height={"100%"}
@@ -94,7 +93,7 @@ const Contact = () => {
                 >
                   <HStack gap={"10px"}>
                     <Box w={"2em"} display={"flex"} alignItems={"center"}>
-                      <IoLocationOutline size={"2em"} color="white" />
+                      <IoLocationOutline size={"2em"} color={"black"} />
                     </Box>
                     <Text
                       fontSize={{
@@ -107,6 +106,7 @@ const Contact = () => {
                       }}
                       fontWeight={500}
                       fontFamily={"CeraRoundPro"}
+                      color={"black"}
                     >
                       Address
                     </Text>
@@ -128,6 +128,7 @@ const Contact = () => {
                       fontFamily={
                         "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
                       }
+                      color={"black"}
                     >
                       2nd Floor, 156 Cromwell Road, SW7 4EF, London, UK{" "}
                     </Text>
@@ -137,14 +138,14 @@ const Contact = () => {
 
               {/* Second Row */}
               <Grid
-                borderTop={"1px solid white"}
-                borderBottom={"1px solid white"}
+                borderTop={"1px solid black"}
+                borderBottom={"1px solid black"}
                 templateColumns={"repeat(2, 1fr)"}
                 width={"100%"}
                 py={"10px"}
               >
                 {/* Telephone*/}
-                <GridItem borderRight={"1px solid white"}>
+                <GridItem borderRight={"1px solid black"}>
                   <VStack
                     justifyContent={"center"}
                     alignItems={{ xs: "center", xl: "flex-start" }}
@@ -152,7 +153,7 @@ const Contact = () => {
                   >
                     <HStack gap={"10px"}>
                       <Box w={"2em"} display={"flex"} alignItems={"center"}>
-                        <LuPhoneCall size={"2em"} color="white" />
+                        <LuPhoneCall size={"2em"} color={"black"} />
                       </Box>
                       <Text
                         fontSize={{
@@ -165,6 +166,7 @@ const Contact = () => {
                         }}
                         fontWeight={500}
                         fontFamily={"CeraRoundPro"}
+                        color={"black"}
                       >
                         Telephone
                       </Text>
@@ -186,6 +188,7 @@ const Contact = () => {
                         fontFamily={
                           "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
                         }
+                        color={"black"}
                       >
                         020 3950 2246{" "}
                       </Text>
@@ -202,7 +205,7 @@ const Contact = () => {
                   >
                     <HStack gap={"10px"}>
                       <Box w={"2em"} display={"flex"} alignItems={"center"}>
-                        <TiPrinter size={"2em"} color="white" />
+                        <TiPrinter size={"2em"} color={"black"} />
                       </Box>
                       <Text
                         fontSize={{
@@ -215,6 +218,7 @@ const Contact = () => {
                         }}
                         fontWeight={500}
                         fontFamily={"CeraRoundPro"}
+                        color={"black"}
                       >
                         Fax
                       </Text>
@@ -236,6 +240,7 @@ const Contact = () => {
                         fontFamily={
                           "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
                         }
+                        color={"black"}
                       >
                         020 3006 2508{" "}
                       </Text>
@@ -253,7 +258,7 @@ const Contact = () => {
                 >
                   <HStack gap={"10px"}>
                     <Box w={"2em"} display={"flex"} alignItems={"center"}>
-                      <TfiEmail size={"2em"} color="white" />
+                      <TfiEmail size={"2em"} color={"black"} />
                     </Box>
                     <Text
                       fontSize={{
@@ -266,6 +271,7 @@ const Contact = () => {
                       }}
                       fontWeight={500}
                       fontFamily={"CeraRoundPro"}
+                      color={"black"}
                     >
                       Email Address
                     </Text>
@@ -287,6 +293,7 @@ const Contact = () => {
                       fontFamily={
                         "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
                       }
+                      color={"black"}
                     >
                       info@luminelaw.co.uk{" "}
                     </Text>
@@ -316,6 +323,7 @@ const Contact = () => {
                 "2xl": "22px",
               }}
               fontWeight={"500"}
+              color={"black"}
             >
               Opening Hours
             </Text>
@@ -338,6 +346,7 @@ const Contact = () => {
                 fontFamily={
                   "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
                 }
+                color={"black"}
               >
                 Mon-Fri:
               </Text>
@@ -354,6 +363,7 @@ const Contact = () => {
                 fontFamily={
                   "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
                 }
+                color={"black"}
               >
                 9:30 am - 5:30pm
               </Text>
@@ -377,6 +387,7 @@ const Contact = () => {
                 fontFamily={
                   "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
                 }
+                color={"black"}
               >
                 Sat-Sun:
               </Text>
@@ -393,6 +404,7 @@ const Contact = () => {
                 fontFamily={
                   "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
                 }
+                color={"black"}
               >
                 Closed
               </Text>

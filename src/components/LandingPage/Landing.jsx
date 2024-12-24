@@ -181,7 +181,6 @@ const LandingPage = () => {
                   fontWeight: "500",
                   fontFamily:
                     "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif",
-                  fontStyle: "italic",
                 }}
               >
                 what's next.
@@ -204,30 +203,6 @@ const LandingPage = () => {
               A whole paragraph, slightly explaining what Lumine law is, or just
               like a smaller intro paragraph.
             </Text>
-            <Button
-              background={"none"}
-              color={"white"}
-              border={"1px solid #FFFFFF"}
-              borderRadius={"8px"}
-              fontSize={{
-                xs: "11px",
-                sm: "12px",
-                md: "13px",
-                lg: "14px",
-                xl: "15px",
-                "2xl": "16px",
-              }}
-              fontWeight={500}
-              fontFamily={"CeraRoundPro"}
-              _hover={{
-                borderColor: "#beab7c",
-                backgroundColor: "black",
-                color: "#beab7c",
-                transition: "all 0.3s ease",
-              }}
-            >
-              Explore Now
-            </Button>
           </VStack>
         </Box>
       </section>

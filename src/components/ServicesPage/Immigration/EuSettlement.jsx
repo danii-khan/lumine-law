@@ -58,7 +58,6 @@ const EuSettlement = () => {
               fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
-              fontStyle={"italic"}
               width={"90%"}
               textAlign={"left"}
             >
@@ -310,7 +309,6 @@ const EuSettlement = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                    fontStyle={"italic"}
                   >
                     <List.Item>
                       you’re from the EU, Switzerland, Norway, Iceland or
@@ -353,7 +351,6 @@ const EuSettlement = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                    fontStyle={"italic"}
                   >
                     <List.Item>
                       you used to have a family member from the EU, Switzerland,

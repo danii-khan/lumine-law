@@ -77,7 +77,6 @@ const Insights = () => {
               fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
-              fontStyle={"italic"}
               width={"90%"}
               textAlign={"left"}
             >
@@ -235,7 +234,6 @@ const Insights = () => {
                 fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
                 fontWeight={600}
                 fontFamily={"CeraRoundPro"}
-                fontStyle={"italic"}
                 width={"90%"}
                 textAlign={"left"}
                 backgroundColor={"rgba(0, 0, 0, 0.4)"}
