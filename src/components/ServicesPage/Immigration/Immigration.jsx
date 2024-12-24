@@ -176,9 +176,8 @@ const ImmigrationServiceButton = ({ service }) => (
     color="black"
     border="1px solid black"
     borderRadius="8px"
-    p="2.5px 10px"
     width="100%"
-    height="100%"
+    height={{ xs: "100px", sm: "125px", md: "150px", lg: "175px" }}
     display="flex"
     justifyContent="center"
     alignItems="center"
@@ -201,6 +200,7 @@ const ImmigrationServiceButton = ({ service }) => (
     fontWeight={500}
     fontFamily="CeraRoundPro"
     cursor="pointer"
+    p="10px 5px"
   >
     {service.title}
   </GridItem>
@@ -355,9 +355,8 @@ const ImmigrationServicesGrid = () => (
     mb={{ xs: "25px", lg: "50px" }}
   >
     <Grid
-      templateRows="repeat(7,1fr)"
-      templateColumns="repeat(3, 1fr)"
-      width={{ xs: "90%", md: "75%", lg: "70%", xl: "60%" }}
+      templateColumns={{ xs: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }}
+      width={{ xs: "90%", md: "80%", lg: "75%", xl: "70%" }}
       justifySelf="center"
       justifyItems="center"
       gap={{ xs: "10px", lg: "15px", xl: "30px" }}

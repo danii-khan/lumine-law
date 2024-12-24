@@ -29,14 +29,13 @@ const Footer = () => {
   return (
     <>
       <Box
-        maxHeight={{ xs: "90vh", md: "60vh" }}
+        maxHeight={{ xs: "90vh", sm: "auto" }}
         width={"100%"}
         borderTop={"0.5px solid #707070"}
         px={{ xs: "5%", lg: "2.5%" }}
         py={{ xs: "20px", lg: "20px" }}
         style={{ fontFamily: "CeraRoundPro" }}
         backgroundColor={"black"}
-        overflow={"hidden"}
         _loading={"lazy"}
       >
         {/* Top */}

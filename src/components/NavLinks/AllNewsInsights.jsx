@@ -105,7 +105,7 @@ const Card = ({ item }) => (
       direction="column"
       gap="5px"
       p="10px"
-      backgroundColor={"#d9d9d9"}
+      backgroundColor={"white"}
       color={"black"}
       fontFamily="CeraRoundPro"
     >
