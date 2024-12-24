@@ -251,7 +251,7 @@ const Navbar = () => {
                     "2xl": "24px",
                   }}
                   color={"white"}
-                  fontWeight={500}
+                  fontWeight={600}
                   className={styles.logoText}
                   css={{
                     transition: "color 0.3s ease",

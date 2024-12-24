@@ -372,6 +372,7 @@ const IntellectualProperty = () => {
             fontStyle="italic"
             width="90%"
             textAlign="left"
+            color={"white"}
           >
             Intellectual Property
           </Text>
